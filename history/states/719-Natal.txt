@@ -1,0 +1,27 @@
+
+state={
+	id=719
+	name="STATE_719"
+	resources={
+	}
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+
+		add_core_of = SAF
+
+	}
+
+	provinces={
+		13293 13363 13562 13570 13609 13735 13940 13949 14037 14639 14640 14643 14647 14648 
+	}
+	manpower=2060322
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

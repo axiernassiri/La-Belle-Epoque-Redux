@@ -1,0 +1,23 @@
+state = {
+	id = 163
+	name = "STATE_163"
+	manpower = 9360
+	state_category = pastoral
+	history = {
+		owner = AUS
+		add_core_of = CRO
+		victory_points = { #Zara/Zadar
+			3943 5 
+		}
+		buildings = {
+			infrastructure = 2
+			3943 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {	
+		3943 
+	}
+	local_supplies = 0.0 
+}

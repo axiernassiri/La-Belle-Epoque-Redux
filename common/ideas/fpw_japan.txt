@@ -1,0 +1,1186 @@
+ideas = {
+	country = {
+		jap_small_imperial_opposition = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.15
+				fascism_drift = 0.05
+			}
+		}
+
+		jap_medium_imperial_opposition = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.25
+				fascism_drift = 0.1
+			}
+		}
+		
+		jap_high_imperial_opposition = {
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				stability_factor = -0.15
+				stability_weekly = -0.025
+				political_power_factor = -0.4
+				fascism_drift = 0.15
+			}
+		}
+		
+		jap_feudal_fragmentation	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_reform
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.05
+			political_power_cost = 0.15
+			max_command_power = -120
+			army_speed_factor = -0.1
+			army_morale_factor = -0.1
+			conscription_factor = -0.25
+			army_org_factor = -0.1
+			}
+		}
+		
+		jap_feudal_system	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = citizen_militia_2
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.05
+			political_power_cost = 0.15
+			army_morale_factor = -0.1
+			army_speed_factor = -0.1
+			}
+		}
+	
+		jap_feudal_system2	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = citizen_militia_2
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.1
+			max_command_power_mult = 0.5 
+			army_org_factor = 0.1
+			political_power_cost = 0.15
+			army_morale_factor = -0.1
+			army_speed_factor = -0.1
+			}
+		}
+		
+		jap_unequal_treaties	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HUN_treaty_of_triannon
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.15
+			consumer_goods_factor = 0.1
+			trade_opinion_factor = -0.2
+			}
+		}
+		
+		jap_isolationist_sentiment	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = undisturbed_isolation
+				
+			removal_cost = -1
+				
+				
+			modifier = {
+			lend_lease_tension = 0.3
+			diplomatic_pressure_mission_factor = -0.3
+			guarantee_cost = 1
+			justify_war_goal_time = 0.3
+			license_purchase_cost = 0.3 
+			join_faction_tension = 0.5
+			research_speed_factor = -0.2
+			send_volunteers_tension = 0.3
+			land_doctrine_cost_factor = 0.15
+			naval_doctrine_cost_factor = 0.15
+			custom_modifier_tooltip = prestige_modifier_isolation
+			}
+		}
+		
+		jap_economic_backwardness	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_third_five_year_plan_military
+				
+			removal_cost = -1
+				
+			modifier = {
+			research_speed_factor = -0.2
+			production_factory_start_efficiency_factor = -0.06
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		jap_economic_backwardness2	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_third_five_year_plan_military
+				
+			removal_cost = -1
+				
+			modifier = {
+			production_factory_start_efficiency_factor = -0.06
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		jap_economic_backwardness3	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_third_five_year_plan_military
+				
+			removal_cost = -1
+				
+			modifier = {
+			research_speed_factor = -0.2
+			}
+		}
+		
+		jap_modern_medical_infrastructure	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = JAP_medical_infrastructure
+				
+			removal_cost = -1
+				
+			modifier = {
+			monthly_population = 0.5
+			conscription_factor = 0.05
+			army_morale_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		jap_currency_transition_period	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			on_remove = {
+                add_ideas = {
+				jap_standardized_currency
+				}
+            }
+		
+			picture = usa_great_depression
+				
+			removal_cost = -1
+				
+			modifier = {
+			trade_opinion_factor = -0.1
+			consumer_goods_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.5 
+			}
+		}
+		
+		jap_standardized_currency	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = NOR_printing_money
+				
+			removal_cost = -1
+				
+			modifier = {
+			industrial_capacity_factory = 0.10
+			production_factory_efficiency_gain_factor = 0.1
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			trade_opinion_factor = 0.1
+			}
+		}
+		
+		jap_tax_reform_period	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			on_remove = {
+                add_ideas = {
+				jap_reformed_tax_system
+				}
+            }
+
+			picture = JAP_upset_farmers
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.05
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+		
+		jap_reformed_tax_system	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = JAP_upset_farmers
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = 0.05
+			consumer_goods_factor = -0.03
+			industrial_capacity_factory = 0.05
+			local_resources_factor = 0.15
+			}
+		}
+		
+		jap_upset_farmers	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			NOT = {
+			has_government = communism
+			}
+			}
+
+			picture = JAP_upset_farmers
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.1
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.1
+			monthly_population = 0.2
+			}
+		}
+		
+		jap_food_shortage	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+
+			}
+
+			picture = raj_risk_of_famine
+				
+			removal_cost = -1
+				
+			modifier = {
+			stability_factor = -0.1
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+			monthly_population = -0.5
+			army_speed_factor = -0.1
+			army_morale_factor = -0.1
+			}
+		}
+		
+		jap_outdated_military	= {
+				
+			allowed_civil_war = {
+                always = yes
+            }
+
+			picture = JAP_outdated_military
+				
+			removal_cost = -1
+				
+            modifier = {
+				army_defence_factor = -0.2
+				army_speed_factor = -0.1
+                army_org_regain = -0.2
+                army_attack_factor = -0.1
+            }
+		}
+		
+		jap_outdated_military2	= {
+				
+			allowed_civil_war = {
+                always = yes
+            }
+
+			picture = JAP_outdated_military
+				
+			removal_cost = -1
+				
+            modifier = {
+				army_defence_factor = -0.1
+				army_speed_factor = -0.05
+                army_org_regain = -0.1
+                army_attack_factor = -0.05
+            }
+		}
+		
+		jap_solidifying_imperial_command = {
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				stability_weekly = 0.002
+			}
+		}
+		#add idea Sonnō jōi Ehret den Kaiser, vertreibt die Barbaren!
+		jap_sonno_joi = {
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			modifier = {
+				weekly_manpower = -250
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.002
+				neutrality_drift = -0.05
+			}
+		}
+		
+		jap_agrarian_society = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = JAP_agrarian_society
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.30
+				conscription_factor = -0.45
+			}
+		}
+		
+		jap_transitional_agricultural_society = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_second_five_year_plan
+				
+			removal_cost = -1
+				
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.15
+				conscription_factor = -0.4
+			}
+		}
+		
+		jap_industrializing_society	= {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_third_five_year_plan
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.1
+				conscription_factor = -0.15	
+			}
+		}
+		
+		jap_industrialized_society = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_third_five_year_plan_civilian
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		jap_heigakko = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_whampoa_military_academy
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_leader_cost_factor = 0.6
+				army_leader_start_level = 1 
+			}
+		}
+		
+		jap_army_academy = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_whampoa_military_academy
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_leader_cost_factor = 0.3
+				army_leader_start_level = 1 
+				army_leader_start_planning_level = 1 
+				army_leader_start_attack_level = 1 
+			}
+		}
+		
+		jap_samurai_spirit = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				conscription = 0.015
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit2 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit3 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.2
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit3b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.1
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit4 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_attack_factor = 0.1
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.3
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit4b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_attack_factor = 0.1
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.2
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit5 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.4
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit5b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.3
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit6 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_core_defence_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				war_stability_factor = 0.5
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 1
+				weekly_manpower = 500 
+				army_morale_factor = 0.4
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_samurai_spirit6b = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SWI_spirit_of_helvetia_passive_war
+				
+			removal_cost = -1
+				
+			modifier = {
+				army_core_defence_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				war_stability_factor = 0.5
+				army_strength_factor = -0.1
+				command_abilities_cost_factor = -0.3
+				army_attack_factor = 0.2
+				research_speed_factor = -0.2
+				line_change_production_efficiency_factor = -0.5
+				drift_defence_factor = 0.1
+				training_time_army_factor = 0.5
+				weekly_manpower = 1000
+				army_morale_factor = 0.3
+				weekly_casualties_war_support = 0.001
+				offensive_war_stability_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+		
+		jap_supporting_korea = {	#ONLY CHINA CAN GET IT IF THEY SUPPORT KOREA IN INVASION
+
+			picture = ast_volunteer_defence_corps
+				
+			removal_cost = -1
+				
+			modifier = {
+				send_volunteers_tension = -1
+			}
+		}
+		
+		jap_kor_minor_concessions_to_japan = {
+
+			picture = great_depression
+				
+			removal_cost = -1
+				
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}
+				
+			modifier = {
+			civilian_factory_use = 1
+			}
+			targeted_modifier = {
+			tag = JAP
+			trade_cost_for_target_factor = -0.25
+			}
+		}
+		
+		jap_kor_major_concessions_to_japan = {
+
+			picture = usa_great_depression_2
+				
+			removal_cost = -1
+				
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}	
+				
+			modifier = {
+			civilian_factory_use = 2
+			}
+			targeted_modifier = {
+			tag = JAP
+			trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		jap_favourable_contracts_with_korea = {
+
+			picture = FIN_finnish_federation_of_trade_unions_light
+				
+			removal_cost = -1
+				
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}	
+				
+			modifier = {
+			consumer_goods_factor = 0.05
+			#civilian_factory_use = -1
+			}
+		}
+		
+		jap_advantageous_contracts_with_korea = {
+
+			picture = FIN_finnish_federation_of_trade_unions_light
+				
+			removal_cost = -1
+			
+			available = {
+			JAP = {
+			NOT = {
+			has_war_with = KOR
+			}
+			}
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.1
+			#civilian_factory_use = -2
+			}
+		}
+		
+		jap_200_ship_plan = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = jap_200_ship_plan
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_dockyard_factor = 0.5 
+				industrial_capacity_dockyard = 0.5
+			}
+			on_remove = {
+			JAP = {
+			country_event = fpw_japan.43
+			}
+            }
+		}
+		
+		jap_200_ship_plan2 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = jap_200_ship_plan
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_dockyard_factor = 0.5 
+				industrial_capacity_dockyard = 0.5
+				production_lack_of_resource_penalty_factor = 0.2
+			}
+			on_remove = {
+			JAP = {
+			country_event = fpw_japan.44
+			}
+            }
+		}
+		
+}
+	hidden_ideas = {
+	
+		fpw_komei = {
+			allowed = {
+			original_tag = JAP	
+			}
+
+			on_add = {
+                set_country_flag = fpw_secondary_leader_jap_komei
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_jap_komei
+            }
+
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = 0.15
+			}
+		}
+		
+		fpw_meiji = {
+			allowed = {
+			original_tag = JAP		
+			}
+			
+			on_add = {
+                set_country_flag = fpw_secondary_leader_jap_meiji
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_jap_meiji
+            }
+
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = 0.15
+			}
+		}
+		
+		jap_unobtainable	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+				
+			removal_cost = -1
+				
+            modifier = {
+
+            }
+		}
+		
+		jap_societal_backlash_1	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.05
+			political_power_factor = -0.03
+            }
+		}
+
+		jap_societal_backlash_2	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.1
+			political_power_factor = -0.06
+            }
+		}
+		
+		jap_societal_backlash_3	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.15
+			political_power_factor = -0.09
+            }
+		}
+		
+		jap_societal_backlash_4	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.20
+			political_power_factor = -0.12
+            }
+		}
+		
+		jap_societal_backlash_5	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.25
+			political_power_factor = -0.15
+            }
+		}
+		
+		jap_societal_backlash_6	= {
+				
+			allowed_civil_war = {
+                has_government = fascism
+            }
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			stability_factor = -0.30
+			political_power_factor = -0.18
+            }
+		}
+		
+		jap_limited_military_mobilization	= {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			
+            }
+		}
+		
+		jap_upset_british_government = {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+			opinion_gain_monthly_factor = -0.85
+            }
+		}
+		
+		jap_bimetallic_standard	= {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+
+            }
+			
+			on_remove = {
+               add_stability = 0.05 
+			   random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+            }
+		}
+		
+		jap_gold_standard = {
+
+				
+			removal_cost = -1
+				
+            modifier = {
+
+            }
+			
+			on_remove = {
+               add_stability = 0.15 
+			   random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            }
+		}
+		
+		jap_feudal_system_hidden	= {
+				
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			removal_cost = -1
+				
+			modifier = {
+
+			}
+			
+			on_remove = {
+               add_stability = 0.15 
+            }
+		}
+		
+		chi_japanese_payment	= {	
+				
+			removal_cost = -1
+				
+			allowed = {
+			always = yes
+			}	
+				
+			modifier = {
+				civilian_factory_use = 1
+			}
+			
+		}
+		
+		}
+}

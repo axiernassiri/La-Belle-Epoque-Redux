@@ -1,0 +1,574 @@
+technologies = {
+	
+	@1860 = 0
+	@1862 = 2
+	@1864 = 4
+	@1866 = 6
+	@1868 = 8
+	@1870 = 10
+	@1872 = 12
+	@1874 = 14
+
+	# Model 1860 Spencer Rifle
+	fpw_infantry_weapons = {
+
+		enable_equipments = {
+			fpw_infantry_equipment_0
+		}
+		enable_equipment_modules = {
+			rifle_weapon_cav
+		}
+		
+		enable_subunits = {
+			infantry
+		}
+		
+		path = {
+			leads_to_tech = fpw_infantry_weapons1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Dreyse Needle Gun(1862)
+	fpw_infantry_weapons1 = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
+				
+		path = {
+			leads_to_tech = fpw_infantry_weapons2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1862
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1862 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	# Yes yes
+	fpw_infantry_weapons2 = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = fpw_improved_infantry_weapons_2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1864
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1864 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	# Yes yes
+	fpw_improved_infantry_weapons_2 = {
+
+		enable_equipments = {
+			fpw_infantry_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = fpw_improved_infantry_weapons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1866
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1866 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Remington Rolling Block Rifle(1867)
+	fpw_improved_infantry_weapons = {
+
+		category_light_infantry = {
+			soft_attack = 0.1
+		}
+		
+		cavalry = {
+			soft_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = fpw_improved_infantry_weapons_3
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 2
+		start_year = 1868
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1868 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	# Yes Yes
+	fpw_improved_infantry_weapons_3 = {
+
+		enable_equipments = {
+			fpw_infantry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = fpw_advanced_infantry_weapons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1870
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1870 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Gras Modell 1874(1874 obv)
+	fpw_advanced_infantry_weapons = {
+
+		enable_equipments = {
+			fpw_infantry_equipment_3
+		}	
+		
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1874
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1874 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			
+			
+			modifier = {
+				tag = PRS
+				factor = 2.5
+			}
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	fpw_support_weapons = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = fpw_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1860
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1860 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fpw_support_weapons2 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = fpw_support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1866
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1866 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	fpw_support_weapons3 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = fpw_support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1868
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1868 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	fpw_support_weapons4 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		research_cost = 1.5
+		start_year = 1870
+		force_use_small_tech_layout = yes
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 0 y = @1870 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+
+	fpw_supply_waggon = {
+		enable_equipments = {
+			fpw_supply_waggon_equipment_0
+		}
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 3 y = -1 }
+		}
+
+		path = {
+			leads_to_tech = fpw_improved_supply_waggon
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cavalry
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > "1866.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1867.1.1"
+			}
+			
+			modifier = {
+				factor = 6
+				date > "1868.1.1"
+			}
+		}
+	}
+
+	fpw_improved_supply_waggon = {
+		enable_equipments = {
+			fpw_supply_waggon_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1864
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 3 y = @1864 }
+		}
+		
+		categories = {
+			cavalry
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				date > "1868.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1869.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1870.1.1"
+			}
+		}
+	}
+
+	fpw_basic_train = {
+		enable_equipments = {
+			train_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1860
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 3 y = -1 }
+		}
+
+		path = {
+			leads_to_tech = fpw_wartime_train
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				num_of_factories > 25
+				factor = 100 #might wanna get on that
+			}
+			modifier = {
+				factor = 1.2
+				date > "1866.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1867.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1868.1.1"
+			}
+		}
+	}
+
+
+	fpw_wartime_train = {
+		enable_equipments = {
+			train_equipment_2
+		}
+
+		research_cost = 1.5
+		start_year = 1866
+		folder = {
+			name = fpw_infantry_folder
+			position = { x = 3 y = @1866 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				has_war = yes
+				factor = 20
+			}
+			modifier = {
+				factor = 1.2
+				date > "1868.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1869.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1870.1.1"
+			}
+		}
+	}
+}

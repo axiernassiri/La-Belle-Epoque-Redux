@@ -1,0 +1,24 @@
+state={
+resources={
+wood=1
+}
+
+	id=864
+	name="STATE_864"
+	provinces={
+		3606 7869 7891 
+	}
+	history = {
+		owner = REU
+		add_core_of = REU
+		1870.1.1 = {
+			owner = CAN
+			add_core_of = CAN
+		}
+	}
+	manpower=5
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
+

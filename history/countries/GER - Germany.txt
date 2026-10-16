@@ -1,0 +1,67 @@
+capital = 64
+oob = "GER_1866"
+
+
+
+
+
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+# starting_truck_buffer = 0.8
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+
+}
+	set_naval_oob = "GER_1866_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+}
+	set_naval_oob = "GER_1866_naval_mtg"
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+
+}
+}
+
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 
+set_war_support = 0.3
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	neutrality = 60
+	communism = 20
+}

@@ -1,0 +1,791 @@
+fpw_launch_unification_germany_cat = {
+	fpw_launch_german_unification_play = {
+		available = {
+			# has won the brotherwar alone or with russia
+			# Austrian Empire has been dissolved
+		}
+
+		visible = {
+			# WIP
+			always = no
+		}
+
+		allowed = {
+			original_tag = PRS
+			has_completed_focus = PRS_habsburg_enemy
+		}
+
+		icon = mission_icon
+		
+		complete_effect = {
+			every_country = { 
+				limit = { 
+					OR = {
+						is_german_minor = yes
+						original_tag = BAD
+						original_tag = WRT
+						original_tag = BAV
+						original_tag = HES
+					}
+				}
+				PRS = {
+					if = {
+						limit = {
+							NOT = {
+								has_war_with = PREV
+							}
+						}
+						declare_war_on = { type = annex_everything target = PREV }
+					}
+				}
+			}
+			BAV = {
+				create_faction = fpw_GERMAN_LEAGUE
+			}
+			every_country = { 
+				limit = { 
+					AND = {
+						OR = {
+							is_german_minor = yes
+							original_tag = BAD
+							original_tag = WRT
+							original_tag = BAV
+							original_tag = HES
+						}
+					}
+				}
+				BAV = {
+					add_to_faction = PREV
+				}
+			}
+		}
+	}
+}
+
+PRS_a_new_constitutional_category = {
+	fpw_constitution_reaffirm_the_peoples_rights = {
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			is_debug = yes
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.04
+			}
+		}
+
+		remove_effect = {
+			add_stability = 0.1
+		}
+	}
+
+	fpw_constitution_new_electorate_system = {
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			is_debug = yes
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+			country_event = prussia_fpw.42
+		}
+
+		remove_effect = {
+		}
+	}
+
+	fpw_constitution_fate_of_the_monarchy = {
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			is_debug = yes
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+			country_event = prussia_fpw.43
+		}
+
+		remove_effect = {
+		}
+	}
+
+	fpw_constitution_new_government_structure = {
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			is_debug = yes
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+		}
+	}
+
+	fpw_constitution_complete_reform = {
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			is_debug = yes
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		#icon = 
+		fire_only_once = yes
+		days_remove = 0
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+		}
+	}
+}
+
+PRS_reform_the_government = {
+	fpw_reform_government = {
+
+		visible = {
+			has_idea = fpw_national_reforms
+		}
+
+		available = {
+			has_idea = fpw_national_reforms
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		icon = GFX_decision_eng_trade_unions_support
+		fire_only_once = no
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			ROOT = {
+				set_country_flag = reforming_government
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = fpw_national_reforms
+		}
+	}
+}
+
+PRS_reform_balance_of_power_category = {
+	PRS_bop_reform_criticize_the_socialist = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = bop_socialist_branch	
+			}
+		}
+
+		available = {
+			has_completed_focus = PRS_unite_the_opposition
+			NOT = {
+				has_decision = PRS_bop_reform_criticize_the_liberals
+			}
+		}
+
+		days_remove = 15
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = bop_democratic_branch_tt
+			set_country_flag = bop_democratic_branch
+			set_country_flag = criticizing_socialist
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.1
+			}
+			clr_country_flag = criticizing_socialist
+			set_country_flag = criticized_socialist
+			set_country_flag = doing_bop
+		}
+	}	
+	PRS_bop_reform_promote_freedom = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = criticizing_socialist
+				has_country_flag = criticized_socialist
+			}	
+		}
+
+		available = {
+			has_country_flag = criticized_socialist
+		}
+
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = promoting_freedom
+		}
+
+		remove_effect = {
+			clr_country_flag = criticized_socialist
+			set_country_flag = promoted_freedom
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.1
+			}
+		}
+	}
+
+	PRS_bop_reform_promise_better_reforms = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = promoting_freedom
+				has_country_flag = promoted_freedom
+			}	
+		}
+
+		available = {
+			has_country_flag = promoted_freedom
+		}
+
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = promising_better_reforms
+		}
+
+		remove_effect = {
+			set_country_flag = completed_better_reforms
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_liberal
+    			value = 0.1
+			}
+			clr_country_flag = promoting_freedom
+			clr_country_flag = promoted_freedom
+		}
+	}
+
+	PRS_bop_the_liberal_front = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = promising_better_reforms
+				has_country_flag = better_reforms
+			}	
+		}
+
+		available = {
+			has_country_flag = completed_better_reforms
+		}
+
+		days_remove = 80
+		fire_only_once = yes
+
+		complete_effect = {
+			clr_country_flag = completed_better_reforms
+		}
+
+		remove_effect = {
+			add_dynamic_modifier = { modifier = fpw_liberal_front }
+			custom_effect_tooltip = bop_set_liberal_complete_tt
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = fpw_popular_front }
+				add_power_balance_value = {
+   					id = PRS_reform_power_balance
+					tooltip_side = PRS_reform_liberal
+    				value = 1.0
+				}
+			}
+		}
+	}
+
+	PRS_bop_reform_criticize_the_liberals = {
+		priority = 99
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = bop_democratic_branch	
+			}
+		}
+
+		available = {
+			has_completed_focus = PRS_unite_the_opposition
+			#activate_decision = 
+		}
+
+		days_remove = 15
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = bop_socialist_branch_tt
+			set_country_flag = criticizing_liberals
+			set_country_flag = bop_socialist_branch
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_socialist
+    			value = -0.1
+			}
+			set_country_flag = doing_bop
+			clr_country_flag = criticizing_liberals
+			set_country_flag = criticized_liberals
+		}
+	}
+
+	PRS_bop_reform_officialize_the_movement = {
+		priority = 98
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = criticizing_liberals
+				has_country_flag = criticized_liberals
+			}
+		}
+
+		available = {
+			has_country_flag = criticized_liberals
+		}
+
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = officializing_movement
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				recruit_character = PRS_august_bebel
+			}
+			retire_ideology_leader = communism
+    		add_country_leader_role = {
+        		character = PRS_august_bebel
+        		promote_leader = yes
+        		country_leader = {
+            		ideology = socialist_semi_constitutional_monarchism
+            		traits = { }
+        		}
+    		}
+			set_party_name = {
+    			ideology = communism
+				name = PRS_socialist_party
+    			long_name = PRS_socialist_party_long
+			}
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_socialist
+    			value = -0.1
+			}
+			clr_country_flag = officializing_movement
+			set_country_flag = officilized_movement
+		}
+	}
+
+	PRS_bop_reform_promise_land_and_bread = {
+		priority = 97
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = officializing_movement
+				has_country_flag = officilized_movement
+			}
+		}
+
+		available = {
+			has_country_flag = officilized_movement
+		}
+
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = promising_land_and_bread
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+   				id = PRS_reform_power_balance
+				tooltip_side = PRS_reform_socialist
+    			value = -0.1
+			}
+			clr_country_flag = promising_land_and_bread
+			set_country_flag = promised_land_and_bread
+		}
+	}
+
+	PRS_bop_reform_socialist_front = {
+		priority = 96
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = promising_land_and_bread
+				has_country_flag = promised_land_and_bread
+			}
+		}
+
+		available = {
+			has_country_flag = promised_land_and_bread
+		}
+
+		days_remove = 80
+		fire_only_once = yes
+
+		complete_effect = {
+			clr_country_flag = promised_land_and_bread
+		}
+
+		remove_effect = {
+			add_dynamic_modifier = { modifier = fpw_socialist_front }
+			custom_effect_tooltip = bop_set_socialist_complete_tt
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = fpw_popular_front }
+				add_power_balance_value = {
+   					id = PRS_reform_power_balance
+					tooltip_side = PRS_reform_socialist
+    				value = -1.0
+				}
+			}
+		}
+	}
+}
+
+fpw_mass_urbanization_projects = {
+	PRS_develop_berlin = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 64
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			64 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 12
+	            }
+				add_resource = {
+		            type = wood
+		            amount = 30
+	            }
+			}
+		}
+	}
+
+	PRS_develop_essen = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 981
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			981 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 25
+	            }
+			}
+		}
+	}
+
+	PRS_develop_konigsberg = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 763
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			763 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = steel
+		            amount = 10
+	            }
+				add_resource = {
+		            type = wood
+		            amount = 20
+	            }
+			}
+		}
+	}
+
+	PRS_develop_Dresden = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 65
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			65 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = tungsten
+		            amount = 20
+	            }
+			}
+		}
+	}
+
+	PRS_develop_Dresden = {
+		priority = 100
+		#icon =
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			controls_state = 65
+		}
+
+		days_remove = 75
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			65 = {
+				add_extra_state_shared_building_slots = 5
+         		add_building_construction = {
+            		type = industrial_complex
+            		level = 1
+           			instant_build = yes
+				}
+				add_building_construction = {
+            		type = arms_factory
+            		level = 1
+           			instant_build = yes
+				}
+				add_resource = {
+		            type = tungsten
+		            amount = 20
+	            }
+			}
+		}
+	}
+}

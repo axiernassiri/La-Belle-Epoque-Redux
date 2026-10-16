@@ -1,0 +1,23 @@
+
+state={
+	id=699
+	name="STATE_699"
+
+	history={
+		owner = MOR
+		add_core_of = WES
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		2080 2081 2088 2094 2096 2100 2115 2120  
+	}
+	manpower=10949
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

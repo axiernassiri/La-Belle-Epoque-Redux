@@ -1,0 +1,42 @@
+capital = 8
+oob = "LUX_1866"
+
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+set_party_name = { # for victor de dornaco as he was independent
+    ideology = democratic
+    name = independent_party
+	long_name = independent_party
+}
+
+set_war_support = 0.1
+set_stability = 0.8
+
+recruit_character = LUX_victor_de_tornaco
+
+
+
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.6.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 92
+	neutrality = 3
+	communism = 5
+}
+

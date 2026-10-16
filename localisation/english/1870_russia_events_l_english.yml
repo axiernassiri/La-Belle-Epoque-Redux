@@ -1,0 +1,235 @@
+﻿l_english:
+ ## Russian Events
+
+ russia_fpw.1.t: "Reforms Continue"
+ russia_fpw.1.d: "Tsars Alexanders reforms have proved quite succesful. Let's continue this endeavor to a better future."
+ russia_fpw.1.a: "Let's improve the Empire"
+ russia_fpw.2.t: "More Radical Changes"
+ russia_fpw.2.d: "Tsars Alexanders reforms have proved quite succesful but not enough. Let's continue this endeavor and make some more radical changes."
+ 
+ russia_fpw.3.t: "Selling Alaska"
+ russia_fpw.3.d: "Today our Tsar has dicided too offer the white house of the United Staates, the purchase of Russian Alaska for 4 million dollars, he explained that the not Asian part of russia isn't profitable enough as also ethnical not Russian enough to longer hold on to , the Tsar also explained if the US woould agree to buy Alaska he would put the Money we gained in 1 year into our economy"
+ russia_fpw.3.a: "Send an envoy to the USA"
+ russia_fpw.3.b: "What about Lichtenstein? \n§RThis decision does nothing right now!§!
+ 
+ russia_fpw.4.t: "Russia Wants to Sell Us Alaska"
+ russia_fpw.4.d: "Today we got an offer from the Russian Tsar to buy Alaska, it would cost us round about 4 million US $ but we would gain the whole peninsula of Alaska, the good thing is, it is unexplored and could treasure many ores , also it would give us the chance to pressure the Canadians aswell as giving us more power over the uper Pacific-ocean , the bad thing is, it is unexplored we need to build every thing on our own and no one can say if it has any good resources that would make it worth to buy these lands , aswell as it is freezing cold up there and the culture and language of the people living there is also totally different to ours, is it worth hurting our economy with 4 million $"
+ russia_fpw.4.a: "That's a steal!"
+ russia_fpw.4.b: "No thank you..."
+ 
+ russia_fpw.5.t: "USA Buys Alaska"
+ russia_fpw.5.d: "After long discusions the US came to a conclusion, they excepted the offering of the Tsar and were ready to pay us the 4 million US$, this will help our economie greatly, as we got the papers from the White house that they excepted the offer the Tsar started right away he told his ministers that the money should be invested right away in the economy in less than a year, many people without jobs will now get some, and that all only because of an big chunk empty land .. or ... , long live the Tsar"
+ russia_fpw.5.a: "Great deal...?"
+ 
+ russia_fpw.6.t: "USA Rejects the Offer"
+ russia_fpw.6.d: "Today we recived a paper from the US government , after long discusions they dicided to not buy our land in Alaska , the Tsar told our people he will make this land profitable and show the Amerikans what they lost, right after that he told his ministers they shall put a troop together to explore Alaska and search for ores  as well integreating the Alaskan people into our Russian Ideology , Ethnicity and language"
+ russia_fpw.6.a: "Shame..."
+ 
+ russia_fpw.7.t: "Russo-German Relations"
+ russia_fpw.7.d: "Relations of [SOV.GetNameDef] with german countries are very mixed. While our relations with [PRS.GetName] are good, the Austrians have betrayed us and we cannot trust those bastard."
+ russia_fpw.7.a: "We'll see what the future holds"
+ 
+ russia_fpw.8.t: "Russian Economic Situation"
+ russia_fpw.8.d: "While the rest of europe is industrializing we are far behind them, having abolished serfdom only a couple years ago. We must catch up to the west and surpass them to be a full great power again."
+ 
+ russia_fpw.9.t: "Writing the First Russian Constitution"
+ russia_fpw.9.d: "After year of being a backwards country it's time we modernize and finally establish a All-Russian constitution"
+ russia_fpw.9.a: "Let's begin the process!"
+ russia_fpw_9_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§!"
+ 
+ russia_fpw.10.t: "Civilian Administration"
+ russia_fpw.10.d: "We must reform our civilian administration to make sure it can handle all the new changes in our state."
+ russia_fpw.10.a: "Let's move on"
+ russia_fpw_10_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nPolitical Advisor Cost: §G-10%§!"
+ 
+ russia_fpw.11.t: "Military Administration"
+ russia_fpw.11.d: "In our reformed state the Army cannot hold as much levy as it has now. A reshuffling of the high command from time to time should keep them in check."
+ russia_fpw_11_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nWar Support: §G+2.00%§! \nHigh Command Cost: §G-10%§!"
+ 
+ russia_fpw.12.t: "Tsars Position"
+ russia_fpw.12.d: "Our Great Tsar has started this whole process and without him we wouldn't be here. He agreed to become a constitutional monarch under the condition that he would still have a great amount of levy in Russian affairs."
+ russia_fpw.12.a: "Tsar must be kept!"
+ russia_fpw_12_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nWar Support: §G+2.00%§! \nDaily Support for Authoritarianism: §G+0.01§! "
+ 
+ russia_fpw.13.t: "Leanings of the Constitution"
+ russia_fpw.13.d: "There are two powerful factions backing the constitution Conservative 'Slavophiles' and Liberal 'Westerners'. Those two both have very different ideas how the our new constitution should look. On whose side we will stand?"
+ 
+ russia_fpw.13.a: "We must keep our conservative vaules!"
+ russian_constitution_conservative_tp: "§YThe Conservative public will be pleased§!"
+ russia_fpw_13_effect_a: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nDaily Conservative Support: §G+0.03§!"
+ 
+ russia_fpw.13.b: "Liberalism is the way forward!"
+ russian_constitution_liberal_tp: "§YThe Liberal public will be pleased§!\n§RThe Conservative public will be disgruntled. \nIt may have consequences! (WIP)§!"
+ russia_fpw_13_effect_b: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §R-2.00%§! \nDaily Liberal Support: §G+0.03§!"
+ 
+ russia_fpw.14.t: "Finishing the Constitution"
+ russia_fpw.14.d: "With the completion of this constitution Russia can officially call it self a modern nation. We're not politicaly backwards any more!"
+ russia_fpw.14.a: "The hard work is done!"
+ russia_fpw_14_effect: "Modify §Y$SOV_first_constitution_dynamic_modifier$§! by \nDaily Political Power Gain: §G+0.05§! \nStability: §G+2.00%§! \nWar Support: §G+2.00%§! \nDefensive War Penalty Stability Modifier: §G+20.00%§!"
+ 
+ russia_fpw.15.t: "Russian Military Situation"
+ russia_fpw.15.d: "While our military is not much worse than the western ones the rapidly evolving doctrine of warfare means that if we don't reform it we will quickly find ourselfs behind the rest of europe"
+ 
+ russia_fpw.16.t: "Russia Proposes a Friendship Treaty"
+ russia_fpw.16.d: "Today a ambasador from [SOV.GetNameDef] came to us with a intresting proposal. The [SOV.GetAdjective] government wants us to sign a mutual friendship treaty, that will include a point about non agression"
+ russia_fpw.16.a: "What a lovely proposal"
+ russia_fpw.16.b: "Ignore them"
+ 
+ russia_fpw.17.t: "Berlin Agrees"
+ russia_fpw.17.d: ""
+ russia_fpw.17.a: "YEY!"
+ 
+ russia_fpw.18.t: "Some Russification Info"
+ russia_fpw.18.d: "Your main goal should be increasing the §Glevel of russification§! in each region (or decreasing it if you took the wholesome empire path. I love you if you did <3). Note that these regions are not entirely historicly accurate.\nEvery decision you take, appart from changing the level of russification, will also affect two different values §RAgitation§! and §CCooperation§!.\n\nAgitation represents how strongly the population opposes your moves. If it gets high enough it will grant you a debuff towards increasing russification, and if it gets to 100% it will cause an uprising to happen in that region (that means if you want to play as a russia occupied nation you must get the agitation of that region to 100%).\n\nCooperation on the other hand mean, you guessed it, the willingness of the population to cooperation. Similarly to agitation, but not quite, if high enough it will grant you a buff towards gaining russification.\n\n\nTLDR; Russification - High(if wholesome empire then Low), Agitation - Low, Cooperation - High \nIf you want to play as a break away nation, take the agitation to 100%"       
+ russia_fpw.18.a: "Understood"
+ russia_fpw.18.b: "Nah, I ain't reading all of that"
+ 
+ russia_fpw.19.t: "Polish Uprising"
+ russia_fpw.19.d: ""
+ russia_fpw.19.a: "Crush Them!"
+ russia_fpw.19.b: "For Independence!"
+ 
+ russia_fpw.20.t: "Finnish Uprising"
+ russia_fpw.20.d: ""
+ russia_fpw.20.a: "Crush Them!"
+ russia_fpw.20.b: "For Independence!"
+ 
+ russia_fpw.21.t: "Ukrainian Uprising"
+ russia_fpw.21.d: ""
+ russia_fpw.21.a: "Crush Them!"
+ russia_fpw.21.b: "For Independence!"
+ 
+ russia_fpw.22.t: "Belarusian Uprising"
+ russia_fpw.22.d: ""
+ russia_fpw.22.a: "Crush Them!"
+ russia_fpw.22.b: "For Independence!"
+ 
+ russia_fpw.23.t: "Baltic States Uprising"
+ russia_fpw.23.d: ""
+ russia_fpw.23.a: "Crush Them!"
+ russia_fpw.23.b: "For Estonia!"
+ russia_fpw.23.c: "For Latvia!"
+ russia_fpw.23.e: "For Lithuania!"
+ 
+ russia_fpw.24.t: "Caucasian States Uprising"
+ russia_fpw.24.d: ""
+ russia_fpw.24.a: "Crush Them!"
+ russia_fpw.24.b: "For Georgia!"
+ russia_fpw.24.c: "For Armenia!"
+ russia_fpw.24.e: "For Azerbaijan!"
+ 
+ russia_fpw.25.t: "Russia Offers Allience for Galicia"
+ russia_fpw.25.d: ""
+ russia_fpw.25.a: "We need theirs protection"
+ russia_fpw.25.b: "We can't trust them"
+ 
+ russia_fpw.26.t: "Austria Accepts"
+ russia_fpw.26.d: ""
+ russia_fpw.26.a: "A new age in our relations"
+ 
+ russia_fpw.27.t: "Austria Rejects Our Proposal"
+ russia_fpw.27.d: ""
+ 
+ russia_fpw.28.t: "Alaska... Useful?"
+ russia_fpw.28.d: "We found some resources there like oil and tungsten!"
+ russia_fpw.28.a: "What a pleasent suprise!"
+ 
+ russia_fpw.29.t: "Russia Demands Liaodong Peninsula"
+ russia_fpw.29.d: ""
+ russia_fpw.29.a: "We need their protection"
+ russia_fpw.29.b: "We can't trust them"
+ 
+ russia_fpw.30.t: "China Gives In"
+ russia_fpw.30.d: ""
+ russia_fpw.30.a: "Great"
+ 
+ russia_fpw.31.t: "China Stands Defiant"
+ russia_fpw.31.d: ""
+ russia_fpw.31.b: "We will crush them in no time!"
+ 
+ russia_fpw.32.t: "Assassination Attempt on the Tsar"
+ russia_fpw.32.d: ""
+ russia_fpw.32.a: "Thank God he's fine"
+ russia_fpw.32.b: "What a tragedy!"
+ russia_news_fpw.32.t: "Assassination Attempt on Alexander II"
+ russia_news_fpw.32.d: ""
+ russia_news_fpw.32.a: "Thank God he's fine"
+ 
+ russia_fpw.33.t: "The Serfdom Question"
+ russia_fpw.33.d: "Should we continue with Tsars Alexanders plans of dismantling serfdom... or shall we bring it back...?"
+ russia_fpw.33.a: "Continue, we don't want a peasent revolt"
+ russia_fpw.33.a.effect: "$SOV_modify_sr_ns_intro$ \nConsumer Goods Factories: §Y+15.0%§! \nMax Factories in a State: §G+20.00%§! \nProduction Efficiency Cap: §G+25.00%§! \nResource Gain Efficiency: §G+10.00%§! \n\n"
+ russia_fpw.33.b: "Serfdom existed for a reason!"
+ 
+ russia_fpw.34.t: "Russia Proposes an Allience"
+ russia_fpw.34.d: "With the recent changes in the Russian government, so did change their forign policies. The new military regime took a hard anti-habsburg stance and wants us to form an allience directed at the Austrians. Should we agree?"
+ russia_fpw.34.a: "Join them"
+ russia_fpw.34.b: "We don't want to alienate our german brothers"
+ 
+ russia_fpw.35.t: "Prussia Agrees"
+ russia_fpw.35.d: "Prussia joins our anti-habsburg allience"
+ SOV_ANTI_HABSBURG_ALLIENCE: "Anti-Habsburg Allience"
+ 
+ russia_fpw.36.t: "Prussia Rejects"
+ russia_fpw.36.d: "Prussia doesn't want to join us"
+ 
+ russia_fpw.37.t: "Russia Wants To Sign a Friendship Treaty"
+ russia_fpw.37.d: ""
+ russia_fpw.37.a: "Finaly some good news from Russia"
+ russia_fpw.37.b: "We won't sign anything"
+ 
+ russia_fpw.38.t: "[ENG.GetName] Accepts"
+ russia_fpw.38.d: ""
+ russia_fpw.38.a: "To the Treaty of the Two Empires!"
+ 
+ russia_fpw.39.t: "[ENG.GetName] Rejects"
+ russia_fpw.39.d: ""
+ russia_fpw.39.a: "Well, we tried"
+ 
+ russia_fpw.40.t: "[SOV.GetName] Demands Galicia"
+ russia_fpw.40.d: "Today the Russian delegation came to us demanding the transfer of the Galician teritorries mostly inhabited by poles and ukrainians. They said that if we do not give them the teritorries they will have to prepare a 'Special Military Operation'."
+ russia_fpw.40.a: "We must accept"
+ russia_fpw.40.b: "Never!"
+ 
+ russia_fpw.41.t: "[AUS.GetName] Folds"
+ russia_fpw.41.d: ""
+ russia_fpw.41.a: "Ah, Victory!"
+ 
+ russia_fpw.42.t: "[ENG.GetName] Rejects"
+ russia_fpw.42.d: ""
+ russia_fpw.42.a: "Shame"
+ 
+ peace_poland_uprising_tt: "§YPoland§! has won the uprising and it's §Yindependence§!."
+ peace_finland_uprising_tt: "§YFinland§! has won the uprising and it's §Yindependence§!."
+ peace_ukraine_uprising_tt: "§YUkraine§! has won the uprising and it's §Yindependence§!."
+ peace_belarus_uprising_tt: "§YBelarus§! has won the uprising and it's §Yindependence§!."
+ peace_lithuania_uprising_tt: "§YLithuania§! has won the uprising and it's §Yindependence§!."
+ peace_latvia_uprising_tt: "§YLatvia§! has won the uprising and it's §Yindependence§!."
+ peace_estonia_uprising_tt: "§YEstonia§! has won the uprising and it's §Yindependence§!."
+ peace_georgia_uprising_tt: "§YGeorgia§! has won the uprising and it's §Yindependence§!."
+ peace_armenia_uprising_tt: "§YArmenia§! has won the uprising and it's §Yindependence§!."
+ peace_azerbaijan_uprising_tt: "§YAzerbaijan§! has won the uprising and it's §Yindependence§!."
+ 
+ russia_fpw.43.t: "Admitting Defeat"
+ russia_fpw.43.d: "Should we admit our defeat against the poles?"
+ russia_fpw.43.a: "Let's make peace..."
+ russia_fpw.44.d: "Should we admit our defeat against the finns?"
+ russia_fpw.45.d: "Should we admit our defeat against the ukrainians?"
+ russia_fpw.46.d: "Should we admit our defeat against the belarusians?"
+ russia_fpw.47.d: "Should we admit our defeat against the baltics?"
+ russia_fpw.48.d: "Should we admit our defeat against the caucasians?"
+ 
+ russia_fpw.49.t: "[FROM.GetName] Declares Independence!"
+ russia_fpw.49.d: "Our subject [FROM.GetName] has declared independence. How should we respond?"
+ russia_fpw.49.a: "Leave them be."
+ russia_fpw.49.b: "This means War!"
+ 
+ russia_fpw.50.t: "[SOV.GetName] Abandons Us!"
+ russia_fpw.50.d: ""
+ russia_fpw.50.a: "Great!"
+ 
+ russia_fpw.1000.t: "Seeking Peace With [SOV.GetName]"
+ russia_fpw.1000.d: "After capturing [195.GetName] and [219.GetName] we think it's time to demands peace."
+ russia_fpw.1000.a: "Let's send our demands"
+ 
+ 

@@ -1,0 +1,38 @@
+add_namespace = fpw_ottoman
+
+country_event = {
+	id = fpw_ottoman.1
+	title = ottoman_fpw.1.t
+	desc = ottoman_fpw.1.d
+	
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	option = {
+		name = fpw_ottoman.1.a
+		ai_chance =  {factor = 100}
+		182 = {
+			set_demilitarized_zone = yes
+		}
+		set_global_flag = TUR_cretan_revolt
+		add_ideas = fpw_TUR_revolt_in_crete
+	}
+}
+country_event = {
+	id = fpw_ottoman.2
+	title = ottoman_fpw.2.t
+	desc = ottoman_fpw.2.d
+	
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	option = {
+		name = fpw_ottoman.2.a
+		ai_chance =  {factor = 100}
+		add_stability = -0.05
+		add_war_support = -0.05
+		
+	}
+}

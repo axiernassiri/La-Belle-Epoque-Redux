@@ -1,0 +1,38 @@
+
+state={
+resources={
+wood=2
+}
+
+	id=87
+	name="STATE_87"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			9546 1 
+		}
+		add_core_of = POL
+		1939.1.1 = {
+			buildings = {
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		584 6401 9439 9546 11515 
+	}
+	manpower=1368640
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
+

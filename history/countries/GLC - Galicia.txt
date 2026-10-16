@@ -1,0 +1,46 @@
+capital = 171
+oob = "GLC_1866"
+
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+}
+
+
+
+set_convoys = 20
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 93
+	neutrality = 3
+	communism = 4
+}
+
+
+
+create_country_leader = {
+	name = "Alfonso Daniel Castelao"
+	picture = GFX_portrait_Alfonso_Daniel_Castelao
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+
+
+
+create_country_leader = {
+	name = "Santiago Casares Quiroga"
+	picture = GFX_portrait_Santiago_Casares_Quiroga
+	expire = "1965.1.1"
+	ideology = centrism
+}

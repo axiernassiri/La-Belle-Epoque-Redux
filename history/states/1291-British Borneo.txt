@@ -1,0 +1,30 @@
+
+state={
+	id=1148
+	name="STATE_333"
+	resources={
+
+		oil=12.000
+	
+
+wood=1
+}
+
+	history={
+	set_variable = { tribal = 333 }
+		owner = TRB
+		add_core_of = TRB
+		
+		
+		
+		add_core_of = MAL
+
+	}
+
+	provinces={ 7387 }
+	manpower=24576
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
+

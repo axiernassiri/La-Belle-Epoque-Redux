@@ -1,0 +1,96 @@
+bookmarks = {
+	bookmark = {
+		name = "1870_NAME"
+		desc = "1870_DESC"
+		date = 1870.1.1.12
+		picture = "GFX_select_date_1939"
+		default_country = "PRS"
+
+		"FRA"={
+			history = "FRA_1870_DESC"
+			ideology = fascism
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+	
+		"ENG"={
+			history = "ENG_1866_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		
+
+		"ITA"={
+			history = "ITA_1870_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"PRS"={
+			history = "PRS_1870_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+				PRS_heil_dir_im_siegerkranz
+			}
+		}
+
+		"AUS"={
+			history = "AUS_1870_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"CHI"={			
+			history = "CHI_1866_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SOV"={
+			history = "SOV_1866_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"USA"={
+			history = "USA_1866_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

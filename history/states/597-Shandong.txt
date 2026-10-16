@@ -1,0 +1,52 @@
+state=
+{
+	id=597
+	name="STATE_597"
+	manpower = 19954064
+	state_category = town
+	
+	
+	history=
+	{
+		owner = NIA
+		add_core_of = CHI
+		add_core_of = NIA
+		victory_points = {
+			1069 5
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			4205 = {
+				naval_base = 2
+			}
+		}
+
+		1866.1.1 = {
+			CHI = {
+				set_province_controller = 11962
+				set_province_controller = 7189
+				set_province_controller = 1069
+				set_province_controller = 1084
+				set_province_controller = 10102
+				set_province_controller = 12093
+				set_province_controller = 4089
+				set_province_controller = 12074
+				set_province_controller = 1184
+				set_province_controller = 7105
+				set_province_controller = 1104
+				set_province_controller = 1200
+				set_province_controller = 10018
+				set_province_controller = 4186
+				set_province_controller = 4205
+
+			}
+
+		}
+	}
+	provinces={
+		1069 1084 1104 1124 1154 1184 1200 4037 4071 4089 4157 4181 4186 4205 7055 7089 7105 7160 7189 9971 9987 10018 10043 10072 10102 11933 11962 12015 12045 12069 12074 12093 
+	}
+
+	local_supplies=4.0 
+}

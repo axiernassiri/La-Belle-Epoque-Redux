@@ -1,0 +1,59 @@
+capital = 107
+oob = "SER_1866"
+
+set_research_slots = 3
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+}
+
+
+
+
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+
+}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+}
+}
+
+
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 15
+	fascism = 19
+	communism = 5
+	neutrality = 61
+}
+set_stability = 0.6
+
+create_country_leader = {
+	name = "Mihailo Obrenovic"
+	desc = ""
+	picture = GFX_portrait_SER_prince
+	expire = "1965.1.1"
+	ideology = aboslute_monarchy
+	traits = {
+	}
+}

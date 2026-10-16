@@ -1,0 +1,26 @@
+
+state={
+	id=461
+	name="STATE_461"
+	resources={
+	}
+
+	history={
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		697 992 1013 1028 1037 1041 1057 13361 13393 13541 13587 13753 13896 14171 
+	}
+	manpower=1662814
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

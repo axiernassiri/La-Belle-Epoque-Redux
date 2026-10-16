@@ -1,0 +1,219 @@
+characters={
+
+	ENG_victoria={
+		name=ENG_victoria
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_victoria
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			traits = { popular_queen }
+			id=-1
+		}
+	}
+
+	ENG_george_odger={
+		name=ENG_george_odger
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_george_odger
+			}
+		}
+		country_leader={
+			ideology=communism_subideology
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	ENG_karl_marx={
+		name=ENG_karl_marx
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_karl_marx
+			}
+		}
+		country_leader={
+			ideology=communism_subideology
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	
+	ENG_john_russell={
+		name=ENG_john_russell
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/eng_john_russel.png"
+			}
+		}
+		country_leader={
+			ideology=liberal_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	
+	ENG_edward_smith-stanley={
+		name=ENG_edward_smith-stanley
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_edward_smith-stanley
+			}
+		}
+		country_leader={
+			ideology=conservative_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	ENG_william_gladstone={
+		name=ENG_william_gladstone
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_william_gladstone
+			}
+		}
+		country_leader={
+			ideology=liberal_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+
+	ENG_benjamin_disraeli={
+		name=ENG_benjamin_disraeli
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_benjamin_disraeli
+			}
+		}
+	}
+	ENG_matthew_arnold = { 
+		name = ENG_matthew_arnold
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_matthew_arnold"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = matthew_arnold
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_support_social_critics
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_liberal_critic
+			}
+		}
+		
+	}
+	ENG_william_stanley_jevons = { 
+		name = ENG_william_stanley_jevons
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_william_stanley_jevons"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = william_stanley_jevons
+			allowed = {
+				original_tag = ENG
+				NOT = { has_completed_focus = ENG_undermine_the_government }
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				economic_reformer
+			}
+		}
+		
+	}
+	ENG_charles_darwin = { 
+		name = ENG_charles_darwin
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_charles_darwin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = charles_darwin
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_evolutionary_biologst
+			}
+		}
+		
+	}
+	ENG_engels = { 
+		name = ENG_engels
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_engels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = engels
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_undermine_the_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fpw_communist_philosopher
+			}
+		}
+		
+	}
+	ENG_charles_dickens = { 
+		name = ENG_charles_dickens
+		portraits = {
+			civilian = {
+				small="GFX_idea_ENG_charles_dickens"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = charles_dickens
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+		
+	}
+}

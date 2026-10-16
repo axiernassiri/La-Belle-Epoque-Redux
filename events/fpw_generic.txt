@@ -1,0 +1,111 @@
+add_namespace = fpw_generic
+
+# colonization finished
+country_event = {
+	id = fpw_generic.1
+	title = fpw_generic.1.t
+	desc = fpw_generic.1.d
+	picture = GFX_fpw_report_event_002
+
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_generic.1.a 
+		custom_override_tooltip = {
+			tooltip = x
+
+			set_temp_variable = { tribal_id = FROM.FROM.tribal }
+
+			every_state = {
+				limit = {
+					check_variable = { THIS.tribal = tribal_id }
+					NOT = {	
+						has_state_flag = can_be_integrated # In a shared region scenario both would need to finish
+					}
+					OR = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+				}
+				set_state_flag = can_be_integrated
+			}
+		}
+	}
+}
+
+# invite to faction
+country_event = {
+	id = fpw_generic.2
+	title = fpw_generic.2.t
+	desc = fpw_generic.2.d
+	picture = GFX_report_event_germany_politician_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			base = 50 
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = 50
+				is_historical_focus_on = no
+			}
+		}
+		name = fpw_generic.2.a 
+		if = {
+			limit = {
+				is_in_faction = yes
+			}
+			leave_faction = yes
+			FROM = {
+				add_to_faction = PREV
+				country_event = fpw_generic.3
+			}
+		}
+	}
+
+	option = {
+		name = fpw_generic.2.b
+		ai_chance = {
+			base = 50 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		FROM = {
+			country_event = fpw_generic.4
+		}
+	}
+}
+
+# accepted
+country_event = {
+	id = fpw_generic.3
+	title = fpw_generic.3.t
+	desc = fpw_generic.3.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_generic.3.a 
+	}
+}
+
+# declined
+country_event = {
+	id = fpw_generic.4
+	title = fpw_generic.4.t
+	desc = fpw_generic.4.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_generic.4.a 
+	}
+}

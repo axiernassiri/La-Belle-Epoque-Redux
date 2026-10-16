@@ -1,0 +1,26 @@
+state={
+	id=907
+	name="STATE_907"
+	manpower = 3356530
+	state_category=large_city
+
+	history={
+		owner = EGY
+		add_core_of = EGY
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 2
+		}
+		victory_points = {
+			7985 20 
+		}
+
+	}
+	provinces={
+		7980 7985 9986 9964 9962 13239
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

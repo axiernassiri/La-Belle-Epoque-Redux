@@ -1,0 +1,332 @@
+AUS_increse_hungarian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_hungary_hostile
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_hungary_hostile
+				add_idea = AUS_hungary_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_increse_hungraian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_hungary_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_hungary_neutral
+				add_idea = AUS_hungary_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_increse_hungraian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_hungary_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_hungary_friendly
+				add_idea = AUS_hungary_loyal
+			}
+		}
+		custom_effect_tooltip = AUS_increse_hungraian_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_hungarian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_hungary_loyal
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_hungary_loyal
+				add_idea = AUS_hungary_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_hungraian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_hungary_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_hungary_friendly
+				add_idea = AUS_hungary_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_hungraian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_hungary_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_hungary_neutral
+				add_idea = AUS_hungary_hostile
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_hungraian_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+AUS_increse_czech_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_czech_hostile
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_czech_hostile
+				add_idea = AUS_czech_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_increse_czech_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_czech_neutral
+				add_idea = AUS_czech_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_increse_czech_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_czech_friendly
+				add_idea = AUS_czech_loyal
+			}
+		}
+		custom_effect_tooltip = AUS_increse_czech_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_czech_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_czech_loyal
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_czech_loyal
+				add_idea = AUS_czech_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_czech_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_czech_friendly
+				add_idea = AUS_czech_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_czech_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_czech_neutral
+				add_idea = AUS_czech_hostile
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_czech_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+AUS_increse_galician_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_galicia_hostile
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_galicia_hostile
+				add_idea = AUS_galicia_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_increse_galician_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_galicia_neutral
+				add_idea = AUS_galicia_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_increse_galician_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_galicia_friendly
+				add_idea = AUS_galicia_loyal
+			}
+		}
+		custom_effect_tooltip = AUS_increse_galician_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_galician_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_galicia_loyal
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_galicia_loyal
+				add_idea = AUS_galicia_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_galician_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_galicia_friendly
+				add_idea = AUS_galicia_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_galician_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_galicia_neutral
+				add_idea = AUS_galicia_hostile
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_galician_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+AUS_increse_illyrian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_illyria_hostile
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_illyria_hostile
+				add_idea = AUS_illyria_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_increse_illyrian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_illyria_neutral
+				add_idea = AUS_illyria_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_increse_illyrian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_illyria_friendly
+				add_idea = AUS_illyria_loyal
+			}
+		}
+		custom_effect_tooltip = AUS_increse_illyrian_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_illyrian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_illyria_loyal
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_illyria_loyal
+				add_idea = AUS_illyria_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_illyrian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_illyria_friendly
+				add_idea = AUS_illyria_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_illyrian_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_illyria_neutral
+				add_idea = AUS_illyria_hostile
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_illyrian_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}

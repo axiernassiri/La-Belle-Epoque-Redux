@@ -1,0 +1,20 @@
+
+state={
+	id=781
+	name="STATE_781"
+
+	history={
+	set_variable = { tribal = 781 }
+		owner = NGA
+		add_core_of = NGA
+		
+		
+
+	}
+
+	provinces={ 13327 13384 13564 13725 13749 14372 14375 14384 14390 }
+	manpower=32156
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}

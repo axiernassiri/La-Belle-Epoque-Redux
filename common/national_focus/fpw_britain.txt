@@ -1,0 +1,2048 @@
+focus_tree = {
+	id = british_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 6000 y = 1200}
+
+
+	focus = {
+		id = ENG_continue_colonization_around_the_world
+		icon = GFX_focus_eng_global_defense
+		x = 55
+		y = 0
+		cost = 7.25
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = ENG_turn_to_the_west
+		icon = GFX_focus_BRA_north_and_south_america
+		x = -7
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+		}
+		
+		completion_reward = {		
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_turn_to_the_east
+		icon = GFX_focus_usa_focus_on_asia
+		x = 9
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+		}
+		
+		completion_reward = {
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_indian_focus
+		icon = GFX_focus_ENG_india
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_turn_to_the_east }
+		relative_position_id = ENG_turn_to_the_east
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = 10
+					localization = "Indian Focus"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_reinforce_land_revenue_system
+		icon = GFX_unknown
+		x = -1
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_trade }
+		relative_position_id = ENG_indian_trade
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_ideas = fpw_eng_land_revenue_system
+			}
+			add_ideas = fpw_eng_land_revenue_system_benefit
+		}
+	}
+	focus = {
+		id = ENG_build_infastructure_in_india
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_reinforce_land_revenue_system }
+		relative_position_id = ENG_indian_trade
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				swap_ideas = {
+					remove_idea = fpw_eng_resource_exploitation
+					add_idea = fpw_eng_resource_exploitation_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_indian_trade
+		icon = GFX_focus_generic_british_trade
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_focus }
+		relative_position_id = ENG_indian_focus
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_ideas = fpw_eng_resource_exploitation
+			}
+		}
+	}
+	focus = {
+		id = ENG_supression_of_indian_freedom
+		icon = GFX_focus_supress_india
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_focus }
+		relative_position_id = ENG_indian_focus
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = -20
+					localization = "Supression of Freedom"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_increase_indian_garrisons
+		icon = GFX_unknown
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_supression_of_indian_freedom }
+		relative_position_id = ENG_supression_of_indian_freedom
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = -20
+					localization = "British Garrisons"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_indian_council_act
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_increase_indian_garrisons }
+		relative_position_id = ENG_increase_indian_garrisons
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_autonomy_score = {
+					value = -20
+					localization = "Indian Council Act"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_indian_industrialization
+		icon = GFX_focus_generic_modernize_industry
+		x = 0
+		y = 4
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_indian_council_act }
+		prerequisite = { focus = ENG_build_infastructure_in_india }
+		relative_position_id = ENG_indian_focus
+
+		available = {
+			RAJ = {
+				country_exists = RAJ
+				is_subject_of = ENG
+			}
+		}
+		
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_turn_to_the_south
+		icon = GFX_focus_generic_africa_liberation
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_continue_colonization_around_the_world }
+		relative_position_id = ENG_continue_colonization_around_the_world
+
+		available = {
+		}
+		
+		completion_reward = {
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_african_focus
+		icon = GFX_focus_ENG_africa
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_turn_to_the_south }
+		relative_position_id = ENG_turn_to_the_south
+
+		available = {
+			any_state = {
+				is_on_continent = africa
+				OR = {
+					is_owned_by = ENG
+					owner = {
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			SAF = {
+				add_autonomy_score = {
+					value = 10
+					localization = "African Focus"
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_nigerian_oil
+		icon = GFX_focus_generic_resource_extraction
+		x = 1.5
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_african_focus }
+		relative_position_id = ENG_african_focus
+
+		available = {
+			controls_state = 961
+		}
+		
+		completion_reward = {
+			961 = {
+				add_resource = {
+					type = Oil
+					amount = 18
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_grain_production_in_the_cape_colony
+		icon = GFX_focus_generic_farmland
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_nigerian_oil }
+		relative_position_id = ENG_nigerian_oil
+
+		available = {
+			controls_state = 961
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_grain_from_cape
+			SAF = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_increased_wine_production
+		icon = GFX_focus_ENG_increased_wine_production_in_cape_colony
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_grain_production_in_the_cape_colony }
+		relative_position_id = ENG_grain_production_in_the_cape_colony
+
+		available = {
+			country_exists = SAF
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = SAF
+			}
+		}
+		
+		completion_reward = {
+			SAF = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_africa_doing_well
+		icon = GFX_focus_generic_africa_factory
+		x = 0
+		y = 2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_increased_wine_production }
+		relative_position_id = ENG_grain_production_in_the_cape_colony
+
+		available = {
+			country_exists = SAF
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = SAF
+			}
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			SAF = {
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ENG_influence_egypt
+		icon = GFX_focus_generic_the_suez
+		x = -1.5
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_african_focus }
+		relative_position_id = ENG_african_focus
+
+		available = {
+			controls_state = 961
+		}
+		
+		completion_reward = {
+			961 = {
+				add_resource = {
+					type = Oil
+					amount = 18
+				}
+			}
+			EGY = { 
+                add_ideas = fpw_egy_british_influence
+            }
+		}
+	}
+	focus = {
+		id = ENG_oceania_focus
+		icon = GFX_focus_ENG_oceania
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_turn_to_the_east }
+		relative_position_id = ENG_turn_to_the_east
+
+		available = {
+			OR = {
+				1177 = { is_owned_by = ENG }
+				1177 = {
+					owner = {
+						is_subject_of = ENG
+					}
+				}
+			}
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = INS
+						tag = PHI
+						tag = SIA
+					}
+				}
+				country_event = news_fpw.5
+			}
+		}
+	}
+	focus = {
+		id = ENG_australia
+		icon = GFX_focus_ENG_australia
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_oceania_focus }
+		relative_position_id = ENG_oceania_focus
+
+		available = {
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = AST
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = AST
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_economic_growth_in_southeast_australia
+		icon = GFX_unknown
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_displace_australian_natives }
+		relative_position_id = ENG_displace_australian_natives
+
+		available = {
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = AST
+		}
+		
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_displace_australian_natives
+		icon = GFX_unknown
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_australia }
+		relative_position_id = ENG_australia
+
+		available = {
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = AST
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = AST
+					industrial_complex > 2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = -2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = AST
+					industrial_complex > 2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = -2
+					instant_build = yes
+				}
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = ENG_malaysia
+		icon = GFX_focus_ENG_malaysia
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_oceania_focus }
+		relative_position_id = ENG_oceania_focus
+
+		available = {
+			MAL = {
+				any_state = {
+					OR = {
+						state = 1177
+						state = 1169
+						state = 1167
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = MAL
+		}
+		
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = MAL
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_grant_straits_settlements_a_colonial_constitution
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_malaysia }
+		relative_position_id = ENG_malaysia
+
+		available = {
+			MAL = {
+				any_state = {
+					OR = {
+						state = 1177
+						state = 1169
+						state = 1167
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = MAL
+		}
+		
+		historical_ai = 4.2.1867
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_crown_colony_of_the_straits_settlements
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_grant_straits_settlements_a_colonial_constitution }
+		relative_position_id = ENG_grant_straits_settlements_a_colonial_constitution
+
+		available = {
+			MAL = {
+				any_state = {
+					OR = {
+						state = 1177
+						state = 1169
+						state = 1167
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			country_exists = MAL
+		}
+		
+		historical_ai = 1.4.1867
+		
+		completion_reward = {
+			MAL = {
+				every_state = {
+					limit = {
+						is_core_of = MAL
+						OR = {
+							is_owned_by = ENG
+							owner = { is_subject_of = ENG }
+						}
+					}
+					transfer_state_to = MAL
+				}
+			}
+			puppet = MAL
+		}
+	}
+	focus = {
+		id = ENG_progress_in_oceania
+		icon = GFX_unknown
+		x = 0
+		y = 4
+		cost = 2
+
+		search_filters = {  FOCUS_FILTER_STABILITY }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_economic_growth_in_southeast_australia }
+		prerequisite = { focus = ENG_crown_colony_of_the_straits_settlements }
+		relative_position_id = ENG_oceania_focus
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ENG_the_empire_is_booming
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 0
+		y = 6
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_africa_doing_well }
+		prerequisite = { focus = ENG_progress_in_oceania focus = ENG_indian_industrialization}
+		relative_position_id = ENG_african_focus
+
+		available = {
+			
+		}
+		
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+				}
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
+	##################
+	##Diplomacy Tree##
+	##################
+	focus = {
+		id = ENG_premiership_of_russell
+		icon = GFX_focus_generic_self_management
+		x = 12
+		y = 0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_country_leader = {
+                name = "John Russell"
+                ruling_only = yes
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ENG_contagious_diseases_act
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ENG_premiership_of_russell }
+		relative_position_id = ENG_premiership_of_russell
+		x = 1
+		y = 1
+		cost = 7.25
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_country_leader = {
+                name = "John Russell"
+                ruling_only = yes
+			}
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+            swap_ideas = { 
+                remove_idea = fpw_eng_widespread_malnutrition
+                add_idea = fpw_eng_widespread_malnutrition2
+            }
+		}
+	}
+	focus = {
+		id = ENG_support_social_critics
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = ENG_premiership_of_russell }
+		relative_position_id = ENG_premiership_of_russell
+		x = -1
+		y = 1
+		cost = 7.25
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_country_leader = {
+                name = "John Russell"
+                ruling_only = yes
+			}
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = matthew_arnold
+		}
+	}
+	focus = {
+		id = ENG_collapse_of_liberal_government
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		prerequisite = { focus = ENG_premiership_of_russell }
+		relative_position_id = ENG_premiership_of_russell
+		x = 0
+		y = 2
+		cost = 2
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_conservative_leadership
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = ENG_collapse_of_liberal_government }
+		relative_position_id = ENG_collapse_of_liberal_government
+		mutually_exclusive = { focus = ENG_convene_an_order_in_council }
+		x = 8
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+		    retire_country_leader = ENG_john_russell
+		    hidden_effect = {
+		        recruit_character = ENG_william_gladstone
+		    }
+		    promote_character = ENG_william_gladstone
+		    set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+            }
+		}
+	}
+	focus = {
+		id = ENG_expansion_of_the_franchise
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = ENG_conservative_leadership focus = ENG_undermine_the_government }
+		relative_position_id = ENG_conservative_leadership
+		x = -8
+		y = 2
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_expanded_franchise
+
+        }
+	}
+	focus = {
+		id = ENG_administrative_reform
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = ENG_conservative_leadership }
+		relative_position_id = ENG_conservative_leadership
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_eng_improved_administration
+
+        }
+	}
+	focus = {
+		id = ENG_decentralise_local_governance
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_administrative_reform }
+		relative_position_id = ENG_administrative_reform
+		mutually_exclusive = { focus = ENG_centralise_local_governance }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration
+                add_idea = fpw_eng_improved_administration2
+            }
+        }
+	}
+	focus = {
+		id = ENG_centralise_local_governance
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ENG_administrative_reform }
+		relative_position_id = ENG_administrative_reform
+		mutually_exclusive = { focus = ENG_decentralise_local_governance }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration
+                add_idea = fpw_eng_improved_administration3
+            }
+        }
+	}
+	focus = {
+		id = ENG_laissez_faire_attitude
+		icon = GFX_focus_ARG_anti_corruption_policies
+		prerequisite = { focus = ENG_decentralise_local_governance }
+		relative_position_id = ENG_decentralise_local_governance
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration2
+                add_idea = fpw_eng_improved_administration5
+            }
+			add_popularity = {
+                ideology = democratic
+                popularity = -0.10
+            }
+        }
+	}
+	focus = {
+		id = ENG_invest_in_public_works
+		icon = GFX_goal_reichsautobahn
+		prerequisite = { focus = ENG_centralise_local_governance }
+		prerequisite = { focus = ENG_expansion_of_the_franchise }
+		relative_position_id = ENG_centralise_local_governance
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_improved_administration3
+                add_idea = fpw_eng_improved_administration4
+            }
+        }
+	}
+	focus = {
+		id = ENG_strengthen_ties_with_the_turks
+		icon = GFX_focus_generic_befriend_turkey
+		prerequisite = { focus = ENG_conservative_leadership }
+		relative_position_id = ENG_conservative_leadership
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 75
+			TUR = {
+			    add_opinion_modifier = { target = ENG modifier = large_increase }
+			}
+
+        }
+	}
+	focus = {
+		id = ENG_finish_construction_of_the_suez
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ENG_strengthen_ties_with_the_turks }
+		relative_position_id = ENG_strengthen_ties_with_the_turks
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 500
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			TUR = {
+				has_opinion = {
+                target = ENG
+                value > 99
+                }
+			}
+		}
+		
+		completion_reward = {
+			clr_global_flag = SUEZ_CANAL_NOT_BUILT
+			EGY = {
+				country_event = egypt_fpw.1
+			}
+        }
+	}
+	focus = {
+		id = ENG_bribe_aristocratic_conservatives
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = ENG_conservative_leadership }
+		relative_position_id = ENG_conservative_leadership
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = { idea = fpw_eng_bribed_aristocrats days = 365 }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.20
+            }
+
+        }
+	}
+	focus = {
+		id = ENG_1868_elections
+		icon = GFX_focus_generic_hold_election
+		prerequisite = { focus = ENG_finish_construction_of_the_suez }
+		prerequisite = { focus = ENG_laissez_faire_attitude focus = ENG_invest_in_public_works }
+		relative_position_id = ENG_laissez_faire_attitude
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = { idea = fpw_eng_bribed_aristocrats days = 365 }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.20
+            }
+
+        }
+	}
+	focus = {
+		id = ENG_convene_an_order_in_council
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = ENG_collapse_of_liberal_government }
+		relative_position_id = ENG_collapse_of_liberal_government
+		mutually_exclusive = { focus = ENG_conservative_leadership }
+		x = -8
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+		    retire_country_leader = ENG_john_russell
+		    hidden_effect = {
+		        recruit_character = ENG_william_gladstone
+		    }
+		    promote_character = ENG_william_gladstone
+		    set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }
+		}
+	}
+	focus = {
+		id = ENG_undermine_the_government
+		icon = GFX_focus_AST_never_gallipoli
+		prerequisite = { focus = ENG_convene_an_order_in_council }
+		relative_position_id = ENG_convene_an_order_in_council
+		mutually_exclusive = { focus = ENG_victorias_cabinet }
+		x = 4
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = engels
+        }
+	}
+	focus = {
+		id = ENG_concessions_to_the_workers
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = ENG_undermine_the_government }
+		relative_position_id = ENG_undermine_the_government
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_idea = fpw_eng_rising_working_class
+		}
+		
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = fpw_eng_rising_working_class
+                add_idea = fpw_eng_rising_working_class2
+            }
+        }
+	}
+	focus = {
+		id = ENG_assert_the_rights_of_trade_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = ENG_undermine_the_government }
+		relative_position_id = ENG_undermine_the_government
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+                ideology = communism
+                popularity = 0.075
+            }
+        }
+	}
+	focus = {
+		id = ENG_organise_strikes_focus
+		icon = GFX_focus_NOR_empower_sivorg
+		prerequisite = { focus = ENG_assert_the_rights_of_trade_unions }
+		relative_position_id = ENG_assert_the_rights_of_trade_unions
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_organise_strikes
+        }
+	}
+	focus = {
+		id = ENG_uhh
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = ENG_undermine_the_government }
+		relative_position_id = ENG_undermine_the_government
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+        }
+	}
+	focus = {
+		id = ENG_disrupt_legislative_process
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = ENG_uhh }
+		relative_position_id = ENG_uhh
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_disrupt_parliament
+        }
+	}
+	focus = {
+		id = ENG_revolution_of_the_proletariat
+		icon = GFX_focus_eng_decolonization
+		prerequisite = { focus = ENG_organise_strikes_focus focus = ENG_disrupt_legislative_process }
+		prerequisite = { focus = ENG_concessions_to_the_workers }
+		relative_position_id = ENG_organise_strikes_focus
+		x = 1
+		y = 1
+		cost = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			communism > 0.5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = ENG_civil_war
+		    set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+			hidden_effect = {
+				play_song = "the_manchester_rambler"
+				set_capital = {
+                    state = 132
+                }
+                start_civil_war = {
+	                ideology = neutrality
+	                size = 0.6
+					states = { 122 123 126 127 338 125 121 133 921 120 136 933 331 332 690 696 693 689 308 692 691 687 116 118 700 701 960 961 703 704 311 906 707 709 710 659 765 281 422 711 712 733 326 284 723 870 871 674 522 520 872 521 873 285 517 518 519 636 643 639 725 726 270 299 720 134 135 113 119 129 931 932 }
+				}
+				country_event = britain_fpw.6
+            }
+			# set_global_flag = super_visible
+            set_global_flag = fpw_bcw
+            # visible = {
+            #     has_global_flag = super_visible
+            # }
+        }
+	}
+	focus = {
+		id = ENG_societal_restructure
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		prerequisite = { focus = ENG_revolution_of_the_proletariat }
+		relative_position_id = ENG_revolution_of_the_proletariat
+		x = 0
+		y = 1
+		cost = 12
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = fpw_eng_political_fragmentation
+			add_ideas = fpw_eng_army_in_disarray
+			add_ideas = fpw_eng_economic_collapse
+			
+        }
+	}
+	focus = {
+		id = ENG_progressive_thinking
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = ENG_societal_restructure focus = ENG_1868_elections }
+		relative_position_id = ENG_societal_restructure
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_disrupt_parliament
+        }
+	}
+	focus = {
+		id = ENG_support_womens_suffrage
+		icon = GFX_focus_generic_universal_suffrage
+		prerequisite = { focus = ENG_progressive_thinking }
+		relative_position_id = ENG_progressive_thinking
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+			has_completed_focus = ENG_societal_restructure
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_eng_expanded_franchise
+				add_idea = fpw_eng_expanded_franchise2
+			}
+        }
+	}
+	focus = {
+		id = ENG_victorias_cabinet
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = ENG_convene_an_order_in_council }
+		relative_position_id = ENG_convene_an_order_in_council
+		mutually_exclusive = { focus = ENG_undermine_the_government }
+		x = -4
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+
+        }
+	}
+	focus = {
+		id = ENG_industrial_sector
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 27
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			126 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			128 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			130 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			hidden_effect = {
+				add_ideas = fpw_eng_rising_working_class
+			}
+		}
+	}
+	focus = {
+		id = ENG_fill_the_factories
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = ENG_industrial_sector }
+		relative_position_id = ENG_industrial_sector
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = -0.025
+			123 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = -25000
+				}
+			}
+			125 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = -25000
+				}
+			}
+			129 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = -25000
+				}
+			}
+			126 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = 25000
+				}
+			}
+			128 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = 25000
+				}
+			}
+			130 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_manpower = 25000
+				}
+			}
+			custom_effect_tooltip = ENG_industrial_capacity
+		    add_to_variable = { ENG_industrial_capacity_factory = 0.025 }
+		    add_to_variable = { ENG_industrial_capacity_dockyard = 0.025 }
+		}
+	}
+	focus = {
+		id = ENG_textile_industry_in_lancashire
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		prerequisite = { focus = ENG_fill_the_factories }
+		relative_position_id = ENG_fill_the_factories
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			132 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					    add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_increase_resource_output
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = ENG_industrial_sector }
+		relative_position_id = ENG_industrial_sector
+		x = -5
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+		custom_effect_tooltip = ENG_local_resources
+		add_to_variable = { ENG_local_resources_factor = 0.2 }
+		}
+	}
+	focus = {
+		id = ENG_mine_tungsten_in_plymouth
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = ENG_increase_resource_output }
+		relative_position_id = ENG_increase_resource_output
+		x = -1.5
+		y = 1
+		cost = 7.25
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			123 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_resource = {
+                        type = tungsten
+                        amount = 12
+                    }
+				}
+			}
+			123 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					    }
+				    }
+			    }
+		}
+	}
+	focus = {
+		id = ENG_acquire_the_technology
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = ENG_increase_resource_output }
+		relative_position_id = ENG_increase_resource_output
+		x = 1.5
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+	        name = excavation_bonus
+	        bonus = 0.5
+	        uses = 2
+	        category = excavation_tech
+            }
+		}
+	}
+	focus = {
+		id = ENG_agricultural_sector
+		icon = GFX_focus_generic_farmland
+		x = 35
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+			338 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+			127 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+			125 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+			129 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+					    }
+				    }
+			    }
+		}
+	}
+	focus = {
+		id = ENG_encourage_international_trade
+		icon = GFX_focus_generic_british_trade
+		prerequisite = { focus = ENG_industrial_sector }
+		relative_position_id = ENG_industrial_sector
+		mutually_exclusive = { focus = ENG_reintroduce_corn_laws }
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+        add_ideas = free_trade
+		}
+	}
+	focus = {
+		id = ENG_reintroduce_corn_laws
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ENG_agricultural_sector }
+		relative_position_id = ENG_agricultural_sector
+		mutually_exclusive = { focus = ENG_encourage_international_trade }
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+
+
+		available = {
+		}
+		
+		completion_reward = {
+        add_ideas = limited_exports
+		}
+	}
+}

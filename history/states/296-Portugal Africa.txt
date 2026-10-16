@@ -1,0 +1,28 @@
+
+state={
+	id=296
+	name="STATE_296" # Guinea-Bissau
+	manpower = 189748
+	
+	state_category = enclave
+	resources={
+
+	
+
+wood=2
+}
+	history={
+		owner = POR
+		add_core_of = GNB
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		13819 14103
+	}
+
+	local_supplies=0.0 
+}
+

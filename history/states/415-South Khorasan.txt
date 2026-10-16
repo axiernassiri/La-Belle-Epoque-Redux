@@ -1,0 +1,32 @@
+
+state={
+	id=415
+	name="STATE_415"
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			4893 1 
+		}
+		victory_points = {
+			5064 1 
+		}
+		add_core_of = AFG
+		add_core_of = AFZ
+
+	}
+
+	provinces={
+		1948 1995 2078 4949 5020 5064 8090 10789 12788 
+	}
+	manpower=849087
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

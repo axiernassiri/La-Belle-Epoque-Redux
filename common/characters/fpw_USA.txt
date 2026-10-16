@@ -1,0 +1,41 @@
+characters={
+	USA_andrew_johnson={
+		name="Andrew Johnson"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_andrew_johnson
+			}
+		}
+		country_leader={
+			ideology=usa_conservative_democrat
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	USA_ulysses_s_grant={
+		name="Ulysses S. Grant"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_ulysses_s_grant
+			}
+		}
+		country_leader={
+			ideology=usa_progressive_conservatism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	USA_jefferson_columbus_davis={
+		name="Jefferson Columbus Davis"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_jefferson_columbus_davis
+			}
+		}
+		country_leader={
+			ideology=interim_government
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+}

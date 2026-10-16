@@ -1,0 +1,2615 @@
+add_namespace = russia_fpw
+add_namespace = russia_news_fpw
+
+# Continue reforms
+country_event = {
+	id = russia_fpw.1
+	title = russia_fpw.1.t
+	desc = russia_fpw.1.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# 
+	option = {
+		name = russia_fpw.1.a
+		
+		add_stability = 0.05
+		add_political_power = 50
+		
+		hidden_effect = {
+			
+		}
+		
+		
+		
+	}
+
+}
+
+# More radical reforms
+country_event = {
+	id = russia_fpw.2
+	title = russia_fpw.2.t
+	desc = russia_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# 
+	option = {
+		name = russia_fpw.1.a
+		
+		add_stability = -0.05
+		add_political_power = 100
+
+		hidden_effect = {
+			
+		}
+		
+		
+		
+	}
+
+}
+
+
+# Selling of alaska
+country_event = {
+	id = russia_fpw.3
+	title = russia_fpw.3.t
+	desc = russia_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# Ask USA
+	option = {
+		name = russia_fpw.3.a
+		
+		ai_chance = { 
+			base = 10
+		}
+		USA = {
+			country_event = {
+				id = russia_fpw.4
+				days = 1
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+		
+		
+		
+	}
+	# Ask Lichtenstein
+	option = {
+		name = russia_fpw.3.b
+		
+		ai_chance = { 
+			base = 0
+		}
+
+		hidden_effect = {
+			
+		}
+		
+		
+		
+	}
+}
+# Russia wants to sell alaska
+country_event = {
+	id = russia_fpw.4
+	title = russia_fpw.4.t
+	desc = russia_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# buy alaska
+	option = {
+		name = russia_fpw.4.a
+		
+		ai_chance = { 
+			base = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.5
+				days = 1
+			}
+		}
+		
+		effect_tooltip = {
+			transfer_state = 463
+			transfer_state = 650
+			transfer_state = 986
+			add_timed_idea = {
+				idea = alaska_bought
+				days = 365
+			}
+			SOV = {
+				add_timed_idea = {
+					idea = alaska_sold
+					days = 365
+				}
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+		
+		
+		
+	}
+	# reject the offer
+	option = {
+		name = russia_fpw.4.b
+		
+		ai_chance = { 
+			base = 1
+		}
+
+		SOV = {
+			country_event = {
+				id = russia_fpw.6
+				days = 1
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+		
+		
+		
+	}
+}
+# USA buys alaska
+country_event = {
+	id = russia_fpw.5
+	title = russia_fpw.5.t
+	desc = russia_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			463 = {
+				set_state_owner_to = ALS
+				add_core_of = ALS
+			}
+			650 = {
+				set_state_owner_to = ALS
+				add_core_of = ALS
+			}
+			986 = {
+				set_state_owner_to = ALS
+				add_core_of = ALS
+			}
+			USA = {
+				set_autonomy = {
+    				target = ALS
+    				autonomous_state = autonomy_colony
+				}
+				add_timed_idea = {
+					idea = alaska_bought
+					days = 365
+				}
+			}
+			ALS = {
+				set_cosmetic_tag = ALS_department
+				recruit_character = USA_jefferson_columbus_davis
+				promote_character = {
+    				character = USA_jefferson_columbus_davis
+    				ideology = neutrality
+				}
+				set_politics = {
+   					ruling_party = neutrality
+    				elections_allowed = no
+    				long_name = interim_government_party
+    				name = interim_government_party
+				}
+				set_popularities = {
+					neutrality = 100
+				}			
+			}
+		}
+	}
+	
+	option = {
+		name = russia_fpw.5.a
+
+		add_timed_idea = {
+			idea = alaska_sold
+			days = 365
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+	
+	
+}
+# USA rejects
+country_event = {
+	id = russia_fpw.6
+	title = russia_fpw.6.t
+	desc = russia_fpw.6.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.6.a
+		
+		
+	}
+}
+
+# Russo-German Relations
+country_event = {
+	id = russia_fpw.7
+	title = russia_fpw.7.t
+	desc = russia_fpw.7.d
+	picture = GFX_report_event_bul_boris_with_hitler
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.7.a
+		
+		
+	}
+}
+
+# Russian Economic Situation
+country_event = {
+	id = russia_fpw.8
+	title = russia_fpw.8.t
+	desc = russia_fpw.8.d
+	#picture = GFX_report_event_bul_boris_with_hitler
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.7.a
+		
+		
+	}
+}
+
+# Russian Constitution Event Chain
+country_event = {
+	id = russia_fpw.9
+	title = russia_fpw.9.t
+	desc = russia_fpw.9.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.9.a
+		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		custom_effect_tooltip = russia_fpw_9_effect
+		
+		country_event = {
+			id = russia_fpw.10
+			days = 21
+		}
+		
+	}
+}
+country_event = {
+	id = russia_fpw.10
+	title = russia_fpw.10.t
+	desc = russia_fpw.10.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.10.a
+		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		add_to_variable = { SOV_fc_stability_factor = 0.02 }
+		add_to_variable = { SOV_fc_civilian_advisor_cost_factor = -0.10 }
+		custom_effect_tooltip = russia_fpw_10_effect
+		
+		country_event = {
+			id = russia_fpw.11
+			days = 21
+		}
+		
+	}
+}
+country_event = {
+	id = russia_fpw.11
+	title = russia_fpw.11.t
+	desc = russia_fpw.11.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.10.a
+		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		add_to_variable = { SOV_fc_stability_factor = 0.02 }
+		add_to_variable = { SOV_fc_war_support_factor = 0.02 }
+		add_to_variable = { SOV_fc_high_command_advisor_cost_factor = -0.10 }
+		custom_effect_tooltip = russia_fpw_11_effect
+		
+		country_event = {
+			id = russia_fpw.12
+			days = 21
+		}
+		
+	}
+}
+country_event = {
+	id = russia_fpw.12
+	title = russia_fpw.12.t
+	desc = russia_fpw.12.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.12.a
+		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		add_to_variable = { SOV_fc_war_support_factor = 0.02 }
+		add_to_variable = { SOV_fc_neutrality_drift = 0.01 }
+		custom_effect_tooltip = russia_fpw_12_effect
+		
+		country_event = {
+			id = russia_fpw.13
+			days = 21
+		}
+		
+	}
+}
+country_event = {
+	id = russia_fpw.13
+	title = russia_fpw.13.t
+	desc = russia_fpw.13.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.13.a
+		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		add_to_variable = { SOV_fc_stability_factor = 0.02 }
+		add_to_variable = { SOV_fc_democratic_drift = 0.03 }
+		custom_effect_tooltip = russia_fpw_13_effect_a
+		custom_effect_tooltip = russian_constitution_conservative_tp
+		
+		country_event = {
+			id = russia_fpw.14
+			days = 21
+		}
+		hidden_effect = {
+			set_country_flag = conservative_constitution
+			
+		}
+		
+	}
+	option = {
+		name = russia_fpw.13.b
+		add_to_variable = { SOV_fc_political_power_gain = 0.05 }
+		add_to_variable = { SOV_fc_stability_factor = -0.02 }
+		add_to_variable = { SOV_fc_fascism_drift = 0.03 }
+		custom_effect_tooltip = russia_fpw_13_effect_b
+		custom_effect_tooltip = russian_constitution_liberal_tp
+		
+		country_event = {
+			id = russia_fpw.14
+			days = 21
+		}
+		hidden_effect = {
+			set_country_flag = liberal_constitution
+			
+		}
+		
+	}
+}
+country_event = {
+	id = russia_fpw.14
+	title = russia_fpw.14.t
+	desc = russia_fpw.14.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.14.a
+		add_to_variable = { SOV_fc_stability_factor = 0.02 }
+		add_to_variable = { SOV_fc_war_support_factor = 0.02 }
+		add_to_variable = { SOV_fc_defensive_war_stability_factor = 0.10 }
+		
+		
+	}
+}
+
+country_event = {
+	id = russia_fpw.15
+	title = russia_fpw.15.t
+	desc = russia_fpw.15.d
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = russia_fpw.7.a
+		
+		
+		
+	}
+}
+
+# Friendship Treaty With Prussia
+country_event = {
+	id = russia_fpw.16
+	title = russia_fpw.16.t
+	desc = russia_fpw.16.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = russia_fpw.16.a
+		
+		add_stability = 0.01
+		add_political_power = 10
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.17
+				days = 1
+			}
+		}
+		
+	}
+	
+	# no :<
+	option = {
+		name = russia_fpw.16.b
+		
+		SOV = {
+			add_opinion_modifier = {
+				target = PRS
+				modifier = large_decrease
+			}
+		}
+		
+	}
+	
+}
+
+# Prussia agrees
+country_event = {
+	id = russia_fpw.17
+	title = russia_fpw.17.t
+	desc = russia_fpw.17.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+ 
+	# yes
+	option = {
+		name = russia_fpw.17.a
+		
+		add_stability = 0.01
+		add_political_power = 10
+		
+		diplomatic_relation = {
+			country = PRS
+			relation = non_aggression_pact
+			active = yes
+		}
+		
+	}
+	
+	
+}
+
+# Russification Info
+country_event = {
+	id = russia_fpw.18
+	title = russia_fpw.18.t
+	desc = russia_fpw.18.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = russia_fpw.18.a
+	}
+	option = {
+		name = russia_fpw.18.b
+		IF = {
+			limit = {
+				NOT = {
+					has_country_flag = no_more_pp_for_antopru
+				}
+			}
+			add_political_power = 10
+		}
+		hidden_effect = {
+			set_country_flag = no_more_pp_for_antopru
+		}
+	}
+}
+
+# Polish uprising
+country_event = {
+	id = russia_fpw.19
+	title = russia_fpw.19.t
+	desc = russia_fpw.19.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			POL = {
+				transfer_state = 10
+				transfer_state = 87
+				transfer_state = 98
+				transfer_state = 90
+				transfer_state = 92
+				transfer_state = 97
+				transfer_state = 983
+				
+				load_oob = "POL_uprising"
+				
+				clr_country_flag = fpw_secondary_leader_pol_alexander_II
+				remove_ideas = fpw_alexander_ii
+				set_nationality = {
+					target_country = SOV
+					character = SOV_friedrich_von_berg
+				}
+			}
+			IF = {
+				limit = {
+					POL = {
+						is_subject_of = SOV
+					}
+				}
+				SOV = {
+					set_autonomy = {
+						target = POL
+						autonomous_state = autonomy_free
+					}
+					remove_from_faction = POL
+				}
+				POL = { 
+					leave_faction = yes
+					
+				}
+			}
+			set_variable = { poland_russification_resist = 0 }
+			set_variable = { poland_russification_coop = 0 }
+			
+		}
+	}
+	option = {
+		name = russia_fpw.19.a
+		declare_war_on = {
+			target = POL
+			type = annex_everything
+		}
+		hidden_effect = {
+			POL = { add_ideas = SOV_fight_for_independence }
+		}
+		activate_mission = end_poland_uprising
+		hidden_effect = {
+			POL = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.19.b
+		
+		POL = { 
+			hidden_effect = {
+				load_oob = "POL_uprising_support"
+			}
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+			activate_mission = end_poland_uprising
+		}
+		hidden_effect = {
+			POL = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = POL
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = POL
+					value = 200
+				}
+			}
+		}
+		
+	}
+	
+	
+}
+
+# Finnish uprising
+country_event = {
+	id = russia_fpw.20
+	title = russia_fpw.20.t
+	desc = russia_fpw.20.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			IF = {
+				limit = {
+					FIN = {
+						is_subject_of = SOV
+					}
+				}
+				SOV = {
+					set_autonomy = {
+						target = FIN
+						autonomous_state = autonomy_free
+					}
+					remove_from_faction = FIN
+				}
+				FIN = { leave_faction = yes }
+			}
+			else = {
+				FIN = {
+					transfer_state = 146
+					transfer_state = 928
+					transfer_state = 111
+					transfer_state = 926
+					transfer_state = 927
+					transfer_state = 929
+					transfer_state = 930
+					transfer_state = 149
+					transfer_state = 150
+					transfer_state = 147
+					transfer_state = 148
+				
+					load_oob = "FIN_1866"
+				}
+				
+			}
+			FIN = {
+				clr_country_flag = fpw_secondary_leader_fin_alexander_II
+				remove_ideas = fpw_alexander_ii
+				set_nationality = {
+					target_country = SOV
+					character = SOV_nikolai_adlerberg
+				}
+			}
+			set_variable = { finland_russification_resist = 0 }
+			set_variable = { finland_russification_coop = 0 }
+		}
+	}
+	option = {
+		name = russia_fpw.20.a
+		
+		hidden_effect = { FIN = { leave_faction = yes } }
+		
+		declare_war_on = {
+			target = FIN
+			type = annex_everything
+		}
+		hidden_effect = {
+			FIN = { add_ideas = SOV_fight_for_independence }
+		}
+		activate_mission = end_finland_uprising
+		hidden_effect = {
+			FIN = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+		
+		
+	}
+	option = {
+		name = russia_fpw.20.b
+		
+		hidden_effect = { FIN = { leave_faction = yes } }
+		
+		FIN = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = FIN
+				type = annex_everything
+			}
+			activate_mission = end_finland_uprising
+		}
+		hidden_effect = {
+			FIN = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = FIN
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = FIN
+					value = 200
+				}
+			}
+		}
+		
+	}
+	
+	
+}
+
+# Ukraine uprising
+country_event = {
+	id = russia_fpw.21
+	title = russia_fpw.21.t
+	desc = russia_fpw.21.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			UKR = {
+				transfer_state = 93
+				transfer_state = 194
+				transfer_state = 201
+				transfer_state = 199
+				transfer_state = 198
+				transfer_state = 200
+				transfer_state = 202
+				transfer_state = 834
+				transfer_state = 78
+				transfer_state = 192
+				transfer_state = 193
+				transfer_state = 197
+				transfer_state = 196
+				transfer_state = 203
+				transfer_state = 226
+				transfer_state = 227
+				transfer_state = 225
+				transfer_state = 228
+				transfer_state = 221
+				transfer_state = 259
+				
+				load_oob = "UKR_uprising"
+			}
+			set_variable = { ukraine_russification_resist = 0 }
+			set_variable = { ukraine_russification_coop = 0 }
+			
+			
+		}
+	}
+	option = {
+		name = russia_fpw.21.a
+		
+		declare_war_on = {
+			target = UKR
+			type = annex_everything
+		}
+		hidden_effect = {
+			UKR = { add_ideas = SOV_fight_for_independence }
+		}
+		activate_mission = end_ukraine_uprising
+		hidden_effect = {
+			UKR = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.21.b
+		
+		UKR = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+			activate_mission = end_ukraine_uprising
+		}
+		hidden_effect = {
+			UKR = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = UKR
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = UKR
+					value = 200
+				}
+			}
+		}
+	}
+	
+	
+}
+
+# Belarus uprising
+country_event = {
+	id = russia_fpw.22
+	title = russia_fpw.22.t
+	desc = russia_fpw.22.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			BLR = {
+				transfer_state = 94
+				transfer_state = 95
+				transfer_state = 96
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 207
+				transfer_state = 241
+				
+				load_oob = "BLR_uprising"
+			}
+			set_variable = { belarus_russification_resist = 0 }
+			set_variable = { belarus_russification_coop = 0 }
+			
+			
+		}
+	}
+	option = {
+		name = russia_fpw.22.a
+		
+		declare_war_on = {
+			target = BLR
+			type = annex_everything
+		}
+		hidden_effect = {
+			BLR = { add_ideas = SOV_fight_for_independence }
+		}
+		activate_mission = end_belarus_uprising
+		hidden_effect = {
+			BLR = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.22.b
+		
+		BLR = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = BLR
+				type = annex_everything
+			}
+			activate_mission = end_belarus_uprising
+		}
+		
+		hidden_effect = {
+			BLR = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = BLR
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = BLR
+					value = 200
+				}
+			}
+		}
+	}
+	
+	
+}
+
+# Baltics uprising
+country_event = {
+	id = russia_fpw.23
+	title = russia_fpw.23.t
+	desc = russia_fpw.23.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			EST = {
+				transfer_state = 811
+				transfer_state = 812
+				transfer_state = 813
+				transfer_state = 13
+				transfer_state = 191
+				
+				load_oob = "EST_uprising"
+			}
+			LAT = {
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 810
+				transfer_state = 12
+				transfer_state = 190
+				
+				load_oob = "LAT_uprising"
+			}
+			LIT = {
+				transfer_state = 11
+				transfer_state = 784
+				transfer_state = 814
+				transfer_state = 815
+				transfer_state = 189
+				
+				load_oob = "LIT_uprising"
+			}
+			set_variable = { baltic_russification_resist = 0 }
+			set_variable = { baltic_russification_coop = 0 }
+		}
+		hidden_effect = {
+			LIT = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+			LAT = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+			EST = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.23.a
+		
+		declare_war_on = {
+			target = EST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = LAT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = LIT
+			type = annex_everything
+		}
+		hidden_effect = {
+			EST = { add_ideas = SOV_fight_for_independence }
+			LAT = { add_ideas = SOV_fight_for_independence }
+			LIT = { add_ideas = SOV_fight_for_independence }
+		}
+		activate_mission = end_baltic_uprising
+		hidden_effect = {
+			LIT = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+			LAT = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+			EST = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.23.b
+		
+		EST = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+			activate_mission = end_baltic_uprising
+		}
+		hidden_effect = {
+			EST = { add_ideas = SOV_fight_for_independence }
+			LAT = { add_ideas = SOV_fight_for_independence }
+			LIT = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = EST
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = EST
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = LAT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = LAT
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = LIT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = LIT
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.23.c
+		
+		LAT = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+			activate_mission = end_baltic_uprising
+		}
+		hidden_effect = {
+			EST = { add_ideas = SOV_fight_for_independence }
+			LAT = { add_ideas = SOV_fight_for_independence }
+			LIT = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = EST
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = EST
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = LAT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = LAT
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = LIT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = LIT
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.23.e
+		
+		LIT = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+			activate_mission = end_baltic_uprising
+		}
+		hidden_effect = {
+			EST = { add_ideas = SOV_fight_for_independence }
+			LAT = { add_ideas = SOV_fight_for_independence }
+			LIT = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = EST
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = EST
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = LAT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = LAT
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = LIT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = LIT
+					value = 200
+				}
+			}
+		}
+		
+	}
+	
+	
+}
+
+# Caucasian uprising
+country_event = {
+	id = russia_fpw.24
+	title = russia_fpw.24.t
+	desc = russia_fpw.24.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			GEO = {
+				transfer_state = 826
+				transfer_state = 231
+				
+				load_oob = "GEO_uprising"
+			}
+			ARM = {
+				transfer_state = 230
+				
+				load_oob = "ARM_uprising"
+			}
+			AZR = {
+				transfer_state = 229
+				
+				load_oob = "AZR_uprising"
+			}
+			set_variable = { caucasus_russification_resist = 0 }
+			set_variable = { caucasus_russification_coop = 0 }
+			
+		}
+		hidden_effect = {
+			GEO = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+			ARM = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+			AZR = {
+				add_ai_strategy = {
+					type = front_unit_request
+					id = SOV
+					value = 200
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.24.a
+		
+		declare_war_on = {
+			target = GEO
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = ARM
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = AZR
+			type = annex_everything
+		}
+		hidden_effect = {
+			GEO = { add_ideas = SOV_fight_for_independence }
+			ARM = { add_ideas = SOV_fight_for_independence }
+			AZR = { add_ideas = SOV_fight_for_independence }
+		}
+		activate_mission = end_caucasus_uprising
+		
+	}
+	option = {
+		name = russia_fpw.24.b
+		
+		GEO = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = GEO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AZR
+				type = annex_everything
+			}
+			activate_mission = end_caucasus_uprising
+		}
+		hidden_effect = {
+			GEO = { add_ideas = SOV_fight_for_independence }
+			ARM = { add_ideas = SOV_fight_for_independence }
+			AZR = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = GEO
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = GEO
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = ARM
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = ARM
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = AZR
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = AZR
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.24.c
+		
+		ARM = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = GEO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AZR
+				type = annex_everything
+			}
+			activate_mission = end_caucasus_uprising
+		}
+		hidden_effect = {
+			GEO = { add_ideas = SOV_fight_for_independence }
+			ARM = { add_ideas = SOV_fight_for_independence }
+			AZR = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = GEO
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = GEO
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = ARM
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = ARM
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = AZR
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = AZR
+					value = 200
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = russia_fpw.24.e
+		
+		AZR = { 
+			change_tag_from = SOV 
+		}
+		
+		SOV = {
+			declare_war_on = {
+				target = GEO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AZR
+				type = annex_everything
+			}
+			activate_mission = end_caucasus_uprising
+		}
+		hidden_effect = {
+			GEO = { add_ideas = SOV_fight_for_independence }
+			ARM = { add_ideas = SOV_fight_for_independence }
+			AZR = { add_ideas = SOV_fight_for_independence }
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = GEO
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = GEO
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = ARM
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = ARM
+					value = 200
+				}
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = conquer
+					id = AZR
+					value = 200
+				}
+				add_ai_strategy = {
+					type = invade
+					id = AZR
+					value = 200
+				}
+			}
+		}
+		
+	}
+	
+	
+}
+
+
+# Galicia for allience
+country_event = {
+	id = russia_fpw.25
+	title = russia_fpw.25.t
+	desc = russia_fpw.25.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.25.a
+		SOV = {
+			country_event = {
+				id = russia_fpw.26
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = SOV
+					value > 49
+				}
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.25.b
+		SOV = {
+			country_event = {
+				id = russia_fpw.27
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = SOV
+					value > -29
+				}
+				factor = 100
+			}
+		}
+	}
+	
+	
+}
+
+# Austria Agrees 
+country_event = {
+	id = russia_fpw.26
+	title = russia_fpw.26.t
+	desc = russia_fpw.26.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.26.a
+		
+		give_guarantee = AUS
+		AUS = {
+			give_guarantee = SOV
+		}
+		
+	}
+	
+	
+}
+
+# Austria Refuses
+country_event = {
+	id = russia_fpw.27
+	title = russia_fpw.27.t
+	desc = russia_fpw.27.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.6.a
+		
+		
+	}
+	
+}
+
+
+# Alaska Usefull
+country_event = {
+	id = russia_fpw.28
+	title = russia_fpw.28.t
+	desc = russia_fpw.28.d
+	#picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.28.a
+		
+		463 =  {
+			add_resource = {
+				type = oil
+				amount = 10
+			}
+			add_resource = {
+				type = tungsten
+				amount = 7
+			}
+		}
+		
+	}
+	
+	
+}
+
+
+# Galicia for allience
+country_event = {
+	id = russia_fpw.29
+	title = russia_fpw.29.t
+	desc = russia_fpw.29.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.29.a
+		SOV = {
+			country_event = {
+				id = russia_fpw.30
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = SOV
+					value > 49
+				}
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.29.b
+		SOV = {
+			country_event = {
+				id = russia_fpw.31
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 0
+			
+		}
+	}
+	
+	
+}
+
+# China Agrees 
+country_event = {
+	id = russia_fpw.30
+	title = russia_fpw.30.t
+	desc = russia_fpw.30.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.30.a
+		
+		transfer_state = 745
+		
+	}
+	
+	
+}
+
+# China Refuses
+country_event = {
+	id = russia_fpw.31
+	title = russia_fpw.31.t
+	desc = russia_fpw.31.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.31.a
+		
+		add_state_claim = 745
+		create_wargoal = {
+			type = take_claimed_state
+			target = CHI
+		}
+		
+	}
+	
+}
+# Assassination attempt 1866
+country_event = {
+	id = russia_fpw.32
+	title = russia_fpw.32.t
+	desc = russia_fpw.32.d
+	picture = GFX_report_event_generic_military_parade
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.32.a
+		
+		add_stability = -0.01
+		
+		news_event = {
+			id = russia_news_fpw.32
+			hours = 12
+		}
+		
+	}
+	
+	
+}
+
+news_event = {
+	id = russia_news_fpw.32
+	title = russia_news_fpw.32.t
+	desc = russia_news_fpw.32.d
+	picture = GFX_news_event_generic_funeral
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_news_fpw.32.a
+		
+		
+	}
+	
+	
+}
+
+# serfdom question
+country_event = {
+	id = russia_fpw.33
+	title = russia_fpw.33.t
+	desc = russia_fpw.33.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.33.a
+		
+		add_to_variable = { SOV_sr_consumer_goods_factor = 0.15 }
+		add_to_variable = { SOV_sr_global_building_slots_factor = 0.20 }
+		add_to_variable = { SOV_sr_production_factory_max_efficiency_factor = 0.25 }
+		add_to_variable = { SOV_sr_local_resources_factor = 0.10 }
+		
+		custom_effect_tooltip = russia_fpw.33.a.effect
+		
+	}
+	option = {
+		name = russia_fpw.33.b
+		
+		remove_dynamic_modifier = { modifier = SOV_serfdom_remnants_dynamic_modifier }
+		
+		add_ideas = SOV_serfdom_back
+		
+	}
+	
+	
+}
+
+# Russia wants a antiaustrian allience
+country_event = {
+	id = russia_fpw.34
+	title = russia_fpw.34.t
+	desc = russia_fpw.34.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.34.a
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.35
+				days = 1
+			}
+		}
+		
+		hidden_effect = {
+			add_ai_strategy = {
+				type = alliance
+				id = SOV
+				value = 100
+			}
+		}
+		
+		ai_chance = { 
+			base = 2
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value > 50
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.34.b
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.36
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value < -10
+				}
+			}
+		}
+	}
+	
+	
+}
+# Prussia joins us
+country_event = {
+	id = russia_fpw.35
+	title = russia_fpw.35.t
+	desc = russia_fpw.35.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.30.a
+		
+		create_faction = SOV_ANTI_HABSBURG_ALLIENCE
+		add_to_faction = PRS
+		
+	}
+	
+	
+}
+# Prussia no
+country_event = {
+	id = russia_fpw.36
+	title = russia_fpw.36.t
+	desc = russia_fpw.36.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.6.a
+		
+		add_political_power = -10
+		
+		create_faction = SOV_ANTI_HABSBURG_ALLIENCE
+		
+	}
+	
+	
+}
+
+
+# Russia wants a friendship treaty
+country_event = {
+	id = russia_fpw.37
+	title = russia_fpw.37.t
+	desc = russia_fpw.37.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = russia_fpw.37.a
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.38
+				days = 1
+			}
+		}
+		
+		hidden_effect = {
+			add_ai_strategy = {
+				type = alliance
+				id = SOV
+				value = 100
+			}
+		}
+		
+		ai_chance = { 
+			base = 2
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value > 50
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.37.b
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.39
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value < -10
+				}
+			}
+		}
+	}
+	
+	
+}
+country_event = {
+	id = russia_fpw.38
+	title = russia_fpw.38.t
+	desc = russia_fpw.38.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia_fpw.38.a
+		
+		
+		give_guarantee = ENG
+		ENG = {
+			give_guarantee = SOV
+		}
+		diplomatic_relation = {
+			country = ENG
+			relation = non_aggression_pact
+			active = yes
+		}
+		
+	}
+	
+}
+country_event = {
+	id = russia_fpw.39
+	title = russia_fpw.39.t
+	desc = russia_fpw.39.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia_fpw.39.a
+		
+	}
+	
+}
+
+# Demand Galicia
+country_event = {
+	id = russia_fpw.40
+	title = russia_fpw.40.t
+	desc = russia_fpw.40.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = russia_fpw.40.a
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.41
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 2
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value > 50
+				}
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		SOV = {
+			country_event = {
+				id = russia_fpw.41
+				days = 1
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = SOV
+					value < -10
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = russia_fpw.41
+	title = russia_fpw.41.t
+	desc = russia_fpw.41.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia_fpw.41.a
+		
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+		transfer_state = 80
+		
+	}
+	
+}
+country_event = {
+	id = russia_fpw.42
+	title = russia_fpw.42.t
+	desc = russia_fpw.42.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia_fpw.42.a
+		
+	}
+	
+}
+
+# and uprising with POL
+country_event = {
+	id = russia_fpw.43
+	title = russia_fpw.43.t
+	desc = russia_fpw.43.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.43.a
+		IF = {
+			limit = {
+				POL = {
+					controls_state = 814
+				}
+			}
+			814 = { transfer_state_to = POL }
+		}
+		IF = {
+			limit = {
+				POL = {
+					controls_state = 11
+				}
+			}
+			POL = { transfer_state = 11 }
+			POL = { transfer_state = 189 }
+			POL = { transfer_state = 815 }
+			POL = { transfer_state = 95 }
+			POL = { transfer_state = 784 }
+			POL = { transfer_state = 814 }
+		}
+		hidden_effect = {
+			white_peace = {
+				tag = POL
+				message = peace_poland_uprising_tt
+			}
+		}
+		add_stability = 0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+
+country_event = {
+	id = russia_fpw.44
+	title = russia_fpw.43.t
+	desc = russia_fpw.44.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.43.a
+		hidden_effect = {
+			white_peace = {
+				tag = FIN
+				message = peace_finland_uprising_tt
+			}
+		}
+		add_stability = 0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+country_event = {
+	id = russia_fpw.45
+	title = russia_fpw.43.t
+	desc = russia_fpw.45.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.43.a
+		hidden_effect = {
+			white_peace = {
+				tag = UKR
+				message = peace_ukraine_uprising_tt
+			}
+		}
+		add_stability = 0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+country_event = {
+	id = russia_fpw.46
+	title = russia_fpw.43.t
+	desc = russia_fpw.46.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.43.a
+		hidden_effect = {
+			white_peace = {
+				tag = BLR
+				message = peace_belarus_uprising_tt
+			}
+		}
+		add_stability = 0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+country_event = {
+	id = russia_fpw.47
+	title = russia_fpw.43.t
+	desc = russia_fpw.47.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.43.a
+		hidden_effect = {
+			white_peace = {
+				tag = LIT
+				message = peace_lithuania_uprising_tt
+			}
+			white_peace = {
+				tag = LAT
+				message = peace_latvia_uprising_tt
+			}
+			white_peace = {
+				tag = EST
+				message = peace_estonia_uprising_tt
+			}
+		}
+		add_stability = 0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+country_event = {
+	id = russia_fpw.48
+	title = russia_fpw.43.t
+	desc = russia_fpw.48.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.43.a
+		hidden_effect = {
+			white_peace = {
+				tag = GEO
+				message = peace_georgia_uprising_tt
+			}
+			white_peace = {
+				tag = ARM
+				message = peace_armenia_uprising_tt
+			}
+			white_peace = {
+				tag = AZR
+				message = peace_azerbaijan_uprising_tt
+			}
+		}
+		add_stability = 0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.40.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+
+
+# quick peace with russia
+
+country_event = {
+	id = russia_fpw.1000
+	title = russia_fpw.1000.t
+	desc = russia_fpw.1000.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		controls_state = 195
+		controls_state = 219
+		SOV = {
+			is_ai = yes
+		}
+	}
+	
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.1000.a
+		
+		hidden_effect = {
+			#white_peace = {
+			#	tag = SOV
+			#	#message = peace_georgia_uprising_tt
+			#}
+		}
+		
+		start_peace_conference = {
+			tag = SOV
+			score_factor = 0.6
+			winner_scope = ALL
+			#message = my_peace_tt
+		}
+		
+		add_stability = 0.05
+		add_war_support = 0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.1000.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+country_event = {
+	id = russia_fpw.1001
+	title = russia_fpw.1001.t
+	desc = russia_fpw.1001.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.1001.a
+		
+		hidden_effect = {
+			#white_peace = {
+			#	tag = SOV
+			#	#message = peace_georgia_uprising_tt
+			#}
+		}
+		
+		Prev.Prev = {
+			start_peace_conference = {
+				tag = SOV
+				score_factor = 0.6
+				winner_scope = ALL
+				#message = my_peace_tt
+			}
+		}
+		
+		add_stability = 0.05
+		add_war_support = 0.10
+		
+		ai_chance = { 
+			base = 10
+		}
+	}
+	option = {
+		name = russia_fpw.1001.b
+		
+		add_stability = -0.05
+		add_war_support = -0.10
+		
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+	
+}
+
+country_event = { # our subject declares independence
+	id = russia_fpw.49
+	title = russia_fpw.49.t
+	desc = russia_fpw.49.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { # peace out
+		name = russia_fpw.49.a
+		
+		add_stability = -0.05
+		
+		FROM = {
+			country_event = {
+				id = russia_fpw.50
+				hours = 4
+			}
+		}
+		
+		ai_chance = { 
+			base = 1
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	option = {
+		name = russia_fpw.49.b
+		
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+		
+		ai_chance = { 
+			base = 6
+		}
+	}
+	
+}
+country_event = {
+	id = russia_fpw.50
+	title = russia_fpw.50.t
+	desc = russia_fpw.50.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = { 
+		name = russia_fpw.50.a
+		
+		add_stability = 0.05
+		
+		ai_chance = { 
+			base = 1
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+state={
+resources={
+wood=14
+}
+
+	id=540
+	name="STATE_540"
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ANG
+
+	}
+
+	provinces={
+		13297 13298 13375 13524 13592 13628 13635 13740 13755 13816 13877 13883 13914 13921 14019 14030 14111 14120 14543 14551 14552 14554 14557 14565 
+	}
+	manpower=832000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
+

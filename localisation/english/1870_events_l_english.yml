@@ -1,0 +1,433 @@
+﻿l_english:
+  fpw_crisis.1.t:0 "Parliament's Heated Debate!"
+  fpw_crisis.1.d.1:0 "A fiery debate has erupted in Parliament today over the rapid expansion pursued by [gw_target.GetNameDef] in recent events. Politicians from all parties, alongside military advisors, are urging us to intervene to preserve the balance of power and check [gw_target.GetAdjectiveCap] ambitions."
+
+  fpw_crisis.1.d.2:0 "A fiery debate has erupted in Parliament today over the rapid expansion pursued by [gw_target.GetNameDef] and the by that caused the current International Crisis. Politicians from all parties, alongside military advisors, are urging us to intervene similar to other Nations to preserve the balance of power and check [gw_target.GetAdjectiveCap] ambitions."
+
+  fpw_crisis.1.a:0 "Intervene to stop the [gw_target.GetAdjectiveCap] expansion"
+  fpw_crisis.1.b:0 "Support the [gw_target.GetAdjectiveCap] ambitions"
+  fpw_crisis.1.c:0 "Stay out of this conflict"
+
+  fpw_crisis.2.t:0 "[FROM.GetNameDefCap] Backs Our Side"
+  fpw_crisis.2.d:0 "We have received word that [FROM.GetNameDefCap] has publicly announced their support for us in the current crisis. If war breaks out, they will stand by our side."
+  fpw_crisis.2.a:0 "Excellent!"
+
+  fpw_crisis.3.t:0 "[FROM.GetNameDefCap] Issues a Dire Warning!"
+  fpw_crisis.3.d:0 "Our recent expansions have provoked [FROM.GetNameDef] to threaten war. This ultimatum has escalated the    situation into an international crisis, and backing down is no longer an option!"
+
+  fpw_crisis.3.a:0 "There's no turning back now!"
+
+  austro_prussian_fpw.1.t:0 "[From.GetName] has joined our Side!"
+  austro_prussian_fpw.1.d:0 "[From.GetName] has decided to join us in the Austro-Prussian War, offering their support against our common enemy."
+  austro_prussian_fpw.1.a:0 "Großartig!"
+
+  austro_prussian_fpw.2.t:0 "Austria Capitulates!"
+  austro_prussian_fpw.2.d:0 "After the decisive defeat at Königgrätz and suffering heavy casualties, the Austrian Government has reached out to us for peace negotiations."
+  austro_prussian_fpw.2.a:0 "Großartig!"
+
+  austro_prussian_fpw.3.t:0 "Prussia Capitulates!"
+  austro_prussian_fpw.3.d:0 "Following a series of crushing defeats and mounting pressure, the Prussian Government has requested peace talks to end the conflict."
+  austro_prussian_fpw.3.a:0 "Großartig!"
+
+  austro_prussian_fpw.4.t:0 "Austria Capitulates!"
+  austro_prussian_fpw.4.d:0 "After suffering a significant defeat, the Austrian Government has conceded and asked for peace."
+  austro_prussian_fpw.4.a:0 "Grande!"
+
+  austro_prussian_fpw.5.t:0 "Prussia Capitulates!"
+  austro_prussian_fpw.5.d:0 "Prussia, facing insurmountable odds and devastating losses, has surrendered and seeks peace in the Austro-Prussian war."
+  austro_prussian_fpw.5.a:0 "Merda!"
+
+
+  franco_prussian_fpw.1.t:0 "[FRA.GetName] has capitulated!"
+  franco_prussian_fpw.1.d:0 "The [FRA.GetAdjective] leader [FRA.GetLeader] has reached out to our Chancellor [PRS.GetName], asking us for peace in our war. We think it is best to accept this preliminary peace, as not agreeing to peace now could prolong this war even more and cause more casualties."
+  franco_prussian_fpw.1.a:0 "Great!"
+  franco_prussian_fpw.1.b:0 "WE WILL FIGHT UNTIL IT'S OVER!"
+
+  franco_prussian_fpw.2.t:0 "[PRS.GetName] has capitulated!"
+  franco_prussian_fpw.2.d:0 "The Prussian leader [PRS.GetLeader] has reached out to us, asking for peace in our war. We think it is best to accept this preliminary peace since not going to peace now could prolong this war even more and cause more casualties."
+  franco_prussian_fpw.2.a:0 "Great!"
+  franco_prussian_fpw.2.b:0 "WE WILL FIGHT UNTIL IT'S OVER!"
+
+  franco_prussian_fpw.3.t:0 "Question of the annexation of Alsace-Lorraine."
+  franco_prussian_fpw.3.d:0 "Following the vicotry over the [FRA.GetName] in the Franco-Prussian War, we are now at a position to also take territories, next to giving the [FRA.GetAdjective] Debts and taking some territory until the debts are paid back. The First territory we could take is the territory of Alsace Lorraine and Belfort. The Reichsheer has said those territories are necessary for further defense in later wars against france, while the chancellor Bismarck has said that taking Territory by the [FRA.GetAdjective] will cause a bad relationshsip which we shouldnt risk just now as such a new major state in the middle of Europe."
+  franco_prussian_fpw.3.a:0 "Bismarck is in the right."
+  franco_prussian_fpw.3.b:0 "We can leave Belfort the French."
+  franco_prussian_fpw.3.c:0 "We will take it all!"
+
+  franco_prussian_fpw.4.t:0 "The Nanzig-Epinal Question."
+  franco_prussian_fpw.4.d:0 "Having annexed and integrated the new Reichsterritories of Elsass-Lothringen, we are at a position where we could also take the territories of Nazig-Epinal, which would make our border even more defensive, the Reichsheer says since we would have a longer river border. Bismarck still says we shouldn't take too much because if we do, the relations with not only [FRA.GetName] but also the international community will worsen to a point. If we take just one more meter of land, we will be in the middle of a great war of the European powers."
+  franco_prussian_fpw.4.a:0 "We should listen to Moltke."
+  franco_prussian_fpw.4.b:0 "Bismarck is right."
+
+  franco_prussian_fpw.5.t:0 "Annexation of the French Colonies."
+  franco_prussian_fpw.5.d:0 "Now, the high-ranking commanders of the Reichsheer, such as Moltke, have asked for the further annexations of all the African Colonies from the [FRA.GetAdjective]. Bismarck warns us that doing that will definitely ruin our relation with France to the last degree but also start a great war, which would be unavoidable at that point."
+  franco_prussian_fpw.5.a:0 "We shouldnt risk a Great War!"
+  franco_prussian_fpw.5.b:0 "Who cares about the international stage?"
+
+  franco_prussian_fpw.6.t:0 "Napoleon III Captured"
+  franco_prussian_fpw.6.d:0 "In a dramatic turn of events, Emperor Napoleon III has been captured by our forces. This development is likely to shift the balance of power in the ongoing conflict, with significant political implications for France. A provisional government may soon be established."
+  franco_prussian_fpw.6.a:0 "Establish a Provisional Government"
+
+  franco_prussian_fpw.7.t:0 "The Fall of Paris"
+  franco_prussian_fpw.7.d:0 "Paris has fallen to the advancing forces of Prussia. Our government is in disarray. It is the best to make our Government resign."
+  franco_prussian_fpw.7.a:0 "Accept the Surrender..."
+
+  franco_prussian_fpw.8.t:0 "The Paris Commune"
+  franco_prussian_fpw.8.d:0 "Following the turmoil and the capture of Paris, a radical socialist government known as the Paris Commune has taken control of the city. This new government opposes both the French provisional government and our forces, leading to further instability."
+  franco_prussian_fpw.8.a:0 "Excuse me, what?"
+  franco_prussian_fpw.8.b:0 "Play as the Paris Commune"
+
+  franco_prussian_fpw.9.t:0 "Prussia Leaves Paris"
+  franco_prussian_fpw.9.d:0 "After a triumphant parade through Paris, our forces have withdrawn from the city. This symbolic act marks the end of our military operations in the region, solidifying our victory and reshaping the political landscape of Europe."
+  franco_prussian_fpw.9.a:0 "Withdraw from Paris"
+
+
+  italy_fpw.1.t:0 "[ITA.GetLeader] offers an alliance"
+  italy_fpw.1.d:0 "Italian Prime Minister [ITA.GetLeader] is wanting to make an alliance with us because of our common enemy of Austria. We are trying to unify Germany, and they are trying to liberate Venice, so naturally it would make sense to befriend them."
+  italy_fpw.1.a:0 "Of Course!"
+  italy_fpw.1.b:0 "Decline the offer"
+  italy_fpw.2.t:0 "Italy asks for Venice in exchange for their support"
+  italy_fpw.2.d:0 "Italian Prime Minister [ITA.GetLeader] has made us an interesting offer. The country will help us in the next major war, in exchange for us giving them the region of Venice. This would cause us to lose land, but avert the risk of fighting a two-front war."
+  italy_fpw.2.a:0 "Sure"
+  italy_fpw.2.b:0 "No Thanks"
+  italy_fpw.3.t:0 "We need to conquer Venice!"
+  italy_fpw.3.d:0 "[PRS.GetNameDefCap] is at war with [AUS.GetNameDefCap], and this provides us with a great opportunity to liberate the region of Venetia from Austrian oppression. Many nationalist politicians are demanding that we declare war on Austria, as it would allow us to retake our rightful land in the name of helping Prussia."
+  italy_fpw.3.a:0 "Uh OK"
+  italy_fpw.3.b:0 "We shall declare war on Austria immediately!"
+  italy_fpw.4.t:0 "The Prime Minister has resigned!"
+  italy_fpw.4.d:0 "Due to his inability to conquer Venetia, Prime Minister [ROOT.GetLeader] has been forced to resign. It seems that Bettino Ricasoli is our new leader."
+  italy_fpw.4.a:0 "L"
+
+  spain_fpw.1.t:0 "Spanish Glorious Revolution"
+	spain_fpw.1.d:0 ""
+  spain_fpw.1.a:0 "Purge this Royalist scum from our lands!"
+  spain_fpw.2.t:0 "[SPR.GetNameDefCap] searches for a new Monarch"
+	spain_fpw.2.d:0 ""
+  spain_fpw.2.a:0 "Accept this offer"
+  spain_fpw.2.b:0 "Decline this offer"
+  spain_fpw.3.t:0 "[FROM.GetNameDefCap] accepted our offer"
+	spain_fpw.3.d:0 ""
+  spain_fpw.3.a:0 "Great news!"
+  spain_fpw.4.t:0 "[FROM.GetNameDefCap] declined our offer"
+	spain_fpw.4.d:0 ""
+  spain_fpw.4.a:0 "How unfortunate."
+
+  france_fpw.1.t:0 "Prussian reaction to the Ems-Dispatch"
+  france_fpw.1.d:0 "[PRS.GetNameDefCap] has responded to our ultimatum in a mocking manner, publishing a modified version of it in the largest German newspaper, making us appear fearful of them. This has further enraged the French public, leaving us with a critical choice between going to war or facing national riots."
+  france_fpw.1.a:0 "These damn Prussians!"
+  france_fpw.1.b:0 "We shall ignore this."
+
+  france_fpw.2.t:0 "The Prusso-Spanish King?"
+  france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
+  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
+  france_fpw.2.b:0 "Let the Spanish do there own thing."
+
+  france_fpw.3.t:0 "[FRA.GetNameDefCap] Offers to Buy [LUX.GetNameDef]"
+  france_fpw.3.d:0 "The leader of [FRA.GetNameDefCap], [FRA.GetLeader], offers us 5 million to cede Luxembourg to them. This could be a great opportunity as we are in severe financial trouble, and the exclave of Luxembourg is no longer profitable after its territory was drastically decreased."
+  france_fpw.3.a:0 "Accept this offer"
+  france_fpw.3.b:0 "Decline"
+
+  france_fpw.4.t:0 "[HOL.GetNameDefCap] Accepts Our Purchase!"
+  france_fpw.4.d:0 "Our purchase of [LUX.GetNameDef] has been accepted by [HOL.GetNameDef], who have been deep in debt."
+  france_fpw.4.a:0 "Great!"
+
+  france_fpw.5.t:0 "[HOL.GetNameDefCap] Declines Our Purchase Idea!"
+  france_fpw.5.d:0 "Our purchase of [LUX.GetNameDef] has been declined by [HOL.GetNameDef]. Unfortunately, there is little we can do without violating international laws regarding the sovereignty of nations."
+  france_fpw.5.a:0 "Sacré bleu!"
+
+  france_fpw.6.t:0 "[FRA.GetNameDefCap] Seizes Control Over [LUX.GetNameDef]!"
+  france_fpw.6.d:0 "Latest news reports that [FRA.GetNameDef] has bought [LUX.GetNameDef] from [HOL.GetNameDef] for around 5 million guilders. Even though we agreed that France could take control of Luxembourg, the public is outraged that a member of the former German Confederation has lost its sovereignty to our greatest enemy."
+  france_fpw.6.a:0 "Demand France to give it back!"
+  france_fpw.6.b:0 "Ignore the public."
+
+  france_fpw.7.t:0 "[PRS.GetNameDefCap] Opposes the Luxembourg Purchase!"
+  france_fpw.7.d:0 "After our purchase of Luxembourg, [PRS.GetNameDef] has intervened, positioning themselves as protectors of the Germanic countries. Despite allowing such a purchase two years ago, it appears they have changed their stance. This could escalate into a conflict between us and the [PRS.GetAdjective]s."
+  france_fpw.7.a:0 "Luxembourg isn’t worth a war!"
+  france_fpw.7.b:0 "We will keep [LUX.GetNameDef], no matter what"
+
+  egypt_fpw.1.t:0 "Suez Canal built!"
+  egypt_fpw.1.d:0 ""
+  egypt_fpw.1.a:0 "Mutqam!"
+
+  prussia_fpw.1.t: "Bismarcks Ultimatum"
+  prussia_fpw.1.d: "Otto von Bismarck has issued an ultimatum regarding the future direction of Prussian politics and its role in German unification."
+  prussia_fpw.1.a: "We shouldn't risk Bismarck"
+  prussia_fpw.1.b: "Bismarck is replaceable"
+  prussia_fpw.2.t: "Nord-Süd Proposal"
+  prussia_fpw.2.d: "Prussia has proposed a new alliance structure, aiming to create a Nord-Süd axis to strengthen German unity and influence."
+  prussia_fpw.2.a: "Großartig!"
+  prussia_fpw.3.t: "Invite to join the North German Confederation"
+  prussia_fpw.3.d: "Prussia is extending an invitation to join the North German Confederation, aiming to consolidate power and unify the northern German states."
+  prussia_fpw.3.a: "Join the North German Confederation"
+  prussia_fpw.3.b: "Decline the offer"
+  prussia_fpw.4.t: "[FROM.GetNameDefCap] accepts the offer"
+  prussia_fpw.4.d: "The invited state has accepted the offer to join the North German Confederation, furthering the cause of unification."
+  prussia_fpw.4.a: "Perfekt!"
+  prussia_fpw.5.t: "[FROM.GetNameDefCap] declines the offer"
+  prussia_fpw.5.d: "The invited state has declined the offer to join the North German Confederation."
+  prussia_fpw.5.a: "They decided their fate"
+  prussia_fpw.8.t: "Schutz und Trutzbüdniss"
+  prussia_fpw.8.d: " A defensive and offensive alliance is proposed to strengthen ties and security among Prussian and South German states."
+  prussia_fpw.8.a: "We will accept."
+  prussia_fpw.8.b: "Thanks, but no."
+  prussia_fpw.9.t: "A golden gift by [PRS.GetNameDef]"
+  prussia_fpw.9.d: "Prussia has offered a significant gift, a gesture to solidify alliances and foster goodwill."
+  prussia_fpw.9.a: "Let's accept this Gift"
+  prussia_fpw.10.t: "Spanish Glorious Revolution"
+  prussia_fpw.10.d: "News of a revolution in Spain reaches Prussia, potentially affecting European dynamics."
+  prussia_fpw.10.a: "Good to know"
+  prussia_fpw.11.t: "Modified Ems-Dispatch"
+  prussia_fpw.11.d: "The Ems Dispatch has been modified to provoke a reaction from France, a strategic move by Bismarck."
+  prussia_fpw.11.a: "Let's see how [FRA.GetNameDef] reacts"
+  prussia_fpw.12.t: "Kaiserbrief"
+  prussia_fpw.12.d: "An offer has been made to proclaim a new German Emperor, a critical step in the unification process."
+  prussia_fpw.12.a: "We shall accept this offer"
+  prussia_fpw.12.b: "Never!"
+  prussia_fpw.13.t: "[From.GetNameDefCap] accepts our offer"
+  prussia_fpw.13.d: "The offer to join the unification efforts has been accepted, bringing Germany closer to unity."
+  prussia_fpw.13.a: "The unification is just steps away!"
+  prussia_fpw.14.t: "[From.GetNameDefCap] declines our offer"
+  prussia_fpw.14.d: "The offer to join the unification efforts has been declined, a setback for Prussia's plans."
+  prussia_fpw.14.a: "They decided their fate"
+  prussia_fpw.15.t: "German Unification"
+  prussia_fpw.15.d: "The unification of Germany has been achieved, marking a historic milestone for the nation."
+  prussia_fpw.15.a: "Heil dir im Siegerkranz!"
+  prussia_fpw.16.t: "[FROM.GetNameDefCap] accepts the Schutz und Trutzbüdniss"
+  prussia_fpw.16.d: "The state has accepted the defensive and offensive alliance proposed by Prussia."
+  prussia_fpw.16.a: "Gott schütze [From.GetNameDef]"
+  prussia_fpw.17.t: "[FROM.GetNameDefCap] declines the Schutz und Trutzbüdniss"
+  prussia_fpw.17.d: "The state has declined the proposed alliance, choosing not to align with Prussia."
+  prussia_fpw.17.a: "We dont need them anyways!"
+  prussia_fpw.19.t: "Austria asks for allowance to Mobilize against Prussia"
+  prussia_fpw.19.d: "Austria requests permission to mobilize its forces in response to Prussian actions, escalating the conflict."
+  prussia_fpw.19.a: "Sure thing!"
+  prussia_fpw.21.t: "[PRS.GetLeader] offers an alliance"
+  prussia_fpw.21.d: "Prussian Prime Minister [PRS.GetLeader] is wanting to make an alliance with us to guarantee each of our great Nations in case of a war in Europe."
+  prussia_fpw.21.a: "Of Course!"
+  prussia_fpw.21.b: "Decline the offer"
+  prussia_fpw.22.t: "Status of the Royal Prussian Army"
+  prussia_fpw.22.d: "The Royal Prussian Army serves as the backbone of our great Prussian Kingdom. The army has helped elevate us into a Great World Power, threatening those who dare to challenge us.\n\nHowever, our army is in need of reform. Two main theorists are Chief Helmuth von Moltke, who serves as our current Chief of Staff, and General of the Cavalry Alfred von Rauch. Both men have different plans on how our armies should be used.\n\nMoltke: Being a trusted leader of our General Staff, Moltke focuses on the concentration of our forces to achieve organized grand planning.\nAlfred: Though not holding a high-ranking position on our staff, Alfred believes that we should focus on mobile warfare to win our battles. Cavalry would be of utmost importance for crushing our enemies.\n\nBoth of these men have different ways of thinking, and we should consider our choice wisely."
+  prussia_fpw.22.a: "We will go with Moltke"
+  prussia_fpw.22.b: "We will go with Alfred"
+  prussia_fpw_news.1.t: "Wilhelm I Asserts Absolute Rule"
+  prussia_fpw_news.1.d: "After a brutal loss in the Austro-Prussian War, Prussia stood as a failing world power, losing its prestige. After various reforms by Wilhelm I, he has proclaimed a new government.\n\nThe absolute monarchy has returned as it was before 1848 in [PRS.GetNameDef]. The people of Prussia hope for a renewed sense of stability under Wilhelm's rule to counter the challenges of the past."
+  prussia_fpw_news.1.a: "Gott Erhalte King Wilhelm!"
+
+  france_fpw.1.t:0 "Prussian reaction to the Ems-Dispatch"
+  france_fpw.1.d:0 "[PRS.GetNameDefCap] has responded to our ultimatum in a mocking manner, publishing a modified version of it in the largest German newspaper, making us appear fearful of them. This has further enraged the French public, leaving us with a critical choice between going to war or facing national riots."
+  france_fpw.1.a:0 "These damn Prussians!"
+  france_fpw.1.b:0 "We shall ignore this."
+
+  france_fpw.2.t:0 "The Prusso-Spanish King?"
+  france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
+  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
+  france_fpw.2.b:0 "Let the Spanish do there own thing."
+
+
+  prussia_fpw.18.t: "Prussian Proposal for the German Confederation"
+  prussia_fpw.18.d: "[PRS.GetNameDefCap] has proposed the idea of German unification under Prussian dominance, deliberately excluding us from the new nation. This proposal is not only a provocation but also a waste of our time."
+  prussia_fpw.18.a: "Ask the Schleswig-Holsteinische Question then"
+
+
+  prussia_fpw.6.t: "Schleswig-Holsteinische Question"
+  prussia_fpw.6.d: "After our proposal to unify Germany while excluding Austria, Austria has responded by questioning the validity of our treaties concerning the Schleswig-Holstein question. Following Prussia's proposal for a German state that excludes us, Prussia has now decided to annex our part of Schleswig-Holstein. This is an act we cannot tolerate, and we must act immediately."
+  prussia_fpw.6.a: "Let's annex Holstein then!"
+  prussia_fpw.6.b: "We shouldn't risk a war!"
+
+  prussia_fpw.7.t: "Prussia annexes Holstein"
+  prussia_fpw.7.d: "Prussia has decided to annex Holstein, a move that could escalate tensions with Austria."
+  prussia_fpw.7.a: "Let's ask Frankfurt for allowance to mobilize"
+
+
+  prussia_fpw.20.t: "Ems-Dispatch"
+  prussia_fpw.20.d: "[FRA.GetNameDefCap] has sent us an ultimatum, demanding that we reject any possibility of a Prussian monarch on the Spanish throne, and that our leader [PRS.GetLeader] explicitly state this. We should respond by publicly displaying a modified version of the ultimatum, mocking them in the process."
+  prussia_fpw.20.a: "Sure sure"
+
+
+  prussia_fpw.23.t: "German North Unifies!"
+  prussia_fpw.23.d: "The Kingdom of Prussia is unifying northern Germany following their proposal of the Nord-Süd Achse, which divides Germany into Prussian and Austrian zones. We should take decisive action by seeking an alliance with Russia to oppose the newly formed North German Confederation."
+  prussia_fpw.23.a: "Lets ask Russia"
+
+  prussia_fpw.24.t: "[FRA.GetLeader] offers an alliance"
+  prussia_fpw.24.d: "The French leader [FRA.GetLeader] is seeking an alliance with us in light of the newly unified northern Germany. They believe it is in our mutual interest to unite against our common enemy and to expand our natural borders."
+  prussia_fpw.24.a: "Of Course!"
+  prussia_fpw.24.b: "Decline the offer"
+
+  prussia_fpw.25.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.25.d: "The Russian leader [SOV.GetLeader] has accepted our offer for an Alliance against the North German Confederation."
+  prussia_fpw.25.a: "Excellent!"
+
+  prussia_fpw.26.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.26.d: "The Russian leader [SOV.GetLeader] has declined our offer for an Alliance against the North German Confederation."
+  prussia_fpw.26.a: "Sacre Bleu!"
+
+  prussia_fpw.28.t: "[PRS.GetLeader] offers an alliance"
+  prussia_fpw.28.d: "The Prussian leader [PRS.GetLeader] is seeking an alliance with us. They believe it is in our mutual interest to unite against our common enemy of Austria and to expand our natural borders."
+  prussia_fpw.28.a: "Of Course!"
+  prussia_fpw.28.b: "Decline the offer"
+
+  prussia_fpw.29.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.29.d: "The Russian leader [SOV.GetLeader] has accepted our offer for an Alliance against Austria."
+  prussia_fpw.29.a: "Exzellent!"
+
+  prussia_fpw.30.t: "[SOV.GetNameDefCap] accepts the offer!"
+  prussia_fpw.30.d: "The Russian leader [SOV.GetLeader] has declined our offer for an Alliance against Austria."
+  prussia_fpw.30.a: "Verdammt!"
+
+  prussia_fpw.31.t: "[FROM.GetNameDefCap] demands to puppet [ROOT.GetNameDef]!"
+  prussia_fpw.31.d: "The leader [FROM.GetLeader] demands that our nation become a puppet state under their control. If we decline the offer, we will stand alone against them in a war."
+  prussia_fpw.31.a: "Back down..."
+  prussia_fpw.31.b: "Fight for our Freedom!"
+
+  prussia_fpw.32.t: "[FROM.GetNameDefCap] accepts ultimatum"
+  prussia_fpw.32.d: "The leader [FROM.GetLeader] has accepted our offer and backed down, resulting in [FROM.GetNameDef] becoming our puppet state."
+  prussia_fpw.32.a: "Great!"
+
+  prussia_fpw.33.t: "[FROM.GetNameDefCap] declines ultimatum!"
+  prussia_fpw.33.d: "The leader [FROM.GetLeader] has declined our ultimatum. At this point, we must act decisively to assert our dominance by waging war against [FROM.GetNameDef]."
+  prussia_fpw.33.a: "War it is!"
+
+  prussia_fpw.34.t: "[FROM.GetNameDefCap] demands to annex [ROOT.GetNameDef]!"
+  prussia_fpw.34.d: "The leader [FROM.GetLeader] demands that our nation will be annexed by [FROM.GetNameDef]. If we decline the offer, we will stand alone against them in a war."
+  prussia_fpw.34.a: "Back down..."
+  prussia_fpw.34.b: "Fight for our Freedom!"
+
+  prussia_fpw.35.t: "[FROM.GetNameDefCap] accepts ultimatum"
+  prussia_fpw.35.d: "The leader [FROM.GetLeader] has accepted our offer and backed down, resulting in [FROM.GetNameDef] being annexed and integrated into our great nation."
+  prussia_fpw.35.a: "Great!"
+
+  prussia_fpw.36.t: "[FROM.GetNameDefCap] declines ultimatum!"
+  prussia_fpw.36.d: "The leader [FROM.GetLeader] has declined our ultimatum. At this point, we must act decisively to assert our dominance by waging war against [FROM.GetNameDef]."
+  prussia_fpw.36.a: "War it is!"
+
+  prussia_fpw.37.t: "[FROM.GetNameDefCap] demands German Unification"
+  prussia_fpw.37.d: "Prussia demands that we join [PRS.GetNameDef] to finally unify the Greater German Space under [PRS.GetAdjective] rule. This proposal aims to consolidate all German-speaking territories into a single nation dominated by Prussian influence."
+  prussia_fpw.37.a: "Long Live Sacred Germany!"
+  prussia_fpw.37.b: "Not undeer Prussian rule!"
+
+  prussia_fpw.38.t: "[FROM.GetNameDefCap] accepts ultimatum"
+  prussia_fpw.38.d: "[AUS.GetNameDefCap] has accepted our demand to unify the Greater German Space under our rule. This historic agreement signifies the end of long-standing rivalries and the beginning of a unified German nation, dominated by our leadership."
+  prussia_fpw.38.a: "Long Live Sacred Germany!"
+
+  prussia_fpw.39.t: "[FROM.GetNameDefCap] declines ultimatum!"
+  prussia_fpw.39.d: "[AUS.GetNameDefCap] has declined our demand to unify the Greater German Space under our rule. This rejection signifies a continued division within the German-speaking territories and a clear refusal to submit to our leadership. We can't allow this rejection, as one country shouldn't decide the future of our shared culture."
+  prussia_fpw.39.a: "War it is!"
+
+  prussia_fpw.40.t: "The Public Demands"
+  prussia_fpw.40.d: "With significant public outrage after the loss in the Austro-Prussian War, many have criticized the government for its failure to provide for the people.\n\nHaving had enough of this, the reform movement has become the most popular movement in Prussia, and now the public wants what they've been protesting for."
+  prussia_fpw.40.a: "Towards Proper Democracy"
+  prussia_fpw.40.b: "Towards Socialism"
+
+  prussia_fpw.41.t: "Liberal Front Prevails"
+  prussia_fpw.41.d: ""
+  prussia_fpw.41.a: "Proclaim the @PRSRepublic"
+  prussia_fpw.41.b: "Proclaim the @PRSUnited Kingdom"
+  prussia_fpw.41.c: "Proclaim the @PRSSocialist Republic"
+
+  prussia_fpw.44.t:0 "New [PRS.GetAdjectiveCap] European concert"
+  prussia_fpw_44_d_aus:0 "With [PRS.GetNameDefCap]'s recent formation and its deft diplomatic outreach, they have arranged a meeting between us and [ITA.GetAdjective] leader [ITA.GetLeader] in our capital, Vienna. This Prussian maneuver, fostering rapprochement with Italy, opens the door to a promising alliance in Europe, uniting [Aus.GetNameDef], [PRS.GetNameDef], and Italy in a new vision for continental power."
+  prussia_fpw_44_d_ita:0 "Through recent political efforts by [PRS.GetNameDefCap], a historic meeting has been arranged between us and [Aus.GetLeader] in the Austrian capital of Vienna. Prussia’s intent to strengthen ties with [Aus.GetNameDef] could mark the beginning of a powerful alliance, bringing Italy, Austria, and [PRS.GetNameDef] together in a united front for Europe’s future."
+  prussia_fpw.44.a:0 "Maybe they're not as bad after all."
+
+ 
+  generic.26.t:0 "Warning"
+  generic.26.d:0 "This mod is an early release, and some bugs will be present, and some national focuses will be missing. If you find any bugs, please report them to the Discord server. For now, we only recommend playing as Prussia, Italy France, Russia, or Austria with Historical AI enabled."
+  generic.26.a:0 "I Agree"
+ 
+  ## Romania Events
+
+  fpw_romania.1.t:0 "The Current State of the Industry"
+  fpw_romania.1.d:0 "The current state of affairs regarding our industry is deplorable. Our factories are operating well below capacity, and our production efficiency is abysmally low. Our work norms are outdated and inefficient, leaving us far behind our competitors on the global stage. The Ottoman Empire, in its relentless pursuit of dominance, is siphoning off our resources, further crippling our already weakened industrial capabilities. This exploitation cannot continue unchecked if we hope to secure a prosperous future for our nation."
+  fpw_romania.1.a:0 "We will pull through this"
+  fpw_romania.1.b:0 "We give up (The game ends for you)"
+
+  fpw_romania.2.t:0 "The Education Budget"
+  fpw_romania.2.d:0 "After extensive brainstorming, we have come up with two possible solutions to address the budget issue. First, we could allocate a significant amount of funds to boost the education sector. This approach would greatly enhance the quality and reach of education but requires considerable resources and may strain our overall budget, potentially crippling other essential sectors. Alternatively, we could allocate only the bare minimum necessary to maintain the education sector. This would result in a weaker and less effective department but would allow us to conserve resources and maintain a more balanced budget overall. What should we do?"
+  fpw_romania.2.a:0 "Allocate Large Funds"
+  fpw_romania.2.b:0 "Allocate the Bare Minimum"
+  
+  fpw_romania.3.t:0 "The Education Golden Age"
+  fpw_romania.3.d:0 "After years of dedicated reforms, strategic investments, and unwavering patience, our country has unequivocally entered a new era of education, a golden age, characterized by one of the highest rates of education per capita globally. This monumental achievement stands as a testament to our collective efforts and foresight. We now proudly reap the manifold benefits and opportunities that this enhanced educational landscape affords us."
+  fpw_romania.3.a:0 "An Achievement"
+  fpw_romania.3.b:0 "Open the Champagne"
+
+  fpw_romania.4.t:0 "Education Department Reformed"
+  fpw_romania.4.d:0 "After considerable anticipation and numerous reforms, we can confidently assert that the Department of Education has been transformed into a reliably stable entity. This achievement has effectively balanced the disparity between the educated and uneducated segments of our population, ensuring that their influence on our economy is no longer detrimental. With this foundation in place, we are poised to further expand our educational initiatives as necessary, ushering in a new era of enlightenment and progress for our nation."
+  fpw_romania.4.a:0 "It's Finally Done"  
+
+  fpw_romania.5.t:0 "The Military Industrial Sector"
+  fpw_romania.5.d:0 "The current state of our country's military-industrial sector is severely underdeveloped. This presents a significant gap in our national defense capabilities and our potential for technological and economic growth. To address this, it is imperative that we initiate a comprehensive strategy to build and expand this sector without delay."
+  fpw_romania.5.a:0 "Start the Reform"  
+
+  fpw_romania.6.t:0 "Military Industrial Fund"
+  fpw_romania.6.d:0 "With the approval of the reform in the military-industrial sector, a fund has been authorized to support this initiative. This funding allows us to gain a head start in either Wallachia or Moldova. Which one shall we prioritize?"
+  fpw_romania.6.a:0 "Start With Wallachia"
+  fpw_romania.6.b:0 "Start With Moldova"
+
+  fpw_romania.7.t:0 "The Project is Done"
+  fpw_romania.7.d:0 "Over a period marked by numerous industrialization initiatives, the region has undergone significant development and modernization. This extensive process has culminated in the successful completion of military-industrial reform."
+  fpw_romania.7.a:0 "Long Live the Nation"
+
+  fpw_romania.8.t:0 "The Border has Been Secured"
+  fpw_romania.8.d:0 "The construction of the bunkers along the border has been successfully completed. These fortifications represent a significant achievement in our defense strategy, ensuring that we are better prepared for any potential threats."
+  fpw_romania.8.a:0 "Keep Them Out"
+
+  fpw_romania.9.t:0 "The Sector Reformed"
+  fpw_romania.9.d:0 "The military-industrial sector has undergone extensive and transformative reforms. These reforms have substantially upgraded our technological capabilities and operational efficiencies, aligning them with the standards of other leading global powers. Through targeted investments, strategic partnerships, and advancements in research and development, we have modernized our defense infrastructure."
+  fpw_romania.9.a:0 "Long Live the Enclave...wait, what?"
+
+  fpw_romania.10.t:0 "The Border has Been Secured"
+  fpw_romania.10.d:0 "The construction of the bunkers along the border has been successfully completed. These fortifications represent a significant achievement in our defense strategy, ensuring that we are better prepared for any potential threats."
+  fpw_romania.10.a:0 "Keep Them Out"
+
+  fpw_romania.11.t:0 "The Project is Done"
+  fpw_romania.11.d:0 "Over a period marked by numerous industrialization initiatives, the region has undergone significant development and modernization. This extensive process has culminated in the successful completion of military-industrial reform."
+  fpw_romania.11.a:0 "Long Live the Nation"
+  
+  fpw_flags.1.t: "Historical Prussian Flag"
+  fpw_flags.1.d: "Would you prefer to use the historical flag during the time or use the same historical flag that was improved to be appealing to the eyes?\n\nYou can always revert your changes later."
+  fpw_flags.1.a: "The Historical Flag"
+  fpw_flags.1.b: "Improved Historical Flag"
+  fpw_flags.2.t: "Historical Prussian Flag"
+  fpw_flags.2.d: "Would you prefer to use the historical flag during the time or use the same historical flag that was improved to be appealing to the eyes?\n\nYou can always revert your changes later."
+  fpw_flags.2.a: "The Historical Flag"
+  fpw_flags.2.b: "Improved Historical Flag"
+  fpw_flags.3.t: "Flag For a New Prussia"
+  fpw_flags.3.d: "(Flag 1) Traditional Prussian two-sided black and white, communist theme\n\n(Flag 2) Inspired by the First International, uses a red background with eblem inspired by the SDAP.\n\n\nYou can always revert your changes later."
+  fpw_flags.3.a: "Flag 1"
+  fpw_flags.3.b: "Flag 2"
+
+  fpw_generic.1.t:0 "Colonization finished!"
+  fpw_generic.1.d:0 "Our settlers have reported back to our colonization administration in [ROOT.capital.GetName] that the region is now fully colonized, and the settlers have returned to the mainland. These settlers can now colonize another region!"
+  fpw_generic.1.a:0 "Great!"
+
+  fpw_generic.2.t:0 "[FROM.GetLeader] offers an Alliance."
+  fpw_generic.2.d:0 "Today news have reached out to us that [FROM.GetLeader], the current Leader of [FROM.GetNameDef] have invited us to their Faction, the [FROM.GetFactionName]."
+  fpw_generic.2.a:0 "Accept this Offer"
+  fpw_generic.2.b:0 "Decline"
+
+  fpw_generic.3.t: "[From.GetNameDefCap] accepts our offer"
+  fpw_generic.3.d: "The offer to [FROM.GetNameDefCap] has been accepted and the country is now part of our glorious Alliance, the [ROOT.GetFactionName]."
+  fpw_generic.3.a: "Great news!"
+  fpw_generic.4.t: "[From.GetNameDefCap] declines our offer"
+  fpw_generic.4.d: "The offer to [FROM.GetNameDefCap] has been declined."
+  fpw_generic.4.a: "How unfortunate."
+
+  fpw_austria.1.t: "Austria Asks for Our Support"
+  fpw_austria.1.d: "The Austrian Empire is requesting our assistance in what they are calling a possible war with [PRS.GetNameDef]."
+  fpw_austria.1.a: "We shall help them"
+  fpw_austria.1.b: "We shall stay neutral"
+  fpw_austria.1.c: "We have other plans for Austria..."
+  fpw_austria.2.t: "France Agrees to Help"
+  fpw_austria.2.d: "[FRA.GetNameDefCap] has agreed to help us in our future war with [PRS.GetNameDef]"
+  fpw_austria.2.a: "Great!"
+  fpw_austria.3.t: "France Promises Neutrality"
+  fpw_austria.3.d: "[FRA.GetNameDefCap] has declared their neutrality in our future war with [PRS.GetNameDef]"
+  fpw_austria.3.a: "Well..."
+  fpw_austria.4.t: "France Denies to Help"
+  fpw_austria.4.d: "[FRA.GetNameDefCap] has denied to help us in our future war with [PRS.GetNameDef]"
+  fpw_austria.4.a: "You can never rely on the French!"
+
+
+
+

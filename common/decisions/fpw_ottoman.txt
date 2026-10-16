@@ -1,0 +1,612 @@
+fpw_tanzimat_era = {
+	fpw_construct_infrastructure = {
+		available = {
+			
+		}
+
+
+
+		visible = {
+			has_idea = fpw_TUR_tanzimat_economic_era
+		}
+
+		allowed = {
+			tag = TUR
+		}
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 32
+
+
+		icon = mission_icon
+		cost = 50
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					
+				}
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					
+				}
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	fpw_construct_civillian_industry = {
+		available = {
+			has_completed_focus = TUR_reform_civillian_projects
+		}
+
+
+
+		visible = {
+			has_idea = fpw_TUR_tanzimat_economic_era
+		}
+
+		allowed = {
+			tag = TUR
+		}
+		fire_only_once = yes
+
+		days_re_enable = 100
+
+		days_remove = 50
+
+
+		icon = mission_icon
+		cost = 150
+		complete_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+}
+fpw_TUR_restoring_legitimacy = {
+	fpw_end_the_sickness = {
+		available = {
+			
+		}
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+		}
+
+		allowed = {
+			tag = TUR
+			has_dynamic_modifier = {
+				modifier = fpw_TUR_sick_man_of_europe_4
+			}
+		}
+		fire_only_once = yes
+
+
+		days_remove = 1
+
+
+		icon = mission_icon
+		cost = 100
+		complete_effect = {
+			add_stability = 0.15
+			remove_dynamic_modifier = {
+				modifier = fpw_TUR_sick_man_of_europe_4
+			}
+		}
+	}
+	fpw_open_suez_canal = {
+		available = {
+			
+		}
+
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+			NOT = { has_idea = fpw_TUR_suez_canal_opened }
+		}
+
+		allowed = {
+			tag = TUR
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			NOT = {
+				has_idea = fpw_TUR_legitmacy_efforts
+			}
+		}
+		fire_only_once = yes
+
+		days_re_enable = 30
+
+		days_remove = 15
+
+
+		icon = mission_icon
+		cost = 5
+		complete_effect = {
+			add_ideas = fpw_TUR_suez_canal_opened
+			add_timed_idea = {
+				idea = fpw_TUR_legitmacy_efforts
+				days = 180
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_4
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+			}
+		}
+	}
+	fpw_close_suez_canal = {
+		available = {
+			
+		}
+
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+			has_idea = fpw_TUR_suez_canal_opened
+		}
+
+		allowed = {
+			tag = TUR
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+			}
+			NOT = {
+				has_idea = fpw_TUR_legitmacy_efforts
+			}
+		}
+		fire_only_once = yes
+
+		days_re_enable = 30
+
+		days_remove = 15
+
+
+		icon = mission_icon
+		cost = 5
+		complete_effect = {
+			remove_ideas = fpw_TUR_suez_canal_opened
+			add_timed_idea = {
+				idea = fpw_TUR_legitmacy_efforts
+				days = 180
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+			}
+		}
+	}
+	fpw_build_western_styled_schooling = {
+		available = {
+			
+		}
+
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+		}
+
+		allowed = {
+			tag = TUR
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+			}
+			NOT = {
+				has_idea = fpw_TUR_legitmacy_efforts
+			}
+		}
+		fire_only_once = yes
+
+		days_remove = 15
+
+
+		icon = mission_icon
+		cost = 25
+		complete_effect = {
+			add_timed_idea = {
+				idea = fpw_TUR_islamists_angered
+				days = 360
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_legitmacy_efforts
+				days = 180
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+			}
+		}
+	}
+	fpw_adopt_european_advisors = {
+		available = {
+			
+		}
+
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+		}
+
+		allowed = {
+			tag = TUR
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+			}
+			NOT = {
+				has_idea = fpw_TUR_legitmacy_efforts
+			}
+		}
+		fire_only_once = yes
+
+		days_remove = 15
+
+
+		icon = mission_icon
+		cost = 25
+		complete_effect = {
+			add_timed_idea = {
+				idea = fpw_TUR_european_advisors
+				days = 360
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_legitmacy_efforts
+				days = 180
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+			}
+		}
+	}
+	fpw_allow_industrial_investments = {
+		available = {
+			
+		}
+
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+			NOT = { has_idea = fpw_TUR_suez_canal_opened }
+		}
+
+		allowed = {
+			tag = TUR
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			NOT = {
+				has_idea = fpw_TUR_legitmacy_efforts
+			}
+		}
+		fire_only_once = yes
+
+		days_re_enable = 30
+
+		days_remove = 15
+
+
+		icon = mission_icon
+		cost = 5
+		complete_effect = {
+			add_timed_idea = {
+				idea = fpw_TUR_industrial_investments
+				days = 180
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_legitmacy_efforts
+				days = 180
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_4
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+			}
+		}
+	}
+	fpw_expand_ottoman_citizenship = {
+		available = {
+			
+		}
+
+		cost = 50
+
+
+		visible = {
+			has_completed_focus = TUR_restore_our_legitimacy
+			has_completed_focus = TUR_continue_the_reforms
+		}
+
+		allowed = {
+			tag = TUR
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			NOT = {
+				has_idea = fpw_TUR_multi_ethnic_state_two
+			}
+		}
+		fire_only_once = yes
+
+		days_re_enable = 30
+
+		days_remove = 15
+
+
+		icon = mission_icon
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = fpw_TUR_multi_ethnic_state_two
+				add_idea = fpw_TUR_multi_ethnic_state_three
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_legitmacy_efforts
+				days = 180
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_2
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_2
+				}
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_4
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_4
+				}
+				add_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe_3
+				}
+			}
+		}
+	}
+}
+

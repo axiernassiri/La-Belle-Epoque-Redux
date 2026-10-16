@@ -1,0 +1,25 @@
+
+state={
+	id=1172
+	name="STATE_1320"
+	resources={
+		
+	}
+
+	history={
+	set_variable = { tribal = 336 }
+		owner = INS
+		
+		
+		
+		
+		add_core_of = MAL
+
+	}
+
+	provinces={ 12113 }
+	manpower=85
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

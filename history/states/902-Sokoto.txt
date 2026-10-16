@@ -1,0 +1,24 @@
+
+state={
+resources={
+wood=1
+}
+
+	id=902
+	name="STATE_902"
+
+	history={
+	set_variable = { tribal = 902 }
+		owner = NGA
+		add_core_of = NGA
+		
+
+	}
+
+	provinces={ 11954 11964 11967 11969 13314 13356 13357 13422 13460 13577 13603 13707 13744 13986 14029 14135 14380 14391 14395 14403 14409 14426 14430 }
+	manpower=7621
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
+

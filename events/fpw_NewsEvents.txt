@@ -1,0 +1,544 @@
+add_namespace = news_fpw
+
+# austro prussian war escalation
+news_event = {
+	id = news_fpw.1
+	title = news_fpw.1.t
+	desc = news_fpw.1.d
+	picture = GFX_news_fpw_austro_prussian_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.1.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = AUS
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.1.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.1.c
+		trigger = {
+			original_tag = AUS
+		}
+	}
+}
+
+# napoleon the third is captured and the second empire collapses
+news_event = {
+	id = news_fpw.2
+	title = news_fpw.2.t
+	desc = news_fpw.2.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.2.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.2.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.2.c
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+
+# prov government has resigned
+news_event = {
+	id = news_fpw.3
+	title = news_fpw.3.t
+	desc = news_fpw.3.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.3.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.3.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.3.c
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+
+# luxembourg crisis
+news_event = {
+	id = news_fpw.4
+	title = news_fpw.4.t
+	desc = news_fpw.4.d
+	picture = GFX_report_event_total_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.3.a
+	}
+}
+
+news_event = {
+	id = news_fpw.5
+	title = "British Interest in Oceania"
+	desc = news_fpw.5.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "A new challenger approaches..."
+		add_war_support = -0.05
+	}
+}
+
+news_event = {
+	id = news_fpw.6
+	title = "The British Economy"
+	desc = news_fpw.6.d
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Ok"
+	}
+}
+
+news_event = {
+	id = news_fpw.7
+	title = "The Collapse of Gurney and Co"
+	desc = news_fpw.7.d
+	picture = GFX_news_event_eng_imperial_federation_india
+
+	trigger = {
+		date > 1866.05.10
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "May God have Mercy on our Soul"
+		trigger = {
+			original_tag = ENG
+		}
+		add_ideas = fpw_eng_economic_downfall
+		complete_national_focus = ENG_collapse_of_gurney_and_co
+	}
+	option = {
+		name = "The Empire, for Once, is not Looking Well."
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news_fpw.8
+	title = "Russel Resigns"
+	desc = news_fpw.8.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "The Conservatives Have Achieved a Victory"
+		trigger = {
+			original_tag = ENG
+		}
+		complete_national_focus = ENG_russel_resigns
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1866.6.18"
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+	option = {
+		name = "The Conservatives Have Achieved a Victory"
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+		}
+	}
+}
+news_event = {
+	id = news_fpw.9
+	title = "100th Aniversary of the Boston Massacre"
+	desc = news_fpw.9.d
+	picture = GFX_fpw_boston_massacre
+
+	trigger = {
+		date > 1870.03.5
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "May they Rest in Peace"
+		trigger = {
+			original_tag = USA
+		}
+		add_war_support = 0.005
+	}
+	option = {
+		name = "May they Rest in Peace"
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
+		}
+	}
+}
+news_event = {
+	id = news_fpw.10
+	title = "Edward Smith-Stanley Retires"
+	desc = news_fpw.10.d
+	
+	trigger = {
+		ENG = {
+			has_government = democratic
+		}
+		date > 1868.02.25
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "He Has Done Well."
+		trigger = {
+			original_tag = ENG
+		}
+		complete_national_focus = ENG_disraeli_leads
+		add_country_leader_role = {
+			character = ENG_benjamin_disraeli
+			promote_leader = yes
+			country_leader = {
+				ideology = conservative_constitutional_monarchism
+				expire = "1881.4.19.4"
+			}
+		}
+	}
+	option = {
+		name = "Ok"
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+# north german unification
+news_event = {
+	id = news_fpw.11
+	title = news_fpw.11.t
+	desc = news_fpw.11.d
+	picture = GFX_news_fpw_north_germany
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.11.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = AUS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.11.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.11.c
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	option = {
+		name = news_fpw.11.e
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+
+# north german unification
+news_event = {
+	id = news_fpw.12
+	title = news_fpw.12.t
+	desc = news_fpw.12.d
+	picture = GFX_news_fpw_ems_dispatch
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_fpw.12.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRS
+					original_tag = FRA
+				}
+			}
+			# Will germany finally unite?
+		}
+	}
+
+	option = {
+		name = news_fpw.12.b
+		trigger = {
+			original_tag = PRS
+		}
+
+	}
+
+	option = {
+		name = news_fpw.12.c
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+### Afghan Civil War Ending
+news_event = {
+	id = news_fpw.13
+	title = news_fpw.13.t
+	desc = news_fpw.13.d
+	picture = GFX_news_event_001
+	
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.13.a
+		trigger = {
+			original_tag = AFG
+		}
+	}
+	option = {
+		name = news_fpw.13.b
+		trigger = {
+			OR = {
+				original_tag = ENG
+				original_tag = SOV
+			}
+		}
+	}
+	option = {
+		name = news_fpw.13.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = AFG
+					original_tag = ENG
+					original_tag = SOV
+				}
+				
+			}
+		}
+	}
+}
+### Durrani Empire
+news_event = {
+	id = news_fpw.14
+	title = news_fpw.14.t
+	desc = news_fpw.14.d
+	picture = GFX_news_event_001
+	
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.14.a
+		trigger = {
+			original_tag = AFG
+		}
+	}
+	option = {
+		name = news_fpw.14.b
+		trigger = {
+			NOT = {
+				original_tag = AFG
+			}
+		}
+	}
+}
+### Caliph Seized
+news_event = {
+	id = news_fpw.15
+	title = news_fpw.15.t
+	desc = news_fpw.15.d
+	picture = GFX_news_event_001
+	
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.15.a
+		trigger = {
+			original_tag = AFG
+		}
+	}
+	option = {
+		name = news_fpw.15.b
+		trigger = {
+			NOT = {
+				original_tag = AFG
+			}
+		}
+	}
+}
+### New Order
+news_event = {
+	id = news_fpw.16
+	title = news_fpw.16.t
+	desc = news_fpw.16.d
+	picture = GFX_news_event_001
+	
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.16.a
+		trigger = {
+			original_tag = AFG
+		}
+	}
+	option = {
+		name = news_fpw.16.b
+		trigger = {
+			NOT = {
+				original_tag = AFG
+			}
+		}
+	}
+}
+### Anglo Afghan War
+news_event = {
+	id = news_fpw.17
+	title = news_fpw.17.t
+	desc = news_fpw.17.d
+	picture = GFX_news_event_001
+	
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.17.a
+		trigger = {
+			original_tag = AFG
+		}
+	}
+	option = {
+		name = news_fpw.17.b
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = news_fpw.17.c
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = news_fpw.17.d
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = AFG
+					original_tag = ENG
+					original_tag = RAJ
+				}
+			}
+		}
+	}
+}

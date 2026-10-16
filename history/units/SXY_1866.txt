@@ -1,0 +1,145 @@
+division_template = {
+	name = "Infanterieregiment"
+	
+	is_locked = no
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+# Infantry 2x
+division_template = {
+	name = "Feldartillerieregiment"
+	
+	is_locked = no
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		cannon_artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kavallerieregiment"
+	
+	is_locked = no
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	## Infanterieregiment ##
+	#1. Infanterie-Division
+	division = {
+		#1. Infanterieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 6559
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.3
+	}
+	#2. Infanterieregiment
+	division = {
+		#2. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 3514
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.3
+	}
+	#3. Infanterieregiment
+	division = {
+		#3. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 3
+		}
+		location = 9441
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.3
+	}
+
+	## Feldartillerieregiment ##
+	#1. Feldartillerieregiment-Regiment
+	division = {
+		#1. Feldartillerieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 9471
+		division_template = "Feldartillerieregiment"
+		start_experience_factor = 0.4
+	}
+
+	### KAVALLERIE ###
+	# 1. kavallerie-Division
+	division = {
+		#1. Kavallerieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 1
+		}
+		location = 573
+		division_template = "Kavallerieregiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		#2. Kavallerieregiment
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 514
+		division_template = "Kavallerieregiment"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SXY"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fpw_cavalry_equipment_0
+			creator = "SXY"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fpw_cannon_artillery_equipment
+			creator = "SXY"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+}

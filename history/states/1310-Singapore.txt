@@ -1,0 +1,29 @@
+
+state={
+	id=1167
+	name="STATE_1312"
+	resources={
+	}
+
+	history={
+		owner = RAJ
+		
+		
+		
+		
+		add_core_of = MAL
+		
+		1870.1.1={
+			owner = MAL
+			add_core_of = MAL
+		}
+		victory_points = { 7342 3 }
+
+	}
+
+	provinces={ 7342 }
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

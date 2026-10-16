@@ -1,0 +1,158 @@
+defined_text = {
+	name = Get_Secondary_Leader_Portrait
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_prs_wilhelm_I
+		}
+		localization_key = GFX_Portrait_Secondary_PRS_Wilhelm_I
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fra_napoleon_III
+		}
+		localization_key = GFX_Portrait_Secondary_FRA_Napoleon_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_sov_alexander_II
+		}
+		localization_key = GFX_Portrait_Secondary_SOV_Alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fin_alexander_II
+		}
+		localization_key = GFX_Portrait_Secondary_SOV_Alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_pol_alexander_II
+		}
+		localization_key = GFX_Portrait_Secondary_SOV_Alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+		}
+		localization_key = GFX_Portrait_Secondary_ITA_vittorio_emanuele_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_komei
+		}
+		localization_key = GFX_Portrait_Secondary_JAP_komei
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_meiji
+		}
+		localization_key = GFX_Portrait_Secondary_JAP_meiji
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_eng_victoria
+		}
+		localization_key = GFX_Portrait_Secondary_ENG_victoria
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_kor_gojong_young
+		}
+		localization_key = GFX_Portrait_Secondary_KOR_gojong_young
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_tur_abdulaziz
+		}
+		localization_key = GFX_Portrait_Secondary_TUR_abdulaziz
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_chi_tongzhi
+		}
+		localization_key = GFX_Portrait_Secondary_CHI_tongzhi
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = GFX_Portrait_Secondary_Vacant
+	}
+}
+defined_text = {
+	name = Get_Secondary_Leader_Name
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_prs_wilhelm_I
+		}
+		localization_key = fpw_secondary_leader_prs_wilhelm_I
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fra_napoleon_III
+		}
+		localization_key = fpw_secondary_leader_fra_napoleon_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_sov_alexander_II
+		}
+		localization_key = fpw_secondary_leader_sov_alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_fin_alexander_II
+		}
+		localization_key = fpw_secondary_leader_fin_alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_pol_alexander_II
+		}
+		localization_key = fpw_secondary_leader_pol_alexander_II
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_ita_vittorio_emanuele_III
+		}
+		localization_key = fpw_secondary_leader_ita_vittorio_emanuele_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_komei
+		}
+		localization_key = fpw_secondary_leader_jap_komei
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_jap_meiji
+		}
+		localization_key = fpw_secondary_leader_jap_meiji
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_eng_victoria
+		}
+		localization_key = fpw_secondary_leader_eng_victoria
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_kor_gojong_young
+		}
+		localization_key = fpw_secondary_leader_kor_gojong_young
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_tur_abdulaziz
+		}
+		localization_key = fpw_secondary_leader_tur_abdulaziz
+	}
+	text = {
+		trigger = {
+			has_country_flag = fpw_secondary_leader_chi_tongzhi
+		}
+		localization_key = fpw_secondary_leader_chi_tongzhi
+	}
+	text = {
+		localization_key = no_secondary_leader
+	}
+}

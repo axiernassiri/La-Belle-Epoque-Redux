@@ -1,0 +1,74 @@
+capital = 14
+oob = "BRI_1866"
+
+
+set_research_slots = 3
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+
+}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+
+}
+}
+
+set_convoys = 20
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 20
+	neutrality = 40
+	communism = 10
+	neutrality = 30
+}
+
+
+
+create_country_leader = {
+	name = "Morvan Marchal"
+	picture = GFX_portrait_Morvan_Marchal
+	expire = "1965.1.1"
+	ideology = socialism
+}
+
+
+
+create_country_leader = {
+	name = "Maurice Duhamel"
+	picture = GFX_portrait_Maurice_Duhamel
+	expire = "1965.1.1"
+	ideology = centrism
+}

@@ -1,0 +1,563 @@
+ideas = {
+	country = {
+		# Brothers on the Front
+		fpw_brothers_on_the_front = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against_cores = 0.05
+				breakthrough_bonus_against = 0.10
+			}
+
+			modifier = {
+				war_support_factor = -0.25
+			}
+		}
+
+		# Krupp Artillery
+		fpw_krupp_artillery = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = krupp
+
+			modifier = {
+				army_artillery_attack_factor = 0.05
+			}
+		}
+
+		# National Reforms
+		fpw_national_reforms = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.15
+				drift_defence_factor = -0.25
+			}
+		}
+
+		# snall country, big dreams
+		fpw_greater_german_solution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				political_power_factor = 0.05
+				war_support_weekly = 0.05
+				army_morale_factor = 0.025
+			}
+		}
+
+		# HRE traditions
+		fpw_hre_traditions = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		fpw_the_two_emperors = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = 0.25
+			}
+		}
+		
+		fpw_disorganised_army = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				army_attack_factor = -0.25
+				army_defence_factor = -0.1
+				army_org_factor = -0.15
+			}
+		}
+
+		fpw_disorganised_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				consumer_goods_factor =  0.15
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.25
+				cic_construction_boost = -0.25
+			}
+		}
+
+		fpw_united_now_united_forever = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = 0.5
+				war_support_factor = 0.25
+				political_power_gain = 0.1
+			}
+		}
+
+		fpw_disorganised_people = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = icon
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				political_power_gain = -0.2
+			}	
+		}
+		
+		# Proud Nation
+		fpw_proud_nation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				neutrality_drift = 0.02
+				neutrality_acceptance = 35
+			}
+		}
+		
+		fpw_prussian_norms = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = prussian_norms
+
+			modifier = {
+				war_support_factor = 0.10
+				mobilization_speed = 0.15
+				surrender_limit = 0.25
+			}
+		}
+
+		fpw_dreams_of_equality = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = dreams_of_equality
+
+			modifier = {
+				stability_factor = -0.1
+				drift_defence_factor = -0.05
+			}
+		}
+
+		fpw_funding_austrian_seperatists = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor =  0.08
+			}
+		}
+
+		fpw_prs_gott_mit_uns = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				army_morale_factor = 0.02
+				pocket_penalty = -0.025
+			}
+		}
+
+		fpw_prs_kaisers_germany = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension_against = -0.1
+			}
+		}
+
+		prs_fpw_suedfront = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+
+			targeted_modifier = { tag = BAD attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = HES attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = BAV attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = WRT attack_bonus_against = 0.05 }
+		}
+
+		prs_fpw_prussian_bank = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				trade_opinion_factor = 0.2
+			}
+		}
+
+		prs_fpw_prussian_manufactoring_industry = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
+		prs_fpw_social_unrest = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FIN_socialist_welfare
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		prs_fpw_strikes = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FIN_socialist_welfare
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+				stability_factor = -0.20
+				production_speed_buildings_factor = -0.20
+			}
+		}
+
+		prs_fpw_concessions_granted_to_workers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ARG_social_welfare_fund_ns
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		prs_fpw_trade_disputes = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				local_resources_factor = -0.2
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		prs_fpw_prussian_goose_step = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GER_fan_prussian_militarism
+
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		prs_fpw_prussian_artillery = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_artillery_regiments
+
+			modifier = {
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+		prs_fpw_expanded_cavalry_core = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = HABSBURG_cavalry
+
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}
+		}
+		prs_fpw_quality_training = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				max_training = 0.1
+				training_time_army_factor = 0.1
+			}
+		}
+		prs_fpw_mobile_warfare = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+
+			modifier = {
+				army_speed_factor = 0.15
+			}
+		}
+		prs_fpw_equipment_quantity = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army
+
+			modifier = {
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					soft_attack = -0.15
+				}
+			}
+		}
+		prs_fpw_equipment_quality = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+
+			modifier = {
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.15
+					soft_attack = 0.15
+				}
+			}
+		}
+		prs_fpw_amended_military_budget = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = HUN_secret_rearmament
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				stability_factor = -0.05
+				local_manpower = 0.05
+			}
+		}
+
+
+	}
+	
+	hidden_ideas = {
+		# Kaiser Wilhelm I
+		fpw_kaiser_wilhelm = {
+			allowed = {
+				original_tag = PRS
+			}
+			cancel = {
+				has_government = neutrality	
+            }
+			on_add = {
+                set_country_flag = fpw_secondary_leader_prs_wilhelm_I
+            }
+			on_remove = {
+				clr_country_flag = fpw_secondary_leader_prs_wilhelm_I
+            }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.075
+				political_power_factor = 0.05
+			}
+		}
+	}	
+}
+
+

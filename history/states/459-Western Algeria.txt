@@ -1,0 +1,26 @@
+
+state={
+	id=459
+	name="STATE_459"
+	resources={
+		steel=65.000
+	}
+
+	history={
+		owner = FRA
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1060 1064 1079 1080 1731 1817 1833 1846 1874 1883 1891 1897 
+	}
+	manpower=1606771
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

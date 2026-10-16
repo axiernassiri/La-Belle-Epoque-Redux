@@ -1,0 +1,33 @@
+
+state={
+	id=1170
+	name="STATE_336"
+	resources={
+
+		steel=20.000
+		tungsten=189.000
+		aluminium=15.000
+	
+
+wood=1
+}
+
+	history={
+		set_variable = { tribal = 336 }
+		owner = TRB
+		
+		
+		
+		
+		add_core_of = TRB
+		add_core_of = MAL
+
+	}
+
+	provinces={ 10297 }
+	manpower=73640
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
+

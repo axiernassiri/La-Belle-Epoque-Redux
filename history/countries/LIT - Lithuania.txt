@@ -1,0 +1,28 @@
+capital = 11
+oob = "LIT_1866"
+
+
+set_research_slots = 3
+
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1826.5.8"
+	election_frequency = 120
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	neutrality = 15
+	communism = 15
+	neutrality = 40
+}

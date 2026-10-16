@@ -1,0 +1,28 @@
+
+state={
+resources={
+wood=3
+}
+
+	id=740
+	name="STATE_740"
+	manpower = 134998
+	
+	state_category = rural
+
+	history={
+		owner = BRC
+		add_core_of = BRC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1214 12259 12272 1420 
+	}
+	
+
+	local_supplies=0.0 
+}
+

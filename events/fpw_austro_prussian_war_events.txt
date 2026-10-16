@@ -1,0 +1,95 @@
+add_namespace = austro_prussian_fpw
+
+# [From.GetName] has joined our side
+country_event = {
+	id = austro_prussian_fpw.1
+	title = austro_prussian_fpw.1.t
+	desc = austro_prussian_fpw.1.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.1.a
+	}
+}
+ 
+ # Austria capitulates
+country_event = {
+	id = austro_prussian_fpw.2
+	title = austro_prussian_fpw.2.t
+	desc = austro_prussian_fpw.2.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.2.a
+		set_global_flag = fpw_koniggratz_victory
+	}
+}
+
+ # Prussia capitulates
+country_event = {
+	id = austro_prussian_fpw.3
+	title = austro_prussian_fpw.3.t
+	desc = austro_prussian_fpw.3.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.3.a
+		set_global_flag = fpw_austria_victory
+	}
+}
+
+# Austria Capitulates from the POV of italy
+country_event = {
+	id = austro_prussian_fpw.4
+	title = austro_prussian_fpw.4.t
+	desc = austro_prussian_fpw.4.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.4.a
+		complete_national_focus = ITA_w
+	}
+}
+
+# Prussia Capitulates from the POV of italy
+country_event = {
+	id = austro_prussian_fpw.5
+	title = austro_prussian_fpw.5.t
+	desc = austro_prussian_fpw.5.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	major = yes
+
+	option = {
+		name = austro_prussian_fpw.5.a
+		complete_national_focus = ITA_l
+	}
+}

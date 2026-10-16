@@ -1,0 +1,53 @@
+capital = 361
+oob = "USA_1936"
+
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.5
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+}
+
+
+
+
+
+
+set_convoys = 400
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	neutrality = 99
+	communism = 1
+}
+
+add_ideas = {
+	civilian_economy
+	limited_conscription
+	free_trade
+	neutrality_idea
+}
+
+
+
+
+
+

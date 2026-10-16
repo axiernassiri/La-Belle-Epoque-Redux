@@ -1,0 +1,45 @@
+capital = 148 #TODO_Manu: Other states in other countries?
+oob = "SMI_1866"
+
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+}
+
+
+set_convoys = 20
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	neutrality = 78
+	democratic = 10
+	neutrality = 2
+	communism = 10
+}
+
+
+
+create_country_leader = {
+	name = SMI_democratic_council
+	picture = GFX_portrait_SMI_sami_council
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+
+create_country_leader = {
+	name = SMI_neutrality_council
+	picture = GFX_portrait_SMI_sami_council
+	expire = "1965.1.1"
+	ideology = centrism
+}
+

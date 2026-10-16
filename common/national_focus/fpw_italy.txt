@@ -1,0 +1,2057 @@
+﻿#!gfx:interface\fpw_goals.gfx
+
+focus_tree = {
+	id = italian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = ITA
+				tag = RSI
+				tag = RDS
+			}
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 1500 y = 1500 }
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
+	focus = {
+		id = ITA_start
+		icon = GFX_focus_ITA_italian_irredentism
+		x = 1
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ITA_conservative_politics
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ITA_start }
+		x = 5
+		y = 1
+		relative_position_id = ITA_start
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ITA_concessions_to_socialists
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = ITA_conservative_politics }
+		mutually_exclusive = { focus = ITA_kill_socialists }
+		available = { has_political_power > 50 }
+		x = 3
+		y = 1
+		ai_will_do = {
+			base = 3
+		}
+		relative_position_id = ITA_conservative_politics
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = ITA_kill_socialists
+		icon = GFX_focus_generic_conspiracy
+		prerequisite = { focus = ITA_conservative_politics }
+		mutually_exclusive = { focus = ITA_concessions_to_socialists }
+		available = { has_political_power > 200 }
+		x = 1
+		y = 1
+		relative_position_id = ITA_conservative_politics
+		cost = 5
+		ai_will_do = {
+			base = 3
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -200
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			custom_effect_tooltip = ITA_unexpected_consequences
+			remove_ideas = liberal_country
+		}
+	}
+	focus = {
+		id = ITA_royal_parade
+		icon = GFX_focus_ITA_monarchy
+		prerequisite = { focus = ITA_conservative_politics }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
+		}
+		x = -1
+		y = 1
+		ai_will_do = {
+			base = 8
+		}
+		relative_position_id = ITA_conservative_politics
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY } 
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ITA_monarchist_propaganda
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = ITA_royal_parade }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_royal_parade
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ITA_crush_republican_opposition
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = ITA_monarchist_propaganda focus = ITA_kill_socialists focus = ITA_concessions_to_socialists }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
+			has_political_power > 250
+		}
+		x = 1
+		y = 1
+		ai_will_do = {
+			base = 9
+		}
+		relative_position_id = ITA_monarchist_propaganda
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -250
+			remove_ideas = republican_opposition
+		}
+	}
+	focus = {
+		id = ITA_ally_prussia
+		icon = GFX_focus_befriend_prussia
+		prerequisite = { focus = ITA_start }
+		mutually_exclusive = { focus = ITA_venice_for_support }
+		available = {
+			country_exists = PRS
+		}
+		bypass = {
+			OR = {
+				is_ally_with = PRS
+				is_guaranteed_by = PRS
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_start
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			PRS = { 
+				country_event = {
+					id = italy_fpw.1
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_prussian_military_cooperation
+		icon = GFX_focus_research
+		prerequisite = { focus = ITA_ally_prussia }
+		available = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_ally_prussia
+		cost = 5
+		ai_will_do = {
+			base = 8
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_to_tech_sharing_group = ITA_PRUSSIA_research_group
+			PRS = {
+				add_to_tech_sharing_group = ITA_PRUSSIA_research_group
+			}
+		}
+	}
+	focus = {
+		id = ITA_venice_for_support
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ITA_start }
+		mutually_exclusive = { focus = ITA_ally_prussia }
+		available = {
+			NOT = { owns_state = 160 }
+		}
+		bypass = {
+			owns_state = 160
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_start
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			160 = { owner = { country_event = italy_fpw.2} }
+		}
+	}
+	focus = {
+		id = ITA_formalise_habsburg_alliance
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ITA_venice_for_support }
+		available = {
+			owns_state = 160
+			country_exists = AUS
+		}
+		bypass = {
+			is_ally_with = AUS
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_venice_for_support
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = GER_central_powers_faction
+				add_to_faction = AUS
+			}
+		}
+	}
+	focus = {
+		id = ITA_the_war_with_austria
+		icon = GFX_focus_attack_austria
+		prerequisite = { focus = ITA_ally_prussia focus = ITA_venice_for_support }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_austria_info
+				PRS = { has_war_with = AUS}
+			}
+			NOT = { owns_state = 160 }
+		}
+		bypass = {
+			OR = {
+				owns_state = 160
+				has_war_with = AUS
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_ally_prussia
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			declare_war_on = {
+				target = AUS
+				type = take_core_state
+			}
+		}
+	}
+	focus = {
+		id = ITA_venice_offensive
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_the_war_with_austria }
+		mutually_exclusive = { focus = ITA_mountain_defence }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_browars_info
+				has_war_with = AUS
+			}
+		}
+		bypass = {
+			controls_state = 160
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_the_war_with_austria
+		cost = 1
+		ai_will_do = {
+			base = 8
+		}
+
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_ideas = ITA_venice_attack
+			custom_effect_tooltip = ITA_will_be_removed
+		}
+	}
+	focus = {
+		id = ITA_mountain_defence
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = ITA_the_war_with_austria }
+		mutually_exclusive = { focus = ITA_venice_offensive }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_browars_info
+				has_war_with = AUS
+			}
+		}
+		bypass = {
+			owns_state = 160
+		}
+		ai_will_do = {
+			base = 8
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_the_war_with_austria
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_ideas = ITA_defending
+			custom_effect_tooltip = ITA_will_be_removed
+		}
+	}
+	focus = {
+		id = ITA_w
+		icon = GFX_focus_ITA_cavalry_charge
+		prerequisite = { focus = ITA_mountain_defence focus = ITA_venice_offensive focus = ITA_formalise_habsburg_alliance }
+		mutually_exclusive = { focus = ITA_l }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_w_trigger
+				always = no
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_mountain_defence
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = ITA_seek_allies
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = ITA_w }
+		x = -1
+		y = 1
+		relative_position_id = ITA_w
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_ally_france
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = ITA_seek_allies }
+		mutually_exclusive = { focus = ITA_ally_germany }
+		x = 0
+		y = 1
+		relative_position_id = ITA_seek_allies
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_ally_germany
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = ITA_seek_allies }
+		mutually_exclusive = { focus = ITA_ally_france }
+		x = 2
+		y = 1
+		relative_position_id = ITA_seek_allies
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_franco_prussian_war
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = ITA_ally_germany }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_fpw_trigger
+				FRA = { has_war_with = PRS }
+			}
+			hidden_trigger = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						is_historical_focus_on = yes
+					}
+				}
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_ally_germany
+		cost = 2
+
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			declare_war_on = {
+				target = FRA
+				type = take_claimed_state
+			}
+		}
+	}
+	focus = {
+		id = ITA_claim_the_french_coast
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_franco_prussian_war }
+		available = {
+			has_war_with = FRA
+			has_completed_focus = ITA_roman_ambition
+		}
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		relative_position_id = ITA_franco_prussian_war
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			add_state_claim = 851
+			add_state_claim = 21
+			add_state_claim = 22
+			add_state_claim = 31
+			add_state_claim = 806
+			add_state_claim = 460
+			add_state_claim = 459
+			add_state_claim = 513
+			add_state_claim = 958
+		}
+	}
+	focus = {
+		id = ITA_find_a_queen
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = ITA_w }
+		prerequisite = { focus = ITA_royal_parade }
+		available = { has_idea = vittorio_emanuele }
+		x = 1
+		y = 1
+		ai_will_do = {
+			base = 5
+		}
+		relative_position_id = ITA_w
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_find_a_queen_effect
+		}
+	}
+	focus = {
+		id = ITA_l
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = ITA_mountain_defence focus = ITA_venice_offensive }
+		mutually_exclusive = { focus = ITA_w }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_l_trigger
+				always = no
+			}
+		}
+		x = -2
+		y = 1
+		y = 1
+		relative_position_id = ITA_venice_offensive
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.15
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_country_leader_role = {
+				character = ITA_comitato_di_liberazione_nazionale
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism
+					expire = "1965.1.1.1"
+					traits = { dysfunctional_assembly }
+				}
+			}
+			remove_ideas = vittorio_emanuele
+			remove_ideas = republican_opposition
+			set_cosmetic_tag = ITA_prov_gov
+		}
+	}
+	focus = {
+		id = ITA_proclaim_the_republic
+		icon = GFX_focus_ITA_the_italian_republic
+		prerequisite = { focus = ITA_l }
+		mutually_exclusive = { focus = ITA_counter_coup }
+		x = -2
+		y = 1
+		relative_position_id = ITA_l
+		cost = 10
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_stability = 0.1
+			set_cosmetic_tag = ITA_republic
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+			promote_character = ITA_giuseppe_mazzini
+		}
+	}
+	focus = {
+		id = ITA_presidential_election
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = ITA_proclaim_the_republic }
+		x = -1
+		y = 1
+		relative_position_id = ITA_proclaim_the_republic
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_ban_monarchism
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = ITA_proclaim_the_republic focus = ITA_counter_coup }
+		x = 1
+		y = 1
+		relative_position_id = ITA_proclaim_the_republic
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_bastion_of_democracy
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = ITA_ban_monarchism }
+		prerequisite = { focus = ITA_presidential_election }
+		x = -1
+		y = 2
+		relative_position_id = ITA_ban_monarchism
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = ITA_counter_coup
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = ITA_l }
+		mutually_exclusive = { focus = ITA_proclaim_the_republic }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_counter_coup_trigger
+				ITA_alfonso_ferrero = { has_ideology = nationalism }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_l
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_cosmetic_tag = ITA_nationalist
+			}
+			custom_effect_tooltip = ITA_counter_coup_effect
+			remove_ideas = ITA_liberal_country
+		}
+	}
+	focus = {
+		id = ITA_solidify_control
+		icon = GFX_focus_spr_crush_the_revolution
+		prerequisite = { focus = ITA_counter_coup }
+		x = 0
+		y = 1
+		relative_position_id = ITA_counter_coup
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.35
+			}
+		}
+	}
+	focus = {
+		id = ITA_expansionism
+		icon = GFX_focus_ITA_italian_hegemony
+		prerequisite = { focus = ITA_counter_coup focus = ITA_seek_allies }
+		available = {
+			has_war_support > 0.5
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_counter_coup
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_state_claim = 735
+			add_state_claim = 1
+			if = {
+				limit = { NOT = { has_completed_focus = ITA_venice_for_support } }
+				add_state_claim = 163
+				add_state_claim = 103
+			}
+		}
+	}
+	focus = {
+		id = ITA_take_the_capital
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_expansionism }
+		available = {
+			NOT = { owns_state = 2 }
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				NOT = { PAP = { is_guaranteed_by = FRA } }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_expansionism
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		will_lead_to_war_with = PAP
+		will_lead_to_war_with = FRA
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				PAP = {
+					NOT = {
+						is_guaranteed_by = FRA
+					}
+				}
+				add = 100
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = PAP
+				generator = { 2 }
+				expire = 90
+			}
+			custom_effect_tooltip = ITA_take_the_capital_effect
+		}
+	}
+	focus = {
+		id = ITA_focus_on_the_mediterranean
+		icon = GFX_focus_generic_mediterranean_sea_focus
+		prerequisite = { focus = ITA_expansionism }
+		mutually_exclusive = { focus = ITA_colonial_empire }
+		available = {
+		}
+		x = -3
+		y = 2
+		relative_position_id = ITA_expansionism
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				SOV = { has_completed_focus = SOV_help_roman_imperialists }
+				add = 10
+			}
+			modifier = {
+				is_historical_focus_on = no
+				add = 5
+			}
+		}
+		
+		completion_reward = {
+			add_state_claim = 804
+			add_state_claim = 105
+			add_state_claim = 934
+			add_state_claim = 44
+			add_state_claim = 805
+			add_state_claim = 116
+		}
+	}
+	focus = {
+		id = ITA_plotting_against_the_ottomans
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { focus = ITA_focus_on_the_mediterranean }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_ott
+				TUR = {
+					exists = yes
+					owns_state = 797
+				}
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_focus_on_the_mediterranean
+		cost = 14
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				SOV = { has_completed_focus = SOV_help_roman_imperialists }
+				add = 10
+			}
+			modifier = {
+				is_historical_focus_on = no
+				add = 1
+			}
+		}
+
+		select_effect = {
+			create_faction = anti_ottoman_faction
+			country_event = { 
+				id = italy_fpw.5 
+				days = 10
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_selected
+			custom_effect_tooltip = ITA_create_faction
+			custom_effect_tooltip = ITA_divide
+			custom_effect_tooltip = ITA_completed
+			declare_war_on = {
+				target = TUR
+				type = take_claimed_state
+			}
+			SOV = {
+				if = { 
+					limit = {
+						has_country_flag = joined_italy_ottomans
+					}
+					declare_war_on = {
+						target = TUR
+						type = take_claimed_state
+					}
+				}
+			}
+			hidden_effect = {
+
+				set_global_flag = ITA_TUR_war
+				if = {
+					limit = { 
+						ITA = {
+							has_country_flag = supported_vassals
+						}
+					}
+					TUR = {
+						
+						country_event = { 
+							id = italy_fpw.9
+							#hours = 12
+						}
+						country_event = { 
+							id = italy_fpw.10
+							#hours = 12
+						}
+					}
+				}
+				
+				if = {
+					limit = { 
+						ITA = {
+							has_country_flag = supported_egypt
+						}
+					}
+					if = {
+						limit = {
+							EGY = {
+								exists = yes
+								is_subject_of = TUR
+							}
+						}
+						TUR = {
+							country_event = { 
+								id = italy_fpw.12
+								#hours = 12
+							}
+						}
+					}
+					if = {
+						limit = {
+							EGY = {
+								exists = no
+							}
+						}
+						TUR = {
+							country_event = { 
+								id = italy_fpw.11
+								#hours = 12
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_betray_the_habsburgs
+		icon = GFX_focus_attack_austria_hungary
+		prerequisite = { focus = ITA_focus_on_the_mediterranean focus = ITA_ban_monarchism }
+		mutually_exclusive = { focus = ITA_betray_the_habsburgs }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_habsburg_real
+				AUS = {
+					exists = yes
+					owns_state = 43
+				}
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_focus_on_the_mediterranean
+		cost = 14
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		select_effect = {
+			country_event = { 
+				id = italy_fpw.14
+				days = 10
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_selected
+			custom_effect_tooltip = ITA_divide
+			custom_effect_tooltip = ITA_completed
+			declare_war_on = {
+				target = AUS
+				type = take_claimed_state
+			}
+			PRS = {
+				if = { 
+					limit = {
+						has_country_flag = joined_italy_austria
+					}
+					declare_war_on = {
+						target = AUS
+						type = take_claimed_state
+					}
+				}
+			}
+			SOV = {
+				if = { 
+					limit = {
+						has_country_flag = joined_italy_austria
+					}
+					declare_war_on = {
+						target = AUS
+						type = take_claimed_state
+					}
+				}
+			}
+			hidden_effect = {
+				
+				set_global_flag = ITA_AUS_war
+				if = {
+					limit = { 
+						ITA = {
+							has_country_flag = italy_supported_hungary
+						}
+					}
+					AUS = {
+						
+						country_event = { 
+							id = italy_fpw.19
+							#hours = 12
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = ITA_united_against_prussia
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = ITA_bastion_of_democracy }
+		mutually_exclusive = { focus = ITA_betray_the_habsburgs }
+		available = {
+			PRS = {
+				OR = {
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_bastion_of_democracy
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_proclaim_greater_italy
+		icon = GFX_focus_ITA_greater_italy
+		prerequisite = { focus = ITA_betray_the_habsburgs }
+		prerequisite = { focus = ITA_plotting_against_the_ottomans }
+		mutually_exclusive = { focus = ITA_roman_ambition }
+		mutually_exclusive = { focus = ITA_mto }
+		available = {
+			num_of_controlled_states > 20
+			has_war = no
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_betray_the_habsburgs
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = vittorio_emanuele }
+				set_cosmetic_tag = greater_italy
+			}
+			if = {
+				limit = { NOT = { has_idea = vittorio_emanuele} }
+				set_cosmetic_tag = ITA_gir
+			}
+		}
+	}
+	focus = {
+		id = ITA_roman_ambition
+		icon = GFX_focus_generic_total_war
+		prerequisite = { focus = ITA_plotting_against_the_ottomans }
+		mutually_exclusive = { focus = ITA_proclaim_greater_italy }
+		mutually_exclusive = { focus = ITA_mto }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_n_ott
+				TUR = {
+					NOT = {
+						has_cosmetic_tag = TUR_ottoman_empire
+					}
+				}
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_plotting_against_the_ottomans
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			add_state_claim = 797
+		}
+	}
+	focus = {
+		id = ITA_attack_istanbul
+		icon = GFX_focus_generic_attack_greece
+		prerequisite = { focus = ITA_roman_ambition }
+		available = {
+			47 = { is_owned_by = GRE }
+		}
+		bypass = {
+			NOT = {
+				47 = { is_owned_by = GRE }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_roman_ambition
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GRE
+			}
+		}
+	}
+	focus = {
+		id = ITA_push_to_the_danube
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_roman_ambition }
+		available = {
+			OR = {
+				country_exists = SER
+				country_exists = BUL
+			}
+		}
+		bypass = {
+			NOT = {
+				country_exists = SER
+				country_exists = BUL
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_roman_ambition
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BUL
+			}
+		}
+	}
+	focus = {
+		id = ITA_revive_the_empire
+		icon = GFX_focus_ITA_mare_nostrum
+		prerequisite = { focus = ITA_push_to_the_danube }
+		prerequisite = { focus = ITA_attack_istanbul }
+		available = {
+			owns_state = 2
+			owns_state = 797
+			num_of_controlled_states > 30
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_push_to_the_danube
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		text_icon = NORDIC_focus_style
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			set_cosmetic_tag = SPQR_UNIFIED
+		}
+	}
+	focus = {
+		id = ITA_conquer_turkey_and_levant
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ITA_attack_istanbul }
+		available = {
+			is_neighbor_of = TUR
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_attack_istanbul
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TUR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SYR
+			}
+		}
+	}
+	focus = {
+		id = ITA_finish_egypt
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_revive_the_empire }
+		prerequisite = { focus = ITA_conquer_turkey_and_levant }
+		available = {
+			country_exists = EGY
+		}
+		bypass = {
+			NOT = { country_exists = EGY }
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_revive_the_empire
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = EGY
+			}
+		}
+	}
+	focus = {
+		id = ITA_take_care_of_iberia
+		icon = GFX_focus_generic_free_iberia
+		prerequisite = { focus = ITA_push_to_the_danube }
+		available = {
+			OR = {
+				country_exists = SPR
+				country_exists = POR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = SPR }
+				NOT = { country_exists = POR }
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_push_to_the_danube
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SPR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = POR
+			}
+		}
+	}
+	focus = {
+		id = ITA_finish_morocco
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_revive_the_empire }
+		prerequisite = { focus = ITA_take_care_of_iberia }
+		available = {
+			country_exists = MOR
+		}
+		bypass = {
+			NOT = { country_exists = MOR }
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_revive_the_empire
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
+		}
+	}
+	focus = {
+		id = ITA_mto
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ITA_betray_the_habsburgs focus = ITA_united_against_prussia }
+		mutually_exclusive = { focus = ITA_proclaim_greater_italy }
+		mutually_exclusive = { focus = ITA_roman_ambition }
+		available = {
+			NOT = { has_government = neutrality }
+			has_war = no
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_betray_the_habsburgs
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			create_faction = mto_faction
+		}
+	}
+	focus = {
+		id = ITA_destroy_french_empire
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = ITA_mto }
+		prerequisite = { focus = ITA_united_against_prussia }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_french_empire_exists
+				FRA = {
+					exists = yes
+				}
+			}
+			NOT = { is_ally_with = FRA }
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_mto
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = FRA
+			}
+		}
+	}
+	focus = {
+		id = ITA_spread_democracy_to_spain
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = ITA_mto }
+		available = {
+			SPR = {
+				has_government = neutrality
+			}
+			NOT = { is_ally_with = SPR }
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_mto
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SPR
+			}
+		}
+	}
+	focus = {
+		id = ITA_colonial_empire
+		icon = GFX_focus_por_luso_tropicalism
+		prerequisite = { focus = ITA_expansionism }
+		mutually_exclusive = { focus = ITA_focus_on_the_mediterranean }
+		available = {
+			NOT = { owns_state = 2 }
+		}
+		x = 3
+		y = 2
+		relative_position_id = ITA_expansionism
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_claim_libya
+		icon = GFX_focus_claim_libya
+		prerequisite = { focus = ITA_focus_on_the_mediterranean focus = ITA_colonial_empire }
+		available = {
+			hidden_trigger = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						is_historical_focus_on = yes
+					}
+				}
+			}
+		}
+		x = -3
+		y = 1
+		relative_position_id = ITA_colonial_empire
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			add_state_claim = 458
+			add_state_claim = 665
+			add_state_claim = 448
+			add_state_claim = 449
+			add_state_claim = 450
+			add_state_claim = 451
+			add_state_claim = 661
+			add_state_claim = 662
+			add_state_claim = 663
+			add_state_claim = 957
+			if = {
+				limit = {
+					TUR = { owns_state = 448 }
+					has_completed_focus = ITA_colonial_empire
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = TUR
+					generator = { 448 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_establish_the_african_colonies
+		icon = GFX_focus_ITA_ministry_of_italian_africa
+		prerequisite = {focus = ITA_colonial_empire }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_colonial_empire
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				SOV = { has_completed_focus = SOV_help_roman_imperialists }
+				add = -9
+			}
+			modifier = {
+				NOT = { is_historical_focus_on = yes }
+				add = -5
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ITA_establish_italian_east_asia
+		icon = GFX_focus_usa_focus_on_asia
+		prerequisite = {focus = ITA_colonial_empire }
+		available = {
+			any_state = {
+				is_on_continent = asia
+				is_owned_by = ITA
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_colonial_empire
+		cost = 5
+		
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ITA_conquer_dai_nam
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = ITA_establish_italian_east_asia }
+		available = {
+			VIN = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_establish_italian_east_asia
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VIN
+			}
+		}
+	}
+	focus = {
+		id = ITA_attack_ethiopia
+		icon = GFX_focus_generic_attack_ethiopia
+		prerequisite = { focus = ITA_establish_the_african_colonies }
+		available = {
+			country_exists = ETH
+			custom_trigger_tooltip = {
+				tooltip = borders_ethiopia
+				any_state = {
+					is_owned_by = ITA
+					any_neighbor_state = {
+						is_owned_by = ETH
+					}
+				}
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = ITA_establish_the_african_colonies
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
+
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ETH
+			}
+		}
+	}
+	focus = {
+		id = ITA_claim_french_colonies
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ITA_establish_italian_east_asia }
+		prerequisite = { focus = ITA_franco_prussian_war }
+		available = {
+			any_state = {
+				is_on_continent = asia
+				is_owned_by = FRA
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = ITA_establish_italian_east_asia
+		cost = 1
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = FRA
+					is_on_continent = asia
+				}
+				add_claim_by = ITA
+			}
+		}
+	}
+	focus = {
+		id = ITA_proclaim_empire
+		icon = GFX_focus_ITA_imperial_recognition
+		prerequisite = { focus = ITA_establish_the_african_colonies }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_monarchy
+				has_idea = vittorio_emanuele
+			}
+			num_of_controlled_states > 25
+			hidden_trigger = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					NOT = {
+						is_historical_focus_on = yes
+					}
+				}
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_establish_the_african_colonies
+		cost = 5
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			set_cosmetic_tag = ITA_italian_empire
+			add_war_support = 0.35
+		}
+	}
+
+	# MORE STUFF #
+	focus = {
+		id = ITA_address_the_economic_situation
+		icon = GFX_focus_generic_industry_2
+		x = -6
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		relative_position_id = ITA_start
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_commit_to_the_industrious_north
+		prerequisite = { focus = ITA_address_the_economic_situation }
+		relative_position_id = ITA_address_the_economic_situation
+		icon = GFX_focus_ITA_northern_industry
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_commit_to_unification
+		prerequisite = { focus = ITA_address_the_economic_situation }
+		relative_position_id = ITA_address_the_economic_situation
+		icon = GFX_focus_ITA_southern_industry
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+			random_owned_state = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_navy
+		icon = GFX_focus_generic_military_mission
+		available = {
+		}
+		x = 10
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		relative_position_id = ITA_start
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			115 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			114 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_rival_the_uk
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = ITA_navy }
+		mutually_exclusive = { focus = ITA_borrow_ideas_from_uk }
+		available = {
+			country_exists = ENG
+		}
+		x = -2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = ITA_navy
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_borrow_ideas_from_uk
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ITA_navy }
+		mutually_exclusive = { focus = ITA_rival_the_uk }
+		available = {
+		}
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		relative_position_id = ITA_navy
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ITA_artillery_focus
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = ITA_borrow_ideas_from_uk }
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		relative_position_id = ITA_borrow_ideas_from_uk
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ITA_cavalry_focus
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = ITA_borrow_ideas_from_uk }
+		available = {
+		}
+		x = -1
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		relative_position_id = ITA_borrow_ideas_from_uk
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = ITA_rifle_focus
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = ITA_artillery_focus focus = ITA_cavalry_focus }
+		available = {
+		}
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		relative_position_id = ITA_artillery_focus
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ITA_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ITA_rifle_focus }
+		prerequisite = { focus = ITA_cavalry_focus }
+		available = {
+		}
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		relative_position_id = ITA_rifle_focus
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ITA_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = ITA_rifle_focus }
+		prerequisite = { focus = ITA_doctrine_effort }
+		available = {
+		}
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		relative_position_id = ITA_rifle_focus
+		search_filters = {}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+}

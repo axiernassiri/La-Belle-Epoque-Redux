@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_aboslute_monarchy"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_conservative_semi_constitutional_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_conservative_constitutional_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberal_semi_constitutional_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberal_constitutional_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberal_constitutional_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_bonapartism"
+		texturefile = "gfx/interface/ideologies/bonapartism_sub.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_orleanist"
+		texturefile = "gfx/interface/ideologies/orleanist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_monarchism"
+		texturefile = "gfx/interface/ideologies/monarchism.dds"
+	}
+
+}

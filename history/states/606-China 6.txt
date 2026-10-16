@@ -1,0 +1,48 @@
+state={
+	id=606
+	name="STATE_606"
+	resources={
+
+		steel=11.000
+	
+
+wood=5
+}
+
+	history={
+		owner = NIA
+		add_core_of = CHI
+		add_core_of = NIA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			7222 1 
+		}
+		1866.1.1 = {
+			CHI = {
+				set_province_controller = 11994
+				set_province_controller = 10017
+				set_province_controller = 4203
+				set_province_controller = 12061
+				set_province_controller = 1083
+			    set_province_controller = 7035
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1083 1146 4079 4158 4203 7035 7094 7222 9937 10008 10017 10040 10064 10079 11916 11994 12036 12061 
+	}
+	manpower=9498008
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=2.0 
+}
+

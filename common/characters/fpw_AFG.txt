@@ -1,0 +1,46 @@
+characters={
+
+	AFG_sher_ali_khan={
+		name= "Sher Ali Khan"
+		portraits={
+			civilian={
+				large = "gfx/leaders/AFG/Portrait_AFG_sher_ali_khan.dds"
+			}
+		}
+		country_leader={
+			ideology= monarchism
+			expire="1956.01.01.01"
+			traits = { fpw_rightful_emir }
+		}
+	}
+	AFG_mahmud_tarzi={
+		name= "Mahmud Tarzi"
+		portraits={
+			civilian={
+				large = "gfx/leaders/AFG/Portrait_AFG_mahmud_tarzi.dds"
+			}
+		}
+		country_leader={
+			ideology = liberal_semi_constitutional_monarchism
+			expire="1956.01.01.01"
+			traits = { fpw_visionary }
+		}
+	}
+	AFG_ayoub_khan={
+		name= "Ayoub Khan"
+		portraits={
+			civilian={
+				#large = ""
+			}
+		}
+		country_leader={
+			ideology = afghan_nationalist_party
+			expire="1956.01.01.01"
+			traits = { 
+				fpw_anti_british 
+				fpw_defender_of_afghanistan
+				fpw_afghan_lion
+			}
+		}
+	}
+}

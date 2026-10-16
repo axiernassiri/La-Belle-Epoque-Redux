@@ -1,0 +1,30 @@
+capital = 314
+oob = "ELS_1866"
+
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+}
+
+
+
+
+
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 5
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.1.15"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	neutrality = 100
+}
+

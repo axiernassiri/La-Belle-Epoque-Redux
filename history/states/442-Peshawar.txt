@@ -1,0 +1,30 @@
+
+state={
+	id=442
+	name="STATE_442"
+
+	history={
+		victory_points = {
+			12763 3 
+		}
+		owner = AFG
+		add_core_of = AFG
+		add_core_of = AFZ
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		1978 4998 12717 
+	}
+	manpower=2435888
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=5.000
+}

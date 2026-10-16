@@ -1,0 +1,56 @@
+opinion_modifiers = {
+	
+	fpw_tribal_state_modifier = {
+        	trade = no
+        	value = -1000
+	}
+	
+	fpw_schutz_und_trutz_budniss = {
+        	trade = no
+        	value = 75
+	}
+	
+	fpw_france_prussia_modifier = {
+        	trade = no
+        	value = 15
+	}
+	
+	fpw_german_nationalism_modifier = {
+        	trade = no
+        	value = 25
+	}
+	
+	fpw_austrian_friendship_modifier = {
+        	trade = no
+        	value = 25
+	}
+
+	fpw_austrian_enemy_modifier = {
+        	trade = no
+        	value = -50
+	}
+	fpw_rivalry = {
+		trade = no
+		value = -75
+	}
+
+	fpw_afghan_friend_modifier = {
+        	trade = no
+        	value = 25
+	}
+
+	fpw_afghan_enemy_modifier = {
+        	trade = no
+        	value = -25
+	}
+
+	fpw_papal_doesnt_like = {
+		trade = no
+		value = -75
+	}
+
+	fpw_rejected_congress_of_berlin = {
+		trade = no
+		value = -50
+	}
+}

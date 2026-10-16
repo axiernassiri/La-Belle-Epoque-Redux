@@ -1,0 +1,356 @@
+defined_text = {
+    name = fpw_colonize_button_tt_loc
+    text = {
+        trigger = {
+            THIS = {
+                NOT = {
+                    OR = {
+                        has_state_flag = is_colonized_by_@ROOT
+                        any_state = {
+                            check_variable = { THIS.tribal = PREV.tribal }
+                            has_state_flag = is_colonized_by_@ROOT
+                        }
+                    }
+                }
+            }
+            has_state_flag = tribe_state
+        }
+        localization_key = fpw_button_start_colonize_localization_key
+    }
+    text = {
+        trigger = {
+            THIS = {
+                OR = {
+                    has_state_flag = is_colonized_by_@ROOT
+                    any_state = {
+                        check_variable = { THIS.tribal = PREV.tribal }
+                        has_state_flag = is_colonized_by_@ROOT
+                    }
+                }
+            }
+        }
+        localization_key = fpw_button_stop_colonize_localization_key
+    }
+}
+defined_text = {
+    name = prussia_fpw_44_d
+    text = {
+        trigger = {
+            original_tag = AUS
+        }
+        localization_key = prussia_fpw_44_d_aus
+    }
+    text = {
+        trigger = {
+            original_tag = ITA
+        }
+        localization_key = prussia_fpw_44_d_ita
+    }
+}
+defined_text = {
+    name = fpw_crisis_event_description_loc
+    
+    text = {
+        trigger = {
+            NOT = {   
+                any_country = {
+                    is_in_array = {
+                        array = global.gw_initiator_array
+                        value = THIS
+                    }
+                }
+            }
+        }
+        localization_key = fpw_crisis.1.d.1
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = fpw_crisis.1.d.2
+    }
+}
+
+defined_text = {
+    name = fpw_initiator_supporters_entry_loc
+    
+    text = {
+        trigger = {
+            set_temp_variable = { temp = global.gw_initiator_supporters_array^num }
+            modulo_temp_variable = { temp = 2 }
+            NOT = { check_variable = { temp = 0 } }
+            set_temp_variable = { last_index = global.gw_initiator_supporters_array^num }
+            subtract_from_temp_variable = { last_index = 1 }
+            check_variable = { i = last_index }
+        }
+        localization_key = "fpw_initiator_supporters_entry_center"
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = "fpw_initiator_supporters_entry"
+    }
+}
+
+defined_text = {
+    name = fpw_target_supporters_entry_loc
+    
+    text = {
+        trigger = {
+            set_temp_variable = { temp = global.gw_target_supporters_array^num }
+            modulo_temp_variable = { temp = 2 }
+            NOT = { check_variable = { temp = 0 } }
+            set_temp_variable = { last_index = global.gw_target_supporters_array^num }
+            subtract_from_temp_variable = { last_index = 1 }
+            check_variable = { i = last_index }
+        }
+        localization_key = "fpw_target_supporters_entry_center"
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = "fpw_target_supporters_entry"
+    }
+}
+
+defined_text = {
+    name = fpw_colonize_button_tt_long_loc
+    text = {
+        trigger = {
+            # NOT ENOUGH COLONISTS AVAILABLE
+            ROOT = {
+                check_variable = {
+                    THIS.colonists < 1
+                }
+            }
+            THIS = {
+                NOT = {
+                    has_state_flag = is_colonized
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_colonists_localization_key
+    }
+    text = {
+        trigger = {
+            # STATE IS ALREADY BEING COLOIZED
+            THIS = {
+                has_state_flag = is_colonized
+                NOT = {
+                    has_state_flag = is_colonized_by_@ROOT
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_other_localization_key
+    }
+    text = {
+        trigger = {
+            # STATE IS ALREADY BEING COLOIZED
+            THIS = {
+                OR = {
+                    has_state_flag = is_colonized_by_@ROOT
+                    any_state = {
+                        check_variable = { THIS.tribal = PREV.tribal }
+                        has_state_flag = is_colonized_by_@ROOT
+                    }
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_you_localization_key
+    }
+    text = {
+        trigger = {
+            # colonizable
+            ROOT = {
+                check_variable = {
+                    THIS.colonists > 0
+                }
+            }
+            THIS = {
+                NOT = {
+                    has_state_flag = is_colonized
+                }
+            }
+        }
+        localization_key = fpw_button_colonize_colonizable_localization_key
+    }
+}
+
+defined_text = {
+    name = fpw_country_position_loc
+    text = {
+        trigger = {
+            has_global_flag = sort_high_to_low
+            add_to_temp_variable = { i = 1}
+        }
+        localization_key = fpw_country_pos_localization_key_htl
+    }
+    text = {
+        trigger = {
+            has_global_flag = sort_low_to_high
+            set_temp_variable = { x = global.prestige_list_array^num }
+            subtract_from_temp_variable = { x = i }
+        }
+        localization_key = fpw_country_pos_localization_key_lth
+    }
+}
+
+defined_text = {
+    name = fpw_country_prestige_loc
+    text = {
+        trigger = {
+            always = yes
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            round_temp_variable = temp_prestige
+        }
+        localization_key = fpw_prestige_localization_key
+    }
+}
+defined_text = {
+    name = fpw_country_power_rank_loc
+    text = {
+        trigger = {
+			is_in_array = { global.top_seven_prestige_array = THIS }
+        }
+        localization_key = fpw_country_rank_great_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.79 }
+            check_variable = { temp_prestige > temp_last_prestige }
+        }
+        localization_key = fpw_country_rank_major_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.64 }
+            check_variable = { temp_prestige > temp_last_prestige }
+        }
+        localization_key = fpw_country_rank_unrecognized_major_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.24 }
+            check_variable = { temp_prestige > temp_last_prestige }
+        }
+        localization_key = fpw_country_rank_minor_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.14 }
+            check_variable = { temp_prestige > temp_last_prestige }
+        }
+        localization_key = fpw_country_rank_unrecognized_minor_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.09 }
+            check_variable = { temp_prestige > temp_last_prestige }
+        }
+        localization_key = fpw_country_rank_insignificant_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            subtract_from_temp_variable = { temp_prestige = 150 }
+            set_temp_variable = { temp_last_prestige = global.last_prestige }
+            subtract_from_temp_variable = { temp_last_prestige = 150 }
+            multiply_temp_variable = { temp_last_prestige = 0.09 }
+            check_variable = { temp_prestige < temp_last_prestige }
+        }
+        localization_key = fpw_country_rank_unrecognized_insignificant_power_localization_key
+    }
+    text = {
+        trigger = {
+            set_temp_variable = { temp_prestige = THIS.country_prestige }
+            check_variable = { temp_prestige = 0 }
+        }
+        localization_key = fpw_country_rank_decentralized_nation_localization_key
+    }
+
+}
+
+defined_text = {
+	name = GetSortArray
+	text = {
+		trigger = {
+			check_variable = { temp_array_sort = 4 }
+		}
+		localization_key = "global.prestige_list_array"
+	}
+}
+
+defined_text = {
+	name = GetSortValue		
+	text = {
+		trigger = {
+			check_variable = { temp_value_sort = 2 }
+		}
+		localization_key = "country_prestige"
+	}
+}
+
+defined_text = {
+	name = socialism_or_anarchism
+	text = {
+		trigger = {
+			has_government = communism
+			NOT = { has_country_leader_ideology = communism_subideology }
+		}
+		localization_key = socialist_yes
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchism
+		}
+		localization_key = anarchist_yes
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = communism_subideology
+		}
+		localization_key = communist_yes
+	}
+}
+
+defined_text = {
+	name = fpw_suez_blocked_ttSL
+	text = {
+		trigger = {
+			OR = {
+			has_country_flag = SUEZ_SANCTIONS_FLAG
+			has_global_flag = SUEZ_CANAL_BLOCKED
+			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+			}
+		}
+		localization_key = fpw_suez_blocked_ttA
+	}
+	text = {
+		trigger = {
+			has_global_flag = SUEZ_CANAL_NOT_BUILT
+		}
+		localization_key = fpw_suez_blocked_ttB
+	}
+}

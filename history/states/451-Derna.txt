@@ -1,0 +1,23 @@
+
+state={
+	id=451
+	name="STATE_451"
+	manpower = 23727
+	
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LBA
+	}
+
+	provinces={
+		7959 7958 7950
+	}
+
+	local_supplies=4.0 
+}

@@ -1,0 +1,249 @@
+add_namespace = britain_fpw
+
+country_event = {
+	id = britain_fpw.1
+	title = "Lord Russell's government collapses"
+	desc = britain_fpw.1.d
+	picture = GFX_fpw_russell_resigns
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's see what the future holds."
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.05
+		complete_national_focus = ENG_collapse_of_liberal_government
+	}
+}
+country_event = {
+	id = britain_fpw.2
+	title = "The Fate of France"
+	desc = britain_fpw.2.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Support a Coup"
+		ai_chance = {
+			base = 50
+		}
+		country_event = britain_fpw.4
+	}
+
+	option = {
+		name = "We Have no Time, Declare War."
+		ai_chance = {
+			base = 50
+		}
+		add_named_threat = {
+			threat = 5
+			name = "Britian Attacks France"
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FRA
+		}
+	}
+}
+country_event = {
+	id = britain_fpw.3
+	title = "Window for Success"
+	desc = britain_fpw.3.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Send Moderate Support"
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -50
+		FRA = {
+			country_event = britain_fpw.5
+		}
+	}
+
+	option = {
+		name = "Send Substantial Support"
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -120
+		FRA = {
+			country_event = britain_fpw.4
+		}
+	}
+}
+country_event = {
+	id = britain_fpw.4
+	title = "Second French Revolution"
+	desc = britain_fpw.4.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Sacre Bleau!"
+		ai_chance = {
+			base = 50
+		}
+		FPC = {
+			transfer_state = 16
+			transfer_state = 20
+			transfer_state = 21
+			transfer_state = 32
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 851
+			transfer_state = 29
+			transfer_state = 974
+			transfer_state = 785
+			transfer_state = 806
+			IF = {
+				limit = {
+					977 = {
+						is_owned_and_controlled_by = FRA
+					}
+				}
+				transfer_state = 977
+				load_oob = "FPC_britain_rebellion_epinal"
+				ELSE = {
+					load_oob = "FPC_britain_rebellion"
+				}
+			}
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+			ENG = { add_to_faction = FPC }
+			set_capital = { state = 16 }
+		}
+		FRA = {
+			set_capital = {
+				state = 19
+				remember_old_capital = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = britain_fpw.5
+	title = "[FROM.GetName] Demands that we Disunite Germany!"
+	desc = britain_fpw.5.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Never!"
+		ai_chance = {
+			base = 99
+		}
+		FROM = {
+			country_event = britain_fpw.6
+		}
+	}
+	option = {
+		name = "Ok"
+		ai_chance = {
+			base = 1
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = HNV
+			}
+			transfer_state_to = HNV
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = OLD
+			}
+			transfer_state_to = OLD
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = BAV
+			}
+			transfer_state_to = BAV
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = WRT
+			}
+			transfer_state_to = WRT
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = BAD
+			}
+			transfer_state_to = BAD
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = HES
+			}
+			transfer_state_to = HES
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = FRK
+			}
+			transfer_state_to = FRK
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = HEK
+			}
+			transfer_state_to = HEK
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = BRE
+			}
+			transfer_state_to = BRE
+		}
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = PRS
+				is_core_of = HAM
+			}
+			transfer_state_to = HAM
+		}
+	}
+}
+country_event = {
+	id = britain_fpw.6
+	title = britain_fpw.6.t
+	desc = britain_fpw.6.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 151	# Historical outbreak time after elections
+	}
+
+	option = { 
+		name = britain_fpw.6.a
+		    dismantle_faction = yes
+			end_puppet = NOV
+			end_puppet = NBR
+			end_puppet = PEI
+			end_puppet = CAN
+			end_puppet = REU
+			end_puppet = BRC
+			end_puppet = SAF
+			end_puppet = RAJ
+	}
+}

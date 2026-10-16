@@ -1,0 +1,29 @@
+
+state={
+resources={
+wood=2
+}
+
+	id=811
+	name="STATE_811"
+
+	history={
+		owner = SOV
+add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			185 1
+		}
+		add_core_of = EST
+	}
+
+	provinces={
+		185 6201 
+	}
+	manpower=16832
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}
+

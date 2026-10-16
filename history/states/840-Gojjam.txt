@@ -1,0 +1,31 @@
+state = {
+	id = 840 # Gojjam (including Gammu Gofa)
+	name = "STATE_840"
+	manpower = 468000
+	resources = {
+	}
+	
+	state_category = pastoral
+
+	history = {
+		
+		victory_points = { 
+			13242 2 
+		}
+		
+		owner = ETH
+		add_core_of = ETH
+		add_core_of = BEG
+
+		1936.6.1 = {
+			owner = ITA
+			controller = ITA
+		}
+	}
+
+	provinces = {
+ 		4963
+ 	}
+
+	local_supplies = 0.0 
+}

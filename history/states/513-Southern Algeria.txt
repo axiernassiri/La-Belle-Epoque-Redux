@@ -1,0 +1,23 @@
+
+state={
+	id=513
+	name="STATE_513"
+
+	history={
+		owner = FRA
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1046 1062 1068 1071 1095 1102 1105 1111 1552 1580 1688 1909 1962 1964 1966 13381 13398 13727 13987 14138 14166 14167 14168 14170 
+	}
+	manpower=421973
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

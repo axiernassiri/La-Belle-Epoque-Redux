@@ -1,0 +1,128 @@
+capital = 100 #Iceland
+oob = "ICE_1866"
+
+set_oob = "ICE_1866"
+
+set_variable = { ICE.communism_support_needed = 0.15 }
+
+set_research_slots = 2
+
+IF = {
+	limit = {
+		has_dlc = "Arms Against Tyranny"
+	}
+	add_ideas = {
+		disarmed_nation
+		isolation
+	}
+	
+	set_war_support = 0.15
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "Arms Against Tyranny" }
+	}
+	add_ideas = {
+		disarmed_nation
+		civilian_economy
+	}
+}
+set_cosmetic_tag = ICE_personal_union
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+
+}
+}
+IF = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+
+}
+}
+IF = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+}
+}
+
+
+
+# The Icelandic Economy
+IF = {
+	limit = {
+		has_dlc = "Arms Against Tyranny"
+	}
+	store_core_states_on_game_start = yes
+	set_variable = { ICE_economy_research_speed_factor = -0.1 }
+	set_variable = { ICE_economy_production_factory_max_efficiency_factor = -0.1 }
+	set_variable = { ICE_economy_production_speed_buildings_factor = -0.1 }
+	set_variable = { ICE_economy_consumer_goods_factor = 0.0 }
+	set_variable = { ICE_economy_industrial_capacity_dockyard = -0.1 }
+	set_variable = { ICE_economy_industrial_capacity_factory = -0.1 }
+	set_variable = { ICE_black_gold_cost = 30 }
+	set_variable = { ICE_black_gold_runs_dry_chance = 0 } #technically not necessary to set this here, 0 is default
+	set_variable = { ICE_black_gold_success_chance = 50 }
+	add_dynamic_modifier = {
+		modifier = ICE_the_icelandic_economy_modifier
+	}
+}
+
+
+
+set_convoys = 30
+set_stability = 0.65
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 96
+	neutrality = 2
+	communism = 2
+}
+
+
+
+IF = {
+	limit = {
+		NOT = { has_dlc = "Arms Against Tyranny" }
+	}
+	create_country_leader = {
+		name = "Sveinn Björnsson"
+		desc = ""
+		picture = GFX_portrait_Sveinn_Bjornsson
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+
+	
+
+	create_country_leader = {
+		name = "Haraldur Gudmunsson"
+		desc = ""
+		picture = GFX_portrait_Haraldur_Gudmunsson
+		expire = "1965.1.1"
+		ideology = centrism
+		traits = {
+			#
+		}
+	}
+
+	
+}

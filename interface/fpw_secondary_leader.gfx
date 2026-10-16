@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Secondary_PRS_Wilhelm_I"
+		texturefile = "gfx/leaders/PRS/Secondary/Portrait_Secondary_PRS_wilhelm_i.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_FRA_Napoleon_III"
+		texturefile = "gfx/leaders/FRA/Secondary/Portrait_Secondary_FRA_napoleon_III.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_SOV_Alexander_II"
+		texturefile = "gfx/leaders/SOV/secondary/Portrait_Secondary_SOV_alexander_II.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_ITA_vittorio_emanuele_III"
+		texturefile = "gfx/leaders/ITA/Secondary/Portrait_Secondary_ITA_vittorio_emanuele_III.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_JAP_komei"
+		texturefile = "gfx/leaders/JAP/Secondary/Portrait_Secondary_JAP_komei.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_JAP_meiji"
+		texturefile = "gfx/leaders/JAP/Secondary/Portrait_Secondary_JAP_meiji.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_ENG_victoria"
+		texturefile = "gfx/leaders/ENG/Secondary/Portrait_Secondary_ENG_victoria.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_KOR_gojong_young"
+		texturefile = "gfx/leaders/KOR/Secondary/Portrait_Secondary_KOR_gojong_young.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_TUR_abdulaziz"
+		texturefile = "gfx/leaders/TUR/Secondary/Portrait_Secondary_TUR_abdulaziz.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_CHI_tongzhi"
+		texturefile = "gfx/leaders/CHI/Secondary/Portrait_Secondary_CHI_tongzhi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Secondary_Vacant"
+		texturefile = "gfx/leaders/Portrait_Secondary_Vacant.dds"
+	}
+}

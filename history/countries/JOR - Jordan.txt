@@ -1,0 +1,50 @@
+capital = 455
+oob = "JOR_1866"
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+}
+
+
+set_convoys = 5
+
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	neutrality = 20
+	communism = 5
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Hashim Kheir"
+	desc = ""
+	picture = GFX_portrait_Hashim_Kheir
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+
+
+create_country_leader = {
+	name = "Abdullah bin al-Hussein"
+	desc = ""
+	picture = GFX_portrait_Abdullah_bin_al_Hussein
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+

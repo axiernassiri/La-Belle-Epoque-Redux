@@ -1,0 +1,23 @@
+
+state={
+	id=783
+	name="STATE_783" # Sidi Ifni
+	manpower = 5742
+	
+	state_category = pastoral
+
+	history={
+
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		14199
+	}
+
+	local_supplies=0.0 
+}

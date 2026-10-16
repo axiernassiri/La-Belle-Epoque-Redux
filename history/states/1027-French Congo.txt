@@ -1,0 +1,22 @@
+
+state={
+resources={
+wood=1
+}
+
+	id=1027
+	name="STATE_1027"
+
+	history={
+	set_variable = { tribal = 1027 }
+		owner = COG
+		add_core_of = COG
+
+	}
+	provinces={ 12039 12042 12049 12731 }
+	manpower=21103
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
+

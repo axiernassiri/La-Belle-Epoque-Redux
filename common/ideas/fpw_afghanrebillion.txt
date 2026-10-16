@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		fpw_AFZ_AFG_drawn_out_civil_war = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				stability_factor = -0.25
+				army_attack_factor = -0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+	}
+	country = {
+		fpw_AFZ_AFG_lack_of_national_identity = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			modifier = {
+				stability_factor = -0.025
+				war_support_factor = -0.025
+			}
+		}
+
+	}
+
+		country = {
+		fpw_AFZ_tribal_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+	}
+
+		country = {
+		fpw_AFZ_AFG_Afghan_Civil_War = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = afghanistan_broken
+
+			modifier = {
+				planning_speed = 0.2
+				max_planning_factor = 0.2
+				dig_in_speed_factor = 0.05
+				terrain_penalty_reduction = 0.3
+				army_defence_factor = 0.3
+				army_attack_factor = -0.1
+			}
+		}
+
+	}
+}

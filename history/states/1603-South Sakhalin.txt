@@ -1,0 +1,24 @@
+state= {
+	id=1268
+	name="STATE_537"
+	manpower=9471
+	resources={
+		oil=3 # was: 4
+	}
+	
+	state_category = rural
+
+	history= {
+	set_variable = { tribal = 537 }
+		owner = SOV
+		add_core_of = SOV
+		add_claim_by = JAP
+		
+		
+		
+
+	}
+	provinces={ 1820 }
+
+	local_supplies=0.0 
+}

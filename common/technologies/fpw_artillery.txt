@@ -1,0 +1,1328 @@
+technologies = {
+	
+	@1860 = 0
+	@1862 = 2
+	@1864 = 4
+	@1866 = 6
+	@1868 = 8
+	@1870 = 10
+	@1872 = 12
+	@1874 = 14
+
+	### BREECH ARTILLERY ###
+
+	# 1860: Rodman 10-inch Mortar
+	fpw_breech_artillery = {
+
+		enable_equipments = {
+			fpw_breech_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = fpw_breech2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 0 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	# 1862: Coehorn Mortar (Various Models)
+	fpw_breech2 = {
+
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_breech3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1862
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 2 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	# 1864: 8-inch Siege Mortar M1861
+	fpw_breech3 = {
+
+		path = {
+			leads_to_tech = fpw_breech4
+			research_cost_coeff = 1
+		}
+
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+
+		research_cost = 1
+
+		start_year = 1864
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 4 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+
+	# 1866: Armstrong's 20-Pounder Rifled Muzzle-Loading Mortar
+	fpw_breech4 = {
+
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_breech5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fpw_muzzle_artillery
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 6 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# 1868: 13-inch Seacoast Mortar
+	fpw_breech5 = {
+
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = fpw_breech6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1868
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 8 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# 1870: Coehorn Mortar M1870
+	fpw_breech6 = {
+
+		enable_equipments = {
+			fpw_breech_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = fpw_breech7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1870
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 10 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1941.1.9"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.6"
+			}
+		}
+	}
+
+	# 1872: 10-inch Parrott Rifle 
+	fpw_breech7 = {
+
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_breech8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1872
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 12 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	# 1874: Dahlgren 12-inch Coasting Mortar
+	fpw_breech8 = {
+
+		breech_artillery = {
+			soft_attack = 0.1
+		}
+		breech_brigade = {
+			soft_attack = 0.1
+		}
+
+		research_cost = 1
+
+		start_year = 1874
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -7 y = 14 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	### Muzzle Artillery ###
+
+	fpw_muzzle_artillery = {
+
+		enable_equipments = {
+			fpw_muzzle_artillery_equipment_1
+		}
+
+#		enable_subunits = {
+#			rocket_artillery_brigade
+#		}
+
+		path = {
+			leads_to_tech = fpw_muzzle2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -3 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	fpw_muzzle2 = {
+
+		muzzle_artillery = {
+			soft_attack = 0.1
+		}
+		muzzle_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_muzzle3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1868
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -3 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	fpw_muzzle3 = {
+
+		muzzle_artillery = {
+			soft_attack = 0.1
+		}
+		muzzle_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_muzzle5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1870
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -3 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	fpw_muzzle4 = {
+
+		enable_equipments = {
+			fpw_muzzle_artillery_equipment_2
+		}
+
+		research_cost = 1
+
+		start_year = 1874
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -3 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	fpw_muzzle5 = {
+
+		muzzle_artillery = {
+			soft_attack = 0.1
+		}
+		muzzle_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_muzzle4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1872
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = -3 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	### HOWITZER ARTILLERY ###
+
+	# 1860: Model 1857 12-Pounder Napoleon Gun-Howitzer
+	fpw_howitzer_artillery = {
+
+		enable_equipments = {
+			fpw_howitzer_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1860
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	# 1862: Mitrailleuse
+	fpw_howitzer2 = {
+
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1862
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	# 1864: 24-pounder Coehorn Mortar
+	fpw_howitzer3 = {
+
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
+		}
+
+		enable_equipments = {
+			fpw_howitzer_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1864
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+
+	# 1866: Reffye Mitrailleuse
+	fpw_howitzer4 = {
+
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# 1868: Armstrong 12-Pounder RML Field Gun
+	fpw_howitzer5 = {
+
+		enable_equipments = {
+			fpw_howitzer_artillery_equipment_3
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1868
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# 1870: 4.7-inch Armstrong Gun (RML)
+	fpw_howitzer6 = {
+
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1870
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1941.1.9"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.6"
+			}
+		}
+	}
+
+	# 1872: 8-inch M1884 Siege Howitzer
+	fpw_howitzer7 = {
+
+		howitzer_artillery = {
+			soft_attack = 0.1
+		}
+		howitzer_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_howitzer8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1872
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 12 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	# 1874: 9-inch Dahlgren Shell Gun:
+	fpw_howitzer8 = {
+
+		enable_equipments = {
+			fpw_howitzer_artillery_equipment_4
+		}
+
+		research_cost = 1
+
+		start_year = 1874
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 0 y = 14 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	### CANNON ARTILLERY ###
+
+	# 1860: James Rifle
+	fpw_cannon_artillery = {
+
+		enable_equipments = {
+			fpw_cannon_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = fpw_cannon2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1860
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 0 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	# 1862: Parrott Rifle
+	fpw_cannon2 = {
+
+		cannon_artillery = {
+			soft_attack = 0.1
+		}
+		cannon_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_cannon3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1862
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 2 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	# 1864: Whitworth Gun
+	fpw_cannon3 = {
+
+		enable_equipments = {
+			fpw_cannon_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = fpw_cannon4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1864
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 4 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+
+	# 1866: Armstrong Gun (Rifled Breech-Loading)
+	fpw_cannon4 = {
+
+		cannon_artillery = {
+			soft_attack = 0.1
+		}
+		cannon_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_cannon5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1866
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 6 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# 1868: Krupp Field Gun (C/64)
+	fpw_cannon5 = {
+
+		cannon_artillery = {
+			soft_attack = 0.1
+		}
+		cannon_brigade = {
+			soft_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = fpw_cannon6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1868
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 8 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	# 1870: Hotchkiss Revolving Cannon
+	fpw_cannon6 = {
+
+		enable_equipments = {
+			fpw_cannon_artillery_equipment_3
+		}
+
+		path = {
+			leads_to_tech = fpw_cannon7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1870
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 10 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1941.1.9"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1942.1.6"
+			}
+		}
+	}
+
+	# 1872: 9-inch Dahlgren Smoothbore
+	fpw_cannon7 = {
+
+		cannon_artillery = {
+			soft_attack = 0.1
+		}
+		cannon_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fpw_cannon8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1872
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 12 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	# 1874: 10-inch M1884 Rodman Gun
+	fpw_cannon8 = {
+
+		enable_equipments = {
+			fpw_cannon_artillery_equipment_4
+		}
+
+		research_cost = 1
+
+		start_year = 1874
+
+		folder = {
+			name = fpw_artillery_folder
+			position = { x = 7 y = 14 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+}

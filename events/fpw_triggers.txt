@@ -1,0 +1,594 @@
+add_namespace = trigger
+
+# If spanish civil war ends
+country_event = {
+	id = trigger.1
+	title = trigger.1.t
+	desc = trigger.1.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = fpw_spanish_glorious_revolution
+			SPR = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			NOT = {
+				any_country_with_original_tag = {
+					original_tag_to_check = SPR
+					has_government = neutrality
+					exists = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = trigger.1.a
+		SPR = {
+			country_event = spain_fpw.5
+		}
+	}
+}
+
+# austria asks for peace(battle of koniggratz)
+country_event = {
+	id = trigger.2
+	title = trigger.2.t
+	desc = trigger.2.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = austro_prussian_war
+			PRS = {
+				has_war_with = AUS
+			}
+			AUS = {
+				OR = {
+					AND = {
+						is_ai = yes
+						NOT = {
+							controls_province = 583
+						}
+					}
+					# Try keeping historical
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no
+						NOT = {
+							controls_province = 583
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_austrian_peace
+			}
+		}
+	}
+
+	option = {
+		name = trigger.2.a
+
+        set_global_flag = fpw_austrian_peace
+		PRS = {
+			country_event = austro_prussian_fpw.2
+		}
+	}
+}
+
+# prussia asks for peace austro prussian war
+country_event = {
+	id = trigger.3
+	title = trigger.3.t
+	desc = trigger.3.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			PRS = {
+				has_war_with = AUS
+			}
+			PRS = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 6521
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no	
+						NOT = {
+							controls_province = 6521
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_prussia_peace
+			}
+		}
+	}
+
+	option = {
+		name = trigger.3.a
+        set_global_flag = fpw_prussia_peace
+		AUS = {
+			country_event = austro_prussian_fpw.3
+		}
+		if = {
+			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+			ITA = { country_event = austro_prussian_fpw.5 }
+		}
+	}
+}
+
+# Sedan
+country_event = {
+	id = trigger.4
+	title = trigger.4.t
+	desc = trigger.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = fpw_franco_prussian_war_flag
+			FRA = {
+				has_war_with = PRS
+			}
+			FRA = {
+				NOT = {
+					controls_province = 3560
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_lost_sedan
+			}
+		}
+	}
+
+	option = {
+		name = trigger.4.a
+
+        set_global_flag = fpw_lost_sedan
+		FRA = {
+			# Sedan falls
+			country_event = franco_prussian_fpw.6
+		}
+	}
+}
+
+# prussia asks for peace # franco prussian
+country_event = {
+	id = trigger.5
+	title = trigger.5.t
+	desc = trigger.5.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = fpw_franco_prussian_war_flag
+			FRA = {
+				has_war_with = PRS
+			}
+			PRS = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 6521
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no	
+						NOT = {
+							controls_province = 6521
+						}
+					}
+				}
+				all_allied_country ={
+					OR = {
+						has_capitulated = yes
+						AND = {
+							surrender_progress > 0.5
+							is_ai = no	
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_prussia_peace_2
+			}
+		}
+	}
+
+	option = {
+		name = trigger.5.a
+        set_global_flag = fpw_prussia_peace_2
+		clr_global_flag = fpw_franco_prussian_war_flag
+		FRA = {
+			country_event = franco_prussian_fpw.2
+		}
+	}
+}
+
+# bismarcks ultimatum
+country_event = {
+	id = trigger.6
+	title = trigger.6.t
+	desc = trigger.6.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		PRS = {
+			focus_progress = {
+				focus = PRS_integrate_minor_austrian_lands
+				progress > 0.5
+			}
+		}
+	}
+
+	option = {
+		name = trigger.6.a
+		PRS = {
+			country_event = prussia_fpw.1
+		}
+	}
+}
+
+# Prussia surrender franco prussian(Immediate)
+country_event = {
+	id = trigger.7
+	title = trigger.7.t
+	desc = trigger.7.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = fpw_franco_prussian_war_flag
+			FRA = {
+				has_war_with = PRS
+			}
+			PRS = {
+				AND = {
+					surrender_progress > 0.95
+					surrender_progress < 1
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_prussia_peace_3
+			}
+		}
+	}
+
+	immediate = {
+		prussian_surrender_2 = yes
+		clr_global_flag = fpw_franco_prussian_war_flag
+	}
+
+	option = {
+		name = trigger.7.a
+        set_global_flag = fpw_prussia_peace_3
+		#FRA = {
+		#	country_event = franco_prussian_fpw.2
+		#}
+	}
+}
+
+# France surrenders(Immediate)
+country_event = {
+	id = trigger.8
+	title = trigger.8.t
+	desc = trigger.8.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = fpw_franco_prussian_war_flag
+			PRS = {
+				has_war_with = FRA
+			}
+			FRA = {
+				AND = {
+					surrender_progress > 0.95
+					surrender_progress < 1
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_france_peace
+			}
+		}
+	}
+
+	immediate = {
+		france_surrender = yes
+		clr_global_flag = fpw_franco_prussian_war_flag
+	}
+
+	option = {
+		name = trigger.8.a
+        set_global_flag = fpw_france_peace
+		#FRA = {
+		#	country_event = franco_prussian_fpw.2
+		#}
+	}
+}
+
+# something italy idk ask fizzyjuice
+country_event = {
+	id = trigger.9
+	title = trigger.9.t
+	desc = trigger.9.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		AND = {
+			date < 1866.6.15
+			date > 1866.6.13
+			is_historical_focus_on = yes
+			PRS = {
+				is_ai = yes
+				has_decision = fpw_annex_holstein
+			}
+		}
+	}
+
+	option = {
+		name = trigger.9.a
+		activate_decision = fpw_annex_holstein
+	}
+}
+
+# Paris
+country_event = {
+	id = trigger.10
+	title = trigger.10.t
+	desc = trigger.10.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			has_global_flag = fpw_franco_prussian_war_flag
+			FRA = {
+				has_war_with = PRS
+			}
+			FRA = {
+				OR = {
+					AND = {
+						surrender_progress > 0.35
+						is_ai = yes
+						NOT = {
+							controls_province = 11506
+							controls_province = 3560
+						}
+					}
+					AND = {
+						surrender_progress > 0.5
+						is_ai = no
+						NOT = {
+							controls_province = 11506
+							controls_province = 3560
+						}
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = fpw_lost_paris
+			}
+		}
+	}
+
+	option = {
+		name = trigger.10.a
+
+        set_global_flag = fpw_lost_paris
+		PRS = {
+			# france versailles pre peace
+			country_event = franco_prussian_fpw.1
+		}
+	}
+}
+# Spanish Glorious Revolution
+country_event = {
+	id = trigger.11
+	title = trigger.11.t
+	desc = trigger.11.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		AND = {
+			date < 1868.9.20
+			date > 1868.9.18
+		}
+	}
+
+	option = {
+		name = trigger.11.a
+		SPR = {
+			country_event = spain_fpw.1
+		}
+	}
+}
+# Suez opened
+country_event = {
+	id = trigger.12
+	title = trigger.12.t
+	desc = trigger.12.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = trigger.12.a
+	}
+}
+
+# austria surrenders(Immediate)
+country_event = {
+	id = trigger.13
+	title = trigger.13.t
+	desc = trigger.13.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			OR = {
+				has_global_flag = austro_prussian_war
+				has_global_flag = fpw_prusso_austrian_war
+				has_global_flag = fpw_prusso_austrian_war_2
+			}
+			PRS = {
+				has_war_with = AUS
+			}
+			AUS = {
+				surrender_progress > 0.95
+				surrender_progress < 1
+			}
+			NOT = {
+				has_global_flag = fpw_austrian_peace2
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = austro_prussian_war
+			}
+			austrian_surrender = yes
+			if = {
+				limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+				ITA = { country_event = austro_prussian_fpw.4 }
+			}
+			clr_global_flag = austro_prussian_war
+		}
+		else_if = {
+			limit = {
+				has_global_flag = fpw_prusso_austrian_war_2
+			}
+			austrian_surrender_3 = yes
+			clr_global_flag = fpw_prusso_austrian_war_2
+		}
+		else = {
+			austrian_surrender_2 = yes 
+			clr_global_flag = fpw_prusso_austrian_war
+		}
+	}
+
+	option = {
+		name = trigger.13.a
+        set_global_flag = fpw_austrian_peace2
+		#PRS = {
+		#	country_event = austro_prussian_fpw.2
+		#}
+	}
+}
+# prussia surrenders austro prussian(Immediate)
+country_event = {
+	id = trigger.14
+	title = trigger.14.t
+	desc = trigger.14.d
+	picture = GFX_report_event_diplomatic_message
+	
+	fire_only_once = yes
+
+	hidden = yes
+		
+	trigger = {
+		AND = {
+			has_global_flag = austro_prussian_war
+			AUS = {
+				has_war_with = PRS
+			}
+			PRS = {
+				surrender_progress > 0.95
+				surrender_progress < 1
+			}
+			NOT = {
+				has_global_flag = fpw_prussia_peace_4
+			}
+		}
+	}
+
+	immediate = {
+		austrian_surrender = yes
+		if = {
+			limit = { ITA = { has_completed_focus = ITA_ally_prussia } }
+			ITA = { country_event = austro_prussian_fpw.4 }
+		}
+		clr_global_flag = austro_prussian_war
+	}
+
+	option = {
+		name = trigger.14.a
+		set_global_flag = fpw_prussia_peace_4
+		#PRS = {
+		#	country_event = austro_prussian_fpw.2
+		#}
+	}
+}

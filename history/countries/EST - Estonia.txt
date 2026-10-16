@@ -1,0 +1,47 @@
+capital = 812
+oob = "EST_1866"
+
+
+
+if = {
+	limit = { has_dlc = "Arms Against Tyranny" }
+	store_core_states_on_game_start = yes
+}
+set_research_slots = 3
+
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+
+}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+}
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1832.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	neutrality = 15
+	communism = 5
+	neutrality = 60
+}

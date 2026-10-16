@@ -1,0 +1,22 @@
+state={
+resources={
+wood=1
+}
+
+	id=997
+	name="STATE_997"
+
+	history={
+		owner = USA
+		add_claim_by = USA
+		add_core_of = OKL
+	}
+	provinces={
+		7945 8025 6803 1806 2043
+	}
+	manpower=180182
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
+

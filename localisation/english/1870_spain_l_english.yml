@@ -1,0 +1,80 @@
+﻿l_english:
+
+ # NATIONAL FOCUSES
+
+ # NATIONAL FOCUSES DESCRIPTION
+
+ # NATIONAL SPIRITS
+ SPR_idea_isabel_ii:0 "Isabel II"
+ SPR_idea_memories_of_la_noche_de_san_daniel:0 "Memories of la Noche de San Daniel"
+ SPR_idea_o_todo_o_nada:0 "O todo o nada!"
+ SPR_idea_carlist_movement:0 "Carlist Movement"
+ SPR_idea_crisis_economica:0 "Crisis Economica"
+ SPR_idea_deficiency_of_railway_sectors:0 "Deficiency of Railway Sectors"
+ SPR_idea_excessive_amount_of_officers:0 "Excessive Amount of Officers"
+
+ # NATIONAL SPIRITS DESCRIPTION
+
+ # LEADERS DESCRIPTION
+
+ # BALANCE OF POWER
+
+ # DECISIONS
+
+ # SCRIPTED GUI
+
+ # POLITICAL PARTIES
+ SPR_communism_party_long:0 "Partido Progresista"
+ SPR_communism_party:0 "Partido Progresista"
+
+ SPR_democratic_party_long:0 "Partido Moderado"
+ SPR_democratic_party:0 "Partido Moderado"
+
+ SPR_neutrality_party_long:0 "Movimiento Carlista"
+ SPR_neutrality_party:0 "Movimiento Carlista"
+
+ SPR_fascism_party_long:0 "Unión Liberal"
+ SPR_fascism_party:0 "Unión Liberal"
+
+ # BOOKMARK
+
+ # COSMETIC TAGS
+
+ # TOOLTIPS
+ SPR_hellnah_historical_tt:0 "§OThis is the Historical Choice.§!"
+ SPR_hellnah_info_tt:0 "§YDue to the Refusal of Killing the Insurrectors, the Queen Isabel II Will not like this dicision, Leading to Leopoldo O'Donnell Removal and his Replacement with Narváez.§!"
+ SPR_hellyes_leads_to_spain_boom_boom_tt:0 "§RThis will lead to Spain falling into Chaos and Civil War.§!"
+ SPR_hellyes_leads_to_progressive_and_carlist_path_tt:0 "§YDespite Leopoldo Opposition to the killing, he still gives the Positive to the Killing of the Insurrectors, this will not be a good news for our People. Not Good for our Already Declining Government and Kingdom. \n \nThis Choice Leads to the Carlist and Progressive Paths.§!"
+ # EVENTS TITLES
+ spain_fpw.6.t:0 "Sublevación de Villarejo de Salvanés"
+
+ spain_fpw.7.t:0 "Sublevación del cuartel de San Gil"
+
+ spain_fpw.8.t:0 "Arrest of the Insurrectors, and the Queen's Request."
+
+ spain_fpw.9.t:0 "Isabel II Dismisses Leopoldo O'Donnell."
+
+ spain_fpw.10.t:0 "First Wave of Social Unrest"
+
+ # EVENTS DESCRIPTIONS
+ spain_fpw.6.desc:0 "W.I.P"
+
+ spain_fpw.7.desc:0 "W.I.P"
+
+ spain_fpw.8.desc:0 "W.I.P"
+
+ spain_fpw.9.desc:0 "W.I.P"
+
+ spain_fpw.10.desc:0 "W.I.P"
+ # EVENTS OPTIONS
+ spain_fpw.6.a:0 "Um.. Nah Thanks."
+
+ spain_fpw.7.a:0 "Again!?"
+
+ spain_fpw.8.a:0 "Refuse the Killing of Insurrectors"
+ spain_fpw.8.b:0 "Fine... I Wonder what will come next..."
+
+ spain_fpw.9.a:0 "Bye bye Leopoldo"
+
+ spain_fpw.10.a:0 "What..."
+ #

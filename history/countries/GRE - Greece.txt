@@ -1,0 +1,24 @@
+capital = 47
+oob = "GRE_1866"
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.6.9"
+	election_frequency = 7
+	elections_allowed = yes # none after offset 1
+}
+set_popularities = {
+	democratic = 43
+	neutrality = 2
+	communism = 17
+	neutrality = 38
+}
+
+set_stability = 0.72
+set_war_support = 0.23
+set_convoys = 80

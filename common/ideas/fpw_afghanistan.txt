@@ -1,0 +1,1387 @@
+ideas = {
+	country = {
+		fpw_AFG_our_chance_is_now = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = -0.1
+				max_planning_factor = 0.1
+				planning_speed = 0.25
+			}
+		}
+
+		fpw_AFG_entirely_war_economy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.50
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		fpw_AFG_AFZ_illiterate_state = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = illiteracy_afghan
+
+			modifier = {
+				research_speed_factor = -0.5
+				consumer_goods_factor = 0.4
+				political_power_gain = -0.025
+			}
+		}
+
+		fpw_AFG_finally_end_the_civilwar = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+				breakthrough_factor = 0.3
+			}
+		}
+
+		fpw_AFG_careful_planning = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+				max_planning_factor = 0.05
+				planning_speed = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+
+		fpw_AFG_post_war_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+				industry_free_repair_factor = -0.3
+				industrial_capacity_factory = -0.3
+			}
+		}
+
+		fpw_AFG_modernizing_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.05
+				industry_free_repair_factor = -0.25
+				industrial_capacity_factory = -0.2
+			}
+		}
+
+		fpw_AFG_agricultural_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				industry_free_repair_factor = -0.25
+				industrial_capacity_factory = -0.3
+			}
+		}
+
+		fpw_AFG_lowered_taxes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = RAJ_taxes
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		fpw_AFG_raised_taxes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = SPR_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		fpw_AFG_welfare_programs = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_social_welfare_fund_ns
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				monthly_population = 0.1
+				local_manpower = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		fpw_AFG_farmers_supported = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		fpw_AFG_afghan_banking_systems = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		fpw_AFG_western_economic_model = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = HABSBURG_economy
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		fpw_rights_of_man = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_social_welfare_fund_ns
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		fpw_the_afghan_constitution = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				cic_construction_boost = 0.1
+			}
+		}
+
+		fpw_pax_afghanistan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_growing_nationalism_modifier
+
+			modifier = {
+				consumer_goods_factor = -0.25
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		fpw_AFG_afghan_national_bank = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.05
+			}
+		}
+
+		fpw_AFG_economic_reformation_process = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_economic_reactivation
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		fpw_AFG_cheaper_guns = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability = -0.15
+					instant = yes
+				}
+			}
+		}
+
+		fpw_AFG_extended_use_of_propoganda = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+
+		fpw_AFG_supporting_afghanistan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		fpw_AFG_munitys_in_the_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.75
+			}
+		}
+
+		fpw_AFG_mountain_warfare = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				terrain_penalty_reduction = 0.3
+				pocket_penalty = -0.25
+				experience_gain_army = 0.05
+				cavalry_attack_factor = 0.05
+			}
+		}
+
+		fpw_AFG_mordernizing_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_unit_factor = 0.05
+				max_planning_factor = 0.05
+				planning_speed = 0.05
+				army_artillery_attack_factor = 0.05
+			}
+		}
+
+		fpw_AFG_lagging_military_research = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_neglected_military
+			modifier = {
+				research_speed_factor = -0.1
+				army_artillery_attack_factor = -0.3
+				breakthrough_factor = -0.2
+				army_defence_factor = -0.05
+				max_planning_factor = -0.2
+				planning_speed = -0.5
+			}
+		}
+
+		fpw_AFG_new_afghan_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_artillery_regiments
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+			}
+		}
+
+		fpw_AFG_afghan_modern_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_adopt_nufus
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+			}
+		}
+
+		fpw_AFG_afghan_modern_army_two = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_adopt_nufus
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		fpw_AFG_afghan_modern_army_three = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_adopt_nufus
+			modifier = {
+				experience_gain_army_unit_factor = 0.2
+				planning_speed = 0.15
+				max_planning_factor = 0.15
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		fpw_AFG_afghan_modern_army_four = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_adopt_nufus
+			modifier = {
+				experience_gain_army_unit_factor = 0.5
+				planning_speed = 0.25
+				max_planning_factor = 0.25
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				pocket_penalty = -0.05
+				acclimatization_hot_climate_gain_factor = 0.5
+				acclimatization_cold_climate_gain_factor = 0.5
+			}
+		}
+
+		fpw_AFG_moblized_tribes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				conscription_factor = 0.05
+				stability_factor = -0.2
+				
+			}
+		}
+
+		fpw_AFG_tribal_leaders_allowed_in_highcommand = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_artillery_regiments
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				planning_speed = -0.1
+				max_planning_factor = -0.05
+			}
+		}
+
+		fpw_AFG_increased_calvary_research = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				custom_modifier_tooltip = afg_research_plan
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_two = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_three = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+				modifier_army_sub_unit_cavalry_speed_factor = 0.05
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_four = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+				modifier_army_sub_unit_cavalry_speed_factor = 0.05
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_design_cost_factor = -0.5
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_five = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.15
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				modifier_army_sub_unit_cavalry_speed_factor = 0.1
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_design_cost_factor = -0.5
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_six = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.15
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				modifier_army_sub_unit_cavalry_speed_factor = 0.1
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_design_cost_factor = -0.5
+				breakthrough_factor = 0.05
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_seven = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				modifier_army_sub_unit_cavalry_speed_factor = 0.1
+				experience_gain_cavalry_combat_factor = 0.25
+				unit_cavalry_design_cost_factor = -0.5
+				breakthrough_factor = 0.05
+			}
+		}
+
+		fpw_AFG_increased_calvary_research_eight = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = afg_research_plan
+				cavalry_attack_factor = 0.125
+				cavalry_defence_factor = 0.125
+				modifier_army_sub_unit_cavalry_speed_factor = 0.15
+				experience_gain_cavalry_combat_factor = 0.45
+				unit_cavalry_design_cost_factor = -1.0
+				breakthrough_factor = 0.15
+			}
+		}
+
+		fpw_AFG_war_bonds = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+			modifier = {
+				war_support_factor = -0.01
+				stability_factor = -0.01
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		fpw_AFG_attack_on_kabul = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = AFZ
+				attack_bonus_against = 0.15
+			}
+		}
+
+		fpw_AFG_tribal_recruitment_campaign = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			modifier = {
+				local_manpower = 0.15
+				mobilization_speed = 0.05
+			}
+		}
+
+		fpw_AFG_barazaki_dynasty = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_monarchist_uprising
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+
+		fpw_AFG_supressing_tribes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				resistance_activity = -0.1
+				compliance_growth_on_our_occupied_states = -0.5
+				resistance_target = -0.15
+			}
+		}
+
+		fpw_AFG_unified_country = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = PER_unification_initiative_idea
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.5
+			}
+		}
+		
+		fpw_AFG_comprimise_with_tribes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.2
+				weekly_manpower = 500
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+			}
+		}
+
+		fpw_AFG_illiterate_state_two = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = -0.3
+				consumer_goods_factor = 0.25
+			}
+		}
+
+		fpw_AFG_illiterate_state_three = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		fpw_AFG_bukharian_campaign = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = CZE_planning_bonus
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.25
+			}
+			modifier = {
+				custom_modifier_tooltip = fpw_afg_into_russia
+			}
+		}
+
+		fpw_AFG_indian_campaign = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_raj_attack_bonus
+
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.25
+			}
+			modifier = {
+				custom_modifier_tooltip = fpw_afg_into_britain
+			}
+		}
+
+		fpw_AFG_nationalism = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_from_the_ashes
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.15
+			}
+		}
+
+		fpw_AFG_sher_ali_khans_reforms = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+
+		fpw_AFG_tribal_justice_system = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_parliament_building
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.01
+				drift_defence_factor = 0.25
+			}
+		}
+
+		fpw_AFG_reorganized_bureaucracy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = HUN_turul_association_idea
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+
+			}
+		}
+
+		fpw_AFG_a_reformed_afghanistan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_improved_industries
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				stability_factor = 0.1
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+		fpw_AFG_complete_trust_in_sher_ali_khan = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			#picture = generic_economic_crisis
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.025
+				resistance_target = -0.15
+				compliance_growth = 0.05
+			}
+		}
+
+		fpw_AFG_nationalized_jirga_system = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_parliament_building
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.025
+				army_core_defence_factor = 0.05
+				cavalry_attack_factor = 0.01
+				cavalry_defence_factor = 0.01
+			}
+		}
+
+		fpw_AFG_nationalized_economy = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = GER_economy_of_conquest
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+				research_speed_factor = -0.05
+			}
+		}
+
+		fpw_AFG_corrupt_takeover = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ETH_corrupt_bureaucracy
+
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		fpw_AFG_nationalism_embraced = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_growing_nationalism_modifier
+
+			modifier = {
+				stability_factor = 0.25
+				consumer_goods_factor = 0.1
+				war_support_factor = 0.1
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription = 0.025
+			}
+		}
+
+		fpw_AFG_afghan_recruit_ment_system = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		fpw_AFG_raze_the_ground_and_scorcth_the_earth = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = RAJ_private_military_complex
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.25
+				war_support_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+
+		fpw_AFG_the_means_to_wage_war = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
+
+		fpw_AFG_tax_breaks_granted = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = HABSBURG_economy
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		fpw_AFG_complete_support = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = air_support_focus
+
+			modifier = {
+				stability_factor = 0.01
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		fpw_AFG_expanded_factory_rights = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = AFG_republic_idea
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		fpw_AFG_pro_womens_rights = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ARG_women_in_industry
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = 0.15
+				research_speed_factor = 0.1
+			}
+		}
+		fpw_AFG_holding_the_line = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		fpw_AFG_mobilize_the_reserves = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		fpw_AFG_defend_the_homeland = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_mountain_defensive_training
+
+			modifier = {
+				army_core_defence_factor = 0.5
+			}
+		}
+		fpw_AFG_the_national_afghan_army = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				experience_gain_army_unit_factor = 0.10
+				#planning_speed = 0.25
+				#max_planning_factor = 0.25
+				#army_infantry_attack_factor = 0.1
+				#army_infantry_defence_factor = 0.1
+				army_org_factor = 0.05
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+				pocket_penalty = -0.1
+			}
+		}
+		fpw_AFG_the_national_afghan_army_2 = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				planning_speed = 0.5
+				#max_planning_factor = 0.25
+				#army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.05
+				army_org_factor = 0.075
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				pocket_penalty = -0.25
+				stability_factor = -0.25
+				cic_construction_boost = -0.15
+				war_support_factor = 0.05
+				resistance_target = 0.15
+				compliance_growth_on_our_occupied_states = -0.1
+			}
+		}
+		fpw_AFG_the_national_afghan_army_3 = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				planning_speed = 0.5
+				max_planning_factor = 0.05
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+				army_attack_factor = 0.075
+				army_defence_factor = 0.075
+				terrain_penalty_reduction = 0.1
+				pocket_penalty = -0.5
+				stability_factor = -0.5
+				cic_construction_boost = -0.50
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+				war_support_factor = -0.05
+				resistance_target = 0.20
+				compliance_growth_on_our_occupied_states = -0.4
+			}
+		}
+		fpw_AFG_the_national_afghan_army_4 = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				planning_speed = 0.5
+				max_planning_factor = 0.05
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+				army_attack_factor = 0.075
+				army_defence_factor = 0.075
+				terrain_penalty_reduction = 0.25
+				pocket_penalty = -0.5
+				cic_construction_boost = -0.25
+				industrial_capacity_factory = 0.1
+				war_support_factor = 0.15
+			}
+		}
+		fpw_AFG_expansionist_policies = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ICE_the_viking_spirit
+			modifier = {
+				justify_war_goal_time = -0.75
+			}
+		}
+		fpw_AFG_liberalize_trade = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.2
+				min_export = 0.15
+			}
+		}
+	}
+}

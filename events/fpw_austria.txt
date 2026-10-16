@@ -1,0 +1,659 @@
+add_namespace = fpw_austria
+
+# France asked to support
+country_event = {
+	id = fpw_austria.1
+	title = fpw_austria.1.t
+	desc = fpw_austria.1.d
+	picture = GFX_fpw_report_event_001
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	# France accepts
+	option = {
+		name = fpw_austria.1.a 
+		AUS = { country_event = fpw_austria.2 }
+	}
+	# France stays neutral
+	option = {
+		name = fpw_austria.1.b
+		AUS = { country_event = fpw_austria.3 }
+	}
+	# France declines
+	option = {
+		name = fpw_austria.1.c
+		AUS = { country_event = fpw_austria.4 }
+	}
+}
+
+# France accepts
+country_event = {
+	id = fpw_austria.2
+	title = fpw_austria.2.t
+	desc = fpw_austria.2.d
+	picture = GFX_fpw_report_event_001
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	option = {
+		name = fpw_austria.2.a 
+		
+	}
+}
+
+# France will stay neutral
+country_event = {
+	id = fpw_austria.3
+	title = fpw_austria.3.t
+	desc = fpw_austria.3.d
+	picture = GFX_fpw_report_event_001
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	option = {
+		name = fpw_austria.3.a 
+		
+	}
+}
+
+# France declines
+country_event = {
+	id = fpw_austria.4
+	title = fpw_austria.4.t
+	desc = fpw_austria.4.d
+	picture = GFX_fpw_report_event_001
+
+	is_triggered_only = yes
+
+	fire_only_once=yes
+
+	option = {
+		name = fpw_austria.4.a 
+		
+	}
+}
+
+
+country_event = {
+	id = fpw_austria.5
+	title = fpw_austria.5.t
+	desc = fpw_austria.5.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once=yes
+	option = {
+		name = fpw_austria.5.a
+		set_country_flag = hungarian_protests
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = HUN
+					is_core_of = AUS
+				}
+				remove_core_of = AUS
+				start_resistance = yes
+				set_resistance = 60
+				set_compliance = 20
+			}
+			country_event = {
+				id = fpw_austria.6
+				days = 30
+			}
+			remove_ideas = {
+				AUS_hungary_hostile
+				AUS_hungary_neutral
+				AUS_hungary_friendly
+				AUS_hungary_loyal
+			}
+			add_ideas = AUS_hungary_hostile
+		}
+		custom_effect_tooltip = hungarian_protests_effect
+	}
+}
+country_event = {
+	id = fpw_austria.6
+	title = fpw_austria.6.t
+	desc = fpw_austria.6.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once=yes
+	option = {
+		name = fpw_austria.6.a
+		set_country_flag = slavic_revolts
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CZE
+					is_core_of = AUS
+				}
+				remove_core_of = AUS
+				start_resistance = yes
+				set_resistance = 40
+				set_compliance = 25
+			}
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = AUS }
+					NOT = { is_core_of = CZE }
+					OR = {	
+						is_core_of = POL
+						is_core_of = CRO
+						is_core_of = SLV
+						state = 80
+					}
+				}
+				set_resistance = 70
+				set_compliance = 15
+			}
+			remove_ideas = {
+				AUS_czech_hostile
+				AUS_czech_neutral
+				AUS_czech_friendly
+				AUS_czech_loyal
+				AUS_galicia_hostile
+				AUS_galicia_neutral
+				AUS_galicia_friendly
+				AUS_galicia_loyal
+				AUS_illyria_hostile
+				AUS_illyria_neutral
+				AUS_illyria_friendly
+				AUS_illyria_loyal
+			}
+			add_ideas = {
+				AUS_czech_hostile
+				AUS_galicia_hostile
+				AUS_illyria_hostile
+			}
+		}
+		custom_effect_tooltip = slavic_revolts_effect
+	}
+}
+country_event = {
+	id = fpw_austria.7
+	title = fpw_austria.7.t
+	desc = fpw_austria.7.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once=yes
+	option = {
+		name = fpw_austria.7.a
+		custom_effect_tooltip = AUS_war_with_ottomans
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				set_country_flag = ENG_agreed_cng_berlin
+			}
+			if = {
+				limit = {
+					original_tag = SOV
+				}
+				set_country_flag = SOV_agreed_cng_berlin
+			}
+		}
+	}
+	option = {
+		name = fpw_austria.7.b
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			AUS = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = fpw_rejected_congress_of_berlin
+				}
+			}
+		}
+		if = {
+			limit = {
+				original_tag = SOV
+			}
+			AUS = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = fpw_rejected_congress_of_berlin
+				}
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}
+# demands are met or war.
+country_event = {
+	id = fpw_austria.8
+	title = fpw_austria.8.t
+	desc = fpw_austria.8.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once=yes
+	option = {
+		name = fpw_austria.8.a
+		hidden_effect = {
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag  = ENG_agreed_cng_berlin
+				}
+			}
+			183 = { transfer_state_to = ENG}
+		} 
+		if = {
+			limit = {
+				SOV = {
+					has_country_flag  = SOV_agreed_cng_berlin
+				}
+			}
+			TUR = {
+				end_puppet = BUL
+				end_puppet = ROM
+				end_puppet = SER
+			}
+			SOV = {
+				puppet = {
+					target = ROM
+					end_wars = no
+				}
+			}
+		} 
+		104 = { transfer_state_to = AUS}
+		804 = { transfer_state_to = AUS }
+		AUS = {
+			complete_national_focus = AUS_diplomatic_victory
+		}
+	}
+	option = {
+		name = fpw_austria.8.b
+		hidden_effect = {
+		}
+		AUS = {
+			create_faction = AUS_congress_of_berlin
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag  = ENG_agreed_cng_berlin
+				}
+			}
+			ENG  = {
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+			ENG = { add_to_faction = AUS }
+		} 
+		if = {
+			limit = {
+				SOV = {
+					has_country_flag  = SOV_agreed_cng_berlin
+				}
+			}
+			SOV  = {
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+			SOV = { add_to_faction = AUS }
+		} 
+		AUS = {
+			country_event = {
+				id = fpw_austria.9
+				days = 30
+			}
+			complete_national_focus = AUS_war_against_the_ottomans
+		}
+
+	}
+}
+
+# The coalition exists only for the war enforcing the Congress of Berlin.
+country_event = {
+	id = fpw_austria.9
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				TUR = { has_capitulated = yes }
+			}
+			dismantle_faction = yes
+		}
+		else = {
+			country_event = {
+				id = fpw_austria.9
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = fpw_austria.9.a
+	}
+}
+
+# Serbian and Bulgarian response to Austrian protectorate demands.
+country_event = {
+	id = fpw_austria.10
+	title = fpw_austria.10.t
+	desc = fpw_austria.10.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.10.a
+		ai_chance = { factor = 60 }
+		AUS = {
+			puppet = {
+				target = ROOT
+				end_wars = no
+			}
+		}
+	}
+
+	option = {
+		name = fpw_austria.10.b
+		ai_chance = { factor = 40 }
+		AUS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+## faction with france
+country_event = {
+	id = fpw_austria.11
+	title = fpw_austria.11.t
+	desc = fpw_austria.11.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.11.a
+		ai_chance = { factor = 60 }
+		AUS = {
+			create_faction = AUS_anti_german_alliance
+		}
+		add_to_faction = AUS
+	}
+
+	option = {
+		name = fpw_austria.11.b
+		ai_chance = { factor = 40 }
+		AUS = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+## faction with germany
+country_event = {
+	id = fpw_austria.12
+	title = fpw_austria.12.t
+	desc = fpw_austria.12.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.12.a
+		ai_chance = { factor = 60 }
+		AUS = {
+			create_faction = AUS_central_powers
+		}
+		add_to_faction = AUS
+	}
+
+	option = {
+		name = fpw_austria.12.b
+		ai_chance = { factor = 40 }
+		AUS = {
+			add_opinion_modifier = {
+				target = PRS
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+## event to austria for german cap
+country_event = {
+	id = fpw_austria.13
+	title = fpw_austria.13.t
+	desc = fpw_austria.13.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	## scripted peace
+	option = {
+		name = fpw_austria.13.a
+		ai_chance = { factor = 400 }
+		762 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+		}
+		67 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+	    }
+		66 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+		}
+		64 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+		}
+		white_peace = PRS
+	}
+	
+
+	## fight till end ( could get colition)
+	option = {
+		name = fpw_austria.13.b
+		ai_chance = { factor = 40 }
+		## ill make some temporary negitive modifier later or somthin
+	}
+}
+
+## event for italian cap
+country_event = {
+	id = fpw_austria.14
+	title = fpw_austria.14.t
+	desc = fpw_austria.14.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	## scripted peace
+	option = {
+		name = fpw_austria.14.a
+		ai_chance = { factor = 400 }
+		160 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+		}
+		159 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+		}
+		161 = { 
+			add_core_of = AUS
+			transfer_state_to = AUS 
+		}
+		white_peace = PRS
+	}
+	
+
+	## fight till end ( could get colition)
+	option = {
+		name = fpw_austria.14.b
+		ai_chance = { factor = 40 }
+		## ill make some temporary negitive modifier later or somthin
+	}
+}
+
+### Austria World Fair event triggered in 1873
+
+country_event = {
+	id = fpw_austria.15
+	title = fpw_austria.15.t
+	desc = fpw_austria.15.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	## host the Vienna World Fair, This will have consequences and will continue the event chain
+	option = {
+		name = fpw_austria.15.a
+		ai_chance = { factor = 400 }
+		add_war_support = 0.15
+		add_political_power = 200
+	}
+	
+
+	## Reject
+	option = {
+		name = fpw_austria.15.b
+		ai_chance = { factor = 40 }
+		add_war_support = -0.05
+		
+	}
+}
+
+
+### Stock Market Crash due to world fair
+country_event = {
+	id = fpw_austria.16
+	title = fpw_austria.16.t
+	desc = fpw_austria.16.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.16.a
+		ai_chance = { factor = 400 }
+		add_stability = -0.20
+		add_timed_idea = {
+			idea = AUS_stock_market_crash
+			days = 100
+		}
+	}
+}
+
+### Imperial Awards 
+country_event = {
+	id = fpw_austria.17
+	title = fpw_austria.17.t
+	desc = fpw_austria.17.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.17.a
+		ai_chance = { factor = 401 }
+		army_experience = 50
+		add_political_power = -25
+	}
+
+	option = {
+		name = fpw_austria.17.b
+		ai_chance = { factor = 400 }
+		## nothing
+	}
+}
+
+### price of a new uniform, flavor
+country_event = {
+	id = fpw_austria.18
+	title = fpw_austria.18.t
+	desc = fpw_austria.18.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.18.a
+		ai_chance = { factor = 401 }
+		army_experience = 25
+		add_political_power = -100
+	}
+
+	option = {
+		name = fpw_austria.18.b
+		ai_chance = { factor = 400 }
+		## add neglected military temperary modifier
+		army_experience = -100
+	}
+}
+
+### emporer and empress, flavor
+country_event = {
+	id = fpw_austria.19
+	title = fpw_austria.19.t
+	desc = fpw_austria.19.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### let the empress do as she wishes
+	option = {
+		name = fpw_austria.19.a
+		ai_chance = { factor = 401 }
+		add_stability = 0.025
+	}
+
+
+	### tradition must be upheld
+	option = {
+		name = fpw_austria.19.b
+		ai_chance = { factor = 400 }
+		add_political_power = 15
+	}
+}
+
+### emporers address
+country_event = {
+	id = fpw_austria.20
+	title = fpw_austria.20.t
+	desc = fpw_austria.20.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### Promise economic reform
+	option = {
+		name = fpw_austria.20.a
+		ai_chance = { factor = 401 }
+		add_stability = 0.05
+	}
+
+
+	### Promise revenge and reconquest
+	option = {
+		name = fpw_austria.20.b
+		ai_chance = { factor = 400 }
+		add_war_support = 0.05
+	}
+}

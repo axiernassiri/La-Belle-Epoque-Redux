@@ -1,0 +1,72 @@
+AUS_populations_of_the_empire = {
+	
+	AUS_gain_hungarian_trust = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			
+		}
+		available = {
+			#check_variable = {
+			#	AUS_hungarian_trust > 0
+			#}
+		} 
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 30
+		days_remove = 30
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			#AUS_increse_hungarian_attitude_effect = yes
+		} 
+		remove_effect = {
+			add_to_variable = {
+				var = AUS_hungarian_trust
+				value = 1
+				tooltip = add_1_AUS_hungarian_trust
+			}
+		}
+	} 
+	AUS_improve_hungarian_relations = { 
+		icon = GFX_decision_hol_exchange_intelligence_data
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = {
+			check_variable = {
+				AUS_hungarian_trust > 0
+			}
+		}
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = AUS_need_5_trust
+				check_variable = {
+					AUS_hungarian_trust > 4
+				}
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		days_remove = 50
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			
+		} 
+		remove_effect = {
+			AUS_increse_hungarian_attitude_effect = yes
+			add_to_variable = {
+				var = AUS_hungarian_trust
+				value = -5
+				#tooltip = add_1_AUS_hungarian_trust
+			}
+		}
+		
+	}
+	
+}

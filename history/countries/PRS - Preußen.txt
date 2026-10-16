@@ -1,0 +1,167 @@
+capital = 64
+oob = "PRS_1866"
+
+1870.1.1 = {
+	set_cosmetic_tag = GER_north_germany
+
+	unlock_national_focus = PRS_lesser_german_solution
+	unlock_national_focus = PRS_seek_german_support
+	unlock_national_focus = PRS_propose_federal_reform
+	unlock_national_focus = PRS_annex_holstein
+	unlock_national_focus = PRS_austro_prussian_victory
+	unlock_national_focus = PRS_continue_bismarcks_plan
+	unlock_national_focus = PRS_invite_remaing_nothern_states
+	unlock_national_focus = PRS_annex_hostile_nothern_states
+	unlock_national_focus = PRS_finalize_the_north_german_confederation
+	unlock_national_focus = PRS_spanish_glorious_revolution
+	unlock_national_focus = PRS_towards_a_unified_germany
+	unlock_national_focus = PRS_spanish_glorious_revolution
+	unlock_national_focus = PRS_seek_international_support
+	unlock_national_focus = PRS_secure_french_peace
+	unlock_national_focus = PRS_ally_with_italy
+
+	
+	add_dynamic_modifier = { 
+		modifier = fpw_PRS_victor_of_the_brothers_war
+	}
+}
+
+add_ideas = {
+	fpw_kaiser_wilhelm
+	limited_conscription
+	prs_fpw_social_unrest
+	prs_fpw_trade_disputes
+}	
+
+
+add_dynamic_modifier = {
+	modifier = fpw_PRS_prussian_general_staff
+}
+
+set_variable = { prs_command_power_gain = -0.05 }
+set_variable = { prs_army_leader_cost_factor = 0.10 }
+set_variable = { prs_bop_fascism_drift = 0.03 }
+set_variable = { prs_bop_communism_drift = 0.03 }
+
+set_research_slots = 3
+
+set_politics = {
+	# By seats
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 49
+	fascism = 44
+	communism = 3
+	neutrality = 4
+}
+
+set_technology = {
+	fpw_support_weapons = 1
+	fpw_support_weapons2 = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_infantry_weapons2 = 1
+	fpw_improved_infantry_weapons_2 = 1
+	fpw_cannon_artillery = 1
+	fpw_cannon2 = 1
+	fpw_cannon3 = 1
+	fpw_cannon_artillery_equipment_2 = 1
+	fpw_howitzer_artillery = 1
+	fpw_howitzer2 = 1
+	fpw_howitzer3 = 1
+	fpw_howitzer4 = 1
+	fpw_breech_artillery = 1
+	fpw_breech2 = 1
+	fpw_breech3 = 1
+	fpw_breech4 = 1
+	fpw_muzzle_artillery = 1
+	fpw_basic_train = 1
+    fpw_cavalry_equipment = 1
+
+	# Supposed to be added to every country
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	smoke_generator = 1
+	basic_depth_charges = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	basic_fire_control_system = 1
+	basic_dp_light_battery = 1
+
+}
+
+add_equipment_to_stockpile = {
+    type = fpw_breech_artillery_equipment
+    amount = 300
+    producer = PRS
+}
+
+add_equipment_to_stockpile = {
+    type = fpw_infantry_equipment_1
+    amount = 5000
+    producer = PRS
+}
+
+recruit_character = PRS_otto_von_bismarck
+recruit_character = PRS_rudolf_von_bennigsen
+recruit_character = PRS_wilhelm_i
+recruit_character = PRS_heinrich_von_treitschke
+
+recruit_character = PRS_Friedrich_Graf_von_Wrangel
+recruit_character = PRS_Helmuth_von_Moltke
+recruit_character = PRS_Alfred_von_Rauch
+recruit_character = PRS_Eduard_Vogel_von_Falckenstein
+#recruit_character = PRS_James_Hobrecht #COMMENTED OUT BECAUSE: history/countries/PRS - Preußen.txt:107: recruit_character: Unknown character 
+recruit_character = PRS_Hans_Wilhelm_von_Kotze
+recruit_character = PRS_Friedrich_Karl_of_Prussia
+recruit_character = PRS_Gustav_von_Stiehle
+recruit_character = PRS_August_Karl_von_Goeben
+recruit_character = PRS_Hans_von_Bülow
+recruit_character = PRS_Heinrich_Adolf_von_Zastrow
+recruit_character = PRS_Albrecht_Graf_von_Roon
+recruit_character = PRS_Leonhard_von_Blumenthal
+recruit_character = PRS_Friedrich_Wilhelm_of_Prussia
+recruit_character = PRS_Hermann_von_Treskow
+recruit_character = PRS_Edwin_Freiherr_von_Manteuffel
+recruit_character = PRS_Constantin_von_Alvensleben
+recruit_character = PRS_Karl_Eberhard_von_Bittenfeld
+recruit_character = PRS_Albert_von_Boguslawski
+
+recruit_character = PRS_Eduard_von_Knorr
+recruit_character = PRS_Otto_Livonius
+recruit_character = PRS_Eduard_von_Jachmann
+recruit_character = PRS_Ludwig_von_Henk
+recruit_character = PRS_Alexander_von_Monts
+recruit_character = PRS_Otto_von_Diederichs
+recruit_character = PRS_Karl_Eduard_Heusner
+recruit_character = PRS_Ludwig_Borckenhagen
+recruit_character = PRS_Reinhold_von_Werner
+recruit_character = PRS_Max_von_der_Goltz
+recruit_character = PRS_Friedrich_von_Hollmann
+recruit_character = PRS_Adalbert_of_Prussia
+
+recruit_character = PRS_heinrich_abeken
+
+activate_advisor = PRS_Helmuth_von_Moltke_carm
+

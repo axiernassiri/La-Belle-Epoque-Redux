@@ -1,0 +1,27 @@
+capital = 141	
+oob = "SWE_1866"
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
+
+set_cosmetic_tag = SWE_norway_union
+
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 75
+	neutrality = 14
+	communism = 8
+	neutrality = 3
+}
+
+set_convoys = 25

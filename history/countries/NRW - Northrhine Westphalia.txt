@@ -1,0 +1,21 @@
+capital = 51
+oob = "NRW_1866"
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+    fpw_infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 21
+	democratic = 6
+	neutrality = 71
+	communism = 2
+}

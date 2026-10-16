@@ -1,0 +1,29 @@
+fpw_tanzimat_era = {
+
+	priority = 99
+
+	visible = {
+		has_idea = fpw_TUR_tanzimat_economic_era
+	}
+
+	allowed = {
+		always = yes
+	}
+
+	icon = mission_icon
+}
+fpw_TUR_restoring_legitimacy = {
+
+	priority = 99
+
+	visible = {
+		has_completed_focus = TUR_restore_our_legitimacy
+	}
+
+	allowed = {
+		always = yes
+	}
+
+	icon = mission_icon
+}
+

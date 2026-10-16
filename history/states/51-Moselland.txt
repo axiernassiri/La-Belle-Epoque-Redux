@@ -1,0 +1,35 @@
+
+state={
+	id=51
+	name="STATE_51"
+	resources={
+
+		steel=35.000
+	
+
+wood=1
+}
+
+	history={
+		owner = PRS
+		victory_points = {
+			587 5 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = PRS
+
+	}
+
+	provinces={
+		587 3444 3547 9522 
+	}
+	manpower=1597633
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}
+

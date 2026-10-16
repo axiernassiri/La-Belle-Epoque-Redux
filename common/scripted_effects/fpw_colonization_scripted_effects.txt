@@ -1,0 +1,104 @@
+colonize_state = {
+
+	set_variable = { ROOT.colonial_time = 40 }
+	set_variable = { ROOT.temp_population = state_population_k }
+	divide_variable = { ROOT.temp_population = 25 }
+	add_to_variable = { ROOT.temp_population = 1 }
+
+	clamp_variable = {
+		var = ROOT.temp_population
+		max = 2
+	}
+
+	multiply_variable = {
+		var = ROOT.colonial_time
+		value = ROOT.temp_population
+	}
+
+	# malaria
+	# not has tech
+	#multiply_variable = {
+	#    var = ROOT.colonial_time
+	#    value = 9
+	#}
+
+	if = {
+		limit = {
+			has_tech = fpw_anti_malaria_one
+		}
+		multiply_variable = {
+			var = ROOT.colonial_time
+			value = 7
+		}
+	} 
+	if = {
+		limit = {
+			has_tech = fpw_anti_malaria_two
+		}
+		multiply_variable = {
+			var = ROOT.colonial_time
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+			has_tech = fpw_anti_malaria_three
+		}
+		multiply_variable = {
+			var = ROOT.colonial_time
+			value = 2
+		}
+	}
+	if = {
+		limit = {
+			has_tech = fpw_anti_malaria_four
+		}
+		multiply_variable = {
+			var = ROOT.colonial_time
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_tech = fpw_anti_malaria_one }
+		}
+		multiply_variable = {
+			var = ROOT.colonial_time
+			value = 9
+		}
+	}
+
+	multiply_variable = {
+		var = ROOT.colonial_time
+		value = ROOT.extra_colonizing_speed
+	}
+
+	round_variable = ROOT.colonial_time
+
+	if = {
+		limit = {
+			is_debug = yes
+		}
+		set_variable = { ROOT.colonial_time = 1 }
+	}
+
+	set_variable = { THIS.integration_time = ROOT.colonial_time }
+	
+	# Overall just to know
+	set_state_flag = is_colonized
+	# Specificly needed for the localisation
+	set_state_flag = is_colonized_by_@ROOT
+
+	ROOT = {
+		activate_targeted_decision = {
+			target = PREV
+			decision = colonization_descision
+		}
+		set_country_flag = is_colonizing
+		subtract_from_variable = { THIS.colonists = 1 }
+		clamp_variable = { 
+			var = THIS.colonists
+			min = 0
+		}
+	}
+}

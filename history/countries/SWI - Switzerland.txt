@@ -1,0 +1,28 @@
+capital = 3
+oob = "SWI_1866"
+
+set_research_slots = 3
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+recruit_character = SWI_federal_assembly 
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 96
+	neutrality = 2
+	communism = 2
+}
+
+set_stability = 0.85

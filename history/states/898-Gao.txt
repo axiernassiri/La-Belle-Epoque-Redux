@@ -1,0 +1,19 @@
+
+state={
+	id=898
+	name="STATE_898"
+
+	history={
+	set_variable = { tribal = 898 }
+		owner = NGA
+		add_core_of = NGA
+		
+
+	}
+
+	provinces={ 13310 13501 13555 13600 13990 14021 14059 14322 14324 14337 14344 14348 }
+	manpower=22465
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

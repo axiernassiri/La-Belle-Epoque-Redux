@@ -1,0 +1,29 @@
+
+state={
+	id=890
+	name="STATE_890"
+	resources={
+
+	
+
+wood=1
+}
+
+	history={
+	set_variable = { tribal = 890 }
+		owner = CHK
+		
+		
+		
+		add_core_of = COG
+		add_core_of = CHK
+
+	}
+
+	provinces={ 13320 13349 13434 13467 13484 13776 13855 13873 13901 13929 13974 14100 14112 14526 14531 14532 14539 14542 14545 }
+	manpower=18658
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
+

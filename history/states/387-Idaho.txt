@@ -1,0 +1,32 @@
+
+state={
+	id=387
+	name="STATE_387"
+	manpower = 231416
+	
+	state_category = rural
+	
+	resources={
+		steel=18 # was: 32
+		tungsten=18 # was: 34
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_claim_by = USA
+		add_core_of = IDA
+		victory_points = {
+			9616 1
+		}
+	}
+
+	provinces={
+		1789 1832 3781 4778 7845 9616 9695 10556 10602 10672 12124 12535 12607 
+	}
+	
+
+	local_supplies=7.0 
+}

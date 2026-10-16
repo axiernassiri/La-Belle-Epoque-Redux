@@ -1,0 +1,40 @@
+
+state={
+resources={
+wood=6
+}
+
+	id=464
+	name="STATE_464"
+	manpower = 219767
+	
+	state_category = rural
+
+	history={
+		owner = NOV
+		add_core_of = NOV
+		1870.1.1 = {
+			owner = CAN
+			add_core_of = CAN
+		}
+		victory_points = {
+			7361 3
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			7361 = {
+				naval_base = 4
+
+			}
+		}
+	}
+
+	provinces={
+		1354 4430 4623 7304 7361 7644 10244 
+	}
+	
+
+	local_supplies=11.0 
+}
+

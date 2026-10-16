@@ -1,0 +1,51 @@
+AUS_populations_of_the_empire = {
+	priority = 9999
+	icon = GFX_decision_category_generic_foreign_policy
+	scripted_gui = aus_populations_of_the_empire_gui
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		#has_completed_focus = AUS_a_duel_monarchy_with_dual_problems
+	}
+}
+
+fpw_austro_hungarian_compromise = {
+	priority = 10
+	
+	on_map_area = {
+		targets = { 155 43 154 83 82 84 76 73 71 70 764 109 45 664 }
+		name = AUS_hungarian_states
+		zoom = 150
+	}
+	
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		tag = AUS
+	}
+}
+
+fpw_austria_german_solution = {
+	priority = 99
+
+	picture = GFX_decision_category_german_solutions
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		if = {
+			limit = {
+				is_debug = yes
+			}
+			original_tag = AUS
+		} else = {
+			original_tag = AUS
+			#has_completed_focus = AUS_seek_for_the_german_solution
+		}
+	}
+}

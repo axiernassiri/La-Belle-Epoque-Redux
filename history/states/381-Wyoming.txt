@@ -1,0 +1,28 @@
+
+state={
+resources={
+wood=1
+}
+
+	id=381
+	name="STATE_381"
+	manpower = 117293
+	state_category = rural
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_claim_by = USA
+		add_core_of = DAK
+	}
+
+	provinces={
+		1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651 
+	}
+	
+
+	local_supplies=0.0 
+}
+

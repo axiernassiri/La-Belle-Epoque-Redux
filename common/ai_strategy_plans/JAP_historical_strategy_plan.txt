@@ -1,0 +1,65 @@
+JAP_historical = {
+	name = "Japanese historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		or = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = JAP_announce_the_charter_oath
+	}
+
+	ai_national_focuses = {
+		JAP_denounce_shogun
+		JAP_form_satcho_alliance
+		JAP_an_european_style_military
+		JAP_modernize_the_military_system
+		JAP_invite_french_military_advisers
+		JAP_yokosuka_naval_arsenal
+		JAP_consolidate_imperial_loyalties
+		JAP_secure_western_armaments
+		JAP_secure_daimyo_allegiances
+		JAP_british_naval_mission_to_japan
+		JAP_adopt_royal_navy_traditions
+		JAP_seize_imperial_palace
+		JAP_proclaim_emperor_meijis_restoration_to_full_power
+		JAP_announce_the_charter_oath
+		JAP_lay_foundations_for_industrialization
+	}
+
+	ideas = {
+		
+	}
+	
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

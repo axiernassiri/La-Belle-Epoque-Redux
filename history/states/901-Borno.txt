@@ -1,0 +1,24 @@
+
+state={
+resources={
+wood=1
+}
+
+	id=901
+	name="STATE_901"
+
+	history={
+	set_variable = { tribal = 901 }
+		owner = NGR
+		add_core_of = NGR
+		
+
+	}
+
+	provinces={ 13392 13471 13509 13579 13591 13649 13774 13882 14081 14373 14379 14393 14400 14415 14419 14422 14427 14428 }
+	manpower=4994
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
+

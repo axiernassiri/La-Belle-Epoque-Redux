@@ -1,0 +1,28 @@
+
+state={
+resources={
+wood=17
+}
+
+	id=897
+	name="STATE_897"
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MZB
+
+	}
+
+	provinces={
+		12838 12840 12851 12856 12858 12862 12866 12874 12881 12900 12907 12908 12911 12921 12925 12927 12944 
+	}
+	manpower=420720
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
+

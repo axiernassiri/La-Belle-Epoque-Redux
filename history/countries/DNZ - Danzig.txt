@@ -1,0 +1,62 @@
+capital = 85 #Danzig
+oob = "DNZ_1866"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+}
+
+
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+
+}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.4.7"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = { #popularities based on 1933 election statistics.
+	democratic = 22
+	neutrality = 62
+	communism = 6
+	neutrality = 10
+}
+
+
+
+create_country_leader = {
+	name = "Arthur Brill"
+	desc = ""
+	picture = GFX_portrait_Arthur_Brill #TODO
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+
+
+

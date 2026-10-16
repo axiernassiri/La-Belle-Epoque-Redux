@@ -1,0 +1,44 @@
+
+state={
+resources={
+wood=6
+}
+
+	id=367
+	name="STATE_367"
+	manpower = 1376048
+	
+	state_category = city
+
+	history={
+		owner = USA
+		add_claim_by = USA
+		add_core_of = CSA
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 3
+			7480 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			7480 1 
+		}
+		victory_points = {
+			12735 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+			}
+		}
+
+	}
+
+	provinces={
+		492 860 1587 4594 4622 4756 5059 7422 7480 7640 10192 10520 11509 11942 12735 12803 
+	}
+
+	local_supplies=0.0 
+}
+

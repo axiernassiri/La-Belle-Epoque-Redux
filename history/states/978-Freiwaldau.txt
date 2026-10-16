@@ -1,0 +1,22 @@
+state={
+	id=979
+	name="STATE_979"
+	resources={
+		steel=2.000
+	}
+	history={
+		owner = AUS
+		add_core_of = CZE
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		6485 
+	}
+	manpower=42120
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

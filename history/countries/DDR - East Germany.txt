@@ -1,0 +1,159 @@
+capital = 64
+oob = "DDR_1866"
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+
+}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+}
+}
+
+
+
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.75
+
+
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+set_popularities = {
+	democratic = 30
+	neutrality = 10
+	communism = 60
+}
+
+add_ideas = {
+}
+
+
+
+#create_country_leader = {
+#	name = "Dennis Fredauer"
+#	desc = ""
+#	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+#	expire = "1965.1.1"
+#	ideology = conservatism
+#	traits = {
+#	}
+#}
+#
+
+
+#create_country_leader = {
+#	name = "Otto Wels"
+#	desc = "POLITICS_OTTO_WELS_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	ideology = socialism
+#	traits = {
+#		exiled
+#		union_man
+#	}
+#}
+#
+#
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "Deutschland Class"
+		type = ship_hull_cruiser_panzerschiff
+		name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+        	fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Königsberg Class"
+		type = ship_hull_cruiser_2
+		name_group = GER_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+}
+
+
+### Ship Variants ###
+## 1936 Start ##
+# Light Cruisers #
+
+if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+	create_equipment_variant = {
+		name = "Königsberg Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+		obsolete = yes
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Deutschland Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 2
+		}
+	}
+}
+

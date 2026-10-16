@@ -1,0 +1,33 @@
+
+state={
+	id=329
+	name="STATE_329"
+	manpower = 44200
+	resources={
+
+	
+
+wood=3
+}
+	
+	state_category = rural
+
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10627 3
+		}
+		add_core_of = TAN
+	}
+
+	provinces={
+		1676 1877 4680 7703 7731 7804 7819 10597 10627 10646 12610 12625 
+	}
+
+	local_supplies=0.0 
+}
+

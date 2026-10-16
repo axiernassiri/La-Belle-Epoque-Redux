@@ -1,0 +1,26 @@
+state={
+resources={
+wood=6
+}
+
+	id=968
+	name="STATE_968"
+
+	history={
+		owner = PHI
+		add_core_of = PHI
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	provinces={
+		1306 4282 10143 10199 10240 12228 
+	}
+	manpower=408200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
+

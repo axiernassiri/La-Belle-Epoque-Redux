@@ -1,0 +1,22 @@
+
+state={
+	id=374
+	name="STATE_374"
+	manpower = 61834
+
+	history={
+		owner = USA
+		add_claim_by = USA
+		add_core_of = OKL
+		victory_points = {
+			5103 1 
+		}
+	}
+
+	provinces={
+		1618 5103 10798 7904 7762 10702 9822 11743 11802
+	}
+
+	local_supplies=0.0 
+	state_category = wasteland
+}

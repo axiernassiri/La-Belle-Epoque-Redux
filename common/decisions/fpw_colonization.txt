@@ -1,0 +1,370 @@
+fpw_colonization_category = {
+
+	colonization_descision = {
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		allowed = {
+			always = no
+		}
+
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = TRB
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = FROM
+			}
+		}
+
+		icon = GFX_decision_colonize
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = ROOT.colonial_time
+		#days_mission_timeout = 5
+
+		ai_will_do = {
+			factor = 200
+			#modifier = {
+			#	factor = 0
+			#	is_historical_focus_on = yes
+			#}
+		}
+
+		timeout_effect = {
+			FROM = {
+				if = {
+					limit = {
+						NOT = {
+							is_claimed_by = ROOT
+							is_core_of = ROOT
+						}
+					}
+					# Calculate the debuff amount
+					set_temp_variable = { temp_debuff_population = state_population_k }
+					divide_temp_variable = { temp_debuff_population = 25 }
+
+					# For whatever reason dividing trough 100 directly doesnt work but dividing two times by 10 does?
+					divide_temp_variable = { temp_debuff_population = 10 }
+					divide_temp_variable = { temp_debuff_population = 10 }
+	
+					# Shouldnt be too high thats why a max of 5% per tile
+					clamp_temp_variable = {
+						var = temp_debuff_population
+						max = 5
+					}
+	
+					set_variable = { THIS.admin_cost = temp_debuff_population }
+
+					# Sum of all debuffs
+					# ROOT.debuff is a variable we use to get the negative value to use in the modifier
+					subtract_from_variable = { ROOT.debuff = THIS.admin_cost }
+
+					# I feel very stupid doing it this way but this causes the margin of error to go away from substractic, im sure theres a better method but idgaf
+					multiply_temp_variable = { temp_debuff_population = 10 }
+					multiply_temp_variable = { temp_debuff_population = 10 }
+					add_to_variable = { ROOT.debuff_tt = temp_debuff_population }
+	
+					# Could cause problems maybe maybe not idk i wont try out
+					#clamp_variable = {
+					#	var = ROOT.debuff
+					#	max = 100
+					#}
+				}
+
+				transfer_state_to = ROOT
+				clr_state_flag = tribe_state
+
+				add_dynamic_modifier = {
+					modifier = fpw_unwanted_colonization
+				}
+
+				ROOT = {
+					# remove
+					clr_country_flag = is_colonizing
+					add_to_variable = { THIS.colonists = 1 }
+					if = {
+						limit = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = fpw_colonial_debuff
+								}
+							}
+						}
+						add_dynamic_modifier = { 
+							modifier = fpw_colonial_debuff 
+						}
+						force_update_dynamic_modifier = yes
+					}
+				}
+				
+				if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 3 # The Count of states is greater than 3
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 3 # The Count of states is greater than 3
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 2 # The Count of states is 3
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 4 # The Count of states is 3
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 2 # The Count of states is 3
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 4 # The Count of states is 3
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 1 # The Count of states is 2
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 3 # The Count of states is 2
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 1 # The Count of states is 2
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 3 # The Count of states is 2
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_state = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 0 # The Count of states is 1
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 2 # The Count of states is 1
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							# If new state of scape is the same region as the previously colonized
+							check_variable = { THIS.tribal = PREV.tribal }
+							# Is a tribe state owned by Tribal
+							has_state_flag = tribe_state
+							is_owned_by = TRB
+							# Is not already colonized
+							NOT = {
+								has_state_flag = is_colonizing
+							}
+							# Check for most neighbors
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count > 0 # The Count of states is 1
+							}
+							num_owned_neighbour_states = {
+								owner = ROOT # If the current state has neighbors of ROOT
+								count < 2 # The Count of states is 1
+							}
+						}
+						colonize_state = yes
+					}
+				}
+				else = {
+					ROOT = {
+						country_event = fpw_generic.1
+					}
+				}
+			}
+		}
+	}
+
+	integration_descision = {
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		allowed = {
+			always = no
+		}
+
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = is_colonized_by_@ROOT
+			}
+		}
+
+		icon = GFX_decision_integration
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = ROOT.integration_time
+		on_map_mode = map_and_decisions_view
+
+		ai_will_do = {
+			factor = 200
+			#modifier = {
+			#	factor = 0
+			#	is_historical_focus_on = yes
+			#}
+		}
+
+		timeout_effect = {
+			custom_override_tooltip = {
+				tooltip = fpw_colonize_integrate_decision_tt
+				FROM = {
+					# ROOT.debuff is a negative variable which is why we add (-20 + 30 = 10)				
+					add_to_variable = { ROOT.debuff = THIS.total_admin_cost_percentage }
+					subtract_from_variable = { ROOT.debuff_tt = THIS.total_admin_cost }
+		
+					if = {
+						limit = {
+							check_variable = {
+								var = ROOT.debuff
+								value = 0
+								compare = greater_than_or_equals
+							}
+						}
+						clamp_variable = {
+							var = ROOT.debuff
+							max = 0
+						}
+						ROOT = { remove_dynamic_modifier = { modifier = fpw_colonial_debuff } }
+					} else = { ROOT = { force_update_dynamic_modifier = yes } }
+
+					every_state = {
+						limit = {
+							check_variable = { THIS.tribal = PREV.tribal }
+							# If all the states of the regions can be integrated and is controlled by ROOT
+							is_controlled_by = ROOT
+						}
+						set_state_flag = is_integrated_by_@ROOT
+					}
+				}
+			}
+		}
+	}
+}

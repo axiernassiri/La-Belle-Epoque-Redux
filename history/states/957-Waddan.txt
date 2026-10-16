@@ -1,0 +1,23 @@
+
+state={
+	id=957
+	name="STATE_957"
+
+	history={
+		owner = TUR
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1143 1149 1151 1152 1174 1181 2016 2020 2024 2025 2034 2038 2049 2050 2072 2073 11921 
+	}
+	manpower=69420
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

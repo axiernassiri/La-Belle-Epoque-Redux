@@ -1,0 +1,29 @@
+state={
+	id=683
+	name="STATE_683"
+	resources={
+		aluminium=7.000
+	}
+
+	history={
+		owner = REU
+		add_core_of = REU
+		1870.1.1 = {
+			owner = CAN
+			add_core_of = CAN
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		2947 8962 10721 13188 13190 13191 
+	}
+	manpower=23990
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+state={
+resources={
+wood=1
+}
+
+	id=711
+	name="STATE_711"
+	manpower=845	
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			13005 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13005 
+	}
+
+	local_supplies=0.0 
+}
+

@@ -1,0 +1,181 @@
+@FACTION_TEXT_X = 115
+@ATTITUDE_TEXT_X = 220
+@STABILITY_TEXT_X = 335
+@STABILITY_ICON_X = 377
+@STABILITY_TT_X = 335
+@FACTION_ICONS_X = 70
+@FACTION_NAMES_X = 115
+@HEADERS_Y = 15
+guiTypes = {
+
+	containerWindowType = {
+		name = "aus_populations_of_the_empire_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 225 }
+		
+		instantTextBoxType = {
+			name ="attitude_header"
+			position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "GRE_ui_attitude_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 110
+			pdx_tooltip = AUS_ATTITUDE_TOOLTIP
+		}
+		instantTextBoxType = {
+			name ="stability_tooltip_fake"
+			position = { x = @STABILITY_TT_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "AUS_TRUST"
+			format = center
+			maxHeight = 24
+			maxwidth = 110
+			pdx_tooltip = AUS_TRUST_TOOLTIP
+		}
+		
+		containerWindowType = {
+			name = "HUN_populations_window"
+			position = { x = 0 y = 45 }
+			size = { width = 100% height= 225 }
+			iconType = {
+				name ="AUS_hungarian_icon"
+				spriteType = "GFX_decision_faction_hungary"
+				position = { x = @FACTION_ICONS_X y = 0 }
+			}
+			instantTextBoxType = {
+				name ="AUS_hungarians_name_text"
+				position = { x = @FACTION_NAMES_X y = 10 }
+				font = "hoi_18mbs"
+				text = "AUS_hungarians_name_text"
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name ="AUS_hungarian_attitude_status"
+				position = { x = @ATTITUDE_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[AUS_hungarian_attitude]"
+				format = center
+				maxwidth = 110
+				pdx_tooltip = AUS_hungarian_attitude_tt
+			}
+			instantTextBoxType = {
+				name ="AUS_hungarian_trust_status"
+				position = { x = @STABILITY_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[?AUS_hungarian_trust|.0+]"
+				format = center
+				maxwidth = 110
+			}
+		}
+
+		containerWindowType = {
+			name = "CZECH_populations_window"
+			position = { x = 0 y = 90 }
+			size = { width = 100% height= 225 }
+			iconType = {
+				name ="AUS_czech_icon"
+				spriteType = "GFX_decision_faction_czech"
+				position = { x = @FACTION_ICONS_X y = 0 }
+			} 
+			instantTextBoxType = {
+				name ="AUS_czech_name_text"
+				position = { x = @FACTION_NAMES_X y = 10 }
+				font = "hoi_18mbs"
+				text = "AUS_czech_name_text"
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name ="AUS_czech_attitude_status"
+				position = { x = @ATTITUDE_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[AUS_czech_attitude]"
+				format = center
+				maxwidth = 110
+				pdx_tooltip = AUS_czech_attitude_tt
+			}
+			instantTextBoxType = {
+				name ="AUS_czech_trust_status"
+				position = { x = @STABILITY_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[?AUS_czech_trust|.0+]"
+				format = center
+				maxwidth = 110
+			}
+		}
+		
+		containerWindowType = {
+			name = "GALICIAN_populations_window"
+			position = { x = 0 y = 135 }
+			size = { width = 100% height= 225 }
+			iconType = {
+				name ="AUS_galician_icon"
+				spriteType = "GFX_decision_faction_slovak"
+				position = { x = @FACTION_ICONS_X y = 0 }
+			}
+			instantTextBoxType = {
+				name ="AUS_galician_name_text"
+				position = { x = @FACTION_NAMES_X y = 10 }
+				font = "hoi_18mbs"
+				text = "AUS_galician_name_text"
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name ="AUS_galician_attitude_status"
+				position = { x = @ATTITUDE_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[AUS_galician_attitude]"
+				format = center
+				maxwidth = 110 
+				pdx_tooltip = AUS_galician_attitude_tt
+			}
+			instantTextBoxType = {
+				name ="AUS_galician_trust_status"
+				position = { x = @STABILITY_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[?AUS_galician_trust|.0+]"
+				format = center
+				maxwidth = 110
+			}
+		} 
+		
+		containerWindowType = {
+			name = "ILLYRIAN_populations_window"
+			position = { x = 0 y = 180 }
+			size = { width = 100% height= 225 }
+			iconType = {
+				name ="AUS_illyrian_icon"
+				spriteType = "GFX_decision_faction_croat"
+				position = { x = @FACTION_ICONS_X y = 0 }
+			}
+			instantTextBoxType = {
+				name ="AUS_illyrian_name_text"
+				position = { x = @FACTION_NAMES_X y = 10 }
+				font = "hoi_18mbs"
+				text = "AUS_illyrian_name_text"
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name ="AUS_illyrian_attitude_status"
+				position = { x = @ATTITUDE_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[AUS_illyrian_attitude]"
+				format = center
+				maxwidth = 110
+				pdx_tooltip = AUS_illyrian_attitude_tt
+			}
+			instantTextBoxType = {
+				name ="AUS_illyrian_trust_status"
+				position = { x = @STABILITY_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[?AUS_illyrian_trust|.0+]"
+				format = center
+				maxwidth = 110
+			}
+		}
+	}
+}

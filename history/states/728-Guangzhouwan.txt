@@ -1,0 +1,29 @@
+state={
+resources={
+wood=1
+}
+
+	id=728
+	name="STATE_728"
+	manpower = 104000
+	
+	state_category = enclave
+	
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			11981 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		11981 
+	}
+
+	local_supplies=0.0 
+}
+

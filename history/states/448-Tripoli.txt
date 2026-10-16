@@ -1,0 +1,23 @@
+
+state={
+	id=448
+	name="STATE_448"
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		1207 1968 1969 1974 1975 1977 1984 2001 
+	}
+	manpower=243951
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

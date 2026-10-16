@@ -1,0 +1,998 @@
+﻿focus_tree = {
+	id = french_focus_redux
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 1500 y = 1500 }
+
+
+	focus = {
+		id = FRA_our_great_friend_sastres_our_army_supplier
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 2
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_adolphe_niels_reform
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 6
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = FRA_reorganize_the_supply_networks
+		prerequisite = { focus = FRA_our_great_friend_sastres_our_army_supplier }
+		relative_position_id = FRA_our_great_friend_sastres_our_army_supplier
+
+		available = {
+			has_country_flag = spa_struggle_for_power_has_begun
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			custom_effect_tooltip = autocompleted_by_event_or_decision_tt
+		}
+	}
+	focus = {
+		id = FRA_reorganization_of_the_army
+		prerequisite = { focus = FRA_our_great_friend_sastres_our_army_supplier }
+		prerequisite = { focus = FRA_adolphe_niels_reform }
+		relative_position_id = FRA_our_great_friend_sastres_our_army_supplier
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_garde_nationale_mobile
+		prerequisite = { focus = FRA_adolphe_niels_reform }
+		relative_position_id = FRA_adolphe_niels_reform
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_standardization_of_the_chassepot_rifle
+		prerequisite = { focus = FRA_adolphe_niels_reform }
+		relative_position_id = FRA_adolphe_niels_reform
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_leeve_en_masse
+		prerequisite = { focus = FRA_garde_nationale_mobile }
+		prerequisite = { focus = FRA_standardization_of_the_chassepot_rifle }
+		relative_position_id = FRA_standardization_of_the_chassepot_rifle
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_the_potential_of_the_metrailleuse
+		prerequisite = { focus = FRA_standardization_of_the_chassepot_rifle }
+		relative_position_id = FRA_standardization_of_the_chassepot_rifle
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_reorganize_the_garde_nationale_mobile
+		prerequisite = { focus = FRA_leeve_en_masse }
+		relative_position_id = FRA_leeve_en_masse
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_modernization_of_the_artillery
+		prerequisite = { focus = FRA_leeve_en_masse }
+		relative_position_id = FRA_leeve_en_masse
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_improvisation_of_arms_productivity
+		prerequisite = { focus = FRA_reorganize_the_garde_nationale_mobile }
+		prerequisite = { focus = FRA_modernization_of_the_artillery }
+		relative_position_id = FRA_modernization_of_the_artillery
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_preparatives_for_the_inevitable
+		prerequisite = { focus = FRA_reorganize_the_supply_networks }
+		prerequisite = { focus = FRA_reorganization_of_the_army }
+		relative_position_id = FRA_reorganization_of_the_army
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_general_frossard_defensive_plan
+		prerequisite = { focus = FRA_preparatives_for_the_inevitable }
+		relative_position_id = FRA_preparatives_for_the_inevitable
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_preemptive_mobilization_of_the_population
+		prerequisite = { focus = FRA_preparatives_for_the_inevitable }
+		relative_position_id = FRA_preparatives_for_the_inevitable
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_risky_measures
+		prerequisite = { focus = FRA_general_frossard_defensive_plan }
+		prerequisite = { focus = FRA_preemptive_mobilization_of_the_population }
+		relative_position_id = FRA_preemptive_mobilization_of_the_population
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_learn_from_der_bruderkrieg
+		prerequisite = { focus = FRA_reorganization_of_the_army }
+		prerequisite = { focus = FRA_garde_nationale_mobile focus = FRA_standardization_of_the_chassepot_rifle }
+		relative_position_id = FRA_reorganization_of_the_army
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_guerre_de_1870
+
+		available = {
+			has_country_flag = fra_fpw_began
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 4
+		y = 4
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_beginning_of_setbacks
+		prerequisite = { focus = FRA_guerre_de_1870 }
+		relative_position_id = FRA_guerre_de_1870
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_a_berlin
+		prerequisite = { focus = FRA_guerre_de_1870 }
+		relative_position_id = FRA_guerre_de_1870
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_disaster_of_sedan
+		prerequisite = { focus = FRA_beginning_of_setbacks }
+		relative_position_id = FRA_beginning_of_setbacks
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_desperate_mobilization
+		prerequisite = { focus = FRA_beginning_of_setbacks focus = FRA_a_berlin }
+		relative_position_id = FRA_beginning_of_setbacks
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_government_of_national_defence
+		prerequisite = { focus = FRA_desperate_mobilization }
+		prerequisite = { focus = FRA_disaster_of_sedan }
+		relative_position_id = FRA_desperate_mobilization
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_insurrection_of_the_communes
+		prerequisite = { focus = FRA_desperate_mobilization }
+		relative_position_id = FRA_desperate_mobilization
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_treaty_of_frankfurt
+		prerequisite = { focus = FRA_government_of_national_defence }
+		prerequisite = { focus = FRA_insurrection_of_the_communes }
+		relative_position_id = FRA_insurrection_of_the_communes
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_glory_to_the_emperor
+		prerequisite = { focus = FRA_a_berlin }
+		relative_position_id = FRA_a_berlin
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = FRA_liberalization_of_the_anonymous_societies
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 12
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_reforming_the_banking_system
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 15
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_second_empires_public_works
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 18
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+			unlock_decision_tooltip = FRA_utilize_bonds_from_the_paris_works_fund
+			unlock_decision_tooltip = FRA_raise_investments_from_the_pereire_investment_bank
+			unlock_decision_tooltip = FRA_taking_out_loans
+		}
+	}
+	focus = {
+		id = FRA_napoleons_social_policy
+		prerequisite = { focus = FRA_liberalization_of_the_anonymous_societies focus = FRA_reforming_the_banking_system focus = FRA_second_empires_public_works }
+		relative_position_id = FRA_liberalization_of_the_anonymous_societies
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_the_right_for_trade_unionism
+		prerequisite = { focus = FRA_napoleons_social_policy }
+		relative_position_id = FRA_napoleons_social_policy
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_workers_pension_system
+		prerequisite = { focus = FRA_napoleons_social_policy }
+		relative_position_id = FRA_napoleons_social_policy
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_improve_workers_conditions
+		prerequisite = { focus = FRA_the_right_for_trade_unionism }
+		prerequisite = { focus = FRA_workers_pension_system }
+		relative_position_id = FRA_workers_pension_system
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_latin_monetary_union
+		prerequisite = { focus = FRA_liberalization_of_the_anonymous_societies focus = FRA_reforming_the_banking_system focus = FRA_second_empires_public_works }
+		relative_position_id = FRA_liberalization_of_the_anonymous_societies
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = FRA_stimulate_steel_industries
+		prerequisite = { focus = FRA_second_empires_public_works focus = FRA_reforming_the_banking_system focus = FRA_liberalization_of_the_anonymous_societies }
+		relative_position_id = FRA_second_empires_public_works
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_franco_austrian_trade_treaty
+		prerequisite = { focus = FRA_second_empires_public_works focus = FRA_reforming_the_banking_system focus = FRA_liberalization_of_the_anonymous_societies }
+		relative_position_id = FRA_second_empires_public_works
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_renovation_of_paris
+		prerequisite = { focus = FRA_stimulate_steel_industries }
+		prerequisite = { focus = FRA_second_empires_public_works }
+		relative_position_id = FRA_stimulate_steel_industries
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_modernize_the_railways
+		prerequisite = { focus = FRA_stimulate_steel_industries }
+		relative_position_id = FRA_stimulate_steel_industries
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_resources_of_the_empire
+		prerequisite = { focus = FRA_modernize_the_railways }
+		prerequisite = { focus = FRA_renovation_of_paris }
+		relative_position_id = FRA_modernize_the_railways
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_dealing_with_the_strikes
+		prerequisite = { focus = FRA_renovation_of_paris }
+		relative_position_id = FRA_modernize_the_railways
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_duruy_law
+		prerequisite = { focus = FRA_renovation_of_paris }
+		relative_position_id = FRA_modernize_the_railways
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -5
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_second_empires_economic_boom
+		prerequisite = { focus = FRA_improve_workers_conditions }
+		prerequisite = { focus = FRA_resources_of_the_empire }
+		prerequisite = { focus = FRA_dealing_with_the_strikes }
+		relative_position_id = FRA_resources_of_the_empire
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+}

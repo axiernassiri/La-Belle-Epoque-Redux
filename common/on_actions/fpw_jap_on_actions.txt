@@ -1,0 +1,549 @@
+on_actions = {
+	on_daily_JAP = {
+		effect = {
+				if = {
+					limit = {
+					date > 1867.1.29 #Emperor Komei dies
+					date < 1867.2.1
+							}
+				JAP = {			
+				country_event = fpw_japan.15
+				}
+					}
+					
+			}
+
+		}
+	on_daily_JAP = {
+		effect = {
+				if = {
+					limit = {
+					date > 1867.8.4 #Icarus Affair
+					date < 1867.8.6
+							}
+				JAP = {			
+				country_event = fpw_japan.41
+				}
+					}
+					
+			}
+
+		}
+	on_daily_JAP = {
+		effect = {
+				if = {
+					limit = {
+					date > 1871.12.24 # ~ Ryukyu sailors killed
+					date < 1871.12.26
+							}
+				JAP = {			
+				country_event = fpw_japan.49
+				}
+					}
+					
+			}
+
+		}
+	on_daily_JAP = {
+		effect = {
+				if = {
+					limit = {
+					date > 1866.8.28 #Tokugawa Iemochi dies
+							}
+			
+			if = {
+					limit = {
+					date < 1866.9.1
+				JAP = {
+							has_completed_focus = JAP_form_satcho_alliance
+							}
+							}
+				JAP = {			
+				country_event = fpw_japan.13
+				}
+					}
+			if = {
+					limit = {
+					date < 1866.9.1
+				JAP = {
+				NOT = {
+							has_completed_focus = JAP_form_satcho_alliance
+					}		
+							}
+							}
+				JAP = {			
+				country_event = fpw_japan.14
+				}
+					}
+					}
+					
+			}
+
+		}
+	on_daily_JAP = {
+		effect = {
+				if = {
+					limit = {
+					JAP = {
+							has_government = fascism
+							has_completed_focus = JAP_announce_the_charter_oath
+							}
+					date > 1870.2.26 #Flag Event
+					date < 1870.2.28
+							}
+				JAP = {			
+				country_event = fpw_japan.16
+				}
+					}
+					
+			}
+
+		}
+	on_weekly_JAP = {
+		effect = {
+			if = {
+					limit = {
+						country_exists = ENG
+				JAP = {
+						has_country_flag = jap_western_guns
+						has_civil_war = yes 
+						has_government = fascism
+							}
+				date < 1870.1.1
+				ENG = {
+						has_tech = fpw_infantry_equipment_1
+				}
+							}
+				JAP = {			
+					add_equipment_to_stockpile = {
+				type = fpw_infantry_equipment_1
+				amount = 200
+				producer = ENG
+			}
+			}
+					}
+					}	
+		}
+		
+	on_weekly_JAP = {
+		effect = {
+			if = {
+					limit = {
+						country_exists = ENG
+				JAP = {
+						has_country_flag = jap_western_guns
+						has_civil_war = yes 
+						has_government = fascism
+							}
+				date < 1870.1.1
+				
+				ENG = {
+					NOT = {
+						has_tech = fpw_infantry_equipment_1
+					}			
+				}
+							}
+				JAP = {			
+					add_equipment_to_stockpile = {
+				type = fpw_infantry_equipment
+				amount = 200
+				producer = ENG
+			}
+			}
+					}
+					}
+		}
+		
+	on_monthly = {
+		effect = {
+			if = {
+					limit = {
+						original_tag = JAP
+							}
+        	if = {
+					limit = {
+					has_completed_focus = JAP_build_a_merchant_fleet
+							}		
+					add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 1
+				producer = JAP
+			}
+					}
+		}		
+			}
+		}
+		
+	on_daily = {
+				effect = {
+				if = {
+					limit = {
+					AND = {
+					JAP = {
+							has_government = fascism
+							controls_state = 282
+							NOT = {
+							has_country_flag = jap_ezo_established
+							}
+							}
+					OR = {		
+					TRB = {
+					controls_state = 1258
+					}
+					JAP = {
+					controls_state = 1258
+					}
+					any_country = {
+					original_tag = JAP
+                    controls_state = 1258
+					}
+					}
+							}}	
+				every_state = {
+				limit = {
+				is_core_of = EZO
+				}
+				transfer_state_to = EZO
+				remove_core_of = TRB
+				}
+				EZO = {
+				add_ideas = {
+				ezo_exiled_samurai
+				ezo_unstable_government
+				jap_isolationist_sentiment
+				}
+				JAP = {
+				set_country_flag = jap_ezo_established
+				}
+				}
+				
+				
+				
+				}
+			}
+		}
+		
+	on_civil_war_end = {
+				effect = {
+				if = {
+					limit = {
+					JAP = {
+						has_government = fascism
+							}
+					JAP = {
+						has_country_flag = jap_ezo_established
+					}
+					EZO = {
+					controls_state = 1258
+					}
+					EZO = {
+							has_army_manpower = {
+							size < 1
+							}
+					}
+							}
+			EZO = {
+			add_manpower = 2000
+			division_template = {
+				name = "Infantry Brigade"
+				priority = 1
+				regiments = {
+					infantry = { x = 0 y = 0 }
+		
+					infantry = { x = 1 y = 0 }
+				}
+			}
+			#historically only ~ 2500 troops not 8000
+			random_owned_controlled_state = {
+				prioritize = { 1593 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1. Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"2.  Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"3.  Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"4.  Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+			}}
+			JAP = {
+			country_event = fpw_japan.1
+			set_capital = {
+			state = 282
+			}
+			set_province_name = { id = 1182 name = "Tokyo" }
+			set_province_name = { id = 7087 name = "Shizuoka" }
+			set_country_flag = jap_ezo_created
+			clr_country_flag = jap_western_guns
+			#country_event = { id = fpw_japan.48 days = 20 random_days = 20 }
+			}	
+			}
+		}
+	}
+	on_annex = {
+			effect = {
+				if = {
+				limit = {
+				AND = {
+				JAP = {
+				has_country_flag = jap_ezo_created
+				}	
+				1258 = {
+				is_controlled_by = JAP
+				}}}
+				
+				JAP = {			
+				country_event = { id = fpw_japan.17 days = 365 random_days = 1460 }
+				clr_country_flag = jap_ezo_created
+				}
+				}
+			}
+		}
+	on_weekly = {
+		effect = {
+				if = {
+					limit = {
+						original_tag = JAP
+							}
+		random_list = {
+		30 = { 	}
+		40 = { 
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_6
+				has_government = fascism
+				}}
+				if = {
+				limit = {
+					AND = {
+					JAP = {
+						has_country_flag = jap_saigo_rejected
+							}
+					SAT = {
+						is_puppet = no
+						}
+					SAT = {
+						NOT = {
+						has_country_flag = sat_satsuma_rebellion
+						}
+						NOT = {
+							has_war_with = JAP
+						}}
+						}}
+				if = {
+					limit = {
+						SAT = {
+							exists = no
+						}
+					}
+				release = SAT
+				1007 = {
+				add_core_of = JAP
+				}
+				JAP = {
+				retire_character = JAP_saigo_takamoriADV
+				}
+				}
+				SAT = {
+				declare_war_on = {
+				target = JAP
+				type = annex_everything
+				}
+				create_country_leader = {
+				name = "Saigo Takamori"
+				desc = "JAP_komei_desc"
+				picture = "gfx/leaders/JAP/generals/Portrait_JAP_Saigo_Takamori.dds"
+				expire = "1965.1.1"
+				ideology = sat_satsuma
+				traits = { 
+				}
+			}
+			set_country_flag = sat_satsuma_rebellion
+			add_manpower = 2000
+			division_template = {
+				name = "Samurai Elite Guard"
+				priority = 1
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+				}
+			}
+			division_template = {
+				name = "Daimyo Troops"
+				priority = 1
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 1 y = 0 }
+					irregular_infantry = { x = 1 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1007 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Samurai Elite Guard\" division_template = \"Samurai Elite Guard\" start_experience_factor = 1.0" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Samurai Elite Guard\" division_template = \"Samurai Elite Guard\" start_experience_factor = 1.0" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Daimyo Troops\" division_template = \"Daimyo Troops\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Daimyo Troops\" division_template = \"Daimyo Troops\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Daimyo Troops\" division_template = \"Daimyo Troops\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+			}
+				
+				inherit_technology = JAP
+				add_political_power = 300
+				}
+				JAP_Saigo_Takamori = { 
+				set_nationality = SAT
+				}
+				JAP = {	
+				swap_ideas = { 
+				remove_idea = jap_societal_backlash_6
+				add_idea = jap_societal_backlash_4
+				}}
+				}
+			}}}}}}
+			
+			
+	on_weekly = {
+		effect = {
+				if = {
+					limit = {
+						original_tag = JAP
+						has_civil_war = no
+							}
+		random_list = {
+		60 = { 	}
+		30 = { 	
+				
+		if = {
+			limit = {
+				
+				JAP = {
+				has_idea = jap_societal_backlash_6
+				}
+				
+				JAP = {
+				has_idea = jap_upset_farmers
+				}
+				
+				JAP = {
+				NOT = {
+				has_government = communism
+				}
+				has_civil_war = no
+				}
+				
+				JAP = {
+				NOT = {
+				has_country_flag = JAP_farmer_rebellion_appeared
+				}
+				}}
+				JAP = {	
+				swap_ideas = { 
+				remove_idea = jap_societal_backlash_6
+				add_idea = jap_societal_backlash_4
+				}}
+				JAP = {
+				start_civil_war = {
+				ideology = communism
+				size = 0.5
+				army_ratio = 0.3
+				navy_ratio = 0
+				states = { 530 533 534 530 1008 }
+				keep_all_characters = yes
+				keep_political_leader = yes
+				keep_unit_leaders_trigger = {
+				has_trait = jap_emperor_trait
+				}
+			}
+			}
+			
+			every_country_with_original_tag = {
+			original_tag_to_check = JAP 
+			IF = { 
+			limit = { Has_government = communism }
+			create_country_leader = {
+			name = fpw_japan_farmer_leader_name
+			desc = fpw_japan_farmer_leader_desc
+			picture = "GFX_Portrait_JAP_farmers"
+			expire = "1965.1.1"
+			ideology = democratic_socialism
+			traits = { }
+			}
+			set_cosmetic_tag = JAP_farmers
+			}
+		}
+			JAP = {
+			add_timed_idea = {
+			idea = jap_food_shortage
+			days = 720
+			}
+			set_country_flag = JAP_farmer_rebellion_appeared
+			}
+			}	}}}}}
+			
+	
+	on_weekly = {
+		effect = {
+				if = {
+					limit = {
+						original_tag = JAP
+						has_civil_war = no
+							}
+		random_list = {
+		75 = { 	}
+		25 = { 	
+		if = {
+			limit = {
+				JAP = {
+				has_idea = jap_societal_backlash_6
+				has_civil_war = no
+				}}
+				JAP = {	
+				swap_ideas = { 
+				remove_idea = jap_societal_backlash_6
+				add_idea = jap_societal_backlash_4
+				}}
+				JAP = {
+				start_civil_war = {
+				ideology = democratic
+				size = 0.25
+				army_ratio = 0.25
+				navy_ratio = 0
+				keep_all_characters = yes
+				keep_political_leader = yes
+				keep_unit_leaders_trigger = {
+				has_trait = jap_emperor_trait
+				}
+			}
+			}
+			}	
+		}
+		}}}
+		}
+		}

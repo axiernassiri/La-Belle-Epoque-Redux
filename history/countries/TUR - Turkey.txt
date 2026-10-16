@@ -1,0 +1,298 @@
+capital = 797
+oob = "TUR_1866"
+
+add_dynamic_modifier = { 
+	modifier = fpw_victors_of_the_crimean_war 
+}
+
+add_dynamic_modifier = { 
+	modifier = fpw_TUR_sick_man_of_europe 
+}
+
+add_ideas = {
+fpw_abdulaziz
+fpw_TUR_multi_ethnic_state
+fpw_TUR_dated_army
+fpw_TUR_on_going_reform
+fpw_TUR_over_sized_navy
+fpw_TUR_agrarian_economy
+fpw_TUR_inefficient_tax_farming
+}
+
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "TUR_1866_naval_mtg"
+	else = {
+		set_naval_oob = "TUR_1866_naval_legacy"
+	}
+}
+
+
+###################
+#### 3D MODELS ####
+###################
+
+#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
+#TUR_communism
+#TUR_democratic
+#TUR_fascism
+#TUR_neutrality
+
+set_cosmetic_tag = TUR_ottoman_empire
+
+recruit_character = TUR_abdulaziz
+recruit_character = TUR_murad_v
+
+set_research_slots = 3
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+
+}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.2.8"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 6
+	neutrality = 94
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = KUW
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_puppet
+	}
+	else = {
+		puppet = EGY
+		puppet = SER
+		puppet = ROM
+		puppet = KUW
+		puppet = TUN
+	}
+}
+
+create_faction = fpw_ottoman_empire_faction
+add_to_faction = TUR
+add_to_faction = SER
+add_to_faction = ROM
+
+set_convoys = 20
+set_stability = 0.5
+set_war_support = 0.3
+
+if = {
+	limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
+	
+}
+
+if = {
+	limit = {
+		AND = {
+			has_dlc = "La Resistance"
+			has_dlc = "Battle for the Bosporus"
+		}
+	}
+	create_operative_leader = {
+		name = "Ruzi Nazar"
+		GFX = "GFX_portrait_tur_ruzi_nazar"
+		traits = { operative_tough operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { TUR SOV KAZ }
+	}
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Kocatepe Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Tinaztepe Class"
+		type = destroyer_1
+		obsolete = yes
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Dumlupinar Class"
+		type = submarine_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 2
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Birinci Inönü Class"				
+		type = ship_hull_submarine_1
+		name_group = TUR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Dumlupinar Class"				
+		type = ship_hull_submarine_2
+		name_group = TUR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Sakarya Class"								# represents Sakarya and Gur classes
+		type = ship_hull_submarine_1
+		name_group = TUR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Peyk Class"									# large torpedo boats		
+		type = ship_hull_light_1
+		name_group = TUR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kocatepe Class"								# represents Kocatepe and Zafer classes
+		type = ship_hull_light_1
+		name_group = TUR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Mecidiye Class"								# represents Mecidiye and Hamidiye protected cruisers		
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = TUR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+	# Battlecruiser #
+	create_equipment_variant = {
+		name = "Yavuz Class"	
+		type = ship_hull_heavy_1
+		name_group = TUR_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}
+

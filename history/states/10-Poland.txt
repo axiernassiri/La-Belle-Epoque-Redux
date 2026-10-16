@@ -1,0 +1,36 @@
+
+state={
+resources={
+wood=1
+}
+
+	id=10
+	name="STATE_10"
+
+	history={
+		owner = SOV
+		victory_points = {
+			3544 25 
+		}
+		victory_points = {
+			9508 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		467 493 548 3482 3544 6511 9400 9508 11428 11492 
+	}
+	manpower=1606280
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=7.000
+}
+

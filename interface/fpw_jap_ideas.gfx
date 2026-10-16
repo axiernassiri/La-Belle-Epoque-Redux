@@ -1,0 +1,22 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_JAP_medical_infrastructure"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_medical_infrastructure.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_upset_farmers"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_upset_farmers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_agrarian_society"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_agrarian_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_outdated_military"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_outdated_military.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_jap_200_ship_plan"
+		texturefile = "gfx/interface/ideas/JAP/idea_jap_200_ship_plan.dds"
+	}
+}

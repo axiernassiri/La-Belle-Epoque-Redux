@@ -1,0 +1,102 @@
+defined_text = {
+    name = get_austro_prussian_war_desc
+
+    text = {
+        trigger = {
+            tag = PRS
+            NOT = {
+                has_global_flag = austro_prussian_war
+            }
+        }
+        localization_key = fpw_austro_prussian_PRS_desc
+    }
+
+    text = {
+        trigger = {
+            tag = AUS
+            NOT = {
+                has_global_flag = austro_prussian_war
+            }
+        }
+        localization_key = fpw_austro_prussian_AUS_desc
+    }
+
+    text = {
+        trigger = {
+		NOT = {
+			OR = {
+				tag = PRS
+				tag = AUS
+                NOT = {
+                    has_global_flag = austro_prussian_war
+                }
+			}
+		}	  
+        }
+        localization_key = fpw_austro_prussian_desc
+    }
+
+    text = {
+        trigger = {
+            tag = PRS
+            has_global_flag = austro_prussian_war
+            has_global_flag = fpw_koniggratz_victory
+        }
+        localization_key = fpw_austro_prussian_PRS_war_desc
+    }
+
+    text = {
+        trigger = {
+            tag = AUS
+            has_global_flag = austro_prussian_war
+            has_global_flag = fpw_koniggratz_victory
+        }
+        localization_key = fpw_austro_prussian_AUS_war_desc
+    }
+
+    text = {
+        trigger = {
+		NOT = {
+			OR = {
+				tag = PRS
+				tag = AUS
+                has_global_flag = austro_prussian_war
+                has_global_flag = fpw_koniggratz_victory
+			}
+		}	  
+        }
+        localization_key = fpw_austro_prussian_war_desc
+    }
+
+    text = {
+        trigger = {
+            tag = PRS
+            has_global_flag = austro_prussian_war
+            has_global_flag = fpw_austria_victory
+        }
+        localization_key = fpw_alt_austro_prussian_PRS_war_desc
+    }
+
+    text = {
+        trigger = {
+            tag = AUS
+            has_global_flag = austro_prussian_war
+            has_global_flag = fpw_austria_victory
+        }
+        localization_key = fpw_alt_austro_prussian_AUS_war_desc
+    }
+
+    text = {
+        trigger = {
+		NOT = {
+			OR = {
+				tag = PRS
+				tag = AUS
+                has_global_flag = austro_prussian_war
+                has_global_flag = fpw_austria_victory
+			}
+		}	  
+        }
+        localization_key = fpw_alt_austro_prussian_war_desc
+    }
+}

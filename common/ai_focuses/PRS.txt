@@ -1,0 +1,72 @@
+
+ai_historical_focus_list_PRS = {
+	ai_national_focuses = {
+		PRS_lesser_german_solution
+		PRS_seek_german_support
+		PRS_seek_international_support
+		PRS_secure_french_peace
+		PRS_ally_with_italy
+		PRS_propose_federal_reform
+		PRS_continue_bismarcks_plan
+		PRS_annex_hostile_nothern_states
+		PRS_invite_remaing_nothern_states
+		PRS_finalize_the_north_german_confederation
+		PRS_towards_a_unified_germany
+		PRS_towards_a_unified_germany
+		PRS_maerchenprinz
+		PRS_invite_hessen
+		PRS_invite_baden
+		PRS_invite_wurttemberg
+		PRS_invite_bavaria
+		PRS_heil_dir_im_siegerkranz
+	}
+}
+
+ai_focus_defense_PRS = {
+	research = {
+		defensive = 5.0	
+		construction_tech = 2.0
+		artillery = 2.0
+	}
+}
+
+ai_focus_aggressive_PRS = {
+	research = {
+		offensive = 5.0
+	}
+}
+
+ai_focus_war_production_PRS = {
+	research = {
+		industry = 10.0
+		construction_tech = 2.0
+		electronics = 2.0
+	}
+}
+
+ai_focus_military_equipment_PRS = {
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 20.0
+		support_tech = 6.5
+	}
+}
+
+ai_focus_military_advancements_PRS = {
+	research = {
+		artillery = 100.0
+		land_doctrine = 100.0
+		train_tech = 5.0
+	}
+}
+
+
+ai_focus_peaceful_PRS = {
+	research = {
+		industry = 15.0
+		construction_tech = 5.0
+		electronics = 10.0
+		computing_tech = 10.0
+	}
+}

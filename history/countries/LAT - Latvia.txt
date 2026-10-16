@@ -1,0 +1,69 @@
+capital = 808
+oob = "LAT_1866"
+
+
+
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+
+}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+}
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1831.10.3"
+	election_frequency = 10
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	neutrality = 15
+	communism = 15
+	neutrality = 40
+}
+
+# probably needs some adjustment before nazi occupation in 1940
+
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Ronis Class"								
+		type = ship_hull_submarine_1
+		name_group = LAT_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+}

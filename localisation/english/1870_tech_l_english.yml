@@ -1,0 +1,288 @@
+﻿l_english:
+  # SUPPLY WAGON
+  fpw_supply_waggon_equipment:0 "Supply Wagons"
+  fpw_supply_waggon_equipment_short:0 "Supply Wagons"
+  fpw_supply_waggon_equipment_desc:0 "These Horse-drawn Supply Wagons are used for delivering supply from supply hubs to armies."
+  fpw_supply_waggon_equipment_0:0 "Basic Supply Wagon"
+  fpw_supply_waggon_equipment_0_short:0 "Basic Supply Wagon"
+  fpw_supply_waggon_equipment_0_desc:0 ""
+  fpw_supply_waggon_equipment_1:0 "Supply Wagon"
+  fpw_supply_waggon_equipment_1_short:0 "Supply Wagon"
+  fpw_supply_waggon_equipment_1_desc:0 ""
+
+ # CAVALRY
+ fpw_cavalry_equipment:0 "Cavalry Equipment"
+ fpw_cavalry_equipment_short:0 "Cavalry Eq."
+ fpw_cavalry_equipment_desc:0 ""
+ fpw_cavalry_equipment_0:0 "Cavalry Equipment"
+ fpw_cavalry_equipment_0_short:0 "Cavalry Eq."
+ fpw_cavalry_equipment_0_desc:0 ""
+
+  fpw_horse:0 "Basic Horse Equipment Upgrade"
+  fpw_horse_desc:0 ""
+  fpw_light_tack:0 "Light Tack"
+  fpw_light_tack_desc:0 ""
+  fpw_improved_and_expanded_tack:0 "Improved and Expanded Tack"
+  fpw_improved_and_expanded_tack_desc:0 ""
+  fpw_rim_hoofs:0 "Rim Hoofs"
+  fpw_rim_hoofs_desc:0 ""
+  fpw_heeled_hoofs:0 "Straight-Bar Hoofs"
+  fpw_heeled_hoofs_desc:0 ""
+  fpw_rubber_hoofs:0 "Rubber Hoof Shoes"
+  fpw_rubber_hoofs_desc:0 ""
+  fpw_reinforced_saddle:0 "Reinforced Saddle"
+  fpw_reinforced_saddle_desc:0 ""
+  fpw_light_saddle:0 "Light Saddle"
+  fpw_light_saddle_desc:0 ""
+  fpw_light_armor:0 "Light Armor"
+  fpw_light_armor_desc:0 ""
+  fpw_med_armor:0 "Medium Armor"
+  fpw_med_armor_desc:0 ""
+  fpw_heavy_armor:0 "Heavy Armor"
+  fpw_heavy_armor_desc:0 ""
+  fpw_rider:0 "Basic Cavalryman Equipment Upgrade"
+  fpw_rider_desc:0 ""
+  fpw_basic_tactics:0 "Basic Tactics"
+  fpw_basic_tactics_desc:0 ""
+  fpw_advanced_tactics:0 "Advanced Tactics"
+  fpw_advanced_tactics_desc:0 ""
+  fpw_lance:0 "Lance"
+  fpw_lance_desc:0 ""
+  fpw_heavy_sword:0 "Heavy Sword"
+  fpw_heavy_sword_desc:0 ""
+  fpw_saber:0 "Basic Saber"
+  fpw_saber_desc:0 ""
+  fpw_saber_2:0 "Improved Saber"
+  fpw_saber_2_desc:0 ""
+  fpw_pistol:0 "Pistol"
+  fpw_pistol_desc:0 ""
+  fpw_single_revolver:0 "Single Revolver"
+  fpw_single_revolver_desc:0 ""
+  fpw_dual_revolver:0 "Dual Revolver"
+  fpw_dual_revolver_desc:0 ""
+  fpw_flare_gun:0 "Flare Gun"
+  fpw_flare_gun_desc:0 ""
+
+ # ARTILLERY
+ fpw_howitzer_artillery_equipment:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_short:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_desc:0 "Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
+ fpw_howitzer_artillery_equipment_1:0 "Early Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_1_short:0 "Early Howitzer"
+ fpw_howitzer_artillery_equipment_1_desc:0 "Early Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
+ fpw_howitzer_artillery_equipment_2:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_2_short:0 "Basic Howitzer"
+ fpw_howitzer_artillery_equipment_2_desc:0 "Basic Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
+ fpw_howitzer_artillery_equipment_3:0 "Improved Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_3_short:0 "Improved Howitzer"
+ fpw_howitzer_artillery_equipment_3_desc:0 "Improved Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
+ fpw_howitzer_artillery_equipment_4:0 "Advanced Howitzer Artillery"
+ fpw_howitzer_artillery_equipment_4_short:0 "Advanced Howitzer"
+ fpw_howitzer_artillery_equipment_4_desc:0 "Advanced Howitzer Artillery designed for fights against Infantry and other light Divisions."
+
+ fpw_howitzer2:0 "Improved Early Howitzer Artillery"
+ fpw_howitzer2_desc:0 ""
+
+ fpw_howitzer4:0 "Improved Basic Howitzer Artillery"
+ fpw_howitzer4_desc:0 ""
+
+ fpw_howitzer6:0 "Improved Howitzer Artillery I"
+ fpw_howitzer6_desc:0 ""
+
+ fpw_howitzer7:0 "Improved Howitzer Artillery II"
+ fpw_howitzer7_desc:0 ""
+
+ fpw_cannon_artillery_equipment:0 "Cannon Artillery"
+ fpw_cannon_artillery_equipment_short:0 "Cannon Artillery"
+ fpw_cannon_artillery_equipment_desc:0 "Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
+ fpw_cannon_artillery_equipment_1:0 "Early Cannon Artillery"
+ fpw_cannon_artillery_equipment_1_short:0 "Early Cannon"
+ fpw_cannon_artillery_equipment_1_desc:0 "Early Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
+ fpw_cannon_artillery_equipment_2:0 "Cannon Artillery"
+ fpw_cannon_artillery_equipment_2_short:0 "Basic Cannon"
+ fpw_cannon_artillery_equipment_2_desc:0 "Basic Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
+ fpw_cannon_artillery_equipment_3:0 "Improved Cannon Artillery"
+ fpw_cannon_artillery_equipment_3_short:0 "Improved Cannon"
+ fpw_cannon_artillery_equipment_3_desc:0 "Improved Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
+ fpw_cannon_artillery_equipment_4:0 "Advanced Cannon Artillery"
+ fpw_cannon_artillery_equipment_4_short:0 "Advanced Cannon"
+ fpw_cannon_artillery_equipment_4_desc:0 "Advanced Cannon Artillery made for the usage against Infantry and other light Divisions. Slighty worse than Howitzer but cheaper to produce."
+
+ fpw_cannon2:0 "Improved Early Cannon Artillery"
+ fpw_cannon2_desc:0 ""
+
+ fpw_cannon4:0 "Improved Basic Cannon Artillery"
+ fpw_cannon4_desc:0 ""
+
+ fpw_cannon5:0 "Advanced Basic Cannon Artillery"
+ fpw_cannon5_desc:0 ""
+
+ fpw_cannon7:0 "Improved Cannon Artillery I"
+ fpw_cannon7_desc:0 ""
+
+
+ fpw_breech_artillery_equipment:0 "Rifled Breech-Loading Artillery"
+ fpw_breech_artillery_equipment_short:0 "RBL Artillery"
+ fpw_breech_artillery_equipment_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_breech_artillery_equipment_1:0 "Early Rifled Breech-Loading Artillery"
+ fpw_breech_artillery_equipment_1_short:0 "Early RBL Artillery"
+ fpw_breech_artillery_equipment_1_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_breech_artillery_equipment_2:0 "Improved Rifled Breech-Loading Artillery"
+ fpw_breech_artillery_equipment_2_short:0 "Improved RBL Artillery"
+ fpw_breech_artillery_equipment_2_desc:0 "As part of the Siege Artilleries are the RBL Artilleries and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_breech2:0 "Improved Early RBL Artillery I"
+ fpw_breech2_desc:0 ""
+
+ fpw_breech3:0 "Improved Early RBL Artillery II"
+ fpw_breech3_desc:0 ""
+
+ fpw_breech4:0 "Advanced Early RBL Artillery I"
+ fpw_breech4_desc:0 ""
+
+ fpw_breech5:0 "Advanced Early RBL Artillery II"
+ fpw_breech5_desc:0 ""
+
+ fpw_breech7:0 "Advanced RBL Artillery I"
+ fpw_breech7_desc:0 ""
+
+ fpw_breech8:0 "Advanced RBL Artillery II"
+ fpw_breech8_desc:0 ""
+
+
+ fpw_muzzle_artillery_equipment:0 "Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_equipment_short:0 "RML Artillery"
+ fpw_muzzle_artillery_equipment_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_muzzle_artillery_equipment_1:0 "Early Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_equipment_1_short:0 "Early RML Artillery"
+ fpw_muzzle_artillery_equipment_1_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_muzzle_artillery_equipment_2:0 "Advanced Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_equipment_2_short:0 "Advanced RML Artillery"
+ fpw_muzzle_artillery_equipment_2_desc:0 "As part of the Siege Artilleries are the RML Artilleries, an improved version of the RBL Artilleries, powerful and very expensive to build but powerful against Infantry and other light Divisions and especially good for breaking through enemy lines."
+
+ fpw_muzzle2:0 "Improved Early RML Artillery I"
+ fpw_muzzle2_desc:0 ""
+
+ fpw_muzzle3:0 "Improved Early RML Artillery II"
+ fpw_muzzle3_desc:0 ""
+
+ fpw_muzzle5:0 "Advanced Early RML Artillery I"
+ fpw_muzzle5_desc:0 ""
+
+
+ # INFANTRY #
+ fpw_infantry_equipment:0 "Infantry Equipment"
+ fpw_infantry_equipment_short:0 "Infantry Eq."
+ fpw_infantry_equipment_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_equipment_0:0 "Basic Infantry Equipment"
+ fpw_infantry_equipment_0_short:0 "Basic Eq."
+ fpw_infantry_equipment_0_desc:0 "Basic infantryman equipment improved during the Crimean War."
+
+ fpw_infantry_equipment_1:0 "Infantry Equipment I"
+ fpw_infantry_equipment_1_short:0 "Weapons I"
+ fpw_infantry_equipment_1_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_equipment_2:0 "Infantry Equipment II"
+ fpw_infantry_equipment_2_short:0 "Weapons II"
+ fpw_infantry_equipment_2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_equipment_3:0 "Infantry Equipment III"
+ fpw_infantry_equipment_3_short:0 "Weapons III"
+ fpw_infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
+
+ fpw_infantry_weapons1:0 "Baisc Infantry Weapons"
+ fpw_infantry_weapons1_desc:0 ""
+
+ fpw_infantry_weapons2:0 "Advanced Infantry Weapons"
+ fpw_infantry_weapons2_desc:0 ""
+
+ fpw_improved_infantry_weapons:0 "Improved Infantry Weapons"
+ fpw_improved_infantry_weapons_desc:0 ""
+
+ fpw_support_weapons:0 "Early Support Weapons"
+ fpw_support_weapons_desc:0 ""
+
+ fpw_support_weapons2:0 "Basic Support Weapons"
+ fpw_support_weapons2_desc:0 ""
+
+ fpw_support_weapons3:0 "Improved Support Weapons"
+ fpw_support_weapons3_desc:0 ""
+
+ fpw_support_weapons4:0 "Advanced Support Weapons"
+ fpw_support_weapons4_desc:0 ""
+
+
+ # FOLDERS #
+ fpw_infantry_folder:0 "Infantry"
+ fpw_infantry_folder_desc:0 ""
+ fpw_artillery_folder:0 "Artillery"
+ fpw_artillery_folder_desc:0 ""
+ fpw_cavalry_folder:0 "Cavalry"
+ fpw_cavalry_folder_desc:0 ""
+ fpw_support_folder:0 "Support"
+ fpw_support_folder_desc:0 ""
+ fpw_industry_folder:0 "Industry"
+ fpw_industry_folder_desc:0 ""
+ fpw_naval_folder:0 "Navy"
+ fpw_naval_folder_desc:0 ""
+ fpw_colonist_folder:0 "Colonial"
+ fpw_colonist_folder_desc:0 ""
+
+ # TO DISABLE AIRPLANES #
+ early_fighter:0 "Aircraft Technology"
+ 
+ # OTHER #
+ fpw_basic_train: "Basic Train"
+
+
+ #colonial
+ fpw_anti_malaria_one:0 "Antibiotics"
+ fpw_anti_malaria_one_desc:0 "This Technology will decrease the affects that §YMalaria§! has on our colonial settlement"
+ fpw_anti_malaria_two:0 "Protective Colonial Clothing"
+ fpw_anti_malaria_two_desc:0 "This Technology will decrease the affects that §YMalaria§! has on our colonial settlement"
+ fpw_anti_malaria_three:0 "Vaccines"
+ fpw_anti_malaria_three_desc:0 "This Technology will decrease the affects that §YMalaria§! has on our colonial settlement"
+ fpw_anti_malaria_four:0 "Improved Vaccines"
+ fpw_anti_malaria_four_desc:0 "This Technology will decrease the affects that §YMalaria§! has on our colonial settlement"
+
+
+ fpw_improved_settling_one:0 "Encourage Settlement I"
+ fpw_improved_settling_one_desc:0 "This Technology will decrease §YColonial Time§!"
+ fpw_improved_settling_two:0 "Encourage Settlement II"
+ fpw_improved_settling_two_desc:0 "This Technology will decrease §YColonial Time§!"
+ fpw_improved_settling_three:0 "Encourage Settlement III"
+ fpw_improved_settling_three_desc:0 "This Technology will decrease §YColonial Time§!"
+ fpw_improved_settling_four:0 "Encourage Settlement IV"
+ fpw_improved_settling_four_desc:0 "This Technology will decrease §YColonial Time§!"
+
+ fpw_colonial_effort_one:0 "Colonial Effort I"
+ fpw_colonial_effort_one_desc:0 "This Technology will grant a §YColonist§!"
+ fpw_colonial_effort_two:0 "Colonial Effort II"
+ fpw_colonial_effort_two_desc:0 "This Technology will grant a §YColonist§!"
+ fpw_colonial_effort_three:0 "Colonial Effort III"
+ fpw_colonial_effort_three_desc:0 "This Technology will grant a §YColonist§!"
+ fpw_colonial_effort_four:0 "Colonial Effort IV"
+ fpw_colonial_effort_four_desc:0 "This Technology will grant a §YColonist§!"
+
+ #fpw_colonial_anti_malaria_tt:0 "This Technology will decrease the affects that §YMalaria§ has on our colonial settlement"
+ #fpw_colonial_improved_settling_tt:0 "This Technology will decrease §YColonial Time§"
+ #fpw_colonial_effort_tt:0 "This Technology will grant a §YColonist§"
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+scripted_gui = {
+	fpw_french_debts_gui = {
+		context_type = decision_category
+		window_name = "fpw_french_debts_gui_window"
+
+		triggers = {
+			# PARIS COMMUNE
+			fpc_16_visible = {
+				16 = {
+					is_owned_by = FPC
+				}
+			}	
+			# PRUSSIAN
+
+			#fpw_PRS_took_alsace_lorraine
+			#fpw_PRS_took_alsace_lorraine_and_belfort
+			#fpw_PRS_took_nanzig_epinal
+
+			prs_15_visible = {
+				15 = {
+					is_owned_by = PRS
+				}
+			}
+
+			prs_16_visible = {
+				16 = {
+					is_owned_by = PRS
+				}
+			}
+
+			prs_17_visible = {
+				17 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_18_visible = {
+				18 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_24_visible = {
+				24 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_27_visible = {
+				27 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_28_visible = {
+				28 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_29_visible = {
+				29 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_785_visible = {
+				785 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_971_visible = {
+				971 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_972_visible = {
+				972 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_973_visible = {
+				973 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_974_visible = {
+				974 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_975_visible = {
+				975 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_976_visible = {
+				976 = {
+					is_owned_by = PRS
+				}
+			}	
+
+			prs_977_visible = {
+				977 = {
+					is_owned_by = PRS
+				}
+			}
+
+			# France
+			fra_15_visible = {
+				15 = {
+					is_owned_by = FRA
+				}
+			}
+
+			fra_16_visible = {
+				16 = {
+					is_owned_by = FRA
+				}
+			}
+
+			fra_17_visible = {
+				17 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_18_visible = {
+				18 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_24_visible = {
+				24 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_27_visible = {
+				27 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_28_visible = {
+				28 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_29_visible = {
+				29 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_785_visible = {
+				785 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_971_visible = {
+				971 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_972_visible = {
+				972 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_973_visible = {
+				973 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_974_visible = {
+				974 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_975_visible = {
+				975 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_976_visible = {
+				976 = {
+					is_owned_by = FRA
+				}
+			}	
+
+			fra_977_visible = {
+				977 = {
+					is_owned_by = FRA
+				}
+			}
+		}
+	}
+}

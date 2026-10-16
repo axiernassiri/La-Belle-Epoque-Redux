@@ -1,0 +1,3041 @@
+add_namespace = fpw_japan
+
+	country_event = {
+		id = fpw_japan.1
+		title = fpw_japan.1.t
+		desc = fpw_japan.1.d
+		picture = GFX_report_event_sanation_left_victory
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.1.a
+			ai_chance = {
+				base = 10
+			}
+			custom_effect_tooltip = JAP_tt11
+            JAP = {
+			set_country_flag = jap_attack_ezo
+			}
+		}
+        option = {
+			name = fpw_japan.1.b
+			ai_chance = {
+				base = 0
+			}
+			EZO = {add_opinion_modifier = { target = JAP modifier = large_increase }
+			effect_tooltip = { 
+			1258 = {
+			limit = {
+			is_core_of = EZO
+			}
+			remove_claim_by = JAP
+			}
+			}
+			hidden_effect = {
+			every_state = {
+			limit = {
+			is_core_of = EZO
+			}
+			remove_claim_by = JAP
+			remove_core_of = JAP
+			}
+			}
+		}
+		}
+		option = {
+			name = fpw_japan.1.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			EZO = {
+				change_tag_from = ROOT
+			}
+			}
+			custom_effect_tooltip = JAP_tt12
+			JAP = {
+            set_country_flag = jap_attack_ezo
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.2
+		title = fpw_japan.2.t
+		desc = fpw_japan.2.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.2.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			655 = {
+			remove_claim_by = JAP
+			}
+			}
+			1268 = {
+			transfer_state_to = SOV
+			hidden_effect = {
+			remove_claim_by = JAP
+			remove_core_of = TRB
+			add_core_of = SOV
+			}
+			}
+			hidden_effect = {
+			537 = {
+			transfer_state_to = SOV
+			remove_claim_by = JAP
+			remove_core_of = TRB
+			add_core_of = SOV
+		
+			}
+			1269 = {
+			transfer_state_to = SOV
+			remove_core_of = JAP
+			add_core_of = SOV
+			}
+			}
+			555 = {
+			transfer_state_to = JAP
+			hidden_effect = {
+			remove_core_of = SOV
+			add_core_of = JAP
+			}
+			}
+			JAP = {
+			country_event = { id = fpw_japan.6 days = 2 random_days = 3 }
+			}	
+		}
+        option = {
+			name = fpw_japan.2.b
+			ai_chance = {
+				base = 0
+			}
+			country_event = { id = fpw_japan.3 days = 2 random_days = 3 }
+			JAP = {add_opinion_modifier = { target = JAP modifier = small_decrease }
+		}
+		}
+		option = {
+			name = fpw_japan.2.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			add_threat = 2
+			}
+			custom_effect_tooltip = JAP_tt2
+			537 = {
+			transfer_state_to = SOV
+			hidden_effect = {
+			remove_core_of = TRB
+			}
+			}
+			hidden_effect = {
+			1268 = {
+			transfer_state_to = SOV
+			hidden_effect = {
+			remove_core_of = TRB
+			}
+			}
+			1269 = {
+			transfer_state_to = SOV
+			}
+			}
+			JAP = {
+			country_event = { id = fpw_japan.4 days = 2 random_days = 3 }
+			}
+			JAP = {add_opinion_modifier = { target = JAP modifier = large_decrease }
+		}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.3
+		title = fpw_japan.3.t
+		desc = fpw_japan.3.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.3.a
+			ai_chance = {
+				base = 10
+			}
+			
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.4
+		title = fpw_japan.4.t
+		desc = fpw_japan.4.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.4.a
+			ai_chance = {
+				base = 6
+			}
+		add_political_power = -50
+		add_stability = -0.02
+		}
+        option = {
+			name = fpw_japan.4.b
+			ai_chance = {
+				base = 0
+				modifier = { has_stability > 0.5 add = 2 }
+				modifier = { has_war_support > 0.5 add = 2 }
+				modifier = { has_war_support > 0.75 add = 2 }
+				modifier = { has_defensive_war = yes add = -4 }
+			}
+			
+		JAP = {
+            declare_war_on = {
+                target = SOV
+                type = annex_everything
+            }
+        }}	
+	}
+	
+	country_event = {
+		id = fpw_japan.5
+		title = fpw_japan.5.t
+		desc = fpw_japan.5.d
+		picture = GFX_report_event_oahu_withdraws
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.5.a
+			ai_chance = {
+				base = 10
+			}
+				SOV = {
+			country_event = { id = fpw_japan.2 days = 2 random_days = 3 }
+			}
+		}
+        option = {
+			name = fpw_japan.5.b
+			ai_chance = {
+				base = 0
+			}
+			SOV = {
+			country_event = { id = fpw_japan.7 days = 2 random_days = 3 }
+			}
+		
+		}	
+	        option = {
+			name = fpw_japan.5.c
+			ai_chance = {
+				base = 0
+			}
+			
+		
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.6
+		title = fpw_japan.6.t
+		desc = fpw_japan.6.d
+		picture = GFX_report_event_generic_sign_treaty1
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.6.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.7
+		title = fpw_japan.7.t
+		desc = fpw_japan.7.d
+		picture = GFX_report_event_japanese_soldiers_03
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.7.a
+			ai_chance = {
+				base = 10
+			}
+		custom_effect_tooltip = JAP_tt2
+		JAP = {
+			country_event = { id = fpw_japan.9 days = 2 random_days = 3 }
+			}
+		
+		}
+        option = {
+			name = fpw_japan.7.b
+			ai_chance = {
+				base = 2
+			}
+		537 = {
+			transfer_state_to = JAP
+			hidden_effect = {
+			remove_claim_by = SOV
+			remove_claim_by = JAP
+			remove_core_of = TRB
+			add_core_of = JAP
+			}
+			}
+		hidden_effect = {
+				1269 = {
+			remove_claim_by = SOV
+			}
+			1268 = {
+			transfer_state_to = JAP
+			remove_core_of = SOV
+			add_core_of = JAP
+			}
+		}
+		add_political_power = -50
+		add_stability = -0.02	
+			JAP = {
+			country_event = { id = fpw_japan.8 days = 2 random_days = 3 }
+			}}	
+	}
+	
+	country_event = {
+		id = fpw_japan.8
+		title = fpw_japan.8.t
+		desc = fpw_japan.8.d
+		picture = GFX_report_event_generic_sign_treaty1
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.8.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.9
+		title = fpw_japan.9.t
+		desc = fpw_japan.9.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.9.a
+			ai_chance = {
+				base = 10
+			}
+		JAP = {
+        create_wargoal = {
+            target = SOV
+            type = take_state_focus
+            generator = { 537 }
+			}
+		}
+		}
+		option = {
+			name = fpw_japan.9.b
+			ai_chance = {
+				base = 10
+			}
+		add_political_power = -50
+		add_stability = -0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.10
+		title = fpw_japan.10.t
+		desc = fpw_japan.10.d
+		picture = GFX_report_event_japanese_transport_soldiers
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.10.a
+			ai_chance = {
+				base = 10
+			}
+		JAP = {
+		puppet = RYU
+		}
+		hidden_effect = {
+		JAP = {
+			country_event = { id = fpw_japan.12 days = 2 random_days = 3 }
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.10.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.11 days = 2 random_days = 3 }
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.11
+		title = fpw_japan.11.t
+		desc = fpw_japan.11.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.11.a
+			ai_chance = {
+				base = 10
+			}
+		JAP = {
+        create_wargoal = {
+            target = RYU
+            type = puppet_wargoal_focus
+            generator = { 526 }
+			}
+		}
+		}
+		option = {
+			name = fpw_japan.11.b
+			ai_chance = {
+				base = 0
+			}
+		add_political_power = -50
+		add_stability = -0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.12
+		title = fpw_japan.12.t
+		desc = fpw_japan.12.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.12.a
+			ai_chance = {
+				base = 10
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.13
+		title = fpw_japan.13.t
+		desc = fpw_japan.13.d
+		picture = GFX_report_event_japanese_army_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.13.a
+			ai_chance = {
+				base = 10
+			}
+			create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { fpw_trait_shogun_yoshinobu }
+		}
+		}
+		option = {
+			name = fpw_japan.13.b
+			ai_chance = {
+				base = 0
+			}
+		custom_effect_tooltip = JAP_tt4
+		hidden_effect = {
+		unlock_national_focus = JAP_secure_western_armaments
+		unlock_national_focus = JAP_consolidate_imperial_loyalties
+		unlock_national_focus = JAP_secure_daimyo_allegiances
+		unlock_national_focus = JAP_seize_imperial_palace
+		unlock_national_focus = JAP_proclaim_emperor_meijis_restoration_to_full_power
+		set_capital = {state = 528}
+		528 = {
+		set_demilitarized_zone = no
+		}
+		529 = {
+		set_demilitarized_zone = no
+		}
+		530 = {
+		set_demilitarized_zone = no
+		}
+		531 = {
+		set_demilitarized_zone = no
+		}
+		1007 = {
+		set_demilitarized_zone = no
+		}
+		1008 = {
+		set_demilitarized_zone = no
+		}
+		remove_ideas = {
+		fpw_komei
+		fpw_meiji
+			}
+		}
+        start_civil_war = {
+            ruling_party = fascism #Player becomes that
+            ideology = ROOT
+            size = 0.8
+            army_ratio = 0.6
+            navy_ratio = 0.6
+            air_ratio = 0.6
+			keep_unit_leaders_trigger = {
+			has_trait = jap_emperor_trait
+				}
+            states = { 530 531 532 533 534 535 555 282 989 1592 1593 1594 1595 1596 1597 1598 1599 1600 1601 1602 1604 }  # States controlled by the Tokugawa faction
+            keep_political_leader = yes
+            keep_political_party_members = yes
+        }
+		hidden_effect = {
+		retire_character = JAP_Enomoto_Takeaki
+		retire_character = JAP_Katsu_Kaishu
+		if = {
+			limit = {
+				date < 1867.1.30
+					}
+		create_country_leader = {
+		name = "Emperor Kōmei"
+		desc = "JAP_komei_desc"
+		picture = "GFX_Portrait_JAP_komei"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = { 
+		fpw_trait_emperor_komei
+		}
+		}
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_komei
+			}
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_meiji
+			}
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_komei
+			}
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_meiji
+			}
+					}
+	
+		every_country_with_original_tag = {
+		original_tag_to_check = JAP 
+		remove_ideas = {
+		jap_high_imperial_resistance
+		}
+        IF = { 
+		limit = { Has_government = neutrality }
+		create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { fpw_trait_shogun_yoshinobu }
+		}
+		
+		
+		#load_focus_tree = { tree = japanese_focus keep_completed = yes }
+		#uncomplete_national_focus = {
+		#focus = JAP_denounce_shogun
+		#uncomplete_children = yes
+		#refund_political_power = no
+		#}
+		#complete_national_focus = JAP_continue_the_shogunate_tradition
+		
+		
+		recruit_character = JAP_Enomoto_Takeaki
+		recruit_character = JAP_Katsu_Kaishu
+		}
+		}
+		}
+		hidden_effect = {
+		528 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		529 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		530 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		531 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		1007 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		1008 = {
+		remove_dynamic_modifier = { modifier = autonomous_state }
+		}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.14
+		title = fpw_japan.14.t
+		desc = fpw_japan.14.d
+		picture = GFX_report_event_japanese_army_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.14.a
+			ai_chance = {
+				base = 10
+			}
+		create_country_leader = {
+		name = "Tokugawa Yoshinobu"
+		desc = "JAP_tokugawa_yoshinobu_desc"
+		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+		expire = "1965.1.1"
+		ideology = jap_tokugawa
+		traits = { fpw_trait_shogun_yoshinobu }
+		}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.15
+		title = fpw_japan.15.t
+		desc = fpw_japan.15.d
+		picture = GFX_report_event_japanese_army_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.15.a
+			ai_chance = {
+				base = 10
+			}
+
+		if = {
+		limit = {
+		has_government = fascism
+		}
+		create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = {  
+		fpw_trait_emperor_meiji
+		}
+		}
+		}
+		if = {
+		limit = {
+		NOT = {
+		has_government = fascism
+		}
+		}
+		create_country_leader = {
+		name = "Emperor Meiji"
+		desc = "JAP_meiji_desc"
+		picture = "GFX_Portrait_JAP_meiji"
+		expire = "1965.1.1"
+		ideology = jap_imperial
+		traits = {  
+		
+		}
+		}
+		}
+
+		
+		
+		hidden_effect = {
+			clr_country_flag = fpw_secondary_leader_jap_komei
+			}
+		hidden_effect = {
+		if = {
+					limit = {
+				JAP = {
+							NOT = {
+							has_government = fascism
+							}
+							}
+							}
+				JAP = {			
+					set_country_flag = fpw_secondary_leader_jap_meiji
+					swap_ideas = { 
+					remove_idea = fpw_komei
+					add_idea = fpw_meiji
+			}	
+			}
+					}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.16
+		title = fpw_japan.16.t
+		desc = fpw_japan.16.d
+		picture = GFX_fpw_japanese_flag
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.16.a
+			ai_chance = {
+				base = 10
+			}
+		hidden_effect = {
+		set_cosmetic_tag = JAP_empire
+		}
+		add_stability = 0.02
+		}
+		option = {
+			name = fpw_japan.16.b
+			ai_chance = {
+				base = 0
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.17
+		title = fpw_japan.17.t
+		desc = fpw_japan.17.d
+		picture = GFX_report_event_generic_sign_treaty1
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.17.a
+			ai_chance = {
+				base = 10
+			}
+			custom_effect_tooltip = JAP_tt6
+			hidden_effect = {
+			recruit_character = JAP_Enomoto_Takeaki
+			recruit_character = JAP_Katsu_Kaishu
+			}
+		}
+		option = {
+			name = fpw_japan.17.b
+			ai_chance = {
+				base = 0
+			}
+			custom_effect_tooltip = JAP_tt6b
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.18
+		title = fpw_japan.18.t
+		desc = fpw_japan.18.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.18.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = { id = fpw_japan.19 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.18.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.20 days = 2 random_days = 3 }
+			}	
+			add_stability = -0.1
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.19
+		title = fpw_japan.19.t
+		desc = fpw_japan.19.d
+		picture = GFX_report_event_gre_megali_conference_signing
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.19.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			country_event = { id = fpw_japan.21 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.19.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			set_country_flag = JAP_assert_strength_korea
+			}
+			hidden_effect = {
+			JAP = {
+			country_event = { id = fpw_japan.23 days = 2 random_days = 3 }
+			}	
+			KOR = {
+			country_event = { id = fpw_japan.24 days = 2 random_days = 3 }
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.20
+		title = fpw_japan.20.t
+		desc = fpw_japan.20.d
+		picture = GFX_report_event_chinese_japanese_handshake
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.20.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+			JAP = {add_opinion_modifier = { target = KOR modifier = large_increase }
+			}
+			}
+	}
+	
+	country_event = {
+		id = fpw_japan.21
+		title = fpw_japan.21.t
+		desc = fpw_japan.21.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.21.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = { id = fpw_japan.22 days = 2 random_days = 3 }
+			}	
+			
+		}
+		option = {
+			name = fpw_japan.21.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.20 days = 2 random_days = 3 }		
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.22
+		title = fpw_japan.22.t
+		desc = fpw_japan.22.d
+		picture = GFX_report_event_gre_megali_conference_signing
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.22.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			set_country_flag = JAP_assert_strength_korea
+			}
+			hidden_effect = {
+			JAP = {
+			country_event = { id = fpw_japan.23 days = 2 random_days = 3 }
+			}	
+			KOR = {
+			country_event = { id = fpw_japan.24 days = 2 random_days = 3 }
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.22.b
+			ai_chance = {
+				base = 0
+			}
+		set_country_flag = jap_saigo_rejected
+		custom_effect_tooltip = JAP_tt7
+		jap_increase_societal_backlash = yes
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.23
+		title = fpw_japan.23.t
+		desc = fpw_japan.23.d
+		picture = GFX_report_event_dead_soldiers
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.23.a
+			ai_chance = {
+				base = 10
+			}
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = JAP_ganghwa_island_accident	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.24
+		title = fpw_japan.24.t
+		desc = fpw_japan.24.d
+		picture = GFX_report_event_dead_soldiers
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.24.a
+			ai_chance = {
+				base = 10
+			}
+			
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.25
+		title = fpw_japan.25.t
+		desc = fpw_japan.25.d
+		picture = GFX_report_event_gre_megali_conference_signing
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.25.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = { id = fpw_japan.26 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.25.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.27 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.25.c
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.28 days = 2 random_days = 3 }
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.26
+		title = fpw_japan.26.t
+		desc = fpw_japan.26.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.26.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			country_event = { id = fpw_japan.30 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.26.b
+			ai_chance = {
+				base = 0
+			}
+			KOR = {
+			country_event = { id = fpw_japan.31 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.26.c
+			ai_chance = {
+				base = 0
+			}
+			KOR = {add_opinion_modifier = { target = JAP modifier = large_increase }
+		}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.27
+		title = fpw_japan.27.t
+		desc = fpw_japan.27.d
+		picture = GFX_report_event_tur_inonu_diplomacy
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.27.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			country_event = { id = fpw_japan.32 days = 2 random_days = 3 }
+			}	
+		}
+		option = {
+			name = fpw_japan.27.b
+			ai_chance = {
+				base = 0
+			}
+			KOR = {
+			country_event = { id = fpw_japan.33 days = 2 random_days = 3 }
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.28
+		title = fpw_japan.28.t
+		desc = fpw_japan.28.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.28.a
+			ai_chance = {
+				base = 10
+			}
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = KOR
+			}
+			CHI = {
+			country_event = fpw_japan.29
+			}
+		}
+		option = {
+			name = fpw_japan.28.b
+			ai_chance = {
+				base = 0
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_6
+				}
+
+		add_stability = -0.1
+
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_3
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_1
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.29
+		title = fpw_japan.29.t
+		desc = fpw_japan.29.d
+		picture = GFX_report_event_japanese_parade
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.29.a
+			ai_chance = {
+				base = 1	
+				modifier = { has_stability > 0.5 add = 3 }
+				modifier = { has_war_support > 0.5 add = 3 }
+				modifier = { has_war_support > 0.75 add = 5 }
+				modifier = { has_defensive_war = yes add = -3 }
+			}
+			add_war_support = 0.02
+		}
+		option = {
+			name = fpw_japan.29.b
+			ai_chance = {
+				base = 6
+			}
+			end_puppet = KOR
+			remove_from_faction = KOR
+			KOR = {add_opinion_modifier = { target = CHI modifier = large_decrease }}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.30
+		title = fpw_japan.30.t
+		desc = fpw_japan.30.d
+		picture = GFX_report_event_SOV_demands
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.30.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_minor_concessions_to_japan
+			}
+			}
+			JAP = {
+			country_event = { id = fpw_japan.34 days = 2 random_days = 3 }
+			}	
+			JAP = {
+			add_ideas = {
+			jap_favourable_contracts_with_korea
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.30.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.35 days = 2 random_days = 3 }
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.31
+		title = fpw_japan.31.t
+		desc = fpw_japan.31.d
+		picture = GFX_report_event_SOV_demands
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.31.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_major_concessions_to_japan
+			}
+			}
+			JAP = {
+			country_event = { id = fpw_japan.34 days = 2 random_days = 3 }
+			}	
+			JAP = {
+			add_ideas = {
+			jap_advantageous_contracts_with_korea
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.31.b
+			ai_chance = {
+				base = 2
+			}
+			JAP = {
+			country_event = { id = fpw_japan.35 days = 2 random_days = 3 }
+			}	
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.32
+		title = fpw_japan.32.t
+		desc = fpw_japan.32.d
+		picture = GFX_report_event_tur_inonu_diplomacy
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.32.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = { id = fpw_japan.36 days = 2 random_days = 3 }
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_minor_concessions_to_japan
+			}
+			}
+			JAP = {
+			add_ideas = {
+			jap_favourable_contracts_with_korea
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.32.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.37 days = 2 random_days = 3 }
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_major_concessions_to_japan
+			}
+			}
+			JAP = {
+			add_ideas = {
+			jap_advantageous_contracts_with_korea
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.32.c
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.39 days = 2 random_days = 3 }
+			}
+		}
+	}
+			
+	country_event = {
+		id = fpw_japan.33
+		title = fpw_japan.33.t
+		desc = fpw_japan.33.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.33.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+			country_event = { id = fpw_japan.26 days = 2 random_days = 3 }
+			}
+		}
+		option = {
+			name = fpw_japan.33.b
+			ai_chance = {
+				base = 2
+			}
+			JAP = {
+			country_event = { id = fpw_japan.28 days = 2 random_days = 3 }
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.34
+		title = fpw_japan.34.t
+		desc = fpw_japan.34.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.34.a
+			ai_chance = {
+				base = 10
+			}
+			if = {
+			limit = {
+			KOR = {
+			has_idea = jap_kor_minor_concessions_to_japan
+			}
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_minor_concessions_to_japan
+			}
+			}
+			JAP = {
+			add_ideas = {
+			jap_favourable_contracts_with_korea
+			}
+			}
+			}
+			
+			if = {
+			limit = {
+			KOR = {
+			has_idea = jap_kor_major_concessions_to_japan
+			}
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_major_concessions_to_japan
+			}
+			}
+			JAP = {
+			add_ideas = {
+			jap_advantageous_contracts_with_korea
+			}
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.35
+		title = fpw_japan.35.t
+		desc = fpw_japan.35.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.35.a
+			ai_chance = {
+				base = 10
+			}
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = KOR
+			}
+			CHI = {
+			country_event = fpw_japan.29
+			}
+		}
+		option = {
+			name = fpw_japan.35.b
+			ai_chance = {
+				base = 0
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_6
+				}
+
+		add_stability = -0.1
+
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_3
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_1
+			}
+			}
+		}
+	}
+	
+		country_event = {
+		id = fpw_japan.36
+		title = fpw_japan.36.t
+		desc = fpw_japan.36.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.36.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_minor_concessions_to_japan
+			}
+			}
+			JAP = {
+			add_ideas = {
+			jap_favourable_contracts_with_korea
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.36.b
+			ai_chance = {
+				base = 0
+			}
+			KOR = {
+			country_event = { id = fpw_japan.38 days = 2 random_days = 3 }
+			}
+			KOR = {
+			remove_ideas = {
+			jap_kor_minor_concessions_to_japan
+			}
+			}
+			JAP = {
+			remove_ideas = {
+			jap_favourable_contracts_with_korea
+			}
+			}
+		}
+	}
+	
+		country_event = {
+		id = fpw_japan.37
+		title = fpw_japan.37.t
+		desc = fpw_japan.37.d
+		picture = GFX_report_event_japanese_reply
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.37.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			add_ideas = {
+			jap_kor_major_concessions_to_japan
+			}
+			}
+			JAP = {
+			add_ideas = {
+			jap_advantageous_contracts_with_korea
+			}
+			}
+		}
+	}
+	
+		country_event = {
+		id = fpw_japan.38
+		title = fpw_japan.38.t
+		desc = fpw_japan.38.d
+		picture = GFX_report_event_SOV_demands
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.38.a
+			ai_chance = {
+				base = 10
+			}
+			KOR = {
+			swap_ideas = { 
+			remove_idea = jap_kor_minor_concessions_to_japan
+			add_idea = jap_kor_major_concessions_to_japan
+			}
+			}
+			JAP = {
+			swap_ideas = { 
+			remove_idea = jap_favourable_contracts_with_korea
+			add_idea = jap_advantageous_contracts_with_korea
+			}
+			}
+			
+			JAP = {
+			country_event = { id = fpw_japan.37 days = 2 random_days = 3 }
+			}
+		}
+		option = {
+			name = fpw_japan.38.b
+			ai_chance = {
+				base = 0
+			}
+			JAP = {
+			country_event = { id = fpw_japan.35 days = 2 random_days = 3 }
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.39
+		title = fpw_japan.39.t
+		desc = fpw_japan.39.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.39.a
+			ai_chance = {
+				base = 10
+			}
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = KOR
+			}
+			CHI = {
+			country_event = fpw_japan.29
+			}
+		}
+		option = {
+			name = fpw_japan.39.b
+			ai_chance = {
+				base = 0
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_6
+				}
+
+		add_stability = -0.1
+
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_5
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_5
+			add_idea = jap_societal_backlash_6
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_4
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_4
+			add_idea = jap_societal_backlash_5
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_3
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_3
+			add_idea = jap_societal_backlash_4
+			}
+			}
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_2
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_2
+			add_idea = jap_societal_backlash_3
+			}
+			}	
+		if = {
+			limit = {
+				has_idea = jap_societal_backlash_1
+				}
+			swap_ideas = { 
+			remove_idea = jap_societal_backlash_1
+			add_idea = jap_societal_backlash_2
+			}
+			}
+		if = {
+			limit = {
+				NOT = {
+				has_idea = jap_societal_backlash_1
+				has_idea = jap_societal_backlash_2
+				has_idea = jap_societal_backlash_3
+				has_idea = jap_societal_backlash_4
+				has_idea = jap_societal_backlash_5
+				has_idea = jap_societal_backlash_6
+				}
+				}
+			add_ideas = {
+			jap_societal_backlash_1
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.40
+		title = fpw_japan.40.t
+		desc = fpw_japan.40.d
+		picture = GFX_report_event_ast_troops_landing
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.40.a
+			ai_chance = {
+				base = 10
+			}
+		add_timed_idea = {
+		idea = jap_tax_reform_period
+		days = 365
+		}
+		custom_effect_tooltip = JAP_tt0
+		custom_effect_tooltip = JAP_tt9
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = 0.1
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.40.b
+			ai_chance = {
+				base = 0
+			}
+			custom_effect_tooltip = JAP_tt10
+			custom_effect_tooltip = JAP_tt0
+			add_ideas = {
+			jap_upset_farmers
+			}
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = 0.15
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.41
+		title = fpw_japan.41.t
+		desc = fpw_japan.41.d
+		picture = GFX_report_event_bul_boris_with_muraviev
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.41.a
+			ai_chance = {
+				base = 10
+			}
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			ENG = {add_opinion_modifier = { target = JAP modifier = medium_increase }
+			}
+		}
+		option = {
+			name = fpw_japan.41.b
+			ai_chance = {
+				base = 0
+			}
+			add_stability = -0.1
+			custom_effect_tooltip = JAP_tt0
+			jap_increase_societal_backlash_twice = yes
+			ENG = {add_opinion_modifier = { target = JAP modifier = large_increase } 
+			}
+			custom_effect_tooltip = JAP_tt0
+			random_owned_controlled_state = {
+				prioritize = { 528 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 528 }
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+		option = {
+			name = fpw_japan.41.c
+			ai_chance = {
+				base = 0
+			}
+			jap_decrease_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_timed_idea = {
+			idea = jap_upset_british_government
+			days = 3650
+			}
+			custom_effect_tooltip = JAP_tt0
+			ENG = {
+			country_event = { id = fpw_japan.42 days = 2 random_days = 3 }
+			add_opinion_modifier = { target = JAP modifier = large_decrease }
+		}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.42
+		title = fpw_japan.42.t
+		desc = fpw_japan.42.d
+		picture = GFX_report_event_bul_boris_with_muraviev
+		
+		is_triggered_only = yes
+
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.42.a
+			ai_chance = {
+				base = 10
+			}
+			send_embargo = JAP
+			custom_effect_tooltip = JAP_tt0
+			JAP = {
+			add_opinion_modifier = { target = ENG modifier = large_decrease }
+			}
+		}
+		option = {
+			name = fpw_japan.42.b
+			ai_chance = {
+				base = 0
+			}
+			add_stability = -0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.43
+		title = fpw_japan.43.t
+		desc = fpw_japan.43.d
+		picture = GFX_report_event_generic_construction_site
+		
+		is_triggered_only = yes
+
+        fire_only_once=yes
+
+        major = no
+		
+		option = {
+			name = fpw_japan.43.a
+			ai_chance = {
+				base = 10
+			}
+	
+		}
+		option = {
+			name = fpw_japan.43.b
+			ai_chance = {
+				base = 0
+			}
+			add_timed_idea = {
+			idea = jap_200_ship_plan2
+			days = 365
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.44
+		title = fpw_japan.44.t
+		desc = fpw_japan.44.d
+		picture = GFX_report_event_generic_construction_site
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.44.a
+			ai_chance = {
+				base = 10
+			}
+	
+		}
+		option = {
+			name = fpw_japan.44.b
+			ai_chance = {
+				base = 0
+			}
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_timed_idea = {
+			idea = jap_200_ship_plan2
+			days = 365
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.45
+		title = fpw_japan.45.t
+		desc = fpw_japan.45.d
+		picture = GFX_report_event_NOR_storting
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.45.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_bimetallic_standard
+			days = 1095
+			}
+			}
+			
+			
+			
+			custom_effect_tooltip = JAP_tt14
+
+
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = FRA
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			original_tag = USA
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.45.b
+			ai_chance = {
+				base = 0
+			}
+			jap_decrease_societal_backlash = yes
+			
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.45.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_gold_standard
+			days = 1825
+			}
+			}
+			
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			custom_effect_tooltip = JAP_tt13
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+		 }
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			original_tag = FRA
+			original_tag = USA
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		}
+		}
+	
+	country_event = {
+		id = fpw_japan.46
+		title = fpw_japan.46.t
+		desc = fpw_japan.46.d
+		picture = GFX_report_event_NOR_storting
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.46.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_bimetallic_standard
+			days = 1095
+			}
+			}
+			custom_effect_tooltip = JAP_tt14
+
+
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = FRA
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			original_tag = USA
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = BEL
+			original_tag = SWI
+			original_tag = ITA
+			original_tag = GRE
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.46.b
+			ai_chance = {
+				base = 0
+			}
+			jap_decrease_societal_backlash = yes
+			
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+			}
+		 	every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }	
+			}
+			}
+			
+			if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = CHI
+			original_tag = RAJ
+			original_tag = MEX
+			original_tag = SPR
+			original_tag = HOL
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+		}
+			
+			}
+		}
+		option = {
+			name = fpw_japan.46.c
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			add_timed_idea = {
+			idea = jap_gold_standard
+			days = 1825
+			}
+			}
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			custom_effect_tooltip = JAP_tt13
+			
+			
+			
+			
+			
+			
+			custom_effect_tooltip = JAP_tt0
+			if = {
+			limit = {
+			date < 1871.1.2
+		 }
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		if = {
+			limit = {
+			date > 1871.1.1
+			}
+			every_country = {
+			limit = {
+			OR = {
+			original_tag = ENG
+			original_tag = POR
+			original_tag = FRA
+			original_tag = USA
+			original_tag = PRS
+			}
+			}
+			add_opinion_modifier = { target = JAP modifier = small_increase }
+			}
+		}
+		}
+		}
+	
+	country_event = {
+		id = fpw_japan.47
+		title = fpw_japan.47.t
+		desc = fpw_japan.47.d
+		picture = GFX_fpw_japan_monetary_system
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.47.a
+			ai_chance = {
+				base = 10
+			}
+			hidden_effect = {
+			uncomplete_national_focus = {
+			focus = JAP_keep_the_koban
+			uncomplete_children = no
+			refund_political_power = no
+			}}
+			complete_national_focus = JAP_distribute_the_yen
+			custom_effect_tooltip = JAP_tt0
+			jap_increase_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_timed_idea = {
+			idea = jap_currency_transition_period
+			days = 720
+			}
+			custom_effect_tooltip = JAP_tt0
+			custom_effect_tooltip = JAP_tt8
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = 0.1
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.47.b
+			ai_chance = {
+				base = 0
+			}
+			hidden_effect = {
+			uncomplete_national_focus = {
+			focus = JAP_distribute_the_yen
+			uncomplete_children = no
+			refund_political_power = no
+			}}
+			complete_national_focus = JAP_keep_the_koban
+			custom_effect_tooltip = JAP_tt0
+			jap_decrease_societal_backlash = yes
+			custom_effect_tooltip = JAP_tt0
+			add_stability = 0.1
+			add_political_power = 125
+			if = {
+			limit = {
+			has_power_balance = {
+			id = fpw_JAP_bop
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			add_power_balance_value = {
+			id = fpw_JAP_bop
+			value = -0.05
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.48
+		title = fpw_japan.48.t
+		desc = fpw_japan.48.d
+		picture = GFX_report_event_baltic_entente_one
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.48.a
+			ai_chance = {
+				base = 10
+			}
+			set_power_balance = {
+			id = fpw_JAP_bop
+			left_side = fpw_JAP_meiji_bop
+			right_side = fpw_JAP_council_of_advisors_bop
+			set_value = -0.1
+			}
+			hidden_effect = {
+			activate_advisor = JAP_okubo_toshimichiADV
+			activate_advisor = JAP_kido_takayoshiADV
+			activate_advisor = JAP_saigo_takamoriADV
+		}}
+	}
+	
+	country_event = {
+		id = fpw_japan.49
+		title = fpw_japan.49.t
+		desc = fpw_japan.49.d
+		picture = GFX_report_event_bul_troops_partisans_boat
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.49.a
+			ai_chance = {
+				base = 10
+			}
+			add_war_support = 0.02
+			set_country_flag = JAP_ryukyuan_sailors_killed
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.50
+		title = fpw_japan.50.t
+		desc = fpw_japan.50.d
+		picture = GFX_report_event_bul_troops_partisans_boat
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.50.a
+			ai_chance = {
+				base = 10
+			}
+			JAP = {
+            country_event = { id = fpw_japan.51 days = 2 random_days = 3 }
+            }
+            custom_effect_tooltip = JAP_tt0b
+            effect_tooltip = {
+            add_ideas = {
+            chi_japanese_payment
+            }
+            JAP = {
+            add_offsite_building = { type = industrial_complex level = 1 }
+            }
+            }
+		}
+		option = {
+			name = fpw_japan.50.b
+			ai_chance = {
+				base = 0
+			}
+			custom_effect_tooltip = JAP_tt2BB
+			JAP = {
+            country_event = { id = fpw_japan.59 days = 2 random_days = 3 }
+            }
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.51
+		title = fpw_japan.51.t
+		desc = fpw_japan.51.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.51.a
+			ai_chance = {
+				base = 10
+			}
+			CHI = {
+			add_ideas = {
+			chi_japanese_payment
+			}
+			}
+			custom_effect_tooltip = JAP_tt0
+			JAP = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			}
+			hidden_effect = {
+			1116 = { transfer_state_to = CHI }
+			CHI = {
+            country_event = { id = fpw_japan.53 days = 2 random_days = 3 }
+			}
+			delete_unit_template_and_units = {
+			division_template = "Colonial Assault Division"
+			disband = yes
+			}
+			}
+		}
+		option = {
+			name = fpw_japan.51.b
+			ai_chance = {
+				base = 0
+			}
+			custom_effect_tooltip = JAP_tt2B
+			custom_effect_tooltip = JAP_tt0
+			hidden_effect = {
+			add_threat = 2
+			}
+			CHI = {
+            country_event = { id = fpw_japan.52 days = 2 random_days = 3 }
+            }
+			custom_effect_tooltip = JAP_tt0
+			CHI = {add_opinion_modifier = { target = JAP modifier = large_decrease } }
+		}
+		option = {
+			name = fpw_japan.51.c
+			ai_chance = {
+				base = 0
+			}
+			custom_effect_tooltip = JAP_tt2C
+			custom_effect_tooltip = JAP_tt0
+			hidden_effect = {
+			add_threat = 3
+			}
+			CHI = {
+            country_event = { id = fpw_japan.54 days = 2 random_days = 3 }
+            }
+			custom_effect_tooltip = JAP_tt0
+			CHI = {add_opinion_modifier = { target = JAP modifier = large_decrease } }
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.52
+		title = fpw_japan.52.t
+		desc = fpw_japan.52.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.52.a
+			ai_chance = {
+				base = 1	
+				modifier = { has_stability > 0.5 add = 2 }
+				modifier = { has_war_support > 0.5 add = 2 }
+				modifier = { has_war_support > 0.75 add = 3 }
+				modifier = { has_defensive_war = yes add = -3 }
+			}
+			effect_tooltip = {
+			JAP = {
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+			}
+			}
+			hidden_effect = {
+			JAP = {
+            country_event = { id = fpw_japan.55 days = 2 random_days = 3 }
+            }
+			}
+		}
+		option = {
+			name = fpw_japan.52.b
+			ai_chance = {
+				base = 5
+			}
+			JAP = {
+            country_event = { id = fpw_japan.56 days = 2 random_days = 3 }
+            }
+			add_political_power = -50
+			add_stability = -0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.53
+		title = fpw_japan.53.t
+		desc = fpw_japan.53.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.53.a
+			ai_chance = {
+				base = 10
+			}
+			
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.54
+		title = fpw_japan.54.t
+		desc = fpw_japan.54.d
+		picture = GFX_report_event_hitler_china
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.54.a
+			ai_chance = {
+				base = 5		
+				modifier = { has_stability > 0.5 add = 3 }
+				modifier = { has_war_support > 0.5 add = 5 }
+				modifier = { has_war_support > 0.75 add = 8 }
+				modifier = { has_defensive_war = yes add = -5 }
+			}
+			effect_tooltip = {
+			JAP = {
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+			}
+			}
+			hidden_effect = {
+			JAP = {
+            country_event = { id = fpw_japan.57 days = 2 random_days = 3 }
+            }
+			}
+		}
+		option = {
+			name = fpw_japan.54.b
+			ai_chance = {
+				base = 5
+			}
+			effect_tooltip = {
+			524 = { transfer_state_to = JAP }
+			}
+			add_political_power = -50
+			add_stability = -0.02
+			hidden_effect = {
+			JAP = {
+            country_event = { id = fpw_japan.58 days = 2 random_days = 3 }
+            }
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.55
+		title = fpw_japan.55.t
+		desc = fpw_japan.55.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.55.a
+			ai_chance = {
+				base = 10
+			}
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.56
+		title = fpw_japan.56.t
+		desc = fpw_japan.56.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.56.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.57
+		title = fpw_japan.57.t
+		desc = fpw_japan.57.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.57.a
+			ai_chance = {
+				base = 10
+			}
+			declare_war_on = {
+			target = CHI
+			type = annex_everything
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.58
+		title = fpw_japan.58.t
+		desc = fpw_japan.58.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.58.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.05
+			524 = { transfer_state_to = JAP }
+		}
+		
+		option = {
+			name = fpw_japan.58.b
+			ai_chance = {
+				base = 0
+			}
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CHI
+			expire = 90
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.59
+		title = fpw_japan.59.t
+		desc = fpw_japan.59.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.59.a
+			ai_chance = {
+				base = 10
+			}
+			effect_tooltip = {
+			CHI = {
+			create_wargoal = {
+            target = JAP
+            type = take_state_focus
+            generator = { 1176 }
+			}
+			}
+			}
+			hidden_effect = {
+			CHI = {
+            country_event = { id = fpw_japan.60 days = 2 random_days = 3 }
+			}
+			}
+		}
+		
+		option = {
+			name = fpw_japan.59.b
+			ai_chance = {
+				base = 0
+			}
+			1116 = { transfer_state_to = CHI }
+			hidden_effect = {
+			CHI = {
+            country_event = { id = fpw_japan.61 days = 2 random_days = 3 }
+			}
+			delete_unit_template_and_units = {
+			division_template = "Colonial Assault Division"
+			disband = yes
+			}
+			}
+		}
+	}
+	
+	country_event = {
+		id = fpw_japan.60
+		title = fpw_japan.60.t
+		desc = fpw_japan.60.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.60.a
+			ai_chance = {
+				base = 10
+			}
+			create_wargoal = {
+            target = JAP
+            type = take_state_focus
+            generator = { 1176 }
+			}
+		}
+
+	}
+	
+	country_event = {
+		id = fpw_japan.61
+		title = fpw_japan.61.t
+		desc = fpw_japan.61.d
+		picture = GFX_report_event_japan_army_mountainside
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.61.a
+			ai_chance = {
+				base = 10
+			}
+			add_stability = 0.02
+		}
+
+	}
+	
+	country_event = {
+		id = fpw_japan.62
+		title = fpw_japan.62.t
+		desc = fpw_japan.62.d
+		picture = GFX_report_event_japanese_officers
+		
+		is_triggered_only = yes
+		
+        fire_only_once=no
+
+        major = no
+		
+		option = {
+			name = fpw_japan.62.a
+			ai_chance = {
+				base = 10
+			}
+			set_country_flag = fpw_jap_officers_return
+		}
+
+	}

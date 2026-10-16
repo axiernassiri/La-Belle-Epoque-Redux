@@ -1,0 +1,36 @@
+
+state={
+	id=92
+	name="STATE_92"
+
+	history={
+		victory_points = {
+			11399 1 
+		}
+		victory_points = {
+			402 1 
+		}
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = POL
+		1939.1.1 = {
+			buildings = {
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		402 524 3521 3559 6484 6580 9452 9521 9544 11399 11466 12562 
+	}
+	manpower=1281592
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=9.000
+}

@@ -1,0 +1,27 @@
+state={
+resources={
+wood=4
+}
+
+	id=960
+	name="STATE_960"
+
+	history={
+		owner = ENG
+		add_core_of = GHA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		10978 13237 13247 11017 
+	}
+	manpower=11960
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
+

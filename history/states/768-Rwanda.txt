@@ -1,0 +1,32 @@
+
+state={
+	id=768
+	name="STATE_768"
+	resources={
+
+		tungsten=3.000
+	
+
+wood=1
+}
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = GAB
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		14487 
+	}
+	manpower=892613
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}
+

@@ -1,0 +1,24 @@
+
+state={
+resources={
+wood=1
+}
+
+	id=776
+	name="STATE_776" # Benin/Dahomey
+	manpower=111495
+	
+	state_category = pastoral
+	history={
+		set_variable = { tribal = 776 }
+		owner = DAH
+		add_core_of = DAH
+		
+		
+	}
+
+	provinces={ 11910 11194 11974 11108 13244 11145 }
+
+	local_supplies=1.0 
+}
+

@@ -1,0 +1,23 @@
+capital = 629
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Kamehameha V"
+	picture = GFX_portrait_HAW_kamehameha_v
+	ideology = monarchism
+	traits = {
+		#
+	}
+}

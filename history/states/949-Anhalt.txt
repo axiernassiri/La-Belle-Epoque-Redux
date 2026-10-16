@@ -1,0 +1,34 @@
+state={
+resources={
+wood=1
+}
+
+	id=949
+	name="STATE_949"
+
+	history = {
+		owner = ANH
+     		buildings = {
+      		      infrastructure = 2
+     	 	      industrial_complex = 2
+				  arms_factory = 1
+		}
+		victory_points = {
+			9560 5
+		}
+		add_core_of = ANH
+		1870.1.1 = {
+			add_core_of = PRS
+			owner = PRS
+		}
+
+	}
+	provinces={
+		9560 11468 
+	}
+	manpower=211471
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}
+

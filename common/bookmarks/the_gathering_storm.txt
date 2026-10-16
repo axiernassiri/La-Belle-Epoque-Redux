@@ -1,0 +1,173 @@
+bookmarks = {
+	bookmark = {
+		name = "1866_NAME"
+		desc = "1866_DESC"
+		date = 1866.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "PRS"
+		default = yes
+		
+		## NOTMINOR
+
+		"PRS"={
+			history = "PRS_1866_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+				PRS_annex_holstein
+				PRS_pivot_to_the_past	
+				PRS_bruderkrieg_ending
+			}
+		}
+
+		"AUS"={
+			history = "AUS_1866_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		##
+		
+		## MINOR SELECTION
+		
+		"CHI"={
+            history = "CHI_1866_DESC"
+			minor = yes
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+            }
+            focuses = {
+            }
+        }
+
+        "SOV"={
+            history = "SOV_1866_DESC"
+			minor = yes
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+                orthodox_giant
+                fpw_SOV_losers_of_the_crimean_war_1
+                underdeveloped_industry_1
+            }
+            focuses = {
+                SOV_russification_programs
+                SOV_new_agricultural_economy
+                SOV_plot_against_the_tsars
+            }
+        }
+
+        "USA"={
+            history = "USA_1866_DESC"
+			minor = yes
+            ideology = democratic
+            ideas = {
+            }
+            focuses = {
+            }
+        }
+		
+        "FRA"={
+		    minor = yes
+            history = "FRA_1866_DESC"
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+            }
+            focuses = {
+                FRA_empire_triumphant
+                FRA_strengthen_bonaparte_dynasty
+                FRA_expanding_colonial_empire
+            }
+        }
+
+        "ENG"={
+		    minor = yes
+            history = "ENG_1866_DESC"
+            ideology = fascism
+            available = { always = yes }
+            ideas = {
+            }
+            focuses = {
+            }
+        }
+
+        "ITA"={
+		    minor = yes
+            history = "ITA_1866_DESC"
+            ideology = democratic
+            available = { always = yes }
+            ideas = {
+                vittorio_emanuele
+                fpw_ITA_republican_opposition
+                fpw_ITA_liberal_country
+            }
+            focuses = {
+                ITA_start
+                ITA_conservative_politics
+                ITA_the_war_with_austria
+            }
+        }
+
+        "TUR" = {
+		    minor = yes
+            history = "TUR_1866_DESC"
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+                fpw_TUR_multi_ethnic_state
+                fpw_TUR_dated_army
+                fpw_TUR_agrarian_economy
+            }
+            focuses = {
+                TUR_restore_our_legitimacy
+            }
+        }
+
+        "JAP"={
+		    minor = yes
+            history = "JAP_1866_DESC"
+            ideology = democratic
+            available = { always = yes }
+            ideas = {
+                jap_unequal_treaties
+                jap_feudal_fragmentation
+                jap_isolationist_sentiment
+            }
+            focuses = {
+                JAP_form_satcho_alliance
+                JAP_proclaim_emperor_meijis_restoration_to_full_power
+                JAP_samurai_spirit
+            }
+        }
+
+		"AFG"={
+            minor = yes
+			history = "AFG_1866_DESC"
+			ideology = neutrality
+            available = { always = yes }
+			ideas = {
+				fpw_AFZ_AFG_Afghan_Civil_War
+				fpw_AFZ_AFG_lack_of_national_identity
+                fpw_AFG_entirely_war_economy
+			}
+			focuses = {
+				afg_cut_the_ties
+				afg_the_graveyard_of_empires
+				afg_assume_full_control
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

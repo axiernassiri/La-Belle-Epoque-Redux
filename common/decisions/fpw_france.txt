@@ -1,0 +1,753 @@
+FRA_foreign_stuff_cat = {
+
+	
+
+	FRA_expedition_to_korea = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+		
+		complete_effect = {
+		}
+	}
+}
+FRA_modernization_of_paris_cat = {
+
+	FRA_second_phase_networks_of_new_boulevards = {
+
+		priority = 2000
+
+		icon = generic_civil_support
+
+		allowed = {
+			tag = FRA
+		}
+
+		#Success trigger
+		available = {
+			has_country_flag = fra_redevelop_the_ile_de_la_cite_done
+			has_country_flag = fra_construction_of_new_boulevards_on_the_left_bank_done
+			has_country_flag = fra_construction_of_new_boulevards_on_the_right_bank_done
+			has_country_flag = fra_construction_of_the_railway_station_gare_du_nord_and_gare_de_l_est_done
+			has_country_flag = fra_rebuilding_the_gare_du_lyon_done
+			has_country_flag = fra_expansion_of_public_green_spaces_done
+		}
+
+		days_mission_timeout = 500
+
+		#fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			NOT = {
+				has_country_flag = fra_complete_withdraw_from_mexico
+			}
+		}
+
+		#Failed
+		timeout_effect = {
+			add_political_power = -150
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = -0.1
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_stability_factor = -0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.15
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+		complete_effect = {
+			add_political_power = 125
+			add_stability = -0.03
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = 0.1
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			16 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_victory_points = {
+					province = 11506
+					value = 5
+				}
+			}
+			set_country_flag = fra_completed_second_phase_of_modernization
+
+
+		}
+	}
+
+	FRA_redevelop_the_ile_de_la_cite = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+		priority = 10
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 45
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 11506
+					value = 1
+				}
+			}
+			set_country_flag = fra_redevelop_the_ile_de_la_cite_done
+		}
+	}
+	FRA_construction_of_new_boulevards_on_the_left_bank = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+		priority = 10
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_victory_points = {
+					province = 11506
+					value = 3
+				}
+			}
+			set_country_flag = fra_construction_of_new_boulevards_on_the_left_bank_done
+		}
+	}
+	FRA_construction_of_new_boulevards_on_the_right_bank = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+		priority = 10
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 11506
+					value = 1
+				}
+			}
+			set_country_flag = fra_construction_of_new_boulevards_on_the_right_bank_done
+		}
+	}
+	FRA_construction_of_the_railway_station_gare_du_nord_and_gare_de_l_est = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+		priority = 10
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 6
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			set_country_flag = fra_construction_of_the_railway_station_gare_du_nord_and_gare_de_l_est_done
+		}
+	}
+	FRA_rebuilding_the_gare_du_lyon = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+		priority = 10
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			set_country_flag = fra_rebuilding_the_gare_du_lyon_done
+		}
+	}
+	FRA_expansion_of_public_green_spaces = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+		priority = 10
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			set_country_flag = fra_expansion_of_public_green_spaces_done
+		}
+	}
+
+
+	FRA_third_phase_new_extensions_of_boulevards = {
+
+		priority = 5
+
+		icon = generic_civil_support
+
+		allowed = {
+			tag = FRA
+		}
+
+		#Success trigger
+		available = {
+			has_country_flag = fra_renovation_of_the_jardins_des_champs_elysees_done
+			has_country_flag = fra_finish_the_place_du_chateau_d_eau_done
+			has_country_flag = fra_extension_of_the_boulevard_haussmann_done
+			has_country_flag = fra_building_the_boulevard_saint_germain_done
+		}
+
+		days_mission_timeout = 300
+
+		#fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_country_flag = fra_completed_second_phase_of_modernization
+		}
+
+		#Failed
+		timeout_effect = {
+			add_political_power = -200
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = -0.2
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_stability_factor = -0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.35
+				tooltip = consumer_goods_factor_tt
+			}
+			
+		}
+		complete_effect = {
+			add_political_power = 125
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = 0.15
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_stability_factor = -0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			set_country_flag = fra_completed_third_phase_of_modernization
+			custom_effect_tooltip = generic_skip_one_line_tt
+			16 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_victory_points = {
+					province = 11506
+					value = 5
+				}
+			}
+
+		}
+	}
+
+	FRA_renovation_of_the_jardins_des_champs_elysees = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			has_country_flag = fra_completed_second_phase_of_modernization
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_victory_points = {
+					province = 11506
+					value = 3
+				}
+			}
+			set_country_flag = fra_renovation_of_the_jardins_des_champs_elysees_done
+		}
+	}
+
+	FRA_finish_the_place_du_chateau_d_eau = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			has_country_flag = fra_completed_second_phase_of_modernization
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_victory_points = {
+					province = 11506
+					value = 2
+				}
+			}
+			set_country_flag = fra_finish_the_place_du_chateau_d_eau_done
+		}
+	}
+	FRA_extension_of_the_boulevard_haussmann = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			has_country_flag = fra_completed_second_phase_of_modernization
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			set_country_flag = fra_extension_of_the_boulevard_haussmann_done
+		}
+	}
+	FRA_building_the_boulevard_saint_germain = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			has_country_flag = fra_completed_second_phase_of_modernization
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect  = {
+			16 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			set_country_flag = fra_building_the_boulevard_saint_germain_done
+		}
+	}
+
+	FRA_utilize_bonds_from_the_paris_works_fund = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_second_empires_public_works
+			OR = {
+				NOT = {
+					has_country_flag = fra_completed_third_phase_of_modernization
+					has_country_flag = fra_haussmann_fired
+				}
+			}
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		fire_only_once = no
+		days_re_enable = 140
+		days_remove = 21
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = 0.1
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+
+	FRA_raise_investments_from_the_pereire_investment_bank = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_second_empires_public_works
+			NOT = {
+				OR = {
+					has_country_flag = fra_completed_third_phase_of_modernization
+					has_country_flag = fra_haussmann_fired
+				}
+			}
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			
+		}
+
+		fire_only_once = no
+		days_re_enable = 275
+
+		cost = 50
+
+		days_remove = 35
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = 0.15
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = -0.2
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+	FRA_taking_out_loans = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_second_empires_public_works
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			NOT = {
+				OR = {
+					has_country_flag = fra_completed_third_phase_of_modernization
+					has_country_flag = fra_haussmann_fired
+				}
+			}
+		} 
+
+		visible = { 
+			
+		}
+
+		fire_only_once = no
+		days_re_enable = 365
+
+		cost = 50
+
+		days_remove = 28
+		
+		remove_effect  = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+}

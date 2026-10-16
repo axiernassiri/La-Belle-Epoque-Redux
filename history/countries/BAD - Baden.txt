@@ -1,0 +1,31 @@
+capital = 935
+oob = "BAD_1866"
+
+set_technology = {
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_cavalry_equipment = 1
+}
+
+add_dynamic_modifier = { 
+	modifier = fpw_outdated_military
+}
+
+
+recruit_character = BAD_frederick_i
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 51
+	democratic = 6
+	neutrality = 41
+	communism = 2
+}

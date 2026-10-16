@@ -1,0 +1,158 @@
+capital = 4
+oob = "AUS_1866"
+
+set_cosmetic_tag = AUS_austrian_empire
+
+set_research_slots = 3
+
+# Italian
+850 = {
+	start_resistance = yes
+	set_resistance = 10
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+160 = {
+	start_resistance = yes
+	set_resistance = 30
+	set_compliance = 40
+	set_garrison_strength = 1.0
+}
+736 = {
+	start_resistance = yes
+	set_resistance = 10
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+852 = {
+	start_resistance = yes
+	set_resistance = 10
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+# Illyrian
+163 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+103 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+982 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+853 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+109 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+# Galician
+88 = {
+	start_resistance = yes
+	set_resistance = 25
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+89 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+91 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+80 = {
+	start_resistance = yes
+	set_resistance = 20
+	set_compliance = 60
+	set_garrison_strength = 1.0
+}
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_basic_train = 1
+    tech_support = 1
+	fpw_cannon_artillery = 1
+	fpw_cannon2 = 1
+	fpw_howitzer_artillery = 1
+	fpw_howitzer2 = 1
+	fpw_breech_artillery = 1
+	fpw_breech2 = 1
+}
+
+add_dynamic_modifier = {
+    modifier = fpw_outdated_military
+}
+
+add_ideas = {
+	fpw_idea_austria_shadow_frankfurt
+	AUS_hungary_neutral
+	AUS_czech_friendly
+	AUS_galicia_hostile
+	AUS_illyria_neutral
+}
+
+recruit_character = AUS_franz_joseph_I
+recruit_character = AUS_von_benedek
+recruit_character = AUS_von_gablenz
+recruit_character = AUS_henikstein
+recruit_character = AUS_krismanic
+recruit_character = AUS_archduke_albrecht
+
+add_to_variable = {
+	var = aus_breakthru_dm
+	value = -0.2
+}
+add_to_variable = {
+	var = aus_morale_dm
+	value = -0.15
+}
+add_to_variable = {
+	var = aus_org_dm
+	value = -0.15
+}
+add_to_variable = {
+	var = aus_atk_dm
+	value = -0.2
+}
+add_to_variable = {
+	var = aus_def_dm
+	value = -0.1
+}
+
+set_stability = 0.65
+set_war_support = 0.30
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 34
+	democratic = 56
+	fascism = 8
+	communism = 2
+}
+

@@ -1,0 +1,844 @@
+ add_namespace = fpw_afghan
+
+country_event = {
+	id = fpw_afghan.1
+	title = afghan_fpw.1.t
+	desc = afghan_fpw.1.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "For Afghanistan!"
+		ai_chance = { base = 100}
+		add_ideas = fpw_AFZ_AFG_Afghan_Civil_War
+	}
+}
+country_event = {
+	id = fpw_afghan.2
+	title = afghan_fpw.2.t
+	desc = afghan_fpw.2.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "A Quick Victory"
+		ai_chance = { base = 50}
+		add_timed_idea = {
+			idea = fpw_AFG_finally_end_the_civilwar
+			days = 730
+		}
+		add_war_support = 0.1
+	}
+	option = {
+		name = "Be Patient"
+		ai_chance = { base = 50}
+		add_ideas = fpw_AFG_careful_planning
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = fpw_afghan.3
+	title = afghan_fpw.3.t
+	desc = afghan_fpw.3.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Afghan Civil War Over!!!"
+		ai_chance = { base = 100}
+		remove_ideas = fpw_AFG_finally_end_the_civilwar
+		remove_ideas = fpw_AFG_careful_planning
+		remove_ideas = fpw_AFZ_AFG_Afghan_Civil_War
+		remove_ideas = fpw_AFG_entirely_war_economy
+		remove_ideas = fpw_AFG_our_chance_is_now
+		add_war_support = 0.1
+		add_ideas = fpw_AFG_post_war_economy
+		complete_national_focus = afg_victory_in_civil_war
+		set_capital = {state = 267}
+	}
+
+}
+
+country_event = {
+	id = fpw_afghan.4
+	title = afghan_fpw.4.t
+	desc = afghan_fpw.4.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Anything for an anti British nation"
+		ai_chance = { base = 50}
+		add_timed_idea = {
+			idea = fpw_AFG_supporting_afghanistan
+			days = 100
+		}
+		415 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			
+		}
+		diplomatic_relation = {
+   			country = AFG
+    		relation = non_aggression_pact
+    		active = yes
+		}
+		AFG = {
+			country_event = fpw_afghan.6
+		}
+
+	}
+	option = {
+		name = "We are not allies"
+		ai_chance = { base = 50}
+		AFG = {
+			country_event = fpw_afghan.5
+		}
+	}
+
+}
+
+
+country_event = {
+	id = fpw_afghan.5
+	title = afghan_fpw.5.t
+	desc = afghan_fpw.5.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "What did we expect?"
+		}
+
+
+}
+
+country_event = {
+	id = fpw_afghan.6
+	title = afghan_fpw.6.t
+	desc = afghan_fpw.6.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "You will not regret this!"
+		}
+
+
+}
+
+country_event = {
+	id = fpw_afghan.7
+	title = afghan_fpw.7.t
+	desc = afghan_fpw.7.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Well Shit"
+		add_ideas = fpw_AFG_munitys_in_the_army
+		}
+
+
+}
+
+country_event = {
+	id = fpw_afghan.8
+	title = afghan_fpw.8.t
+	desc = afghan_fpw.8.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "I guess we can spare something"
+		ai_chance = { base = 50}
+		add_timed_idea = {
+			idea = fpw_AFG_supporting_afghanistan
+			days = 100
+		}
+		415 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}	
+		}
+		AFG = {
+			country_event = fpw_afghan.6
+		}
+
+	}
+	option = {
+		name = "We are not allies"
+		ai_chance = { base = 50}
+		AFG = {
+			country_event = fpw_afghan.5
+		}
+	}
+
+}
+
+country_event = {
+	id = fpw_afghan.9
+	title = afghan_fpw.9.t
+	desc = afghan_fpw.9.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "What did we expect?"
+		}
+
+
+}
+
+country_event = {
+	id = fpw_afghan.10
+	title = afghan_fpw.10.t
+	desc = afghan_fpw.10.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We can help them"
+		AFG = {
+			research_bonus = {
+				artillery = 0.1
+			}
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+			country_event = fpw_afghan.11
+		}
+		add_opinion_modifier = fpw_afghan_friend_modifier
+	}
+
+	option = {
+		AFG = {
+			country_event = fpw_afghan.12
+		}
+		name = "No"
+		add_opinion_modifier = fpw_afghan_enemy_modifier
+	}
+}
+country_event = {
+	id = fpw_afghan.11
+	title = afghan_fpw.11.t
+	desc = afghan_fpw.11.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
+	}
+}
+country_event = {
+	id = fpw_afghan.12
+	title = afghan_fpw.12.t
+	desc = afghan_fpw.12.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Whatever"
+	}
+}
+country_event = {
+	id = fpw_afghan.13
+	title = afghan_fpw.13.t
+	desc = afghan_fpw.13.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = cavalry
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.14
+	title = afghan_fpw.14.t
+	desc = afghan_fpw.14.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research
+			add_idea = fpw_AFG_increased_calvary_research_two
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.15
+	title = afghan_fpw.15.t
+	desc = afghan_fpw.15.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_two
+			add_idea = fpw_AFG_increased_calvary_research_three
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.16
+	title = afghan_fpw.16.t
+	desc = afghan_fpw.16.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_three
+			add_idea = fpw_AFG_increased_calvary_research_four
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.17
+	title = afghan_fpw.17.t
+	desc = afghan_fpw.17.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_four
+			add_idea = fpw_AFG_increased_calvary_research_five
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.18
+	title = afghan_fpw.18.t
+	desc = afghan_fpw.18.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_five
+			add_idea = fpw_AFG_increased_calvary_research_six
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.19
+	title = afghan_fpw.19.t
+	desc = afghan_fpw.19.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_six
+			add_idea = fpw_AFG_increased_calvary_research_seven
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.20
+	title = afghan_fpw.20.t
+	desc = afghan_fpw.20.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Excellent"
+		swap_ideas = {
+			remove_idea = fpw_AFG_increased_calvary_research_seven
+			add_idea = fpw_AFG_increased_calvary_research_eight
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.21
+	title = afghan_fpw.21.t
+	desc = afghan_fpw.21.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We will not give up even an inch"
+		ai_chance = { base = 50}
+		AFG = {
+			country_event = fpw_afghan.22
+		}
+	}
+	option = {
+		name = "Hand over the territories"
+		ai_chance = { base = 50}
+		AFG = {
+			country_event = fpw_afghan.23
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.22
+	title = afghan_fpw.22.t
+	desc = afghan_fpw.22.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Punishment must be served"
+		create_wargoal = {
+			type = take_state_focus
+			target = PER
+			generator = { 410 414 416 }
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.23
+	title = afghan_fpw.23.t
+	desc = afghan_fpw.23.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Amazing"
+		transfer_state = 410
+		transfer_state = 414
+		transfer_state = 416
+	}
+}
+country_event = {
+	id = fpw_afghan.24
+	title = afghan_fpw.24.t
+	desc = afghan_fpw.24.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		ai_chance = { base = 0}
+		name = "We are not scared of third world countries"
+		AFG = {
+			country_event = fpw_afghan.25
+		}
+	}
+	option = {
+		ai_chance = { base = 100}
+		name = "It's better to take accept our loses"
+		AFG = {
+			country_event = fpw_afghan.26
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.25
+	title = afghan_fpw.25.t
+	desc = afghan_fpw.25.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "It's their loss"
+		remove_ideas = fpw_AFG_bukharian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.26
+	title = afghan_fpw.26.t
+	desc = afghan_fpw.26.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
+		white_peace = SOV
+		transfer_state = 830
+		transfer_state = 405
+		remove_ideas = fpw_AFG_bukharian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.27
+	title = afghan_fpw.27.t
+	desc = afghan_fpw.27.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		ai_chance = { base = 0}
+		name = "We are not scared by them"
+		AFG = {
+			country_event = fpw_afghan.28
+		}
+	}
+	option = {
+		ai_chance = { base = 100}
+		name = "It's better to take accept our loses"
+		AFG = {
+			country_event = fpw_afghan.29
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.28
+	title = afghan_fpw.28.t
+	desc = afghan_fpw.28.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "It's their loss"
+		remove_ideas = fpw_AFG_indian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.29
+	title = afghan_fpw.29.t
+	desc = afghan_fpw.29.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
+		white_peace = ENG
+		transfer_state = 444
+		transfer_state = 787
+		transfer_state = 441
+		transfer_state = 440
+		transfer_state = 443
+		transfer_state = 439
+		remove_ideas = fpw_AFG_indian_campaign
+	}
+}
+country_event = {
+	id = fpw_afghan.30
+	title = afghan_fpw.30.t
+	desc = afghan_fpw.30.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Let The Voting Begin"
+		complete_national_focus = afg_clean_election
+		set_country_flag = AFG_clean_election
+	}
+}
+country_event = {
+	id = fpw_afghan.31
+	title = afghan_fpw.31.t
+	desc = afghan_fpw.31.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Conservative Vicotry"
+		complete_national_focus = afg_conservative_victory
+		set_country_flag = AFG_conservative
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = "Liberal Victory"
+		set_country_flag = AFG_liberal
+		complete_national_focus = afg_liberal_victory
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.32
+	title = afghan_fpw.32.t
+	desc = afghan_fpw.32.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Socalist Vicotry"
+		complete_national_focus = afg_socialist_victory
+		set_country_flag = AFG_socialist
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.33
+	title = afghan_fpw.33.t
+	desc = afghan_fpw.33.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "To India"
+		RAJ = {
+			country_event = fpw_afghan.34
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.34
+	title = afghan_fpw.34.t
+	desc = afghan_fpw.34.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "The people have spoken..."
+		AFG = {
+			country_event = fpw_afghan.35
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.35
+	title = afghan_fpw.35.t
+	desc = afghan_fpw.35.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Brilliant"
+		transfer_state = 444
+	}
+}
+country_event = {
+	id = fpw_afghan.36
+	title = afghan_fpw.36.t
+	desc = afghan_fpw.36.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "no"
+		AFG = {
+			country_event = fpw_afghan.37
+		}
+	}
+	option = {
+		name = "We don't need these lands anyway"
+		transfer_state = 659
+		AFG = {
+			country_event = fpw_afghan.37
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.37
+	title = afghan_fpw.37.t
+	desc = afghan_fpw.37.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Damn it"
+	}
+}
+country_event = {
+	id = fpw_afghan.38
+	title = afghan_fpw.38.t
+	desc = afghan_fpw.38.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Great"
+	}
+}
+country_event = {
+	id = fpw_afghan.39
+	title = afghan_fpw.39.t
+	desc = afghan_fpw.39.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We Shall Sign the Treaty"
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+		}
+	}
+	option = {
+		name = "You are but a pawn"
+	}
+}
+country_event = {
+	id = fpw_afghan.40
+	title = afghan_fpw.40.t
+	desc = afghan_fpw.40.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "This is an Act of War!"
+		declare_war_on = {
+			target = AFG
+			type = puppet_wargoal_focus
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.41
+	title = afghan_fpw.41.t
+	desc = afghan_fpw.41.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We must use this chance"
+		declare_war_on = {
+			target = RAJ
+			type = puppet_wargoal_focus
+		}
+		ai_chance = { base = 75 }
+	}
+	option = {
+		name = "no"
+		ai_chance = { base = 25 }
+	}
+}
+country_event = {
+	id = fpw_afghan.42
+	title = afghan_fpw.42.t
+	desc = afghan_fpw.42.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We tried"
+	}
+}
+country_event = {
+	id = fpw_afghan.43
+	title = afghan_fpw.43.t
+	desc = afghan_fpw.43.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "We Shall Sign the Treaty"
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+		}
+	}
+	option = {
+		name = "You are but a pawn"
+	}
+}
+country_event = {
+	id = fpw_afghan.44
+	title = afghan_fpw.44.t
+	desc = afghan_fpw.44.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Africa is but our playground"
+		every_state = {
+			limit = {
+				is_on_continent = africa
+			}
+			add_core_of = PREV
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.45
+	title = afghan_fpw.45.t
+	desc = afghan_fpw.45.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Africa is but our playground"
+		every_state = {
+			limit = {
+				is_core_of = AUS
+			}
+			add_core_of = PREV
+		}
+	}
+}
+country_event = {
+	id = fpw_afghan.46
+	title = afghan_fpw.46.t
+	desc = afghan_fpw.46.d
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Asia shall become our main base of operations"
+		every_state = {
+			limit = {
+				is_on_continent = asia
+			}
+			add_core_of = PREV
+		}
+	}
+}

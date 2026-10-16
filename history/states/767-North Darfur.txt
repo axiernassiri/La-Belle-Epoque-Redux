@@ -1,0 +1,19 @@
+
+state={
+	id=767
+	name="STATE_767"
+
+	history={
+	set_variable = { tribal = 767 }
+		owner = SUD
+		add_core_of = SUD
+		
+
+	}
+
+	provinces={ 13430 13446 13454 13576 14009 14307 14318 14334 14335 }
+	manpower=478
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

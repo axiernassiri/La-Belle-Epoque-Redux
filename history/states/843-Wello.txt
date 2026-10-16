@@ -1,0 +1,31 @@
+
+state={
+	id=843
+	name="STATE_843"
+
+	history={
+		buildings = {
+
+		}
+		victory_points = {
+			5097 1 
+		}
+		owner = ETH
+		add_core_of = ETH
+		add_core_of = AFA
+		1936.6.1 = {
+			owner = ITA
+			controller = ITA
+
+		}
+
+	}
+
+	provinces={
+		4961 4962 4978 5036 5039 5041 5210 5217 13137 
+	}
+	manpower=338000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

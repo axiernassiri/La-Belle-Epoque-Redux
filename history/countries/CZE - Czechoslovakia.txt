@@ -1,0 +1,32 @@
+capital = 9
+oob = "CZE_1866"
+
+
+
+
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 20
+	neutrality = 65
+	neutrality = 5
+	communism = 10
+}

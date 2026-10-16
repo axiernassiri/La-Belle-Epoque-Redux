@@ -1,0 +1,31 @@
+
+state={
+	id=272
+	name="STATE_272"
+	resources={
+
+		steel=3.000
+	
+
+wood=1
+}
+
+	history={
+		owner = FRA
+		add_core_of = SEN
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		13282 13291 13399 13465 13482 13620 13668 13793 13941 13960 13985 14342 14346 14360 
+	}
+	manpower=851760
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}
+

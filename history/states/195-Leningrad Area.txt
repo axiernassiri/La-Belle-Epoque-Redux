@@ -1,0 +1,39 @@
+
+state={
+resources={
+wood=3
+}
+
+	id=195
+	name="STATE_195"
+
+	history={
+		owner = SOV
+		victory_points = {
+			3151 50.0 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 2
+			3151 = {
+				naval_base = 10
+				coastal_bunker = 5
+
+			}
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		79 149 2332 3151 6174 11068 
+	}
+	manpower=1950082
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=11.000
+}
+

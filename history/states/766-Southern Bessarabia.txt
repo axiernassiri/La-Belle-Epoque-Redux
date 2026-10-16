@@ -1,0 +1,27 @@
+
+state={
+	id=766
+	name="STATE_766"
+
+	history={
+		add_core_of = MOL
+		#add_core_of = UKR
+		owner = ROM
+		add_claim_by = SOV
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+
+		}
+		add_core_of = ROM
+
+	}
+
+	provinces={
+		3701 3704 3724 
+	}
+	manpower=294632
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

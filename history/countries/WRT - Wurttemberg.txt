@@ -1,0 +1,29 @@
+capital = 50
+oob = "WRT_1866"
+
+set_technology = {
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_cavalry_equipment = 1
+}
+
+add_dynamic_modifier = { 
+	modifier = fpw_outdated_military
+}
+
+recruit_character = WRT_karl_friedrich_august
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 33
+	fascism = 57
+	neutrality = 10
+}

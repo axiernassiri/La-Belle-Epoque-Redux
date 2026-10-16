@@ -1,0 +1,23 @@
+
+state={
+	id=629
+	name="STATE_629"
+	manpower = 191535
+	state_category = town
+	history={
+		owner = HAW
+		add_core_of = HAW
+		victory_points = {
+			4180 15
+		}
+		victory_points = {
+			12021 3
+	 }
+	}
+
+	provinces={
+		4180 7112 7195 10048 12021 
+	}
+
+	local_supplies=0.0 
+}

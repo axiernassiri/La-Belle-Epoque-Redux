@@ -1,0 +1,75 @@
+ITA_historical = {
+	name = "Italian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		or = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					has_game_rule = {
+						rule = ITA_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+		has_completed_focus = ITA_l
+	}
+
+	ai_national_focuses = {
+		ITA_start
+		ITA_ally_prussia
+		ITA_prussian_military_cooperation
+		ITA_the_war_with_austria	
+		ITA_mountain_defence
+		ITA_w
+		ITA_seek_allies
+		ITA_ally_germany
+		ITA_expansionism
+		ITA_take_the_capital
+		ITA_navy
+		ITA_borrow_ideas_from_uk
+		ITA_artillery_focus
+		ITA_cavalry_focus
+		ITA_rifle_focus
+		ITA_doctrine_effort
+		ITA_special_forces
+		ITA_colonial_empire
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 25.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

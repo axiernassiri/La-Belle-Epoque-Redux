@@ -1,0 +1,18 @@
+state={
+	id=686
+	name="STATE_686"
+	manpower = 802835
+	
+	state_category = small_island
+
+	history={
+		add_core_of = SPR
+		owner = SPR
+	}
+
+	provinces={
+		1440 4155 
+	}
+
+	local_supplies=0.0 
+}

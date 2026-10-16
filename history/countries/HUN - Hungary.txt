@@ -1,0 +1,52 @@
+capital = 43
+oob = "HUN_1866"
+
+
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.6
+
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+if = {
+	limit = {
+		#has_dlc = Battle for the Bosporus
+	}
+	add_opinion_modifier = { 
+		target = CZE
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = ROM
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = YUG
+		modifier = BFTB_incongruous_neighbors
+	}
+}
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	neutrality = 31
+	neutrality = 44
+}
+
+

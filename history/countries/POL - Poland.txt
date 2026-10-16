@@ -1,0 +1,102 @@
+capital = 10
+
+
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+    fpw_cavalry_equipment = 1
+	fpw_infantry_weapons = 1
+	fpw_infantry_weapons1 = 1
+	fpw_cannon_artillery = 1
+	fpw_basic_train = 1
+    tech_support = 1
+}
+
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1864.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 32
+	fascism = 11
+	communism = 19
+	neutrality = 38
+}
+
+
+recruit_character = SOV_friedrich_von_berg
+recruit_character = POL_wladyslaw_czartoryski
+#recruit_character = POL_wojtek
+
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Roman Czerniawski"
+		GFX = GFX_portrait_roman_czerniawski
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { POL }
+	}
+
+	create_operative_leader = {
+		name = "Krystyna Skarbek"
+		GFX = GFX_portrait_krystyna_skarbek
+		traits = { operative_commando operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { POL }
+	}
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Wilk Class"				
+		type = ship_hull_submarine_2
+		name_group = POL_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Wicher Class"				
+		type = ship_hull_light_1
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}

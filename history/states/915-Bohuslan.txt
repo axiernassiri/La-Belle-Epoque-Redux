@@ -1,0 +1,30 @@
+state = {
+resources={
+wood=2
+}
+
+	id = 915
+	name = "STATE_915" # Bohuslän
+	manpower = 50030
+	state_category = rural
+
+	history = {
+		victory_points = {
+			6310 1
+		}
+		owner = SWE
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+
+
+	provinces = {
+		171 6310 
+	}
+
+	local_supplies=0.000
+}
+
