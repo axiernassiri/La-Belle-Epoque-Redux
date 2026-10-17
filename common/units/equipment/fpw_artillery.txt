@@ -8,6 +8,7 @@ equipments = {
 
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
+		is_buildable = no
 		type = {
 			artillery
 			infantry #adding infantry type
@@ -41,6 +42,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_cannon_artillery_equipment
+		active = yes
 		priority = 50
 		visual_level = 0
 
@@ -146,6 +148,7 @@ equipments = {
 
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
+		is_buildable = no
 		type = {
 			artillery
 			infantry #adding infantry type
@@ -179,6 +182,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_howitzer_artillery_equipment
+		active = yes
 		priority = 50
 		visual_level = 0
 		
@@ -282,6 +286,7 @@ equipments = {
 
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
+		is_buildable = no
 		type = {
 			artillery
 			infantry #adding infantry type
@@ -320,6 +325,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_breech_artillery_equipment
+		active = yes
 		priority = 50
 		visual_level = 0
 	}
@@ -359,6 +365,7 @@ equipments = {
 
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
+		is_buildable = no
 		type = {
 			artillery
 			infantry #adding infantry type
@@ -390,6 +397,7 @@ equipments = {
 		year = 1866
 
 		archetype = fpw_muzzle_artillery_equipment
+		active = yes
 		priority = 50
 		visual_level = 0
 	}

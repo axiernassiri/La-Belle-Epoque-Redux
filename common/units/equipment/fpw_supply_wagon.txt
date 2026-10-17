@@ -8,7 +8,6 @@ equipments = {
 		is_buildable = no
 		type = {
 			infantry
-			cavalry
 		}
 		group_by = archetype
 		
@@ -36,6 +35,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_supply_waggon_equipment
+		active = yes
 		priority = 30	
 	}
 

@@ -1759,7 +1759,7 @@ guiTypes = {
 					orientation = upper_right
 	
 					instantTextBoxType = {
-						name = "cavalry_year1_left"
+						name = "colonist_year1_left"
 						position = { x = 0 y = 45 }
 						textureFile = ""
 						font = "hoi_36header"
@@ -1840,7 +1840,7 @@ guiTypes = {
 	
 	
 			containerWindowType = {
-				name = "cavalry_subtitles"
+				name = "colonist_subtitles"
 				position = { x = 0 y = 20 }
 				size = { width = 600 height = 80% }
 				orientation = center_up
@@ -1865,7 +1865,7 @@ guiTypes = {
 					position = { x = 195 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 300 y = 4}
+					borderSize = {x = 0 y = 4}
 					text = "IMPROVED SETTLING"
 					maxWidth = 200
 					maxHeight = 62
@@ -1878,7 +1878,7 @@ guiTypes = {
 					position = { x = 730 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 300 y = 4}
+					borderSize = {x = 0 y = 4}
 					text = "COLONIAL EFFORT"
 					maxWidth = 200
 					maxHeight = 62

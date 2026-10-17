@@ -203,7 +203,7 @@
  fpw_infantry_equipment_3_short:0 "Weapons III"
  fpw_infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
 
- fpw_infantry_weapons1:0 "Baisc Infantry Weapons"
+ fpw_infantry_weapons1:0 "Basic Infantry Weapons"
  fpw_infantry_weapons1_desc:0 ""
 
  fpw_infantry_weapons2:0 "Advanced Infantry Weapons"
@@ -223,6 +223,54 @@
 
  fpw_support_weapons4:0 "Advanced Support Weapons"
  fpw_support_weapons4_desc:0 ""
+
+ # Infantry
+ fpw_infantry_weapons:0 "Early Infantry Weapons"
+ fpw_infantry_weapons_desc:0 ""
+ fpw_improved_infantry_weapons_2:0 "Improved Infantry Weapons II"
+ fpw_improved_infantry_weapons_2_desc:0 ""
+ fpw_improved_infantry_weapons_3:0 "Improved Infantry Weapons III"
+ fpw_improved_infantry_weapons_3_desc:0 ""
+ fpw_advanced_infantry_weapons:0 "Advanced Infantry Weapons"
+ fpw_advanced_infantry_weapons_desc:0 ""
+ fpw_supply_waggon:0 "Basic Supply Wagon"
+ fpw_supply_waggon_desc:0 ""
+ fpw_improved_supply_waggon:0 "Improved Supply Wagon"
+ fpw_improved_supply_waggon_desc:0 ""
+ fpw_wartime_train:0 "Wartime Train"
+ fpw_wartime_train_desc:0 ""
+
+ # Artillery
+ fpw_breech_artillery:0 "Rifled Breech-Loading Artillery"
+ fpw_breech_artillery_desc:0 ""
+ fpw_breech6:0 "Improved Rifled Breech-Loading Artillery"
+ fpw_breech6_desc:0 ""
+ fpw_muzzle_artillery:0 "Rifled Muzzle-Loading Artillery"
+ fpw_muzzle_artillery_desc:0 ""
+ fpw_muzzle4:0 "Improved Rifled Muzzle-Loading Artillery"
+ fpw_muzzle4_desc:0 ""
+ fpw_howitzer_artillery:0 "Howitzer Artillery"
+ fpw_howitzer_artillery_desc:0 ""
+ fpw_howitzer3:0 "Improved Basic Howitzer Artillery"
+ fpw_howitzer3_desc:0 ""
+ fpw_howitzer5:0 "Improved Howitzer Artillery I"
+ fpw_howitzer5_desc:0 ""
+ fpw_howitzer8:0 "Advanced Howitzer Artillery"
+ fpw_howitzer8_desc:0 ""
+ fpw_cannon_artillery:0 "Cannon Artillery"
+ fpw_cannon_artillery_desc:0 ""
+ fpw_cannon3:0 "Improved Basic Cannon Artillery"
+ fpw_cannon3_desc:0 ""
+ fpw_cannon6:0 "Improved Cannon Artillery I"
+ fpw_cannon6_desc:0 ""
+ fpw_cannon8:0 "Advanced Cannon Artillery"
+ fpw_cannon8_desc:0 ""
+
+ # Naval
+ fpw_transport:0 "Early Transport Ship"
+ fpw_transport_desc:0 ""
+ fpw_transport_2:0 "Improved Transport Ship"
+ fpw_transport_2_desc:0 ""
 
 
  # FOLDERS #
@@ -246,6 +294,7 @@
  
  # OTHER #
  fpw_basic_train: "Basic Train"
+ fpw_basic_train_desc: ""
 
 
  #colonial
@@ -280,9 +329,6 @@
  #fpw_colonial_anti_malaria_tt:0 "This Technology will decrease the affects that §YMalaria§ has on our colonial settlement"
  #fpw_colonial_improved_settling_tt:0 "This Technology will decrease §YColonial Time§"
  #fpw_colonial_effort_tt:0 "This Technology will grant a §YColonist§"
-
-
-
 
 
 

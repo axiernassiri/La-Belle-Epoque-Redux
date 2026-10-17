@@ -581,10 +581,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			release_autonomy = {
+			every_state = {
+				limit = {
+					is_core_of = LBY
+				}
+				transfer_state_to = LBY
+			}
+			puppet = {
 				target = LBY
-				autonomy_state = autonomy_puppet
-				freedom_level = 0.5
+				end_wars = no
 			}
 		}
 	}
@@ -850,7 +855,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			### news event
+			### add news event later
 			453 = {
 				transfer_state_to = TUR
 			}
@@ -1762,18 +1767,18 @@ focus_tree = {
 			343 = {
 				add_resource = {
 		            type = steel
-		            amount = 4
+		            amount = 14
 	            }
 			}
 			342 = {
 				add_resource = {
 		            type = steel
-		            amount = 8
+		            amount = 18
 	            }
 			}
 			350 = {
 				add_resource = {
-		            type = coal
+		            type = steel
 		            amount = 12
 	            }
 			}

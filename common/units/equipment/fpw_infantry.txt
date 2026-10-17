@@ -42,7 +42,7 @@ equipments = {
 	}
 
 	fpw_infantry_equipment_0 = {
-		year = 1918
+		year = 1860
 	
 		archetype = fpw_infantry_equipment
 		active = yes
