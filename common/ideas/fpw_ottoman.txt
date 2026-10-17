@@ -243,6 +243,7 @@ ideas = {
 			picture = GER_recovering_economy
 
 			modifier = {
+				political_power_factor = 0.25
 				consumer_goods_factor = 0.05
 				production_speed_buildings_factor = 0.10
 				industrial_capacity_factory = -0.10
@@ -640,6 +641,25 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				consumer_goods_factor = -0.25
+			}
+		}
+
+		fpw_TUR_serbian_tribute = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_civilian_economy_boost
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.05
 			}
 		}
 

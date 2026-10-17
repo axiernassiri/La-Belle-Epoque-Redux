@@ -117,7 +117,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -145,7 +145,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -228,7 +228,7 @@ focus_tree = {
 		x = -3
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -310,7 +310,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = fpw_TUR_admin_reform
-				days = 182
+				days = 100
 			}
 		}
 	}
@@ -346,7 +346,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = fpw_TUR_admin_reform
-				days = 182
+				days = 100
 			}
 		}
 	}
@@ -379,7 +379,7 @@ focus_tree = {
 			add_ideas = fpw_TUR_regulated_foreigner_land_ownership
 			add_timed_idea = {
 				idea = fpw_TUR_admin_reform
-				days = 182
+				days = 100
 			}
 		}
 	}
@@ -392,7 +392,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -412,7 +412,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_timed_idea = {
 				idea = fpw_TUR_admin_reform
-				days = 182
+				days = 100
 			}
 		}
 	}
@@ -513,6 +513,417 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			### grants restore legitimacy decisions
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = TUR_expand_turkish_citizenship
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			has_completed_focus = TUR_continue_the_reforms
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_restore_our_legitimacy
+		prerequisite = {
+			focus = TUR_restore_our_legitimacy
+		}
+		
+		completion_reward = {
+			add_stability = -0.15
+			add_war_support = -0.05
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = KUR
+						is_core_of = IRQ
+					}
+				}
+				add_core_of = TUR
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_establish_libyan_eleyet
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_expand_turkish_citizenship
+		prerequisite = {
+			focus = TUR_expand_turkish_citizenship
+		}
+		
+		completion_reward = {
+			release_autonomy = {
+				target = LBY
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_expand_serbian_adminstritative_area
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_expand_turkish_citizenship
+		prerequisite = {
+			focus = TUR_expand_turkish_citizenship
+		}
+		
+		completion_reward = {
+			108 = {
+				transfer_state_to = SER
+			}
+			803 = {
+				transfer_state_to = SER
+			}
+			802 = {
+				transfer_state_to = SER
+			}
+			add_ideas = fpw_TUR_serbian_tribute
+		}
+	}
+
+	focus = {
+		id = TUR_grant_turkish_citizenship_to_greeks
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_political_power > 100
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_expand_serbian_adminstritative_area
+		prerequisite = {
+			focus = TUR_expand_serbian_adminstritative_area
+		}
+		
+		completion_reward = {
+			add_political_power = -100
+			184 = {
+				add_core_of = TUR
+			}
+			731 = {
+				add_core_of = TUR
+			}
+			185 = {
+				add_core_of = TUR
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_consolidate_the_horn
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_expand_turkish_citizenship
+		prerequisite = {
+			focus = TUR_expand_turkish_citizenship
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = ETH
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = AFA
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = HAR
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_colonial_efforts
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_consolidate_the_horn
+		prerequisite = {
+			focus = TUR_consolidate_the_horn
+		}
+		prerequisite = {
+			focus = TUR_establish_libyan_eleyet
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = colonial
+			}
+			create_wargoal = {
+				target = SUD
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_annex_sudan
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_consolidate_the_horn
+		prerequisite = {
+			focus = TUR_consolidate_the_horn
+		}
+		prerequisite = {
+			focus = TUR_establish_libyan_eleyet
+		}
+		
+		completion_reward = {
+			883 = {
+				transfer_state_to = TUR
+			}
+			551 = {
+				transfer_state_to = TUR
+			}
+			550 = {
+				transfer_state_to = TUR
+			}
+			886 = {
+				transfer_state_to = TUR
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_conquer_the_african_kingdoms
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_annex_sudan
+		prerequisite = {
+			focus = TUR_annex_sudan
+		}
+		prerequisite = {
+			focus = TUR_colonial_efforts
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = NGR
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = NGA
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = DAH
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = MRT
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_reclaim_the_suez
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_annex_sudan
+		prerequisite = {
+			focus = TUR_integrate_the_syrian_kingdom
+		}
+		prerequisite = {
+			focus = TUR_colonial_efforts
+		}
+		
+		completion_reward = {
+			### news event
+			453 = {
+				transfer_state_to = TUR
+			}
+			446 = {
+				transfer_state_to = TUR
+			}
+		}
+	}
+
+
+	focus = {
+		id = TUR_integrate_the_syrian_kingdom
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_political_power > 200
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_consolidate_the_horn
+		prerequisite = {
+			focus = TUR_expand_serbian_adminstritative_area
+		}
+		prerequisite = {
+			focus = TUR_establish_libyan_eleyet
+		}
+		
+		completion_reward = {
+			add_political_power = -200
+			every_state = {
+				limit = {
+					is_core_of = SYR
+				}
+				add_core_of = TUR
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_forcefully_integrate_the_arabs
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		allow_branch = {
+			has_completed_focus = TUR_no_restraints_on_the_sultan
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_restore_our_legitimacy
+		prerequisite = {
+			focus = TUR_restore_our_legitimacy
+		}
+		
+		completion_reward = {
 			
 		}
 	}
@@ -553,6 +964,7 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = fpw_TUR_tanzimat_economic_era
+			custom_effect_tooltip = fpw_branch_incomplete_tt
 		}
 	}
 	### Economy Tree
@@ -565,7 +977,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -630,7 +1042,7 @@ focus_tree = {
 		}
 		available = {
 			count_triggers = {
-				amount = 5
+				amount = 4
 				985 = {
 					infrastructure > 2
 					is_owned_and_controlled_by = TUR
@@ -745,7 +1157,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -774,7 +1186,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -813,7 +1225,7 @@ focus_tree = {
 		}
 		available = {
 			count_triggers = {
-				amount = 10
+				amount = 8
 				985 = {
 					infrastructure > 2
 					is_owned_and_controlled_by = TUR
@@ -1245,6 +1657,136 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = TUR_expand_coal_mines
+		icon = GFX_focus_generic_coal_mining
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 344
+			owns_state = 553
+			owns_state = 677
+			owns_state = 350
+			owns_state = 676
+			owns_state = 291
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_modernized_economy
+		prerequisite = {
+			focus = TUR_modernized_economy
+		}
+		
+		completion_reward = {
+			344 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
+			553 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
+			677 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
+			350 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
+			676 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
+			291 = {
+				add_resource = {
+		            type = coal
+		            amount = 18
+	            }
+			}
+		}
+	}
+	focus = {
+		id = TUR_expand_steel_mines
+		icon = GFX_focus_generic_steel
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 347
+			owns_state = 343
+			owns_state = 342
+			owns_state = 350
+			owns_state = 184
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_modernized_economy
+		prerequisite = {
+			focus = TUR_modernized_economy
+		}
+		
+		completion_reward = {
+			347 = {
+				add_resource = {
+		            type = steel
+		            amount = 12
+	            }
+			}
+			343 = {
+				add_resource = {
+		            type = steel
+		            amount = 4
+	            }
+			}
+			342 = {
+				add_resource = {
+		            type = steel
+		            amount = 8
+	            }
+			}
+			350 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
+			184 = {
+				add_resource = {
+		            type = steel
+		            amount = 10
+	            }
+			}
+		}
+	}
+
+
 	focus = {
 		id = TUR_subsidize_military_industries
 		icon = GFX_focus_generic_reorient_production
@@ -1582,7 +2124,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1

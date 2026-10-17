@@ -1311,7 +1311,7 @@
 		prerequisite = { focus = AUS_austrian_dominence }
 		cost = 5
 		available = {
-			has_completed_focus = AUS_pursue_lost_italian_ambitions
+			owns_state = 159
 		}
 		completion_reward = {
 			ITA = {
@@ -1620,10 +1620,15 @@
 		prerequisite = { focus = AUS_restitutio_romae}
 		cost = 5
 		available = {
+			NOT = { owns_state = 2 }
 		}
 		completion_reward = {
 			create_wargoal = {
 				target = ITA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAP
 				type = annex_everything
 			}
 		}
