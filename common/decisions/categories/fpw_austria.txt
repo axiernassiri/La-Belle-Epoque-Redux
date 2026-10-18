@@ -10,6 +10,17 @@ AUS_populations_of_the_empire = {
 	}
 }
 
+AUS_ten_year_settlement_dec = {
+	priority = 200
+	icon = GFX_decision_category_generic_foreign_policy
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		has_completed_focus = AUS_ten_year_settlement
+	}
+}
+
 fpw_austro_hungarian_compromise = {
 	priority = 10
 	

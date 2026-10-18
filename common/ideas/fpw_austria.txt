@@ -84,14 +84,14 @@ ideas = {
 		}
 		fpw_aus_new_arty = {
 			modifier = {
-				artillery_attack_factor = 0.10
-				artillery_breakthrough_factor = 0.05
+				army_artillery_attack_factor = 0.10
+				army_artillery_breakthrough_factor = 0.05
             }
 		}
 		fpw_idea_aus_new_inf = {
 			modifier = {
-				infantry_attack_factor = 0.10
-				infantry_defence_factor = 0.05
+				army_infantry_attack_factor = 0.10
+				army_infantry_defence_factor = 0.05
             }
 		}
 
@@ -99,7 +99,7 @@ ideas = {
 			picture = generic_economic_crisis
 			modifier = {
 				resistance_target = 0.15
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.40
 				industrial_capacity_factory = -0.20
             }
 		}
@@ -113,6 +113,58 @@ ideas = {
 				army_core_defence_factor = 0.10
 				
             }
+		}
+
+		AUS_unified_military = {
+			picture = AUS_empire_restored
+			modifier = {
+				resistance_target = -0.15
+				compliance_growth = 0.15
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				
+            }
+		}
+
+		AUS_modern_army = {
+			picture = AUS_empire_restored
+			modifier = {
+				army_org_factor = 0.15
+				army_morale_factor = 0.10
+				army_defence_factor = 0.10
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.15
+            }
+		}
+
+		AUS_rebuilding_imperial_treasury = {
+			picture = AUS_empire_restored
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+            }
+		}
+
+		AUS_economic_militarizaiton = {
+			picture = AUS_empire_restored
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+            }
+		}
+
+		AUS_cutting_corners = {
+			picture = AUS_empire_restored
+			modifier = {
+            }
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.30
+					reliability = -0.20
+					soft_attack = -0.10
+					instant = yes
+				}
+			}
 		}
 		
 	}
@@ -156,8 +208,9 @@ ideas = {
 			#picture = CZE_skoda_works
 			modifier = {
 				consumer_goods_factor = -0.20
-				industrial_capacity_factory = 0.10
+				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.10
+				production_speed_buildings_factor = 0.10
             }
 		}
 		AUS_czech_friendly = {

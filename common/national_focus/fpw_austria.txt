@@ -651,8 +651,8 @@
 		cost = 10
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = AUS_hungary_loyal_triger_tt
-				has_idea = AUS_hungary_loyal
+				tooltip = AUS_hungary_friendly_triger_tt
+				has_idea = AUS_hungary_friendly
 			}
 		}
 		completion_reward = {
@@ -663,8 +663,6 @@
 				autonomy_state = autonomy_austrian_personal_union
 				freedom_level = 0.5
 			}
-			AUS_decrese_czech_attitude_effect = yes
-			AUS_decrese_galician_attitude_effect = yes
 			AUS_decrese_illyrian_attitude_effect = yes
 		}
 	}
@@ -681,7 +679,7 @@
 		}
 		completion_reward = {
 			add_stability = 0.05
-			add_war_support = 0.05
+			add_war_support = 0.15
 		}
 	}
 	focus = {
@@ -693,10 +691,6 @@
 		prerequisite = { focus = AUS_the_ausgleich focus = AUS_multiethnic_empire }
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = AUS_hungary_loyal_triger_tt
-				has_idea = AUS_hungary_loyal
-			}
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -755,6 +749,7 @@
 		completion_reward = {
 			add_political_power = -50
 			army_experience = 25
+			add_stability = 0.025
 		}
 	}
 
@@ -804,7 +799,8 @@
 		available = {
 		}
 		completion_reward = {
-			
+			### unlocks ability to gain trust and increase attitude with the illyrians
+			custom_effect_tooltip = AUS_populations_of_emp_illyria_tt
 		}
 	}
 
@@ -917,10 +913,10 @@
 			104 = {
 				if = {
 					limit = { is_owned_by = AUS }
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -1062,10 +1058,11 @@
 		y = 3
 		relative_position_id = AUS_war_against_the_ottomans
 		prerequisite = { focus = AUS_secure_the_sanjak focus = AUS_south_slav_compromise focus = AUS_adriatic_bulwark}
-		cost = 5
+		cost = 3
 		available = {
 		}
 		completion_reward = {
+			AUS_increse_illyrian_attitude_effect = yes
 			add_command_power = 50
 			add_war_support = 0.10
 			add_stability = 0.05
@@ -1669,7 +1666,56 @@
 		completion_reward = {
 			create_wargoal = {
 				target = PRS
-				type = puppet_wargoal_focus
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_humble_france
+		#icon = GFX_focus_generic_the_council_of_europe
+		x = 2
+		y = 1
+		relative_position_id = AUS_reclaim_rome
+		prerequisite = { focus = AUS_reclaim_rome}
+		cost = 5
+		will_lead_to_war_with = FRA
+		available = {
+		}
+		bypass = {
+			FRA = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = FRA
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_scandivian_membership
+		#icon = GFX_focus_generic_the_council_of_europe
+		x = 0
+		y = 1
+		relative_position_id = AUS_destroy_prussia
+		prerequisite = { focus = AUS_destroy_prussia }
+		prerequisite = { focus = AUS_imperial_glory focus = AUS_humble_france }
+		cost = 5
+		will_lead_to_war_with = SWE
+		available = {
+		}
+		bypass = {
+			SWE = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SWE
+				type = annex_everything
 			}
 		}
 	}
@@ -1730,7 +1776,8 @@
 		available = {
 		}
 		completion_reward = {
-			
+			### unlocks the ability to gain trust with the czechs
+			custom_effect_tooltip = AUS_gain_czech_trust_tt
 		}
 	}
 
@@ -1745,7 +1792,8 @@
 		available = {
 		}
 		completion_reward = {
-			# fundamental articles event to accept or deny czech autonomy
+			# allows us to increase opinion of the czechs
+			custom_effect_tooltip = AUS_increase_czech_attitude
 		}
 	}
 
@@ -1829,6 +1877,108 @@
 					level = 1
 					instant_build = yes
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_develop_galicia
+		#icon = GFX_focus_generic_the_council_of_europe
+		x = -1
+		y = 1
+		relative_position_id = AUS_moravian_arms_factories
+		prerequisite = { focus = AUS_moravian_arms_factories }
+		prerequisite = { focus = AUS_bohemian_industrialization }
+		cost = 10
+		available = {
+			owns_state = 88
+			owns_state = 91
+			owns_state = 89
+		}
+		completion_reward = {
+			88 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			91 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			89 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_saviours_of_poland
+		#icon = GFX_focus_generic_the_council_of_europe
+		x = 0
+		y = 1
+		relative_position_id = AUS_develop_galicia
+		prerequisite = { focus = AUS_develop_galicia }
+		cost = 10
+		available = {
+			owns_state = 88
+			owns_state = 91
+			owns_state = 89
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SOV 
+				type = annex_everything
+			}
+			88 = {
+				add_core_of = AUS
+			}
+			91 = {
+				add_core_of = AUS
+			}
+			89 = {
+				add_core_of = AUS
 			}
 		}
 	}
@@ -1938,7 +2088,7 @@
 		relative_position_id = AUS_great_humiliation
 		cost = 10
 		available = {
-			has_completed_focus = AUS_common_army
+			has_completed_focus = AUS_reform_the_army
 		}
 		completion_reward = {
 			army_experience = 25
@@ -1968,7 +2118,7 @@
 		y = 2
 		relative_position_id = AUS_army_reforms_begin
 		prerequisite = { focus =  AUS_army_reforms_begin }
-		cost = 10
+		cost = 5
 		available = {
 		}
 		completion_reward = {
@@ -1987,7 +2137,7 @@
 		y = 1
 		relative_position_id = AUS_military_studies
 		prerequisite = { focus =  AUS_military_studies }
-		cost = 10
+		cost = 5
 		available = {
 		}
 		completion_reward = {
@@ -2011,7 +2161,7 @@
 		y = 1
 		relative_position_id = AUS_study_german_doctrine
 		prerequisite = { focus =  AUS_study_german_doctrine }
-		cost = 10
+		cost = 3
 		available = {
 		}
 		completion_reward = {
@@ -2056,7 +2206,7 @@
 		y = 1
 		relative_position_id = AUS_army_reforms_begin
 		prerequisite = { focus =  AUS_army_reforms_begin }
-		cost = 10
+		cost = 5
 		available = {
 		}
 		completion_reward = {
@@ -2077,7 +2227,7 @@
 		y = 1
 		relative_position_id = AUS_apline_warefare
 		prerequisite = { focus =  AUS_apline_warefare }
-		cost = 10
+		cost = 3
 		available = {
 		}
 		completion_reward = {
@@ -2107,6 +2257,7 @@
 		}
 		completion_reward = {
 			## ill add this
+			local_manpower = 0.15
 		}
 	}
 
@@ -2118,7 +2269,7 @@
 		relative_position_id = AUS_lessons_from_italian_front
 		prerequisite = { focus =  AUS_lessons_from_italian_front }
 		prerequisite = { focus =  AUS_for_the_emporer }
-		cost = 10
+		cost = 3
 		available = {
 		}
 		completion_reward = {
@@ -2169,7 +2320,7 @@
 		y = 1
 		relative_position_id = AUS_restructured_army
 		prerequisite = { focus =  AUS_restructured_army }
-		cost = 10
+		cost = 5
 		available = {
 		}
 		completion_reward = {
@@ -2185,12 +2336,321 @@
 		y = 1
 		relative_position_id = AUS_restructured_army
 		prerequisite = { focus =  AUS_restructured_army }
-		cost = 10
+		cost = 5
 		available = {
 		}
 		completion_reward = {
 			# inf buff
 			add_ideas = fpw_idea_aus_new_inf
+		}
+	}
+
+	focus = {
+		id = AUS_modernized_austrian_military
+		#icon = GFX_focus_generic_advanced_military_studies
+		x = -2
+		y = 1
+		relative_position_id = AUS_traditional_ways
+		prerequisite = { focus =  AUS_traditional_ways }
+		prerequisite = { focus =  AUS_new_tools_of_warfare }
+		cost = 5
+		available = {
+		}
+		completion_reward = {
+			remove_dynamic_modifier = {
+				modifier = fpw_outdated_military
+			}
+			add_ideas = AUS_modern_army
+		}
+	}
+
+
+	##### ECONOMY
+
+	focus = {
+		id = AUS_rebuild_imperial_treasury
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 10
+		y = 0
+		relative_position_id = AUS_army_reforms_begin
+		cost = 5
+		available = {
+			has_completed_focus = AUS_december_constition
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = {
+				idea = AUS_rebuilding_imperial_treasury
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_reorganize_imperial_railroads
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 2
+		y = 1
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 10
+		prerequisite = { focus = AUS_rebuild_imperial_treasury }
+		available = {
+		}
+		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = military_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			152 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			69 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			75 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_czech_iron_works
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 1
+		y = 2
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 10
+		prerequisite = { focus = AUS_reorganize_imperial_railroads }
+		available = {
+		}
+		completion_reward = {
+			69 = {
+				add_resource = {
+		            type = steel
+		            amount = 3
+	            }
+			}
+			9 = {
+				add_resource = {
+		            type = steel
+		            amount = 14
+	            }
+			}
+			75 = {
+				add_resource = {
+		            type = steel
+		            amount = 6
+	            }
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_workshops_of_bohemia
+		icon = GFX_focus_generic_advanced_military_studies
+		x = -1
+		y = 2
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 5
+		prerequisite = { focus = AUS_reorganize_imperial_railroads }
+		prerequisite = { focus = AUS_austrian_coal_mining }
+		available = {
+		}
+		completion_reward = {
+			69 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			978 = {
+				limit = { owns_state = 978 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_ten_year_settlement
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 0
+		y = 3
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 5
+		prerequisite = { focus = AUS_workshops_of_bohemia }
+		prerequisite = { focus = AUS_czech_iron_works }
+		available = {
+		}
+		completion_reward = {
+			### grants custom settlement decisions
+			set_variable = { austrian_development = 0 }
+			set_variable = { hungarian_development = 0 }
+		}
+	}
+
+	focus = {
+		id = AUS_prepare_for_increasing_tensions
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 5
+		y = 1
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 10
+		prerequisite = { focus = AUS_rebuild_imperial_treasury }
+		available = {
+		}
+		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_keeping_up_with_prussian_militarization
+		icon = GFX_focus_generic_advanced_military_studies
+
+		x = 3
+		y = 1
+
+		relative_position_id = AUS_prepare_for_increasing_tensions
+
+		cost = 10
+
+		prerequisite = { focus = AUS_prepare_for_increasing_tensions }
+
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = AUS_economic_militarizaiton
+		}
+
+	}
+
+	focus = {
+		id = AUS_cavalry_research
+		icon = GFX_focus_generic_advanced_military_studies
+
+		x = 2
+		y = 2
+
+		relative_position_id = AUS_prepare_for_increasing_tensions
+
+		cost = 10
+
+		prerequisite = { focus = AUS_keeping_up_with_prussian_militarization }
+
+		available = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.25
+    			uses = 5
+    			category = cavalry
+			}
+		}
+
+	}
+
+	focus = {
+		id = AUS_cutting_corners
+		icon = GFX_focus_generic_advanced_military_studies
+
+		x = -1
+		y = 1
+
+		relative_position_id = AUS_prepare_for_increasing_tensions
+
+		cost = 3
+
+		prerequisite = { focus = AUS_prepare_for_increasing_tensions }
+
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = AUS_cutting_corners
+		}
+		
+	}
+
+	focus = {
+		id = AUS_austrian_coal_mining
+		icon = GFX_focus_generic_advanced_military_studies
+		x = -2
+		y = 1
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 10
+		prerequisite = { focus = AUS_rebuild_imperial_treasury }
+		available = {
+		}
+		completion_reward = {
+			4 = {
+				add_resource = {
+		            type = coal
+		            amount = 20
+	            }
+			}
+			152 = {
+				add_resource = {
+		            type = coal
+		            amount = 10
+	            }
+			}
+			153 = {
+				add_resource = {
+		            type = coal
+		            amount = 12
+	            }
+			}
 		}
 	}
 	

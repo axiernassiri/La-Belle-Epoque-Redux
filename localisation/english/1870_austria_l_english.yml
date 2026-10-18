@@ -273,6 +273,8 @@
  AUS_congress_of_berlin_tt: "This will ask the other relevant powers to divide the [TUR.GetNameDef]"
  AUS_balkan_protectorates_tt: "§YSerbia§! and §YBulgaria§! will each receive an ultimatum. Acceptance makes them Austrian subjects; refusal grants Austria a puppet war goal."
  add_1_AUS_hungarian_trust: "Increase Hungarian Trust by 1"
+ add_1_AUS_czech_trust: "Increase Czech Trust by 1"
+ add_1_AUS_illyrian_trust: "Increase Illyrian Trust by 1"
 #custom modifier tooltips
  
 #scripted gui text
@@ -318,3 +320,10 @@
  fpw_rejected_congress_of_berlin: "Rejected Congress of Berlin"
 #cosmetic nation/ideology names
  
+
+
+
+### some tooltips for the focus tree, btw I have added a couple of events and decisions so add loc to that when you can -Gata
+ AUS_populations_of_emp_illyria_tt: "This focus will allow you to gain §YTrust§! and increase §YAttitude§! with the §YIllyrians§!."
+ AUS_gain_czech_trust_tt: "This focus will allow you to gain §YTrust§! with the §YCzechs§!."
+ AUS_increase_czech_attitude: "This focus will allow you to increase §YAttitude§! with the §YCzechs§!."

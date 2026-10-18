@@ -26,10 +26,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_PRS_tripple_alliance.png"
 	}
 	spriteType = {
-		name = "GFX_focus_PRS_congo_confrence"
-		texturefile = "gfx/interface/goals/focus_PRS_congo_confrence.png"
-	}
-	spriteType = {
 		name = "GFX_focus_PRS_unified_germany"
 		texturefile = "gfx/interface/goals/focus_PRS_unified_germany.png"
 	}
@@ -376,4 +372,3 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/AFG/no_illiteracy.dds"
 	}
 }
-
