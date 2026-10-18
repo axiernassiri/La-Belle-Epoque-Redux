@@ -1,6 +1,6 @@
 characters={
 
-	AUS_franz_joseph_i={
+	AUS_franz_joseph_I={
 		name="Franz Joseph I"
 		portraits={
 			civilian={
@@ -50,22 +50,56 @@ characters={
 	AUS_archduke_albrecht = {
 		name="Archduke Albrecht"
 		portraits={
-			civilian={
-				large=""
+			army={
+				large="gfx/leaders/AUS/albrecht.dds"
 			}
 		}
-		corps_commander = {
-			skill = 1
+		field_marshal = {
+			skill = 3
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 		advisor={
 			slot = army_chief
 			cost = 150
 			idea_token = archduke_albrecht
 			traits = { fpw_habsburg_traditionalism }
+		}
+	}
+
+	AUS_anton_von_schonfeld = {
+		name="Anton von Schönfeld"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/anton_schon.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	AUS_wilhelm_of_austria = {
+		name="Wilhelm of Austria"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/wilhelm_of_austria.dds"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer charismatic }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 }
