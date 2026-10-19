@@ -423,7 +423,7 @@ country_event = {
 		name = fpw_austria.12.a
 		ai_chance = { factor = 60 }
 		AUS = {
-			create_faction = AUS_central_powers
+			create_faction = AUS_brothers_alliance_faction
 		}
 		add_to_faction = AUS
 	}
@@ -576,12 +576,24 @@ country_event = {
 		ai_chance = { factor = 401 }
 		army_experience = 50
 		add_political_power = -25
+		hidden_effect = {
+			country_event = {
+				id = fpw_austria.17
+				days = 365
+			}
+		}
 	}
 
 	option = {
 		name = fpw_austria.17.b
 		ai_chance = { factor = 400 }
 		## nothing
+		hidden_effect = {
+			country_event = {
+				id = fpw_austria.17
+				days = 365
+			}
+		}
 	}
 }
 

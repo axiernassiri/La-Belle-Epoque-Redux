@@ -55,7 +55,7 @@ guiTypes = {
 				name ="AUS_hungarian_attitude_status"
 				position = { x = @ATTITUDE_TEXT_X y = 10 }
 				font = "hoi_18mbs"
-				text = "[AUS_hungarian_attitude]"
+				text = "[AUS_get_hungarian_attitude]"
 				format = center
 				maxwidth = 110
 				pdx_tooltip = AUS_hungarian_attitude_tt
@@ -91,7 +91,7 @@ guiTypes = {
 				name ="AUS_czech_attitude_status"
 				position = { x = @ATTITUDE_TEXT_X y = 10 }
 				font = "hoi_18mbs"
-				text = "[AUS_czech_attitude]"
+				text = "[AUS_get_czech_attitude]"
 				format = center
 				maxwidth = 110
 				pdx_tooltip = AUS_czech_attitude_tt
@@ -127,7 +127,7 @@ guiTypes = {
 				name ="AUS_galician_attitude_status"
 				position = { x = @ATTITUDE_TEXT_X y = 10 }
 				font = "hoi_18mbs"
-				text = "[AUS_galician_attitude]"
+				text = "[AUS_get_galician_attitude]"
 				format = center
 				maxwidth = 110 
 				pdx_tooltip = AUS_galician_attitude_tt
@@ -163,7 +163,7 @@ guiTypes = {
 				name ="AUS_illyrian_attitude_status"
 				position = { x = @ATTITUDE_TEXT_X y = 10 }
 				font = "hoi_18mbs"
-				text = "[AUS_illyrian_attitude]"
+				text = "[AUS_get_illyrian_attitude]"
 				format = center
 				maxwidth = 110
 				pdx_tooltip = AUS_illyrian_attitude_tt

@@ -1,218 +1,218 @@
 defined_text = {
-    name = AUS_hungarian_attitude
+    name = AUS_get_hungarian_attitude
     text = {
         trigger = {
-			has_idea = AUS_hungary_loyal
+			AUS = { has_idea = AUS_hungary_loyal }
         }
         localization_key = AUS_attitude_loyal
     }
     text = {
         trigger = {
-			has_idea = AUS_hungary_friendly
+			AUS = { has_idea = AUS_hungary_friendly }
         }
         localization_key = AUS_attitude_friendly
     }
     text = {
         trigger = {
-			has_idea = AUS_hungary_neutral
+			AUS = { has_idea = AUS_hungary_neutral }
         }
         localization_key = AUS_attitude_neutral
     }
     text = {
         trigger = {
-			has_idea = AUS_hungary_hostile
+			AUS = { has_idea = AUS_hungary_hostile }
         }
         localization_key = AUS_attitude_hostile
     }
 }
 defined_text = {
-    name = AUS_hungarian_attitude_tt
+    name = AUS_get_hungarian_attitude_tt
     text = {
         trigger = {
-			has_idea = AUS_hungary_loyal
+			AUS = { has_idea = AUS_hungary_loyal }
         }
         localization_key = AUS_hungary_attitude_loyal_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_hungary_friendly
+			AUS = { has_idea = AUS_hungary_friendly }
         }
         localization_key = AUS_hungary_attitude_friendly_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_hungary_neutral
+			AUS = { has_idea = AUS_hungary_neutral }
         }
         localization_key = AUS_hungary_attitude_neutral_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_hungary_hostile
+			AUS = { has_idea = AUS_hungary_hostile }
         }
         localization_key = AUS_hungary_attitude_hostile_tt
     }
 }
 
 defined_text = {
-    name = AUS_czech_attitude
+    name = AUS_get_czech_attitude
     text = {
         trigger = {
-			has_idea = AUS_czech_loyal
+			AUS = { has_idea = AUS_czech_loyal }
         }
         localization_key = AUS_attitude_loyal
     }
     text = {
         trigger = {
-			has_idea = AUS_czech_friendly
+			AUS = { has_idea = AUS_czech_friendly }
         }
         localization_key = AUS_attitude_friendly
     }
     text = {
         trigger = {
-			has_idea = AUS_czech_neutral
+			AUS = { has_idea = AUS_czech_neutral }
         }
         localization_key = AUS_attitude_neutral
     }
     text = {
         trigger = {
-			has_idea = AUS_czech_hostile
+			AUS = { has_idea = AUS_czech_hostile }
         }
         localization_key = AUS_attitude_hostile
     }
 }
 defined_text = {
-    name = AUS_czech_attitude_tt
+    name = AUS_get_czech_attitude_tt
     text = {
         trigger = {
-			has_idea = AUS_czech_loyal
+			AUS = { has_idea = AUS_czech_loyal }
         }
         localization_key = AUS_czech_attitude_loyal_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_czech_friendly
+			AUS = { has_idea = AUS_czech_friendly }
         }
         localization_key = AUS_czech_attitude_friendly_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_czech_neutral
+			AUS = { has_idea = AUS_czech_neutral }
         }
         localization_key = AUS_czech_attitude_neutral_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_czech_hostile
+			AUS = { has_idea = AUS_czech_hostile }
         }
         localization_key = AUS_czech_attitude_hostile_tt
     }
 }
 
 defined_text = {
-    name = AUS_galician_attitude
+    name = AUS_get_galician_attitude
     text = {
         trigger = {
-			has_idea = AUS_galicia_loyal
+			AUS = { has_idea = AUS_galicia_loyal }
         }
         localization_key = AUS_attitude_loyal
     }
     text = {
         trigger = {
-			has_idea = AUS_galicia_friendly
+			AUS = { has_idea = AUS_galicia_friendly }
         }
         localization_key = AUS_attitude_friendly
     }
     text = {
         trigger = {
-			has_idea = AUS_galicia_neutral
+			AUS = { has_idea = AUS_galicia_neutral }
         }
         localization_key = AUS_attitude_neutral
     }
     text = {
         trigger = {
-			has_idea = AUS_galicia_hostile
+			AUS = { has_idea = AUS_galicia_hostile }
         }
         localization_key = AUS_attitude_hostile
     }
 }
 defined_text = {
-    name = AUS_galician_attitude_tt
+    name = AUS_get_galician_attitude_tt
     text = {
         trigger = {
-			has_idea = AUS_galicia_loyal
+			AUS = { has_idea = AUS_galicia_loyal }
         }
         localization_key = AUS_galicia_attitude_loyal_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_galicia_friendly
+			AUS = { has_idea = AUS_galicia_friendly }
         }
         localization_key = AUS_galicia_attitude_friendly_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_galicia_neutral
+			AUS = { has_idea = AUS_galicia_neutral }
         }
         localization_key = AUS_galicia_attitude_neutral_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_galicia_hostile
+			AUS = { has_idea = AUS_galicia_hostile }
         }
         localization_key = AUS_galicia_attitude_hostile_tt
     }
 }
 
 defined_text = {
-    name = AUS_illyrian_attitude
+    name = AUS_get_illyrian_attitude
     text = {
         trigger = {
-			has_idea = AUS_illyria_loyal
+			AUS = { has_idea = AUS_illyria_loyal }
         }
         localization_key = AUS_attitude_loyal
     }
     text = {
         trigger = {
-			has_idea = AUS_illyria_friendly
+			AUS = { has_idea = AUS_illyria_friendly }
         }
         localization_key = AUS_attitude_friendly
     }
     text = {
         trigger = {
-			has_idea = AUS_illyria_neutral
+			AUS = { has_idea = AUS_illyria_neutral }
         }
         localization_key = AUS_attitude_neutral
     }
     text = {
         trigger = {
-			has_idea = AUS_illyria_hostile
+			AUS = { has_idea = AUS_illyria_hostile }
         }
         localization_key = AUS_attitude_hostile
     }
 }
 defined_text = {
-    name = AUS_illyrian_attitude_tt
+    name = AUS_get_illyrian_attitude_tt
     text = {
         trigger = {
-			has_idea = AUS_illyria_loyal
+			AUS = { has_idea = AUS_illyria_loyal }
         }
         localization_key = AUS_illyria_attitude_loyal_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_illyria_friendly
+			AUS = { has_idea = AUS_illyria_friendly }
         }
         localization_key = AUS_illyria_attitude_friendly_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_illyria_neutral
+			AUS = { has_idea = AUS_illyria_neutral }
         }
         localization_key = AUS_illyria_attitude_neutral_tt
     }
     text = {
         trigger = {
-			has_idea = AUS_illyria_hostile
+			AUS = { has_idea = AUS_illyria_hostile }
         }
         localization_key = AUS_illyria_attitude_hostile_tt
     }

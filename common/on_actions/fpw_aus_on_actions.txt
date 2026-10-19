@@ -39,11 +39,15 @@ on_actions = {
 			if = {
 				limit = {
 					has_completed_focus = AUS_imperial_awards
+					NOT = {
+						has_country_flag = aus_imperial_award_flag
+					}
 				}
 				country_event = {
 					id = fpw_austria.17
 					days = 365
 				}
+				set_country_flag = aus_imperial_award_flag
 			}
 		}
 	}

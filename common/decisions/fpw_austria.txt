@@ -209,6 +209,77 @@ AUS_populations_of_the_empire = {
 		}
 		
 	}
+
+	AUS_gain_galician_trust = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_completed_focus = AUS_develop_galicia
+		}
+		available = {
+			#check_variable = {
+			#	AUS_hungarian_trust > 0
+			#}
+		} 
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 30
+		days_remove = 30
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			#AUS_increse_czech_attitude_effect = yes
+		} 
+		remove_effect = {
+			add_to_variable = {
+				var = AUS_galician_trust
+				value = 1
+				tooltip = add_1_AUS_galician_trust
+			}
+		}
+	}
+
+	AUS_improve_galician_relations = { 
+		icon = GFX_decision_hol_exchange_intelligence_data
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = {
+			check_variable = {
+				AUS_galician_trust > 0
+			}
+			has_completed_focus = AUS_the_balkan_theatre
+		}
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = AUS_need_5_trust
+				check_variable = {
+					AUS_galician_trust > 4
+				}
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		days_remove = 50
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			
+		} 
+		remove_effect = {
+			AUS_increase_galician_attitude_effect = yes
+			add_to_variable = {
+				var = AUS_galician_trust
+				value = -5
+				#tooltip = add_1_AUS_hungarian_trust
+			}
+		}
+		
+	}
 	
 }
 
@@ -271,11 +342,10 @@ AUS_ten_year_settlement_dec = {
 					level = 1
 					instant_build = yes
 				}
-				add_to_variable = {
-					var = austrian_development
-					value = 1 
-				}
-
+			}
+			add_to_variable = {
+				var = austrian_development
+				value = 1 
 			}
 		}
 	} 
@@ -309,7 +379,7 @@ AUS_ten_year_settlement_dec = {
 			#AUS_increse_hungarian_attitude_effect = yes
 		} 
 		remove_effect = {
-			random_core_state = {
+			any_state = {
 				limit = {
 					is_core_of = HUN
 				}
@@ -324,10 +394,11 @@ AUS_ten_year_settlement_dec = {
 					level = 1
 					instant_build = yes
 				}
-				add_to_variable = {
-					var = hungarian_development
-					value = 1 
-				}
+				
+			}
+			add_to_variable = {
+				var = hungarian_development
+				value = 1 
 			}
 		}
 	} 

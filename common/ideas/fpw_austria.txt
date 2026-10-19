@@ -79,8 +79,10 @@ ideas = {
             }
 		}
 		fpw_austria_reigns_supreme = {
-			army_core_attack_factor = 0.05
-			army_core_defence_factor = 0.05
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
 		}
 		fpw_aus_new_arty = {
 			modifier = {
@@ -166,9 +168,15 @@ ideas = {
 				}
 			}
 		}
-		
+
+		AUS_improved_production_methods_id = {
+			picture = AUS_empire_restored
+			modifier = {
+				industrial_capacity_factory = 0.20
+            }
+		}
 	}
-	
+
 	hidden_ideas = {
 		
 		AUS_hungary_loyal = {
@@ -304,8 +312,5 @@ ideas = {
             }
 		}
 
-		
-		
-		
 	}
 }

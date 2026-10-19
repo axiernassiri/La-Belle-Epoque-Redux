@@ -549,7 +549,7 @@
 		y = 2
 		relative_position_id = AUS_reform_the_army
 		prerequisite = { focus = AUS_reform_the_army }
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -581,7 +581,7 @@
 		y = 1
 		relative_position_id = AUS_prepare_for_whats_coming
 		prerequisite = { focus = AUS_prepare_for_whats_coming }
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -611,7 +611,7 @@
 		y = 1
 		relative_position_id = AUS_trouble_in_hungary
 		prerequisite = { focus = AUS_trouble_in_hungary focus = AUS_slavic_revolts }
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -673,7 +673,7 @@
 		y = 1
 		relative_position_id = AUS_the_ausgleich
 		prerequisite = { focus = AUS_the_ausgleich }
-		cost = 10
+		cost = 5
 		available = {
 			
 		}
@@ -725,7 +725,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 5
+		cost = 3
 		available = {
 			
 		}
@@ -742,7 +742,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 5
+		cost = 3
 		available = {
 			has_political_power > 50
 		}
@@ -760,7 +760,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 5
+		cost = 3
 		available = {
 			has_political_power > 50
 		}
@@ -830,7 +830,11 @@
 		available = {
 		}
 		completion_reward = {
-			# gives event to China demanding tianjin
+			add_tech_bonus = {
+				bonus = 0.20
+				uses = 3
+				category = colonial
+			}
 		}
 	}
 
@@ -863,7 +867,7 @@
 
 	focus = {
 		id = AUS_diplomatic_victory
-		#icon = GFX_focus_YUG_safeguard_bosnia
+		icon = GFX_focus_generic_treaty
 		x = -1
 		y = 1
 		relative_position_id = AUS_congress_of_berlin
@@ -881,7 +885,7 @@
 
 	focus = {
 		id = AUS_war_against_the_ottomans
-		#icon = GFX_focus_YUG_safeguard_bosnia
+		icon = GFX_focus_generic_attack_turkey
 		x = 1
 		y = 1
 		relative_position_id = AUS_congress_of_berlin
@@ -927,8 +931,8 @@
 	focus = {
 		id = AUS_danube_adriatic_railway
 		#icon = 
-		x = 1
-		y = 1
+		x = -2
+		y = 2
 		relative_position_id = AUS_bosnian_administration
 		prerequisite = { focus = AUS_bosnian_administration }
 		cost = 5
@@ -961,7 +965,7 @@
 	focus = {
 		id = AUS_south_slav_compromise
 		icon = GFX_focus_generic_diverse_army
-		x = -2
+		x = 1
 		y = 1
 		relative_position_id = AUS_bosnian_administration
 		prerequisite = { focus = AUS_bosnian_administration }
@@ -976,9 +980,9 @@
 
 	focus = {
 		id = AUS_danubian_settlement
-		#icon = GFX_focus_generic_balkan_diplomacy
-		x = 0
-		y = 2
+		icon = GFX_focus_AUS_the_danubian_federation
+		x = 1
+		y = 3
 		relative_position_id = AUS_bosnian_administration
 		prerequisite = { focus = AUS_danube_adriatic_railway }
 		prerequisite = { focus = AUS_south_slav_compromise }
@@ -1143,6 +1147,59 @@
 	}
 
 	focus = {
+		id = AUS_illyrian_integration
+		icon = GFX
+		x = -1
+		y = 1
+		relative_position_id = AUS_balkan_protectorates
+		prerequisite = { focus = AUS_balkan_protectorates focus = AUS_balkan_annexation focus = AUS_danubian_settlement}
+		cost = 5
+		available = {
+			
+		}
+		bypass = {
+		}
+		completion_reward = {
+			102 = {
+				add_core_of = AUS
+			}
+			736 = {
+				add_core_of = AUS
+			}
+			852 = {
+				add_core_of = AUS
+			}
+			853 = {
+				add_core_of = AUS
+			}
+			102 = {
+				add_core_of = AUS
+			}
+			109 = {
+				add_core_of = AUS
+			}
+			982 = {
+				add_core_of = AUS
+			}
+			103 = {
+				add_core_of = AUS
+			}
+			163 = {
+				add_core_of = AUS
+			}
+			104 = {
+				add_core_of = AUS
+			}
+			804 = {
+				add_core_of = AUS
+			}
+		}
+	}
+
+
+
+	### European Theatre
+	focus = {
 		id = AUS_the_european_theatre
 		icon = GFX_focus_generic_the_council_of_europe
 		x = 6
@@ -1238,7 +1295,7 @@
 
 	focus = {
 		id = AUS_avenge_the_bruderkrieg
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_attack_germany
 		x = 0
 		y = 1
 		relative_position_id = AUS_defeated_powers
@@ -1783,7 +1840,7 @@
 
 	focus = {
 		id = AUS_the_fundamental_articles
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 0
 		y = 1
 		relative_position_id = AUS_the_czech_question
@@ -1799,7 +1856,7 @@
 
 	focus = {
 		id = AUS_bohemian_industrialization
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_focus_CZE_bohemia_plan
 		x = -1
 		y = 1
 		relative_position_id = AUS_the_fundamental_articles
@@ -1884,11 +1941,10 @@
 	focus = {
 		id = AUS_develop_galicia
 		#icon = GFX_focus_generic_the_council_of_europe
-		x = -1
-		y = 1
+		x = 3
+		y = -2
 		relative_position_id = AUS_moravian_arms_factories
-		prerequisite = { focus = AUS_moravian_arms_factories }
-		prerequisite = { focus = AUS_bohemian_industrialization }
+		prerequisite = { focus = AUS_the_european_theatre }
 		cost = 10
 		available = {
 			owns_state = 88
@@ -1955,18 +2011,20 @@
 
 	focus = {
 		id = AUS_saviours_of_poland
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_focus_generic_polish_deal
 		x = 0
 		y = 1
 		relative_position_id = AUS_develop_galicia
 		prerequisite = { focus = AUS_develop_galicia }
 		cost = 10
 		available = {
-			owns_state = 88
-			owns_state = 91
-			owns_state = 89
+			custom_trigger_tooltip = {
+				tooltip = AUS_galicia_loyal
+				has_idea = AUS_galicia_loyal
+			}
 		}
 		completion_reward = {
+			AUS_increse_galician_attitude_effect = yes
 			create_wargoal = {
 				target = SOV 
 				type = annex_everything
@@ -2157,7 +2215,7 @@
 	focus = {
 		id = AUS_wanzel_and_holeb_rifle
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = AUS_study_german_doctrine
 		prerequisite = { focus =  AUS_study_german_doctrine }
@@ -2224,7 +2282,7 @@
 	focus = {
 		id = AUS_lessons_from_italian_front
 		icon = GFX_focus_generic_mountain_training
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = AUS_apline_warefare
 		prerequisite = { focus =  AUS_apline_warefare }
@@ -2248,7 +2306,7 @@
 	focus = {
 		id = AUS_unified_military
 		#icon = GFX_focus_generic_advanced_military_studies
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = AUS_lessons_from_italian_front
 		prerequisite = { focus =  AUS_lessons_from_italian_front }
@@ -2265,7 +2323,7 @@
 	focus = {
 		id = AUS_imperial_awards
 		#icon = GFX_focus_generic_advanced_military_studies
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = AUS_lessons_from_italian_front
 		prerequisite = { focus =  AUS_lessons_from_italian_front }
@@ -2371,7 +2429,7 @@
 	focus = {
 		id = AUS_rebuild_imperial_treasury
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 10
+		x = 11
 		y = 0
 		relative_position_id = AUS_army_reforms_begin
 		cost = 5
@@ -2393,7 +2451,7 @@
 		x = 2
 		y = 1
 		relative_position_id = AUS_rebuild_imperial_treasury
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUS_rebuild_imperial_treasury }
 		available = {
 			has_completed_focus = AUS_rebuild_imperial_treasury
@@ -2402,7 +2460,7 @@
 			4 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = military_complex
+					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -2440,7 +2498,7 @@
 		x = 1
 		y = 2
 		relative_position_id = AUS_rebuild_imperial_treasury
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUS_reorganize_imperial_railroads }
 		available = {
 		}
@@ -2507,8 +2565,86 @@
 	}
 
 	focus = {
+		id = AUS_encourage_private_entreprise
+		icon = GFX
+		x = -3
+		y = 2
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 5
+		prerequisite = { focus = AUS_austrian_coal_mining }
+		available = {
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_stabilize_the_economy
+		icon = GFX
+		x = -5
+		y = 3
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 10
+		prerequisite = { focus = AUS_encourage_private_entreprise }
+		available = {
+			has_idea = AUS_stock_market_crash
+		}
+		completion_reward = {
+			add_stability = 0.25
+			add_war_support = 0.15
+			
+		}
+	}
+
+	focus = {
+		id = AUS_salzburg_tungsten_mine
+		icon = GFX
+		x = -3
+		y = 3
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 5
+		prerequisite = { focus = AUS_encourage_private_entreprise }
+		available = {
+			owns_state = 152
+		}
+		completion_reward = {
+			152 = {
+				add_resource = {
+					type = tungsten
+					value = 24
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = AUS_ten_year_settlement
-		icon = GFX_focus_generic_advanced_military_studies
+		icon = GFX_focus_HUN_the_lands_of_the_crown_of_saint_stephen
 		x = 0
 		y = 3
 		relative_position_id = AUS_rebuild_imperial_treasury
@@ -2525,8 +2661,26 @@
 	}
 
 	focus = {
+		id = AUS_austrian_univeristies
+		icon = GFX_focus_HUN_the_lands_of_the_crown_of_saint_stephen
+		x = -2
+		y = 4
+		relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 5
+		prerequisite = { focus = AUS_salzburg_tungsten_mine focus = AUS_stabilize_the_economy }
+		prerequisite = { focus = AUS_ten_year_settlement }
+		available = {
+		}
+		completion_reward = {
+			### grants custom settlement decisions
+			set_variable = { austrian_development = 0 }
+			set_variable = { hungarian_development = 0 }
+		}
+	}
+
+	focus = {
 		id = AUS_prepare_for_increasing_tensions
-		icon = GFX_focus_generic_advanced_military_studies
+		icon = GFX_focus_generic_military_industry
 		x = 5
 		y = 1
 		relative_position_id = AUS_rebuild_imperial_treasury
@@ -2578,7 +2732,7 @@
 
 	focus = {
 		id = AUS_cavalry_research
-		icon = GFX_focus_generic_advanced_military_studies
+		icon = GFX_goal_generic_cavalry
 
 		x = 2
 		y = 2
@@ -2603,8 +2757,30 @@
 	}
 
 	focus = {
+		id = AUS_improved_production_methods
+		icon = GFX_goal_generic_production
+
+		x = 4
+		y = 2
+
+		relative_position_id = AUS_prepare_for_increasing_tensions
+
+		cost = 10
+
+		prerequisite = { focus = AUS_keeping_up_with_prussian_militarization }
+
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = AUS_improved_production_methods_id
+		}
+
+	}
+
+	focus = {
 		id = AUS_cutting_corners
-		icon = GFX_focus_generic_advanced_military_studies
+		icon = GFX_focus_FIN_weapon_caches
 
 		x = -1
 		y = 1
@@ -2630,7 +2806,7 @@
 		x = -2
 		y = 1
 		relative_position_id = AUS_rebuild_imperial_treasury
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUS_rebuild_imperial_treasury }
 		available = {
 		}
