@@ -6,6 +6,9 @@ characters={
 			civilian = {
 				large="gfx/leaders/FRA/fra_napoleon_iii.png"
 			}
+			army = {
+				large="gfx/leaders/FRA/fra_napoleon_iii_army.png"
+			}
 		}
 		country_leader = {
 			ideology=liberal_constitutional_monarchism
@@ -13,5 +16,1043 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+
+		field_marshal = {
+   			traits = {  }
+    		skill = 1
+    		attack_skill = 2
+   			defense_skill = 1
+    		planning_skill = 1
+    		logistics_skill = 2
+			visible = {
+				has_country_flag = fra_napoleon_iii_commander_yes
+			}
+		}
+	}
+	FRA_henri_tolain = {
+		name="Henri Tolain"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		country_leader = {
+			ideology=communism_subideology
+			traits = {  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	FRA_leon_gambetta = {
+		name="Léon Gambetta"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		country_leader = {
+			ideology=conservatism
+			traits = {  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	FRA_adolphe_thiers = {
+		name="Adolphe Thiers"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		country_leader = {
+			ideology=bonapartism
+			traits = {  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+
+
+
+
+
+##########################################################
+##########################################################
+##########################################################
+
+
+
+
+
+
+	FRA_francois_certain_de_canrobert = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="François Certain de Canrobert"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_francois_certain_de_canrobert.png"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { grand_battle_plan_expert }      # Unspecified cost defaults to 150.
+		}
+		field_marshal = {
+   			traits = { infantry_officer infantry_leader old_guard war_hero }
+    		skill = 3
+    		attack_skill = 2
+   			defense_skill = 3
+    		planning_skill = 3
+    		logistics_skill = 3
+		}
+
+	}
+	FRA_adolphe_niel = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Adolphe Niel"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_niel.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = fra_niel_token
+			ledger = army
+			traits = { army_chief_drill_2 }
+			available = {
+				has_country_flag = niel_is_war_minister
+			}      # Unspecified cost defaults to 150.
+		}
+		field_marshal = {
+   			traits = { infantry_officer infantry_leader old_guard war_hero }
+    		skill = 4
+    		attack_skill = 4
+   			defense_skill = 3
+    		planning_skill = 3
+    		logistics_skill = 3
+		}
+
+	}
+	FRA_francois_achille_bazaine = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="François Achille Bazaine"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_achille_bazaine.png"
+			}
+		}
+		field_marshal = {
+   			traits = { infantry_officer infantry_leader old_guard }
+    		skill = 2
+    		attack_skill = 1
+   			defense_skill = 3
+    		planning_skill = 1
+    		logistics_skill = 2
+		}
+
+	}
+	FRA_patrice_de_macmahon = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Patrice de MacMahon"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_macmahon.png"
+			}
+		}
+		field_marshal = {
+   			traits = { infantry_officer infantry_leader aggressive_assaulter war_hero }
+    		skill = 3
+    		attack_skill = 3
+   			defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+		}
+
+	}
+	FRA_achille_baraguey_d_hilliers = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Achille Baraguey d'Hilliers"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_hilliers.png"
+			}
+		}
+		field_marshal = {
+   			traits = { old_guard harsh_leader }
+    		skill = 2
+    		attack_skill = 2
+   			defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+		}
+
+	}
+	FRA_auguste_regnaud_de_saint_jean_d_angely = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Auguste Regnaud de Saint-Jean d'Angély"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_de_angely.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_cavalry_2 }      # Unspecified cost defaults to 150.
+		}
+		field_marshal = {
+   			traits = { cavalry_officer cavalry_leader old_guard }
+    		skill = 3
+    		attack_skill = 3
+   			defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+		}
+
+	}
+	FRA_elie_frederic_forey = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Élie Frédéric Forey"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_forey.png"
+			}
+		}
+		field_marshal = {
+   			traits = { old_guard inflexible_strategist }
+    		skill = 2
+    		attack_skill = 2
+   			defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 2
+		}
+
+	}
+
+
+##########################################################
+##########################################################
+##########################################################
+
+	FRA_joseph_vantini = {
+		name="Joseph Vantini"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_vantini.png"
+			}
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 3
+    		defense_skill = 1
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				cavalry_officer cavalry_leader irregulars_officer irregular_infantry trickster
+			}
+		}
+
+	}
+	FRA_pierre_hippolyte_publius_renault = {
+		name="Pierre Hippolyte Publius Renault"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_renault.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 1
+			traits = {
+				infantry_officer infantry_leader
+			}
+		}
+
+	}
+	FRA_emmanuel_felix_de_wimpffen = {
+		name="Emmanuel Félix de Wimpffen"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_wimpffen.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader inflexible_strategist
+			}
+		}
+
+	}
+	FRA_charles_de_lorencez = {
+		name="Charles de Lorencez"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_lorencez.png"
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 1
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 1
+			traits = {
+				trait_reckless
+			}
+		}
+
+	}
+	FRA_charles_denis_bourbaki = {
+		name="Charles Denis Bourbaki"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_bourbaki.png"
+			}
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 3
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 1
+			traits = {
+				infantry_officer infantry_leader cavalry_officer cavalry_leader aggressive_assaulter
+			}
+		}
+
+	}
+	FRA_claude_theodore_decaen = {
+		name="Claude Théodore Decaen"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_decaen.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader
+			}
+		}
+
+	}
+	FRA_charles_auguste_frossard = {
+		name="Charles Auguste Frossard"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_frossard.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_artillery_1 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 1
+    		defense_skill = 4
+    		planning_skill = 3
+    		logistics_skill = 2
+			traits = {
+				engineer_officer fortress_buster
+			}
+		}
+
+	}
+	FRA_edmond_le_baeuf = {
+		name="Edmond Le Bœuf"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_le_baef.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 1
+			traits = {
+				bearer_of_artillery
+				organizer
+			}
+		}
+
+	}
+	FRA_paul_de_ladmirault = {
+		name="Paul de Ladmirault"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_de_ladmirault.png"
+			}
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 2
+    		logistics_skill = 3
+			traits = {
+				infantry_officer infantry_leader defensive_doctrine
+			}
+		}
+
+	}
+	FRA_pierre_louis_charles_de_failly = {
+		name="Pierre Louis Charles de Failly"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_de_failly.png"
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 1
+    		defense_skill = 1
+    		planning_skill = 1
+    		logistics_skill = 2
+			traits = {
+				trait_cautious 
+			}
+		}
+
+	}
+	FRA_felix_douay = {
+		name="Félix Douay"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_douay.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader
+			}
+		}
+
+	}
+	FRA_jean_joseph_farre = {
+		name="Jean-Joseph Farre"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_farre.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_entrenchment_2 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 1
+    		defense_skill = 3
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				engineer_officer organizer
+			}
+		}
+
+	}
+	FRA_louis_faidherbe = {
+		name="Louis Faidherbe"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_faidherbe.png"
+			}
+		}
+		corps_commander = {
+    		skill = 4
+    		attack_skill = 3
+    		defense_skill = 4
+    		planning_skill = 3
+    		logistics_skill = 3
+			traits = {
+				infantry_officer infantry_leader winter_specialist adaptable militias_officer
+			}
+		}
+
+	}
+	FRA_auguste_alexandre_ducrot = {
+		name="Auguste Alexandre Ducrot"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_ducrot.png"
+			}
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 3
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader aggressive_assaulter
+			}
+		}
+
+	}
+	FRA_justin_clinchant = {
+		name="Justin Clinchant"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_clinchant.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader
+			}
+		}
+
+	}
+	FRA_louis_jules_trochu = {
+		name="Louis Jules Trochu"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_trochu.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = fra_trochu_token
+			ledger = army
+			traits = { army_chief_defensive_1 }      # Unspecified cost defaults to 150.
+		}
+
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 1
+    		defense_skill = 3
+    		planning_skill = 3
+    		logistics_skill = 2
+			traits = {
+				unyielding_defender
+			}
+		}
+
+	}
+	FRA_louis_d_aurelle_de_paladines = {
+		name="Louis d'Aurelle de Paladines"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_paladines.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_regrouping_1 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 2
+    		logistics_skill = 3
+			traits = {
+				infantry_officer infantry_leader harsh_leader
+			}
+		}
+
+	}
+	FRA_alfred_chanzy = {
+		name="Alfred Chanzy"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_chanzy.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_infantry_2 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 4
+    		attack_skill = 3
+    		defense_skill = 4
+    		planning_skill = 3
+    		logistics_skill = 3
+			traits = {
+				infantry_officer infantry_leader unyielding_defender engineer_officer
+			}
+		}
+
+	}
+	FRA_joseph_vinoy = {
+		name="Joseph Vinoy"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_vinoy.png"
+			}
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 2
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader urban_assault_specialist
+			}
+		}
+
+	}
+	FRA_emile_de_keraty = {
+		name="Émile de Kératry"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_keratry.png"
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 1
+    		planning_skill = 1
+    		logistics_skill = 1
+			traits = {
+				militias_officer politically_connected
+			}
+		}
+
+	}
+	FRA_abel_douay = {
+		name="Abel Douay"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_abel_douay.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader
+			}
+		}
+
+	}
+
+	
+
+
+
+
+##########################################################
+##########################################################
+##########################################################
+
+
+
+
+
+
+	FRA_charles_rigault_de_genouilly = {
+		name="Charles Rigault de Genouilly"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_genouilly.png"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = fra_genouilly_token
+			ledger = navy
+			traits = { navy_chief_decisive_battle_2 }      # Unspecified cost defaults to 150.
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			
+			traits = {
+				superior_tactician naval_invader
+				
+			}
+		}
+	}
+	FRA_theogene_francois_page = {
+		name="Théogène François Page"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_francois_page.png"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = fra_page_token
+			ledger = navy
+			traits = { navy_chief_commerce_raiding_2 }      # Unspecified cost defaults to 150.
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			
+			traits = {
+				blockade_runner
+				
+			}
+		}
+	}
+	FRA_leonard_victor_charner = {
+		name="Léonard Victor Charner"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_charner.png"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			
+			traits = {
+				
+			}
+		}
+	}
+	FRA_louis_adolphe_bonard = {
+		name="Louis Adolphe Bonard"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_adolphe_bonard.png"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			
+			traits = {
+				naval_invader blue_water_expert
+			}
+		}
+	}
+	FRA_pierre_gustave_roze = {
+		name="Pierre-Gustave Roze"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_roze.png"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = fra_chanzy_token
+			ledger = navy
+			traits = { naval_theorist }      # Unspecified cost defaults to 150.
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+			
+			traits = {
+				blockade_runner
+			}
+		}
+	}
+	FRA_henri_delacoux_de_marivault_emeriau = {
+		name="Henri Delacoux de Marivault-Emeriau"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_de_marivault_emeriau.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			
+			traits = {
+				fleet_protector
+				
+			}
+		}
+	}
+
+
+##########################################################
+##########################################################
+##########################################################
+
+	# COMMUNARDS
+
+##########################################################
+##########################################################
+##########################################################
+	
+	FRA_louis_charles_delescluze = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Louis Charles Delescluze"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_delescluze.png"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { mass_assault_expert }      # Unspecified cost defaults to 150.
+		}
+		field_marshal = {
+   			traits = { politically_connected militias_officer inflexible_strategist }
+    		skill = 1
+    		attack_skill = 1
+   			defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 1
+		}
+
+	}
+	FRA_louis_rossel = { # voy a guardarlo pa despues debido a que participo en una tratado con japon pa ayuda economica
+		name="Louis Rossel"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_rossel.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = fra_rossel_token
+			ledger = army
+			traits = { army_chief_drill_2 }      # Unspecified cost defaults to 150.
+		}
+		field_marshal = {
+   			traits = { engineer_officer militias_officer organizer }
+    		skill = 3
+    		attack_skill = 2
+   			defense_skill = 3
+    		planning_skill = 3
+    		logistics_skill = 2
+		}
+
+	}
+
+
+##########################################################
+##########################################################
+##########################################################
+
+	FRA_jaroslaw_dabroswki = {
+		name="Jarosław Dąbrowski"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_dabrowski.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_infantry_2 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 4
+    		attack_skill = 4
+    		defense_skill = 4
+    		planning_skill = 3
+    		logistics_skill = 2
+			traits = {
+				infantry_officer infantry_leader urban_assault_specialist aggressive_assaulter adaptable militias_officer
+			}
+		}
+
+	}
+	FRA_walery_wroblewski = {
+		name="Walery Wroblewski"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_wroblewski.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_cavalry_2 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 4
+    		attack_skill = 3
+    		defense_skill = 4
+    		planning_skill = 3
+    		logistics_skill = 3
+			traits = {
+				cavalry_officer cavalry_leader urban_assault_specialist unyielding_defender militias_officer
+			}
+		}
+
+	}
+	FRA_napoleon_la_cecilia = {
+		name="Napoléon La Cécilia"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_nap_de_la_cecilia.png"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { grand_battle_plan_expert }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 3
+    		logistics_skill = 2
+			traits = {
+				militias_officer infantry_officer infantry_leader 
+			}
+		}
+
+	}
+	FRA_paul_antoine_brunel = {
+		name="Paul Antoine Brunel"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_brunel.png"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 3
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 1
+			traits = {
+				militias_officer aggressive_assaulter urban_assault_specialist
+			}
+		}
+
+	}
+	FRA_emile_gois = {
+		name="Émile Gois"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_gois.png"
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 1
+    		planning_skill = 1
+    		logistics_skill = 1
+			traits = {
+				militias_officer harsh_leader politically_connected
+			}
+		}
+
+	}
+	FRA_gaston_cremieux = {
+		name="Gaston Crémieux"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_cremieux.png"
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 1
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 1
+			traits = {
+				politically_connected militias_officer 
+			}
+		}
+
+	}
+	FRA_emile_digeon = {
+		name="Émile Digeon"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_digeon.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = fra_chanzy_token
+			ledger = army
+			traits = { army_entrenchment_3 }      # Unspecified cost defaults to 150.
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 1
+			traits = {
+				militias_officer irregulars_officer irregular_infantry unyielding_defender
+			}
+		}
+
+	}
+	FRA_jean_baptiste_dumay = {
+		name="Jean-Baptiste Dumay"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_dumay.png"
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 1
+    		defense_skill = 2
+    		planning_skill = 1
+    		logistics_skill = 2
+			traits = {
+				politically_connected militias_officer organizer
+			}
+		}
+
 	}
 }

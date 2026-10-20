@@ -120,10 +120,49 @@ add_ideas = {
 	FRA_cobden_chevalier_treaty
 }
 
-# 1870
-
 recruit_character = FRA_napoleon_iii
-#recruit_character = FRA_henri_martin_georges_coligny #COMMENTED OUT BECAUSE: history/countries/FRA - France.txt:126: recruit_character: Unknown character 
+recruit_character = FRA_henri_tolain
+recruit_character = FRA_leon_gambetta
+recruit_character = FRA_adolphe_thiers
+
+recruit_character = FRA_francois_certain_de_canrobert
+recruit_character = FRA_francois_achille_bazaine
+recruit_character = FRA_adolphe_niel
+recruit_character = FRA_patrice_de_macmahon
+recruit_character = FRA_achille_baraguey_d_hilliers
+recruit_character = FRA_auguste_regnaud_de_saint_jean_d_angely
+recruit_character = FRA_elie_frederic_forey
+recruit_character = FRA_joseph_vantini
+recruit_character = FRA_pierre_hippolyte_publius_renault
+recruit_character = FRA_emmanuel_felix_de_wimpffen
+recruit_character = FRA_charles_de_lorencez
+recruit_character = FRA_charles_denis_bourbaki
+recruit_character = FRA_claude_theodore_decaen
+recruit_character = FRA_charles_auguste_frossard
+recruit_character = FRA_edmond_le_baeuf
+recruit_character = FRA_paul_de_ladmirault
+recruit_character = FRA_pierre_louis_charles_de_failly
+recruit_character = FRA_felix_douay
+recruit_character = FRA_jean_joseph_farre
+recruit_character = FRA_louis_faidherbe
+recruit_character = FRA_auguste_alexandre_ducrot
+recruit_character = FRA_justin_clinchant
+recruit_character = FRA_louis_jules_trochu
+recruit_character = FRA_louis_d_aurelle_de_paladines
+recruit_character = FRA_alfred_chanzy
+recruit_character = FRA_joseph_vinoy
+recruit_character = FRA_emile_de_keraty
+recruit_character = FRA_abel_douay
+recruit_character = FRA_charles_rigault_de_genouilly
+recruit_character = FRA_theogene_francois_page
+recruit_character = FRA_leonard_victor_charner
+recruit_character = FRA_louis_adolphe_bonard
+recruit_character = FRA_pierre_gustave_roze
+recruit_character = FRA_henri_delacoux_de_marivault_emeriau
+
+
+
+
 
 add_dynamic_modifier = { modifier = FRA_french_economy_modifier }
 set_variable = { fra_economy_political_power_gain = -0.15 }

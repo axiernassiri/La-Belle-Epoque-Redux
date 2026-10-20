@@ -1,5 +1,4 @@
-capital = 916
-oob = "FPC_1866"
+capital = 16
 
 set_politics = {
 	ruling_party = communism
@@ -10,6 +9,16 @@ set_politics = {
 
 recruit_character = FPC_paris_commune
 recruit_character = FPC_anarchists
+recruit_character = FRA_louis_charles_delescluze
+recruit_character = FRA_louis_rossel
+recruit_character = FRA_jaroslaw_dabroswki
+recruit_character = FRA_walery_wroblewski
+recruit_character = FRA_napoleon_la_cecilia
+recruit_character = FRA_paul_antoine_brunel
+recruit_character = FRA_emile_gois
+recruit_character = FRA_gaston_cremieux
+recruit_character = FRA_emile_digeon
+recruit_character = FRA_jean_baptiste_dumay
 
 
 # Starting tech

@@ -905,6 +905,28 @@
 		}
 	}
 	focus = {
+		id = FRA_league_of_education
+		prerequisite = { focus = FRA_stimulate_steel_industries }
+		relative_position_id = FRA_stimulate_steel_industries
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = FRA_resources_of_the_empire
 		prerequisite = { focus = FRA_modernize_the_railways }
 		prerequisite = { focus = FRA_renovation_of_paris }
@@ -951,6 +973,7 @@
 	}
 	focus = {
 		id = FRA_duruy_law
+		prerequisite = { focus = FRA_league_of_education }
 		prerequisite = { focus = FRA_renovation_of_paris }
 		relative_position_id = FRA_modernize_the_railways
 		available = {
