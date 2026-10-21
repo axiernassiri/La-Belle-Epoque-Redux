@@ -11,7 +11,7 @@
 	}
 	
 	default = no
-	continuous_focus_position = { x = 1500 y = 1500 }
+	continuous_focus_position = { x = 1250 y = 1500 }
 
 
 	focus = {
@@ -62,7 +62,7 @@
 		relative_position_id = FRA_our_great_friend_sastres_our_army_supplier
 
 		available = {
-			has_country_flag = spa_struggle_for_power_has_begun
+			
 		}
 
 		bypass = {
@@ -77,7 +77,7 @@
 
 		search_filters = {}
 		completion_reward = {
-			custom_effect_tooltip = autocompleted_by_event_or_decision_tt
+			
 		}
 	}
 	focus = {
@@ -635,6 +635,367 @@
 
 
 
+	focus = {
+		id = FRA_the_empires_naval_innovations
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 14
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = FRA_the_ironclads_of_france
+		prerequisite = { focus = FRA_the_empires_naval_innovations }
+		relative_position_id = FRA_the_empires_naval_innovations
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_to_rival_the_british_navy
+		prerequisite = { focus = FRA_the_empires_naval_innovations }
+		relative_position_id = FRA_the_empires_naval_innovations
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_defend_our_coasts
+		prerequisite = { focus = FRA_the_ironclads_of_france }
+		relative_position_id = FRA_the_ironclads_of_france
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_submarine_development
+		prerequisite = { focus = FRA_the_ironclads_of_france }
+		prerequisite = { focus = FRA_to_rival_the_british_navy }
+		relative_position_id = FRA_the_ironclads_of_france
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_form_the_division_bleue
+		prerequisite = { focus = FRA_defend_our_coasts focus = FRA_submarine_development }
+		relative_position_id = FRA_submarine_development
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_southern_dockyards
+		prerequisite = { focus = FRA_to_rival_the_british_navy }
+		relative_position_id = FRA_to_rival_the_british_navy
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_northern_dockyards
+		prerequisite = { focus = FRA_to_rival_the_british_navy }
+		relative_position_id = FRA_to_rival_the_british_navy
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_improve_corvettes_construction
+		prerequisite = { focus = FRA_southern_dockyards }
+		prerequisite = { focus = FRA_northern_dockyards }
+		relative_position_id = FRA_northern_dockyards
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_improve_ironclad_construction
+		prerequisite = { focus = FRA_southern_dockyards }
+		prerequisite = { focus = FRA_northern_dockyards }
+		relative_position_id = FRA_northern_dockyards
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_feeding_our_naval_ships
+		prerequisite = { focus = FRA_improve_corvettes_construction }
+		prerequisite = { focus = FRA_improve_ironclad_construction }
+		relative_position_id = FRA_improve_ironclad_construction
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_a_naval_force_to_fear
+		prerequisite = { focus = FRA_form_the_division_bleue }
+		prerequisite = { focus = FRA_improve_corvettes_construction focus = FRA_improve_ironclad_construction }
+		relative_position_id = FRA_improve_ironclad_construction
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_improvisation_of_naval_invasion_operations
+		prerequisite = { focus = FRA_a_naval_force_to_fear }
+		relative_position_id = FRA_a_naval_force_to_fear
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_to_avenge_trafalgar
+		prerequisite = { focus = FRA_a_naval_force_to_fear }
+		relative_position_id = FRA_a_naval_force_to_fear
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -651,7 +1012,7 @@
 
 
 		icon = GFX_
-		x = 12
+		x = 19
 		y = 0
 		cost = 5
 
@@ -671,7 +1032,7 @@
 
 
 		icon = GFX_
-		x = 15
+		x = 23
 		y = 0
 		cost = 5
 
@@ -692,7 +1053,7 @@
 
 
 		icon = GFX_
-		x = 18
+		x = 25
 		y = 0
 		cost = 5
 
@@ -1016,6 +1377,2214 @@
 
 		search_filters = {  }
 		completion_reward = {
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = FRA_the_liberal_empire
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 40
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = FRA_for_the_extinction_of_pauperism
+		prerequisite = { focus = FRA_the_liberal_empire }
+		relative_position_id = FRA_the_liberal_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 7
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_wise_progress_of_our_institutions
+		prerequisite = { focus = FRA_for_the_extinction_of_pauperism }
+		relative_position_id = FRA_for_the_extinction_of_pauperism
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_further_liberal_reforms
+		prerequisite = { focus = FRA_for_the_extinction_of_pauperism }
+		relative_position_id = FRA_for_the_extinction_of_pauperism
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_splitting_our_enemies
+		prerequisite = { focus = FRA_further_liberal_reforms }
+		prerequisite = { focus = FRA_wise_progress_of_our_institutions }
+		relative_position_id = FRA_further_liberal_reforms
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_time_for_useful_reforms
+		prerequisite = { focus = FRA_further_liberal_reforms }
+		prerequisite = { focus = FRA_wise_progress_of_our_institutions }
+		relative_position_id = FRA_further_liberal_reforms
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_seek_support_from_conservative_masses
+		prerequisite = { focus = FRA_further_liberal_reforms }
+		prerequisite = { focus = FRA_wise_progress_of_our_institutions }
+		relative_position_id = FRA_further_liberal_reforms
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_the_liberal_master_mind
+		prerequisite = { focus = FRA_seek_support_from_conservative_masses }
+		prerequisite = { focus = FRA_time_for_useful_reforms }
+		relative_position_id = FRA_time_for_useful_reforms
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_lift_press_censorship
+		prerequisite = { focus = FRA_splitting_our_enemies }
+		prerequisite = { focus = FRA_time_for_useful_reforms }
+		relative_position_id = FRA_time_for_useful_reforms
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_legislative_elections_of_1869
+		prerequisite = { focus = FRA_the_liberal_master_mind }
+		prerequisite = { focus = FRA_lift_press_censorship }
+		relative_position_id = FRA_lift_press_censorship
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_dissolve_the_french_iwa
+		prerequisite = { focus = FRA_the_liberal_master_mind }
+		prerequisite = { focus = FRA_lift_press_censorship }
+		relative_position_id = FRA_lift_press_censorship
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_emile_olivier_emile_government
+		prerequisite = { focus = FRA_the_liberal_master_mind }
+		prerequisite = { focus = FRA_lift_press_censorship }
+		relative_position_id = FRA_lift_press_censorship
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_the_new_constitution_of_the_empire
+		prerequisite = { focus = FRA_legislative_elections_of_1869 }
+		prerequisite = { focus = FRA_emile_olivier_emile_government }
+		relative_position_id = FRA_emile_olivier_emile_government
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_plesbiscite_of_1870
+		prerequisite = { focus = FRA_legislative_elections_of_1869 }
+		prerequisite = { focus = FRA_dissolve_the_french_iwa }
+		relative_position_id = FRA_dissolve_the_french_iwa
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_begin_the_final_strike
+		prerequisite = { focus = FRA_plesbiscite_of_1870 }
+		prerequisite = { focus = FRA_the_new_constitution_of_the_empire }
+		relative_position_id = FRA_the_new_constitution_of_the_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_begin_the_final_strike
+		prerequisite = { focus = FRA_plesbiscite_of_1870 }
+		prerequisite = { focus = FRA_the_new_constitution_of_the_empire }
+		relative_position_id = FRA_the_new_constitution_of_the_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_our_eyes_on_the_prussian
+		prerequisite = { focus = FRA_begin_the_final_strike }
+		relative_position_id = FRA_begin_the_final_strike
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_reinvidicate_our_natural_borders
+		prerequisite = { focus = FRA_begin_the_final_strike }
+		relative_position_id = FRA_begin_the_final_strike
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_rally_of_the_blue_bonapartistes
+		prerequisite = { focus = FRA_the_liberal_empire }
+		relative_position_id = FRA_the_liberal_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_clashes_in_the_street
+		prerequisite = { focus = FRA_rally_of_the_blue_bonapartistes }
+		relative_position_id = FRA_rally_of_the_blue_bonapartistes
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_fighting_back_the_strikers
+		prerequisite = { focus = FRA_rally_of_the_blue_bonapartistes }
+		relative_position_id = FRA_rally_of_the_blue_bonapartistes
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_demands_to_napoleon_iii
+		prerequisite = { focus = FRA_rally_of_the_blue_bonapartistes }
+		relative_position_id = FRA_rally_of_the_blue_bonapartistes
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_secure_popular_support
+		prerequisite = { focus = FRA_fighting_back_the_strikers }
+		prerequisite = { focus = FRA_demands_to_napoleon_iii }
+		relative_position_id = FRA_demands_to_napoleon_iii
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_cooperate_with_the_military
+		prerequisite = { focus = FRA_fighting_back_the_strikers }
+		prerequisite = { focus = FRA_clashes_in_the_street }
+		relative_position_id = FRA_fighting_back_the_strikers
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_pour_l_empereur
+		prerequisite = { focus = FRA_cooperate_with_the_military }
+		prerequisite = { focus = FRA_secure_popular_support }
+		relative_position_id = FRA_cooperate_with_the_military
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_remilitarization_policy
+		prerequisite = { focus = FRA_pour_l_empereur }
+		relative_position_id = FRA_pour_l_empereur
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_legacy_of_the_liberal_reforms
+		prerequisite = { focus = FRA_pour_l_empereur }
+		relative_position_id = FRA_pour_l_empereur
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_enforce_national_security
+		prerequisite = { focus = FRA_pour_l_empereur }
+		relative_position_id = FRA_pour_l_empereur
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_our_natural_borders
+		prerequisite = { focus = FRA_enforce_national_security }
+		prerequisite = { focus = FRA_legacy_of_the_liberal_reforms }
+		prerequisite = { focus = FRA_remilitarization_policy }
+		relative_position_id = FRA_enforce_national_security
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_past_glories
+		prerequisite = { focus = FRA_enforce_national_security }
+		prerequisite = { focus = FRA_legacy_of_the_liberal_reforms }
+		prerequisite = { focus = FRA_remilitarization_policy }
+		relative_position_id = FRA_enforce_national_security
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_our_forefathers
+		prerequisite = { focus = FRA_past_glories }
+		prerequisite = { focus = FRA_for_our_natural_borders }
+		relative_position_id = FRA_past_glories
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_revival_of_the_continental_system
+		prerequisite = { focus = FRA_for_our_forefathers }
+		relative_position_id = FRA_for_our_forefathers
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_la_grande_armee
+		prerequisite = { focus = FRA_for_our_forefathers }
+		relative_position_id = FRA_for_our_forefathers
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_rally_the_opposition
+		prerequisite = { focus = FRA_the_liberal_empire }
+		relative_position_id = FRA_the_liberal_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -8
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_deepen_the_strikes
+		prerequisite = { focus = FRA_rally_the_opposition }
+		relative_position_id = FRA_rally_the_opposition
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_call_the_internationale
+		prerequisite = { focus = FRA_rally_the_opposition }
+		relative_position_id = FRA_rally_the_opposition
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_spread_socialist_propaganda
+		prerequisite = { focus = FRA_rally_the_opposition }
+		relative_position_id = FRA_rally_the_opposition
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_strengthen_the_paris_communards
+		prerequisite = { focus = FRA_call_the_internationale }
+		prerequisite = { focus = FRA_spread_socialist_propaganda }
+		relative_position_id = FRA_spread_socialist_propaganda
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_the_workers_and_for_the_peasants
+		prerequisite = { focus = FRA_call_the_internationale }
+		prerequisite = { focus = FRA_deepen_the_strikes }
+		relative_position_id = FRA_spread_socialist_propaganda
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_pour_une_france_libre
+		prerequisite = { focus = FRA_strengthen_the_paris_communards }
+		prerequisite = { focus = FRA_for_the_workers_and_for_the_peasants }
+		relative_position_id = FRA_for_the_workers_and_for_the_peasants
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_iwa_victory
+		prerequisite = { focus = FRA_pour_une_france_libre }
+		relative_position_id = FRA_pour_une_france_libre
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_anti_imperialist_rhetoric
+		prerequisite = { focus = FRA_iwa_victory }
+		relative_position_id = FRA_iwa_victory
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_the_manifesto_of_the_sixty
+		prerequisite = { focus = FRA_iwa_victory }
+		relative_position_id = FRA_iwa_victory
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_the_international_revolution
+		prerequisite = { focus = FRA_the_manifesto_of_the_sixty }
+		prerequisite = { focus = FRA_anti_imperialist_rhetoric }
+		relative_position_id = FRA_the_manifesto_of_the_sixty
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_fervour_for_the_socialist_cause
+		prerequisite = { focus = FRA_the_manifesto_of_the_sixty }
+		prerequisite = { focus = FRA_anti_imperialist_rhetoric }
+		relative_position_id = FRA_the_manifesto_of_the_sixty
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_sparks_of_revolution_in_the_latin_world
+		prerequisite = { focus = FRA_fervour_for_the_socialist_cause focus = FRA_for_the_international_revolution }
+		relative_position_id = FRA_fervour_for_the_socialist_cause
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_to_avenge_the_germanic_revolution
+		prerequisite = { focus = FRA_fervour_for_the_socialist_cause focus = FRA_for_the_international_revolution }
+		relative_position_id = FRA_fervour_for_the_socialist_cause
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_bring_socialism_to_the_eastern_bear
+		prerequisite = { focus = FRA_fervour_for_the_socialist_cause focus = FRA_for_the_international_revolution }
+		relative_position_id = FRA_fervour_for_the_socialist_cause
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_bring_freedom_to_the_balkanic_states
+		prerequisite = { focus = FRA_bring_socialism_to_the_eastern_bear }
+		prerequisite = { focus = FRA_to_avenge_the_germanic_revolution }
+		relative_position_id = FRA_bring_socialism_to_the_eastern_bear
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_put_an_end_to_the_british_imperialism
+		prerequisite = { focus = FRA_sparks_of_revolution_in_the_latin_world focus = FRA_to_avenge_the_germanic_revolution }
+		relative_position_id = FRA_sparks_of_revolution_in_the_latin_world
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_strike_the_western_capitalist_threat
+		prerequisite = { focus = FRA_put_an_end_to_the_british_imperialism focus = FRA_bring_freedom_to_the_balkanic_states }
+		relative_position_id = FRA_put_an_end_to_the_british_imperialism
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_moderate_republicans_victory
+		prerequisite = { focus = FRA_pour_une_france_libre }
+		relative_position_id = FRA_pour_une_france_libre
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_mantaining_order
+		prerequisite = { focus = FRA_moderate_republicans_victory }
+		relative_position_id = FRA_moderate_republicans_victory
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_reform_the_constitution_of_the_republic
+		prerequisite = { focus = FRA_moderate_republicans_victory }
+		relative_position_id = FRA_moderate_republicans_victory
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_a_decisive_blow_against_strikers
+		prerequisite = { focus = FRA_mantaining_order }
+		prerequisite = { focus = FRA_reform_the_constitution_of_the_republic }
+		relative_position_id = FRA_reform_the_constitution_of_the_republic
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_republicanization_of_the_army
+		prerequisite = { focus = FRA_a_decisive_blow_against_strikers }
+		relative_position_id = FRA_a_decisive_blow_against_strikers
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_discredit_napoleon_iii
+		prerequisite = { focus = FRA_a_decisive_blow_against_strikers }
+		relative_position_id = FRA_a_decisive_blow_against_strikers
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_belleville_program
+		prerequisite = { focus = FRA_discredit_napoleon_iii }
+		prerequisite = { focus = FRA_republicanization_of_the_army }
+		relative_position_id = FRA_discredit_napoleon_iii
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_republican_economic_reforms
+		prerequisite = { focus = FRA_belleville_program }
+		relative_position_id = FRA_belleville_program
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_universal_suffrage_reform
+		prerequisite = { focus = FRA_belleville_program }
+		relative_position_id = FRA_belleville_program
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_abolition_of_standing_armies
+		prerequisite = { focus = FRA_belleville_program }
+		relative_position_id = FRA_belleville_program
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_separation_of_the_church_and_the_state
+		prerequisite = { focus = FRA_abolition_of_standing_armies }
+		prerequisite = { focus = FRA_universal_suffrage_reform }
+		relative_position_id = FRA_abolition_of_standing_armies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_reform_the_tax_system
+		prerequisite = { focus = FRA_republican_economic_reforms }
+		prerequisite = { focus = FRA_universal_suffrage_reform }
+		relative_position_id = FRA_republican_economic_reforms
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_liberte_egalite_fraternite
+		prerequisite = { focus = FRA_separation_of_the_church_and_the_state }
+		prerequisite = { focus = FRA_reform_the_tax_system }
+		relative_position_id = FRA_reform_the_tax_system
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = FRA_withdrawal_from_mexico
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 58
+		y = 0
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = FRA_struggle_for_allies
+		prerequisite = { focus = FRA_withdrawal_from_mexico }
+		relative_position_id = FRA_withdrawal_from_mexico
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_unholy_alliance
+		mutually_exclusive = {
+			focus = FRA_the_promising_italian
+		}
+		mutually_exclusive = {
+			focus = FRA_revive_the_1859_entente
+		}
+		mutually_exclusive = {
+			focus = FRA_franco_ottoman_pact
+		}
+		prerequisite = { focus = FRA_struggle_for_allies }
+		relative_position_id = FRA_struggle_for_allies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_the_promising_italian
+		mutually_exclusive = {
+			focus = FRA_unholy_alliance
+		}
+		mutually_exclusive = {
+			focus = FRA_revive_the_1859_entente
+		}
+		mutually_exclusive = {
+			focus = FRA_franco_ottoman_pact
+		}
+		prerequisite = { focus = FRA_struggle_for_allies }
+		relative_position_id = FRA_struggle_for_allies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_the_triple_alliance_proposal
+		prerequisite = { focus = FRA_the_promising_italian }
+		relative_position_id = FRA_the_promising_italian
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_secure_their_help
+		prerequisite = { focus = FRA_the_promising_italian focus = FRA_revive_the_1859_entente }
+		relative_position_id = FRA_the_promising_italian
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_renovate_the_latin_union
+		prerequisite = { focus = FRA_the_triple_alliance_proposal }
+		prerequisite = { focus = FRA_secure_their_help }
+		relative_position_id = FRA_secure_their_help
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_revive_the_1859_entente
+		mutually_exclusive = {
+			focus = FRA_the_promising_italian
+		}
+		mutually_exclusive = {
+			focus = FRA_unholy_alliance
+		}
+		mutually_exclusive = {
+			focus = FRA_franco_ottoman_pact
+		}
+		prerequisite = { focus = FRA_struggle_for_allies }
+		relative_position_id = FRA_struggle_for_allies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_support_balkanic_nationalists
+		prerequisite = { focus = FRA_revive_the_1859_entente }
+		relative_position_id = FRA_revive_the_1859_entente
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_franco_ottoman_pact
+		mutually_exclusive = {
+			focus = FRA_the_promising_italian
+		}
+		mutually_exclusive = {
+			focus = FRA_revive_the_1859_entente
+		}
+		mutually_exclusive = {
+			focus = FRA_unholy_alliance
+		}
+		prerequisite = { focus = FRA_struggle_for_allies }
+		relative_position_id = FRA_struggle_for_allies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_military_aid_to_the_ottoman_empire
+		prerequisite = { focus = FRA_franco_ottoman_pact }
+		relative_position_id = FRA_franco_ottoman_pact
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_partition_of_the_austrian_empire
+		prerequisite = { focus = FRA_revive_the_1859_entente focus = FRA_franco_ottoman_pact }
+		relative_position_id = FRA_revive_the_1859_entente
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_to_crush_the_germanic_hegemony
+		prerequisite = { focus = FRA_partition_of_the_austrian_empire focus = FRA_french_military_aid_to_the_ottoman_empire }
+		relative_position_id = FRA_partition_of_the_austrian_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_a_colonial_empire
+		prerequisite = { focus = FRA_withdrawal_from_mexico }
+		relative_position_id = FRA_withdrawal_from_mexico
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_algerian_association_project
+		prerequisite = { focus = FRA_for_a_colonial_empire }
+		relative_position_id = FRA_for_a_colonial_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_treaty_of_friendship_with_madagascar
+		prerequisite = { focus = FRA_for_a_colonial_empire }
+		relative_position_id = FRA_for_a_colonial_empire
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_secure_african_colonies
+		prerequisite = { focus = FRA_algerian_association_project }
+		prerequisite = { focus = FRA_treaty_of_friendship_with_madagascar }
+		relative_position_id = FRA_treaty_of_friendship_with_madagascar
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_exploit_the_resources_of_africa
+		prerequisite = { focus = FRA_secure_african_colonies }
+		relative_position_id = FRA_secure_african_colonies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_ethiopian_war
+		prerequisite = { focus = FRA_secure_african_colonies }
+		relative_position_id = FRA_secure_african_colonies
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_korean_expedition
+		prerequisite = { focus = FRA_withdrawal_from_mexico }
+		relative_position_id = FRA_withdrawal_from_mexico
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 5
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_indochina_expeditions
+		prerequisite = { focus = FRA_withdrawal_from_mexico }
+		relative_position_id = FRA_withdrawal_from_mexico
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 7
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_franco_siamese_treaty
+		prerequisite = { focus = FRA_indochina_expeditions }
+		prerequisite = { focus = FRA_for_a_colonial_empire }
+		prerequisite = { focus = FRA_korean_expedition }
+		relative_position_id = FRA_indochina_expeditions
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ally_with_the_rising_sun
+		prerequisite = { focus = FRA_franco_siamese_treaty }
+		relative_position_id = FRA_franco_siamese_treaty
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_secure_indochina
+		prerequisite = { focus = FRA_franco_siamese_treaty }
+		relative_position_id = FRA_franco_siamese_treaty
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			
 		}
 	}
 }

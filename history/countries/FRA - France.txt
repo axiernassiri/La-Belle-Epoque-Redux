@@ -118,6 +118,7 @@ add_ideas = {
 	FRA_constitutional_reform_of_1862
 	FRA_education_reforms
 	FRA_cobden_chevalier_treaty
+	FRA_marine_imperiale
 }
 
 recruit_character = FRA_napoleon_iii
