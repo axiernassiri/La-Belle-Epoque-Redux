@@ -161,6 +161,20 @@ country_event = { # The Salzburg meeting
 		name = french_empire_events.11.a
 	}
 }
+country_event = { # sastres supplier
+	id = french_empire_events.12
+	title = french_empire_events.12.title
+	desc = french_empire_events.12.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.12.a
+	}
+}
 
 country_event = {
 	id = france_fpw.1

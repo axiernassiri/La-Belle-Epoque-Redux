@@ -56,6 +56,7 @@ ideas = {
 
 		}
 		FRA_cobden_chevalier_treaty_BRITISH = {
+			name = FRA_cobden_chevalier_treaty
 
 			picture = fra_bri_treaty
 

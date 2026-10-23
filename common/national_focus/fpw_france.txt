@@ -28,10 +28,21 @@
 		icon = GFX_
 		x = 2
 		y = 0
-		cost = 5
+		cost = 4
 
 		search_filters = {  }
 		completion_reward = {
+			country_event = french_empire_events.12
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_modify_army_tt
+			add_to_variable = { 
+				FRA_army_supply_factor = 0.1
+				tooltip = supply_factor_tt
+			}
+			add_to_variable = { 
+				FRA_army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -70,7 +81,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		x = -1
 		y = 1
 		cost = 5
@@ -95,7 +106,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_manpower
 		x = 1
 		y = 1
 		cost = 5
@@ -143,7 +154,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		x = 1
 		y = 1
 		cost = 5
@@ -240,7 +251,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_army_artillery2
 		x = 1
 		y = 1
 		cost = 5
@@ -265,7 +276,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_reorient_production
 		x = -1
 		y = 1
 		cost = 5
@@ -290,7 +301,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_SWE_hedgehog_defense
 		x = -1
 		y = 1
 		cost = 5
@@ -314,7 +325,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_defence
 		x = -1
 		y = 1
 		cost = 5
@@ -338,7 +349,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_limited_social_mobilization
 		x = 1
 		y = 1
 		cost = 5
@@ -363,7 +374,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_SOV_mobilization_plan
 		x = -1
 		y = 1
 		cost = 5
@@ -410,7 +421,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_attack_germany
 		x = 4
 		y = 4
 		cost = 5
@@ -506,7 +517,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_limited_social_mobilization
 		x = 1
 		y = 1
 		cost = 5
@@ -555,7 +566,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_prc_agrarian_socialism
 		x = 1
 		y = 1
 		cost = 5
@@ -580,7 +591,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_forceful_treaty
 		x = -1
 		y = 1
 		cost = 5
@@ -646,7 +657,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_air_naval_bomber
 		x = 14
 		y = 0
 		cost = 5
@@ -671,7 +682,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_naval_discipline
 		x = -3
 		y = 1
 		cost = 5
@@ -695,7 +706,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_navy_battleship2
 		x = 1
 		y = 1
 		cost = 5
@@ -720,7 +731,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_coastal_fort
 		x = -1
 		y = 1
 		cost = 5
@@ -745,7 +756,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_PRC_submarines
 		x = 1
 		y = 1
 		cost = 5
@@ -769,7 +780,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_SOV_naval_infantry_ccp_2d_sov_compatibility
 		x = -1
 		y = 1
 		cost = 5
@@ -793,7 +804,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -1
 		y = 1
 		cost = 5
@@ -817,7 +828,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 1
 		y = 1
 		cost = 5
@@ -1031,7 +1042,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_PER_national_bank
 		x = 23
 		y = 0
 		cost = 5
@@ -1052,7 +1063,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_public_works
 		x = 25
 		y = 0
 		cost = 5
@@ -1099,7 +1110,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = -1
 		y = 1
 		cost = 5
@@ -1121,7 +1132,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_RAJ_institutional_money_laundering
 		x = 1
 		y = 1
 		cost = 5
@@ -1144,7 +1155,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_worker_administration
 		x = -1
 		y = 1
 		cost = 5
@@ -1189,7 +1200,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_steel_mill
 		x = 1
 		y = 1
 		cost = 5
@@ -1256,7 +1267,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 1
 		cost = 5
@@ -1278,7 +1289,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_education
 		x = -3
 		y = 1
 		cost = 5
@@ -1301,7 +1312,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_resource_extraction
 		x = -1
 		y = 1
 		cost = 5
@@ -1370,7 +1381,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_RAJ_special_economic_zones
 		x = -3
 		y = 1
 		cost = 5
@@ -1464,7 +1475,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_court
 		x = -1
 		y = 1
 		cost = 5
@@ -1487,7 +1498,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_improve_the_administration
 		x = 1
 		y = 1
 		cost = 5
@@ -1511,7 +1522,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_monarchy_2
 		x = 1
 		y = 1
 		cost = 5
@@ -1535,7 +1546,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_improve_the_administration_2
 		x = -1
 		y = 1
 		cost = 5
@@ -1559,7 +1570,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_happy_cheer
 		x = -3
 		y = 1
 		cost = 5
@@ -1607,7 +1618,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_printing_press
 		x = 1
 		y = 1
 		cost = 5
@@ -1655,7 +1666,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_GER_end_european_communism
 		x = -3
 		y = 1
 		cost = 5
@@ -1703,7 +1714,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		x = -1
 		y = 1
 		cost = 5
@@ -1727,7 +1738,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_monarchist_sentiment
 		x = 1
 		y = 1
 		cost = 5
@@ -1751,31 +1762,7 @@
 		}
 
 
-		icon = GFX_
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FRA_begin_the_final_strike
-		prerequisite = { focus = FRA_plesbiscite_of_1870 }
-		prerequisite = { focus = FRA_the_new_constitution_of_the_empire }
-		relative_position_id = FRA_the_new_constitution_of_the_empire
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_
+		icon = GFX_focus_SWE_attack_landsorganisationen
 		x = -1
 		y = 1
 		cost = 5
@@ -1798,7 +1785,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_attack_germany
 		x = -1
 		y = 1
 		cost = 5
@@ -1821,7 +1808,7 @@
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_focus_fra_border
 		x = 1
 		y = 1
 		cost = 5
@@ -2567,8 +2554,7 @@
 	}
 	focus = {
 		id = FRA_bring_freedom_to_the_balkanic_states
-		prerequisite = { focus = FRA_bring_socialism_to_the_eastern_bear }
-		prerequisite = { focus = FRA_to_avenge_the_germanic_revolution }
+		prerequisite = { focus = FRA_bring_socialism_to_the_eastern_bear focus = FRA_to_avenge_the_germanic_revolution }
 		relative_position_id = FRA_bring_socialism_to_the_eastern_bear
 
 		available = {
