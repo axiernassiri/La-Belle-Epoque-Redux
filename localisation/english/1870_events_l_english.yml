@@ -329,61 +329,10 @@
   prussia_fpw_44_d_ita:0 "Through recent political efforts by [PRS.GetNameDefCap], a historic meeting has been arranged between us and [Aus.GetLeader] in the Austrian capital of Vienna. Prussia’s intent to strengthen ties with [Aus.GetNameDef] could mark the beginning of a powerful alliance, bringing Italy, Austria, and [PRS.GetNameDef] together in a united front for Europe’s future."
   prussia_fpw.44.a:0 "Maybe they're not as bad after all."
 
- 
   generic.26.t:0 "Warning"
   generic.26.d:0 "This mod is an early release, and some bugs will be present, and some national focuses will be missing. If you find any bugs, please report them to the Discord server. For now, we only recommend playing as Prussia, Italy France, Russia, or Austria with Historical AI enabled."
   generic.26.a:0 "I Agree"
  
-  ## Romania Events
-
-  fpw_romania.1.t:0 "The Current State of the Industry"
-  fpw_romania.1.d:0 "The current state of affairs regarding our industry is deplorable. Our factories are operating well below capacity, and our production efficiency is abysmally low. Our work norms are outdated and inefficient, leaving us far behind our competitors on the global stage. The Ottoman Empire, in its relentless pursuit of dominance, is siphoning off our resources, further crippling our already weakened industrial capabilities. This exploitation cannot continue unchecked if we hope to secure a prosperous future for our nation."
-  fpw_romania.1.a:0 "We will pull through this"
-  fpw_romania.1.b:0 "We give up (The game ends for you)"
-
-  fpw_romania.2.t:0 "The Education Budget"
-  fpw_romania.2.d:0 "After extensive brainstorming, we have come up with two possible solutions to address the budget issue. First, we could allocate a significant amount of funds to boost the education sector. This approach would greatly enhance the quality and reach of education but requires considerable resources and may strain our overall budget, potentially crippling other essential sectors. Alternatively, we could allocate only the bare minimum necessary to maintain the education sector. This would result in a weaker and less effective department but would allow us to conserve resources and maintain a more balanced budget overall. What should we do?"
-  fpw_romania.2.a:0 "Allocate Large Funds"
-  fpw_romania.2.b:0 "Allocate the Bare Minimum"
-  
-  fpw_romania.3.t:0 "The Education Golden Age"
-  fpw_romania.3.d:0 "After years of dedicated reforms, strategic investments, and unwavering patience, our country has unequivocally entered a new era of education, a golden age, characterized by one of the highest rates of education per capita globally. This monumental achievement stands as a testament to our collective efforts and foresight. We now proudly reap the manifold benefits and opportunities that this enhanced educational landscape affords us."
-  fpw_romania.3.a:0 "An Achievement"
-  fpw_romania.3.b:0 "Open the Champagne"
-
-  fpw_romania.4.t:0 "Education Department Reformed"
-  fpw_romania.4.d:0 "After considerable anticipation and numerous reforms, we can confidently assert that the Department of Education has been transformed into a reliably stable entity. This achievement has effectively balanced the disparity between the educated and uneducated segments of our population, ensuring that their influence on our economy is no longer detrimental. With this foundation in place, we are poised to further expand our educational initiatives as necessary, ushering in a new era of enlightenment and progress for our nation."
-  fpw_romania.4.a:0 "It's Finally Done"  
-
-  fpw_romania.5.t:0 "The Military Industrial Sector"
-  fpw_romania.5.d:0 "The current state of our country's military-industrial sector is severely underdeveloped. This presents a significant gap in our national defense capabilities and our potential for technological and economic growth. To address this, it is imperative that we initiate a comprehensive strategy to build and expand this sector without delay."
-  fpw_romania.5.a:0 "Start the Reform"  
-
-  fpw_romania.6.t:0 "Military Industrial Fund"
-  fpw_romania.6.d:0 "With the approval of the reform in the military-industrial sector, a fund has been authorized to support this initiative. This funding allows us to gain a head start in either Wallachia or Moldova. Which one shall we prioritize?"
-  fpw_romania.6.a:0 "Start With Wallachia"
-  fpw_romania.6.b:0 "Start With Moldova"
-
-  fpw_romania.7.t:0 "The Project is Done"
-  fpw_romania.7.d:0 "Over a period marked by numerous industrialization initiatives, the region has undergone significant development and modernization. This extensive process has culminated in the successful completion of military-industrial reform."
-  fpw_romania.7.a:0 "Long Live the Nation"
-
-  fpw_romania.8.t:0 "The Border has Been Secured"
-  fpw_romania.8.d:0 "The construction of the bunkers along the border has been successfully completed. These fortifications represent a significant achievement in our defense strategy, ensuring that we are better prepared for any potential threats."
-  fpw_romania.8.a:0 "Keep Them Out"
-
-  fpw_romania.9.t:0 "The Sector Reformed"
-  fpw_romania.9.d:0 "The military-industrial sector has undergone extensive and transformative reforms. These reforms have substantially upgraded our technological capabilities and operational efficiencies, aligning them with the standards of other leading global powers. Through targeted investments, strategic partnerships, and advancements in research and development, we have modernized our defense infrastructure."
-  fpw_romania.9.a:0 "Long Live the Enclave...wait, what?"
-
-  fpw_romania.10.t:0 "The Border has Been Secured"
-  fpw_romania.10.d:0 "The construction of the bunkers along the border has been successfully completed. These fortifications represent a significant achievement in our defense strategy, ensuring that we are better prepared for any potential threats."
-  fpw_romania.10.a:0 "Keep Them Out"
-
-  fpw_romania.11.t:0 "The Project is Done"
-  fpw_romania.11.d:0 "Over a period marked by numerous industrialization initiatives, the region has undergone significant development and modernization. This extensive process has culminated in the successful completion of military-industrial reform."
-  fpw_romania.11.a:0 "Long Live the Nation"
-  
   fpw_flags.1.t: "Historical Prussian Flag"
   fpw_flags.1.d: "Would you prefer to use the historical flag during the time or use the same historical flag that was improved to be appealing to the eyes?\n\nYou can always revert your changes later."
   fpw_flags.1.a: "The Historical Flag"
@@ -412,22 +361,3 @@
   fpw_generic.4.t: "[From.GetNameDefCap] declines our offer"
   fpw_generic.4.d: "The offer to [FROM.GetNameDefCap] has been declined."
   fpw_generic.4.a: "How unfortunate."
-
-  fpw_austria.1.t: "Austria Asks for Our Support"
-  fpw_austria.1.d: "The Austrian Empire is requesting our assistance in what they are calling a possible war with [PRS.GetNameDef]."
-  fpw_austria.1.a: "We shall help them"
-  fpw_austria.1.b: "We shall stay neutral"
-  fpw_austria.1.c: "We have other plans for Austria..."
-  fpw_austria.2.t: "France Agrees to Help"
-  fpw_austria.2.d: "[FRA.GetNameDefCap] has agreed to help us in our future war with [PRS.GetNameDef]"
-  fpw_austria.2.a: "Great!"
-  fpw_austria.3.t: "France Promises Neutrality"
-  fpw_austria.3.d: "[FRA.GetNameDefCap] has declared their neutrality in our future war with [PRS.GetNameDef]"
-  fpw_austria.3.a: "Well..."
-  fpw_austria.4.t: "France Denies to Help"
-  fpw_austria.4.d: "[FRA.GetNameDefCap] has denied to help us in our future war with [PRS.GetNameDef]"
-  fpw_austria.4.a: "You can never rely on the French!"
-
-
-
-

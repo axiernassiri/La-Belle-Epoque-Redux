@@ -203,6 +203,20 @@
  
  
 #events
+ fpw_austria.1.t: "Austria Asks for Our Support"
+ fpw_austria.1.d: "The Austrian Empire is requesting our assistance in what they are calling a possible war with [PRS.GetNameDef]."
+ fpw_austria.1.a: "We shall help them"
+ fpw_austria.1.b: "We shall stay neutral"
+ fpw_austria.1.c: "We have other plans for Austria..."
+ fpw_austria.2.t: "France Agrees to Help"
+ fpw_austria.2.d: "[FRA.GetNameDefCap] has agreed to help us in our future war with [PRS.GetNameDef]"
+ fpw_austria.2.a: "Great!"
+ fpw_austria.3.t: "France Promises Neutrality"
+ fpw_austria.3.d: "[FRA.GetNameDefCap] has declared their neutrality in our future war with [PRS.GetNameDef]"
+ fpw_austria.3.a: "Well..."
+ fpw_austria.4.t: "France Denies to Help"
+ fpw_austria.4.d: "[FRA.GetNameDefCap] has denied to help us in our future war with [PRS.GetNameDef]"
+ fpw_austria.4.a: "You can never rely on the French!"
  fpw_austria.5.t: "Hungarian Protests"
  fpw_austria.5.d: ""
  fpw_austria.5.a: "Is it 1848 all over again?"
@@ -237,6 +251,29 @@
  fpw_austria.12.d: ""
  fpw_austria.12.a: "We accept"
  fpw_austria.12.b: "No."
+ fpw_austria.13.t: "Prussia capitulates"
+ fpw_austria.13.d: "Prussia has capitulated to the Austrian Empire. Berlin has sent a delegation to Vienna to discuss the terms of surrender."
+ fpw_austria.13.a: "Austria accepts the Prussian surrender."
+ fpw_austria.13.b: "WE'LL BE IN BERLIN IN 2 WEEKS!"
+ fpw_austria.14.t: "Italy capitulates"
+ fpw_austria.14.d: "Italy has capitulated to the Austrian Empire. Rome has sent a delegation to Vienna to discuss the terms of surrender."
+ fpw_austria.14.a: "Austria accepts the Italian surrender."
+ fpw_austria.14.b: "WE'LL BE IN ROME IN 1 WEEK!"
+ fpw_austria.15.t: "World Fair 1873"
+ fpw_austria.15.d: "For the first time in history, the world fair will be held in Vienna. The fair will showcase the latest technological and cultural achievements from around the world."
+ fpw_austria.15.a: "Everything is ready for the fair. Kaiser Franz Joseph will hold the opening ceremony."
+ fpw_austria.15.b: "No, we cannot hold the fair. The empire is too unstable."
+ fpw_austria.16.t: "Panic of 1873"
+ fpw_austria.16.d: "The Panic of 1873 has struck the Austrian Empire, causing widespread economic turmoil. Banks are failing, businesses are closing, and unemployment is rising. The government must take immediate action to stabilize the economy and restore confidence."
+ fpw_austria.16.a: "This is bad."
+ fpw_austria.17.t: "Imperial Awards"
+ fpw_austria.17.d: "Every year, the emperor gives awards to soldiers who have distinguished themselves in service to the empire. However, awarding these awards are costly so we can choose to give out awards or pause the program until next year."
+ fpw_austria.17.a: "We will award the medals."
+ fpw_austria.17.b: "We unfortunately don't have enough money right now."
+ fpw_austria.18.t: "Price of a new Uniform"
+ fpw_austria.18.d: ""
+
+
 #traits 
  
 #custom cost texts 
