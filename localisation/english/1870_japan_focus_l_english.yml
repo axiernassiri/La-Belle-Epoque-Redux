@@ -1,4 +1,6 @@
 ﻿l_english:
+
+# Focuses
  JAP_denounce_shogun: "Denounce the Shogun’s Governance" #All focus names are WIP
  JAP_denounce_shogun_desc: ""
  JAP_form_satcho_alliance: "Form the Satchō Alliance"
@@ -27,6 +29,7 @@
  JAP_conservative_approach_desc: ""
  JAP_challenge_the_unequal_treaties: "Challenge the Unequal Treaties"
  JAP_challenge_the_unequal_treaties_desc: ""
+ JAP_preserve_traditional_governance: "Preserve Traditional Governance"
  
  
  

@@ -8,7 +8,8 @@
  fpw_TUR_inefficient_tax_farming_desc:0 ""
 
 
- ### focus 
+ ### Focus
+# Politics? 
  TUR_tanzimat_era:0 "Tanzimat Era"
  TUR_tanzimat_era_desc:0 "The Tanzimat Era was an era of economic reform for the sublime ottoman state. Where Abulaziz tried to modernize the economics of the state in order to keep up with the rest of the world."
  TUR_ready_for_disaster:0 "Ready For Disaster"
@@ -39,6 +40,32 @@
  TUR_take_a_tour_of_europe_desc:0 ""
  TUR_restore_our_legitimacy:0 "Restore Our Legitimacy"
  TUR_restore_our_legitimacy_desc:0 ""
+ # Economy
+ TUR_begin_fiscal_reforms:0 "Begin Fiscal Reforms"
+ TUR_subsidize_local_businesses:0 "Subsidize Local Businesses"
+ TUR_abolish_tax_farming:0 "Abolish Tax Farming"
+ TUR_sponser_urbanization:0 "Sponsor Urbanization"
+ TUR_peasent_land_reform:0 "Peasant Land Reform"
+ TUR_establish_income_tax:0 "Establish Income Tax"
+ TUR_empower_the_council_of_state:0 "Empower the Council of State"
+ TUR_sanayi_nizamnamesi:0 "Sanayi Nizamnamesi"
+ TUR_reform_customs_admistration:0 "Reform Customs Administration"
+ TUR_found_chamber_of_commerce:0 "Establish a Chamber of Commerce"
+ TUR_encourage_domestic_industry:0 "Encourage Domestic Industry"
+ TUR_open_statistical_office:0 "Open a Statistical Office"
+ TUR_subsidize_military_industries:0 "Subsidize Military Industries"
+ TUR_move_away_from_agriculture_based_eco:0 "Move Away from an Agricultural Economy"
+ TUR_utilize_european_production_methods:0 "Adopt European Production Methods"
+ TUR_subsidize_the_navy:0 "Subsidize the Navy"
+ TUR_modernize_agriculture_methods:0 "Modernize Agricultural Methods"
+ TUR_adopt_a_paper_currency:0 "Adopt Paper Currency"
+ TUR_imperial_military_factories:0 "Establish Imperial Military Factories"
+ TUR_imperial_dockyards:0 "Establish Imperial Dockyards"
+ TUR_modernized_economy:0 "Modernize the Economy"
+ TUR_imperial_military_factories_2:0 "Expand Imperial Military Factories"
+ TUR_imperial_dockyards_2:0 "Expand Imperial Dockyards"
+ TUR_expand_coal_mines:0 "Expand Coal Mines"
+ TUR_expand_steel_mines:0 "Expand Steel Mines"
  # events
  ottoman_fpw.1.t:0 "Cretan Revolt"
  ottoman_fpw.1.d:0 "There has been mass protests and revolts in Crete. We must handle this situation carefully before they declare independence."

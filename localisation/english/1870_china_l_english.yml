@@ -15,10 +15,9 @@
  CHI_empower_self_strengthening_movement:0 "Empower the Self-Strengthening Movement"
 
 
-
 #decisions
 
- 
+
 #ideas
  fpw_qing_faction:0 "Tianchao System"
  fpw_CHI_widespread_corruption:0 "Widespread Corruption"
@@ -32,6 +31,7 @@
  fpw_CHI_ongoing_famine1:0 "Ongoing Famine"
  fpw_CHI_ongoing_famine1_desc:0 "Large scale famine has struck China especially in recent years due to; destructive rebellions, severe drought and widespread diseases and plagues. Such dire conditions are causing many to resent the Qing Dynasty."
  fpw_CHI_anti_transmission_measures:0 "Anti-Transmission Measures"
+ fpw_CHI_self_strengthening_movement1:0 "Self-Strengthening Movemement"
  
 #events
  
