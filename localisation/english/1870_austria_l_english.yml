@@ -177,10 +177,19 @@
 
 #decisions
  #pops of empire
- AUS_populations_of_the_empire: "Population of the Empire"
+ AUS_populations_of_the_empire: "Populations of the Empire"
  AUS_gain_hungarian_trust: "Gain Hungarian Trust"
  AUS_improve_hungarian_relations: "Improve Hungarian Relations"
+ AUS_gain_czech_trust: ""
+ AUS_improve_czech_relations: ""
+ AUS_gain_illyrian_trust: ""
+ AUS_improve_illyrian_relations: ""
+ AUS_gain_galician_trust: ""
+ AUS_improve_galician_relations: ""
+
+ #ten year settlement
  
+
 #ideas
  AUS_hungary_loyal: "Loyal Hungary"
  AUS_hungary_friendly: "Friendly Hungary"
@@ -223,12 +232,6 @@
  fpw_austria.6.t: "The Slavs Revolt"
  fpw_austria.6.d: ""
  fpw_austria.6.a: "It is 1848 all over again."
- fpw_austria.9.a: ""
- fpw_austria.10.t: "An Austrian Ultimatum"
- fpw_austria.10.d: "[AUS.GetNameDefCap] demands that we accept a Habsburg protectorate. Refusal will provide Vienna with a pretext for war."
- fpw_austria.10.a: "Accept the protectorate."
- fpw_austria.10.b: "We will not bow to Vienna!"
- AUS_congress_of_berlin: "Congress of Berlin"
  fpw_austria.7.t: "Congress of Berlin"
  fpw_austria.7.d: "[AUS.GetNameDef] proposes an agreement to split up [TUR.GetNameDef] between [ENG.GetNameDef], [SOV.GetNameDef], and [AUS.GetNameDef]. Under this agreement the balkan states would gain freedom, with [SOV.GetNameDef] gaining overlordship of Romania. [ENG.GetNameDef] would gain Cyprus, and [Aus.GetNameDef] would annex Bosnia."
  fpw_austria.7.a: "A fine plan."
@@ -237,6 +240,12 @@
  fpw_austria.8.d: "Certain powers have met up in Berlin to discuss the future of our country for us. They have decided to divide up the balkan."
  fpw_austria.8.a: "We cannot risk a major war."
  fpw_austria.8.b: "hecks nah."
+ fpw_austria.9.a: ""
+ fpw_austria.10.t: "An Austrian Ultimatum"
+ fpw_austria.10.d: "[AUS.GetNameDefCap] demands that we accept a Habsburg protectorate. Refusal will provide Vienna with a pretext for war."
+ fpw_austria.10.a: "Accept the protectorate."
+ fpw_austria.10.b: "We will not bow to Vienna!"
+ AUS_congress_of_berlin: "Congress of Berlin"
  AUS_anti_german_alliance: "Anti-[PRS.GetNameDef] Entente."
  fpw_austria.10.t: "[AUS.GetNameDef] Demands."
  fpw_austria.10.d: ""
@@ -271,7 +280,15 @@
  fpw_austria.17.a: "We will award the medals."
  fpw_austria.17.b: "We unfortunately don't have enough money right now."
  fpw_austria.18.t: "Price of a new Uniform"
- fpw_austria.18.d: ""
+ fpw_austria.18.d: "Uniforms aren't cheap. So we need to decide whether we have enough money to buy our soldiers new uniforms or if they need to do it themselves."
+ fpw_austria.18.a: "We cannot impose any further burdens on our soldiers."
+ fpw_austria.18.b: "Sorry, but we simply do not have enough money."
+ fpw_austria.19.t: ""
+
+ fpw_austria.20.t: "Imperial Address"
+ fpw_austria.20.d: "After the Bruderkrieg and the subsequent Ausgleich, our glorious Emperor wishes to deliver a speech to his people. He must choose between promising economic reforms and a peaceful course for the coming years, or vowing revenge and reconquest."
+ fpw_austria.20.a: "Promise economic reforms and peace for the coming years."
+ fpw_austria.20.b: "Promise revenge and reconquest"
 
 
 #traits 
