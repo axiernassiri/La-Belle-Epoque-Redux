@@ -1202,9 +1202,6 @@
 			853 = {
 				add_core_of = AUS
 			}
-			102 = {
-				add_core_of = AUS
-			}
 			109 = {
 				add_core_of = AUS
 			}
