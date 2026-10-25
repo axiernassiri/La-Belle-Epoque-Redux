@@ -597,7 +597,7 @@ country_event = {
 	option = {
 		name = fpw_austria.19.b
 		ai_chance = { factor = 400 }
-		add_political_power = 15
+		add_political_power = 25
 	}
 }
 
@@ -736,6 +736,24 @@ country_event = {
 	option = {
 		name = fpw_austria.23.b
 		ai_chance = { factor = 400 }
+		
+	}
+}
+
+
+### Promotion of Anton Schon
+country_event = {
+	id = fpw_austria.24
+	title = fpw_austria.24.t
+	desc = fpw_austria.24.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = fpw_austria.24.a
+		ai_chance = { factor = 401 }
 		
 	}
 }

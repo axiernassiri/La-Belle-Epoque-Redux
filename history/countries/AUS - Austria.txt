@@ -119,7 +119,6 @@ recruit_character = AUS_von_gablenz
 recruit_character = AUS_henikstein
 recruit_character = AUS_krismanic
 recruit_character = AUS_archduke_albrecht
-recruit_character = AUS_anton_von_schonfeld
 recruit_character = AUS_wilhelm_of_austria
 
 add_to_variable = {
