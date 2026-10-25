@@ -754,6 +754,6 @@ country_event = {
 	option = {
 		name = fpw_austria.24.a
 		ai_chance = { factor = 401 }
-		
+		recruit_character = AUS_anton_von_schonfeld
 	}
 }
