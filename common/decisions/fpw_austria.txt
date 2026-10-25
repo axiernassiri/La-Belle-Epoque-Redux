@@ -364,7 +364,7 @@ AUS_ten_year_settlement_dec = {
 					hungarian_development < austrian_development
 				}
 				check_variable = {
-					hungarian_development= austrian_development
+					hungarian_development = austrian_development
 				}
 			}
 		} 
@@ -379,26 +379,64 @@ AUS_ten_year_settlement_dec = {
 			#AUS_increse_hungarian_attitude_effect = yes
 		} 
 		remove_effect = {
-			any_state = {
+			if = {
 				limit = {
-					is_core_of = HUN
+					HUN = {
+						exists = yes
+					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+				HUN = {
+					any_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				
+					}
+					add_to_variable = {
+						var = hungarian_development
+						value = 1 
+					}
 				}
 				
 			}
-			add_to_variable = {
-				var = hungarian_development
-				value = 1 
+			if = {
+				limit = {
+					HUN = {
+						exists = no
+					}
+				}
+				any_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				
+				}
+				add_to_variable = {
+					var = hungarian_development
+					value = 1 
+				}
 			}
 		}
 	} 

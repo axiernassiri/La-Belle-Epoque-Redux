@@ -133,16 +133,6 @@ country_event = {
 		hidden_effect = {
 			every_owned_state = {
 				limit = {
-					is_core_of = CZE
-					is_core_of = AUS
-				}
-				remove_core_of = AUS
-				start_resistance = yes
-				set_resistance = 40
-				set_compliance = 25
-			}
-			every_owned_state = {
-				limit = {
 					NOT = { is_core_of = AUS }
 					NOT = { is_core_of = CZE }
 					OR = {	
@@ -188,6 +178,7 @@ country_event = {
 	option = {
 		name = fpw_austria.7.a
 		custom_effect_tooltip = AUS_war_with_ottomans
+		ai_chance = { factor = 400 }
 		hidden_effect = {
 			if = {
 				limit = {
@@ -205,6 +196,7 @@ country_event = {
 	}
 	option = {
 		name = fpw_austria.7.b
+		ai_chance = { factor = 60 }
 		if = {
 			limit = {
 				original_tag = ENG
@@ -241,6 +233,7 @@ country_event = {
 	fire_only_once=yes
 	option = {
 		name = fpw_austria.8.a
+		ai_chance = { factor = 60 }
 		hidden_effect = {
 		}
 		if = {
@@ -273,53 +266,16 @@ country_event = {
 		804 = { transfer_state_to = AUS }
 		AUS = {
 			complete_national_focus = AUS_diplomatic_victory
+			country_event = fpw_austria.22
 		}
 	}
 	option = {
 		name = fpw_austria.8.b
+		ai_chance = { factor = 60 }
 		hidden_effect = {
 		}
 		AUS = {
-			create_faction = AUS_congress_of_berlin
-			declare_war_on = {
-				target = TUR
-				type = annex_everything
-			}
-		}
-		if = {
-			limit = {
-				ENG = {
-					has_country_flag  = ENG_agreed_cng_berlin
-				}
-			}
-			ENG  = {
-				declare_war_on = {
-					target = TUR
-					type = annex_everything
-				}
-			}
-			ENG = { add_to_faction = AUS }
-		} 
-		if = {
-			limit = {
-				SOV = {
-					has_country_flag  = SOV_agreed_cng_berlin
-				}
-			}
-			SOV  = {
-				declare_war_on = {
-					target = TUR
-					type = annex_everything
-				}
-			}
-			SOV = { add_to_faction = AUS }
-		} 
-		AUS = {
-			country_event = {
-				id = fpw_austria.9
-				days = 30
-			}
-			complete_national_focus = AUS_war_against_the_ottomans
+			country_event = fpw_austria.23
 		}
 
 	}
@@ -667,5 +623,119 @@ country_event = {
 		name = fpw_austria.20.b
 		ai_chance = { factor = 400 }
 		add_war_support = 0.05
+	}
+}
+
+### France gives Venice to italy
+country_event = {
+	id = fpw_austria.21
+	title = fpw_austria.21.t
+	desc = fpw_austria.21.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = fpw_austria.21.a
+		ai_chance = { factor = 401 }
+		160 = {
+			transfer_state_to = ITA
+		}
+	}
+
+
+	#option = {
+		##ai_chance = { factor = 400 }
+		
+	#}
+}
+
+
+### Diplomatic Victory in the Berlin Congress
+country_event = {
+	id = fpw_austria.22
+	title = fpw_austria.22.t
+	desc = fpw_austria.22.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = fpw_austria.22.a
+		ai_chance = { factor = 401 }
+	}
+
+
+	#option = {
+		##ai_chance = { factor = 400 }
+		
+	#}
+}
+
+
+### Ottomans Resist Berlin Congress
+country_event = {
+	id = fpw_austria.23
+	title = fpw_austria.23.t
+	desc = fpw_austria.23.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = fpw_austria.23.a
+		ai_chance = { factor = 401 }
+		AUS = {
+			create_faction = AUS_congress_of_berlin
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag  = ENG_agreed_cng_berlin
+				}
+			}
+			ENG  = {
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+			ENG = { add_to_faction = AUS }
+		} 
+		if = {
+			limit = {
+				SOV = {
+					has_country_flag  = SOV_agreed_cng_berlin
+				}
+			}
+			SOV  = {
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+			SOV = { add_to_faction = AUS }
+		} 
+		AUS = {
+			country_event = {
+				id = fpw_austria.9
+				days = 30
+			}
+			complete_national_focus = AUS_war_against_the_ottomans
+		}
+	}
+
+
+	option = {
+		name = fpw_austria.23.b
+		ai_chance = { factor = 400 }
+		
 	}
 }

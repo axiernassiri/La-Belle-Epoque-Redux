@@ -54,7 +54,7 @@ ideas = {
 		fpw_idea_the_duel_monarchy = {
 			modifier = {
 				political_power_factor = -0.05
-				stability_factor = 0.25
+				stability_factor = 0.15
 				war_support_factor = 0.15
             }
 		}
@@ -150,7 +150,7 @@ ideas = {
 		AUS_economic_militarizaiton = {
 			picture = AUS_empire_restored
 			modifier = {
-				production_speed_arms_factory_factor = 0.20
+				production_speed_arms_factory_factor = 0.10
             }
 		}
 
@@ -172,7 +172,7 @@ ideas = {
 		AUS_improved_production_methods_id = {
 			picture = AUS_empire_restored
 			modifier = {
-				industrial_capacity_factory = 0.20
+				industrial_capacity_factory = 0.125
             }
 		}
 	}

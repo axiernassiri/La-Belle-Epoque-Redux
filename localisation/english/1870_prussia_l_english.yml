@@ -495,3 +495,12 @@
       PRS_focus_on_artillery_desc: ""
       PRS_special_forces: "Prussian special forces"
       PRS_special_forces_desc: ""
+
+
+
+
+
+      ### fpw stuff someone can move later ig
+      franco_prussian_fpw.10.t: "Prussian reaction to the Ems-Dispatch"
+      franco_prussian_fpw.10.d: "[PRS.GetNameDefCap] has responded to our ultimatum in a mocking manner, publishing a modified version of it in the largest German newspaper, making us appear fearful of them. This has further enraged the French public, leaving us with a critical choice between going to war or facing national riots."
+      franco_prussian_fpw.10.a: "These damn Prussians!"
