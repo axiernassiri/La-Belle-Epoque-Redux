@@ -1,6 +1,7 @@
 capital = 16
 oob = "FRA_1866"
 
+set_country_flag = fra_opposition_fights_military_reforms
 
 set_cosmetic_tag = FRA_kingdom
 give_guarantee = PAP
@@ -126,6 +127,32 @@ recruit_character = FRA_henri_tolain
 recruit_character = FRA_leon_gambetta
 recruit_character = FRA_adolphe_thiers
 
+recruit_character = FRA_henri_d_artois
+recruit_character = FRA_napoleon_jerome_bonaparte
+recruit_character = FRA_eugene_rouher
+recruit_character = FRA_emile_ollivier
+recruit_character = FRA_achille_fould
+recruit_character = FRA_claude_alphonse_delangle
+recruit_character = FRA_lionel_de_moustier
+recruit_character = FRA_pierre_magne
+recruit_character = FRA_jean_baptiste_philibert_vaillant
+recruit_character = FRA_louis_auguste_blanqui
+recruit_character = FRA_emile_eudes
+recruit_character = FRA_raoul_rigault
+recruit_character = FRA_emile_pereire
+recruit_character = FRA_georges_eugene_haussmann
+recruit_character = FRA_ulysse_parent
+recruit_character = FRA_ernest_lefevre
+recruit_character = FRA_arthur_ranc
+recruit_character = FRA_gustave_flourens
+recruit_character = FRA_victor_de_persigny
+recruit_character = FRA_victor_hugo
+recruit_character = FRA_alexandre_auguste_ledru_rollin
+recruit_character = FRA_armand_barbes
+recruit_character = FRA_charles_kolb_bernard
+recruit_character = FRA_prosper_de_chasseloup_laubat
+recruit_character = FRA_emmanuel_vauchez
+
 recruit_character = FRA_francois_certain_de_canrobert
 recruit_character = FRA_francois_achille_bazaine
 recruit_character = FRA_adolphe_niel
@@ -161,7 +188,7 @@ recruit_character = FRA_louis_adolphe_bonard
 recruit_character = FRA_pierre_gustave_roze
 recruit_character = FRA_henri_delacoux_de_marivault_emeriau
 
-
+activate_advisor = fra_haussmann_token
 
 
 

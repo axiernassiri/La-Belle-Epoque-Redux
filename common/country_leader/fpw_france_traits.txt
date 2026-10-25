@@ -1,0 +1,96 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+leader_traits = {
+
+
+	lber_charismatic_orator = {
+		random = no
+		war_support_factor = 0.1
+		drift_defence_factor = 0.1
+		mobilization_speed = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lber_democrat_charismatic_orator = {
+		random = no
+		war_support_factor = 0.1
+		drift_defence_factor = 0.25
+		democratic_drift = 0.01
+		mobilization_speed = 0.2
+		mobilization_laws_cost_factor = -0.25
+		#surrender_limit = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lber_ruthless_pacifier = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = -0.1
+		compliance_growth_on_our_occupied_states = 0.05
+		resistance_activity = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lber_foreign_minister = {
+		random = no
+		#enemy_justify_war_goal_time = 0.3
+		request_lease_tension = -0.5
+		lend_lease_tension = -0.5
+		embargo_threshold_factor = -0.5
+		embargo_cost_factor = -0.5
+		military_industrial_organization_funds_gain = 0.1
+	}
+	lber_red_emperor = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		drift_defence_factor = 0.25
+		mobiliza
+		communism_drift = 0.01
+		democratic_drift = 0.01
+		democratic_acceptance = 50
+		communism_acceptance = 35
+		mobilization_laws_cost_factor = -0.25
+		political_advisor_cost_factor = -0.15
+	}
+	lber_red_prince = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = -0.05
+		communism_drift = 0.01
+		democratic_drift = 0.02
+	}
+	lber_public_works_enthusiast = {
+		sprite = 10
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.05
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+
+	}
+	lber_reactionary_figurehead = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		army_core_defence_factor = 0.1
+		conscription_factor = 0.05
+	}
+}

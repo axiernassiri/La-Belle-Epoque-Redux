@@ -38,9 +38,19 @@ characters={
 		}
 		country_leader = {
 			ideology=communism_subideology
-			traits = {  }
+			traits = { GER_pragmatic_trade_unionist }
 			expire="1965.1.1.1"
 			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_tolain_token
+			ledger = civilian
+			available = {
+				is_country_leader = no
+				has_government = communism
+			}
+			traits = { GER_pragmatic_trade_unionist }      # Unspecified cost defaults to 150.
 		}
 
 	}
@@ -53,9 +63,19 @@ characters={
 		}
 		country_leader = {
 			ideology=conservatism
-			traits = {  }
+			traits = { lber_democrat_charismatic_orator defender_of_the_homeland stout_defender }
 			expire="1965.1.1.1"
 			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_gambetta_token
+			ledger = civilian
+			available = {
+				is_country_leader = no
+				has_government = democratic
+			}
+			traits = { lber_democrat_charismatic_orator }      # Unspecified cost defaults to 150.
 		}
 
 	}
@@ -68,12 +88,557 @@ characters={
 		}
 		country_leader = {
 			ideology=bonapartism
-			traits = {  }
+			traits = { tenacious_negotiator lber_ruthless_pacifier ARG_conservative_traditionalist negotiat }
 			expire="1965.1.1.1"
 			id=-1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_thiers_token
+			ledger = civilian
+			available = {
+				is_country_leader = no
+				OR = {	
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			traits = { ARG_conservative_traditionalist }      # Unspecified cost defaults to 150.
+		}
 
 	}
+
+
+
+
+##########################################################
+##########################################################
+##########################################################
+
+
+
+
+
+	FRA_henri_d_artois = {
+		name="Henri d'Artois"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_d_artois_token
+			ledger = civilian
+			available = {
+				OR = {
+					
+				has_government = fascism
+				has_government = neutrality
+				}
+			}
+			traits = { lber_reactionary_figurehead }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_napoleon_jerome_bonaparte = {
+		name="Napoléon-Jérôme Bonaparte"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		
+		#country_leader = {
+		#	ideology=socialist_constitutional_monarchism
+		#	traits = { lber_red_emperor }
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_jerome_bonaparte_token
+			ledger = civilian
+			available = {
+				is_country_leader = no
+				OR = {
+					
+				has_government = democratic
+				has_government = neutrality
+				}
+			}
+			traits = { lber_red_prince }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_eugene_rouher = {
+		name="Eugène Rouher"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_rouher_token
+			ledger = civilian
+			available = {
+				has_government = fascism
+			}
+			traits = { captain_of_industry staunch_monarchist }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_emile_ollivier = {
+		name="Émile Ollivier"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_ollivier_token
+			ledger = civilian
+			available = {
+				has_government = fascism
+			}
+			traits = { smooth_talking_charmer SWI_conservative_democrat }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_achille_fould = {
+		name="Achille Fould"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_fould_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = fascism
+				has_government = neutrality
+				}
+			}
+			traits = { financial_expert }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_claude_alphonse_delangle = {
+		name="Claude Alphonse Delangle"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_alphonse_delangle_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = fascism
+				has_government = neutrality
+				}
+			}
+			traits = { lber_foreign_minister }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_lionel_de_moustier = {
+		name="Lionel de Moustier"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_de_moustier_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = fascism
+				has_government = neutrality
+				}
+			}
+			traits = { lber_foreign_minister }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_pierre_magne = {
+		name="Pierre Magne"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_magne_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = fascism
+				has_government = neutrality
+				}
+			}
+			traits = { SWE_admiral_of_industry }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_jean_baptiste_philibert_vaillant = {
+		name="Jean-Baptiste Philibert Vaillant"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_philibert_vaillant_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = fascism
+				has_government = neutrality
+				}
+			}
+			traits = { armaments_organizer }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_louis_auguste_blanqui = {
+		name="Louis-Auguste Blanqui"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		#country_leader = {
+		#	ideology=communism_subideology
+		#	traits = { PHI_revolutionary_president }
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_auguste_blanqui_token
+			ledger = civilian
+			available = {
+				has_government = communism
+			}
+			traits = { veteran_guerrilla_fighter }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_emile_eudes = {
+		name="Émile Eudes"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_eudes_token
+			ledger = civilian
+			available = {
+				has_government = communism
+			}
+			traits = { IRQ_militant_politician }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_raoul_rigault = {
+		name="Raoul Rigault"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_rigault_token
+			ledger = civilian
+			available = {
+				has_government = communism
+			}
+			traits = { prince_of_terror }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_emile_pereire = {
+		name="Émile Pereire"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_pereire_token
+			ledger = civilian
+			available = {
+				has_government = fascism
+			}
+			traits = { financial_expert }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_georges_eugene_haussmann = {
+		name="Georges-Eugène Haussmann"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_haussmann_token
+			ledger = civilian
+			can_be_fired = no
+			available = {
+				has_government = fascism
+			}
+			traits = { lber_public_works_enthusiast }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_ulysse_parent = {
+		name="Ulysse Parent"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_parent_token
+			ledger = civilian
+			available = {
+				has_government = communism
+			}
+			traits = { social_reformer }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_ernest_lefevre = {
+		name="Ernest Lefèvre"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_lefevre_token
+			ledger = civilian
+			available = {
+				has_government = democratic
+			}
+			traits = { SWI_pragmatic_democrat }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_arthur_ranc = {
+		name="Arthur Ranc"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_ranc_token
+			ledger = civilian
+			available = {
+				has_government = democratic
+			}
+			traits = { pragmatic_socialist }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_gustave_flourens = {
+		name="Gustave Flourens"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_flourens_token
+			ledger = civilian
+			available = {
+				has_government = communism
+			}
+			traits = { red_army_organizer }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_victor_de_persigny = {
+		name="Victor de Persigny"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_de_persigny_token
+			ledger = civilian
+			available = {
+				has_government = fascism
+			}
+			traits = { staunch_loyalist }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_victor_hugo = {
+		name="Victor Hugo"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_hugo_token
+			ledger = civilian
+			available = {
+				has_government = democratic
+			}
+			traits = { compassionate_gentleman anti_imperialist_thinker }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_alexandre_auguste_ledru_rollin = {
+		name="Alexandre-Auguste Ledru-Rollin"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_ledru_rollin_token
+			ledger = civilian
+			available = {
+				has_government = democratic
+			}
+			traits = { democratic_crusader }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_armand_barbes = {
+		name="Armand Barbès"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_barbes_token
+			ledger = civilian
+			available = {
+				has_government = communism
+			}
+			traits = { born_agitator }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_charles_kolb_bernard = {
+		name="Charles Kolb-Bernard"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_kolb_bernard_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			traits = { conservative_grandee }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_prosper_de_chasseloup_laubat = {
+		name="Prosper de Chasseloup-Laubat"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_chasseloup_laubat_token
+			ledger = civilian
+			available = {
+				has_government = fascism
+			}
+			traits = { colonial_lawyer }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_emmanuel_vauchez = {
+		name="Emmanuel Vauchez"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_vauchez_token
+			ledger = civilian
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { BRA_education_pioneer }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+
 
 
 
@@ -97,7 +662,7 @@ characters={
 		}
 		advisor = {
 			slot = theorist
-			idea_token = fra_chanzy_token
+			idea_token = fra_certain_de_canrobert_token
 			ledger = army
 			traits = { grand_battle_plan_expert }      # Unspecified cost defaults to 150.
 		}
@@ -124,6 +689,7 @@ characters={
 			ledger = army
 			traits = { army_chief_drill_2 }
 			available = {
+				has_completed_focus = FRA_adolphe_niels_reform
 				has_country_flag = niel_is_war_minister
 			}      # Unspecified cost defaults to 150.
 		}
@@ -197,7 +763,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_d_angely_token
 			ledger = army
 			traits = { army_cavalry_2 }      # Unspecified cost defaults to 150.
 		}
@@ -357,7 +923,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_frossard_token
 			ledger = army
 			traits = { army_artillery_1 }      # Unspecified cost defaults to 150.
 		}
@@ -459,7 +1025,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_farre_token
 			ledger = army
 			traits = { army_entrenchment_2 }      # Unspecified cost defaults to 150.
 		}
@@ -567,7 +1133,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_paladines_token
 			ledger = army
 			traits = { army_regrouping_1 }      # Unspecified cost defaults to 150.
 		}
@@ -779,7 +1345,7 @@ characters={
 		}
 		advisor = {
 			slot = theorist
-			idea_token = fra_chanzy_token
+			idea_token = fra_roze_token
 			ledger = navy
 			traits = { naval_theorist }      # Unspecified cost defaults to 150.
 		}
@@ -836,7 +1402,7 @@ characters={
 		}
 		advisor = {
 			slot = theorist
-			idea_token = fra_chanzy_token
+			idea_token = fra_delescluze_token
 			ledger = army
 			traits = { mass_assault_expert }      # Unspecified cost defaults to 150.
 		}
@@ -888,7 +1454,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_dabrowski_token
 			ledger = army
 			traits = { army_infantry_2 }      # Unspecified cost defaults to 150.
 		}
@@ -913,7 +1479,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_wrobleski_token
 			ledger = army
 			traits = { army_cavalry_2 }      # Unspecified cost defaults to 150.
 		}
@@ -938,7 +1504,7 @@ characters={
 		}
 		advisor = {
 			slot = theorist
-			idea_token = fra_chanzy_token
+			idea_token = fra_napoleon_la_cecilia_token
 			ledger = army
 			traits = { grand_battle_plan_expert }      # Unspecified cost defaults to 150.
 		}
@@ -1020,7 +1586,7 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = fra_chanzy_token
+			idea_token = fra_digeon_token
 			ledger = army
 			traits = { army_entrenchment_3 }      # Unspecified cost defaults to 150.
 		}
