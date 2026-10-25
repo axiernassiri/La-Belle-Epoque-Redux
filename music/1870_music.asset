@@ -38,6 +38,7 @@ music = {
 	name = "partant_pour_la_syrie"
 	file = "partant_pour_la_syrie.ogg"
 }
+### EVENT ###
 music = {
 	name = "the_manchester_rambler"
 	file = "the_manchester_rambler.ogg"

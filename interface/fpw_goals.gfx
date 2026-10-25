@@ -12,7 +12,6 @@ spriteTypes = {
 		name = "GFX_focus_befriend_spain"
 		texturefile = "gfx/interface/goals/befriend_spain.png"
 	}
-
 	spriteType = {
 		name = "GFX_focus_PRS_league_of_three_emperors"
 		texturefile = "gfx/interface/goals/focus_PRS_league_of_three_emperors.png"
@@ -162,6 +161,10 @@ spriteTypes = {
 		name = "GFX_focus_PRS_tsingdao_incedent"
 		texturefile = "gfx/interface/goals/PRS_tsingdao_incedent.png"	
     }
+	spriteType = {
+		name = "GFX_focus_generic_offer_token_connciusen"
+		texturefile = "gfx/interface/goals/generic_offer_token_connciusen.png"
+	}
 }
 
 # SPAIN #
@@ -276,12 +279,6 @@ spriteTypes = {
 	}
 }
 
-
-# ROMANIA #
-	spriteType = {
-		name = "GFX_focus_generic_offer_token_connciusen"
-		texturefile = "gfx/interface/goals/generic_offer_token_connciusen.png"
-	}
 
 # AFGHANISTAN
 spriteTypes = {
