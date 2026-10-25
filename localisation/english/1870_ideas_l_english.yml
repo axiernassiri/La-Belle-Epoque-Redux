@@ -290,16 +290,3 @@
 
  fpw_bra_slavery:0 "Slavery"
  fpw_bra_slavery_desc:0 ""
-
- fpw_outdated_military:0 "Outdated Military"
- fpw_outdated_military_desc:0 "The [Root.GetAdjective] army is woefully unprepared for the modern battlefield. Outdated tactics, aging equipment, and poor coordination plague our forces. Without urgent reform, we risk humiliation at the hands of other armies."
- fpw_idea_austria_shelling_prussians:0 "Shelling Prussians"
- fpw_idea_austria_shelling_prussians_desc:0 ""
- fpw_idea_austria_superior_navy:0 "Superior Navy"
- fpw_idea_austria_superior_navy_desc:0 ""
- fpw_idea_austria_shadow_frankfurt:0 "Shadow of Frankfurt"
- fpw_idea_austria_shadow_frankfurt_desc:0 ""
- fpw_idea_austria_power_centralized:0 "Centralized Power"
- fpw_idea_austria_power_centralized_desc:0 ""
- fpw_idea_austria_power_decentralized:0 "Decentralized Power"
- fpw_idea_austria_power_decentralized_desc:0 ""

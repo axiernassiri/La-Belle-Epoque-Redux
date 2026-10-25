@@ -110,7 +110,7 @@
   #colonial
  AUS_demand_consessions_from_china: "Demand Concessions from China"
  AUS_demand_consessions_from_china_desc: ""
- AUS_austrian_colonial_ventures: "Österreichische Kolonialunternehmungen"
+ AUS_austrian_colonial_ventures: "Austrian Colonial Ventures"
  AUS_austrian_colonial_ventures_desc: ""
 
   #European Theatre
@@ -189,8 +189,8 @@
  AUS_imperial_awards: "Imperial Awards" 
  AUS_imperial_awards_desc: ""
  AUS_unified_military: "Unified Military"
- AUS_unified_military_desc: "The monarchy's military forces must be unified under a single command structure. By integrating the various branches of the army, navy, and air service, Austria can ensure that its armed forces operate effectively and efficiently in defense of the empire."
- AUS_wanzel_and_holeb_rifle: "Werndl and Holub rifle"
+ AUS_unified_military_desc: "The monarchy's military forces must be unified under a single command structure. By integrating the various branches of the army and navy, Austria can ensure that its armed forces operate effectively and efficiently in defense of the empire."
+ AUS_wanzel_and_holeb_rifle: "Werndl and Holub Rifle"
  AUS_wanzel_and_holeb_rifle_desc: ""
  AUS_restructured_army: "Restructured Army"
  AUS_restructured_army_desc: "The army has been restructured to improve its organization, training, and equipment. These reforms will enhance the monarchy's ability to defend its interests and project power in Europe and beyond."
@@ -201,23 +201,63 @@
  AUS_modernized_austrian_military: "Modernized Austrian Military"
  AUS_modernized_austrian_military_desc: ""
 
+ #economy
+  
+  #Civilian Economy
+ AUS_rebuild_imperial_treasury: "Rebuild the Imperial Treasury"
+ AUS_rebuild_imperial_treasury_desc: ""
+ AUS_reorganize_imperial_railroads: "Reorganize the Imperial Railroads"
+ AUS_reorganize_imperial_railroads_desc: ""
+ AUS_czech_iron_works: "Czech Iron Works"
+ AUS_czech_iron_works_desc: ""
+ AUS_workshops_of_bohemia: "Workshops of Bohemia"
+ AUS_workshops_of_bohemia_desc: ""
+ AUS_encourage_private_entreprise: "Encouraging Private Enterprises"
+ AUS_encourage_private_entreprise_desc: ""
+ AUS_stabilize_the_economy: "Stabilizing the Economy"
+ AUS_stabilize_the_economy_desc: ""
+ AUS_salzburg_tungsten_mine: "Salzburg Tungsten Mine"
+ AUS_salzburg_tungsten_mine_desc: ""
+ AUS_ten_year_settlement: "Ten year Settlement"
+ AUS_ten_year_settlement_desc: ""
+ AUS_austrian_univeristies: "Austrian Universities"
+ AUS_austrian_univeristies_desc: ""
+  
+  #Military Economy
+ AUS_prepare_for_increasing_tensions: "Preparing for increasing Tensions"
+ AUS_prepare_for_increasing_tensions_desc: ""
+ AUS_keeping_up_with_prussian_militarization: "Keeping up with Prussian Militarization"
+ AUS_keeping_up_with_prussian_militarization_desc: ""
+ AUS_cavalry_research: "Cavalry Research"
+ AUS_cavalry_research_desc: ""
+ AUS_improved_production_methods: "Improving the Production Methods"
+ AUS_improved_production_methods_desc: ""
+ AUS_cutting_corners: "Cutting the Corners"
+ AUS_cutting_corners_desc: ""
+ AUS_austrian_coal_mining: "Austrian Coal Mining"
+ AUS_austrian_coal_mining_desc: ""
+
 #decisions
  #pops of empire
  AUS_populations_of_the_empire: "Populations of the Empire"
+ AUS_populations_of_the_empire_desc: "The Austrian Empire is home to many different §Yethnic groups§!, most of which are §Rsuspicious of our rule§!. Through §YDecisions§!, we can win the people over to our §Gside§!. Additional §YDecisions§! can be unlocked later in the §Cfocus tree§!. Hover over §YAttitude§! to get more information."
  AUS_gain_hungarian_trust: "Gain Hungarian Trust"
  AUS_improve_hungarian_relations: "Improve Hungarian Attitude"
  AUS_gain_czech_trust: "Gain Czech Trust"
  AUS_improve_czech_relations: "Improve Czech Attitude"
- AUS_gain_illyrian_trust: "Gain Illyrian Trusse"
+ AUS_gain_illyrian_trust: "Gain Illyrian Trust"
  AUS_improve_illyrian_relations: "Improve Illyrian Attitude"
  AUS_gain_galician_trust: "Gain Galician Trust"
  AUS_improve_galician_relations: "Improve Galician Attitude"
 
  #ten year settlement
+ AUS_ten_year_settlement_dec: "Ten Year Settlement"
  AUS_develop_austria: "Develop Austria"
  AUS_develop_hungary: "Develop Hungary"
 
 #ideas
+
+ #hidden ideas
  AUS_hungary_loyal: "Loyal Hungary"
  AUS_hungary_friendly: "Friendly Hungary"
  AUS_hungary_neutral: "Neutral Hungary"
@@ -234,9 +274,49 @@
  AUS_illyria_friendly: "Friendly Illyria"
  AUS_illyria_neutral: "Neutral Illyria"
  AUS_illyria_hostile: "Hostile Illyria"
- fpw_idea_habsburg_horses: "Habsburg Horses"
- fpw_modernized_military_command: "Modernized Military Command"
  
+ #shown ideas
+ fpw_outdated_military: "Outdated Military"
+ fpw_outdated_military_desc: "The [Root.GetAdjective] army is woefully unprepared for the modern battlefield. Outdated tactics, aging equipment, and poor coordination plague our forces. Without urgent reform, we risk humiliation at the hands of other armies."
+ fpw_idea_austria_shelling_prussians: "Shelling Prussians"
+ fpw_idea_austria_shelling_prussians_desc: ""
+ fpw_idea_austria_superior_navy: "Superior Navy"
+ fpw_idea_austria_superior_navy_desc: ""
+ fpw_idea_austria_shadow_frankfurt: "Shadow of Frankfurt"
+ fpw_idea_austria_shadow_frankfurt_desc: ""
+ fpw_idea_austria_power_centralized: "Centralized Power"
+ fpw_idea_austria_power_centralized_desc: ""
+ fpw_idea_austria_power_decentralized: "Decentralized Power"
+ fpw_idea_austria_power_decentralized_desc: ""
+ fpw_idea_the_duel_monarchy: "The Dual Monarchy"
+ fpw_idea_the_duel_monarchy_desc: ""
+ fpw_idea_habsburg_horses: "Habsburg Horses"
+ fpw_idea_habsburg_horses_desc: ""
+ fpw_modernized_military_command: "Modernized Military Command"
+ fpw_modernized_military_command_desc: ""
+ fpw_alpine_warfare: "Alpine Warfare"
+ fpw_alpine_warfare_desc: ""
+ fpw_austria_reigns_supreme: "Austrian Reigns Supreme"
+ fpw_austria_reigns_supreme_desc: ""
+ fpw_aus_new_arty: "New Austrian Artillery"
+ fpw_aus_new_arty_desc: ""
+ fpw_idea_aus_new_inf: "New Austrian Infantry Equipment"
+ AUS_stock_market_crash: "Stock Market Crash"
+ AUS_stock_market_crash_desc: ""
+ AUS_imperial_restoration: "Imperial Restoration"
+ AUS_imperial_restoration_desc: ""
+ AUS_unified_military: "Unified Military"
+ AUS_unified_military_desc: ""
+ AUS_modern_army: "Modern Army"
+ AUS_modern_army: ""
+ AUS_rebuilding_imperial_treasury: "Rebuilding the Imperial Treasury"
+ AUS_rebuilding_imperial_treasury_desc: ""
+ AUS_economic_militarizaiton: "Economic Militarization"
+ AUS_economic_militarizaiton_desc: ""
+ AUS_cutting_corners: "Cutting Corners"
+ AUS_cutting_corners_desc: ""
+ AUS_improved_production_methods_id: "Improved Production Methods"
+ AUS_improved_production_methods_id_desc: ""
  
 #events
  fpw_austria.1.t: "Austria Asks for Our Support"
@@ -276,7 +356,6 @@
  fpw_austria.11.d: ""
  fpw_austria.11.a: "We Agree."
  fpw_austria.11.b: "No."
- AUS_central_powers: "Central Powers"
  fpw_austria.12.t: "[AUS.GetNameDef] proposes a Germanic Alliance."
  fpw_austria.12.d: ""
  fpw_austria.12.a: "We accept"
@@ -353,6 +432,11 @@
  add_1_AUS_czech_trust: "Increase Czech Trust by 1"
  add_1_AUS_illyrian_trust: "Increase Illyrian Trust by 1"
  add_1_AUS_galician_trust: "Increase Galician Trust by 1"
+ AUS_ten_year_settlement_tt: "Unlocks custom settlement decisions"
+ AUS_populations_of_emp_illyria_tt: "This focus will allow you to gain §YTrust§! and increase §YAttitude§! with the §YIllyrians§!."
+ AUS_gain_czech_trust_tt: "This focus will allow you to gain §YTrust§! with the §YCzechs§!."
+ AUS_increase_czech_attitude: "This focus will allow you to increase §YAttitude§! with the §YCzechs§!."
+
 #custom modifier tooltips
  
 #scripted gui text
@@ -396,13 +480,12 @@
  
 #opinion modifiers
  fpw_rejected_congress_of_berlin: "Rejected Congress of Berlin"
+
 #cosmetic nation/ideology names
  
-#Faction names I think?
+#Faction names
  AUS_anti_german_alliance: "Anti-[PRS.GetNameDef] Entente."
+ AUS_central_powers: "Central Powers"
 
 
 ### some tooltips for the focus tree, btw I have added a couple of events and decisions and ideas so add loc to that when you can -Gata
- AUS_populations_of_emp_illyria_tt: "This focus will allow you to gain §YTrust§! and increase §YAttitude§! with the §YIllyrians§!."
- AUS_gain_czech_trust_tt: "This focus will allow you to gain §YTrust§! with the §YCzechs§!."
- AUS_increase_czech_attitude: "This focus will allow you to increase §YAttitude§! with the §YCzechs§!."

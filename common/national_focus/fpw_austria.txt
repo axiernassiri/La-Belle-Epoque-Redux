@@ -2672,6 +2672,7 @@
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_ten_year_settlement_tt
 			### grants custom settlement decisions
 			set_variable = { austrian_development = 0 }
 			set_variable = { hungarian_development = 0 }
