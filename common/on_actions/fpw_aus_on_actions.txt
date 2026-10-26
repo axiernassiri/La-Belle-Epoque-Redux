@@ -85,4 +85,15 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_AUS = {
+		effect = {
+			if = {
+				limit = {
+					date > 1870.10.27
+					date < 1870.10.29
+				}
+				country_event = fpw_austria.24
+			}
+		}
+	}
 }

@@ -501,3 +501,50 @@ brutally_oppressive_occupation = {
 		}
 	}
 }
+
+
+austrian_subjects = {
+	icon = 11
+	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
+
+	visible = {
+		tag = AUS
+	}
+
+
+	available = {
+		OR = {
+			AND = {
+				has_idea = AUS_galicia_loyal
+				FROM = { tag = POL }
+			}
+			AND = {
+				has_idea = AUS_hungary_loyal
+				FROM = { tag = HUN }
+			}
+			AND = {
+				has_idea = AUS_illyria_hostile
+				FROM = { tag = CRO }
+			}
+			AND = {
+				has_idea = AUS_illyria_hostile
+				FROM = { tag = SLV }
+			}
+		}
+	}
+
+
+
+	state_modifier = {
+		resistance_target 				= -0.30
+		compliance_gain 				= 0.050
+		required_garrison_factor 		= -0.15
+		resistance_damage_to_garrison 	= 0.25
+		local_factories 				= 0.5
+		local_resources 				= 0.5
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}

@@ -1,10 +1,9 @@
-characters={
-
-	AUS_franz_joseph_I={
+characters = {
+	AUS_franz_joseph_I = {
 		name="Franz Joseph I"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUS/aus_franz_i.png"
+				large="gfx/leaders/AUS/Portrait_AUS_franz_joseph.png"
 			}
 		}
 		country_leader={
@@ -14,44 +13,11 @@ characters={
 		}
 	}
 #Army leaders
-	AUS_von_benedek ={
-		name="Ludwig von Benedek"
-		portraits={
-			civilian={
-				large=""
-			}
-		}
-	}
-
-	AUS_henikstein = {
-		name="Henikstein"
-		portraits={
-			civilian={
-				large=""
-			}
-		}
-	}
-	AUS_krismanic = {
-		name="Krismanic"
-		portraits={
-			civilian={
-				large=""
-			}
-		}
-	}
-	AUS_von_gablenz  = {
-		name="Krismanic"
-		portraits={
-			civilian={
-				large=""
-			}
-		}
-	}
 	AUS_archduke_albrecht = {
 		name="Archduke Albrecht"
 		portraits={
 			army={
-				large="gfx/leaders/AUS/albrecht.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_albrecht.dds"
 			}
 		}
 		field_marshal = {
@@ -68,12 +34,237 @@ characters={
 			traits = { fpw_habsburg_traditionalism }
 		}
 	}
-
+	AUS_ludwig_benedek = {
+		name="Ludwig von Benedek"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_ludwig_benedek.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_clam_gallas = {
+		name="Eduard Clam-Gallas"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_clam_gallas.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_ludwig_gablenz = {
+		name="Ludwig von Gablenz"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_ludwig_gablenz.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_alfred_henikstein = {
+		name="Alfred von Henikstein"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_alfred_henikstein.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_anton_mollinary = {
+		name="Anton Mollinary"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_anton_mollinary.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_joseph_maroicic = {
+		name="Joseph von Maroicic"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_joseph_maroicic.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_ernst_hartung = {
+		name="Ernst von Hartung"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_ernst_hartung.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_wilhelm_of_austria = {
+		name="Wilhelm of Austria"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_wilhelm_of_austria.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer charismatic }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	AUS_franz_john = {
+		name="Franz von John"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_franz_john.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_gideon_krismanic = {
+		name="Gideon von Krismanic"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_gideon_krismanic.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_duke_william = {
+		name="William of Württemberg"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_duke_william.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_alexander_kolle = {
+		name="Alexander von Kolle"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_alexander_kolle.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_anton_scudier = {
+		name="Anton von Scudier"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_anton_scudier.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_gabriel_rodich = {
+		name="Gabriel von Rodich"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_gabriel_rodich.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_franz_kuhnenfeld = {
+		name="Franz von Kuhnenfeld"
+		portraits={
+			army={
+				large="gfx/leaders/AUS/Portrait_AUS_franz_kuhnenfeld.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 	AUS_anton_von_schonfeld = {
 		name="Anton von Schönfeld"
 		portraits={
 			army={
-				large="gfx/leaders/AUS/anton_schon.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_anton_schonfeld.dds"
 			}
 		}
 		corps_commander = {
@@ -82,23 +273,6 @@ characters={
 			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
-
-	AUS_wilhelm_of_austria = {
-		name="Wilhelm of Austria"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/wilhelm_of_austria.dds"
-			}
-		}
-		field_marshal = {
-			traits = { infantry_officer charismatic }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
 			logistics_skill = 1
 		}
 	}
