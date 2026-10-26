@@ -17,14 +17,15 @@ characters = {
 		name="Archduke Albrecht"
 		portraits={
 			army={
-				large="gfx/leaders/AUS/Portrait_AUS_albrecht.dds"
+				large = "gfx/leaders/AUS/Portrait_AUS_albrecht.dds"
 			}
 		}
 		field_marshal = {
-			skill = 3
-			attack_skill = 1
+			traits = { brilliant_strategist organizer }
+			skill = 4
+			attack_skill = 2
 			defense_skill = 3
-			planning_skill = 2
+			planning_skill = 3
 			logistics_skill = 2
 		}
 		advisor={
@@ -42,8 +43,9 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { infantry_officer trait_cautious }
 			skill = 3
-			attack_skill = 1
+			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
@@ -57,11 +59,12 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { cavalry_officer  }
 			skill = 3
-			attack_skill = 1
-			defense_skill = 3
+			attack_skill = 3
+			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 3
 		}
 	}
 	AUS_ludwig_gablenz = {
@@ -72,9 +75,10 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { brilliant_strategist infantry_officer career_officer }
 			skill = 3
-			attack_skill = 1
-			defense_skill = 3
+			attack_skill = 3
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
 		}
@@ -87,9 +91,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
 		}
@@ -102,11 +107,12 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { engineer_officer career_officer }
 			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	AUS_joseph_maroicic = {
@@ -117,9 +123,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
 		}
@@ -132,8 +139,9 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { engineer_officer }
 			skill = 3
-			attack_skill = 1
+			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
@@ -147,12 +155,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer charismatic }
+			traits = { infantry_officer politically_connected }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
 		}
 	}
 	AUS_franz_john = {
@@ -163,11 +171,12 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { brilliant_strategist infantry_officer career_officer }
 			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	AUS_gideon_krismanic = {
@@ -178,10 +187,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
+			traits = { inflexible_strategist career_officer }
+			skill = 2
 			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
+			defense_skill = 1
+			planning_skill = 3
 			logistics_skill = 2
 		}
 	}
@@ -193,25 +203,27 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
+			traits = { politically_connected career_officer }
+			skill = 1
 			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
+			defense_skill = 2
+			planning_skill = 1
 			logistics_skill = 2
 		}
 	}
-	AUS_alexander_kolle = {
-		name="Alexander von Kolle"
+	AUS_alexander_koller = {
+		name="Alexander von Koller"
 		portraits={
 			army={
-				large="gfx/leaders/AUS/Portrait_AUS_alexander_kolle.dds"
+				large="gfx/leaders/AUS/Portrait_AUS_alexander_koller.dds"
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
+			traits = { career_officer cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 2
 		}
 	}
@@ -223,11 +235,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
+			traits = { career_officer infantry_officer }
+			skill = 1
 			attack_skill = 1
-			defense_skill = 3
+			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 1
 		}
 	}
 	AUS_gabriel_rodich = {
@@ -238,10 +251,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
 			logistics_skill = 2
 		}
 	}
@@ -253,10 +267,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 1
+			traits = { trait_mountaineer }
+			skill = 2
+			attack_skill = 2
 			defense_skill = 3
-			planning_skill = 2
+			planning_skill = 1
 			logistics_skill = 2
 		}
 	}
@@ -268,10 +283,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer}
+			traits = { infantry_officer }
 			skill = 2
 			attack_skill = 2
-			defense_skill = 3
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
