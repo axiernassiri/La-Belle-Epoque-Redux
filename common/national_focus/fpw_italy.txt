@@ -1773,7 +1773,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_address_the_economic_situation }
 		relative_position_id = ITA_address_the_economic_situation
 		icon = GFX_focus_ITA_northern_industry
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1784,7 +1784,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_state = {
+			162 = {
          		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
            			type = industrial_complex
@@ -1792,7 +1792,77 @@ focus_tree = {
             		instant_build = yes
 				}
 			}
-			random_owned_state = {
+		}
+	}
+	focus = {
+		id = ITA_industry_north_1
+		prerequisite = { focus = ITA_commit_to_the_industrious_north }
+		relative_position_id = ITA_commit_to_the_industrious_north
+		icon = GFX_focus_ITA_northern_industry
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			161 = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_industry_north_2
+		prerequisite = { focus = ITA_industry_north_1 }
+		relative_position_id = ITA_industry_north_1
+		icon = GFX_focus_ITA_northern_industry
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			161 = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_industry_north_3
+		prerequisite = { focus = ITA_industry_north_2 }
+		relative_position_id = ITA_industry_north_2
+		icon = GFX_focus_ITA_northern_industry
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			159 = {
          		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
            			type = industrial_complex
@@ -1807,7 +1877,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_address_the_economic_situation }
 		relative_position_id = ITA_address_the_economic_situation
 		icon = GFX_focus_ITA_southern_industry
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1818,15 +1888,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_state = {
+			117 = {
          		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
-           			type = industrial_complex
+           			type = arms_factory
             		level = 1
             		instant_build = yes
 				}
 			}
-			random_owned_state = {
+			117 = {
          		add_extra_state_shared_building_slots = 1
          		add_building_construction = {
            			type = industrial_complex
@@ -1835,6 +1905,107 @@ focus_tree = {
 				}
 			}
 		}
+	}
+	focus = {
+		id = ITA_industry_south_1
+		prerequisite = { focus = ITA_commit_to_unification }
+		relative_position_id = ITA_commit_to_unification
+		icon = GFX_focus_ITA_southern_industry
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+completion_reward = {
+			849 = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+	}
+	}
+	focus = {
+		id = ITA_industry_south_2
+		prerequisite = { focus = ITA_industry_south_1 }
+		relative_position_id = ITA_industry_south_1
+		icon = GFX_focus_ITA_southern_industry
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+completion_reward = {
+			115 = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+	}
+	}
+	focus = {
+		id = ITA_industry_south_3
+		prerequisite = { focus = ITA_industry_south_2 }
+		relative_position_id = ITA_industry_south_2
+		icon = GFX_focus_ITA_southern_industry
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+completion_reward = {
+			156 = {
+         		add_extra_state_shared_building_slots = 1
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 1
+            		instant_build = yes
+				}
+			}
+	}
+	}
+	focus = {
+		id = ITA_industry_final
+		prerequisite = { focus = ITA_industry_south_3 }
+		prerequisite = { focus = ITA_industry_north_3 }
+		relative_position_id = ITA_industry_south_3
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 5
+		}
+		search_filters = {  }
+		
+		available_if_capitulated = yes
+completion_reward = {
+			117 = {
+         		add_extra_state_shared_building_slots = 2
+         		add_building_construction = {
+           			type = industrial_complex
+            		level = 2
+            		instant_build = yes
+				}
+			}
+	}
 	}
 	focus = {
 		id = ITA_navy
@@ -1861,6 +2032,7 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			
 			114 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
