@@ -425,6 +425,8 @@ leader_traits = {
 	}
 	fpw_habsburg_traditionalism = {
 		army_org_factor = 0.025
+		experience_gain_army = 0.30
+        experience_gain_army_factor = 0.10
 	}
 	fpw_anti_british = {
 	}

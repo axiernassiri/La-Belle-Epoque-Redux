@@ -16,3 +16,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/stagnant_economy.dds"
 	}
 }
+# Military Advisors
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_AUS_albrecht"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_albrecht.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_henikstein"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_henikstein.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_gallas"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_gallas.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_john"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_john.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_benedek"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_benedek.dds"
+	}
+}
