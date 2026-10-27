@@ -1,38 +1,24 @@
-
 state={
 	id=27
 	name="STATE_27"
 	resources={
-
 		aluminium=11.000
-	
-
-wood=3
-}
+	}
 
 	history={
 		owner = FRA
+		add_core_of = FRA
 		victory_points = {
 			9490 5 
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-
 		}
-		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-
-			}
-
-		}
-
 	}
 
 	provinces={
-		648 3506 3669 3681 9490 9644 11628 
+		648 667 3506 3669 3681 9490 9625 9644 11628 
 	}
 	manpower=556816
 	buildings_max_level_factor=1.000

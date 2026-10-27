@@ -1,6 +1,7 @@
 capital = 52
 oob = "BAV_1866"
 
+set_research_slots = 3
 set_technology = {
 	fpw_infantry_weapons = 1
 	fpw_infantry_weapons1 = 1
@@ -8,22 +9,27 @@ set_technology = {
 	fpw_cannon_artillery = 1
 }
 
-add_dynamic_modifier = { 
-	modifier = fpw_outdated_military
+give_guarantee = AUS
+AUS = {
+	give_guarantee = BAV
 }
 
 recruit_character = BAV_ludwig_ii
+recruit_character = BAV_ludwig_von_der_pfordten
+recruit_character = BAV_chlodwig
 
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
+	last_election = "1864.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
 	neutrality = 32
-	fascism = 50
-	democratic = 18
+	fascism = 28
+	democratic = 40
+}
+add_ideas = {
+	BAV_ludwig_von_der_pfordten
 }

@@ -1,0 +1,20 @@
+state={
+	id=977
+	name="STATE_977"
+	manpower=400000
+	state_category=town
+	history={
+		owner = BAV
+		add_core_of = BAV
+		victory_points = {
+			708 10
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	provinces={
+		708 9666 11638 
+	}
+}

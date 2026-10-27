@@ -1,0 +1,88 @@
+characters = {
+	
+	BAV_ludwig_ii = {
+		name = "Ludwig II"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BAV_ludwig_ii
+			}
+		}
+		country_leader = {
+			ideology = liberal_constitutional_monarchism
+			expire = "1956.01.01.01"
+			traits = {
+				lbe_the_swan_king
+			}
+			id = -1
+		}
+		country_leader = {
+			ideology = conservative_constitutional_monarchism
+			traits = {
+				lbe_the_swan_king
+			}
+			expire = "1956.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			ideology = aboslute_monarchy
+			traits = {
+				lbe_the_swan_king
+			}
+			expire = "1956.01.01.01"
+			id = -1
+		}
+	}
+	
+	BAV_ludwig_von_der_pfordten = {
+		name = "Ludwig von der Pfordten"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BAV_ludwig_von_der_pfordten
+				small = GFX_idea_BAV_ludwig_von_der_pfordten
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BAV_ludwig_von_der_pfordten
+			allowed = {
+				original_tag = BAV
+			}
+			available = {
+				is_country_leader = no
+			}
+			ai_will_do = {
+				factor = 201.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+	
+	BAV_chlodwig = {
+		name = "Prince Chlodwig of Hohenlohe-Schillingsfürst"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BAV_chlodwig
+				small = GFX_idea_BAV_chlodwig
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BAV_chlodwig
+			allowed = {
+				original_tag = BAV
+			}
+			available = {
+				is_country_leader = no
+			}
+			ai_will_do = {
+				factor = 201.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+	
+}

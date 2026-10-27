@@ -706,7 +706,7 @@
 705;3;108;185;land;true;plains;1
 706;3;111;0;land;false;forest;2
 707;3;111;45;land;false;mountain;1
-708;3;114;10;land;false;plains;1
+708;3;114;10;land;false;urban;1
 709;3;114;65;land;false;forest;2
 710;3;117;30;land;false;mountain;2
 711;3;117;180;land;false;mountain;1
@@ -9513,7 +9513,7 @@
 9512;128;123;34;land;false;forest;6
 9513;128;126;99;land;false;desert;6
 9514;128;126;149;land;false;forest;6
-9515;128;126;204;land;false;plains;1
+9515;128;126;204;land;false;urban;1
 9516;128;129;64;land;false;plains;1
 9517;128;129;169;land;false;urban;1
 9518;128;129;214;land;false;plains;1

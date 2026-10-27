@@ -1,36 +1,26 @@
-
 state={
 	id=785
 	name="STATE_785"
+	manpower=717600
+	state_category=town
 	resources={
-
 		steel=12.000
 		aluminium=4.000
-	
-
-wood=3
-}
-
+		wood=3
+	}
 	history={
+		owner = FRA
+		add_core_of = FRA
 		victory_points = {
 			11420 5 
 		}
-		owner = FRA
-		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-
 		}
-
 	}
-
 	provinces={
-		454 485 3402 6569 6585 6949 9434 9561 11420 11491 11518 11563 9534
+		454 3402 6585 6949 9534 9561 11420 11491 11518 
 	}
-	manpower=717600
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }
 

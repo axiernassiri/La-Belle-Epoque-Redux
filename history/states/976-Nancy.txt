@@ -1,25 +1,23 @@
 state={
 	id=976
 	name="STATE_976"
-
+	manpower=146480
+	state_category=city
 	history={
 		owner = FRA
+		add_core_of = FRA
 		victory_points = {
 			11516 5 
 		}
+		victory_points = {
+			521 1 
+		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-
+			industrial_complex = 2
 		}
-		add_core_of = FRA
-
 	}
 	provinces={
-		11516 
+		521 11516 
 	}
-	manpower=129872
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

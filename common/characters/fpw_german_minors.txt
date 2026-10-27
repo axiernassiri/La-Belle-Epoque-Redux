@@ -28,20 +28,6 @@ characters={
 		}
 	}
 
-	BAV_ludwig_ii={
-		name="Ludwig II"
-		portraits={
-			civilian={
-				large=GFX_portrait_BAV_ludwig_ii
-			}
-		}
-		country_leader={
-			ideology=liberal_constitutional_monarchism
-			expire="1956.01.01.01"
-			id=-1
-		}
-	}
-
 	BRU_william={
 		name="Wilhelm August Ludwig Maximilian Friedrich"
 		portraits={

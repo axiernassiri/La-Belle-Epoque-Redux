@@ -1,0 +1,26 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_portrait_BAV_ludwig_ii"
+		texturefile = "gfx/leaders/german_minors/BAV/portrait_BAV_ludwig_II.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_BAV_ludwig_von_der_pfordten"
+		texturefile = "gfx/leaders/german_minors/BAV/portrait_BAV_ludwig_von_der_pfordten.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BAV_ludwig_von_der_pfordten"
+		texturefile = "gfx/leaders/german_minors/BAV/ideas/idea_BAV_ludwig_von_der_pfordten.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_BAV_chlodwig"
+		texturefile = "gfx/leaders/german_minors/BAV/portrait_BAV_chlodwig.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BAV_chlodwig"
+		texturefile = "gfx/leaders/german_minors/BAV/ideas/idea_BAV_chlodwig.png"
+	}
+    
+}
