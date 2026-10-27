@@ -58,7 +58,7 @@ FRA_modernization_of_paris_cat = {
 
 		activation = {
 			NOT = {
-				has_country_flag = fra_complete_withdraw_from_mexico
+				has_country_flag = fra_completed_second_phase_of_modernization
 			}
 		}
 
@@ -396,9 +396,11 @@ FRA_modernization_of_paris_cat = {
 		is_good = yes
 
 		activation = {
-			has_country_flag = fra_completed_second_phase_of_modernization
+			NOT = {
+				has_country_flag = fra_completed_third_phase_of_modernization
+		
+			}
 		}
-
 		#Failed
 		timeout_effect = {
 			add_political_power = -200
