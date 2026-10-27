@@ -393,7 +393,8 @@
  fpw_austria.20.b: "Promise revenge and reconquest"
 
 
-#traits 
+#traits
+ fpw_habsburg_traditionalism: "Habsburg Traditionalism"
  
 #custom cost texts 
  AUS_hungary_loyal_triger_tt: "§YHungarian§! attitude is at least: §GLoyal§!"

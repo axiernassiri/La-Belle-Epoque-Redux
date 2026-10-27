@@ -1,9 +1,9 @@
 characters = {
 	AUS_franz_joseph_I = {
-		name="Franz Joseph I"
-		portraits={
-			civilian={
-				large="gfx/leaders/AUS/Portrait_AUS_franz_joseph.png"
+		name = "Franz Joseph I"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_AUS_franz_joseph
 			}
 		}
 		country_leader={
@@ -11,13 +11,27 @@ characters = {
 			expire="1956.01.01.01"
 			id=-1
 		}
-	}
-#Army leaders
+	}                                 
+#   :##:    ######:   ###  ### ###    ###
+#    ##     #######   ###  ### .##:  :##.
+#   ####    ##   :##  ###::###  ###  ### 
+#   ####    ##    ##  ###  ###   ##::##  
+#  :#  #:   ##   :##  ## ## ##    ####   
+#   #::#    #######:  ##:##:##    ####   
+#  ##  ##   ######    ##.##.##    :##:   
+#  ######   ##   ##.  ## ## ##     ##    
+# .######.  ##   ##   ##    ##     ##    
+# :##  ##:  ##   :##  ##    ##     ##    
+# ###  ###  ##    ##: ##    ##     ##    
+# ##:  :##  ##    ### ##    ##     ##
+
+
 	AUS_archduke_albrecht = {
-		name="Archduke Albrecht"
-		portraits={
-			army={
-				large = "gfx/leaders/AUS/Portrait_AUS_albrecht.dds"
+		name = "Archduke Albrecht"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_albrecht
+				small = GFX_idea_AUS_albrecht
 			}
 		}
 		field_marshal = {
@@ -28,18 +42,43 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 		}
-		advisor={
+		advisor = {
 			slot = army_chief
-			cost = 150
 			idea_token = archduke_albrecht
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				
+			}
+			cost = 150
 			traits = { fpw_habsburg_traditionalism }
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	AUS_ludwig_benedek = {
-		name="Ludwig von Benedek"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_ludwig_benedek.dds"
+		name = "Ludwig von Benedek"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_ludwig_benedek
+				small = GFX_idea_AUS_benedek
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ludwig_benedek
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				
+			}
+			cost = 150
+			traits = { army_regrouping_1 }
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
@@ -52,14 +91,30 @@ characters = {
 		}
 	}
 	AUS_clam_gallas = {
-		name="Eduard Clam-Gallas"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_clam_gallas.dds"
+		name = "Eduard Clam-Gallas"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_clam_gallas
+				small = GFX_idea_AUS_gallas
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = clam_gallas
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				
+			}
+			cost = 150
+			traits = { army_cavalry_1 }
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer  }
+			traits = { cavalry_officer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -68,10 +123,10 @@ characters = {
 		}
 	}
 	AUS_ludwig_gablenz = {
-		name="Ludwig von Gablenz"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_ludwig_gablenz.dds"
+		name = "Ludwig von Gablenz"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_ludwig_gablenz
 			}
 		}
 		corps_commander = {
@@ -84,10 +139,26 @@ characters = {
 		}
 	}
 	AUS_alfred_henikstein = {
-		name="Alfred von Henikstein"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_alfred_henikstein.dds"
+		name = "Alfred von Henikstein"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_alfred_henikstein
+				small = GFX_idea_AUS_henikstein
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = alfred_henikstein
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				
+			}
+			cost = 150
+			traits = { army_logistics_2 }
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
@@ -100,10 +171,10 @@ characters = {
 		}
 	}
 	AUS_anton_mollinary = {
-		name="Anton Mollinary"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_anton_mollinary.dds"
+		name = "Anton Mollinary"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_anton_mollinary
 			}
 		}
 		corps_commander = {
@@ -116,10 +187,10 @@ characters = {
 		}
 	}
 	AUS_joseph_maroicic = {
-		name="Joseph von Maroicic"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_joseph_maroicic.dds"
+		name = "Joseph von Maroicic"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_joseph_maroicic
 			}
 		}
 		corps_commander = {
@@ -132,10 +203,10 @@ characters = {
 		}
 	}
 	AUS_ernst_hartung = {
-		name="Ernst von Hartung"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_ernst_hartung.dds"
+		name = "Ernst von Hartung"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_ernst_hartung
 			}
 		}
 		corps_commander = {
@@ -148,10 +219,10 @@ characters = {
 		}
 	}
 	AUS_wilhelm_of_austria = {
-		name="Wilhelm of Austria"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_wilhelm_of_austria.dds"
+		name = "Wilhelm of Austria"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_wilhelm_of_austria
 			}
 		}
 		corps_commander = {
@@ -164,10 +235,26 @@ characters = {
 		}
 	}
 	AUS_franz_john = {
-		name="Franz von John"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_franz_john.dds"
+		name = "Franz von John"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_franz_john
+				small = GFX_idea_AUS_john
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = franz_john
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				
+			}
+			cost = 150
+			traits = { army_infantry_2 }
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
@@ -180,10 +267,10 @@ characters = {
 		}
 	}
 	AUS_gideon_krismanic = {
-		name="Gideon von Krismanic"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_gideon_krismanic.dds"
+		name = "Gideon von Krismanic"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_gideon_krismanic
 			}
 		}
 		corps_commander = {
@@ -196,10 +283,10 @@ characters = {
 		}
 	}
 	AUS_duke_william = {
-		name="William of Württemberg"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_duke_william.dds"
+		name = "William of Württemberg"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_duke_william
 			}
 		}
 		corps_commander = {
@@ -212,10 +299,10 @@ characters = {
 		}
 	}
 	AUS_alexander_koller = {
-		name="Alexander von Koller"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_alexander_koller.dds"
+		name = "Alexander von Koller"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_alexander_koller
 			}
 		}
 		corps_commander = {
@@ -228,10 +315,10 @@ characters = {
 		}
 	}
 	AUS_anton_scudier = {
-		name="Anton von Scudier"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_anton_scudier.dds"
+		name = "Anton von Scudier"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_anton_scudier
 			}
 		}
 		corps_commander = {
@@ -244,10 +331,10 @@ characters = {
 		}
 	}
 	AUS_gabriel_rodich = {
-		name="Gabriel von Rodich"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_gabriel_rodich.dds"
+		name = "Gabriel von Rodich"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_gabriel_rodich
 			}
 		}
 		corps_commander = {
@@ -260,10 +347,10 @@ characters = {
 		}
 	}
 	AUS_franz_kuhnenfeld = {
-		name="Franz von Kuhnenfeld"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_franz_kuhnenfeld.dds"
+		name = "Franz von Kuhnenfeld"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_franz_kuhnenfeld
 			}
 		}
 		corps_commander = {
@@ -276,10 +363,10 @@ characters = {
 		}
 	}
 	AUS_anton_von_schonfeld = {
-		name="Anton von Schönfeld"
-		portraits={
-			army={
-				large="gfx/leaders/AUS/Portrait_AUS_anton_schonfeld.dds"
+		name = "Anton von Schönfeld"
+		portraits = {
+			army = {
+				large = GFX_Portrait_AUS_anton_schonfeld
 			}
 		}
 		corps_commander = {
@@ -292,3 +379,22 @@ characters = {
 		}
 	}
 }
+                                                                                    
+#   :####:   .####.   ##:  :##  ########  ######:   ###   ##  ###  ###  ########  ###   ##  ######## 
+#   ######   ######   ##    ##  ########  #######   ###   ##  ###  ###  ########  ###   ##  ######## 
+# :##:  .#  :##  ##:  :##  ##:  ##        ##   :##  ###:  ##  ###::###  ##        ###:  ##     ##    
+# ##:       ##:  :##  :##  ##:  ##        ##    ##  ####  ##  ###  ###  ##        ####  ##     ##    
+# ##.       ##    ##   ## .##   ##        ##   :##  ##:#: ##  ## ## ##  ##        ##:#: ##     ##    
+# ##        ##    ##   ##::##   #######   #######:  ## ## ##  ##:##:##  #######   ## ## ##     ##    
+# ##  ####  ##    ##   ##::##   #######   ######    ## ## ##  ##.##.##  #######   ## ## ##     ##    
+# ##. ####  ##    ##   :####:   ##        ##   ##.  ## :#:##  ## ## ##  ##        ## :#:##     ##    
+# ##:   ##  ##:  :##   .####.   ##        ##   ##   ##  ####  ##    ##  ##        ##  ####     ##    
+# :##:  ##  :##  ##:    ####    ##        ##   :##  ##  :###  ##    ##  ##        ##  :###     ##    
+#  #######   ######     ####    ########  ##    ##: ##   ###  ##    ##  ########  ##   ###     ##    
+#   :####.   .####.      ##     ########  ##    ### ##   ###  ##    ##  ########  ##   ###     ##    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                        
+                                                                        

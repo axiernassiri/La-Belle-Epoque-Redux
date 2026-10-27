@@ -72,6 +72,78 @@ spriteTypes = {
 		name = "GFX_portrait_AUS_franz_joseph_i"
 		texturefile = "gfx/leaders/AUS/Portrait_AUS_franz_joseph_I.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_albrecht"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_albrecht.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_alexander_koller"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_alexander_koller.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_alfred_henikstein"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_alfred_henikstein.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_anton_mollinary"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_anton_mollinary.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_anton_schonfeld"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_anton_schonfeld.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_anton_scudier"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_anton_scudier.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_clam_gallas"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_clam_gallas.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_duke_william"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_duke_william.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_ernst_hartung"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_ernst_hartung.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_franz_john"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_franz_john.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_franz_joseph"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_franz_joseph.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_franz_kuhnenfeld"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_franz_kuhnenfeld.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_gabriel_rodich"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_gabriel_rodich.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_gideon_krismanic"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_gideon_krismanic.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_joseph_maroicic"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_joseph_maroicic.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_ludwig_benedek"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_ludwig_benedek.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_ludwig_gablenz"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_ludwig_gablenz.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AUS_wilhelm_of_austria"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_wilhelm_of_austria.dds"
+	}
 
 	# ENG
 	spriteType = {
