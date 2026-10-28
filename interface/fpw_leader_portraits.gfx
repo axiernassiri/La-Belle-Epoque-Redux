@@ -566,6 +566,12 @@ spriteTypes = {
 	   name = "GFX_portrait_ARG_bartoleme_mitre"
 	   texturefile = "gfx/leaders/ARG/Portrait_ARG_bartolome_mitre.dds"
     }
+	
+	#CHL
+	 spriteType = {
+	   name = "GFX_portrait_CHL_jose_joaquin_perez"
+	   texturefile = "gfx/leaders/CHL/Portrait_CHL_jose_joaquin_perez.dds"
+    }
 
 	# AFZ
 	spriteType = {

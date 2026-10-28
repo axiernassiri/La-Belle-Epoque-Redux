@@ -1,0 +1,16 @@
+characters = {
+
+	CHL_jose_joaquin_perez={ 
+		name = "José Joaquín Pérez"
+		portraits={
+			civilian={
+			    large=GFX_portrait_CHL_jose_joaquin_perez
+			}
+		}
+		country_leader={
+			ideology =liberalism
+			expire = "1956.01.01" 
+			id = -1 
+		}
+	}
+}

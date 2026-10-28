@@ -37,18 +37,20 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 20
 
-
+recruit_character = CHL_jose_joaquin_perez
 
 set_convoys = 5
 set_politics = {
-	ruling_party = democratic
-	last_election = "1932.10.30"
-	election_frequency = 72  #but 4 years after this one in 1938.
+	ruling_party = fascism
+	last_election = "1961.7.25"
+	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	communism = 2
+	democratic = 7
+	fascism = 88
+	neutrality = 0
+	communism = 5
 }
 
 
