@@ -64,7 +64,15 @@ country_event = {
 	picture = GFX_report_event_generic_handshake
 
 	is_triggered_only = yes
+		immediate = {
+		hidden_effect = {
+		country_event = {
+				id = italy_fpw.26
+				days = 12
+			}
 
+		}
+		}
 	fire_only_once=yes
 
 	major = yes
@@ -85,7 +93,15 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once=yes
+	immediate = {
+		hidden_effect = {
+		country_event = {
+				id = italy_fpw.26
+				days = 7
+			}
 
+		}
+		}
 	major = yes
 
 	option = {
