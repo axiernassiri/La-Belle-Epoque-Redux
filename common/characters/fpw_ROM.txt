@@ -1,10 +1,10 @@
 characters={
 
 	ROM_alexandru = {
-		name = ROM_ALEXANDRU_NAME
+		name = ROM_ALEXANDRU
 		portraits = {
 			civilian = {
-				large = GFX_portrait_ROM_alexandru
+				large = GFX_Portrait_ROM_alexandru
 			}
 		}
 

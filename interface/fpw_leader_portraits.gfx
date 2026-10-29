@@ -466,7 +466,7 @@ spriteTypes = {
 	
 	# ROM
 	spriteType = {
-		name = "GFX_portrait_ROM_alexandru"
+		name = "GFX_Portrait_ROM_alexandru"
 		texturefile = "gfx/leaders/ROM/Portrait_ROM_alexandru.dds"
 	}
 	
