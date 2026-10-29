@@ -51,17 +51,17 @@
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
+			has_country_flag = niel_is_war_minister
 		}
 
 		bypass = {
-			
 		}
 
 
 		icon = GFX_
 		x = 6
 		y = 0
-		cost = 5
+		cost = 3
 
 		search_filters = {  }
 		completion_reward = {
