@@ -388,15 +388,21 @@
  fpw_austria.18.d: "Uniforms aren't cheap. So we need to decide whether we have enough money to buy our soldiers new uniforms or if they need to do it themselves."
  fpw_austria.18.a: "We cannot impose any further burdens on our soldiers."
  fpw_austria.18.b: "Sorry, but we simply do not have enough money."
- 
- # gata you know what you need to do
- fpw_austria.19.t: ""
-
+ fpw_austria.19.t: "The Empress and the Hungarian Question"
+ fpw_austria.19.d: "The Empress has taken a keen interest in Hungarian culture and has begun learning the Hungarian language. Through her growing connections with Hungarian politicians, she hopes to influence the Emperor and convince him to grant Hungary greater autonomy. However, not everyone at court agrees with her approach, and the question remains whether tradition or reform will prevail."
+ fpw_austria.19.a: "Let the Empress do as she wishes"
+ fpw_austria.19.b: "Tradition must be upheld"
  fpw_austria.20.t: "Imperial Address"
  fpw_austria.20.d: "After the Bruderkrieg and the subsequent Ausgleich, our glorious Emperor wishes to deliver a speech to his people. He must choose between promising economic reforms and a peaceful course for the coming years, or vowing revenge and reconquest."
  fpw_austria.20.a: "Promise economic reforms and peace for the coming years."
  fpw_austria.20.b: "Promise revenge and reconquest"
-
+ fpw_Austria.21.t: "France gives Venice to Italy"
+ fpw_Austria.21.d: ""
+ fpw_Austria.21.a: ""
+ fpw_austria.22.t: "Diplomatic Victory in the Berlin Congress"
+ fpw_austria.22.d: "Our diplomats have achieved a great diplomatic victory for Austria at the Congress of Berlin. The Ottoman Empire will be forced to cede Bosnia to us."
+ fpw_austria.22.a: "We are back on the Worldstage!"
+ 
 
 #traits
  fpw_habsburg_traditionalism: "Habsburg Traditionalism"
