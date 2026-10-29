@@ -274,6 +274,11 @@
  AUS_illyria_friendly: "Friendly Illyria"
  AUS_illyria_neutral: "Neutral Illyria"
  AUS_illyria_hostile: "Hostile Illyria"
+ AUS_balkans_loyal: "Loyal Balkans"
+ AUS_balkans_friendly: "Friendly Balkans"
+ AUS_balkans_neutral: "Neutral Balkans"
+ AUS_balkans_hostile: "Hostile Balkans"
+ AUS_balkans_irrelevant: "Irrelevant Balkans"
  
  #shown ideas
  fpw_outdated_military: "Outdated Military"
@@ -413,6 +418,8 @@
  AUS_czech_hostile_triger_tt: "§YBohemian§! attitude is at least: §RHostile§!"
  AUS_galicia_hostile_triger_tt: "§YGalician§! attitude is at least: §RHostile§!"
  AUS_illyria_hostile_triger_tt: "§YIllyrian§! attitude is at least: §RHostile§!"
+ AUS_balkans_loyal_triger_tt: "§YBalkans§! attitude is at least: §GLoyal§!"
+ AUS_balkans_friendly_triger_tt: "§YBalkans§! attitude is at least: §GFriendly§!"
  AUS_need_5_trust: "At least 5 trust with them."
  
 #custom effect tooltips
@@ -426,6 +433,8 @@
  AUS_decrese_galician_attitude_effect_tt: "This will §Rdecrease§! the §YGalician§! attitude."
  AUS_increse_illyrian_attitude_effect_tt: "This will §Gincrease§! the §YIllyrian§! attitude."
  AUS_decrese_illyrian_attitude_effect_tt: "This will §Rdecrese§! the §YIllyrian§! attitude."
+ AUS_increse_balkans_attitude_effect_tt: "This will §Gincrease§! the §YBalkans§! attitude."
+ AUS_decrese_balkans_attitude_effect_tt: "This will §Rdecrese§! the §YBalkans§! attitude."
  AUS_war_with_ottomans: "This may start a war with [TUR.GetNameDef], the other powers who agreed will join your side."
  AUS_congress_of_berlin_tt: "This will ask the other relevant powers to divide the [TUR.GetNameDef]"
  AUS_balkan_protectorates_tt: "§YSerbia§! and §YBulgaria§! will each receive an ultimatum. Acceptance makes them Austrian subjects; refusal grants Austria a puppet war goal."
@@ -433,6 +442,7 @@
  add_1_AUS_czech_trust: "Increase Czech Trust by 1"
  add_1_AUS_illyrian_trust: "Increase Illyrian Trust by 1"
  add_1_AUS_galician_trust: "Increase Galician Trust by 1"
+ add_1_AUS_balkans_trust: "Increase Balkans Trust by 1"
  AUS_ten_year_settlement_tt: "Unlocks custom settlement decisions"
  AUS_populations_of_emp_illyria_tt: "This focus will allow you to gain §YTrust§! and increase §YAttitude§! with the §YIllyrians§!."
  AUS_gain_czech_trust_tt: "This focus will allow you to gain §YTrust§! with the §YCzechs§!."
@@ -447,6 +457,7 @@
  AUS_attitude_friendly: "§7Friendly§!"
  AUS_attitude_neutral: "§gNeutral§!"
  AUS_attitude_hostile: "§RHostile§!"
+ AUS_attitude_irrelevant: "§gIrrelevant§!"
  
  AUS_hungarians_name_text: "Hungarians"
  AUS_hungarian_attitude_tt: "[AUS_get_hungarian_attitude_tt]"
@@ -475,6 +486,14 @@
  AUS_illyria_attitude_friendly_tt: "§YFriendly Illyria§! \nWar Support: §G+5.00%§! \nResistance Target: §G-10%§! \nCompliance Growth Speed: §G+10%§!"
  AUS_illyria_attitude_neutral_tt: "§YNeutral Illyria§! \nWar Support: §R-5.00%§! \nResistance Target: §R+20%§! \nCompliance Growth Speed: §R-10%§!"
  AUS_illyria_attitude_hostile_tt: "§YHostile Illyria§! \nWar Support: §R-10.00%§! \nResistance Target: §R+40%§! \nCompliance Growth Speed: §R-20%§!"
+ 
+ AUS_balkans_name_text: "Balkans"
+ AUS_balkans_attitude_tt: "[AUS_get_balkans_attitude_tt]"
+ AUS_balkans_attitude_loyal_tt: "§YLoyal Balkans! \nPolitical Power Gain: §G+10%§! \nRecruitable Population Factor: §G10%§! \nCompliance Growth Speed: §G+15%§! \nConstruction Speed: §G+10.00%§!"
+ AUS_balkans_attitude_friendly_tt: "§YFriendly Balkans! \nPolitical Power Gain: §G+5%§! \nCompliance Growth Speed: §G+2.5%§! \nConstruction Speed: §G+2.50%§!"
+ AUS_balkans_attitude_neutral_tt: "§YNeutral Balkans! \nPolitical Power Gain: §R-5%§! \nCompliance Growth Speed: §R-5%§! \nConstruction Speed: §R-5%§!"
+ AUS_balkans_attitude_hostile_tt: "§YHostile Balkans! \nPolitical Power Gain: §R-10%§! \nRecruitable Population Factor: §R-10%§! \nCompliance Growth Speed: §R-15%§! \nConstruction Speed: §R-10%§!"
+ AUS_balkans_attitude_irrelevant_tt: "§YIrrelevant Balkans§!"
  
  
 #leaders

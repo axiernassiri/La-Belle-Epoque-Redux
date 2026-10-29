@@ -111,6 +111,7 @@ add_ideas = {
 	AUS_czech_friendly
 	AUS_galicia_hostile
 	AUS_illyria_neutral
+	AUS_balkans_irrelevant
 }
 
 recruit_character = AUS_franz_joseph_I
@@ -130,7 +131,6 @@ recruit_character = AUS_gabriel_rodich
 recruit_character = AUS_anton_scudier
 recruit_character = AUS_franz_kuhnenfeld
 recruit_character = AUS_gideon_krismanic
-recruit_character = AUS_anton_von_schonfeld
 
 
 add_to_variable = {
