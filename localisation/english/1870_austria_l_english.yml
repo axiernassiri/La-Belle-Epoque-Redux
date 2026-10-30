@@ -495,10 +495,10 @@
  
  AUS_balkans_name_text: "Balkans"
  AUS_balkans_attitude_tt: "[AUS_get_balkans_attitude_tt]"
- AUS_balkans_attitude_loyal_tt: "§YLoyal Balkans! \nPolitical Power Gain: §G+10%§! \nRecruitable Population Factor: §G10%§! \nCompliance Growth Speed: §G+15%§! \nConstruction Speed: §G+10.00%§!"
- AUS_balkans_attitude_friendly_tt: "§YFriendly Balkans! \nPolitical Power Gain: §G+5%§! \nCompliance Growth Speed: §G+2.5%§! \nConstruction Speed: §G+2.50%§!"
- AUS_balkans_attitude_neutral_tt: "§YNeutral Balkans! \nPolitical Power Gain: §R-5%§! \nCompliance Growth Speed: §R-5%§! \nConstruction Speed: §R-5%§!"
- AUS_balkans_attitude_hostile_tt: "§YHostile Balkans! \nPolitical Power Gain: §R-10%§! \nRecruitable Population Factor: §R-10%§! \nCompliance Growth Speed: §R-15%§! \nConstruction Speed: §R-10%§!"
+ AUS_balkans_attitude_loyal_tt: "§YLoyal Balkans§! \nPolitical Power Gain: §G+10%§! \nRecruitable Population Factor: §G10%§! \nCompliance Growth Speed: §G+15%§! \nConstruction Speed: §G+10.00%§!"
+ AUS_balkans_attitude_friendly_tt: "§YFriendly Balkans§! \nPolitical Power Gain: §G+5%§! \nCompliance Growth Speed: §G+2.5%§! \nConstruction Speed: §G+2.50%§!"
+ AUS_balkans_attitude_neutral_tt: "§YNeutral Balkans§! \nPolitical Power Gain: §R-5%§! \nCompliance Growth Speed: §R-5%§! \nConstruction Speed: §R-5%§!"
+ AUS_balkans_attitude_hostile_tt: "§YHostile Balkans§! \nPolitical Power Gain: §R-10%§! \nRecruitable Population Factor: §R-10%§! \nCompliance Growth Speed: §R-15%§! \nConstruction Speed: §R-10%§!"
  AUS_balkans_attitude_irrelevant_tt: "§YIrrelevant Balkans§!"
  
  

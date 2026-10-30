@@ -202,13 +202,13 @@ guiTypes = {
 				text = "[AUS_get_balkans_attitude]"
 				format = center
 				maxwidth = 110
-				pdx_tooltip = AUS_balkan_attitude_tt
+				pdx_tooltip = AUS_balkans_attitude_tt
 			}
 			instantTextBoxType = {
 				name ="AUS_balkans_trust_status"
 				position = { x = @STABILITY_TEXT_X y = 10 }
 				font = "hoi_18mbs"
-				text = "[?AUS_balkan_trust|.0+]"
+				text = "[?AUS_balkans_trust|.0+]"
 				format = center
 				maxwidth = 110
 			}

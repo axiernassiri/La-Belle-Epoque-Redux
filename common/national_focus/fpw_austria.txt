@@ -679,6 +679,9 @@
 		prerequisite = { focus = AUS_setting_a_new_course }
 		mutually_exclusive = { focus = AUS_multiethnic_empire }
 		cost = 10
+		ai_will_do = {
+			base = 4000
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AUS_hungary_loyal_triger_tt
@@ -698,7 +701,7 @@
 	}
 	focus = {
 		id = AUS_uneasy_compromise
-		icon = GFX_
+		#icon = 
 		x = 0
 		y = 1
 		relative_position_id = AUS_the_ausgleich
