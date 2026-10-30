@@ -263,7 +263,6 @@ spriteTypes = {
 	}
 	
 	# POL
-	
 	spriteType = {
 		name = "GFX_portrait_POL_wladyslaw_czartoryski"
 		texturefile = "gfx/leaders/POL/Portrait_POL_wladyslaw_czartoryski.dds"
@@ -311,7 +310,6 @@ spriteTypes = {
 	}
 
 	# TRB
-	
 	spriteType = {
 		name = "GFX_portrait_TRB"
 		texturefile = "gfx/leaders/TRB/Portrait_TRB.dds"
@@ -329,12 +327,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_BAV_ludwig_ii"
-		texturefile = "gfx/leaders/german_minors/BAV/Portrait_BAV_ludwig_II.dds"
-	}
-
-
-	spriteType = {
 		name = "GFX_portrait_BRU_william"
 		texturefile = "gfx/leaders/german_minors/BRU/Portrait_BRU_william.dds"
 	}
@@ -345,6 +337,18 @@ spriteTypes = {
 		texturefile = "gfx/leaders/german_minors/LIP/Portrait_LIP_leopold_III.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_BAV_ludwig_ii"
+		texturefile = "gfx/leaders/german_minors/BAV/portrait_BAV_ludwig_II.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BAV_ludwig_von_der_pfordten"
+		texturefile = "gfx/leaders/german_minors/BAV/portrait_BAV_ludwig_von_der_pfordten.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BAV_chlodwig"
+		texturefile = "gfx/leaders/german_minors/BAV/portrait_BAV_chlodwig.dds"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_HES_louis_iii"
@@ -590,5 +594,5 @@ spriteTypes = {
 		name = "GFX_Portrait_AFG_mahmud_tarzi"
 		texturefile = "gfx/leaders/AFG/Portrait_AFG_mahmud_tarzi.dds"
 	}
-    
 }
+

@@ -15,6 +15,18 @@ spriteTypes = {
 		name = "GFX_idea_stagnant_economy"
 		texturefile = "gfx/interface/ideas/stagnant_economy.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_fpw_idea_austria_shadow_frankfurt"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fpw_idea_austria_power_centralized"
+		texturefile = "gfx/interface/ideas/idea_generic_oppression.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fpw_idea_austria_power_decentralized"
+		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_democratic.dds"
+	}
 }
 # Military Advisors
 spriteTypes = {

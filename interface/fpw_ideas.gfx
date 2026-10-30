@@ -114,128 +114,6 @@ spriteTypes = {
 		name = "GFX_idea_education_golden_age"
 		texturefile = "gfx/interface/ideas/education_golden_age.dds"
 	}	
-	
-	SpriteType = {
-		name = "GFX_idea_prussian_general_staff"
-		texturefile = "gfx/interface/ideas/PRS/prs_icon_general_staff.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_prussian_norms"
-		texturefile = "gfx/interface/ideas/PRS/prs_icon_prussian_norms.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_dreams_of_equality"
-		texturefile = "gfx/interface/ideas/PRS/prs_icon_dreams_of_equality.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_popular_front"
-		texturefile = "gfx/interface/ideas/PRS/prs_icon_popular_front.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_liberal_front"
-		texturefile = "gfx/interface/ideas/PRS/prs_icon_liberal_front.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_socialist_front"
-		texturefile = "gfx/interface/ideas/PRS/prs_icon_socialist_front.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_SOV_fresh_officer_core"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_fresh_officer_core.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_fresh_officer_core"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_fresh_officer_core.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_SOV_loser_of_the_crimean_war"
-		texturefile = "gfx/interface/ideas/SOV/loser_of_the_crimean_war.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_alexander_iii"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_iii.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_SOV_dmitry_milyutin"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_dmitry_milyutin.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_eduard_totleben"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_eduard_totleben.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_grigol_dadiani"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_grigol_dadiani.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_michael_nikolaevich"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_michael_nikolaevich.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_nicholas_nikolaevich"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_nicholas_nikolaevich.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_mikhail_dragomirov"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_mikhail_dragomirov.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_mikhail_loris_melikov"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_mikhail_loris_melikov.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_pyotr_vannovsky"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_vannovsky.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_nikolay_milyutin"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_nikolay_milyutin.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_alexander_gorchakov"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_gorchakov.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_lev_tolstoy"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_lev_tolstoy.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_pavel_gagarin"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pavel_gagarin.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_dmitry_tolstoy"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_dmitry_tolstoy.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_pyotr_shuvalov"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_shuvalov.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_alexander_hilferding"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_alexander_hilferding.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_pyotr_lavrov"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_lavrov.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_pyotr_valuev"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_pyotr_valuev.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_SOV_sergei_zarudny"
-		texturefile = "gfx/interface/ideas/SOV/idea_SOV_sergei_zarudny.png"
-	}
-	
 	SpriteType = {
 		name = "GFX_idea_eng_raes"
 		texturefile = "gfx/interface/ideas/eng_raes.png"
@@ -269,14 +147,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA/idea_FRA_georges_eugene.png"
 	}
 	SpriteType = {
-		name = "GFX_idea_FRA_louis_pasteur"
-		texturefile = "gfx/interface/ideas/FRA/idea_FRA_louis_pasteur.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_FRA_leon_gambetta"
-		texturefile = "gfx/interface/ideas/FRA/idea_FRA_leon_gambetta.png"
-	}
-	SpriteType = {
 		name = "GFX_idea_AFG_muhammad_kateb"
 		texturefile = "gfx/interface/ideas/AFG/idea_AFG_muhammad_kateb.dds"
 	}
@@ -294,33 +164,5 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_prussian_industrialization"
 		texturefile = "gfx/interface/ideas/PRS/prs_icon_prussian_industrialization.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_idea_fpw_idea_austria_shadow_frankfurt"
-		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_fpw_idea_austria_power_centralized"
-		texturefile = "gfx/interface/ideas/idea_generic_oppression.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_fpw_idea_austria_power_decentralized"
-		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_democratic.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_PAP_undereducated_populace"
-		texturefile = "gfx/interface/ideas/stupid_people.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_PAP_catholic_traditions"
-		texturefile = "gfx/interface/ideas/catholicism.png"
-	}
-	SpriteType = {
-		name = "GFX_idea_PAP_french_garrison"
-		texturefile = "gfx/interface/ideas/french_garrison.png"
 	}
 }

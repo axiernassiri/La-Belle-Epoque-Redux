@@ -1736,7 +1736,7 @@ focus_tree = {
 
 	focus = {
 		id = PRS_tripple_alliance
-		icon = GFX_focus_PRS_tripple_alliance
+		icon = GFX_focus_PRS_triple_alliance
 		prerequisite = { focus = PRS_italo_austrian_reapprochement }
 		relative_position_id = PRS_italo_austrian_reapprochement
 		x = 0

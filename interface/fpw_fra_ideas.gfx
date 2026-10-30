@@ -1,20 +1,30 @@
 spriteTypes = {
-
-	SpriteType = {
+	spriteType = {
         name = "GFX_idea_fra_bri_treaty"
         texturefile = "gfx/interface/ideas/FRA/fra_bri_treaty.png"
     }
-	SpriteType = {
+	spriteType = {
         name = "GFX_idea_fra_constitutional_reform"
         texturefile = "gfx/interface/ideas/FRA/fra_constitutional_reform.png"
     }
-	SpriteType = {
+	spriteType = {
         name = "GFX_idea_fra_education_reform"
         texturefile = "gfx/interface/ideas/FRA/fra_education_reform.png"
     }
-	SpriteType = {
+	spriteType = {
         name = "GFX_idea_fra_french_army_empire"
         texturefile = "gfx/interface/ideas/FRA/fra_french_army_empire.png"
     }
+}
 
+## Advisors
+spriteTypes = {
+    SpriteType = {
+		name = "GFX_idea_FRA_louis_pasteur"
+		texturefile = "gfx/interface/ideas/FRA/idea_FRA_louis_pasteur.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_FRA_leon_gambetta"
+		texturefile = "gfx/interface/ideas/FRA/idea_FRA_leon_gambetta.png"
+	}
 }

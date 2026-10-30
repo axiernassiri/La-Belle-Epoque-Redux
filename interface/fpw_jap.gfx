@@ -35,8 +35,4 @@ spriteTypes = {
 		name = "GFX_bop_JAP_meiji"
 		texturefile = "gfx/interface/bop/bop_JAP_meiji.dds"
 	}
-	
-	
-	
-	
 }
