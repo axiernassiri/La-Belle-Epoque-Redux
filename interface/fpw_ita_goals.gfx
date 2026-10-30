@@ -1,1 +1,15 @@
-#
+# ITALY #
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_ITA_monarchy"
+		texturefile = "gfx/interface/goals/ITA/ITA_italian_monarchy.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_ITA_star"
+		texturefile = "gfx/interface/goals/ITA/ITA_italian_identity.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_form_hre"
+		texturefile = "gfx/interface/goals/ITA/ITA_hre.png"
+	}
+}

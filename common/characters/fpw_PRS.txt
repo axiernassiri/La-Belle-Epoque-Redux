@@ -1,10 +1,10 @@
 characters={
-
+## LEADERS
 	PRS_wilhelm_i={
 		name="Wilhelm I"
 		portraits={
 			civilian={
-				large=GFX_portrait_PRS_wilhelm_I
+				large= GFX_portrait_PRS_Wilhelm_I
 			}
 		}
 		country_leader={
@@ -19,7 +19,7 @@ characters={
 		name="Otto von Bismarck"
 		portraits={
 			civilian={
-				large="gfx/leaders/PRS/prs_otto.png"
+				large= GFX_portrait_PRS_Otto_von_Bismarck
 			}
 		}
 		country_leader={
@@ -34,7 +34,7 @@ characters={
 		name="Rudolf von Bennigsen"
 		portraits={
 			civilian={
-				large=GFX_portrait_PRS_rudolf_von_bennigsen
+				large= GFX_portrait_PRS_Rudolf_von_Bennigsen
 			}
 		}
 		country_leader={
@@ -48,7 +48,7 @@ characters={
 		name="Heinrich von Treitschke"
 		portraits={
 			civilian={
-				large=GFX_portrait_PRS_heinrich_von_treitschke
+				large= GFX_portrait_PRS_Heinrich_von_Treitschke
 			}
 		}
 		country_leader={
@@ -57,31 +57,12 @@ characters={
 			id=-1
 		}
 	}
-	
-	PRS_heinrich_abeken={
-		name="Heinrich Abeken"
-		portraits={
-			civilian = {
-				small = "gfx/interface/ideas/idea_GER_generic_3.dds"
-			}
-		}
-		advisor = {
-            cost = 150
-            slot = political_advisor
-            idea_token = PRS_Heinrich_Abeken_polad
-            available = {
-				has_completed_focus = PRS_seek_international_support
-            } 
-			can_be_fired = yes
-            traits = {  theocratic_diplomat }
-        }
-	}
 
     PRS_august_bebel={
 		name="August Bebel"
 		portraits={
 			civilian = {
-				large = GFX_portrait_PRS_august_bebel
+				large = GFX_portrait_PRS_August_Bebel
 			}
 		}
         country_leader={
@@ -90,15 +71,23 @@ characters={
 			id=-1
 		}
 	}
-
-    #############
-    # GENERATED #
-
+#   :##:    ######:   ###  ### ###    ###
+#    ##     #######   ###  ### .##:  :##.
+#   ####    ##   :##  ###::###  ###  ### 
+#   ####    ##    ##  ###  ###   ##::##  
+#  :#  #:   ##   :##  ## ## ##    ####   
+#   #::#    #######:  ##:##:##    ####   
+#  ##  ##   ######    ##.##.##    :##:   
+#  ######   ##   ##.  ## ## ##     ##    
+# .######.  ##   ##   ##    ##     ##    
+# :##  ##:  ##   :##  ##    ##     ##    
+# ###  ###  ##    ##: ##    ##     ##    
+# ##:  :##  ##    ### ##    ##     ##
 	PRS_Friedrich_Graf_von_Wrangel = {
         name = "Friedrich Graf von Wrangel"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_friedrich_graf_von_wrangel.dds"
+				large = GFX_portrait_PRS_Friedrich_Graf_von_Wrangel
 			}
         }
 
@@ -115,10 +104,10 @@ characters={
         name = "Helmuth von Moltke"
         portraits = {
             civilian = {
-				small = "gfx/interface/ministers/PRS/PRS_Helmuth_von_Moltke.dds"
+				small = GFX_idea_PRS_Helmuth_Moltke
 			}
 	        army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_helmuth_von_moltke.dds"
+				large = GFX_portrait_PRS_Helmuth_von_Moltke
 			}
         }
 
@@ -144,10 +133,10 @@ characters={
         name = "Alfred von Rauch"
         portraits = {
             civilian = {
-				small = "gfx/interface/ministers/PRS/PRS_Alfred_von_Rauch.dds"
+				small = GFX_idea_PRS_Alfred_Rauch
 			}
 	        army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Alfred_von_Rauch.dds"
+				large = GFX_portrait_PRS_Alfred_von_Rauch
 			}
         }
 
@@ -174,7 +163,7 @@ characters={
         name = "Eduard Vogel von Falckenstein"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_eduard_vogel_von_falckenstein.dds"
+				large = GFX_portrait_PRS_Eduard_Vogel_von_Falckenstein
 			}
         }
 
@@ -191,10 +180,10 @@ characters={
         name = "Hans Wilhelm von Kotze"
         portraits = {
             civilian = {
-				small = "gfx/interface/ministers/PRS/PRS_Hans_Wilhelm_von_Kotze.dds"
+				small = GFX_idea_PRS_Hans_Kotze
 			}
 	        army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_hans_von_kotze.dds"
+				large = GFX_portrait_PRS_Hans_von_Kotze
 			}
         }
 
@@ -211,7 +200,7 @@ characters={
         name = "Friedrich Karl of Prussia"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_karl_of_prussia.dds"
+				large = GFX_portrait_PRS_Karl_of_Prussia
 			}
         }
 
@@ -228,10 +217,10 @@ characters={
         name = "Gustav von Stiehle"
         portraits = {
             civilian = {
-				small = "gfx/interface/ministers/PRS/PRS_Gustav_von_Stiehle.dds"
+				small = GFX_idea_PRS_Gustav_Stiehle
 			}
 	        army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_gustav_von_stiehle.dds"
+				large = GFX_portrait_PRS_Gustav_von_Stiehle
 			}
         }
 
@@ -248,7 +237,7 @@ characters={
         name = "August Karl von Goeben"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_august_karl_von_goeben.dds"
+				large = GFX_portrait_PRS_August_Karl_von_Goeben
 			}
         }
 
@@ -265,7 +254,7 @@ characters={
         name = "Hans von Bülow"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_hans_von_bulow.dds"
+				large = GFX_portrait_PRS_Hans_von_Bulow
 			}
         }
 
@@ -282,7 +271,7 @@ characters={
         name = "Heinrich Adolf von Zastrow"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_heinrich_adolf_von_zastrow.dds"
+				large = GFX_portrait_PRS_Heinrich_Adolf_von_Zastrow
 			}
         }
 
@@ -299,10 +288,10 @@ characters={
         name = "Albrecht Graf von Roon"
         portraits = {
             civilian = {
-				small = "gfx/interface/ministers/PRS/PRS_Albrecht_Graf_von_Roon.dds"
+				small = GFX_idea_PRS_Albrecht_Roon
 			}
 	        army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_albrecht_roon.dds"
+				large = GFX_portrait_PRS_Albrecht_Roon
 			}
         }
 
@@ -319,7 +308,7 @@ characters={
         name = "Leonhard von Blumenthal"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_leonhard_von_blumenthal.dds"
+				large = GFX_portrait_PRS_Leonhard_von_Blumenthal
 			}
         }
 
@@ -336,7 +325,7 @@ characters={
         name = "Friedrich Wilhelm of Prussia"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_friedrich_wilhelm_of_prussia.dds"
+				large = GFX_portrait_PRS_Friedrich_Wilhelm_of_Prussia
 			}
         }
 
@@ -353,7 +342,7 @@ characters={
         name = "Hermann von Treskow"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_hermann_von_treskow.dds"
+				large = GFX_portrait_PRS_Hermann_von_Treskow
 			}
         }
 
@@ -370,7 +359,7 @@ characters={
         name = "Edwin Freiherr von Manteuffel"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_edwin_freiherr_von_manteuffel.dds"
+				large = GFX_portrait_PRS_Edwin_Freiherr_von_Manteuffel
 			}
         }
 
@@ -387,7 +376,7 @@ characters={
         name = "Constantin von Alvensleben"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_constantin_von_alvensleben.dds"
+				large = GFX_portrait_PRS_Constantin_von_Alvensleben
 			}
         }
 
@@ -401,10 +390,10 @@ characters={
 		}
     }
 	PRS_Karl_Eberhard_von_Bittenfeld = {
-        name = "Karl Eberhard  von Bittenfeld"
+        name = "Karl Eberhard von Bittenfeld"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Karl_eberhard_von_bittenfeld.dds"
+				large = GFX_portrait_PRS_Karl_Eberhard_von_Bittenfeld
 			}
         }
 
@@ -421,7 +410,7 @@ characters={
         name = "Albert von Boguslawski"
         portraits = {
             army = {
-				large = "gfx/leaders/PRS/Portrait_PRS_albert_von_boguslawski.dds"
+				large = GFX_portrait_PRS_Albert_von_Boguslawski
 			}
         }
 
@@ -439,7 +428,7 @@ characters={
         name = "Eduard von Knorr"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Eduard_von_Knorr.dds"
+				large = GFX_portrait_PRS_Eduard_von_Knorr
 			}
         }
 
@@ -456,7 +445,7 @@ characters={
         name = "Otto Livonius"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Otto_Livonius.dds"
+				large = GFX_portrait_PRS_Otto_Livonius
 			}
         }
 
@@ -473,7 +462,7 @@ characters={
         name = "Eduard von Jachmann"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Eduard_von_Jachmann.dds"
+				large = GFX_portrait_PRS_Eduard_von_Jachmann
 			}
         }
 
@@ -490,7 +479,7 @@ characters={
         name = "Ludwig von Henk"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Ludwig_von_Henk.dds"
+				large = GFX_portrait_PRS_Ludwig_von_Henk
 			}
         }
 
@@ -507,7 +496,7 @@ characters={
         name = "Alexander von Monts"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Alexander_von_Monts.dds"
+				large = GFX_portrait_PRS_Alexander_von_Monts
 			}
         }
 
@@ -524,7 +513,7 @@ characters={
         name = "Otto von Diederichs"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Otto_von_Diederichs.dds"
+				large = GFX_portrait_PRS_Otto_von_Diederichs
 			}
         }
 
@@ -541,7 +530,7 @@ characters={
         name = "Karl Eduard Heusner"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Karl_Eduard_Heusner.dds"
+				large = GFX_portrait_PRS_Karl_Eduard_Heusner
 			}
         }
 
@@ -558,7 +547,7 @@ characters={
         name = "Ludwig Borckenhagen"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Ludwig_Borckenhagen.dds"
+				large = GFX_portrait_PRS_Ludwig_Borckenhagen
 			}
         }
 
@@ -575,7 +564,7 @@ characters={
         name = "Reinhold von Werner"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Reinhold_von_Werner.dds"
+				large = GFX_portrait_PRS_Reinhold_von_Werner
 			}
         }
 
@@ -592,7 +581,7 @@ characters={
         name = "Max von der Goltz"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Max_von_der_Goltz.dds"
+				large = GFX_portrait_PRS_Max_von_der_Goltz
 			}
         }
 
@@ -609,7 +598,7 @@ characters={
         name = "Friedrich von Hollmann"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Friedrich_von_Hollmann.dds"
+				large = GFX_portrait_PRS_Friedrich_von_Hollmann
 			}
         }
 
@@ -626,7 +615,7 @@ characters={
         name = "Adalbert of Prussia"
         portraits = {
             navy = {
-				large = "gfx/leaders/PRS/Portrait_PRS_Adalbert_of_Prussia.dds"
+				large = GFX_portrait_PRS_Adalbert_of_Prussia
 			}
         }
 
@@ -639,4 +628,23 @@ characters={
 			coordination_skill = 1
 		}
     }
+## ADVISORS
+	PRS_heinrich_abeken={
+		name="Heinrich Abeken"
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/idea_GER_generic_3.dds"
+			}
+		}
+		advisor = {
+            cost = 150
+            slot = political_advisor
+            idea_token = PRS_Heinrich_Abeken_polad
+            available = {
+				has_completed_focus = PRS_seek_international_support
+            } 
+			can_be_fired = yes
+            traits = {  theocratic_diplomat }
+        }
+	}
 }

@@ -30,8 +30,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SOV/SOV_crush_polish_resistance.png"
 	}
 	spriteType = {
-		name = "GFX_focus_SOV_finish_integration"
-		texturefile = "gfx/interface/goals/SOV/SOV_finish_integration.png"
+		name = "GFX_focus_SOV_finnish_integration"
+		texturefile = "gfx/interface/goals/SOV/SOV_finnish_integration.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_finnish_autonomy"
+		texturefile = "gfx/interface/goals/SOV/SOV_finnish_autonomy.png"
 	}
 	spriteType = {
 		name = "GFX_focus_SOV_integration_of_subjects"

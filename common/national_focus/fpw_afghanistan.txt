@@ -72,7 +72,7 @@
 		}
 		
 		completion_reward = {	
-			add_stability = 0.05
+			add_stability = 5
 			add_ideas = fpw_AFG_welfare_programs
 		}
 		

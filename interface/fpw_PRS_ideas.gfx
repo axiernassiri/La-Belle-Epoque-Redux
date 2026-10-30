@@ -24,4 +24,25 @@ spriteTypes = {
 		name = "GFX_idea_socialist_front"
 		texturefile = "gfx/interface/ideas/PRS/prs_icon_socialist_front.dds"
 	}
+## Advisors
+	SpriteType = {
+		name = "GFX_idea_PRS_Albrecht_Roon"
+		texturefile = "gfx/interface/ideas/PRS/PRS_Albrecht_Roon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_PRS_Alfred_Rauch"
+		texturefile = "gfx/interface/ideas/PRS/PRS_Alfred_von_Rauch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_PRS_Gustav_Stiehle"
+		texturefile = "gfx/interface/ideas/PRS/PRS_Gustav_von_Stiehle.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_PRS_Hans_Kotze"
+		texturefile = "gfx/interface/ideas/PRS/PRS_Hans_von_Kotze.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_PRS_Helmuth_Moltke"
+		texturefile = "gfx/interface/ideas/PRS/PRS_Helmuth_von_Moltke.dds"
+	}
 }

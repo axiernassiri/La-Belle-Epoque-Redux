@@ -515,74 +515,20 @@ austrian_subjects = {
 	available = {
 		OR = {
 			AND = {
-				OR = {
-					has_idea = AUS_galicia_loyal
-					has_idea = AUS_galicia_friendly
-				}
+				has_idea = AUS_galicia_loyal
 				FROM = { tag = POL }
 			}
 			AND = {
-				OR = {
-					has_idea = AUS_hungary_loyal
-					has_idea = AUS_hungary_friendly
-				}
+				has_idea = AUS_hungary_loyal
 				FROM = { tag = HUN }
 			}
 			AND = {
-				OR = {
-					has_idea = AUS_illyria_friendly
-					has_idea = AUS_illyria_loyal
-				}
+				has_idea = AUS_illyria_hostile
 				FROM = { tag = CRO }
 			}
 			AND = {
-				OR = {
-					has_idea = AUS_illyria_friendly
-					has_idea = AUS_illyria_loyal
-				}
+				has_idea = AUS_illyria_hostile
 				FROM = { tag = SLV }
-			}
-			AND = {
-				OR = {
-					has_idea = AUS_illyria_friendly
-					has_idea = AUS_illyria_loyal
-				}
-				FROM = { tag = BOS }
-			}
-			AND = {
-				OR = {
-					has_idea = AUS_illyria_friendly
-					has_idea = AUS_illyria_loyal
-				}
-				FROM = { tag = ALB }
-			}
-			AND = {
-				OR = {
-					has_idea = AUS_balkans_friendly
-					has_idea = AUS_balkans_loyal
-				}
-				FROM = { tag = BUL }
-			}
-			AND = {
-				OR = {
-					has_idea = AUS_balkans_friendly
-					has_idea = AUS_balkans_loyal
-				}
-				FROM = { tag = GRE }
-			}
-			AND = {
-				OR = {
-					has_idea = AUS_balkans_friendly
-					has_idea = AUS_balkans_loyal
-				}
-				FROM = { tag = ROM }
-			}
-			AND = {
-				OR = {
-					has_idea = AUS_balkans_friendly
-					has_idea = AUS_balkans_loyal
-				}
-				FROM = { tag = SER }
 			}
 		}
 	}
@@ -592,8 +538,8 @@ austrian_subjects = {
 	state_modifier = {
 		resistance_target 				= -0.30
 		compliance_gain 				= 0.050
-		required_garrison_factor 		= -0.30
-		resistance_damage_to_garrison 	= 0.05
+		required_garrison_factor 		= -0.15
+		resistance_damage_to_garrison 	= 0.25
 		local_factories 				= 0.5
 		local_resources 				= 0.5
 	}

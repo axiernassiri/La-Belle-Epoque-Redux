@@ -143,7 +143,7 @@ ideas = {
 			picture = AUS_empire_restored
 			modifier = {
 				consumer_goods_factor = -0.15
-				production_speed_buildings_factor = 0.20
+				production_speed_buildings_factor = 0.05
             }
 		}
 
@@ -309,46 +309,6 @@ ideas = {
 				war_support_factor = -0.10
 				resistance_target = 0.40
 				compliance_growth = -0.20
-            }
-		}
-
-		AUS_balkans_loyal = {
-			#picture = ROM_balkans_dominance
-			modifier = {
-				political_power_factor = 0.10
-        		recruitable_population_factor = 0.10
-        		compliance_growth = 0.15
-        		production_speed_buildings_factor = 0.10
-            }
-		}
-		AUS_balkans_friendly = {
-			#picture = ROM_balkans_dominance
-			modifier = {
-				political_power_factor = 0.05
-        		compliance_growth = 0.025
-        		production_speed_buildings_factor = 0.0025
-            }
-		}
-		AUS_balkans_neutral = {
-			#picture = ROM_balkans_dominance
-			modifier = {
-				political_power_factor = -0.05
-        		compliance_growth = -0.05
-        		production_speed_buildings_factor = -0.05
-            }
-		}
-		AUS_balkans_hostile = {
-			#picture = ROM_balkans_dominance
-			modifier = {
-				political_power_factor = -0.10
-        		recruitable_population_factor = -0.10
-        		compliance_growth = -0.15
-        		production_speed_buildings_factor = -0.10
-            }
-		}
-		AUS_balkans_irrelevant = {
-			#picture = ROM_balkans_dominance
-			modifier = {
             }
 		}
 

@@ -27,28 +27,152 @@ spriteTypes = {
 
 	# PRS
 	spriteType = {
-		name = "GFX_portrait_PRS_wilhelm_I"
+		name = "GFX_portrait_PRS_Wilhelm_I"
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_wilhelm_I.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRS_otto_von_bismarck"
+		name = "GFX_portrait_PRS_Otto_von_Bismarck"
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_otto_von_bismarck.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRS_otto_von_bismarck"
-		texturefile = "gfx/leaders/PRS/Portrait_PRS_otto_von_bismarck.dds"
+		name = "GFX_portrait_PRS_Otto_von_Bismarck_Military"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Otto_von_Bismarck_military.png"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRS_rudolf_von_bennigsen"
+		name = "GFX_portrait_PRS_Rudolf_von_Bennigsen"
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_rudolf_von_bennigsen.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRS_otto_zu"
+		name = "GFX_portrait_PRS_Otto_Zu"
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_otto_zu.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRS_august_bebel"
+		name = "GFX_portrait_PRS_August_Bebel"
 		texturefile = "gfx/leaders/PRS/Portrait_PRS_august_bebel.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Albert_von_Boguslawski"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_albert_von_boguslawski.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Albrecht_Roon"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_albrecht_roon.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Alfred_von_Rauch"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Alfred_von_Rauch.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_August_Karl_von_Goeben"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_august_karl_von_goeben.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Constantin_von_Alvensleben"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_constantin_von_alvensleben.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Eduard_Vogel_von_Falckenstein"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_eduard_vogel_von_falckenstein.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Edwin_Freiherr_von_Manteuffel"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_edwin_freiherr_von_manteuffel.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Friedrich_Graf_von_Wrangel"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_friedrich_graf_von_wrangel.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Friedrich_Wilhelm_of_Prussia"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_friedrich_wilhelm_of_prussia.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Gustav_von_Stiehle"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_gustav_von_stiehle.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Hans_von_Bulow"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_hans_von_bulow.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Hans_von_Kotze"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_hans_von_kotze.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Heinrich_Adolf_von_Zastrow"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_heinrich_adolf_von_zastrow.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Heinrich_von_Treitschke"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_heinrich_von_treitschke.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Helmuth_von_Moltke"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_helmuth_von_moltke.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Hermann_von_Treskow"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_hermann_von_treskow.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Karl_Eberhard_von_Bittenfeld"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Karl_eberhard_von_bittenfeld.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Karl_of_Prussia"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_karl_of_prussia.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Leonhard_von_Blumenthal"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_leonhard_von_blumenthal.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Eduard_von_Knorr"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Eduard_von_Knorr.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Otto_Livonius"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Otto_Livonius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Eduard_von_Jachmann"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Eduard_von_Jachmann.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Ludwig_von_Henk"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Ludwig_von_Henk.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Alexander_von_Monts"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Alexander_von_Monts.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Otto_von_Diederichs"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Otto_von_Diederichs.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Karl_Eduard_Heusner"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Karl_Eduard_Heusner.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Ludwig_Borckenhagen"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Ludwig_Borckenhagen.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Reinhold_von_Werner"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Reinhold_von_Werner.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Max_von_der_Goltz"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Max_von_der_Goltz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Friedrich_von_Hollmann"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Friedrich_von_Hollmann.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRS_Adalbert_of_Prussia"
+		texturefile = "gfx/leaders/PRS/Portrait_PRS_Adalbert_of_Prussia.dds"
 	}
 
 	# CHI

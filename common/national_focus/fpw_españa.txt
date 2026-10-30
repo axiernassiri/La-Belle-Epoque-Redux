@@ -1,0 +1,248 @@
+
+#!gfx:interface/fpw_goal.gfx
+#!gfx:interface/goals.gfx
+
+
+focus_tree = {
+	id = la_belle_epoque_spain_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10000
+			tag = SPR
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = SPR_guerra_del_pacifico
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_
+		x = 24
+		y = 0
+		cost = 10
+
+		search_filters = {}
+		completion_reward = {
+			country_event = spain_fpw.6
+		}
+	}
+	focus = {
+		id = SPR_una_decision_importante
+		prerequisite = { focus = SPR_guerra_del_pacifico }
+		relative_position_id = SPR_guerra_del_pacifico
+
+		available = {
+			has_country_flag = SPR_arrested_insurrectors
+		}
+
+		bypass = {
+			has_country_flag = SPR_arrested_insurrectors
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_everything_is_fine_now
+		prerequisite = { focus = SPR_una_decision_importante }
+		relative_position_id = SPR_una_decision_importante
+
+		available = {
+			has_country_flag = SPR_arrested_insurrectors_killed
+		}
+
+		bypass = {
+			has_country_flag = SPR_arrested_insurrectors_killed
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = 4
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_huelgas_contra_la_reina_y_su_tirania
+		prerequisite = { focus = SPR_everything_is_fine_now }
+		relative_position_id = SPR_everything_is_fine_now
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_formation_of_the_progressive_militians
+		prerequisite = { focus = SPR_everything_is_fine_now }
+		relative_position_id = SPR_everything_is_fine_now
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = 2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_the_true_face_of_the_kingdom
+		prerequisite = { focus = SPR_everything_is_fine_now }
+		relative_position_id = SPR_everything_is_fine_now
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = -2
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_viva_la_democracia_viva_la_libertad
+		prerequisite = { focus = SPR_formation_of_the_progressive_militians }
+		prerequisite = { focus = SPR_huelgas_contra_la_reina_y_su_tirania }
+		prerequisite = { focus = SPR_the_true_face_of_the_kingdom }
+		relative_position_id = SPR_huelgas_contra_la_reina_y_su_tirania
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_follow_the_visions_of_democracy
+		prerequisite = { focus = SPR_viva_la_democracia_viva_la_libertad }
+		relative_position_id = SPR_viva_la_democracia_viva_la_libertad
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_a_turn_of_visions_towards_the_past
+		prerequisite = { focus = SPR_viva_la_democracia_viva_la_libertad }
+		relative_position_id = SPR_viva_la_democracia_viva_la_libertad
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_seventh_government_of_narvaez
+		prerequisite = { focus = SPR_una_decision_importante }
+		relative_position_id = SPR_una_decision_importante
+
+		available = {
+			has_country_flag = SPR_arrested_insurrectors_not_killed
+		}
+
+		bypass = {
+			has_country_flag = SPR_arrested_insurrectors_not_killed
+		}
+
+
+		icon = GFX_focus_PLACEHOLDER
+		x = -4
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+}

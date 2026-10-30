@@ -126,7 +126,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_form_hre_shine"
-		texturefile = "gfx/interface/goals/hre.png"
+		texturefile = "gfx/interface/goals/ITA/ITA_hre.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/hre.png"
@@ -142,7 +142,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/hre.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_hre.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -157,10 +157,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_ITA_star_shine"
-		texturefile = "gfx/interface/goals/focus_italian_identity.dds"
+		texturefile = "gfx/interface/goals/ITA/ITA_italian_identity.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_italian_identity.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_italian_identity.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -173,7 +173,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_italian_identity.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_italian_identity.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -188,10 +188,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_ITA_monarchy_shine"
-		texturefile = "gfx/interface/goals/focus_italian_monarchy.dds"
+		texturefile = "gfx/interface/goals/ITA/ITA_italian_monarchy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_italian_monarchy.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_italian_monarchy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -204,7 +204,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_italian_monarchy.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_italian_monarchy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -219,10 +219,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_attack_austria_hungary_shine"
-		texturefile = "gfx/interface/goals/focus_attack_austria_hungary.png"
+		texturefile = "gfx/interface/goals/ITA/ITA_attack_austria_hungary.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_attack_austria_hungary.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_attack_austria_hungary.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -235,7 +235,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_attack_austria_hungary.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_attack_austria_hungary.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -281,10 +281,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_claim_libya_shine"
-		texturefile = "gfx/interface/goals/claim_libya.png"
+		texturefile = "gfx/interface/goals/ITA/ITA_claim_libya.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/claim_libya.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_claim_libya.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -297,7 +297,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/claim_libya.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_claim_libya.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no

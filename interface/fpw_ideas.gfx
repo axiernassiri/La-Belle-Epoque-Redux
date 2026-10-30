@@ -116,7 +116,7 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_idea_eng_raes"
-		texturefile = "gfx/interface/ideas/eng_raes.png"
+		texturefile = "gfx/interface/ideas/ENG/ENG_raes.png"
 	}
 	SpriteType = {
 		name = "GFX_idea_victor_of_crimean_war"

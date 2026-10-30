@@ -1,1 +1,0 @@
-# LBE uses an 1866 setting. Vanilla WWII content is excluded by descriptor.mod.
