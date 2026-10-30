@@ -330,3 +330,86 @@ AUS_decrese_illyrian_attitude_effect = {
 		add_stability = -0.05
 	}
 }
+AUS_increse_balkans_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_balkans_hostile
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_balkans_hostile
+				add_idea = AUS_balkans_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_increse_balkans_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_balkans_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_balkans_neutral
+				add_idea = AUS_balkans_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_increse_balkans_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_balkans_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_balkans_friendly
+				add_idea = AUS_balkans_loyal
+			}
+		}
+		custom_effect_tooltip = AUS_increse_balkans_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_illyrian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_balkans_loyal
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_balkans_loyal
+				add_idea = AUS_balkans_friendly
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_balkans_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_balkans_friendly
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_balkans_friendly
+				add_idea = AUS_balkans_neutral
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_balkans_attitude_effect_tt
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_balkans_neutral
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = AUS_balkans_neutral
+				add_idea = AUS_balkans_hostile
+			}
+		}
+		custom_effect_tooltip = AUS_decrese_balkans_attitude_effect_tt
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}

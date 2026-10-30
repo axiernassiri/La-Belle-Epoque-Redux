@@ -1414,7 +1414,12 @@ focus_tree = {
 					id = news_fpw.12
 				}
 			}
-			FRA = { country_event = { id = franco_prussian_fpw.10 hours = 6 } }
+			FRA = { 
+				country_event = { 
+					id = franco_prussian_fpw.10 
+					hours = 6 
+				} 
+			}
 		}
 	}
 

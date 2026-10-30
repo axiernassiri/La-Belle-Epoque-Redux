@@ -361,9 +361,7 @@ country_event = {
 	### This means war
 	option = {
 		name = franco_prussian_fpw.10.a
-		FRA = {
-			declare_war_on = PRS
-		}
+		complete_national_focus = FRA_guerre_de_1870
 		
 	}
 }

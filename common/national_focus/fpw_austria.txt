@@ -679,6 +679,9 @@
 		prerequisite = { focus = AUS_setting_a_new_course }
 		mutually_exclusive = { focus = AUS_multiethnic_empire }
 		cost = 10
+		ai_will_do = {
+			base = 4000
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AUS_hungary_loyal_triger_tt
@@ -698,7 +701,7 @@
 	}
 	focus = {
 		id = AUS_uneasy_compromise
-		icon = GFX_
+		#icon = 
 		x = 0
 		y = 1
 		relative_position_id = AUS_the_ausgleich
@@ -739,7 +742,7 @@
 		y = 1
 		relative_position_id = AUS_crown_of_hungary
 		prerequisite = { focus = AUS_crown_of_hungary }
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -755,7 +758,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 3
+		cost = 2
 		available = {
 			
 		}
@@ -772,7 +775,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 3
+		cost = 2
 		available = {
 			has_political_power > 50
 		}
@@ -790,7 +793,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 3
+		cost = 2
 		available = {
 			has_political_power > 50
 		}
@@ -868,7 +871,7 @@
 		}
 	}
 
-	focus = {
+	focus  = {
 		id = AUS_congress_of_berlin
 		icon = GFX_focus_YUG_safeguard_bosnia
 		x = 0
@@ -888,7 +891,7 @@
 				TUR = {
 					country_event = {
 						id = fpw_austria.8
-						days = 10
+						days = 30
 					}
 				}
 			}
@@ -1238,7 +1241,9 @@
 		bypass = {
 		}
 		completion_reward = {
-			### tt, expands austrian subjects occupation law to more balkan states if illyrians are loyal
+			### tt, adds balkan population of empire and enables desicions to increase trust/attitude
+			remove_idea = AUS_balkans_irrelevant
+			add_ideas = AUS_balkans_neutral
 		}
 	}
 
@@ -2189,7 +2194,7 @@
 		x = 10
 		y = 0
 		relative_position_id = AUS_great_humiliation
-		cost = 10
+		cost = 5
 		available = {
 			has_completed_focus = AUS_reform_the_army
 		}
