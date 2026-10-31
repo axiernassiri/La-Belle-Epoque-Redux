@@ -75,4 +75,32 @@ spriteTypes = {
 		name = "GFX_AUS_austria_in_despair"
 		texturefile = "gfx/interface/goals/AUS/AUS_austria_in_despair.png"
 	}
+	spriteType = {
+		name = "GFX_AUS_galician_development"
+		texturefile = "gfx/interface/goals/AUS/AUS_galician_development.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_imperial_awards"
+		texturefile = "gfx/interface/goals/AUS/AUS_imperial_awards.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_italy_fragmented"
+		texturefile = "gfx/interface/goals/AUS/AUS_italy_fragmented.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_control_sg"
+		texturefile = "gfx/interface/goals/AUS/AUS_control_sg.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_expand_the_confed"
+		texturefile = "gfx/interface/goals/AUS/AUS_expand_the_confed.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_homeland"
+		texturefile = "gfx/interface/goals/AUS/AUS_homeland.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_control_italy"
+		texturefile = "gfx/interface/goals/AUS/AUS_control_italy.png"
+	}
 }
