@@ -65,15 +65,6 @@
 
 		search_filters = {  }
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 180
-				}
-			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = french_empire_events.13
 		}

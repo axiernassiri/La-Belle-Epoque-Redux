@@ -1,4 +1,5 @@
 capital = 277
+oob = "mexico_cw_republicans"
 
 declare_war_on = {
     target = MEX
@@ -25,9 +26,18 @@ set_stability = 0.2
 set_war_support = 0.1
 
 
+create_country_leader = {
+	name = "Benito Juárez"
+	desc = ""
+	picture = "gfx/leaders/AUS/aus_karl.png"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
+}
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = no
@@ -35,5 +45,6 @@ set_politics = {
 set_popularities = {
 	democratic = 18
 	neutrality = 9
-	communism = 53
+	communism = 20
+	fascism = 53
 }

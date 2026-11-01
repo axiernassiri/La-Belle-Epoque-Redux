@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		MXR_slow_economic_recovery = {
 
-			picture = generic_communism_drift_bonus
+			picture = generic_mild_economic_recovery
 
 			allowed = {
 				original_tag = MXR
@@ -18,7 +18,7 @@ ideas = {
 		}
 		MXR_the_republican_army = {
 
-			picture = generic_communism_drift_bonus
+			picture = chi_army_corruption2
 
 			allowed = {
 				original_tag = MXR
@@ -40,7 +40,7 @@ ideas = {
 		}
 		MXR_masters_of_the_mexican_guerrilla_warfare = {
 
-			picture = generic_communism_drift_bonus
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				original_tag = MXR
@@ -60,11 +60,12 @@ ideas = {
 				org_loss_when_moving = -0.15
 				max_planning_factor = -0.35
 				planning_speed = 0.15
+				ai_focus_aggressive_factor = 0.25
 			}
 		}
 		MXR_legacy_of_the_5th_of_may = {
 
-			picture = generic_communism_drift_bonus
+			picture = FRA_political_violence
 
 			allowed = {
 				original_tag = MXR
