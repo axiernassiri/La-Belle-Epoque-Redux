@@ -50,4 +50,8 @@ spriteTypes = {
 		name = "GFX_idea_AUS_benedek"
 		texturefile = "gfx/interface/ideas/AUS/idea_AUS_benedek.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_AUS_kuhnenfeld"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_kuhnenfeld.dds"
+	}
 }

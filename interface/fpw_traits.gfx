@@ -9,6 +9,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/personal/trait_jap_emperor_trait.dds"
 		legacy_lazy_load = no
 	}
-	
-
+#	spriteType = {
+#		name = GFX_trait_AUS_habsburg_traditionalism
+#		texturefile = "gfx/interface/traits/personal/trait_AUS_habsburg_traditionalism"
+#	}
 }
