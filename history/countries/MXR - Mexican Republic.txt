@@ -14,10 +14,10 @@ set_technology = {
 }
 
 add_ideas = {
-	MXR_legacy_of_the_5th_of_may
-	MXR_slow_economic_recovery
-	MXR_the_republican_army
-	MXR_masters_of_the_mexican_guerrilla_warfare
+	fpw_MXR_legacy_of_the_5th_of_may
+	fpw_MXR_slow_economic_recovery
+	fpw_MXR_the_republican_army
+	fpw_MXR_masters_of_the_mexican_guerrilla_warfare
 }
 
 

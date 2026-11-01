@@ -12,4 +12,16 @@ spriteTypes = {
 		name = "GFX_focus_form_hre"
 		texturefile = "gfx/interface/goals/ITA/ITA_hre.png"
 	}
+	spriteType = {
+		name = "GFX_focus_befriend_prussia"
+		texturefile = "gfx/interface/goals/ITA/ITA_befriend_prussia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_claim_libya"
+		texturefile = "gfx/interface/goals/ITA/ITA_claim_libya.png"
+	}
+	spriteType = {
+		name = "GFX_focus_attack_austria_hungary"
+		texturefile = "gfx/interface/goals/ITA/ITA_attack_austria_hungary.png"
+	}
 }
