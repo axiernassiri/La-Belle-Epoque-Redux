@@ -1,0 +1,167 @@
+# PRUSSIA #
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_PRS_luederitz"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_namibia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_weltpolitiks"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_weltpolitik.png"
+	}
+	spriteType = {
+		name = "GFX_focus_befriend_spain"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_befriend_spain.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_league_of_three_emperors"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_league_of_three_emperors.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_italo_austro_reapproachments"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_italo_austro_reapproachments.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_triple_alliance"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_triple_alliance.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_unified_germany"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_unified_germany.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_maerchenprinz"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_maerchenprinz.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_dolchstoss_legende"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_dolchstoss.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_search_for_the_scapegoat"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_search_the_scapegoat.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_prussian_coup"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_prussian_coup.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_kaisers_residence"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_inspect_kaisers_residence.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_unternehmen_germania"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_unternehmen_germania.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_wacht_am_rhein"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_wacht_am_rhein.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_unification"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_unification.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_greater_german"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_greater_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_lesser_german"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_lesser_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_baden"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_invite_baden.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_bavaria"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_invite_bavaria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_wrt"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_invite_wurttemberg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_invite_hessen"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_invite_hessen.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_russian_friendship"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_russian_friendship.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_bismarcks_plan"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_bismarcks_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_defending_the_fatherland"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_defending_the_fatherland.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_form_the_ngc"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_from_the_ngc.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_form_greater_prussia"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_greater_prussia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_austrian_seperatism"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_austrian_seperatism.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_hungarian_support"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_hungarian_support.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_schutz_und_trutz_alliance"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_schutz_and_trutz_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_supreme_prussian_race"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_supreme_prussian_race.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_nord_sud"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_nord_sud.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_beat_austria"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_beat_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_finish_habsburgs"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_finish_habsburgs.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_fight_france"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_fight_france.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_fight_france"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_fight_france.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_krupp_artillery"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_krupp_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_hre_traditions"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_hre.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_split_austria"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_split_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_PRS_albrecht_roon"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_albrecht_roon.dds"
+          }
+	spriteType = {
+		name = "GFX_focus_PRS_tsingdao_incedent"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_tsingdao_incedent.png"	
+    }
+	spriteType = {
+		name = "GFX_focus_PRS_unification"
+		texturefile = "gfx/interface/goals/PRS/focus_PRS_unification.dds"
+	}	
+}

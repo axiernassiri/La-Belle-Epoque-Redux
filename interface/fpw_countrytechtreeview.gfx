@@ -151,7 +151,7 @@ spriteTypes = {
 	}
 
 	frameAnimatedSpriteType = {
-		name = "GFX_technology_fpw_industry_folder_currently_researching_item_bg"
+		name = "GFX_technology_fpw_industry_folder_item_bg"
 		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
 		noOfFrames = 9
 		loadType = "INGAME"

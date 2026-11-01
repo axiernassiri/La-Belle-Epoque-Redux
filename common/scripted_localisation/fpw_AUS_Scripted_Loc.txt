@@ -217,3 +217,69 @@ defined_text = {
         localization_key = AUS_illyria_attitude_hostile_tt
     }
 }
+defined_text = {
+    name = AUS_get_balkans_attitude
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_loyal }
+        }
+        localization_key = AUS_attitude_loyal
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_friendly }
+        }
+        localization_key = AUS_attitude_friendly
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_neutral }
+        }
+        localization_key = AUS_attitude_neutral
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_hostile }
+        }
+        localization_key = AUS_attitude_hostile
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_irrelevant }
+        }
+        localization_key = AUS_attitude_irrelevant
+    }
+}
+defined_text = {
+    name = AUS_get_balkans_attitude_tt
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_loyal }
+        }
+        localization_key = AUS_balkans_attitude_loyal_tt
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_friendly }
+        }
+        localization_key = AUS_balkans_attitude_friendly_tt
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_neutral }
+        }
+        localization_key = AUS_balkans_attitude_neutral_tt
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_hostile }
+        }
+        localization_key = AUS_balkans_attitude_hostile_tt
+    }
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_irrelevant }
+        }
+        localization_key = AUS_balkans_attitude_irrelevant_tt
+    }
+}

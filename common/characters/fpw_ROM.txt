@@ -1,7 +1,7 @@
 characters={
 
 	ROM_alexandru = {
-		name = ROM_ALEXANDRU
+		name = ROM_ALEXANDRU_NAME
 		portraits = {
 			civilian = {
 				large = GFX_Portrait_ROM_alexandru
@@ -9,7 +9,7 @@ characters={
 		}
 
 		country_leader = {
-			ideology = conservative_constitutional_monarchism
+			ideology = despotism
 			desc = ROM_ALEXANDRU_DESC
 			expire = "1965.1.1.1"
 			id = -1

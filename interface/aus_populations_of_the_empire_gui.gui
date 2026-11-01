@@ -11,7 +11,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "aus_populations_of_the_empire_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 225 }
+		size = { width = 100% height= 275 }
 		
 		instantTextBoxType = {
 			name ="attitude_header"
@@ -173,6 +173,42 @@ guiTypes = {
 				position = { x = @STABILITY_TEXT_X y = 10 }
 				font = "hoi_18mbs"
 				text = "[?AUS_illyrian_trust|.0+]"
+				format = center
+				maxwidth = 110
+			}
+		}
+
+		containerWindowType = {
+			name = "BALKAN_populations_window"
+			position = { x = 0 y = 225 }
+			size = { width = 100% height= 225 }
+			iconType = {
+			name ="AUS_illyrian_icon"
+				spriteType = "GFX_decision_faction_croat"
+				position = { x = @FACTION_ICONS_X y = 0 }
+			}
+			instantTextBoxType = {
+				name ="AUS_balkans_name_text"
+				position = { x = @FACTION_NAMES_X y = 10 }
+				font = "hoi_18mbs"
+				text = "AUS_balkans_name_text"
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name ="AUS_balkans_attitude_status"
+				position = { x = @ATTITUDE_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[AUS_get_balkans_attitude]"
+				format = center
+				maxwidth = 110
+				pdx_tooltip = AUS_balkans_attitude_tt
+			}
+			instantTextBoxType = {
+				name ="AUS_balkans_trust_status"
+				position = { x = @STABILITY_TEXT_X y = 10 }
+				font = "hoi_18mbs"
+				text = "[?AUS_balkans_trust|.0+]"
 				format = center
 				maxwidth = 110
 			}

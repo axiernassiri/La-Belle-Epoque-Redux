@@ -245,8 +245,8 @@ guiTypes = {
 
 		iconType = {
 			name ="frontend_game_logo"
-			spriteType = "GFX_frontend_game_logo"
-			position = { x= 0 y = 0 }
+			spriteType = "GFX_frontend_game_logo" # LBER LOGO
+			position = { x= 75 y = 165 } # LBER LOGO POSITION
 		}
 
 	}

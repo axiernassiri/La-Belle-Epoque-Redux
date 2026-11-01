@@ -3,7 +3,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_completed_focus = AUS_avenge_the_bruderkrieg
+					OR = {
+						has_completed_focus = AUS_avenge_the_bruderkrieg
+						has_completed_focus = AUS_austrian_dominence
+					}
 					controls_state = 68
 					has_war_with = PRS
 				}
@@ -15,7 +18,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_completed_focus = AUS_pursue_lost_italian_ambitions
+					OR = {
+						has_completed_focus = AUS_pursue_lost_italian_ambitions
+						has_completed_focus = AUS_austrian_dominence
+					}
 					controls_state = 2
 					has_war_with = ITA
 				}

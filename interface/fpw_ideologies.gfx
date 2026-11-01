@@ -35,5 +35,4 @@ spriteTypes = {
 		name = "GFX_ideology_monarchism"
 		texturefile = "gfx/interface/ideologies/monarchism.dds"
 	}
-
 }

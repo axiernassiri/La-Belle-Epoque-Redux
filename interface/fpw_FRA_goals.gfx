@@ -1,0 +1,23 @@
+# FRANCE #
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_FRA_third_republic"
+		texturefile = "gfx/interface/goals/FRA/FRA_third_republic.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_heart_of_europe"
+		texturefile = "gfx/interface/goals/FRA/FRA_heart_of_europe.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_government_of_national_defence"
+		texturefile = "gfx/interface/goals/FRA/FRA_government_of_national_defence.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_attack_the_commune"
+		texturefile = "gfx/interface/goals/FRA/FRA_focus_attack_commune.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_strengthen_bonaparte_dynasty"
+		texturefile = "gfx/interface/goals/FRA/FRA_strengthen_bonaparte_dynasty.png"
+	}
+}

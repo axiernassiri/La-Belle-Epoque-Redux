@@ -679,6 +679,9 @@
 		prerequisite = { focus = AUS_setting_a_new_course }
 		mutually_exclusive = { focus = AUS_multiethnic_empire }
 		cost = 10
+		ai_will_do = {
+			base = 4000
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AUS_hungary_loyal_triger_tt
@@ -698,7 +701,7 @@
 	}
 	focus = {
 		id = AUS_uneasy_compromise
-		icon = GFX_
+		#icon = 
 		x = 0
 		y = 1
 		relative_position_id = AUS_the_ausgleich
@@ -739,7 +742,7 @@
 		y = 1
 		relative_position_id = AUS_crown_of_hungary
 		prerequisite = { focus = AUS_crown_of_hungary }
-		cost = 5
+		cost = 2
 		available = {
 			
 		}
@@ -755,7 +758,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 3
+		cost = 2
 		available = {
 			
 		}
@@ -772,7 +775,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 3
+		cost = 2
 		available = {
 			has_political_power > 50
 		}
@@ -790,7 +793,7 @@
 		y = 1
 		relative_position_id = AUS_december_constition
 		prerequisite = { focus = AUS_december_constition }
-		cost = 3
+		cost = 2
 		available = {
 			has_political_power > 50
 		}
@@ -868,7 +871,7 @@
 		}
 	}
 
-	focus = {
+	focus  = {
 		id = AUS_congress_of_berlin
 		icon = GFX_focus_YUG_safeguard_bosnia
 		x = 0
@@ -888,7 +891,7 @@
 				TUR = {
 					country_event = {
 						id = fpw_austria.8
-						days = 10
+						days = 30
 					}
 				}
 			}
@@ -1238,7 +1241,9 @@
 		bypass = {
 		}
 		completion_reward = {
-			### tt, expands austrian subjects occupation law to more balkan states if illyrians are loyal
+			### tt, adds balkan population of empire and enables desicions to increase trust/attitude
+			remove_idea = AUS_balkans_irrelevant
+			add_ideas = AUS_balkans_neutral
 		}
 	}
 
@@ -1398,13 +1403,31 @@
 		}
 		completion_reward = {
 			add_ideas = fpw_austria_reigns_supreme
+			if {
+				limit = {
+					has_completed_focus = AUS_pursue_lost_italian_ambitions
+				}
+				create_wargoal = {
+					target = PRS
+					type = annex_everything
+				}
+			}
+			if {
+				limit = {
+					has_completed_focus = AUS_avenge_the_bruderkrieg
+				}
+				create_wargoal = {
+					target = ITA
+					type = annex_everything
+				}
+			}
 			# depending on which focus you took you either need to take sileasia back from germany or retake venice and capture milan
 		}
 	}
 
 	focus = {
 		id = AUS_fragment_italy
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_AUS_italy_fragmented
 		x = 3
 		y = 1
 		relative_position_id = AUS_austrian_dominence
@@ -1448,7 +1471,7 @@
 
 	focus = {
 		id = AUS_control_over_italy
-		icon = GFX_focus_SWI_fortify_border_with_italy
+		icon = GFX_AUS_control_italy
 		x = 1
 		y = 1
 		relative_position_id = AUS_fragment_italy
@@ -1477,7 +1500,7 @@
 
 	focus = {
 		id = AUS_ancestral_homeland
-		icon = GFX_focus_AUS_reclaim_habsburg
+		icon = GFX_AUS_homeland
 		x = -1
 		y = 1
 		relative_position_id = AUS_fragment_italy
@@ -1496,7 +1519,7 @@
 
 	focus = {
 		id = AUS_reinstate_the_confederation
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_focus_PRS_greater_german
 		x = -3
 		y = 1
 		relative_position_id = AUS_austrian_dominence
@@ -1573,7 +1596,7 @@
 
 	focus = {
 		id = AUS_tight_adminstration_of_sg
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_AUS_control_sg
 		x = -1
 		y = 1
 		relative_position_id = AUS_reinstate_the_confederation
@@ -1604,7 +1627,7 @@
 
 	focus = {
 		id = AUS_expand_the_confed
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_AUS_expand_the_confed
 		x = 1
 		y = 1
 		relative_position_id = AUS_reinstate_the_confederation
@@ -1986,7 +2009,7 @@
 
 	focus = {
 		id = AUS_develop_galicia
-		#icon = GFX_focus_generic_the_council_of_europe
+		icon = GFX_AUS_galician_development
 		x = 3
 		y = -2
 		relative_position_id = AUS_moravian_arms_factories
@@ -2189,7 +2212,7 @@
 		x = 10
 		y = 0
 		relative_position_id = AUS_great_humiliation
-		cost = 10
+		cost = 5
 		available = {
 			has_completed_focus = AUS_reform_the_army
 		}
@@ -2367,7 +2390,7 @@
 
 	focus = {
 		id = AUS_imperial_awards
-		#icon = GFX_focus_generic_advanced_military_studies
+		icon = GFX_AUS_imperial_awards
 		x = -1
 		y = 1
 		relative_position_id = AUS_lessons_from_italian_front
