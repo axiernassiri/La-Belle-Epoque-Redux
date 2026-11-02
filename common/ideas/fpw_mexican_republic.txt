@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		MXR_slow_economic_recovery = {
+		fpw_MXR_slow_economic_recovery = {
 
 			picture = generic_mild_economic_recovery
 
@@ -16,7 +16,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 			}
 		}
-		MXR_the_republican_army = {
+		fpw_MXR_the_republican_army = {
 
 			picture = chi_army_corruption2
 
@@ -38,7 +38,7 @@ ideas = {
 				experience_loss_factor = -0.1
 			}
 		}
-		MXR_masters_of_the_mexican_guerrilla_warfare = {
+		fpw_MXR_masters_of_the_mexican_guerrilla_warfare = {
 
 			picture = chi_war_of_resistance3
 
@@ -64,7 +64,7 @@ ideas = {
 				ai_focus_aggressive_factor = 0.25
 			}
 		}
-		MXR_legacy_of_the_5th_of_may = {
+		fpw_MXR_legacy_of_the_5th_of_may = {
 
 			picture = FRA_political_violence
 

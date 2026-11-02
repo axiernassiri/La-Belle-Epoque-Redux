@@ -114,7 +114,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
+			traits = { cavalry_officer trait_reckless }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -162,7 +162,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { infantry_officer skilled_staffer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -178,7 +178,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { engineer_officer career_officer }
+			traits = { engineer_officer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -210,7 +210,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { engineer_officer }
+			traits = { engineer_officer hill_fighter }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -226,7 +226,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer politically_connected }
+			traits = { politically_connected }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -243,13 +243,28 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = high_command
-			idea_token = franz_john
+			slot = army_chief
+			idea_token = franz_john_army_chief
 			allowed = {
 				original_tag = AUS
 			}
 			available = {
-				
+				not_already_hired_except_as = army_chief
+			}
+			cost = 150
+			traits = { army_chief_organizational_2 }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = franz_john_high_command
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				not_already_hired_except_as = high_command
 			}
 			cost = 150
 			traits = { army_infantry_2 }
@@ -290,7 +305,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { politically_connected career_officer }
+			traits = { politically_connected }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 2
@@ -322,7 +337,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer infantry_officer }
+			traits = { infantry_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 2
@@ -351,10 +366,26 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_AUS_franz_kuhnenfeld
+				small = GFX_idea_AUS_kuhnenfeld
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = franz_kuhnenfeld
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				# complete focus or date
+			}
+			cost = 150
+			traits = { army_chief_offensive_2 }
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
-			traits = { trait_mountaineer }
+			traits = { trait_mountaineer career_officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3

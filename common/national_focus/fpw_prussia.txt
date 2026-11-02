@@ -5903,6 +5903,31 @@ focus = {
 	}
 
 	focus = {
+		id = PRS_ally_with_russia
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = PRS_governmental_reform }
+		relative_position_id = PRS_governmental_reform
+
+		allow_branch = {
+		}
+		
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cost = 4
+		
+		x = -6
+		y = 1
+	
+		completion_reward = {
+			
+		}
+	}
+	
+
+	focus = {
 		id = PRS_gather_public_support
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = PRS_dreams_of_equality }
