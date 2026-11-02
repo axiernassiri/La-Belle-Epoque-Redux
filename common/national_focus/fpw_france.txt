@@ -1693,16 +1693,23 @@
 		icon = GFX_
 		x = 40
 		y = 0
-		cost = 5
+		cost = 4
 
 		search_filters = {  }
 		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = french_empire_events.14
 		}
 	}
 
 
 	focus = {
 		id = FRA_for_the_extinction_of_pauperism
+		mutually_exclusive = {
+			focus = FRA_rally_of_the_blue_bonapartistes
+			focus = FRA_rally_the_opposition
+		}
 		prerequisite = { focus = FRA_the_liberal_empire }
 		relative_position_id = FRA_the_liberal_empire
 
@@ -1722,6 +1729,14 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_country_leader_trait = lber_fra_the_reformist_emperor
 			
 		}
 	}
@@ -1742,10 +1757,24 @@
 		icon = GFX_focus_generic_court
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 
 		search_filters = {}
 		completion_reward = {
+			country_event = french_empire_events.15
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.03
+			}
 		}
 	}
 	focus = {
@@ -1769,6 +1798,17 @@
 
 		search_filters = {}
 		completion_reward = {
+			country_event = french_empire_events.16
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = FRA_intense_political_division
+				add_idea = FRA_intense_political_division_2
+			}
+			add_stability = 0.03
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.04
+			}
 		}
 	}
 	focus = {
@@ -1793,6 +1833,22 @@
 
 		search_filters = {}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_intense_political_division_2
+				add_idea = FRA_intense_political_division_3
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.04
+			}
 		}
 	}
 	focus = {
@@ -2083,6 +2139,10 @@
 	}
 	focus = {
 		id = FRA_rally_of_the_blue_bonapartistes
+		mutually_exclusive = {
+			focus = FRA_for_the_extinction_of_pauperism
+			focus = FRA_rally_the_opposition
+		}
 		prerequisite = { focus = FRA_the_liberal_empire }
 		relative_position_id = FRA_the_liberal_empire
 
@@ -2452,6 +2512,10 @@
 	
 	focus = {
 		id = FRA_rally_the_opposition
+		mutually_exclusive = {
+			focus = FRA_for_the_extinction_of_pauperism
+			focus = FRA_rally_of_the_blue_bonapartistes
+		}
 		prerequisite = { focus = FRA_the_liberal_empire }
 		relative_position_id = FRA_the_liberal_empire
 

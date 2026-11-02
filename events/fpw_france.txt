@@ -189,6 +189,48 @@ country_event = { # niels reform
 		name = french_empire_events.13.a
 	}
 }
+country_event = { # brief lore of the empire before 1866
+	id = french_empire_events.14
+	title = french_empire_events.14.title
+	desc = french_empire_events.14.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.14.a
+	}
+}
+country_event = { # wise progress of our intitutions
+	id = french_empire_events.15
+	title = french_empire_events.15.title
+	desc = french_empire_events.15.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.15.a
+	}
+}
+country_event = { # further liberal reforms
+	id = french_empire_events.16
+	title = french_empire_events.16.title
+	desc = french_empire_events.16.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.16.a
+	}
+}
 
 country_event = {
 	id = france_fpw.1

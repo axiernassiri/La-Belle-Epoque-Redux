@@ -23,6 +23,15 @@ set_stability = 0.2
 set_war_support = 0.1
 
 
+create_country_leader = {
+	name = "Maximilian I"
+	desc = ""
+	picture = GFX_portrait_CHL_jose_joaquin_perez
+	expire = "1965.1.1"
+	ideology = aboslute_monarchy
+	traits = {
+	}
+}
 
 set_politics = {
 	ruling_party = neutrality

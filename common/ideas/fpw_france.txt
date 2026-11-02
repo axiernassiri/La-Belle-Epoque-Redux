@@ -89,10 +89,50 @@ ideas = {
 				party_popularity_stability_factor = -0.1
 				political_power_gain = -0.35
 				stability_factor = -0.15
-				communism_drift = 0.01
-				democratic_drift = 0.01
+				communism_drift = 0.06
+				democratic_drift = 0.04
 				drift_defence_factor = -0.25
 				political_advisor_cost_factor = 0.25
+			}
+		}
+		FRA_intense_political_division_2 = {
+			name = FRA_intense_political_division
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				party_popularity_stability_factor = -0.1
+				political_power_gain = -0.3
+				stability_factor = -0.15
+				communism_drift = 0.06
+				democratic_drift = 0.04
+				drift_defence_factor = -0.2
+				political_advisor_cost_factor = 0.2
+			}
+		}
+		FRA_intense_political_division_3 = {
+			name = FRA_intense_political_division
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				party_popularity_stability_factor = -0.1
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				communism_drift = 0.04
+				democratic_drift = 0.04
+				drift_defence_factor = -0.15
+				political_advisor_cost_factor = 0.15
 			}
 		}
 		FRA_the_republicans_oppose_military_reform = {
