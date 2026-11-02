@@ -163,8 +163,9 @@ prussian_surrender = {
 		}
 	}	
 	AUS = {
+		complete_national_focus = AUS_peace_of_prague
 		clr_country_flag = austro_prussian_war
-		complete_national_focus = AUS_victor_of_the_apw
+		complete_national_focus = AUS_victory_over_prussia
 		add_dynamic_modifier = { 
 			modifier = fpw_PRS_victor_of_the_brothers_war
 		}

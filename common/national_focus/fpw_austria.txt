@@ -2891,6 +2891,656 @@
 			}
 		}
 	}
+
+	focus = {
+		id = AUS_victory_over_prussia
+		#icon = GFX_focus_generic_coal_mining
+		x = 50
+		y = 6
+		#relative_position_id = AUS_rebuild_imperial_treasury
+		cost = 1
+		#prerequisite = { focus = AUS_rebuild_imperial_treasury }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+	### ALT HIST GERMAN AFFAIRS
+	focus = {
+		id = AUS_reorganize_south_germany
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = AUS_victory_over_prussia
+		cost = 1
+		prerequisite = { focus = AUS_victory_over_prussia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### create the south german confederation
+		}
+	}
+
+	focus = {
+		id = AUS_demand_saxon_integration_into_the_german_confederation
+		#icon = GFX_focus_generic_coal_mining
+		x = -4
+		y = 1
+		relative_position_id = AUS_reorganize_south_germany
+		cost = 1
+		prerequisite = { focus = AUS_reorganize_south_germany }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### gives an event to invite to faction and puppet saxony
+			### gives war goal if denied
+		}
+	}
+
+	focus = {
+		id = AUS_instigate_rhineland_strikes
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = AUS_reorganize_south_germany
+		cost = 1
+		prerequisite = { focus = AUS_reorganize_south_germany }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### demilitarizes rhineland states
+		}
+	}
+
+	focus = {
+		id = AUS_strong_arm_prussia
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = AUS_instigate_rhineland_strikes
+		cost = 1
+		prerequisite = { focus = AUS_instigate_rhineland_strikes }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### annex state 943 to closest puppet and lippe into hannover
+		}
+	}
+
+	focus = {
+		id = AUS_promise_holstein_for_membership
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 1
+		relative_position_id = AUS_demand_saxon_integration_into_the_german_confederation
+		cost = 1
+		prerequisite = { focus = AUS_demand_saxon_integration_into_the_german_confederation }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### offers to invite denmark into the germanconfederation and puppets them
+			### this will create a flag which whenever you get the peace with prussia it gives shit o denmark
+		}
+	}
+
+	focus = {
+		id = AUS_invite_swisterland
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 1
+		relative_position_id = AUS_demand_saxon_integration_into_the_german_confederation
+		cost = 1
+		prerequisite = { focus = AUS_demand_saxon_integration_into_the_german_confederation  focus = AUS_instigate_rhineland_strikes}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### invites swisterland into the german confederation
+		}
+	}
+
+	focus = {
+		id = AUS_thurgianian_revolt
+		#icon = GFX_focus_generic_coal_mining
+		x = 1
+		y = 2
+		relative_position_id = AUS_demand_saxon_integration_into_the_german_confederation
+		cost = 1
+		prerequisite = { focus = AUS_invite_swisterland}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### causes thurgian revolt against prussia which will get a scripted peacedeal after 4 months
+		}
+	}
+
+	focus = {
+		id = AUS_rhineland_revolt
+		#icon = GFX_focus_generic_coal_mining
+		x = 3
+		y = 2
+		relative_position_id = AUS_demand_saxon_integration_into_the_german_confederation
+		cost = 1
+		prerequisite = { focus = AUS_invite_swisterland }
+		prerequisite = { focus = AUS_strong_arm_prussia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### causes Rhineland revolt against prussia which will get a scripted peacedeal after 4 months
+		}
+	}
+
+	focus = {
+		id = AUS_unite_germany
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 3
+		relative_position_id = AUS_demand_saxon_integration_into_the_german_confederation
+		cost = 1
+		prerequisite = { focus = AUS_invite_swisterland }
+		prerequisite = { focus = AUS_strong_arm_prussia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			###  declares war on prussia will have scripted peacedeals
+		}
+	}
+
+	### ALT HIST EXTERNAL POLITICS
+	focus = {
+		id = AUS_toward_a_habsburg_europe
+		#icon = GFX_focus_generic_coal_mining
+		x = 11
+		y = 1
+		relative_position_id = AUS_victory_over_prussia
+		cost = 1
+		prerequisite = { focus = AUS_victory_over_prussia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### 
+		}
+	}
+
+	focus = {
+		id = AUS_rivals_of_the_old
+		#icon = GFX_focus_generic_coal_mining
+		x = 7
+		y = 1
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_toward_a_habsburg_europe }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### 
+		}
+	}
+
+	focus = {
+		id = AUS_rivals_of_the_new
+		#icon = GFX_focus_generic_coal_mining
+		x = 3
+		y = 1
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_toward_a_habsburg_europe }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### develops venice
+		}
+	}
+
+	focus = {
+		id = AUS_riches_of_venice
+		#icon = GFX_focus_generic_coal_mining
+		x = -4
+		y = 1
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_toward_a_habsburg_europe }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### develops venice
+		}
+	}
+
+	focus = {
+		id = AUS_venician_naval_armory
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 1
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_riches_of_venice }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### forts in trentino
+		}
+	}
+
+	focus = {
+		id = AUS_request_french_neutrality
+		#icon = GFX_focus_generic_coal_mining
+		x = -4
+		y = 1
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_riches_of_venice }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### if you dont complete this focus france will join against you in your war against italy.
+		}
+	}
+
+	focus = {
+		id = AUS_fortify_milan
+		#icon = GFX_focus_generic_coal_mining
+		x = 1
+		y = 1
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_riches_of_venice }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### develops venice
+		}
+	}
+
+	focus = {
+		id = AUS_stage_border_incident
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 2
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_venician_naval_armory }
+		prerequisite = { focus = AUS_fortify_trentino }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### lose guns but send an event to italy whether they declare war or back off which makes border states demiliterized
+		}
+	}
+
+	focus = {
+		id = AUS_raid_border_states
+		#icon = GFX_focus_generic_coal_mining
+		x = 1
+		y = 2
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_venician_naval_armory }
+		prerequisite = { focus = AUS_fortify_trentino }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### destroys factories in milan and emilila romagna
+		}
+	}
+
+	focus = {
+		id = AUS_to_secure_italy
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 3
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_raid_border_states }
+		prerequisite = { focus = AUS_stage_border_incident }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### italy gets an event issueing our demands, they will not have an option to reject as these demands essiently mean giving up soverienty.
+		}
+	}
+
+	focus = {
+		id = AUS_capture_of_genoa
+		#icon = GFX_focus_generic_coal_mining
+		x = -4
+		y = 4
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_to_secure_italy }
+		available = {
+			### triggers when you capture the city
+			always = no
+		}
+		completion_reward = {
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+		}
+	}
+
+	focus = {
+		id = AUS_capture_of_naples
+		#icon = GFX_focus_generic_coal_mining
+		x = -2
+		y = 4
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_to_secure_italy }
+		available = {
+			### triggers when you capture the city
+			always = no
+		}
+		completion_reward = {
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+		}
+	}
+
+	focus = {
+		id = AUS_capture_of_sardinia
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 4
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_to_secure_italy }
+		available = {
+			### triggers when you capture the city
+			always = no
+		}
+		completion_reward = {
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit
+		}
+	}
 	
+	focus = {
+		id = AUS_capture_of_sicily
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 4
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_to_secure_italy }
+		available = {
+			### triggers when you capture the city
+			always = no
+		}
+		completion_reward = {
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit
+		}
+	}
+
+	focus = {
+		id = AUS_capture_of_florence
+		#icon = GFX_focus_generic_coal_mining
+		x = 4
+		y = 4
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { focus = AUS_to_secure_italy }
+		available = {
+			### triggers when you capture the city
+			always = no
+		}
+		completion_reward = {
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit
+		}
+	}
+
+	focus = {
+		id = AUS_italian_interest_secured
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 5
+		relative_position_id = AUS_riches_of_venice
+		cost = 1
+		prerequisite = { 
+			focus = AUS_capture_of_florence 
+			focus = AUS_capture_of_genoa
+			focus = AUS_capture_of_naples 
+			focus = AUS_capture_of_sardinia 
+			focus = AUS_capture_of_sicily 
+		}
+		available = {
+			### triggers when you defeat italy
+			always = no
+		}
+		completion_reward = {
+			### gives you the italy secured nationnal idea
+			### this idea will give stability ws and political power + prestige
+			### you will get more prestige buff based on how many capture focuese you completed
+			### each focus is worth 2.5 prestige, with the base being 10% starting out
+			### also make sure to include a bonus for being in the top 7
+			### the the rewards increasing the higher you are.
+		}
+	}
+
+	#### GERMANIFICATION
+	focus = {
+		id = AUS_crack_down_on_ethnicities
+		#icon = GFX_focus_generic_coal_mining
+		x = -11
+		y = 1
+		relative_position_id = AUS_victory_over_prussia
+		cost = 1
+		prerequisite = { focus = AUS_victory_over_prussia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### gains political power but reduces attitude
+		}
+	}
+
+	focus = {
+		id = AUS_germanification
+		#icon = GFX_focus_generic_coal_mining
+		x = -2
+		y = 1
+		relative_position_id = AUS_crack_down_on_ethnicities
+		cost = 1
+		prerequisite = { focus = AUS_crack_down_on_ethnicities }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### allows germanification of the austrian populations
+		}
+	}
+
+	focus = {
+		id = AUS_settle_austrians_into_hungary
+		#icon = GFX_focus_generic_coal_mining
+		x = -2
+		y = 1
+		relative_position_id = AUS_germanification
+		cost = 1
+		prerequisite = { focus = AUS_germanification }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### allows settlement into hungary decision which cores a random state in hungary while reducing population
+		}
+	}
+
+	focus = {
+		id = AUS_seperate_croatia_from_hungary
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = AUS_germanification
+		cost = 1
+		prerequisite = { focus = AUS_germanification }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### reduce hungarian loyalty, hungary loses cores on croatia, gain stability
+		}
+	}
+
+	focus = {
+		id = AUS_hungarians_pacified
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 2
+		relative_position_id = AUS_germanification
+		cost = 1
+		prerequisite = { focus = AUS_settle_austrians_into_hungary }
+		prerequisite = { focus = AUS_seperate_croatia_from_hungary }
+		available = {
+			### requires all of hungary to be cored
+		}
+		completion_reward = {
+			### sets hungarian status to germified
+		}
+	}
+
+	focus = {
+		id = AUS_polish_crackdown
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 1
+		relative_position_id = AUS_germanification
+		cost = 1
+		prerequisite = { focus = AUS_germanification focus = AUS_harsh_integration_of_slovenia_into_austria }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### loses a lot of stability, cores galicia, removes and adds a lot of population in galicia, removes factories, makes galician population irrelevant
+			### gains galicians germanified
+		}
+	}
+
+	focus = {
+		id = AUS_harsh_integration_of_slovenia_into_austria
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 1
+		relative_position_id = AUS_crack_down_on_ethnicities
+		cost = 1
+		prerequisite = { focus = AUS_crack_down_on_ethnicities }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### cores slovenia but kills a bunch of people and reduces illyrian loyalty
+		}
+	}
+
+	focus = {
+		id = AUS_resource_extraction
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = AUS_harsh_integration_of_slovenia_into_austria
+		cost = 1
+		prerequisite = { focus = AUS_harsh_integration_of_slovenia_into_austria }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### unlocks an occupation law that extracts 70-90 i cant decide rn of resources and factories.
+		}
+	}
+
+	focus = {
+		id = AUS_criminilize_culture
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 1
+		relative_position_id = AUS_harsh_integration_of_slovenia_into_austria
+		cost = 1
+		prerequisite = { focus = AUS_harsh_integration_of_slovenia_into_austria }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			###  add nation idea criminilized hositle cultures
+			### will unlock the decision to core illyrian states by diplacing the population
+		}
+	}
+
+	focus = {
+		id = AUS_illyrians_pacified
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 1
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_criminilize_culture }
+		prerequisite = { focus = AUS_resource_extraction }
+		available = {
+			### requires all illyrian states to be cored
+			always = no
+		}
+		completion_reward = {
+			###  add illyrians germanified
+		}
+	}
+
+	focus = {
+		id = AUS_illyrians_pacified
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 1
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_criminilize_culture }
+		prerequisite = { focus = AUS_resource_extraction }
+		available = {
+			### requires all illyrian states to be cored
+			always = no
+		}
+		completion_reward = {
+			###  add illyrians germanified
+		}
+	}
+
+	focus = {
+		id = AUS_one_people_one_empire_one_emporer
+		#icon = GFX_focus_generic_coal_mining
+		x = -4
+		y = 2
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_illyrians_pacified }
+		prerequisite = { focus = AUS_hungarians_pacified }
+		prerequisite = { focus = AUS_polish_crackdown }
+		available = {
+			### requires all illyrian states to be cored
+			always = no
+		}
+		completion_reward = {
+			###  add illyrians germanified
+		}
+	}
+
+
+
+
+	### reminder to make a polish revolt event for if you win as austria
+	### this revolt takes the prussian portion and part of the russian portion
+	### this state will be at war with Prussia, Austria, and Russia.
 	
 }	
