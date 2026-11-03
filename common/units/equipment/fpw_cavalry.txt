@@ -7,7 +7,7 @@ equipments = {
 		group_by = archetype
 		is_archetype = yes
 		is_buildable = no
-		type = { armor infantry }
+		type = { armor }
 		group_by = archetype
 
 		interface_category = interface_category_land

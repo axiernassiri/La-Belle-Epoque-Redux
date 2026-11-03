@@ -1,54 +1,71 @@
-characters={
-
-	ITA_alfonso_ferrero={
-		name="Alfonso Ferrero La Marmora"
-		portraits={
-			civilian={
-				large=GFX_portrait_ITA_alfonso_ferrero
+characters = {
+#   :####:   .####.   ##:  :##  ########  ######:   ###   ##  ###  ###  ########  ###   ##  ######## 
+#   ######   ######   ##    ##  ########  #######   ###   ##  ###  ###  ########  ###   ##  ######## 
+# :##:  .#  :##  ##:  :##  ##:  ##        ##   :##  ###:  ##  ###::###  ##        ###:  ##     ##    
+# ##:       ##:  :##  :##  ##:  ##        ##    ##  ####  ##  ###  ###  ##        ####  ##     ##    
+# ##.       ##    ##   ## .##   ##        ##   :##  ##:#: ##  ## ## ##  ##        ##:#: ##     ##    
+# ##        ##    ##   ##::##   #######   #######:  ## ## ##  ##:##:##  #######   ## ## ##     ##    
+# ##  ####  ##    ##   ##::##   #######   ######    ## ## ##  ##.##.##  #######   ## ## ##     ##    
+# ##. ####  ##    ##   :####:   ##        ##   ##.  ## :#:##  ## ## ##  ##        ## :#:##     ##    
+# ##:   ##  ##:  :##   .####.   ##        ##   ##   ##  ####  ##    ##  ##        ##  ####     ##    
+# :##:  ##  :##  ##:    ####    ##        ##   :##  ##  :###  ##    ##  ##        ##  :###     ##    
+#  #######   ######     ####    ########  ##    ##: ##   ###  ##    ##  ########  ##   ###     ##    
+#   :####.   .####.      ##     ########  ##    ### ##   ###  ##    ##  ########  ##   ###     ##    
+	ITA_Alfonso_Ferrero = {
+		name = "Alfonso Ferrero La Marmora"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_alfonso_ferrero
+			}
+			army = {
+				large = GFX_portrait_ITA_alfonso_ferrero
+				small = GFX_idea_ITA_alfonso_ferrero
 			}
 		}
-		country_leader={
-			ideology=conservative_constitutional_monarchism
-			expire="1956.01.01.01"
-			id=-1
-
-			field_marshal = {
-				traits = {  }
+		country_leader = {
+			ideology = conservative_constitutional_monarchism
+			expire = "1956.01.01.01"
+			id = -1
+		}
+		field_marshal = {
+				traits = { }
 				skill = 3
 				attack_skill = 2
 				defense_skill = 1
 				planning_skill = 2
 				logistics_skill = 2
 			}
-			advisor = {
+		advisor = {
 				cost = 150
 				slot = army_chief
-				idea_token = ITA_La_Marmora_carm
-				available = {
+				idea_token = ITA_alfonso_marmora
+				allowed = {
+					original_tag = ITA
 				}
-				can_be_fired = yes
+				available = {
+
+				}
 				traits = { army_chief_organization_2 }
-			}
 		}
 	}
-	ITA_bettino_ricasoli={
-		name="Bettino Ricasoli"
-		portraits={
-			civilian={
-				large=GFX_portrait_ITA_bettino_ricasoli
+	ITA_bettino_ricasoli = {
+		name = "Bettino Ricasoli"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_bettino_ricasoli
 			}
 		}
-		country_leader={
-			ideology=conservative_constitutional_monarchism
-			expire="1956.01.01.01"
-			id=-1
+		country_leader = {
+			ideology = conservative_constitutional_monarchism
+			expire = "1956.01.01.01"
+			id = -1
 		}
 	}
 	ITA_vittorio_emanuele_ii = {
 		name = "Vittorio Emanuele II"
 		portraits = {
 			civilian = {
-				large = GFX_portrait_ITA_vittorio_emanuele_III #yes ik it's not right but trust me
+				large = GFX_portrait_ITA_vittorio_emanuele_III #yes ik it's not right but trust me                   Alright bet - dS0
 			}
 		}
 
@@ -71,246 +88,250 @@ characters={
 			id = -1
 		}
 	}
+#   :##:    ######:   ###  ### ###    ###
+#    ##     #######   ###  ### .##:  :##.
+#   ####    ##   :##  ###::###  ###  ### 
+#   ####    ##    ##  ###  ###   ##::##  
+#  :#  #:   ##   :##  ## ## ##    ####   
+#   #::#    #######:  ##:##:##    ####   
+#  ##  ##   ######    ##.##.##    :##:   
+#  ######   ##   ##.  ## ## ##     ##    
+# .######.  ##   ##   ##    ##     ##    
+# :##  ##:  ##   :##  ##    ##     ##    
+# ###  ###  ##    ##: ##    ##     ##    
+# ##:  :##  ##    ### ##    ##     ##
+	ITA_Giuseppe_Garibaldi = {
+		name = "Giuseppe Garibaldi"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_giuseppe_garibaldi
+				small = GFX_idea_ITA_giuseppe_garibaldi
+			}
+		}
+		field_marshal = {
+				traits = { }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		advisor = {
+				cost = 150
+				slot = army_chief
+				idea_token = ITA_giuseppe_garibaldi
+				allowed = {
+					original_tag = ITA
+				}
+				available = {
 
-	### GENERALS ###
-
+				}
+				traits = { army_chief_morale_2 }
+		}
+	}
 	ITA_Enrico_Cialdini = {
 		name = "Enrico Cialdini"
 		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Enrico_Cialdini.png"
+			army = {
+				large = GFX_portrait_ITA_enrico_cialdini
+				small = GFX_idea_AUS_enrico_cialdini
+			}
 		}
-		}
-		
+
 		field_marshal = {
-		traits = { }
-		skill = 4
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 3
+			traits = { }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 		}
+
 		advisor = {
-		cost = 150
-		slot = army_chief
-		idea_token = ITA_Enrico_Cialdini_carm
-		available = {
-		}
-		can_be_fired = yes
-		traits = { army_chief_offensive_2 }
-		}
-		}
-		
-	ITA_Domenico_Cucchetella = {
-		name = "Domenico Cucchetella"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Domenico_Cucchetella.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = { }
-		skill = 3
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Manfredo_Fanti = {
-		name = "Manfredo Fanti"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Manfredo_Fanti.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 3
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 2
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Nino_Bixio = {
-		name = "Nino Bixio"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Nino_Bixio.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Pietro_Ingami = {
-		name = "Pietro Ingami"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Pietro_Ingami.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Benedetto_Cairoli = {
-		name = "Benedetto Cairoli"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Benedetto_Cairoli.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Agostino_Depretis = {
-		name = "Agostino Depretis"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Agostino_Depretis.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Francesco_Crispi = {
-		name = "Francesco Crispi"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Francesco_Crispi.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Luigi_Platamone = {
-		name = "Luigi Platamone"
-		portraits = {
-		army = {
-		large = "gfx/leaders/ITA/Portrait_ITA_Luigi_Platamone.png"
-		}
-		}
-		
-		corps_commander = {
-		traits = {  }
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-		}
-		}
-		
-	ITA_Antonio_Scialoja = {
-			name = "Antonio Scialoja"
-			portraits = {
-			army = {
-			large = "gfx/leaders/ITA/Portrait_ITA_Antonio_Scialoja.png"
+			cost = 150
+			slot = army_chief
+			idea_token = ITA_enrico_cialdini
+			allowed = {
+					original_tag = ITA
 			}
+			available = {
+
 			}
-			
-			corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			}
+			traits = { army_chief_offensive_2 }
 		}
-			
-	ITA_Emilio_Visconti_Venosta = {
-			name = "Emilio Visconti Venosta"
-			portraits = {
-				army = {
-					large = "gfx/leaders/ITA/Portrait_ITA_Emilio_Visconti_Venosta.png"
-				}
-			}
-			
-			corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			}
-		}
-		
-	ITA_Carlo_Di_Robilant = {
-		name = "Carlo Di Robilant"
+	}
+	ITA_Giuseppe_Salvatore_Pianell = {
+		name = "Giuseppe Salvatore Pianell"
 		portraits = {
 			army = {
-				large = "gfx/leaders/ITA/Portrait_ITA_Carlo_Di_Robilant.png"
+				large = GFX_portrait_ITA_giuseppe_pianell
 			}
 		}
-		
-		field_marshal = {
-			traits = {  }
-			skill = 2
+
+		corps_commander = {
+			traits = { }
+			skill = 3
 			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
+			defense_skill = 3
+			planning_skill = 2
 			logistics_skill = 1
 		}
 	}
-		
-	ITA_Giovanni_Lanza = {
-		name = "Giovanni Lanza"
+	ITA_Maurizio_Gerbaix_de_Sonnaz = {
+		name = "Maurizio Gerbaix de Sonnaz"
 		portraits = {
 			army = {
-				large = "gfx/leaders/ITA/Portrait_ITA_Giovanni_Lanza.png"
+				large = GFX_portrait_ITA_maurizio_sonnaz
 			}
 		}
-		
+
 		corps_commander = {
-			traits = {  }
-			skill = 1
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	ITA_Agostino_Petitti_Bagliani_di_Roreto = {
+		name = "Agostino Petitti Bagliani di Roreto"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_agostino_roreto
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	ITA_Raffaele_Cadorna = {
+		name = "Raffaele Cadorna"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_raffaele_cadorna
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	ITA_Filippo_Brignone = {
+		name = "Filippo Brignone"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_filippo_brignone
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	ITA_Domenico_Cucchiari = {
+		name = "Domenico Cucchiari"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_domenico_cucchiari
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	ITA_Efisio_Cugia = {
+		name = "Efisio Cugia"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_efisio_cugia
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 2
 			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ITA_Amedeo_Ferdinando_di_Savoia = {
+		name = "Amedeo Ferdinando di Savoia"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_amedeo_savoia
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+
+	ITA_Carlo_Felice_Nicolis_di_Robilant = {
+		name = "Carlo Felice Nicolis di Robilant"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_carlo_robilant
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	ITA_Nino_Bixio = {
+		name = "Nino Bixio"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_nino_bixio
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
