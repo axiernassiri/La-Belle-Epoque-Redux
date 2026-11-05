@@ -7836,7 +7836,7 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "subunit_stats_grid"
-			position = { x = 25 y = 65 }
+			position = { x = 25 y = 210 }
 			size = { width = 400 height = 400 }
 			slotsize = { width = 224 height = 30 }
 			max_slots_horizontal = 2
@@ -7845,7 +7845,7 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
-			position = { x = 35 y = 65 } # Y set in code
+			position = { x = 35 y = 210 } # Y set in code
 			size = { width = 400 height = 400 }
 			slotsize = { width = 82 height = 70 }
 			max_slots_horizontal = 5

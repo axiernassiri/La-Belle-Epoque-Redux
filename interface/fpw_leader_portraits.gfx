@@ -465,6 +465,14 @@ spriteTypes = {
 		name = "GFX_portrait_ITA_nino_bixio"
 		texturefile = "gfx/leaders/ITA/Portrait_ITA_nino_bixio.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_ITA_enrico_cosenz"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_enrico_cosenz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_giuseppe_sirtori"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_giuseppe_sirtori.dds"
+	}
 	# USA
 	spriteType = {
 		name = "GFX_portrait_USA_andrew_johnson"
