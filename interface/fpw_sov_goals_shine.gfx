@@ -341,7 +341,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_SOV_finish_integration_shine"
+		name = "GFX_focus_SOV_finnish_integration_shine"
 		texturefile = "gfx/interface/goals/SOV/SOV_finnish_integration.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -403,7 +403,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_SOV_finish_autonomy_shine"
+		name = "GFX_focus_SOV_finnish_autonomy_shine"
 		texturefile = "gfx/interface/goals/SOV/SOV_finnish_autonomy.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

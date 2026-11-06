@@ -3040,7 +3040,7 @@
 	}
 
 	focus = {
-		id = AUS_unite_germany
+		id = AUS_to_unite_germany
 		#icon = GFX_focus_generic_coal_mining
 		x = 2
 		y = 3
@@ -3053,6 +3053,26 @@
 		}
 		completion_reward = {
 			###  declares war on prussia will have scripted peacedeals
+		}
+	}
+	focus = {
+		id = AUS_to_adminster_the_fatherland
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 4
+		relative_position_id = AUS_demand_saxon_integration_into_the_german_confederation
+		cost = 1
+		prerequisite = { focus = AUS_invite_swisterland }
+		prerequisite = { focus = AUS_strong_arm_prussia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			###  asks the status of the princes
+			### you can either chose centralization or decentralization
+			### relating to german princes not anything else
+			### you get two options, keep the status quo with the emporer and princes strictly under puppet status
+			### centralize, however this will incur heavy debuffs to the point where it would be better to keep the princes
 		}
 	}
 
@@ -3076,7 +3096,7 @@
 	focus = {
 		id = AUS_rivals_of_the_old
 		#icon = GFX_focus_generic_coal_mining
-		x = 7
+		x = 9
 		y = 1
 		relative_position_id = AUS_toward_a_habsburg_europe
 		cost = 1
@@ -3085,14 +3105,182 @@
 			always = no
 		}
 		completion_reward = {
-			### 
+			### embargo ottomans and opinion decrease
+		}
+	}
+
+	focus = {
+		id = AUS_gurantee_greece
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 1
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_rivals_of_the_old }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### gurantees greece
+		}
+	}
+
+	focus = {
+		id = AUS_relations_with_persia
+		#icon = GFX_focus_generic_coal_mining
+		x = -3
+		y = 1
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_rivals_of_the_old }
+		available = {
+			PER = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			### non aggression pact with persia + improved relations
+		}
+	}
+
+	focus = {
+		id = AUS_deal_with_the_shah
+		#icon = GFX_focus_generic_coal_mining
+		x = -3
+		y = 2
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_relations_with_persia }
+		available = {
+			PER = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			### if persia agrees they will join the war for spefic land
+		}
+	}
+
+	focus = {
+		id = AUS_influence_the_balkan_states
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_rivals_of_the_old }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### gains decisions to influence and start anti ottoman protests leading you to allow them to launch independence wars
+		}
+	}
+
+	focus = {
+		id = AUS_fund_greek_sepratists
+		#icon = GFX_focus_generic_coal_mining
+		x = 1
+		y = 2
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_influence_the_balkan_states }
+		prerequisite = { focus = AUS_gurantee_greece }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### gains decisions to influence and start anti ottoman protests leading you to allow them to launch independence wars
+		}
+	}
+
+	focus = {
+		id = AUS_instigate_armenian_resistance
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 2
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_influence_the_balkan_states }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### increases resistance and decreases compliance in armeanian states, will cause armenia to revolt upon war with the ottomans
+		}
+	}
+
+	focus = {
+		id = AUS_make_a_deal_with_the_arabs
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 3
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_instigate_armenian_resistance }
+		prerequisite = { focus = AUS_fund_greek_sepratists }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### saudis will invade if we complete this focus when we declare war
+		}
+	}
+
+	focus = {
+		id = AUS_create_the_colition
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 4
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### invites greece, persia if you completed , and the arabs
+		}
+	}
+
+	focus = {
+		id = AUS_call_for_the_dissolution_of_the_ottoman_empire
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 4
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### war with the ottomans
+		}
+	}
+
+	focus = {
+		id = AUS_victory_against_the_ottomans
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 4
+		relative_position_id = AUS_rivals_of_the_old
+		cost = 1
+		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
+		available = {
+			TUR = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			### make balkan population not irrelevant
 		}
 	}
 
 	focus = {
 		id = AUS_rivals_of_the_new
 		#icon = GFX_focus_generic_coal_mining
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = AUS_toward_a_habsburg_europe
 		cost = 1
@@ -3101,7 +3289,7 @@
 			always = no
 		}
 		completion_reward = {
-			### develops venice
+			### embargo russia and decrease opinions
 		}
 	}
 
@@ -3461,6 +3649,7 @@
 		}
 		completion_reward = {
 			### unlocks an occupation law that extracts 70-90 i cant decide rn of resources and factories.
+			### this occupation law will trigger pulse events to core lands in the balkan once you defeat the ottomans
 		}
 	}
 
@@ -3533,6 +3722,110 @@
 		}
 		completion_reward = {
 			###  add illyrians germanified
+		}
+	}
+
+	focus = {
+		id = AUS_influencing_greece
+		#icon = GFX_focus_generic_coal_mining
+		x = -6
+		y = 3
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
+		available = {
+			### requires the ottoman branch to be completed
+			always = no
+		}
+		completion_reward = {
+			###  add greece influence decisions
+		}
+	}
+
+	focus = {
+		id = AUS_grip_over_the_balkan_states
+		#icon = GFX_focus_generic_coal_mining
+		x = -6
+		y = 4
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
+		available = {
+			### requires the ottoman branch to be completed
+			always = no
+		}
+		completion_reward = {
+			###  add serbia/romania influence decisions
+		}
+	}
+
+	focus = {
+		id = AUS_settle_germans_into_bosnia
+		#icon = GFX_focus_generic_coal_mining
+		x = -2
+		y = 3
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
+		available = {
+			### requires the ottoman branch to be completed
+			always = no
+		}
+		completion_reward = {
+			###  replaces a random balkan states population and cores it
+		}
+	}
+
+	focus = {
+		id = AUS_settle_germans_into_bulgaria
+		#icon = GFX_focus_generic_coal_mining
+		x = -1
+		y = 4
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_settle_germans_into_bosnia }
+		available = {
+			### requires the ottoman branch to be completed
+			always = no
+		}
+		completion_reward = {
+			###  replaces a random balkan states population and cores it
+		}
+	}
+
+	focus = {
+		id = AUS_settle_germans_into_greece
+		#icon = GFX_focus_generic_coal_mining
+		x = -3
+		y = 4
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_settle_germans_into_bosnia }
+		available = {
+			### greece is a puppet or annexed
+			always = no
+		}
+		completion_reward = {
+			###  replaces a random balkan states population and cores it
+		}
+	}
+
+	focus = {
+		id = AUS_balkans_pacified
+		#icon = GFX_focus_generic_coal_mining
+		x = -4
+		y = 5
+		relative_position_id = AUS_criminilize_culture
+		cost = 1
+		prerequisite = { focus = AUS_settle_germans_into_bulgaria }
+		prerequisite = { focus = AUS_settle_germans_into_greece }
+		prerequisite = { focus = AUS_grip_over_the_balkan_states }
+		available = {
+			### balkan states cored
+			always = no
+		}
+		completion_reward = {
+			###  makes balkans germanified
 		}
 	}
 

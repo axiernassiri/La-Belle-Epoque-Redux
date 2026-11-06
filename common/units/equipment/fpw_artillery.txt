@@ -42,7 +42,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_cannon_artillery_equipment
-		active = yes
+		active = no
 		priority = 50
 		visual_level = 0
 
@@ -182,7 +182,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_howitzer_artillery_equipment
-		active = yes
+		active = no
 		priority = 50
 		visual_level = 0
 		
@@ -325,7 +325,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_breech_artillery_equipment
-		active = yes
+		active = no
 		priority = 50
 		visual_level = 0
 	}
@@ -397,7 +397,7 @@ equipments = {
 		year = 1866
 
 		archetype = fpw_muzzle_artillery_equipment
-		active = yes
+		active = no
 		priority = 50
 		visual_level = 0
 	}

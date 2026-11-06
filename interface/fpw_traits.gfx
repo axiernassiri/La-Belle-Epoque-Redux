@@ -9,8 +9,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/personal/trait_jap_emperor_trait.dds"
 		legacy_lazy_load = no
 	}
-#	spriteType = {
-#		name = GFX_trait_AUS_habsburg_traditionalism
-#		texturefile = "gfx/interface/traits/personal/trait_AUS_habsburg_traditionalism"
-#	}
+	spriteType = {
+		name = "GFX_trait_mounted_assaulter"
+		texturefile = "gfx/interface/traits/trait_mounted_assaulter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_cavalry_screen"
+		texturefile = "gfx/interface/traits/trait_cavalry_screen.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = GFX_trait_AUS_habsburg_traditionalism
+		texturefile = "gfx/interface/traits/personal/trait_AUS_habsburg_traditionalism.dds"
+		legacy_lazy_load = no
+	}
 }

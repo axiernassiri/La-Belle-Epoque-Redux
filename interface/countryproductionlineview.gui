@@ -254,21 +254,6 @@ guiTypes = {
 				}
 
 				buttonType = {
-					name = "aircraft_button"
-					position = { x=185 y=122 }
-					quadTextureSprite ="GFX_add_prod_aircraft_line"
-					#pdx_tooltip = "PRODUCTION_AIRCRAFT_BUTTON"
-					clicksound = click_checkbox
-				}
-
-				iconType = {
-					name = "aircraft_button_glow"
-					position = { x = 188 y = 123 }
-					spriteType = "GFX_prod_new_equipment_glow"
-					alwaystransparent = yes
-				}
-
-				buttonType = {
 					name = "naval_button"
 					position = { x=350 y=122 }
 					spriteType ="GFX_add_prod_naval_line"

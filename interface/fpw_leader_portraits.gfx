@@ -412,12 +412,66 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ITA/Portrait_ITA_bettino_ricasoli.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_PAP_pope"
-		texturefile = "gfx/leaders/PAP/Portrait_PAP_pope.dds"
-	}
-	spriteType = {
 		name = "GFX_portrait_ITA_giuseppe_mazzini"
 		texturefile = "gfx/leaders/ITA/Portrait_ITA_giuseppe_mazzini.dds"
+	}
+	### GENERALS
+		# Generals
+	spriteType = {
+		name = "GFX_portrait_ITA_giuseppe_garibaldi"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_giuseppe_garibaldi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_enrico_cialdini"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_enrico_cialdini.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_giuseppe_pianell"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_giuseppe_pianell.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_maurizio_sonnaz"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_maurizio_sonnaz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_agostino_roreto"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_agostino_roreto.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_raffaele_cadorna"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_raffaele_cadorna.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_filippo_brignone"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_filippo_brignone.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_domenico_cucchiari"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_domenico_cucchiari.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_efisio_cugia"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_efisio_cugia.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_amedeo_savoia"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_amedeo_savoia.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_carlo_robilant"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_carlo_robilant.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_nino_bixio"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_nino_bixio.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_enrico_cosenz"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_enrico_cosenz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_giuseppe_sirtori"
+		texturefile = "gfx/leaders/ITA/Portrait_ITA_giuseppe_sirtori.dds"
 	}
 	# USA
 	spriteType = {
@@ -717,6 +771,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_AFG_mahmud_tarzi"
 		texturefile = "gfx/leaders/AFG/Portrait_AFG_mahmud_tarzi.dds"
+	}
+	# OTHER
+	spriteType = {
+		name = "GFX_portrait_PAP_pope"
+		texturefile = "gfx/leaders/PAP/Portrait_PAP_pope.dds"
 	}
 }
 

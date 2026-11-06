@@ -1582,67 +1582,67 @@ focus_tree = {
 		}
 		available = {
 			985 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			341 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			797 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			340 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			347 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			343 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			49 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			342 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			356 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			345 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			346 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			348 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			344 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			798 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			984 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 			354 = {
-				infrastructure = 5
+				infrastructure > 4
 				is_owned_and_controlled_by = TUR
 			}
 		}

@@ -35,7 +35,7 @@ equipments = {
 		year = 1860
 
 		archetype = fpw_supply_waggon_equipment
-		active = yes
+		active = no
 		priority = 30	
 	}
 
