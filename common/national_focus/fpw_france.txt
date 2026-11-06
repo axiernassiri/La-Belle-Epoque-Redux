@@ -1586,7 +1586,7 @@
 		}
 	}
 	focus = {
-		id = FRA_dealing_with_the_strikes
+		id = FRA_develop_the_military_industry
 		prerequisite = { focus = FRA_renovation_of_paris }
 		relative_position_id = FRA_modernize_the_railways
 		available = {
@@ -1631,11 +1631,10 @@
 		}
 	}
 	focus = {
-		id = FRA_second_empires_economic_boom
+		id = FRA_expand_the_southern_industries
+		prerequisite = { focus = FRA_develop_the_military_industry }
 		prerequisite = { focus = FRA_improve_workers_conditions }
-		prerequisite = { focus = FRA_resources_of_the_empire }
-		prerequisite = { focus = FRA_dealing_with_the_strikes }
-		relative_position_id = FRA_resources_of_the_empire
+		relative_position_id = FRA_develop_the_military_industry
 		available = {
 
 		}
@@ -1645,8 +1644,100 @@
 		}
 
 
-		icon = GFX_focus_RAJ_special_economic_zones
+		icon = GFX_
 		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_expand_the_central_industries
+		prerequisite = { focus = FRA_develop_the_military_industry }
+		prerequisite = { focus = FRA_improve_workers_conditions }
+		relative_position_id = FRA_develop_the_military_industry
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_expand_the_northern_industries
+		prerequisite = { focus = FRA_develop_the_military_industry }
+		prerequisite = { focus = FRA_improve_workers_conditions }
+		relative_position_id = FRA_develop_the_military_industry
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_french_economic_miracle
+		prerequisite = { focus = FRA_expand_the_southern_industries }
+		prerequisite = { focus = FRA_expand_the_central_industries }
+		prerequisite = { focus = FRA_expand_the_northern_industries }
+		relative_position_id = FRA_expand_the_central_industries
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {  }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FRA_appease_the_strikers
+		prerequisite = { focus = FRA_improve_workers_conditions }
+		relative_position_id = FRA_improve_workers_conditions
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
 		y = 1
 		cost = 5
 
@@ -1882,7 +1973,7 @@
 		relative_position_id = FRA_further_liberal_reforms
 
 		available = {
-			
+			has_idea = FRA_intense_political_division_3
 		}
 
 		bypass = {
@@ -1897,6 +1988,16 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.04
+			swap_ideas = {
+				remove_idea = FRA_intense_political_division_3
+				add_idea = FRA_intense_political_division_4
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -1921,6 +2022,18 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+
+				swap_country_leader_traits = {
+					remove = lber_fra_the_reformist_emperor
+					add = lber_fra_the_reformist_emperor_2
+					ideology = liberal_constitutional_monarchism
+				}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
