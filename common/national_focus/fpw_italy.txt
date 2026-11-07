@@ -18,11 +18,185 @@ focus_tree = {
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 1500 y = 1500 }
+	continuous_focus_position = { x = 0 y = 2000 }
 
 	initial_show_position = {
 		focus = industrial_effort
 	}
 
-	
+	focus = {
+		id = ITA_regio_escerito
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 10
+		y = 0
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_reorganize_the_army
+		relative_position_id = ITA_regio_escerito
+		prerequisite = { focus = ITA_regio_escerito }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_supply_our_troops
+		relative_position_id = ITA_reorganize_the_army
+		prerequisite = { focus = ITA_reorganize_the_army }
+		mutually_exclusive = { focus = ITA_focus_on_speed }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_focus_on_speed
+		relative_position_id = ITA_reorganize_the_army
+		prerequisite = { focus = ITA_reorganize_the_army }
+		mutually_exclusive = { focus = ITA_supply_our_troops }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_intiate_army_reforms
+		relative_position_id = ITA_reorganize_the_army
+		prerequisite = { focus = ITA_focus_on_speed focus = ITA_supply_our_troops }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_warriors_spirit
+		relative_position_id = ITA_intiate_army_reforms
+		prerequisite = { focus = ITA_intiate_army_reforms }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -5
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_warriors_spirit
+		relative_position_id = ITA_intiate_army_reforms
+		prerequisite = { focus = ITA_intiate_army_reforms }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -5
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
 }

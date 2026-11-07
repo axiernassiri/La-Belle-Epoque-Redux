@@ -3,12 +3,19 @@ fpw_ITA_disorganised_army = {
 
 	icon = GFX_idea_tur_disorganised_armed_forces
 
+	conscription_factor = ITA_army_conscription_factor
 	dig_in_speed_factor = ITA_dig_in_speed_factor
 	army_attack_factor = ITA_army_attack_factor
+	army_defence_factor = ITA_army_defence_factor
 	army_org_factor = ITA_army_org_factor
 	army_speed_factor = ITA_army_speed_factor
 	cavalry_attack_factor = ITA_cavalry_attack_factor
+	cavalry_defence_factor = ITA_cavalry_defence_factor
 	max_planning_factor = ITA_max_planning_factor
 	army_morale_factor = ITA_army_morale_factor
+	attrition = ITA_army_attrition
+	supply_factor = ITA_army_supply_factor
+	experience_gain_army_factor = ITA_army_experience_gain_army_factor
+	experience_loss_factor = ITA_army_experience_loss_factor
 	breakthrough_factor = ITA_breakthrough_factor
 }
