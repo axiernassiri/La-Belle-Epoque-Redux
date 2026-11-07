@@ -175,9 +175,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_warriors_spirit
-		relative_position_id = ITA_intiate_army_reforms
-		prerequisite = { focus = ITA_intiate_army_reforms }
+		id = ITA_organized_attacks
+		relative_position_id = ITA_warriors_spirit
+		prerequisite = { focus = ITA_warriors_spirit }
+		mutually_exclusive = { focus = ITA_the_human_wave }
 		allowed = {
 
 		}
@@ -192,7 +193,215 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_PLACEHOLDER 
-		x = -5
+		x = -2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_the_human_wave
+		relative_position_id = ITA_warriors_spirit
+		prerequisite = { focus = ITA_warriors_spirit }
+		mutually_exclusive = { focus = ITA_organized_attacks }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_taking_a_risk
+		relative_position_id = ITA_warriors_spirit
+		prerequisite = { focus = ITA_organized_attacks focus = ITA_the_human_wave }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_support_alpine_volunteers
+		relative_position_id = ITA_taking_a_risk
+		prerequisite = { focus = ITA_taking_a_risk }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_artillery_warfare
+		relative_position_id = ITA_taking_a_risk
+		prerequisite = { focus = ITA_taking_a_risk }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_follow_the_prussian_example
+		relative_position_id = ITA_expand_artillery_warfare
+		prerequisite = { focus = ITA_expand_artillery_warfare }
+		mutually_exclusive = { focus = ITA_follow_our_own_way }
+		mutually_exclusive = { focus = ITA_follow_the_french_example }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_follow_our_own_way
+		relative_position_id = ITA_support_alpine_volunteers
+		prerequisite = { focus = ITA_expand_artillery_warfare }
+		prerequisite = { focus = ITA_support_alpine_volunteers }
+		mutually_exclusive = { focus = ITA_follow_the_prussian_example }
+		mutually_exclusive = { focus = ITA_follow_the_french_example }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_follow_the_french_example
+		relative_position_id = ITA_support_alpine_volunteers
+		prerequisite = { focus = ITA_support_alpine_volunteers }
+		mutually_exclusive = { focus = ITA_follow_our_own_way }
+		mutually_exclusive = { focus = ITA_follow_our_own_way }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_the_european_lion
+		relative_position_id = ITA_follow_our_own_way
+		prerequisite = { focus = ITA_follow_the_prussian_example focus = ITA_follow_our_own_way focus = ITA_follow_the_french_example }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
 		y = 1
 
 		completion_reward = {
