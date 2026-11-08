@@ -351,63 +351,70 @@ AUS_populations_of_the_empire = {
 		}
 		
 	}
-
-	AUS_replace_hungarians = { 
-		icon = GFX_decision_hol_exchange_intelligence_data
+	AUS_settling_hungary = {
+		icon = GFX_decision_generic_political_rally
 		allowed = { 
 			original_tag = AUS
 		}
-		visible = {
+		visible = { 
 			has_completed_focus = AUS_settle_austrians_into_hungary
 		}
 		available = {
+			any_owned_state = {
+				limit = {
+					is_core_of = HUN
+					NOT = { is_core_of = AUS }
+				}
+			}
 		} 
 		cost = 50
 		fire_only_once = no
-		days_remove = 31
-		days_re_enable = 20
+		days_re_enable = 32
+		#days_remove = 32
 		ai_will_do = {
 			factor = 1
 		} 
 		complete_effect = {
-			
-		} 
-		remove_effect = {
-			random_state = {
+			random_owned_state = {
 				limit = {
-					is_owned_by = AUS
 					is_core_of = HUN
 					NOT = { is_core_of = AUS }
 				}
 				add_core_of = AUS
 			}
-		}
-		
-	}
-	AUS_replace_illyrians = { 
-		icon = GFX_decision_hol_exchange_intelligence_data
+		} 
+		#remove_effect = {
+		#	
+		#}
+	} 
+
+	AUS_settling_illyria = {
+		icon = GFX_decision_generic_political_rally
 		allowed = { 
 			original_tag = AUS
 		}
-		visible = {
+		visible = { 
 			has_completed_focus = AUS_criminilize_culture
 		}
 		available = {
+			any_owned_state = {
+				limit = {
+					is_core_of = CRO
+					is_core_of = BOS
+					NOT = { is_core_of = AUS }
+				}
+			}
 		} 
 		cost = 50
 		fire_only_once = no
-		days_remove = 31
-		days_re_enable = 20
+		days_re_enable = 32
+		#days_remove = 32
 		ai_will_do = {
 			factor = 1
 		} 
 		complete_effect = {
-			
-		} 
-		remove_effect = {
-			random_state = {
+			random_owned_state = {
 				limit = {
-					is_owned_by = AUS
 					OR = {
 						is_core_of = CRO
 						is_core_of = BOS
@@ -416,8 +423,121 @@ AUS_populations_of_the_empire = {
 				}
 				add_core_of = AUS
 			}
+		} 
+		#remove_effect = {
+		#	
+		#}
+	} 
+
+	AUS_settling_serbia = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
 		}
-		
+		visible = { 
+			has_completed_focus = AUS_settle_germans_into_serbia
+		}
+		available = {
+			any_owned_state = {
+				limit = {
+					is_core_of = SER
+					NOT = { is_core_of = AUS }
+				}
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_core_of = SER
+					NOT = { is_core_of = AUS }
+				}
+				add_core_of = AUS
+			}
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_settling_greece = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_completed_focus = AUS_settle_germans_into_greece
+		}
+		available = {
+			any_owned_state = {
+				limit = {
+					is_core_of = GRE
+					NOT = { is_core_of = AUS }
+				}
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_core_of = GRE
+					NOT = { is_core_of = AUS }
+				}
+				add_core_of = AUS
+			}
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_settling_bulgaria = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_completed_focus = AUS_settle_germans_into_bulgaria
+		}
+		available = {
+			any_owned_state = {
+				limit = {
+					is_core_of = BUL
+					NOT = { is_core_of = AUS }
+				}
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_core_of = BUL
+					NOT = { is_core_of = AUS }
+				}
+				add_core_of = AUS
+			}
+		} 
+		#remove_effect = {
+		#	
+		#}
 	}
 	
 }
@@ -575,5 +695,351 @@ AUS_ten_year_settlement_dec = {
 			}
 		}
 	} 
+	
+}
+
+AUS_influencing_balkan = {
+	
+	AUS_influence_greece = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_completed_focus = AUS_influencing_greece
+		}
+		available = {
+			GRE = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	} 
+
+	AUS_military_cooperation_with_greece = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_influence_greece
+		}
+		available = {
+			GRE = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_support_pro_austrian_movements_in_greece = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_military_cooperation_with_greece
+		}
+		available = {
+			GRE = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_subjagate_greece = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_support_pro_austrian_movements_in_greece
+		}
+		available = {
+			GRE = {
+				exists = yes
+			}
+		} 
+		cost = 100
+		fire_only_once = yes
+		days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		remove_effect = {
+			puppet = {
+				target = GRE
+				end_wars = yes
+			}
+		}
+	}
+
+	AUS_influence_serbia = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_completed_focus = AUS_support_pro_austrian_movements_in_serbia
+		}
+		available = {
+			SER = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	} 
+
+	AUS_military_cooperation_with_serbia = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_influence_serbia
+		}
+		available = {
+			SER = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_support_pro_austrian_movements_in_serbia = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_support_pro_austrian_movements_in_serbia
+		}
+		available = {
+			SER = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_subjagate_serbia = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_support_pro_austrian_movements_in_serbia
+		}
+		available = {
+			SER = {
+				exists = yes
+			}
+		} 
+		cost = 100
+		fire_only_once = yes
+		days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		remove_effect = {
+			puppet = {
+				target = SER
+				end_wars = yes
+			}
+		}
+	}
+
+	AUS_influence_romania = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_completed_focus = AUS_grip_over_the_balkan_states
+		}
+		available = {
+			ROM = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	} 
+
+	AUS_military_cooperation_with_romania = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_influence_romania
+		}
+		available = {
+			ROM = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_support_pro_austrian_movements_in_romania = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_military_cooperation_with_romania
+		}
+		available = {
+			ROM = {
+				exists = yes
+			}
+		} 
+		cost = 50
+		fire_only_once = no
+		#days_re_enable = 32
+		#days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		#remove_effect = {
+		#	
+		#}
+	}
+
+	AUS_subjagate_romania = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		visible = { 
+			has_decision = AUS_support_pro_austrian_movements_in_romania
+		}
+		available = {
+			ROM = {
+				exists = yes
+			}
+		} 
+		cost = 100
+		fire_only_once = yes
+		days_remove = 32
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			custom_effect_tooltip = influencing_greece_d_tt
+		} 
+		remove_effect = {
+			puppet = {
+				target = ROM
+				end_wars = yes
+			}
+		}
+	}
 	
 }

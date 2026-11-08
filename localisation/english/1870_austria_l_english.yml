@@ -255,25 +255,55 @@
  AUS_develop_austria: "Develop Austria"
  AUS_develop_hungary: "Develop Hungary"
 
+
+ # influencing
+ AUS_influencing_balkan: "Influencing the Balkan"
+ AUS_influence_greece: "Influence greece"
+ AUS_military_cooperation_with_greece: "Military Cooperation with Greece"
+ AUS_support_pro_austrian_movements_in_greece: "Support Pro-Austrian movements in Greece"
+ AUS_subjagate_greece: "Subjugate Greece"
+ AUS_influence_serbia: "Influence Serbia"
+ AUS_military_cooperation_with_serbia: "Military Cooperation with Serbia"
+ AUS_support_pro_austrian_movements_in_serbia: "Support Pro-Austrian movements in Serbia"
+ AUS_subjagate_serbia: "Subjugate Serbia"
+ AUS_influence_romania: "Influence Romania"
+ AUS_military_cooperation_with_romania: "Military Cooperation with Romania"
+ AUS_support_pro_austrian_movements_in_romania: "Support Pro-Austrian movements in Romania"
+ AUS_subjagate_romania: "Subjugate Romania"
+
+
+ # Settling
+ AUS_settling_austria: "Settling in the Empire"
+ AUS_settling_hungary: "Settling Hungary"
+ AUS_settling_illyria: "Settling Illyria"
+ AUS_settling_serbia: "Settling Serbia"
+ AUS_settling_greece: "Settling Greece"
+ AUS_settling_bulgaria: "Settling Bulgaria"
+
 #ideas
 
  #hidden ideas
+ AUS_hungary_germanified: "Germanified Hungary"
  AUS_hungary_loyal: "Loyal Hungary"
  AUS_hungary_friendly: "Friendly Hungary"
  AUS_hungary_neutral: "Neutral Hungary"
  AUS_hungary_hostile: "Hostile Hungary"
+ AUS_czech_germanified: "Germanified Bohemia"
  AUS_czech_loyal: "Loyal Bohemia"
  AUS_czech_friendly: "Friendly Bohemia"
  AUS_czech_neutral: "Neutral Bohemia"
  AUS_czech_hostile: "Hostile Bohemia"
+ AUS_galicia_germanified: "Germanified Galicia"
  AUS_galicia_loyal: "Loyal Galicia"
  AUS_galicia_friendly: "Friendly Galicia"
  AUS_galicia_neutral: "Neutral Galicia"
  AUS_galicia_hostile: "Hostile Galicia"
+ AUS_illyria_germanified: "Germanified Illyria"
  AUS_illyria_loyal: "Loyal Illyria"
  AUS_illyria_friendly: "Friendly Illyria"
  AUS_illyria_neutral: "Neutral Illyria"
  AUS_illyria_hostile: "Hostile Illyria"
+ AUS_balkans_germanified: "Germanified Balkans"
  AUS_balkans_loyal: "Loyal Balkans"
  AUS_balkans_friendly: "Friendly Balkans"
  AUS_balkans_neutral: "Neutral Balkans"
@@ -453,7 +483,14 @@
  AUS_populations_of_emp_illyria_tt: "This focus will allow you to gain §YTrust§! and increase §YAttitude§! with the §YIllyrians§!."
  AUS_gain_czech_trust_tt: "This focus will allow you to gain §YTrust§! with the §YCzechs§!."
  AUS_increase_czech_attitude: "This focus will allow you to increase §YAttitude§! with the §YCzechs§!."
-
+ influencing_greece_d_tt: "This §YDecision§! will influence the Specified Country."
+ aus_settling_hungary_tt: "This §YFocus§! will allow us to §YSettle§! in §YHungary§!"
+ aus_settle_serb_tt: "This §YFocus§! will allow us to §YSettle§! in §YSerbia§!"
+ settling_illyria_tt: "This §YFocus§! will allow us to §YSettle§! in §YIllyria§!"
+ aus_settle_greece_tt: "This §YFocus§! will allow us to §YSettle§! in §YGreece§!"
+ aus_settle_bulgaria_tt: "This §YFocus§! will allow us to §YSettle§! in §YBulgaria§!"
+ aus_influencing_greece_tt: "This §YFocus§! will allow us to §YInfluence§! §YGreece§!"
+ aus_serb_rom_inf_tt: "This §YFocus§! will allow us to §YInfluence§! §YSerbia§! and §YRomania§!"
 #custom modifier tooltips
  
 #scripted gui text
@@ -468,6 +505,7 @@
  
  AUS_hungarians_name_text: "Hungarians"
  AUS_hungarian_attitude_tt: "[AUS_get_hungarian_attitude_tt]"
+ AUS_hungary_attitude_germanified_tt: "§YGermanified Hungary§! \nPolitical Power Gain: §G+25%§! \nStability: §G+25.00%§! \nWar Support: §G+25.00%§!"
  AUS_hungary_attitude_loyal_tt: "§YLoyal Hungary§! \nPolitical Power Gain: §G+15%§! \nStability: §G+15.00%§! \nWar Support: §G+15.00%§!"
  AUS_hungary_attitude_friendly_tt: "§YFriendly Hungary§! \nPolitical Power Gain: §G+5%§! \nStability: §G+5.00%§! \nWar Support: §G+5.00%§!"
  AUS_hungary_attitude_neutral_tt: "§YNeutral Hungary§! \nPolitical Power Gain: §R-5%§! \nStability: §R-5.00%§! \nWar Support: §R-5.00%§!"
@@ -475,6 +513,7 @@
  
  AUS_czech_name_text: "Czechs"
  AUS_czech_attitude_tt: "[AUS_get_czech_attitude_tt]"
+ AUS_czech_attitude_germanified_tt: "§YGermanified Bohemia§! \nConsumer Goods Factories Factor: §Y-30.0%§! \nFactory Output: §G+20.00%§! \nDockyard Output: §G+20.00%§!"
  AUS_czech_attitude_loyal_tt: "§YLoyal Bohemia§! \nConsumer Goods Factories Factor: §Y-20.0%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§!"
  AUS_czech_attitude_friendly_tt: "§YFriendly Bohemia§! \nConsumer Goods Factories Factor: §Y-10.0%§! \nFactory Output: §G+5.00%§! \nDockyard Output: §G+5.00%§!"
  AUS_czech_attitude_neutral_tt: "§YNeutral Bohemia§! \nConsumer Goods Factories Factor: §Y10.0%§! \nFactory Output: §R-5.00%§! \nDockyard Output: §R-5.00%§!"
@@ -482,6 +521,7 @@
  
  AUS_galician_name_text: "Galicians"
  AUS_galician_attitude_tt: "[AUS_get_galician_attitude_tt]"
+ AUS-galicia_attitude_germanified_tt: "§YGermanified Galicia§! \nConsumer Goods Factories Factor: §Y-20.0%§! \nStability: §G+20.00%§! \nConstruction Speed: §G+25.00%§!"
  AUS_galicia_attitude_loyal_tt: "§YLoyal Galicia§! \nConsumer Goods Factories Factor: §Y-10.0%§! \nStability: §G+10.00%§! \nConstruction Speed: §G+15.00%§!"
  AUS_galicia_attitude_friendly_tt: "§YFriendly Galicia§! \nConsumer Goods Factories Factor: §Y5.0%§! \nStability: §G+5.00%§! \nConstruction Speed: §G+5.00%§!"
  AUS_galicia_attitude_neutral_tt: "§YNeutral Galicia§! \nConsumer Goods Factories Factor: §Y10.0%§! \nStability: §R-5.00%§! \nConstruction Speed: §R-10.00%§!"
@@ -489,6 +529,7 @@
  
  AUS_illyrian_name_text: "Illyrians"
  AUS_illyrian_attitude_tt: "[AUS_get_illyrian_attitude_tt]"
+ AUS_illyria_attitude_germanified_tt: "§YGermanified Illyria§! \nWar Support: §G+20.00%§! \nResistance Target: §G-30%§! \nCompliance Growth Speed: §G+20%§!"
  AUS_illyria_attitude_loyal_tt: "§YLoyal Illyria§! \nWar Support: §G+10.00%§! \nResistance Target: §G-20%§! \nCompliance Growth Speed: §G+10%§!"
  AUS_illyria_attitude_friendly_tt: "§YFriendly Illyria§! \nWar Support: §G+5.00%§! \nResistance Target: §G-10%§! \nCompliance Growth Speed: §G+10%§!"
  AUS_illyria_attitude_neutral_tt: "§YNeutral Illyria§! \nWar Support: §R-5.00%§! \nResistance Target: §R+20%§! \nCompliance Growth Speed: §R-10%§!"
@@ -496,6 +537,7 @@
  
  AUS_balkans_name_text: "Balkans"
  AUS_balkans_attitude_tt: "[AUS_get_balkans_attitude_tt]"
+ AUS_balkans_attitude_germanified_tt: "§YGermanified Balkans§! \nPolitical Power Gain: §G+20%§! \nRecruitable Population Factor: §G20%§! \nCompliance Growth Speed: §G+25%§! \nConstruction Speed: §G+20.00%§!"
  AUS_balkans_attitude_loyal_tt: "§YLoyal Balkans§! \nPolitical Power Gain: §G+10%§! \nRecruitable Population Factor: §G10%§! \nCompliance Growth Speed: §G+15%§! \nConstruction Speed: §G+10.00%§!"
  AUS_balkans_attitude_friendly_tt: "§YFriendly Balkans§! \nPolitical Power Gain: §G+5%§! \nCompliance Growth Speed: §G+2.5%§! \nConstruction Speed: §G+2.50%§!"
  AUS_balkans_attitude_neutral_tt: "§YNeutral Balkans§! \nPolitical Power Gain: §R-5%§! \nCompliance Growth Speed: §R-5%§! \nConstruction Speed: §R-5%§!"

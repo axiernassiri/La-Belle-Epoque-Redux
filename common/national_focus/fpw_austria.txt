@@ -2922,7 +2922,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_victory_over_prussia }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### create the south german confederation
@@ -2938,7 +2937,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_reorganize_south_germany }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### gives an event to invite to faction and puppet saxony
@@ -2955,7 +2953,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_reorganize_south_germany }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### demilitarizes rhineland states
@@ -2971,7 +2968,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_instigate_rhineland_strikes }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### annex state 943 to closest puppet and lippe into hannover
@@ -2987,7 +2983,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_demand_saxon_integration_into_the_german_confederation }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### offers to invite denmark into the germanconfederation and puppets them
@@ -3004,7 +2999,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_demand_saxon_integration_into_the_german_confederation  focus = AUS_instigate_rhineland_strikes}
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### invites swisterland into the german confederation
@@ -3020,7 +3014,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_invite_swisterland}
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### causes thurgian revolt against prussia which will get a scripted peacedeal after 4 months
@@ -3037,7 +3030,6 @@
 		prerequisite = { focus = AUS_invite_swisterland }
 		prerequisite = { focus = AUS_strong_arm_prussia }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### causes Rhineland revolt against prussia which will get a scripted peacedeal after 4 months
@@ -3054,7 +3046,6 @@
 		prerequisite = { focus = AUS_invite_swisterland }
 		prerequisite = { focus = AUS_strong_arm_prussia }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			###  declares war on prussia will have scripted peacedeals
@@ -3122,7 +3113,7 @@
 		cost = 1
 		prerequisite = { focus = AUS_rivals_of_the_old }
 		available = {
-			always = no
+			GRE = { exists = yes }
 		}
 		completion_reward = {
 			### gurantees greece
@@ -3174,7 +3165,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_rivals_of_the_old }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### gains decisions to influence and start anti ottoman protests leading you to allow them to launch independence wars
@@ -3191,7 +3181,6 @@
 		prerequisite = { focus = AUS_influence_the_balkan_states }
 		prerequisite = { focus = AUS_gurantee_greece }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### gains decisions to influence and start anti ottoman protests leading you to allow them to launch independence wars
@@ -3207,7 +3196,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_influence_the_balkan_states }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### increases resistance and decreases compliance in armeanian states, will cause armenia to revolt upon war with the ottomans
@@ -3224,7 +3212,6 @@
 		prerequisite = { focus = AUS_instigate_armenian_resistance }
 		prerequisite = { focus = AUS_fund_greek_sepratists }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### saudis will invade if we complete this focus when we declare war
@@ -3256,7 +3243,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### war with the ottomans
@@ -3267,7 +3253,7 @@
 		id = AUS_victory_against_the_ottomans
 		#icon = GFX_focus_generic_coal_mining
 		x = 0
-		y = 4
+		y = 5
 		relative_position_id = AUS_rivals_of_the_old
 		cost = 1
 		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
@@ -3305,9 +3291,7 @@
 		relative_position_id = AUS_toward_a_habsburg_europe
 		cost = 1
 		prerequisite = { focus = AUS_curtail_russian_ambition }
-		available = {
-			always = no
-		}
+		available = {		}
 		completion_reward = {
 			### gives a national idea that gives winter bonuses
 		}
@@ -3323,7 +3307,6 @@
 		prerequisite = { focus = AUS_infiltrate_ukraine }
 		prerequisite = { focus = AUS_relations_with_persia }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### makes the caucasus revolt upon war start
@@ -3340,7 +3323,6 @@
 		prerequisite = { focus = AUS_infiltrate_ukraine }
 		prerequisite = { focus = AUS_winter_adaptations }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### makes russia lose guns and you gain guns, gives russia event border raided by austria.
@@ -3357,7 +3339,6 @@
 		prerequisite = { focus = AUS_conduct_border_raids }
 		prerequisite = { focus = AUS_rebellous_people_of_the_caucasus }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### event that starts war with russia and triggers all the shi
@@ -3373,7 +3354,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_curtail_russian_ambition }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### puts a state modifier debuffing russia in ukrainian states
@@ -3389,7 +3369,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_winter_adaptations }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### forts along the russian border in galicia
@@ -3476,7 +3455,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_riches_of_venice }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### fortifies milan
@@ -3509,7 +3487,6 @@
 		prerequisite = { focus = AUS_venician_naval_armory }
 		prerequisite = { focus = AUS_fortify_milan }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### destroys factories in milan and emilila romagna
@@ -3526,7 +3503,6 @@
 		prerequisite = { focus = AUS_raid_border_states }
 		prerequisite = { focus = AUS_stage_border_incident }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### italy gets an event issueing our demands, they will not have an option to reject as these demands essiently mean giving up soverienty.
@@ -3695,6 +3671,7 @@
 		}
 		completion_reward = {
 			### allows settlement into hungary decision which cores a random state in hungary while reducing population
+			custom_effect_tooltip = aus_settling_hungary_tt
 		}
 	}
 
@@ -3734,8 +3711,8 @@
 			every_owned_state = {
 				limit = {
 					is_core_of = HUN
-					is_core_of = AUS
 				}
+				is_core_of = AUS
 			}
 		}
 		completion_reward = {
@@ -3840,6 +3817,7 @@
 			### unlocks an occupation law that extracts 70-90 i cant decide rn of resources and factories.
 			### this occupation law will trigger pulse events to core lands in the balkan once you defeat the ottomans
 			### NOTE: Pulse Events Not Implemented yet, Occupation l aw is
+			custom_effect_tooltip = aus_resource_extraction_tt
 		}
 	}
 
@@ -3856,6 +3834,7 @@
 		completion_reward = {
 			###  add nation idea criminilized hositle cultures
 			### will unlock the decision to core illyrian states by diplacing the population
+			custom_effect_tooltip = settling_illyria_tt
 			add_ideas = AUS_culture_crackdown
 		}
 	}
@@ -3927,13 +3906,14 @@
 		x = -6
 		y = 3
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
 		available = {
-			### requires the ottoman branch to be completed
+			has_completed_focus = AUS_victory_against_the_ottomans
 		}
 		completion_reward = {
 			###  add greece influence decisions
+			custom_effect_tooltip = aus_influencing_greece_tt
 		}
 	}
 
@@ -3943,13 +3923,14 @@
 		x = -6
 		y = 4
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
 		available = {
 			### requires the ottoman branch to be completed
 		}
 		completion_reward = {
 			###  add serbia/romania influence decisions
+			custom_effect_tooltip = aus_serb_rom_inf_tt
 		}
 	}
 
@@ -3959,13 +3940,15 @@
 		x = -2
 		y = 3
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
 		available = {
 			### requires the ottoman branch to be completed
+			has_completed_focus = AUS_victory_against_the_ottomans
 		}
 		completion_reward = {
 			###  replaces a random balkan states population and cores it
+			custom_effect_tooltip = aus_settle_serb_tt
 		}
 	}
 
@@ -3975,13 +3958,14 @@
 		x = -1
 		y = 4
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_settle_germans_into_serbia }
 		available = {
 			### requires the ottoman branch to be completed
 		}
 		completion_reward = {
 			###  replaces a random balkan states population and cores it
+			custom_effect_tooltip = aus_settle_bulgaria_tt
 		}
 	}
 
@@ -3991,13 +3975,14 @@
 		x = -3
 		y = 4
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_settle_germans_into_serbia }
 		available = {
 			### greece is a puppet or annexed
 		}
 		completion_reward = {
 			###  replaces a random balkan states population and cores it
+			custom_effect_tooltip = aus_settle_greece_tt
 		}
 	}
 
@@ -4013,9 +3998,31 @@
 		prerequisite = { focus = AUS_grip_over_the_balkan_states }
 		available = {
 			### balkan states cored
+			every_state = {
+				limit = {
+					is_core_of = SER
+					is_core_of = BUL
+					is_core_of = CRO
+					is_core_of = BOS
+					is_core_of = GRE
+					is_core_of = ALB
+					is_core_of = ROM
+				}
+				is_core_of = AUS
+			}
+
 		}
 		completion_reward = {
 			###  makes balkans germanified
+			hidden_effect = {
+				remove_ideas = {
+					AUS_balkans_hostile
+					AUS_balkans_neutral
+					AUS_balkans_friendly
+					AUS_balkans_loyal
+				}
+			}
+			add_ideas = AUS_balkans_germanified
 		}
 	}
 
