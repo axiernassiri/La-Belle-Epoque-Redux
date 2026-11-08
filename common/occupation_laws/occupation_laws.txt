@@ -602,3 +602,33 @@ austrian_subjects = {
 		base = 10
 	}
 }
+austrian_resource_extraction = {
+	icon = 11
+	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
+
+	visible = {
+		tag = AUS
+	}
+
+
+	available = {
+		AUS = {
+			has_completed_focus = AUS_resource_extraction
+		}
+	}
+
+
+
+	state_modifier = {
+		resistance_target 				= 0.10
+		compliance_gain 				= 0.005
+		required_garrison_factor 		= 0.00
+		resistance_damage_to_garrison 	= 0.0025
+		local_factories 				= 0.75
+		local_resources 				= 0.90
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}

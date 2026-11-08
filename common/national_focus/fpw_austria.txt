@@ -936,7 +936,7 @@
 	# Congress of Berlin: diplomatic settlement
 	focus = {
 		id = AUS_bosnian_administration
-		#icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_
 		x = -1
 		y = 1
 		relative_position_id = AUS_diplomatic_victory
@@ -2904,7 +2904,12 @@
 			always = no
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				event = {
+					id = fpw_austria.5
+					days = 50
+				}
+			}
 		}
 	}
 	### ALT HIST GERMAN AFFAIRS
@@ -3086,7 +3091,6 @@
 		cost = 1
 		prerequisite = { focus = AUS_victory_over_prussia }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### 
@@ -3132,7 +3136,7 @@
 		y = 1
 		relative_position_id = AUS_rivals_of_the_old
 		cost = 1
-		prerequisite = { focus = AUS_rivals_of_the_old }
+		prerequisite = { focus = AUS_rivals_of_the_old focus = AUS_curtail_russian_ambition  }
 		available = {
 			PER = {
 				exists = yes
@@ -3157,7 +3161,7 @@
 			}
 		}
 		completion_reward = {
-			### if persia agrees they will join the war for spefic land
+			### if persia agrees they will join the war for spefic land, works for both russia and ottomans
 		}
 	}
 
@@ -3278,7 +3282,7 @@
 	}
 
 	focus = {
-		id = AUS_rivals_of_the_new
+		id = AUS_curtail_russian_ambition
 		#icon = GFX_focus_generic_coal_mining
 		x = 2
 		y = 1
@@ -3294,18 +3298,134 @@
 	}
 
 	focus = {
+		id = AUS_infiltrate_ukraine
+		#icon = GFX_focus_generic_coal_mining
+		x = 3
+		y = 2
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_curtail_russian_ambition }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### gives a national idea that gives winter bonuses
+		}
+	}
+
+	focus = {
+		id = AUS_rebellous_people_of_the_caucasus
+		#icon = GFX_focus_generic_coal_mining
+		x = 4
+		y = 3
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_infiltrate_ukraine }
+		prerequisite = { focus = AUS_relations_with_persia }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### makes the caucasus revolt upon war start
+		}
+	}
+
+	focus = {
+		id = AUS_conduct_border_raids
+		#icon = GFX_focus_generic_coal_mining
+		x = 2
+		y = 3
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_infiltrate_ukraine }
+		prerequisite = { focus = AUS_winter_adaptations }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### makes russia lose guns and you gain guns, gives russia event border raided by austria.
+		}
+	}
+
+	focus = {
+		id = AUS_slay_the_orthodox_giant
+		#icon = GFX_focus_generic_coal_mining
+		x = 3
+		y = 4
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_conduct_border_raids }
+		prerequisite = { focus = AUS_rebellous_people_of_the_caucasus }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### event that starts war with russia and triggers all the shi
+		}
+	}
+
+	focus = {
+		id = AUS_winter_adaptations
+		#icon = GFX_focus_generic_coal_mining
+		x = 1
+		y = 2
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_curtail_russian_ambition }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### puts a state modifier debuffing russia in ukrainian states
+		}
+	}
+
+	focus = {
+		id = AUS_galician_fortifications
+		#icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 3
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_winter_adaptations }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			### forts along the russian border in galicia
+		}
+	}
+
+	focus = {
 		id = AUS_riches_of_venice
 		#icon = GFX_focus_generic_coal_mining
 		x = -4
 		y = 1
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_toward_a_habsburg_europe }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### develops venice
+			160 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3315,13 +3435,19 @@
 		x = -1
 		y = 1
 		relative_position_id = AUS_riches_of_venice
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_riches_of_venice }
 		available = {
-			always = no
 		}
 		completion_reward = {
-			### forts in trentino
+			160 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3331,13 +3457,13 @@
 		x = -4
 		y = 1
 		relative_position_id = AUS_riches_of_venice
-		cost = 1
+		cost = 2
 		prerequisite = { focus = AUS_riches_of_venice }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### if you dont complete this focus france will join against you in your war against italy.
+			set_country_flag = aus_french_neutrality
 		}
 	}
 
@@ -3353,7 +3479,7 @@
 			always = no
 		}
 		completion_reward = {
-			### develops venice
+			### fortifies milan
 		}
 	}
 
@@ -3363,11 +3489,10 @@
 		x = -1
 		y = 2
 		relative_position_id = AUS_riches_of_venice
-		cost = 1
+		cost = 4
 		prerequisite = { focus = AUS_venician_naval_armory }
-		prerequisite = { focus = AUS_fortify_trentino }
+		prerequisite = { focus = AUS_fortify_milan }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### lose guns but send an event to italy whether they declare war or back off which makes border states demiliterized
@@ -3382,7 +3507,7 @@
 		relative_position_id = AUS_riches_of_venice
 		cost = 1
 		prerequisite = { focus = AUS_venician_naval_armory }
-		prerequisite = { focus = AUS_fortify_trentino }
+		prerequisite = { focus = AUS_fortify_milan }
 		available = {
 			always = no
 		}
@@ -3528,13 +3653,16 @@
 		x = -11
 		y = 1
 		relative_position_id = AUS_victory_over_prussia
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_victory_over_prussia }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### gains political power but reduces attitude
+			add_political_power = 200
+			AUS_decrese_illyrian_attitude_effect = yes
+			AUS_decrese_galician_attitude_effect = yes
+
 		}
 	}
 
@@ -3544,13 +3672,14 @@
 		x = -2
 		y = 1
 		relative_position_id = AUS_crack_down_on_ethnicities
-		cost = 1
+		cost = 2
 		prerequisite = { focus = AUS_crack_down_on_ethnicities }
 		available = {
-			always = no
 		}
 		completion_reward = {
-			### allows germanification of the austrian populations
+			### tt, you will begin the process of germanizing the populations of the empire
+			add_political_power = 50
+			add_stability = -0.05
 		}
 	}
 
@@ -3560,10 +3689,9 @@
 		x = -2
 		y = 1
 		relative_position_id = AUS_germanification
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_germanification }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### allows settlement into hungary decision which cores a random state in hungary while reducing population
@@ -3576,13 +3704,19 @@
 		x = 0
 		y = 1
 		relative_position_id = AUS_germanification
-		cost = 1
+		cost = 2
 		prerequisite = { focus = AUS_germanification }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### reduce hungarian loyalty, hungary loses cores on croatia, gain stability
+			AUS_decrese_hungary_attitude_effect = yes
+			add_political_power = 50
+			add_stability = 0.10
+			HUN = {
+				remove_state_core = 109
+				remove_state_core = 982
+			}
 		}
 	}
 
@@ -3592,14 +3726,29 @@
 		x = -1
 		y = 2
 		relative_position_id = AUS_germanification
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_settle_austrians_into_hungary }
 		prerequisite = { focus = AUS_seperate_croatia_from_hungary }
 		available = {
 			### requires all of hungary to be cored
+			every_owned_state = {
+				limit = {
+					is_core_of = HUN
+					is_core_of = AUS
+				}
+			}
 		}
 		completion_reward = {
 			### sets hungarian status to germified
+			hidden_effect = {
+				remove_ideas = {
+					AUS_hungary_hostile
+					AUS_hungary_neutral
+					AUS_hungary_friendly
+					AUS_hungary_loyal
+				}
+			}
+			add_ideas = AUS_hungary_germanified
 		}
 	}
 
@@ -3609,14 +3758,44 @@
 		x = 2
 		y = 1
 		relative_position_id = AUS_germanification
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_germanification focus = AUS_harsh_integration_of_slovenia_into_austria }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### loses a lot of stability, cores galicia, removes and adds a lot of population in galicia, removes factories, makes galician population irrelevant
 			### gains galicians germanified
+			add_ideas = AUS_galicia_germanified
+			add_stability = -0.20
+			88 = {
+				add_core_of = AUS
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			91 = {
+				add_core_of = AUS
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			89 = {
+				add_core_of = AUS
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			hidden_effect = {
+				remove_ideas = {
+					AUS_galicia_hostile
+					AUS_galicia_neutral
+					AUS_galicia_friendly
+					AUS_galicia_loyal
+				}
+			}
 		}
 	}
 
@@ -3626,13 +3805,24 @@
 		x = 2
 		y = 1
 		relative_position_id = AUS_crack_down_on_ethnicities
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_crack_down_on_ethnicities }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### cores slovenia but kills a bunch of people and reduces illyrian loyalty
+			102 = {
+				add_manpower = -100000
+				add_core_of = AUS
+			}
+			853 = {
+				add_manpower = -100000
+				add_core_of = AUS
+			}
+			736 = {
+				add_manpower = -100000
+				add_core_of = AUS
+			}
 		}
 	}
 
@@ -3642,14 +3832,14 @@
 		x = 0
 		y = 1
 		relative_position_id = AUS_harsh_integration_of_slovenia_into_austria
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_harsh_integration_of_slovenia_into_austria }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			### unlocks an occupation law that extracts 70-90 i cant decide rn of resources and factories.
 			### this occupation law will trigger pulse events to core lands in the balkan once you defeat the ottomans
+			### NOTE: Pulse Events Not Implemented yet, Occupation l aw is
 		}
 	}
 
@@ -3659,14 +3849,14 @@
 		x = 2
 		y = 1
 		relative_position_id = AUS_harsh_integration_of_slovenia_into_austria
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_harsh_integration_of_slovenia_into_austria }
 		available = {
-			always = no
 		}
 		completion_reward = {
 			###  add nation idea criminilized hositle cultures
 			### will unlock the decision to core illyrian states by diplacing the population
+			add_ideas = AUS_culture_crackdown
 		}
 	}
 
@@ -3694,15 +3884,23 @@
 		x = -1
 		y = 1
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_criminilize_culture }
 		prerequisite = { focus = AUS_resource_extraction }
 		available = {
 			### requires all illyrian states to be cored
-			always = no
 		}
 		completion_reward = {
 			###  add illyrians germanified
+			hidden_effect = {
+				remove_ideas = {
+					AUS_illyria_hostile
+					AUS_illyria_neutral
+					AUS_illyria_friendly
+					AUS_illyria_loyal
+				}
+			}
+			add_ideas = AUS_illyria_germanified
 		}
 	}
 
@@ -3712,16 +3910,14 @@
 		x = -4
 		y = 2
 		relative_position_id = AUS_criminilize_culture
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_illyrians_pacified }
 		prerequisite = { focus = AUS_hungarians_pacified }
 		prerequisite = { focus = AUS_polish_crackdown }
 		available = {
-			### requires all illyrian states to be cored
-			always = no
 		}
 		completion_reward = {
-			###  add illyrians germanified
+			add_ideas = AUS_austrian_culture_triumphant
 		}
 	}
 
@@ -3735,7 +3931,6 @@
 		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
 		available = {
 			### requires the ottoman branch to be completed
-			always = no
 		}
 		completion_reward = {
 			###  add greece influence decisions
@@ -3752,7 +3947,6 @@
 		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
 		available = {
 			### requires the ottoman branch to be completed
-			always = no
 		}
 		completion_reward = {
 			###  add serbia/romania influence decisions
@@ -3760,7 +3954,7 @@
 	}
 
 	focus = {
-		id = AUS_settle_germans_into_bosnia
+		id = AUS_settle_germans_into_serbia
 		#icon = GFX_focus_generic_coal_mining
 		x = -2
 		y = 3
@@ -3769,7 +3963,6 @@
 		prerequisite = { focus = AUS_one_people_one_empire_one_emporer }
 		available = {
 			### requires the ottoman branch to be completed
-			always = no
 		}
 		completion_reward = {
 			###  replaces a random balkan states population and cores it
@@ -3783,10 +3976,9 @@
 		y = 4
 		relative_position_id = AUS_criminilize_culture
 		cost = 1
-		prerequisite = { focus = AUS_settle_germans_into_bosnia }
+		prerequisite = { focus = AUS_settle_germans_into_serbia }
 		available = {
 			### requires the ottoman branch to be completed
-			always = no
 		}
 		completion_reward = {
 			###  replaces a random balkan states population and cores it
@@ -3800,10 +3992,9 @@
 		y = 4
 		relative_position_id = AUS_criminilize_culture
 		cost = 1
-		prerequisite = { focus = AUS_settle_germans_into_bosnia }
+		prerequisite = { focus = AUS_settle_germans_into_serbia }
 		available = {
 			### greece is a puppet or annexed
-			always = no
 		}
 		completion_reward = {
 			###  replaces a random balkan states population and cores it
@@ -3822,7 +4013,6 @@
 		prerequisite = { focus = AUS_grip_over_the_balkan_states }
 		available = {
 			### balkan states cored
-			always = no
 		}
 		completion_reward = {
 			###  makes balkans germanified

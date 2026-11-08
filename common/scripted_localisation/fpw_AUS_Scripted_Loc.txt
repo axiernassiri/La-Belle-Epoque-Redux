@@ -2,6 +2,12 @@ defined_text = {
     name = AUS_get_hungarian_attitude
     text = {
         trigger = {
+			AUS = { has_idea = AUS_hungary_germanified }
+        }
+        localization_key = AUS_attitude_germanified
+    }
+    text = {
+        trigger = {
 			AUS = { has_idea = AUS_hungary_loyal }
         }
         localization_key = AUS_attitude_loyal
@@ -27,6 +33,12 @@ defined_text = {
 }
 defined_text = {
     name = AUS_get_hungarian_attitude_tt
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_hungary_germanified }
+        }
+        localization_key = AUS_hungary_attitude_germanified_tt
+    }
     text = {
         trigger = {
 			AUS = { has_idea = AUS_hungary_loyal }
@@ -57,6 +69,12 @@ defined_text = {
     name = AUS_get_czech_attitude
     text = {
         trigger = {
+			AUS = { has_idea = AUS_czech_germanified }
+        }
+        localization_key = AUS_attitude_germanified
+    }
+    text = {
+        trigger = {
 			AUS = { has_idea = AUS_czech_loyal }
         }
         localization_key = AUS_attitude_loyal
@@ -82,6 +100,12 @@ defined_text = {
 }
 defined_text = {
     name = AUS_get_czech_attitude_tt
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_czech_germanified }
+        }
+        localization_key = AUS_czech_attitude_germanified_tt
+    }
     text = {
         trigger = {
 			AUS = { has_idea = AUS_czech_loyal }
@@ -112,6 +136,12 @@ defined_text = {
     name = AUS_get_galician_attitude
     text = {
         trigger = {
+			AUS = { has_idea = AUS_galicia_germanified }
+        }
+        localization_key = AUS_attitude_germanified
+    }
+    text = {
+        trigger = {
 			AUS = { has_idea = AUS_galicia_loyal }
         }
         localization_key = AUS_attitude_loyal
@@ -137,6 +167,12 @@ defined_text = {
 }
 defined_text = {
     name = AUS_get_galician_attitude_tt
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_galicia_germanified }
+        }
+        localization_key = AUS_galicia_attitude_germanified_tt
+    }
     text = {
         trigger = {
 			AUS = { has_idea = AUS_galicia_loyal }
@@ -167,6 +203,12 @@ defined_text = {
     name = AUS_get_illyrian_attitude
     text = {
         trigger = {
+			AUS = { has_idea = AUS_illyria_germanified }
+        }
+        localization_key = AUS_attitude_germanified
+    }
+    text = {
+        trigger = {
 			AUS = { has_idea = AUS_illyria_loyal }
         }
         localization_key = AUS_attitude_loyal
@@ -194,6 +236,12 @@ defined_text = {
     name = AUS_get_illyrian_attitude_tt
     text = {
         trigger = {
+			AUS = { has_idea = AUS_illyria_germanified }
+        }
+        localization_key = AUS_illyria_attitude_germanified_tt
+    }
+    text = {
+        trigger = {
 			AUS = { has_idea = AUS_illyria_loyal }
         }
         localization_key = AUS_illyria_attitude_loyal_tt
@@ -219,6 +267,12 @@ defined_text = {
 }
 defined_text = {
     name = AUS_get_balkans_attitude
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_germanified }
+        }
+        localization_key = AUS_attitude_germanified
+    }
     text = {
         trigger = {
 			AUS = { has_idea = AUS_balkans_loyal }
@@ -252,6 +306,12 @@ defined_text = {
 }
 defined_text = {
     name = AUS_get_balkans_attitude_tt
+    text = {
+        trigger = {
+			AUS = { has_idea = AUS_balkans_germanified }
+        }
+        localization_key = AUS_balkans_attitude_germanified_tt
+    }
     text = {
         trigger = {
 			AUS = { has_idea = AUS_balkans_loyal }

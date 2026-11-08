@@ -464,6 +464,7 @@
  AUS_attitude_neutral: "§gNeutral§!"
  AUS_attitude_hostile: "§RHostile§!"
  AUS_attitude_irrelevant: "§gIrrelevant§!"
+ AUS_attitude_germanified: "§gGermanified§!"
  
  AUS_hungarians_name_text: "Hungarians"
  AUS_hungarian_attitude_tt: "[AUS_get_hungarian_attitude_tt]"

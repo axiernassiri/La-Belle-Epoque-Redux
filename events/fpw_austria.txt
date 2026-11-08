@@ -93,6 +93,15 @@ country_event = {
 		add_stability = -0.05
 		add_war_support = -0.05
 		hidden_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AUS_great_humiliation
+				}
+				country_event = {
+					id = fpw_austria.6
+					days = 30
+				}
+			}
 			every_owned_state = {
 				limit = {
 					is_core_of = HUN
