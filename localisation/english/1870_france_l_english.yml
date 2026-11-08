@@ -360,11 +360,11 @@ FRA_foreign_stuff_cat: "Foreign Policy"
 FRA_expedition_to_korea: "Expedition to Korea"
 
 #Misc
-banned_party_party_loc: "§R—— BANNED PARTY ——§!"
+banned_party_party_loc: "§R-- BANNED PARTY --§!"
 historical_choice_tt: "§OThis is the Historical Choice.§!"
 at_war_no_tt: "§RIf we Enter at War, this National Spirit will be lost.§!"
 
-middle_thingy_tt: "—————————————————————————————————————————————————————————————————————"
+middle_thingy_tt: "-----------------------------------------------------------------"
 fra_modify_economy_tt: "Modify §YÉconomie de la France§! by:"
 FRA_modify_army_tt: "Modify §YArmée Impériale Française§! by:"
 fra_reorg_idea_over_tt: "When the National Spirit of §YReorganization Process of the Army§! Runs out, We will Receive the Following Effects:"
