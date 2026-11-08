@@ -14,7 +14,6 @@ fpw_FRA_cultural_heritage = {
 FRA_french_economy_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 	icon = GFX_idea_CHI_decisive_battle
-	attacker_modifier = yes
 
 	political_power_gain = fra_economy_political_power_gain
 	stability_factor = fra_economy_stability_factor
@@ -29,7 +28,6 @@ FRA_french_economy_modifier = { #NATIONAL SPIRIT
 FRA_french_army_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 	icon = GFX_idea_fra_french_army_empire
-	attacker_modifier = yes
 
 	conscription_factor = FRA_army_conscription_factor #0.1
 	experience_gain_army_factor = FRA_army_experience_gain_army_factor #0.05
@@ -48,4 +46,33 @@ FRA_french_army_modifier = { #NATIONAL SPIRIT
 	planning_speed = FRA_army_planning_speed #-0.35
 	supply_factor = FRA_army_supply_factor #-0.25
 	supply_consumption_factor = FRA_army_supply_consumption_factor #-0.05
+}
+
+
+####################################
+####################################
+
+
+FRA_mulhouse_strike = { #STATE MODIFIER
+	enable = { 
+		FRA = {
+			OR = {
+				NOT = {
+					has_completed_focus = FRA_begin_the_final_strike
+					has_completed_focus = FRA_enforce_national_security
+					has_completed_focus = FRA_rally_the_opposition
+				}
+			}
+		}
+	}
+
+	icon = GFX_modifiers_SOV_defend_moscow
+	
+	recruitable_population_factor = -0.25
+	army_core_defence_factor = -0.1
+	local_factories = -0.25
+	supply_factor = -0.1
+	local_org_regain = -0.1
+	resistance_growth = 0.15
+	state_resources_factor = -0.25
 }

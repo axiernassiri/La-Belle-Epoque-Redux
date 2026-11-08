@@ -368,12 +368,11 @@ middle_thingy_tt: "————————————————————�
 fra_modify_economy_tt: "Modify §YÉconomie de la France§! by:"
 FRA_modify_army_tt: "Modify §YArmée Impériale Française§! by:"
 fra_reorg_idea_over_tt: "When the National Spirit of §YReorganization Process of the Army§! Runs out, We will Receive the Following Effects:"
-
-
-
-
-
-
+fra_threat_rev_tt: "If we were to loose in a major conflict, It may cause an §Rnational catastrophy§!"
+fra_appointed_new_prime_minister: "Emperor [FRA.GetFlag]§YNapoleon III§! will appoint §YÉmile Ollivier§! as §YPrime Minister§!:"
+FRA_emile_ollivier_pm_idea_SHOW_TOOLTIP: "Émile Ollivier"
+fra_this_focus_no_more_strikes_tt: "This focus will §Gstop§! any future or current §Rstrikes§! going on throughout the [FRA.GetFlag]§YEmpire§!. If we enter at war with [PRS.GetFlag]§YPrussia§!, The §YMulhouse Strike§! will not happen"
+fra_mulhouse_strike_tt: "If [FRA.GetFlag]§YFrance§! hasnt §Ycompleted§! the following §Yfocuses§! of their respective branch: §Y'Begin the Final Strike'§!, §Y'Enforce National Security'§! or hasnt went the §ROpposition§!, they will gain the following §Gdebuff§! in §YAlsace-Lorraine§!:"
 
 
  # TECH STUFF LOC

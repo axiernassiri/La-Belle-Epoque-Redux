@@ -1414,7 +1414,17 @@ focus_tree = {
 					id = news_fpw.12
 				}
 			}
+			custom_effect_tooltip = fra_mulhouse_strike_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			28 = {
+				add_dynamic_modifier = {
+					modifier = FRA_mulhouse_strike
+					scope = FRA
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			FRA = { 
+				
 				country_event = { 
 					id = franco_prussian_fpw.10 
 					hours = 6 

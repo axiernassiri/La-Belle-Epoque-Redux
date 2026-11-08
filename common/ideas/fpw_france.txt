@@ -20,8 +20,7 @@ ideas = {
 			}
 		}
 		
-		FRA_constitutional_reform_of_1862_2 = {
-			name = FRA_constitutional_reform_of_1862
+		FRA_constitutional_reform_of_1866 = {
 
 			picture = fra_constitutional_reform
 
@@ -176,6 +175,27 @@ ideas = {
 				political_advisor_cost_factor = 0.15
 			}
 		}
+		
+		FRA_intense_political_division_5 = {
+			name = FRA_intense_political_division
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				party_popularity_stability_factor = -0.1
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				communism_drift = 0.02
+				#democratic_drift = 0.02
+				#drift_defence_factor = -0.1
+				political_advisor_cost_factor = 0.05
+			}
+		}
 		FRA_the_republicans_oppose_military_reform = {
 
 			picture = gfx_
@@ -268,32 +288,224 @@ ideas = {
 				}
 			}
 		}
+		FRA_parisian_bronze_strike = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				communism_drift = 0.02
+				drift_defence_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.05
+			}
+		}
+		FRA_parisian_bronze_strike_2 = {
+			name = FRA_parisian_bronze_strike
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				communism_drift = 0.02
+				drift_defence_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.05
+			}
+		}
+		FRA_loire_coal_basin_strike = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				communism_drift = 0.02
+				drift_defence_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+			}
+		}
+		FRA_loire_coal_basin_strike_2 = {
+			name = FRA_loire_coal_basin_strike
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				communism_drift = 0.02
+				drift_defence_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+			}
+		}
+		FRA_metalworkers_strike = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				communism_drift = 0.01
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		FRA_creusot_miners_strike = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				communism_drift = 0.02
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.15
+			}
+		}
+		FRA_threat_of_revolution = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				custom_modifier_tooltip = fra_threat_rev_tt
+			}
+		}
+		FRA_our_eyes_on_the_prussian = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = PRS    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_emile_ollivier_pm_idea_SHOW_TOOLTIP = { # used for effect tooltip, doesnt actually gets addded
+			allowed = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = 0.15
+				improve_relations_maintain_cost_factor = -0.5
+				trade_opinion_factor = 0.1
+				democratic_drift = -0.01
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		hidden_ideas = {
-			napoleon_iii_i = {
+			FRA_emile_ollivier_pm_idea = {
 				allowed = {
 					original_tag = FRA
 				}
 				cancel = {
-					NOT = {
-						has_government = democratic
-						has_government = fascism
-					}	
+					OR = {
+						has_government = communism	
+						has_government = democratic	
+						has_government = neutrality	
+					}
 				}
 				on_add = {
-					set_country_flag = fpw_secondary_leader_fra_napoleon_III
+					set_country_flag = fpw_secondary_leader_fra_emile_ollivier_pm
 				}
 				on_remove = {
-					clr_country_flag = fpw_secondary_leader_fra_napoleon_III
+					clr_country_flag = fpw_secondary_leader_fra_emile_ollivier_pm
 				}
-				
+
 				removal_cost = -1
-				
+
 				modifier = {
-					war_support_factor = 0.05
-					neutrality_acceptance = 50
+					stability_factor = -0.05
+					political_power_factor = 0.15
+					improve_relations_maintain_cost_factor = -0.5
+					trade_opinion_factor = 0.1
+					democratic_drift = -0.01
 				}
 			}
-		}
+		}	
 	}
 }

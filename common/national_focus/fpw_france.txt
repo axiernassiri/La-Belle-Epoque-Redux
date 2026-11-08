@@ -66,7 +66,10 @@
 		search_filters = {  }
 		completion_reward = {
 			custom_effect_tooltip = generic_skip_one_line_tt
-			country_event = french_empire_events.13
+			country_event = {
+				id = french_empire_events.13
+				days = 4
+			}
 		}
 	}
 
@@ -229,6 +232,7 @@
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
+			has_country_flag = niel_is_war_minister
 			
 		}
 
@@ -294,6 +298,7 @@
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
+			has_country_flag = niel_is_war_minister
 			
 		}
 
@@ -358,6 +363,7 @@
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
+			has_country_flag = niel_is_war_minister
 			
 		}
 
@@ -691,7 +697,7 @@
 			PRS = {
 				complete_national_focus = PRS_franco_prussian_war
 			}
-			news_event = { hours = 6 id = news.28 }
+			news_event = { hours = 6 id = lbe_france_news.5 }
 			
 		}
 	}
@@ -1723,28 +1729,6 @@
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = FRA_appease_the_strikers
-		prerequisite = { focus = FRA_improve_workers_conditions }
-		relative_position_id = FRA_improve_workers_conditions
-		available = {
-
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {  }
-		completion_reward = {
-		}
-	}
 
 
 
@@ -1964,6 +1948,16 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			FRA_napoleon_iii = {
+				swap_country_leader_traits = {
+					remove = lber_fra_the_reformist_emperor
+					add = lber_fra_the_reformist_emperor_2
+					ideology = liberal_constitutional_monarchism
+				}
+			}
 		}
 	}
 	focus = {
@@ -2025,11 +2019,14 @@
 			add_political_power = 75
 			add_war_support = 0.05
 
+			FRA_napoleon_iii = {
 				swap_country_leader_traits = {
-					remove = lber_fra_the_reformist_emperor
-					add = lber_fra_the_reformist_emperor_2
+					remove = lber_fra_the_reformist_emperor_2
+					add = lber_fra_the_reformist_emperor_3
 					ideology = liberal_constitutional_monarchism
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
@@ -2058,6 +2055,13 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = FRA_constitutional_reform_of_1862
+				add_idea = FRA_constitutional_reform_of_1866
+			}
 		}
 	}
 	focus = {
@@ -2067,7 +2071,7 @@
 		relative_position_id = FRA_lift_press_censorship
 
 		available = {
-			
+			has_country_flag = fra_legislative_elections_happend
 		}
 
 		bypass = {
@@ -2082,6 +2086,19 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 50
+			add_ideas = FRA_threat_of_revolution
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = {
+				id = french_empire_events.19
+				days = 2
+			}
+			hidden_effect = {
+				country_event = {
+					id = french_empire_events.20
+					days = 209 
+				}
+			}
 		}
 	}
 	focus = {
@@ -2130,6 +2147,14 @@
 
 		search_filters = {}
 		completion_reward = {
+			custom_effect_tooltip = fra_appointed_new_prime_minister
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_ideas_tooltip = FRA_emile_ollivier_pm_idea_SHOW_TOOLTIP
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = {
+				id = french_empire_events.22
+				days = 3
+			}
 		}
 	}
 	focus = {
@@ -2154,6 +2179,14 @@
 
 		search_filters = {}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_intense_political_division_4
+				add_idea = FRA_intense_political_division_5
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -2163,7 +2196,7 @@
 		relative_position_id = FRA_dissolve_the_french_iwa
 
 		available = {
-			
+			has_completed_focus = FRA_the_new_constitution_of_the_empire
 		}
 
 		bypass = {
@@ -2178,6 +2211,7 @@
 
 		search_filters = {}
 		completion_reward = {
+			remove_ideas = FRA_intense_political_division_5
 		}
 	}
 	focus = {
@@ -2187,7 +2221,11 @@
 		relative_position_id = FRA_the_new_constitution_of_the_empire
 
 		available = {
-			
+			has_cosmetic_tag = FRA_kingdom
+			NOT = {
+				has_country_flag = fra_defeated_by_a_major_power
+			}
+		
 		}
 
 		bypass = {
@@ -2202,6 +2240,10 @@
 
 		search_filters = {}
 		completion_reward = {
+			remove_ideas = FRA_threat_of_revolution
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_this_focus_no_more_strikes_tt
+			set_country_flag = fra_no_more_strikes_again
 		}
 	}
 	focus = {
@@ -2210,7 +2252,9 @@
 		relative_position_id = FRA_begin_the_final_strike
 
 		available = {
-			
+			NOT = {
+				has_war_with = PRS
+			}
 		}
 
 		bypass = {
@@ -2225,6 +2269,17 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_ideas = FRA_our_eyes_on_the_prussian
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_state_claim = 51
+			add_state_claim = 1963
+			add_state_claim = 1009
+			add_state_claim = 42
+			create_wargoal = {
+				type = take_state_focus
+				target = PRS
+				generator = { 42 1963 1009 51 }
+			}
 		}
 	}
 	focus = {
@@ -2248,6 +2303,25 @@
 
 		search_filters = {}
 		completion_reward = {
+			add_state_claim = 8
+			add_state_claim = 1010
+			add_state_claim = 34
+			add_state_claim = 6
+			add_state_claim = 35
+			add_state_claim = 1011
+			create_wargoal = {
+				type = annex_everything
+				target = LUX
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BEL
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = HOL
+				generator = { 35 1011 }
+			}
 		}
 	}
 	focus = {
@@ -3403,7 +3477,7 @@
 	focus = {
 		id = FRA_withdrawal_from_mexico
 		available = {
-
+			always = no
 		}
 
 		bypass = {
@@ -3898,7 +3972,7 @@
 		relative_position_id = FRA_withdrawal_from_mexico
 
 		available = {
-			
+			has_country_flag = fra_can_do_intervention_in_korea
 		}
 
 		bypass = {
@@ -3937,6 +4011,7 @@
 
 		search_filters = {}
 		completion_reward = {
+			country_event = french_empire_events.4
 			
 		}
 	}

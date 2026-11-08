@@ -31,10 +31,10 @@ country_event = {
 	id = french_empire_events.3
 	days = 150
 }
-country_event = {
-	id = french_empire_events.4
-	days = 155
-}
+#country_event = {
+#	id = french_empire_events.4
+#	days = 155
+#}
 country_event = {
 	id = french_empire_events.5
 	days = 194
@@ -58,6 +58,10 @@ country_event = {
 country_event = {
 	id = french_empire_events.10
 	days = 505
+}
+country_event = {
+	id = french_empire_events.17
+	days = 384
 }
 news_event = {
 	id = lbe_france_news.1
@@ -128,6 +132,7 @@ recruit_character = FRA_leon_gambetta
 recruit_character = FRA_adolphe_thiers
 
 recruit_character = FRA_henri_d_artois
+recruit_character = FRA_eugene_schneider
 recruit_character = FRA_napoleon_jerome_bonaparte
 recruit_character = FRA_eugene_rouher
 recruit_character = FRA_emile_ollivier

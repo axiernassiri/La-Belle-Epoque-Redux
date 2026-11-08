@@ -205,8 +205,11 @@ characters={
 			ledger = civilian
 			available = {
 				has_government = fascism
+				NOT = {
+					has_completed_focus = FRA_emile_olivier_emile_government
+				}
 			}
-			traits = { smooth_talking_charmer SWI_conservative_democrat }      # Unspecified cost defaults to 150.
+			traits = { smooth_talking_charmer }      # Unspecified cost defaults to 150.
 		}
 
 
@@ -399,6 +402,25 @@ characters={
 				has_government = fascism
 			}
 			traits = { financial_expert }      # Unspecified cost defaults to 150.
+		}
+
+
+	}
+	FRA_eugene_schneider = {
+		name="Eugène Schneider"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_schneider_token
+			ledger = civilian
+			available = {
+				has_government = fascism
+			}
+			traits = { industry_magnate }      # Unspecified cost defaults to 150.
 		}
 
 

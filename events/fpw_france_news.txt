@@ -87,3 +87,19 @@ news_event = {
 		name = lbe_france_news.4.a
 	}
 }
+# Start of the FPW
+news_event = {
+	id = lbe_france_news.5
+	title = lbe_france_news.5.title
+	desc = lbe_france_news.5.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # dear god
+		name = lbe_france_news.5.a
+	}
+}

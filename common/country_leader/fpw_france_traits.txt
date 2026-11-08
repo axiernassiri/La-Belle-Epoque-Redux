@@ -114,4 +114,16 @@ leader_traits = {
 		fascism_drift = 0.01
 
 	}
+	lber_fra_the_reformist_emperor_3 = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		war_support_factor = -0.05
+		army_advisor_cost_factor = -0.15
+		navy_advisor_cost_factor = -0.1
+		drift_defence_factor = 0.35
+		neutrality_acceptance = 40
+		fascism_drift = 0.02
+
+	}
 }

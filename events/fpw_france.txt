@@ -47,6 +47,7 @@ country_event = { # Napoleon III announces the withdrawal of French troops from 
 
 	option = { # 
 		name = french_empire_events.3.a
+		complete_national_focus = FRA_withdrawal_from_mexico
 	}
 }
 country_event = { # French explorers Ernest Doudart de Lagrée and Francis Garnier begin their reconnaissance of the Mekong valley as far as China
@@ -103,6 +104,7 @@ country_event = { # massacre of nine missionaries in Korea
 
 	option = { # 
 		name = french_empire_events.7.a
+		set_country_flag = fra_can_do_intervention_in_korea
 	}
 }
 country_event = { # premiere of La Vie parisienne , opéra bouffe by Jacques Offenbach at the Théâtre du Palais-Royal 
@@ -126,11 +128,23 @@ country_event = { # parisian Bronze Strike
 	picture = GFX_report_event_tank_factory
 
 	fire_only_once = yes
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
 
 	is_triggered_only = yes
 
 	option = { # 
 		name = french_empire_events.9.a
+		add_ideas = FRA_parisian_bronze_strike
+		add_political_power = -50
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = french_empire_events.23
+			days = 24
+		}
 	}
 }
 country_event = { # founded the League of Peace and Liberty
@@ -161,7 +175,7 @@ country_event = { # The Salzburg meeting
 		name = french_empire_events.11.a
 	}
 }
-country_event = { # sastres supplier
+country_event = { # 
 	id = french_empire_events.12
 	title = french_empire_events.12.title
 	desc = french_empire_events.12.desc
@@ -229,6 +243,372 @@ country_event = { # further liberal reforms
 
 	option = { # 
 		name = french_empire_events.16.a
+	}
+}
+country_event = { # appointment of niel
+	id = french_empire_events.17
+	title = french_empire_events.17.title
+	desc = french_empire_events.17.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.17.a
+		complete_national_focus = FRA_adolphe_niels_reform
+		set_country_flag = niel_is_war_minister
+	}
+}
+country_event = { # legislative elections of 1869
+	id = french_empire_events.18
+	title = french_empire_events.18.title
+	desc = french_empire_events.18.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.18.a
+		complete_national_focus = FRA_legislative_elections_of_1869
+		set_country_flag = fra_legislative_elections_happend
+	}
+}
+country_event = { # aftermath of the elections
+	id = french_empire_events.19
+	title = french_empire_events.19.title
+	desc = french_empire_events.19.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.19.a
+		add_stability = -0.1
+		add_manpower = -1500
+	}
+}
+
+country_event = { # assumption of ollivier as PM
+	id = french_empire_events.20
+	title = french_empire_events.20.title
+	desc = french_empire_events.20.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.20.a
+		complete_national_focus = FRA_emile_olivier_emile_government
+	}
+}
+country_event = { # Results of the Plebiscite of 1870
+	id = french_empire_events.21
+	title = french_empire_events.21.title
+	desc = french_empire_events.21.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.21.a
+		complete_national_focus = FRA_plesbiscite_of_1870
+	}
+}
+country_event = { # Emile Ollivier wants to dismiss Haussmann
+	id = french_empire_events.22
+	title = french_empire_events.22.title
+	desc = french_empire_events.22.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.22.a
+	}
+	option = { # fuck you / No
+		name = french_empire_events.22.b
+	}
+}
+country_event = { # financial support from english to the strikes
+	id = french_empire_events.23
+	title = french_empire_events.23.title
+	desc = french_empire_events.23.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.23.a
+		swap_ideas = {
+			remove_idea = FRA_parisian_bronze_strike
+			add_idea = FRA_parisian_bronze_strike_2
+		}
+		hidden_effect = {
+			country_event = french_empire_events.24
+			days = 14
+		}
+	}
+}
+country_event = { # end of the bronze strike
+	id = french_empire_events.24
+	title = french_empire_events.24.title
+	desc = french_empire_events.24.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.24.a
+		remove_ideas = FRA_parisian_bronze_strike_2
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = french_empire_events.25
+			days = 808
+		}
+	}
+}
+country_event = { # miners' strike in the Loire coal basin
+	id = french_empire_events.25
+	title = french_empire_events.25.title
+	desc = french_empire_events.25.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.25.a
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = french_empire_events.26
+			days = 6
+		}
+	}
+}
+country_event = { # Fusillade du Brûlé
+	id = french_empire_events.26
+	title = french_empire_events.26.title
+	desc = french_empire_events.26.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.26.a
+		add_stability = -0.1
+		add_manpower = -3000
+		hidden_effect = {
+			country_event = french_empire_events.27
+			days = 10
+		}
+	}
+}
+country_event = { # general strike breaks out in the Carmaux coal basin
+	id = french_empire_events.27
+	title = french_empire_events.27.title
+	desc = french_empire_events.27.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.27.a
+		swap_ideas = {
+			remove_idea = FRA_loire_coal_basin_strike
+			add_idea = FRA_loire_coal_basin_strike_2
+		}
+		hidden_effect = {
+			country_event = french_empire_events.28
+			days = 37
+		}
+	}
+}
+country_event = { # End of the Loire coal basin strikes
+	id = french_empire_events.27
+	title = french_empire_events.27.title
+	desc = french_empire_events.27.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.27.a
+		remove_ideas = FRA_loire_coal_basin_strike_2
+		hidden_effect = {
+			country_event = french_empire_events.28
+			days = 170
+		}
+	}
+}
+country_event = { # metalworkers strike
+	id = french_empire_events.28
+	title = french_empire_events.28.title
+	desc = french_empire_events.28.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.28.a
+		add_stability = -0.05
+		add_manpower = -3500
+		add_ideas = FRA_metalworkers_strike
+		hidden_effect = {
+			country_event = french_empire_events.29
+			days = 5
+		}
+	}
+}
+country_event = { # metalworkers strike ends
+	id = french_empire_events.29
+	title = french_empire_events.29.title
+	desc = french_empire_events.29.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.29.a
+		remove_ideas = FRA_metalworkers_strike
+		hidden_effect = {
+			country_event = french_empire_events.30
+			days = 56
+		}
+	}
+}
+country_event = { # miners' strike in Le Creusot
+	id = french_empire_events.30
+	title = french_empire_events.30.title
+	desc = french_empire_events.30.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.30.a
+		add_ideas = FRA_creusot_miners_strike
+		hidden_effect = {
+			country_event = french_empire_events.31
+			days = 25
+		}
+	}
+}
+country_event = { # miners' strike in Le Creusot
+	id = french_empire_events.31
+	title = french_empire_events.31.title
+	desc = french_empire_events.31.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = fra_no_more_strikes_again
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.31.a
+		remove_ideas = FRA_creusot_miners_strike
+	}
+}
+country_event = { # Time for useful reforms
+	id = french_empire_events.32
+	title = french_empire_events.32.title
+	desc = french_empire_events.32.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.32.a
 	}
 }
 
