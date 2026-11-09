@@ -27,9 +27,7 @@ spriteTypes = {
 		name = "GFX_idea_fpw_idea_austria_power_decentralized"
 		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_democratic.dds"
 	}
-}
 # Military Advisors
-spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AUS_albrecht"
 		texturefile = "gfx/interface/ideas/AUS/idea_AUS_albrecht.dds"
@@ -53,5 +51,54 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AUS_kuhnenfeld"
 		texturefile = "gfx/interface/ideas/AUS/idea_AUS_kuhnenfeld.dds"
+	}
+# Political Advisors
+	spriteType = {
+		name = "GFX_idea_AUS_von_beust"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_von_beust.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_anselm_rothschild"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_anselm_rothschild.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_august_zang"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_august_zang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_josef_werndl"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_josef_werndl.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_josef_plauenwald"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_josef_plauenwald.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_gyula_andrassy"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_gyula_andrassy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_anton_schmerling"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_anton_schmerling.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_joseph_rauscher"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_joseph_rauscher.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_peter_rittinger"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_peter_rittinger.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_ferdinand_hebra"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_ferdinand_hebra.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_leopold_thun"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_leopold_thun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_mihaly_tancsics"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_mihaly_tancsics.dds"
 	}
 }

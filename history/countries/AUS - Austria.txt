@@ -115,6 +115,7 @@ add_ideas = {
 }
 
 recruit_character = AUS_franz_joseph_I
+
 recruit_character = AUS_archduke_albrecht
 recruit_character = AUS_ludwig_benedek
 recruit_character = AUS_clam_gallas
@@ -131,6 +132,19 @@ recruit_character = AUS_gabriel_rodich
 recruit_character = AUS_anton_scudier
 recruit_character = AUS_franz_kuhnenfeld
 recruit_character = AUS_gideon_krismanic
+
+recruit_character = AUS_von_beust
+recruit_character = AUS_anselm_rothschild
+recruit_character = AUS_august_zang
+recruit_character = AUS_josef_werndl
+recruit_character = AUS_josef_plauenwald
+recruit_character = AUS_gyula_andrassy
+recruit_character = AUS_anton_schmerling # Liberal Drift Advisor
+recruit_character = AUS_joseph_rauscher
+recruit_character = AUS_peter_rittinger
+recruit_character = AUS_ferdinand_hebra
+recruit_character = AUS_mihaly_tancsics # Conservative Drift Advisor
+recruit_character = AUS_leopold_thun # Socialist Drift Advisor
 
 
 add_to_variable = {
@@ -159,6 +173,7 @@ add_to_variable = {
 
 set_stability = 0.65
 set_war_support = 0.30
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1930.11.9"
