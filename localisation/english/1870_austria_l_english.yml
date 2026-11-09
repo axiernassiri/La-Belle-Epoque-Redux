@@ -434,8 +434,35 @@
  fpw_austria.22.a: "We are back on the Worldstage!"
  
 
-#traits
- fpw_habsburg_traditionalism: "Habsburg Traditionalism"
+# Characters
+ AUS_von_beust: "Friedrich von Beust"
+ AUS_anselm_rothschild: "Anselm von Rothschild"
+ AUS_august_zang: "August Zang"
+ AUS_josef_werndl: "Josef Werndl"
+ AUS_josef_plauenwald: "Josef von Plauenwald"
+ AUS_gyula_andrassy: "Gyula Andrássy"
+ AUS_anton_schmerling: "Anton von Schmerling"
+ AUS_joseph_rauscher: "Joseph von Rauscher"
+ AUS_peter_rittinger: "Peter von Rittinger"
+ AUS_ferdinand_hebra: "Ferdinand von Hebra"
+ AUS_mihaly_tancsics: "Mihály Táncsics"
+ AUS_leopold_thun: "Leopold von Thun-Hohenstein"
+
+# Leader Traits
+ LBER_habsburg_traditionalism: "Habsburg Traditionalism"
+ LBER_imperial_foreign_minister: "Imperial Diplomat"
+ LBER_financial_magnate: "Financial Magnate"
+ LBER_architect_press: "Architect of the Press"
+ LBER_armaments_innovator: "Armaments Innovator"
+ LBER_intelligence_specialist: "Evidenzbureau Chief"
+ LBER_magyar_statesman: "Magyar Statesman"
+ LBER_supreme_court_president: "Supreme Court President"
+ LBER_kriegsminister: "Minister of War"
+ LBER_archbishop_vienna: "Archbishop of Vienna"
+ LBER_resourceful_engineer: "Resourceful Engineer"
+ LBER_pioneering_physician: "Pioneering Physician"
+ LBER_socialist_firebrand: "Socialist Firebrand"
+ LBER_conservative_intellectual: "Conservative Intellectual"
  
 #custom cost texts 
  AUS_hungary_loyal_triger_tt: "§YHungarian§! attitude is at least: §GLoyal§!"
