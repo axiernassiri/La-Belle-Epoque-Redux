@@ -1296,3 +1296,8 @@ DAH_benin_kingdom = {
 	color = rgb {61 225 237}
 	color_ui = rgb {61 225 237}
 }
+
+south_german_confederation = {
+	color = rgb { 233  231  246 }
+	color_ui = rgb { 233  231  246 }
+}

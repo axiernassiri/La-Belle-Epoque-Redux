@@ -295,6 +295,10 @@
  ZUL: "Zulu Kingdom"
  ZUL_DEF:0 "Zulu Kingdom"
 
- CHK:0 "Chockwe"
- CHK_DEF:0 "Chockwe"
+ CHK: "Chockwe"
+ CHK_DEF: "Chockwe"
+
+ RHI: "Rhineland Confederacy"
+ RHI_DEF: "the Rhineland Confederacy"
+ RHI_ADJ: "Rhenish"
  

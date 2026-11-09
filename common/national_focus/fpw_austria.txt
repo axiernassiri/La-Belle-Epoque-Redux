@@ -2919,12 +2919,17 @@
 		x = 0
 		y = 1
 		relative_position_id = AUS_victory_over_prussia
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_victory_over_prussia }
 		available = {
 		}
 		completion_reward = {
 			### create the south german confederation
+			BAV = {
+				set_cosmetic_tag = south_german_confederation
+				annex_country = WRT
+				annex_country = BAD
+			}
 		}
 	}
 
@@ -2941,6 +2946,9 @@
 		completion_reward = {
 			### gives an event to invite to faction and puppet saxony
 			### gives war goal if denied
+			SXY = {
+				country_event = fpw_austria.25
+			}
 		}
 	}
 
@@ -2956,6 +2964,21 @@
 		}
 		completion_reward = {
 			### demilitarizes rhineland states
+			42 = {
+				set_demilitarized_zone = yes
+			}
+			1963 = {
+				set_demilitarized_zone = yes
+			}
+			51 = {
+				set_demilitarized_zone = yes
+			}
+			981 = {
+				set_demilitarized_zone = yes
+			}
+			57 = {
+				set_demilitarized_zone = yes
+			}
 		}
 	}
 
@@ -2970,7 +2993,12 @@
 		available = {
 		}
 		completion_reward = {
-			### annex state 943 to closest puppet and lippe into hannover
+			951 = {
+				transfer_state_to = HNV
+			}
+			943 = {
+				transfer_state_to = HEK
+			}
 		}
 	}
 
@@ -2983,10 +3011,15 @@
 		cost = 1
 		prerequisite = { focus = AUS_demand_saxon_integration_into_the_german_confederation }
 		available = {
+			DEN = {
+				exists = yes
+			}
 		}
 		completion_reward = {
 			### offers to invite denmark into the germanconfederation and puppets them
-			### this will create a flag which whenever you get the peace with prussia it gives shit o denmark
+			DEN = {
+				country_event = fpw_austria.26
+			}
 		}
 	}
 
@@ -3002,11 +3035,14 @@
 		}
 		completion_reward = {
 			### invites swisterland into the german confederation
+			SWI = {
+				country_event = fpw_austria.27
+			}
 		}
 	}
 
 	focus = {
-		id = AUS_thurgianian_revolt
+		id = AUS_provoke_thurgianian_revolt
 		#icon = GFX_focus_generic_coal_mining
 		x = 1
 		y = 2
@@ -3016,12 +3052,14 @@
 		available = {
 		}
 		completion_reward = {
-			### causes thurgian revolt against prussia which will get a scripted peacedeal after 4 months
+			### causes thurgian revolt against prussia when war starts
+			### they will start in your faction and as a puppet
+			custom_effect_tooltip = AUS_thurgianian_revolt_tt
 		}
 	}
 
 	focus = {
-		id = AUS_rhineland_revolt
+		id = AUS_provoke_rhineland_revolt
 		#icon = GFX_focus_generic_coal_mining
 		x = 3
 		y = 2
@@ -3032,7 +3070,7 @@
 		available = {
 		}
 		completion_reward = {
-			### causes Rhineland revolt against prussia which will get a scripted peacedeal after 4 months
+			custom_effect_tooltip = AUS_rhineland_revolt_tt
 		}
 	}
 
@@ -3049,6 +3087,24 @@
 		}
 		completion_reward = {
 			###  declares war on prussia will have scripted peacedeals
+			set_country_flag = AUS_alt_hist_austria_v_prussia
+			delcare_war_on = PRS
+			if = {
+				limit = {
+					has_completed_focus = AUS_provoke_rhineland_revolt
+				}
+				PRS = {
+					country_event = fpw_austria.28
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_provoke_thurgianian_revolt
+				}
+				PRS = {
+					country_event = fpw_austria.29
+				}
+			}
 		}
 	}
 	focus = {

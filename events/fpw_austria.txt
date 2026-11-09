@@ -766,3 +766,187 @@ country_event = {
 		recruit_character = AUS_anton_von_schonfeld
 	}
 }
+
+### Demand saxon entrance into the german confederation
+country_event = {
+	id = fpw_austria.25
+	title = fpw_austria.25.t
+	desc = fpw_austria.25.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### agree
+	option = {
+		name = fpw_austria.25.a
+		ai_chance = { factor = 401 }
+		add_to_faction = AUS
+		AUS = {
+			puppet = {
+				target = SXY
+				end_wars = yes
+			}
+		}
+	}
+	### disagree
+	option = {
+		name = fpw_austria.25.b
+		ai_chance = { factor = 401 }
+		AUS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SXY
+			}
+		}
+	}
+}
+
+### holestein for joining the german confederation
+country_event = {
+	id = fpw_austria.26
+	title = fpw_austria.26.t
+	desc = fpw_austria.26.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### agree
+	option = {
+		name = fpw_austria.26.a
+		ai_chance = { factor = 401 }
+		58 = {
+			transfer_state_to = DEN
+		}
+		909 = {
+			transfer_state_to = DEN
+		}
+		912= {
+			transfer_state_to = DEN
+		}
+		add_to_faction = AUS
+		AUS = {
+			puppet = {
+				target = DEN
+				end_wars = yes
+			}
+		}
+	}
+	### disagree
+	option = {
+		name = fpw_austria.26.b
+		ai_chance = { factor = 401 }
+		AUS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DEN
+			}
+		}
+	}
+}
+
+### asks swisterland to join the german confederation
+country_event = {
+	id = fpw_austria.27
+	title = fpw_austria.27.t
+	desc = fpw_austria.27.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### agree
+	option = {
+		name = fpw_austria.27.a
+		ai_chance = { factor = 401 }
+		add_to_faction = AUS
+		AUS = {
+			puppet = {
+				target = SWI
+				end_wars = yes
+			}
+		}
+	}
+	### disagree
+	option = {
+		name = fpw_austria.27.b
+		ai_chance = { factor = 401 }
+		AUS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SWI
+			}
+		}
+	}
+}
+### Rhineland Revolt
+country_event = {
+	id = fpw_austria.28
+	title = fpw_austria.28.t
+	desc = fpw_austria.28.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.28.a
+		ai_chance = { factor = 401 }
+		981 = {
+			transfer_state_to = RHI
+		}
+		51 = {
+			transfer_state_to = RHI
+		}
+		1963 = {
+			transfer_state_to = RHI
+		}
+		42 = {
+			transfer_state_to = RHI
+		}
+		RHI = {
+			add_to_faction = AUS
+			declare_war_on = PRS
+		}
+		AUS = {
+			puppet = {
+				target = RHI
+				end_wars = yes
+			}
+		}
+	}
+}
+### Thurginia Revolt
+country_event = {
+	id = fpw_austria.29
+	title = fpw_austria.29.t
+	desc = fpw_austria.29.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.29.a
+		ai_chance = { factor = 401 }
+		955 = {
+			transfer_state_to = SXM
+		}
+		937 = {
+			transfer_state_to = SXM
+		}
+		954 = {
+			transfer_state_to = SXM
+		}
+		953 = {
+			transfer_state_to = SXM
+		}
+		960 = {
+			transfer_state_to = SXM
+		}
+		SXM = {
+			add_to_faction = AUS
+			declare_war_on = PRS
+		}
+		AUS = {
+			puppet = {
+				target = SXM
+				end_wars = yes
+			}
+		}
+	}
+}

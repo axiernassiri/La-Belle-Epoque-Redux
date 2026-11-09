@@ -12,6 +12,7 @@ wood=3
 	history={
 		owner = PRS
 		add_core_of = PRS
+		add_core_of = RHI
 		victory_points = {
 			6469 10 
 		}
