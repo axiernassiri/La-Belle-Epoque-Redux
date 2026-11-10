@@ -408,4 +408,29 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = ITA_italy_on_the_defence
+		relative_position_id = ITA_intiate_army_reforms
+		prerequisite = { focus = ITA_intiate_army_reforms }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
 }

@@ -52,9 +52,9 @@ characters = {
 				
 			}
 			cost = 150
-			traits = { fpw_habsburg_traditionalism }
+			traits = { LBER_habsburg_traditionalism }
 			ai_will_do = {
-				factor = 1.000
+				factor = 1.0
 			}
 		}
 	}
@@ -371,7 +371,7 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = franz_kuhnenfeld
+			idea_token = franz_kuhnenfeld_chief
 			allowed = {
 				original_tag = AUS
 			}
@@ -384,6 +384,22 @@ characters = {
 				factor = 1.000
 			}
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = franz_kuhnenfeld_minister
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_kriegsminister
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 		corps_commander = {
 			traits = { trait_mountaineer career_officer }
 			skill = 2
@@ -409,7 +425,7 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-}
+
                                                                                     
 #   :####:   .####.   ##:  :##  ########  ######:   ###   ##  ###  ###  ########  ###   ##  ######## 
 #   ######   ######   ##    ##  ########  #######   ###   ##  ###  ###  ########  ###   ##  ######## 
@@ -423,8 +439,296 @@ characters = {
 # :##:  ##  :##  ##:    ####    ##        ##   :##  ##  :###  ##    ##  ##        ##  :###     ##    
 #  #######   ######     ####    ########  ##    ##: ##   ###  ##    ##  ########  ##   ###     ##    
 #   :####.   .####.      ##     ########  ##    ### ##   ###  ##    ##  ########  ##   ###     ##    
-                                                                                                    
-                                                                                                    
-                                                                                                    
+                                                                            
+    AUS_von_beust = {
+		name = AUS_von_beust
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_von_beust
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = von_beust
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_imperial_foreign_minister
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_anselm_rothschild = {
+		name = AUS_anselm_rothschild
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_anselm_rothschild
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = anselm_rothschild
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_financial_magnate
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_august_zang = {
+		name = AUS_august_zang
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_august_zang
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = august_zang
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_architect_press
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_josef_werndl = {
+		name = AUS_josef_werndl
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_josef_werndl
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = josef_werndl
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_armaments_innovator
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_josef_plauenwald = {
+		name = AUS_josef_plauenwald
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_josef_plauenwald
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = josef_plauenwald
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				LBER_intelligence_specialist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}                                                                         
+    AUS_gyula_andrassy = {
+		name = AUS_gyula_andrassy
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_gyula_andrassy
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = gyula_andrassy
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_magyar_statesman
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_anton_schmerling = {
+		name = AUS_anton_schmerling
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_anton_schmerling
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = anton_schmerling
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_supreme_court_president
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_joseph_rauscher = {
+		name = AUS_joseph_rauscher
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_joseph_rauscher
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = joseph_rauscher
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_archbishop_vienna
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_peter_rittinger = {
+		name = AUS_peter_rittinger
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_peter_rittinger
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = peter_rittinger
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_resourceful_engineer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_ferdinand_hebra = {
+		name = AUS_ferdinand_hebra
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_ferdinand_hebra
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ferdinand_hebra
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_pioneering_physician
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_mihaly_tancsics = {
+		name = AUS_mihaly_tancsics
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_mihaly_tancsics
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mihaly_tancsics
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_socialist_firebrand
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	AUS_leopold_thun = {
+		name = AUS_leopold_thun
+		portraits = {
+			civilian = {
+				small = GFX_idea_AUS_leopold_thun
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = leopold_thun
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+
+			}
+			traits = {
+				LBER_conservative_intellectual
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+
+}                                                   
                                                                                                     
                                                                                                                          

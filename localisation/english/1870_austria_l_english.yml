@@ -105,13 +105,13 @@
  AUS_balkan_annexation: "Annex the Balkan States"
  AUS_balkan_annexation_desc: "The creation of independent Balkan states has repeatedly challenged the security of the Dual Monarchy. Bringing these territories under direct imperial administration would eliminate rival centers of power, though it would also create new challenges of governance and resistance."
  AUS_illyrian_integration: "Illyrian Integration"
- AUS_illyrian_integration_desc: ""
+ AUS_illyrian_integration_desc: "The integration of Illyria is the first step of miditerranean dominination. Also it solidifies our control over baltic region and it's countries. We will do everything necessary to hold our positions and expand Empire further."
 
   #colonial
  AUS_demand_consessions_from_china: "Demand Concessions from China"
- AUS_demand_consessions_from_china_desc: ""
+ AUS_demand_consessions_from_china_desc: "The Great Qing dynasty had survived a millenial by a rule of harmony and stable development. But with the rise of industrial revolution, the domination of machines are inevitable. The Qing dynasty is far behind European countries. With that we shall use it in our own advantage and sieze Tianjin as a foot to mainland China. The dragon will weep before us."
  AUS_austrian_colonial_ventures: "Austrian Colonial Ventures"
- AUS_austrian_colonial_ventures_desc: ""
+ AUS_austrian_colonial_ventures_desc: "Our colonial ventures though were unlucky had showed us weaknesses inside the state. With that experience on our shoulders we should improve upon it and continue our efforts on colonisation of African and Asian tribes. We should work on improving of internal and international affair to succed or we shall fail once again..."
 
   #European Theatre
  AUS_the_european_theatre: "The European Theatre"
@@ -207,7 +207,7 @@
  AUS_rebuild_imperial_treasury: "Rebuild the Imperial Treasury"
  AUS_rebuild_imperial_treasury_desc: ""
  AUS_reorganize_imperial_railroads: "Reorganize the Imperial Railroads"
- AUS_reorganize_imperial_railroads_desc: ""
+ AUS_reorganize_imperial_railroads_desc: "With a start of the first industrial revolution the railways have become one of the most important part of the logistic system. The transportation of goods and resources have become faster and efficient which raised our production pace and connected the nation through the web of wood and steel. But with the start of the second industrial revolution the pace of building railroad system had slowdown. We should take action and reignite the spirit of the 1841 programme and unite our nation more than ever!"
  AUS_czech_iron_works: "Czech Iron Works"
  AUS_czech_iron_works_desc: ""
  AUS_workshops_of_bohemia: "Workshops of Bohemia"
@@ -255,25 +255,55 @@
  AUS_develop_austria: "Develop Austria"
  AUS_develop_hungary: "Develop Hungary"
 
+
+ # influencing
+ AUS_influencing_balkan: "Influencing the Balkan"
+ AUS_influence_greece: "Influence greece"
+ AUS_military_cooperation_with_greece: "Military Cooperation with Greece"
+ AUS_support_pro_austrian_movements_in_greece: "Support Pro-Austrian movements in Greece"
+ AUS_subjagate_greece: "Subjugate Greece"
+ AUS_influence_serbia: "Influence Serbia"
+ AUS_military_cooperation_with_serbia: "Military Cooperation with Serbia"
+ AUS_support_pro_austrian_movements_in_serbia: "Support Pro-Austrian movements in Serbia"
+ AUS_subjagate_serbia: "Subjugate Serbia"
+ AUS_influence_romania: "Influence Romania"
+ AUS_military_cooperation_with_romania: "Military Cooperation with Romania"
+ AUS_support_pro_austrian_movements_in_romania: "Support Pro-Austrian movements in Romania"
+ AUS_subjagate_romania: "Subjugate Romania"
+
+
+ # Settling
+ AUS_settling_austria: "Settling in the Empire"
+ AUS_settling_hungary: "Settling Hungary"
+ AUS_settling_illyria: "Settling Illyria"
+ AUS_settling_serbia: "Settling Serbia"
+ AUS_settling_greece: "Settling Greece"
+ AUS_settling_bulgaria: "Settling Bulgaria"
+
 #ideas
 
  #hidden ideas
+ AUS_hungary_germanified: "Germanified Hungary"
  AUS_hungary_loyal: "Loyal Hungary"
  AUS_hungary_friendly: "Friendly Hungary"
  AUS_hungary_neutral: "Neutral Hungary"
  AUS_hungary_hostile: "Hostile Hungary"
+ AUS_czech_germanified: "Germanified Bohemia"
  AUS_czech_loyal: "Loyal Bohemia"
  AUS_czech_friendly: "Friendly Bohemia"
  AUS_czech_neutral: "Neutral Bohemia"
  AUS_czech_hostile: "Hostile Bohemia"
+ AUS_galicia_germanified: "Germanified Galicia"
  AUS_galicia_loyal: "Loyal Galicia"
  AUS_galicia_friendly: "Friendly Galicia"
  AUS_galicia_neutral: "Neutral Galicia"
  AUS_galicia_hostile: "Hostile Galicia"
+ AUS_illyria_germanified: "Germanified Illyria"
  AUS_illyria_loyal: "Loyal Illyria"
  AUS_illyria_friendly: "Friendly Illyria"
  AUS_illyria_neutral: "Neutral Illyria"
  AUS_illyria_hostile: "Hostile Illyria"
+ AUS_balkans_germanified: "Germanified Balkans"
  AUS_balkans_loyal: "Loyal Balkans"
  AUS_balkans_friendly: "Friendly Balkans"
  AUS_balkans_neutral: "Neutral Balkans"
@@ -404,8 +434,35 @@
  fpw_austria.22.a: "We are back on the Worldstage!"
  
 
-#traits
- fpw_habsburg_traditionalism: "Habsburg Traditionalism"
+# Characters
+ AUS_von_beust: "Friedrich von Beust"
+ AUS_anselm_rothschild: "Anselm von Rothschild"
+ AUS_august_zang: "August Zang"
+ AUS_josef_werndl: "Josef Werndl"
+ AUS_josef_plauenwald: "Josef von Plauenwald"
+ AUS_gyula_andrassy: "Gyula Andrássy"
+ AUS_anton_schmerling: "Anton von Schmerling"
+ AUS_joseph_rauscher: "Joseph von Rauscher"
+ AUS_peter_rittinger: "Peter von Rittinger"
+ AUS_ferdinand_hebra: "Ferdinand von Hebra"
+ AUS_mihaly_tancsics: "Mihály Táncsics"
+ AUS_leopold_thun: "Leopold von Thun-Hohenstein"
+
+# Leader Traits
+ LBER_habsburg_traditionalism: "Habsburg Traditionalism"
+ LBER_imperial_foreign_minister: "Imperial Diplomat"
+ LBER_financial_magnate: "Financial Magnate"
+ LBER_architect_press: "Architect of the Press"
+ LBER_armaments_innovator: "Armaments Innovator"
+ LBER_intelligence_specialist: "Evidenzbureau Chief"
+ LBER_magyar_statesman: "Magyar Statesman"
+ LBER_supreme_court_president: "Supreme Court President"
+ LBER_kriegsminister: "Minister of War"
+ LBER_archbishop_vienna: "Archbishop of Vienna"
+ LBER_resourceful_engineer: "Resourceful Engineer"
+ LBER_pioneering_physician: "Pioneering Physician"
+ LBER_socialist_firebrand: "Socialist Firebrand"
+ LBER_conservative_intellectual: "Conservative Intellectual"
  
 #custom cost texts 
  AUS_hungary_loyal_triger_tt: "§YHungarian§! attitude is at least: §GLoyal§!"
@@ -453,7 +510,14 @@
  AUS_populations_of_emp_illyria_tt: "This focus will allow you to gain §YTrust§! and increase §YAttitude§! with the §YIllyrians§!."
  AUS_gain_czech_trust_tt: "This focus will allow you to gain §YTrust§! with the §YCzechs§!."
  AUS_increase_czech_attitude: "This focus will allow you to increase §YAttitude§! with the §YCzechs§!."
-
+ influencing_greece_d_tt: "This §YDecision§! will influence the Specified Country."
+ aus_settling_hungary_tt: "This §YFocus§! will allow us to §YSettle§! in §YHungary§!"
+ aus_settle_serb_tt: "This §YFocus§! will allow us to §YSettle§! in §YSerbia§!"
+ settling_illyria_tt: "This §YFocus§! will allow us to §YSettle§! in §YIllyria§!"
+ aus_settle_greece_tt: "This §YFocus§! will allow us to §YSettle§! in §YGreece§!"
+ aus_settle_bulgaria_tt: "This §YFocus§! will allow us to §YSettle§! in §YBulgaria§!"
+ aus_influencing_greece_tt: "This §YFocus§! will allow us to §YInfluence§! §YGreece§!"
+ aus_serb_rom_inf_tt: "This §YFocus§! will allow us to §YInfluence§! §YSerbia§! and §YRomania§!"
 #custom modifier tooltips
  
 #scripted gui text
@@ -464,9 +528,11 @@
  AUS_attitude_neutral: "§gNeutral§!"
  AUS_attitude_hostile: "§RHostile§!"
  AUS_attitude_irrelevant: "§gIrrelevant§!"
+ AUS_attitude_germanified: "§gGermanified§!"
  
  AUS_hungarians_name_text: "Hungarians"
  AUS_hungarian_attitude_tt: "[AUS_get_hungarian_attitude_tt]"
+ AUS_hungary_attitude_germanified_tt: "§YGermanified Hungary§! \nPolitical Power Gain: §G+25%§! \nStability: §G+25.00%§! \nWar Support: §G+25.00%§!"
  AUS_hungary_attitude_loyal_tt: "§YLoyal Hungary§! \nPolitical Power Gain: §G+15%§! \nStability: §G+15.00%§! \nWar Support: §G+15.00%§!"
  AUS_hungary_attitude_friendly_tt: "§YFriendly Hungary§! \nPolitical Power Gain: §G+5%§! \nStability: §G+5.00%§! \nWar Support: §G+5.00%§!"
  AUS_hungary_attitude_neutral_tt: "§YNeutral Hungary§! \nPolitical Power Gain: §R-5%§! \nStability: §R-5.00%§! \nWar Support: §R-5.00%§!"
@@ -474,6 +540,7 @@
  
  AUS_czech_name_text: "Czechs"
  AUS_czech_attitude_tt: "[AUS_get_czech_attitude_tt]"
+ AUS_czech_attitude_germanified_tt: "§YGermanified Bohemia§! \nConsumer Goods Factories Factor: §Y-30.0%§! \nFactory Output: §G+20.00%§! \nDockyard Output: §G+20.00%§!"
  AUS_czech_attitude_loyal_tt: "§YLoyal Bohemia§! \nConsumer Goods Factories Factor: §Y-20.0%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§!"
  AUS_czech_attitude_friendly_tt: "§YFriendly Bohemia§! \nConsumer Goods Factories Factor: §Y-10.0%§! \nFactory Output: §G+5.00%§! \nDockyard Output: §G+5.00%§!"
  AUS_czech_attitude_neutral_tt: "§YNeutral Bohemia§! \nConsumer Goods Factories Factor: §Y10.0%§! \nFactory Output: §R-5.00%§! \nDockyard Output: §R-5.00%§!"
@@ -481,6 +548,7 @@
  
  AUS_galician_name_text: "Galicians"
  AUS_galician_attitude_tt: "[AUS_get_galician_attitude_tt]"
+ AUS-galicia_attitude_germanified_tt: "§YGermanified Galicia§! \nConsumer Goods Factories Factor: §Y-20.0%§! \nStability: §G+20.00%§! \nConstruction Speed: §G+25.00%§!"
  AUS_galicia_attitude_loyal_tt: "§YLoyal Galicia§! \nConsumer Goods Factories Factor: §Y-10.0%§! \nStability: §G+10.00%§! \nConstruction Speed: §G+15.00%§!"
  AUS_galicia_attitude_friendly_tt: "§YFriendly Galicia§! \nConsumer Goods Factories Factor: §Y5.0%§! \nStability: §G+5.00%§! \nConstruction Speed: §G+5.00%§!"
  AUS_galicia_attitude_neutral_tt: "§YNeutral Galicia§! \nConsumer Goods Factories Factor: §Y10.0%§! \nStability: §R-5.00%§! \nConstruction Speed: §R-10.00%§!"
@@ -488,6 +556,7 @@
  
  AUS_illyrian_name_text: "Illyrians"
  AUS_illyrian_attitude_tt: "[AUS_get_illyrian_attitude_tt]"
+ AUS_illyria_attitude_germanified_tt: "§YGermanified Illyria§! \nWar Support: §G+20.00%§! \nResistance Target: §G-30%§! \nCompliance Growth Speed: §G+20%§!"
  AUS_illyria_attitude_loyal_tt: "§YLoyal Illyria§! \nWar Support: §G+10.00%§! \nResistance Target: §G-20%§! \nCompliance Growth Speed: §G+10%§!"
  AUS_illyria_attitude_friendly_tt: "§YFriendly Illyria§! \nWar Support: §G+5.00%§! \nResistance Target: §G-10%§! \nCompliance Growth Speed: §G+10%§!"
  AUS_illyria_attitude_neutral_tt: "§YNeutral Illyria§! \nWar Support: §R-5.00%§! \nResistance Target: §R+20%§! \nCompliance Growth Speed: §R-10%§!"
@@ -495,6 +564,7 @@
  
  AUS_balkans_name_text: "Balkans"
  AUS_balkans_attitude_tt: "[AUS_get_balkans_attitude_tt]"
+ AUS_balkans_attitude_germanified_tt: "§YGermanified Balkans§! \nPolitical Power Gain: §G+20%§! \nRecruitable Population Factor: §G20%§! \nCompliance Growth Speed: §G+25%§! \nConstruction Speed: §G+20.00%§!"
  AUS_balkans_attitude_loyal_tt: "§YLoyal Balkans§! \nPolitical Power Gain: §G+10%§! \nRecruitable Population Factor: §G10%§! \nCompliance Growth Speed: §G+15%§! \nConstruction Speed: §G+10.00%§!"
  AUS_balkans_attitude_friendly_tt: "§YFriendly Balkans§! \nPolitical Power Gain: §G+5%§! \nCompliance Growth Speed: §G+2.5%§! \nConstruction Speed: §G+2.50%§!"
  AUS_balkans_attitude_neutral_tt: "§YNeutral Balkans§! \nPolitical Power Gain: §R-5%§! \nCompliance Growth Speed: §R-5%§! \nConstruction Speed: §R-5%§!"
@@ -513,5 +583,3 @@
  AUS_anti_german_alliance: "Anti-[PRS.GetNameDef] Entente."
  AUS_central_powers: "Central Powers"
 
-
-### some tooltips for the focus tree, btw I have added a couple of events and decisions and ideas so add loc to that when you can -Gata

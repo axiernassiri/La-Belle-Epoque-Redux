@@ -175,10 +175,36 @@ ideas = {
 				industrial_capacity_factory = 0.125
             }
 		}
+
+		AUS_culture_crackdown = {
+			#picture = AUS_empire_restored
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.05
+				political_power_factor 0.15
+            }
+		}
+
+		AUS_austrian_culture_triumphant = {
+			#picture = AUS_empire_restored
+			modifier = {
+				stability_factor = 0.30
+				war_support_factor = 0.30
+				### maybe some prestige thing
+            }
+		}
 	}
 
 	hidden_ideas = {
 		
+		AUS_hungary_germanified = {
+			#picture = HUN_hungarian_monarchy
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.25
+				war_support_factor = 0.25
+            }
+		}
 		AUS_hungary_loyal = {
 			#picture = HUN_hungarian_monarchy
 			modifier = {
@@ -211,7 +237,15 @@ ideas = {
 				war_support_factor = -0.15
             }
 		}
-		
+		AUS_czech_germanified = {
+			#picture = CZE_skoda_works
+			modifier = {
+				consumer_goods_factor = -0.30
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.20
+				production_speed_buildings_factor = 0.20
+            }
+		}
 		AUS_czech_loyal = {
 			#picture = CZE_skoda_works
 			modifier = {
@@ -245,7 +279,14 @@ ideas = {
 				industrial_capacity_dockyard = -0.10
             }
 		}
-		
+		AUS_galicia_germanified = {
+			#picture = POL_looming_peasants_strike
+			modifier = {
+				stability_factor = 0.20
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.25
+            }
+		}
 		AUS_galicia_loyal = {
 			#picture = POL_looming_peasants_strike
 			modifier = {
@@ -278,7 +319,14 @@ ideas = {
 				production_speed_buildings_factor = -0.20
             }
 		}
-		
+		AUS_illyria_germanified = {
+			#picture = ROM_balkans_dominance
+			modifier = {
+				war_support_factor = 0.20
+				resistance_target = -0.30
+				compliance_growth = 0.30
+            }
+		}
 		AUS_illyria_loyal = {
 			#picture = ROM_balkans_dominance
 			modifier = {
@@ -311,7 +359,15 @@ ideas = {
 				compliance_growth = -0.20
             }
 		}
-
+		AUS_balkans_germanified = {
+			#picture = ROM_balkans_dominance
+			modifier = {
+				political_power_factor = 0.20
+        		recruitable_population_factor = 0.20
+        		compliance_growth = 0.25
+        		production_speed_buildings_factor = 0.20
+            }
+		}
 		AUS_balkans_loyal = {
 			#picture = ROM_balkans_dominance
 			modifier = {
