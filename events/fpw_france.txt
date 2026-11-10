@@ -611,6 +611,85 @@ country_event = { # Time for useful reforms
 		name = french_empire_events.32.a
 	}
 }
+country_event = { # LATIN MONETARY UNION
+	id = french_empire_events.33
+	title = french_empire_events.33.title
+	desc = french_empire_events.33.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.3.a
+		add_dynamic_modifier = { modifier = FRA_latin_monetary_union_modifier }
+		FRA = {
+			country_event = {
+				id = french_empire_events.34
+				days = 4
+			}
+		}
+	}
+	option = { # No
+		name = french_empire_events.3.b
+		FRA = {
+			country_event = {
+				id = french_empire_events.35
+				days = 4
+			}
+		}
+	}
+}
+country_event = { # LATIN MONETARY UNION / YES
+	id = french_empire_events.34
+	title = french_empire_events.34.title
+	desc = french_empire_events.34.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.34.a
+		custom_effect_tooltip = FRA_modify_lmu_tt
+		add_to_variable = { 
+			fra_lmu_political_power_gain = 0.05
+			tooltip = political_power_gain_tt
+		}
+		add_to_variable = { 
+			fra_lmu_stability_factor = 0.025
+			tooltip = stability_factor_factor_tt
+		}
+		add_to_variable = { 
+			fra_lmu_consumer_goods_factor = -0.025
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = { 
+			fra_lmu_industrial_capacity_factory = 0.025
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = { 
+			fra_lmu_industrial_capacity_dockyard = 0.025
+			tooltip = industrial_capacity_dockyard_tt
+		}
+	}
+}
+country_event = { # LATIN MONETARY UNION / NO
+	id = french_empire_events.35
+	title = french_empire_events.35.title
+	desc = french_empire_events.35.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.35.a
+	}
+}
 
 country_event = {
 	id = france_fpw.1

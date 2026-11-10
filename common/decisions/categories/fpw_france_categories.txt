@@ -65,3 +65,29 @@ FRA_modernization_of_paris_cat = {
 		#has_completed_focus = SPA_preparatives_for_new_offensives
 	}
 }
+FRA_preparatives_for_the_revolution_cat = {
+
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	priority = 1500
+	#picture = GFX_decision_cat_picture_ARG_international_loan_decisions
+	visible_when_empty = yes
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_rally_the_opposition
+	}
+}
+FRA_france_debug_stuff_cat = {
+
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	priority = 99999
+	#picture = GFX_decision_cat_picture_ARG_international_loan_decisions
+	visible_when_empty = yes
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_debug = yes
+	}
+}

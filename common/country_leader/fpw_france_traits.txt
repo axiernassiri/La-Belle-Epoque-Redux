@@ -126,4 +126,44 @@ leader_traits = {
 		fascism_drift = 0.02
 
 	}
+
+	
+	lber_fra_napoleons_social_reforms = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = 0.05
+		#production_factory_efficiency_gain_factor = 0.05
+		consumer_goods_factor = 0.05
+		#production_speed_industrial_complex_factor = 0.5
+		#production_speed_buildings_factor = 0.05
+
+	}
+	lber_fra_napoleons_social_reforms_2 = {
+		random = no
+		political_power_factor = -0.15
+		stability_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.05
+		consumer_goods_factor = 0.1
+		production_speed_buildings_factor = 0.05
+
+	}
+	lber_fra_napoleons_social_reforms_3 = {
+		random = no
+		political_power_factor = -0.2
+		stability_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.1
+		consumer_goods_factor = 0.15
+		production_speed_buildings_factor = 0.05
+
+	}
+	lber_fra_napoleons_social_reforms_4 = {
+		random = no
+		political_power_factor = -0.25
+		stability_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.1
+		consumer_goods_factor = 0.2
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_buildings_factor = 0.05
+
+	}
 }

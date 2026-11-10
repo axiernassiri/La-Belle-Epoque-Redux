@@ -23,7 +23,11 @@ FRA_french_economy_modifier: "Économie de la France"
 FRA_french_economy_modifier_desc: "Financial instability and rising unemployment threaten industrial output, while the costs of ambitious public works and foreign interventions strain the state’s finances. The liberalisation of trade has opened new opportunities, but many domestic producers fear competition from abroad."
 FRA_french_army_modifier: "Armée Impériale Française"
 FRA_french_army_modifier_desc: "The Austro-Prussian War has exposed the many shortcomings of our military body. The recruitment system leaves us with insufficient reserves, while an inefficient logistics system and outdated command structure hamper our field operations. Emperor Napoleon's attempts at reform face fierce public opposition, leaving the army ill-prepared for a major European war."
-
+FRA_arsenal_de_brest: "Arsenal de Brest"
+FRA_schneider_creusot: "Schneider-Creusot"
+FRA_credit_lyonnais: "Crédit Lyonnais"
+FRA_credit_foncier: "Crédit foncier de France"
+FRA_societe_generale: "Société Générale"
 ### Focuses
 # Army
 FRA_our_great_friend_sastres_our_army_supplier: "Our Great Friend Sastres"
@@ -372,7 +376,18 @@ fra_threat_rev_tt: "If we were to loose in a major conflict, It may cause an §R
 fra_appointed_new_prime_minister: "Emperor [FRA.GetFlag]§YNapoleon III§! will appoint §YÉmile Ollivier§! as §YPrime Minister§!:"
 FRA_emile_ollivier_pm_idea_SHOW_TOOLTIP: "Émile Ollivier"
 fra_this_focus_no_more_strikes_tt: "This focus will §Gstop§! any future or current §Rstrikes§! going on throughout the [FRA.GetFlag]§YEmpire§!. If we enter at war with [PRS.GetFlag]§YPrussia§!, The §YMulhouse Strike§! will not happen"
-fra_mulhouse_strike_tt: "If [FRA.GetFlag]§YFrance§! hasnt §Ycompleted§! the following §Yfocuses§! of their respective branch: §Y'Begin the Final Strike'§!, §Y'Enforce National Security'§! or hasnt went the §ROpposition§!, they will gain the following §Gdebuff§! in §YAlsace-Lorraine§!:"
+fra_mulhouse_strike_tt: "If [FRA.GetFlag]§YFrance§! hasnt §Ycompleted§! the following §Yfocuses§! of their respective branch: §Y'Begin the Final Strike'§!, §Y'Enforce National Security'§! or hasnt went the [FPC.GetFlag]§ROpposition§!, they will gain the following §Gdebuff§! in §YAlsace-Lorraine§!:"
+FRA_not_already_influenced_state_tt: "This §Ystate§! has not been §Rinfluenced§! by the [FPC.GetFlag]§ROpposition§!"
+FRA_state_is_fully_secured_tt_NOT: "This §Ystate§! is fully secured by the [FPC.GetFlag]§ROpposition§!, The [FRA.GetFlag]§3Bonapartists§! cannot §Rinfluence§! it."
+FRA_already_expanding_influence_flag: "Already expanding influence in a State"
+fra_lmu_tt: "This §YNational Spirit§! will be added to every member of the §YLatin Monetary Union§!, And will be §Gupgraded§! everytime a new member joins"
+FRA_modify_lmu_tt: "Modify §YLatin Monetary Union§! by:"
+
 
 
  # TECH STUFF LOC
+
+# MIOS
+FRA_gastinne_renette_organization: "Gastinne Renette"
+FRA_manufacture_d_armes_de_saint_etienne_organization: "Manufacture d'armes de Saint-Étienne"
+FRA_manufacture_d_armes_de_tulle_organization: "Manufacture d'armes de Tulle"

@@ -1318,6 +1318,54 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = FRA_societe_generale
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1338,6 +1386,31 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = FRA_credit_lyonnais
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			
 		}
 	}
@@ -1362,6 +1435,59 @@ focus_tree = {
 			unlock_decision_tooltip = FRA_utilize_bonds_from_the_paris_works_fund
 			unlock_decision_tooltip = FRA_raise_investments_from_the_pereire_investment_bank
 			unlock_decision_tooltip = FRA_taking_out_loans
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					NOT = {
+						state = 16
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					NOT = {
+						state = 16
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					NOT = {
+						state = 16
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					NOT = {
+						state = 16
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1384,6 +1510,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_country_leader_trait = lber_fra_napoleons_social_reforms
 		}
 	}
 	focus = {
@@ -1406,6 +1533,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			FRA_napoleon_iii = {
+				swap_country_leader_traits = {
+					remove = lber_fra_napoleons_social_reforms
+					add = lber_fra_napoleons_social_reforms_2
+					ideology = liberal_constitutional_monarchism
+				}
+			}
 		}
 	}
 	focus = {
@@ -1413,7 +1547,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_napoleons_social_policy }
 		relative_position_id = FRA_napoleons_social_policy
 		available = {
-
+			has_completed_focus = FRA_the_right_for_trade_unionism
 		}
 
 		bypass = {
@@ -1428,6 +1562,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			FRA_napoleon_iii = {
+				swap_country_leader_traits = {
+					remove = lber_fra_napoleons_social_reforms_2
+					add = lber_fra_napoleons_social_reforms_3
+					ideology = liberal_constitutional_monarchism
+				}
+			}
 		}
 	}
 	focus = {
@@ -1451,6 +1592,13 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			FRA_napoleon_iii = {
+				swap_country_leader_traits = {
+					remove = lber_fra_napoleons_social_reforms_3
+					add = lber_fra_napoleons_social_reforms_4
+					ideology = liberal_constitutional_monarchism
+				}
+			}
 		}
 	}
 	focus = {
@@ -1473,6 +1621,37 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			custom_effect_tooltip = fra_lmu_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_dynamic_modifier = { modifier = FRA_latin_monetary_union_modifier }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ITA = {
+				country_event = {
+					id = french_empire_events.33
+					days = 3
+				}
+			}
+			SWI = {
+				country_event = {
+					id = french_empire_events.33
+					days = 3
+				}
+			}
+			BEL = {
+				country_event = {
+					id = french_empire_events.33
+					days = 3
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = FRA_invite_greece_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_invite_spain_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_invite_romania_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_invite_austria_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_accept_serbia_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_accept_papal_states_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_invite_colombia_to_the_latin_monetary_union
+			unlock_decision_tooltip = FRA_invite_venezuela_to_the_latin_monetary_union
 		}
 	}
 	
@@ -2753,7 +2932,11 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_political_power = 75
+			add_stability = -0.1
+			16 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
 		}
 	}
 	focus = {

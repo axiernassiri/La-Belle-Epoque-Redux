@@ -454,6 +454,8 @@ ideas = {
 			}
 		}
 
+	
+
 
 
 
@@ -507,5 +509,140 @@ ideas = {
 				}
 			}
 		}	
+	}
+	industrial_concern = {
+
+		FRA_arsenal_de_brest = {
+			picture = AUS_creditanstalt_bankverein
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_the_empires_naval_innovations
+			}
+
+			visible = {
+				
+			}
+
+			research_bonus = {
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			modifier = {
+				repair_speed_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+			traits = { ICE_shipping_concern } 
+		}
+		FRA_schneider_creusot = {
+			picture = AUS_creditanstalt_bankverein
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_stimulate_steel_industries
+			}
+
+			visible = {
+				
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { steelworks_and_machining_trait }
+		}
+		FRA_credit_lyonnais = {
+			picture = AUS_creditanstalt_bankverein
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				
+				has_completed_focus = FRA_reforming_the_banking_system
+			}
+
+			visible = {
+				
+			}
+
+			research_bonus = {
+				industry = 0.15
+			}
+		
+			traits = { central_bank } 
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		FRA_credit_foncier = {
+			picture = AUS_creditanstalt_bankverein
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_second_empires_public_works
+			}
+
+			visible = {
+				
+			}
+
+			traits = { industrial_focused_central_bank }
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				energy_gain_factor = 0.05
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+		FRA_societe_generale = {
+			picture = AUS_creditanstalt_bankverein
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_liberalization_of_the_anonymous_societies
+				
+			}
+
+			visible = {
+				
+			}
+
+			research_bonus = {
+				industry = 0.1
+			}
+		
+			traits = { industrial_investment_bank } 
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	
 	}
 }

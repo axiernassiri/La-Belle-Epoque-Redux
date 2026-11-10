@@ -1,0 +1,44 @@
+
+FRA_gastinne_renette_organization = {
+	name = FRA_gastinne_renette_organization
+	icon = GFX_idea_AUS_ansaldo
+	include = generic_support_equipment_organization
+	
+	equipment_type = { infantry_equipment support_equipment }
+	research_categories = { infantry_weapons support_tech }
+	allowed = {
+		original_TAG = FRA
+	}
+	available = {
+		owner = { controls_state = 16 }
+	}
+}
+
+FRA_manufacture_d_armes_de_saint_etienne = {
+	name = FRA_manufacture_d_armes_de_saint_etienne_organization
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_renault
+	allowed = {
+		original_tag = FRA
+	}
+
+    available = {
+        owner = {
+			controls_state = 20
+		}
+    }	
+}
+FRA_manufacture_d_armes_de_tulle = {
+	name = FRA_manufacture_d_armes_de_tulle_organization
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_renault
+	allowed = {
+		original_tag = FRA
+	}
+
+    available = {
+        owner = {
+			controls_state = 25
+		}
+    }	
+}

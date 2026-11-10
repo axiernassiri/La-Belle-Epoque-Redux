@@ -27,6 +27,206 @@ FRA_foreign_stuff_cat = {
 		complete_effect = {
 		}
 	}
+	FRA_invite_greece_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_invite_spain_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_invite_romania_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_invite_austria_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_accept_serbia_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_accept_papal_states_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_invite_colombia_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
+	FRA_invite_venezuela_to_the_latin_monetary_union = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_latin_monetary_union
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+		}
+	}
 }
 FRA_modernization_of_paris_cat = {
 
@@ -750,6 +950,870 @@ FRA_modernization_of_paris_cat = {
 			add_to_variable = { 
 				fra_economy_consumer_goods_factor = -0.1
 				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+}
+
+FRA_preparatives_for_the_revolution_cat = {
+
+	
+
+	FRA_ = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+		
+		complete_effect = {
+		}
+	}
+	FRA_influence_brittany = {
+
+		icon = {
+			key = SWI_consolidate_council_power
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				14 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+				}
+				14 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+				}
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_bonapartist_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				14 = { has_state_flag = FRA_influenced_by_bonapartists }
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_opposition_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				14 = { has_state_flag = FRA_influenced_by_opposition }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 14
+			if = {
+				limit = {
+					has_completed_focus = FRA_rally_the_opposition
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_not_already_influenced_state_tt
+					14 = { 
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition 
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = FRA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 14 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_remove = 21
+
+		visible = {
+			NOT = { has_global_flag = fra_french_revolution }
+			has_completed_focus = FRA_rally_the_opposition
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = FRA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			14 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			clr_country_flag = FRA_already_expanding_influence_flag
+		}
+	}
+	FRA_bonapartist_counter_influence_brittany = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 14 } 
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		days_mission_timeout = 21
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = FRA
+			has_completed_focus = FRA_rally_the_opposition
+			14 = {
+				has_state_flag = FRA_influenced_by_opposition
+			}
+			NOT = { has_global_flag = fra_french_revolution }
+		}
+
+		timeout_effect = {
+			14 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			14 = {
+				set_state_flag = FRA_influenced_by_bonapartists
+			}
+		}
+
+	}
+	FRA_influence_normandy = {
+
+		icon = {
+			key = SWI_consolidate_council_power
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				15 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+				}
+				15 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+				}
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_bonapartist_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				15 = { has_state_flag = FRA_influenced_by_bonapartists }
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_opposition_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				15 = { has_state_flag = FRA_influenced_by_opposition }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 15
+			if = {
+				limit = {
+					has_completed_focus = FRA_rally_the_opposition
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_not_already_influenced_state_tt
+					15 = { 
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition 
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = FRA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 15 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 35
+
+		fire_only_once = no
+
+		days_remove = 21
+
+		visible = {
+			NOT = { has_global_flag = fra_french_revolution }
+			has_completed_focus = FRA_rally_the_opposition
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = FRA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			15 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			clr_country_flag = FRA_already_expanding_influence_flag
+		}
+	}
+	FRA_bonapartist_counter_influence_normandy = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 15 } 
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		days_mission_timeout = 21
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = FRA
+			has_completed_focus = FRA_rally_the_opposition
+			15 = {
+				has_state_flag = FRA_influenced_by_opposition
+			}
+			NOT = { has_global_flag = fra_french_revolution }
+		}
+
+		timeout_effect = {
+			15 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			15 = {
+				set_state_flag = FRA_influenced_by_bonapartists
+			}
+		}
+
+	}
+	FRA_influence_loire = {
+
+		icon = {
+			key = SWI_consolidate_council_power
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				30 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+				}
+				30 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+				}
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_bonapartist_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				30 = { has_state_flag = FRA_influenced_by_bonapartists }
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_opposition_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				30 = { has_state_flag = FRA_influenced_by_opposition }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 30
+			if = {
+				limit = {
+					has_completed_focus = FRA_rally_the_opposition
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_not_already_influenced_state_tt
+					30 = { 
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition 
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = FRA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 30 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 35
+
+		fire_only_once = no
+
+		days_remove = 21
+
+		visible = {
+			NOT = { has_global_flag = fra_french_revolution }
+			has_completed_focus = FRA_rally_the_opposition
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = FRA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			30 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			clr_country_flag = FRA_already_expanding_influence_flag
+		}
+	}
+	FRA_bonapartist_counter_influence_loire = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 30 } 
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		days_mission_timeout = 21
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = FRA
+			has_completed_focus = FRA_rally_the_opposition
+			30 = {
+				has_state_flag = FRA_influenced_by_opposition
+			}
+			NOT = { has_global_flag = fra_french_revolution }
+		}
+
+		timeout_effect = {
+			30 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			30 = {
+				set_state_flag = FRA_influenced_by_bonapartists
+			}
+		}
+
+	}
+	FRA_influence_poitou = {
+
+		icon = {
+			key = SWI_consolidate_council_power
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				23 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+				}
+				23 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+				}
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_bonapartist_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				23 = { has_state_flag = FRA_influenced_by_bonapartists }
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_opposition_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				23 = { has_state_flag = FRA_influenced_by_opposition }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 23
+			if = {
+				limit = {
+					has_completed_focus = FRA_rally_the_opposition
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_not_already_influenced_state_tt
+					23 = { 
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition 
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = FRA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 23 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 35
+
+		fire_only_once = no
+
+		days_remove = 21
+
+		visible = {
+			NOT = { has_global_flag = fra_french_revolution }
+			has_completed_focus = FRA_rally_the_opposition
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = FRA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			23 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			clr_country_flag = FRA_already_expanding_influence_flag
+		}
+	}
+	FRA_bonapartist_counter_influence_poitou = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 23 } 
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		days_mission_timeout = 21
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = FRA
+			has_completed_focus = FRA_rally_the_opposition
+			23 = {
+				has_state_flag = FRA_influenced_by_opposition
+			}
+			NOT = { has_global_flag = fra_french_revolution }
+		}
+
+		timeout_effect = {
+			23 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			23 = {
+				set_state_flag = FRA_influenced_by_bonapartists
+			}
+		}
+
+	}
+	FRA_influence_centre = {
+
+		icon = {
+			key = SWI_consolidate_council_power
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				24 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+				}
+				24 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+				}
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_bonapartist_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				24 = { has_state_flag = FRA_influenced_by_bonapartists }
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_opposition_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				24 = { has_state_flag = FRA_influenced_by_opposition }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 24
+			if = {
+				limit = {
+					has_completed_focus = FRA_rally_the_opposition
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_not_already_influenced_state_tt
+					24 = { 
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition 
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = FRA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 24 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 35
+
+		fire_only_once = no
+
+		days_remove = 21
+
+		visible = {
+			NOT = { has_global_flag = fra_french_revolution }
+			has_completed_focus = FRA_rally_the_opposition
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = FRA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			24 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			clr_country_flag = FRA_already_expanding_influence_flag
+		}
+	}
+	FRA_bonapartist_counter_influence_centre = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 24 } 
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		days_mission_timeout = 21
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = FRA
+			has_completed_focus = FRA_rally_the_opposition
+			24 = {
+				has_state_flag = FRA_influenced_by_opposition
+			}
+			NOT = { has_global_flag = fra_french_revolution }
+		}
+
+		timeout_effect = {
+			24 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			24 = {
+				set_state_flag = FRA_influenced_by_bonapartists
+			}
+		}
+
+	}
+	FRA_influence_paris = {
+
+		icon = {
+			key = SWI_consolidate_council_power
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				16 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+				}
+				16 = {
+					NOT = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+				}
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_bonapartist_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				16 = { has_state_flag = FRA_influenced_by_bonapartists }
+			}
+		}
+		icon = {
+			key = fra_state_influenced_by_opposition_icon
+			trigger = {
+				has_completed_focus = FRA_rally_the_opposition
+				16 = { has_state_flag = FRA_influenced_by_opposition }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 16
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_state_is_fully_secured_tt
+					FRA = {
+						has_completed_focus = FRA_rally_the_opposition
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_rally_the_opposition
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_not_already_influenced_state_tt
+					16 = { 
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition 
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = FRA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 16 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 35
+
+		fire_only_once = no
+
+		days_remove = 21
+
+		visible = {
+			NOT = { has_global_flag = fra_french_revolution }
+			has_completed_focus = FRA_rally_the_opposition
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = FRA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			16 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			clr_country_flag = FRA_already_expanding_influence_flag
+		}
+	}
+	FRA_bonapartist_counter_influence_loire = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 30 } 
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = no
+
+		days_mission_timeout = 21
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = FRA
+			has_completed_focus = FRA_rally_the_opposition
+			30 = {
+				has_state_flag = FRA_influenced_by_opposition
+			}
+			NOT = { has_global_flag = fra_french_revolution }
+		}
+
+		timeout_effect = {
+			30 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			30 = {
+				set_state_flag = FRA_influenced_by_bonapartists
+			}
+		}
+
+	}
+}
+FRA_france_debug_stuff_cat = {
+	
+	FRA_debug_give_rally_opposition_bonapartist_influence = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			has_debug = yes
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = no
+		
+		complete_effect = {
+			15 = {
+				clr_state_flag = FRA_influenced_by_opposition
+			}
+			15 = {
+				set_state_flag = FRA_influenced_by_bonapartists
 			}
 		}
 	}
