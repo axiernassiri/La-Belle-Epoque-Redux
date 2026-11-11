@@ -433,4 +433,208 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = ITA_expand_fortification_works
+		relative_position_id = ITA_italy_on_the_defence
+		prerequisite = { focus = ITA_italy_on_the_defence }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_to_guard_italy
+		relative_position_id = ITA_italy_on_the_defence
+		prerequisite = { focus = ITA_italy_on_the_defence }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fund_gun_production
+		relative_position_id = ITA_italy_on_the_defence
+		prerequisite = { focus = ITA_to_guard_italy }
+		prerequisite = { focus = ITA_expand_fortification_works }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_reorganize_supply_lines
+		relative_position_id = ITA_fund_gun_production
+		prerequisite = { focus = ITA_fund_gun_production }
+		mutually_exclusive = { focus = ITA_raise_conscription_laws }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_raise_conscription_laws
+		relative_position_id = ITA_fund_gun_production
+		prerequisite = { focus = ITA_fund_gun_production }
+		mutually_exclusive = { focus = ITA_reorganize_supply_lines }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fortify_savoy
+		relative_position_id = ITA_raise_conscription_laws
+		prerequisite = { focus = ITA_raise_conscription_laws focus = ITA_reorganize_supply_lines }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fortify_venetia
+		relative_position_id = ITA_raise_conscription_laws
+		prerequisite = { focus = ITA_raise_conscription_laws focus = ITA_reorganize_supply_lines }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_protector_of_italy
+		relative_position_id = ITA_fund_gun_production
+		prerequisite = { focus = ITA_fortify_venetia }
+		prerequisite = { focus = ITA_fortify_savoy }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
 }
