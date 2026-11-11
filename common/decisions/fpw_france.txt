@@ -624,6 +624,7 @@ FRA_modernization_of_paris_cat = {
 				fra_economy_consumer_goods_factor = 0.35
 				tooltip = consumer_goods_factor_tt
 			}
+			set_country_flag = fra_failed_third_phase_of_modernization
 			
 		}
 		complete_effect = {

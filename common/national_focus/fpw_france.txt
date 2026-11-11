@@ -1478,12 +1478,34 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
 					NOT = {
 						state = 16
 					}
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -1533,6 +1555,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			FRA_napoleon_iii = {
 				swap_country_leader_traits = {
 					remove = lber_fra_napoleons_social_reforms
@@ -1562,6 +1587,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			FRA_napoleon_iii = {
 				swap_country_leader_traits = {
 					remove = lber_fra_napoleons_social_reforms_2
@@ -1675,6 +1703,38 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 22
+				state = 30
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 20
+			}
 		}
 	}
 	focus = {
@@ -1697,6 +1757,19 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			AUS = {
+				country_event = french_empire_events.36
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_franco_austrian_treaty_if_accept_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				add_ideas = FRA_franco_austrian_treaty
+				custom_effect_tooltip = generic_skip_one_line_tt
+				AUS = {
+					add_ideas = FRA_franco_austrian_treaty_AUS
+				}
+			}
 		}
 	}
 	focus = {
@@ -1705,21 +1778,25 @@ focus_tree = {
 		prerequisite = { focus = FRA_second_empires_public_works }
 		relative_position_id = FRA_stimulate_steel_industries
 		available = {
-
+			has_country_flag = fra_completed_third_phase_of_modernization
 		}
 
 		bypass = {
-			
+			has_country_flag = fra_failed_third_phase_of_modernization
 		}
 
 
 		icon = GFX_
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_urban_modernization
+				days = 180
+			}
 		}
 	}
 	focus = {
@@ -1738,10 +1815,41 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 1
-		cost = 5
+		cost = 8
 
 		search_filters = {  }
 		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_modernization_fundings_of_railways
+				days = 90
+			}
+			build_railway = {
+				path = { 9510 9495 }
+			}
+			build_railway = {
+				path = { 503 3495 }
+			}
+			build_railway = {
+				path = { 3669 11628 3652 }
+			}
+			build_railway = {
+				path = { 6545 9505 5291 9559 }
+			}
+			build_railway = {
+				path = { 9644 3506 }
+			}
+			build_railway = {
+				path = { 11463 9492 }
+			}
+			build_railway = {
+				path = { 1891 1833 }
+			}
+			build_railway = {
+				path = { 1891 1897 1901 1951 1953 1950 1939 }
+			}
+			build_railway = {
+				path = { 1939 1956 1966 1580 1552 1509 }
+			}
 		}
 	}
 	focus = {
@@ -1760,10 +1868,15 @@ focus_tree = {
 		icon = GFX_focus_generic_education
 		x = -3
 		y = 1
-		cost = 5
+		cost = 8
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_education_reforms
+				add_idea = FRA_education_reforms_2
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1783,10 +1896,50 @@ focus_tree = {
 		icon = GFX_focus_generic_resource_extraction
 		x = -1
 		y = 1
-		cost = 5
+		cost = 8
 
 		search_filters = {  }
 		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_exploit_the_resources_of_the_empire
+				days = 90
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_resource = {
+				type = coal
+				amount = 16
+				state = 29
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 29
+			}
+			add_resource = {
+				type = wood
+				amount = 12
+				state = 25
+			}
+			add_resource = {
+				type = coal
+				amount = 6
+				state = 25
+			}
+			add_resource = {
+				type = steel
+				amount = 9
+				state = 20
+			}
+			add_resource = {
+				type = wood
+				amount = 6
+				state = 20
+			}
+			add_resource = {
+				type = coal
+				amount = 19
+				state = 20
+			}
 		}
 	}
 	focus = {
@@ -1809,6 +1962,60 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_production_speed_arms_factory_factor = 0.1
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1832,6 +2039,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_education_reforms_2
+				add_idea = FRA_education_reforms_3
+			}
 		}
 	}
 	focus = {
@@ -1855,6 +2066,88 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_production_speed_arms_factory_factor = 0.1
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1878,6 +2171,64 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_production_speed_dockyard_factor = 0.1
+				tooltip = production_speed_dockyard_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 208
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 208
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 208
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 208
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1901,6 +2252,76 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_production_speed_industrial_complex_factor = 0.05
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					region = 20
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1925,6 +2346,75 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			custom_effect_tooltip = fra_modify_economy_tt
+			add_to_variable = { 
+				fra_economy_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_economy_stability_factor = 0.1
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = { 
+				fra_economy_consumer_goods_factor = -0.2
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 

@@ -51,7 +51,39 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.1
 				stability_factor = 0.05
-				research_speed_factor = -0.1
+				research_speed_factor = -0.15
+			}
+		}
+		FRA_education_reforms_2 = {
+			name = FRA_education_reforms
+
+			picture = fra_education_reform
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.1
+				research_speed_factor = -0.05
+			}
+		}
+		FRA_education_reforms_3 = {
+			name = FRA_education_reforms
+
+			picture = fra_education_reform
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.1
+				research_speed_factor = 0.1
 			}
 		}
 		FRA_cobden_chevalier_treaty = {
@@ -88,6 +120,47 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.1
 				consumer_goods_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.35
+			}
+
+		}
+		FRA_franco_austrian_treaty = {
+
+			picture = fra_bri_treaty
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = AUS
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.35
+			}
+
+		}
+		FRA_franco_austrian_treaty_AUS = {
+			name = FRA_franco_austrian_treaty
+
+			picture = fra_bri_treaty
+
+			allowed = {
+				original_tag = ENG
+			}
+
+
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 			targeted_modifier = {
 				tag = FRA
@@ -451,6 +524,46 @@ ideas = {
 				improve_relations_maintain_cost_factor = -0.5
 				trade_opinion_factor = 0.1
 				democratic_drift = -0.01
+			}
+		}
+		FRA_urban_modernization = { # used for effect tooltip, doesnt actually gets addded
+			allowed = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+		FRA_modernization_fundings_of_railways = { # used for effect tooltip, doesnt actually gets addded
+			allowed = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_rail_way_factor = 0.25
+			}
+		}
+		FRA_exploit_the_resources_of_the_empire = {
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				min_export = 0.15
+				trade_opinion_factor = 0.1
+				local_resources_factor = 0.1
 			}
 		}
 

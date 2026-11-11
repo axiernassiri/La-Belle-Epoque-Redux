@@ -382,6 +382,19 @@ FRA_state_is_fully_secured_tt_NOT: "This §Ystate§! is fully secured by the [FP
 FRA_already_expanding_influence_flag: "Already expanding influence in a State"
 fra_lmu_tt: "This §YNational Spirit§! will be added to every member of the §YLatin Monetary Union§!, And will be §Gupgraded§! everytime a new member joins"
 FRA_modify_lmu_tt: "Modify §YLatin Monetary Union§! by:"
+fra_franco_austrian_treaty_if_accept_tt: "If [AUS.GetFlag]§YAustria§! accepts the §YTreaty§!, we will gain the following effect:"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

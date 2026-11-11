@@ -207,6 +207,7 @@ set_variable = { fra_economy_production_speed_arms_factory_factor = -0.15 }
 set_variable = { fra_economy_consumer_goods_factor = 0.15 }
 set_variable = { fra_economy_industrial_capacity_factory = 0.05 }
 set_variable = { fra_economy_industrial_capacity_dockyard = 0.05 }
+set_variable = { fra_economy_production_speed_dockyard_factor = 0.00}
 
 add_dynamic_modifier = { modifier = FRA_french_army_modifier }
 set_variable = { FRA_army_conscription_factor = -0.25 }
@@ -233,6 +234,7 @@ set_variable = { fra_lmu_stability_factor = 0.025 }
 set_variable = { fra_lmu_consumer_goods_factor = -0.025 }
 set_variable = { fra_lmu_industrial_capacity_factory = 0.025 }
 set_variable = { fra_lmu_industrial_capacity_dockyard = 0.025 }
+
 
 add_dynamic_modifier = { 
 	modifier = fpw_victors_of_the_crimean_war 

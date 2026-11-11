@@ -24,6 +24,7 @@ FRA_french_economy_modifier = { #NATIONAL SPIRIT
 	consumer_goods_factor = fra_economy_consumer_goods_factor
 	industrial_capacity_factory = fra_economy_industrial_capacity_factory
 	industrial_capacity_dockyard = fra_economy_industrial_capacity_dockyard
+	production_speed_dockyard_factor = fra_economy_production_speed_dockyard_factor 
 }
 FRA_french_army_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }

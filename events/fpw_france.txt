@@ -691,6 +691,72 @@ country_event = { # LATIN MONETARY UNION / NO
 	}
 }
 
+country_event = { # French-Austrian Treaty
+	id = french_empire_events.36
+	title = french_empire_events.36.title
+	desc = french_empire_events.36.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.3.a
+		effect_tooltip = {
+			add_ideas = FRA_franco_austrian_treaty_AUS
+		}
+		FRA = {
+			country_event = {
+				id = french_empire_events.37
+				days = 4
+			}
+		}
+	}
+	option = { # No
+		name = french_empire_events.3.b
+		FRA = {
+			country_event = {
+				id = french_empire_events.38
+				days = 4
+			}
+		}
+	}
+}
+country_event = { # French-Austrian Treaty / YES
+	id = french_empire_events.37
+	title = french_empire_events.37.title
+	desc = french_empire_events.37.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.37.a
+		add_ideas = FRA_franco_austrian_treaty
+		custom_effect_tooltip = generic_skip_one_line_tt
+		AUS = {
+			add_ideas = FRA_franco_austrian_treaty_AUS
+		}
+	}
+}
+country_event = { # French-Austrian Treaty / NO
+	id = french_empire_events.38
+	title = french_empire_events.38.title
+	desc = french_empire_events.38.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.38.a
+	}
+}
+
 country_event = {
 	id = france_fpw.1
 	title = france_fpw.1.t
