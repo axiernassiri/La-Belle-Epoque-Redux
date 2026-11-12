@@ -193,6 +193,16 @@ ideas = {
 				### maybe some prestige thing
             }
 		}
+
+		AUS_italy_secured = {
+			#picture = AUS_empire_restored
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.20
+				army_morale_factor = 0.10
+				### maybe some prestige thing
+            }
+		}
 	}
 
 	hidden_ideas = {

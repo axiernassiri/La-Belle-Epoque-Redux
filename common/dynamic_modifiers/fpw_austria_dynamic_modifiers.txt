@@ -8,3 +8,14 @@ fpw_outdated_military = {
 	army_attack_factor = aus_atk_dm#-0.2
 	army_defence_factor = aus_def_dm#-0.1
 }
+
+fpw_italian_wars = {
+	icon = GFX_idea_generic_army_problems
+	enable = { always = yes }
+
+	breakthrough_factor = aus_ita_breakthru_dm
+	army_morale_factor = aus_ita__morale_dm
+	army_org_factor = aus_ita_org_dm
+	army_attack_factor = aus_ita_atk_dm
+	army_defence_factor = aus_ita_def_dm
+}
