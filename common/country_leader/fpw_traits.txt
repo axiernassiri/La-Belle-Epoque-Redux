@@ -12,7 +12,6 @@
 
 leader_traits = {
 
-
 	fpw_tsar_of_russia = {
 		random = no
 		#political_power_factor = 0.05
@@ -304,12 +303,12 @@ leader_traits = {
 		stability_factor = 0.1
 		war_support_factor = 0.1
 	}
- fpw_bra_wise_emperor = {
+ 	fpw_bra_wise_emperor = {
 	 random = no
 	 stability_factor = 0.05
 	 war_support_factor = -0.1
 	 political_power_factor = 0.1
-  }
+  	}
 	fpw_liberal_critic = {
 		sprite = 12
 		random = no
@@ -364,29 +363,26 @@ leader_traits = {
 		neutrality_drift = -0.05
 		political_power_gain = 0.30
 		neutrality_acceptance = -50
-
 	}
- fpw_par_proud = {
-    random = no
-	stability_factor = -0.08
-	war_support_factor = 0.12
-	political_power_factor = -0.1
-	political_advisor_cost_factor = 0.25
-	trade_laws_cost_factor = 0.25
-	economy_cost_factor = 0.2
-	conscription_factor = 0.15
-  }
+ 	fpw_par_proud = {
+    	random = no
+		stability_factor = -0.08
+		war_support_factor = 0.12
+		political_power_factor = -0.1
+		political_advisor_cost_factor = 0.25
+		trade_laws_cost_factor = 0.25
+		economy_cost_factor = 0.2
+		conscription_factor = 0.15
+  	}
   	fpw_fanatic_barakzai_writer = {
 		random = no
 		stability_factor = 0.1
 		war_support_factor = 0.1
-		
 	}
 	fpw_centralizing_reformer = {
 		random = no
 		political_power_gain = 0.25
 		stability_factor = 0.05
-		
 	}
 	fpw_genius_militarist = {
 		random = no
@@ -416,19 +412,7 @@ leader_traits = {
 		research_speed_factor = 0.05
 		consumer_goods_factor = -0.05
 	}
-	fpw_elan = { #Benedek
-		army_attack_factor = 0.05
-		army_strength_factor = 0.05
-	}
-	fpw_grand_battery = { #Gablenz
-		army_artillery_attack_factor = 0.05
-	}
-	fpw_habsburg_traditionalism = {
-		army_org_factor = 0.025
-		experience_gain_army = 0.30
-        experience_gain_army_factor = 0.10
-	}
-	fpw_anti_british = {
+	fpw_anti_british = { # ??? - dS0
 	}
 	fpw_afghan_lion = {
 		stability_factor = 0.25
@@ -439,4 +423,126 @@ leader_traits = {
 		army_core_attack_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
+	# AUSTRIA 
+	fpw_elan = { #Benedek
+		army_attack_factor = 0.05
+		army_strength_factor = 0.05
+	}
+	fpw_grand_battery = { #Gablenz
+		army_artillery_attack_factor = 0.05
+	}
+	LBER_habsburg_traditionalism = {
+		sprite = 11
+		random = no
+
+		army_org_factor = 0.025
+		experience_gain_army = 0.30
+        experience_gain_army_factor = 0.10
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+	}
+	LBER_imperial_foreign_minister = { # von Beust
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		drift_defence_factor = 0.10
+		improve_relations_maintain_cost_factor = -0.5
+	}
+	LBER_financial_magnate = { # Anselm von Rothschild
+		sprite = 10
+		random = no
+
+		consumer_goods_factor = -0.10
+		production_factory_efficiency_gain_factor = 0.05
+	}
+	LBER_architect_press = { # August Zang
+		sprite = 13 # 13
+		random = no
+
+		political_power_gain = 0.10
+		party_popularity_stability_factor = 0.15
+		fascism_drift = 0.05
+	}
+	LBER_armaments_innovator = { # Josef Werndl
+		sprite = 10 # 10
+		random = no
+
+		production_speed_arms_factory_factor = 0.10
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+	}
+	LBER_intelligence_specialist = { # Josef von Plauenwald
+		sprite = 15 # 15
+		random = no
+
+		operative_slot = 2
+		agency_upgrade_time = -0.20
+	}
+	LBER_magyar_statesman = { # Gyula Andrassy
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		compliance_gain = 0.05
+		# increase Hungarian happiness
+	}
+	LBER_supreme_court_president = { # Anton von Schmerling
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		resistance_growth = -0.05
+		fascism_drift = 0.10
+	}
+	LBER_kriegsminister = { # von Kuhnenfeld
+		sprite = 17
+		random = no
+
+		war_support_factor = 0.05
+		conscription_factor = 0.10
+		mobilization_speed = 0.15
+	}
+	LBER_archbishop_vienna = { # Joseph von Rauscher
+		sprite = 13
+		random = no
+
+		stability_factor = 0.15
+		research_speed_factor = -0.05
+	}
+	LBER_resourceful_engineer = { # Peter von Rittinger
+		sprite = 10
+		random = no
+
+		production_factory_max_efficiency_factor = 0.05
+		local_resources_factor = 0.15
+	}
+	LBER_pioneering_physician = { # Ferdinand Hebra
+		sprite = 13
+		random = no
+
+		monthly_population = 0.20
+		party_popularity_stability_factor = 0.10
+	}
+	LBER_socialist_firebrand = { # Mihaly Tancsics
+		sprite = 12
+		random = no
+
+		political_power_gain = 0.05
+		communism_drift = 0.10
+		research_speed_factor = 0.05
+	}
+	LBER_conservative_intellectual = { # Leopold von Thun und Hohenstein
+		sprite = 13
+		random = no
+
+		democratic_drift = 0.10
+		research_speed_factor = 0.075
+	}
+	
 }
