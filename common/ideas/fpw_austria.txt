@@ -203,6 +203,14 @@ ideas = {
 				### maybe some prestige thing
             }
 		}
+
+		AUS_winter_preparations = {
+			#picture = AUS_empire_restored
+			modifier = {
+				winter_attrition_factor = -0.25
+				acclimatization_cold_climate_gain_factor = 0.5
+            }
+		}
 	}
 
 	hidden_ideas = {

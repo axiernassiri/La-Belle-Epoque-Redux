@@ -697,6 +697,8 @@
 				freedom_level = 0.5
 			}
 			AUS_decrese_illyrian_attitude_effect = yes
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = gyula_andrassy
 		}
 	}
 	focus = {
@@ -726,6 +728,8 @@
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = mihaly_tancsics
 			add_political_power = 50
 			add_stability = 0.05
 			HUN = {
@@ -748,6 +752,8 @@
 		}
 		completion_reward = {
 			# add political power and stability
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = von_beust
 		}
 	}
 
@@ -763,8 +769,9 @@
 			
 		}
 		completion_reward = {
-			add_political_power = 25
-			add_stability = 0.05
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = august_zang
+			show_ideas_tooltip = franz_kuhnenfeld
 		}
 	}
 
@@ -798,6 +805,8 @@
 			has_political_power > 50
 		}
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = anton_schmerling
 			add_political_power = -50
 			army_experience = 25
 		}
@@ -818,6 +827,31 @@
 		}
 		completion_reward = {
 			add_ideas = fpw_idea_the_duel_monarchy
+			hidden_effect = {
+				complete_national_focus = AUS_the_european_theatre
+			}
+		}
+	}
+	### Intelegence Agency
+	focus = {
+		id = AUS_establish_the_evidenzbureau
+		icon = GFX_
+		x = 7
+		y = 2
+		relative_position_id = AUS_the_duel_monarchy
+		prerequisite = { focus = AUS_the_european_theatre }
+		cost = 5
+		available = {
+		}
+		completion_reward = {
+			### 
+			create_intelligence_agency = {
+    			name = "Evidenzbureau"
+    			icon = GFX_intelligence_agency_logo_agency
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = josef_plauenwald
+			
 		}
 	}
 
@@ -1894,7 +1928,7 @@
 	focus = {
 		id = AUS_the_czech_question
 		icon = GFX_focus_generic_befriend_czechoslovakia
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = AUS_the_european_theatre
 		prerequisite = { focus = AUS_the_european_theatre }
@@ -2010,7 +2044,7 @@
 	focus = {
 		id = AUS_develop_galicia
 		icon = GFX_AUS_galician_development
-		x = 3
+		x = 2
 		y = -2
 		relative_position_id = AUS_moravian_arms_factories
 		prerequisite = { focus = AUS_the_european_theatre }
@@ -2291,6 +2325,9 @@
 		available = {
 		}
 		completion_reward = {
+			### this guy is an advisor make him locked behind this
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = josef_werndl
 			add_tech_bonus = {
 				bonus = 0.50
 				uses = 2
@@ -3157,6 +3194,14 @@
 		}
 		completion_reward = {
 			### embargo ottomans and opinion decrease
+			diplomatic_relation = {
+    			country = TUR
+    			relation = embargo
+			}
+			add_opinion_modifier = {
+				target = TUR
+				modifier = medium_decrease
+			}
 		}
 	}
 
@@ -3347,6 +3392,14 @@
 		}
 		completion_reward = {
 			### embargo russia and decrease opinions
+			diplomatic_relation = {
+    			country = SOV
+    			relation = embargo
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_decrease
+			}
 		}
 	}
 
@@ -3377,6 +3430,8 @@
 		}
 		completion_reward = {
 			### makes the caucasus revolt upon war start
+			custom_effect_tooltip = aus_caucausus_revolt
+			set_country_flag = caaucasus_revolt_flag
 		}
 	}
 
@@ -3424,6 +3479,7 @@
 		}
 		completion_reward = {
 			### puts a state modifier debuffing russia in ukrainian states
+			add_ideas = AUS_winter_preparations
 		}
 	}
 
@@ -3433,12 +3489,32 @@
 		x = 0
 		y = 3
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 10
 		prerequisite = { focus = AUS_winter_adaptations }
 		available = {
 		}
 		completion_reward = {
 			### forts along the russian border in galicia
+			88 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 3
+    				province = {
+        				limit_to_border = yes
+        				level < 3
+					}	
+    			}
+			}
+			91 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 3
+    				province = {
+        				limit_to_border = yes
+        				level < 3
+					}	
+    			}
+			}
 		}
 	}
 
@@ -3840,8 +3916,9 @@
 			### this idea will give stability ws and political power + prestige
 			### you will get more prestige buff based on how many capture focuese you completed
 			### each focus is worth 2.5 prestige, with the base being 10% starting out
-			### also make sure to include a bonus for being in the top 7
+			### also make sure to include a bonus for being in the top 7 laster
 			### the the rewards increasing the higher you are.
+			add_ideas = AUS_italy_secured
 		}
 	}
 

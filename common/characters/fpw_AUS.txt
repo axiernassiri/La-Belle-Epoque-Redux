@@ -376,7 +376,7 @@ characters = {
 				original_tag = AUS
 			}
 			available = {
-				# complete focus or date
+				has_completed_focus = AUS_common_minstries
 			}
 			cost = 150
 			traits = { army_chief_offensive_2 }
@@ -454,7 +454,7 @@ characters = {
 				original_tag = AUS
 			}
 			available = {
-
+				has_completed_focus = AUS_december_constition
 			}
 			traits = {
 				LBER_imperial_foreign_minister
@@ -526,7 +526,7 @@ characters = {
 				original_tag = AUS
 			}
 			available = {
-
+				has_completed_focus = AUS_wanzel_and_holeb_rifle
 			}
 			traits = {
 				LBER_armaments_innovator
@@ -562,6 +562,9 @@ characters = {
 	}                                                                         
     AUS_gyula_andrassy = {
 		name = AUS_gyula_andrassy
+		available = {
+			has_completed_focus = AUS_the_ausgleich
+		}
 		portraits = {
 			civilian = {
 				small = GFX_idea_AUS_gyula_andrassy
@@ -598,7 +601,7 @@ characters = {
 				original_tag = AUS
 			}
 			available = {
-
+				has_completed_focus = AUS_strength_the_reichsrat
 			}
 			traits = {
 				LBER_supreme_court_president
@@ -694,7 +697,7 @@ characters = {
 				original_tag = AUS
 			}
 			available = {
-
+				has_completed_focus = AUS_crown_of_hungary
 			}
 			traits = {
 				LBER_socialist_firebrand
