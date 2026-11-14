@@ -102,4 +102,33 @@ on_actions = {
 			}
 		}
 	}
+
+	on_daily_AUS = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							AUS = {
+								has_completed_focus = AUS_request_french_neutrality
+							}
+							ITA = {
+								has_capitulated = yes
+							}
+						}
+						AND = {
+							AUS = {
+								NOT = { has_completed_focus = AUS_request_french_neutrality }
+							}
+							ITA = {
+								has_capitulated = yes
+							}
+						}
+					}
+				}
+			}
+			remove_dynamic_modifier = fpw_italian_wars
+			complete_national_focus = AUS_italian_interest_secured
+		}
+	}
 }

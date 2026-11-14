@@ -518,6 +518,7 @@
  aus_settle_bulgaria_tt: "This §YFocus§! will allow us to §YSettle§! in §YBulgaria§!"
  aus_influencing_greece_tt: "This §YFocus§! will allow us to §YInfluence§! §YGreece§!"
  aus_serb_rom_inf_tt: "This §YFocus§! will allow us to §YInfluence§! §YSerbia§! and §YRomania§!"
+ aus_capture_of_city_tt: "This §YFocus§! will automatically complete upon the §Rcapture§! of the specified city. This will §YModify§! the Italian Wars National Idea"
 #custom modifier tooltips
  
 #scripted gui text

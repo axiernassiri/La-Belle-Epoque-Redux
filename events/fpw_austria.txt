@@ -950,3 +950,158 @@ country_event = {
 		}
 	}
 }
+
+### deal with the shah event to persia
+country_event = {
+	id = fpw_austria.30
+	title = fpw_austria.30.t
+	desc = fpw_austria.30.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.30.a
+		ai_chance = { factor = 401 }
+		set_country_flag = per_accepted_deal_w_austria
+		AUS = {
+			country_event = fpw_austria.31
+		}
+		
+	}
+	option = {
+		name = fpw_austria.30.b
+		ai_chance = { factor = 400 }
+		AUS = {
+			country_event = fpw_austria.32
+		}
+	}
+}
+### Perisa Accepts
+country_event = {
+	id = fpw_austria.31
+	title = fpw_austria.31.t
+	desc = fpw_austria.31.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### nothing happens this is jsut to let the player know
+	option = {
+		name = fpw_austria.31.a
+		ai_chance = { factor = 401 }
+		
+	}
+}
+
+### Perisa Declines
+country_event = {
+	id = fpw_austria.32
+	title = fpw_austria.32.t
+	desc = fpw_austria.32.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### nothing happens this is jsut to let the player know
+	option = {
+		name = fpw_austria.32.a
+		ai_chance = { factor = 401 }
+		
+	}
+}
+### event italy gets from u doing border raids
+country_event = {
+	id = fpw_austria.33
+	title = fpw_austria.33.t
+	desc = fpw_austria.33.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+
+	### WAR!
+	option = {
+		name = fpw_austria.33.a
+		ai_chance = { factor = 401 }
+		AUS = {
+			country_event = fpw_austria.34
+		}
+		
+	}
+	### back down
+	option = {
+		name = fpw_austria.33.b
+		ai_chance = { factor = 401 }
+		AUS = {
+			country_event = fpw_austria.35
+		}
+		158 = {
+			set_demilitarized_zone = yes
+		}
+		161 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+### Italy Strikes Back
+country_event = {
+	id = fpw_austria.34
+	title = fpw_austria.34.t
+	desc = fpw_austria.34.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.34.a
+		ai_chance = { factor = 401 }
+		complete_national_focus = AUS_to_secure_italy
+		ITA = {
+			declare_war_on = {
+				target = AUS
+				type = annex_everything
+			}
+		}
+		
+	}
+}
+
+### Italy backs down
+country_event = {
+	id = fpw_austria.35
+	title = fpw_austria.35.t
+	desc = fpw_austria.35.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.35.a
+		ai_chance = { factor = 401 }
+		add_political_power = 50
+		
+	}
+}
+
+### France joins war against austria
+country_event = {
+	id = fpw_austria.36
+	title = fpw_austria.36.t
+	desc = fpw_austria.36.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	### We must join this war against austria
+	option = {
+		name = fpw_austria.36.a
+		ai_chance = { factor = 401 }
+		create_faction = anti_austria_alliance
+		ITA = {
+			add_to_faction = FRA
+		}
+		
+	}
+	### Abandon our italian allies
+	option = {
+		name = fpw_austria.36.n
+		ai_chance = { factor = 300 }
+		add_political_power = -100
+		
+	}
+}

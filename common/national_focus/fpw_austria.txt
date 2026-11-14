@@ -3191,6 +3191,14 @@
 		}
 		completion_reward = {
 			### non aggression pact with persia + improved relations
+			diplomatic_relation = {
+				country = PER
+				relation = non_aggression_pact
+			}
+			add_opinion_modifier = {
+				target = PER
+				modifier = medium_increase
+			}
 		}
 	}
 
@@ -3209,6 +3217,9 @@
 		}
 		completion_reward = {
 			### if persia agrees they will join the war for spefic land, works for both russia and ottomans
+			PER = {
+				country_event = fpw_austria.30
+			}
 		}
 	}
 
@@ -3514,6 +3525,16 @@
 		}
 		completion_reward = {
 			### fortifies milan
+			159 = {
+				set_building_level = {
+   		 			type = bunker
+    				level = 3
+    				province = {
+        				limit_to_border = yes
+        				level < 3
+					}	
+    			}
+			}
 		}
 	}
 
@@ -3530,6 +3551,15 @@
 		}
 		completion_reward = {
 			### lose guns but send an event to italy whether they declare war or back off which makes border states demiliterized
+			ITA = {
+				country_event = fpw_austria.33
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				producer = AUS
+			}
+			
 		}
 	}
 
@@ -3545,7 +3575,18 @@
 		available = {
 		}
 		completion_reward = {
-			### destroys factories in milan and emilila romagna
+			### destroys factories in emilila romagna
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = AUS
+			}
+			161 = {
+				remove_building {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -3562,6 +3603,27 @@
 		}
 		completion_reward = {
 			### italy gets an event issueing our demands, they will not have an option to reject as these demands essiently mean giving up soverienty.
+			### adds Rekindled Italian Wars Dynamic Modifier that gets bfufed by focuses
+			declare_war_on = ITA
+			
+			add_dynamic_modifier = {
+				modifier = fpw_italian_wars
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = aus_french_neutrality
+						}
+					}
+					FRA = {
+						country_event = {
+							id = fpw_austria.36
+							days = 30
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -3579,6 +3641,27 @@
 		}
 		completion_reward = {
 			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+			custom_effect_tooltip = aus_capture_of_city_tt
+			add_to_variable = {
+				var = aus_ita_atk_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_def_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_breakthru_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita__morale_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_org_dm
+				value = 0.025
+			}
 		}
 	}
 
@@ -3596,6 +3679,27 @@
 		}
 		completion_reward = {
 			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+			custom_effect_tooltip = aus_capture_of_city_tt
+			add_to_variable = {
+				var = aus_ita_atk_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_def_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_breakthru_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita__morale_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_org_dm
+				value = 0.025
+			}
 		}
 	}
 
@@ -3612,7 +3716,28 @@
 			always = no
 		}
 		completion_reward = {
-			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+			custom_effect_tooltip = aus_capture_of_city_tt
+			add_to_variable = {
+				var = aus_ita_atk_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_def_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_breakthru_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita__morale_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_org_dm
+				value = 0.025
+			}
 		}
 	}
 	
@@ -3629,7 +3754,28 @@
 			always = no
 		}
 		completion_reward = {
-			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+			custom_effect_tooltip = aus_capture_of_city_tt
+			add_to_variable = {
+				var = aus_ita_atk_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_def_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_breakthru_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita__morale_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_org_dm
+				value = 0.025
+			}
 		}
 	}
 
@@ -3646,7 +3792,28 @@
 			always = no
 		}
 		completion_reward = {
-			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit
+			### gives an idea that gives you buffs for the duration of the war and will buff the italy secured national spirit 
+			custom_effect_tooltip = aus_capture_of_city_tt
+			add_to_variable = {
+				var = aus_ita_atk_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_def_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_breakthru_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita__morale_dm
+				value = 0.025
+			}
+			add_to_variable = {
+				var = aus_ita_org_dm
+				value = 0.025
+			}
 		}
 	}
 
