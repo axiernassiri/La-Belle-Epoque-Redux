@@ -50,6 +50,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			GRE = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_invite_spain_to_the_latin_monetary_union = {
@@ -75,6 +81,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			SPR = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_invite_romania_to_the_latin_monetary_union = {
@@ -100,6 +112,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			ROM = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_invite_austria_to_the_latin_monetary_union = {
@@ -125,6 +143,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			AUS = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_accept_serbia_to_the_latin_monetary_union = {
@@ -150,6 +174,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			SER = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_accept_papal_states_to_the_latin_monetary_union = {
@@ -175,6 +205,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			PAP = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_invite_colombia_to_the_latin_monetary_union = {
@@ -200,6 +236,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			COL = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 	FRA_invite_venezuela_to_the_latin_monetary_union = {
@@ -225,6 +267,12 @@ FRA_foreign_stuff_cat = {
 		cost = 50
 		
 		complete_effect = {
+			VEN = {
+				country_event = {
+					id = french_empire_events.34
+					days = 3
+				}
+			}
 		}
 	}
 }

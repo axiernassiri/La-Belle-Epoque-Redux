@@ -47,10 +47,10 @@ country_event = {
 	id = french_empire_events.7
 	days = 77
 }
-country_event = {
-	id = french_empire_events.8
-	days = 303
-}
+#country_event = {
+#	id = french_empire_events.8
+#	days = 303
+#}
 country_event = {
 	id = french_empire_events.9
 	days = 409
@@ -70,10 +70,6 @@ news_event = {
 news_event = {
 	id = lbe_france_news.2
 	days = 456
-}
-news_event = {
-	id = lbe_france_news.3
-	days = 522
 }
 
 

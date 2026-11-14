@@ -128,11 +128,7 @@ country_event = { # parisian Bronze Strike
 	picture = GFX_report_event_tank_factory
 
 	fire_only_once = yes
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
@@ -250,6 +246,8 @@ country_event = { # appointment of niel
 	title = french_empire_events.17.title
 	desc = french_empire_events.17.desc
 	picture = GFX_report_event_tank_factory
+	
+	
 
 	fire_only_once = yes
 
@@ -349,11 +347,7 @@ country_event = { # financial support from english to the strikes
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
@@ -377,11 +371,7 @@ country_event = { # end of the bronze strike
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
@@ -403,11 +393,7 @@ country_event = { # miners' strike in the Loire coal basin
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
@@ -428,11 +414,7 @@ country_event = { # Fusillade du Brûlé
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
@@ -454,11 +436,7 @@ country_event = { # general strike breaks out in the Carmaux coal basin
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
@@ -475,31 +453,6 @@ country_event = { # general strike breaks out in the Carmaux coal basin
 	}
 }
 country_event = { # End of the Loire coal basin strikes
-	id = french_empire_events.27
-	title = french_empire_events.27.title
-	desc = french_empire_events.27.desc
-	picture = GFX_report_event_tank_factory
-
-	fire_only_once = yes
-
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
-
-	is_triggered_only = yes
-
-	option = { # fine
-		name = french_empire_events.27.a
-		remove_ideas = FRA_loire_coal_basin_strike_2
-		hidden_effect = {
-			country_event = french_empire_events.28
-			days = 170
-		}
-	}
-}
-country_event = { # metalworkers strike
 	id = french_empire_events.28
 	title = french_empire_events.28.title
 	desc = french_empire_events.28.desc
@@ -507,26 +460,20 @@ country_event = { # metalworkers strike
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
 	option = { # fine
 		name = french_empire_events.28.a
-		add_stability = -0.05
-		add_manpower = -3500
-		add_ideas = FRA_metalworkers_strike
+		remove_ideas = FRA_loire_coal_basin_strike_2
 		hidden_effect = {
 			country_event = french_empire_events.29
-			days = 5
+			days = 170
 		}
 	}
 }
-country_event = { # metalworkers strike ends
+country_event = { # metalworkers strike
 	id = french_empire_events.29
 	title = french_empire_events.29.title
 	desc = french_empire_events.29.desc
@@ -534,24 +481,22 @@ country_event = { # metalworkers strike ends
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
 	option = { # fine
 		name = french_empire_events.29.a
-		remove_ideas = FRA_metalworkers_strike
+		add_stability = -0.05
+		add_manpower = -3500
+		add_ideas = FRA_metalworkers_strike
 		hidden_effect = {
 			country_event = french_empire_events.30
-			days = 56
+			days = 5
 		}
 	}
 }
-country_event = { # miners' strike in Le Creusot
+country_event = { # metalworkers strike ends
 	id = french_empire_events.30
 	title = french_empire_events.30.title
 	desc = french_empire_events.30.desc
@@ -559,20 +504,16 @@ country_event = { # miners' strike in Le Creusot
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
 	option = { # fine
 		name = french_empire_events.30.a
-		add_ideas = FRA_creusot_miners_strike
+		remove_ideas = FRA_metalworkers_strike
 		hidden_effect = {
 			country_event = french_empire_events.31
-			days = 25
+			days = 56
 		}
 	}
 }
@@ -584,20 +525,20 @@ country_event = { # miners' strike in Le Creusot
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_country_flag = fra_no_more_strikes_again
-		}
-	}
+	
 
 	is_triggered_only = yes
 
 	option = { # fine
 		name = french_empire_events.31.a
-		remove_ideas = FRA_creusot_miners_strike
+		add_ideas = FRA_creusot_miners_strike
+		hidden_effect = {
+			country_event = french_empire_events.32
+			days = 25
+		}
 	}
 }
-country_event = { # Time for useful reforms
+country_event = { # miners' strike in Le Creusot
 	id = french_empire_events.32
 	title = french_empire_events.32.title
 	desc = french_empire_events.32.desc
@@ -605,43 +546,30 @@ country_event = { # Time for useful reforms
 
 	fire_only_once = yes
 
+	
+
 	is_triggered_only = yes
 
 	option = { # fine
 		name = french_empire_events.32.a
+		remove_ideas = FRA_creusot_miners_strike
 	}
 }
-country_event = { # LATIN MONETARY UNION
+country_event = { # time for useful reforms
 	id = french_empire_events.33
 	title = french_empire_events.33.title
 	desc = french_empire_events.33.desc
 	picture = GFX_report_event_tank_factory
 
-	fire_only_once = no
+	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	option = { # fine
-		name = french_empire_events.3.a
-		add_dynamic_modifier = { modifier = FRA_latin_monetary_union_modifier }
-		FRA = {
-			country_event = {
-				id = french_empire_events.34
-				days = 4
-			}
-		}
-	}
-	option = { # No
-		name = french_empire_events.3.b
-		FRA = {
-			country_event = {
-				id = french_empire_events.35
-				days = 4
-			}
-		}
+		name = french_empire_events.33.a
 	}
 }
-country_event = { # LATIN MONETARY UNION / YES
+country_event = { # LATIN MONETARY UNION
 	id = french_empire_events.34
 	title = french_empire_events.34.title
 	desc = french_empire_events.34.desc
@@ -653,6 +581,41 @@ country_event = { # LATIN MONETARY UNION / YES
 
 	option = { # fine
 		name = french_empire_events.34.a
+		add_dynamic_modifier = { modifier = FRA_latin_monetary_union_modifier }
+		set_variable = { fra_lmu_political_power_gain = 0.05 }
+		set_variable = { fra_lmu_stability_factor = 0.025 }
+		set_variable = { fra_lmu_consumer_goods_factor = -0.025 }
+		set_variable = { fra_lmu_industrial_capacity_factory = 0.025 }
+		set_variable = { fra_lmu_industrial_capacity_dockyard = 0.025 }
+		FRA = {
+			country_event = {
+				id = french_empire_events.35
+				days = 4
+			}
+		}
+	}
+	option = { # No
+		name = french_empire_events.3.b
+		FRA = {
+			country_event = {
+				id = french_empire_events.36
+				days = 4
+			}
+		}
+	}
+}
+country_event = { # LATIN MONETARY UNION / YES
+	id = french_empire_events.35
+	title = french_empire_events.35.title
+	desc = french_empire_events.35.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.35.a
 		custom_effect_tooltip = FRA_modify_lmu_tt
 		add_to_variable = { 
 			fra_lmu_political_power_gain = 0.05
@@ -674,24 +637,32 @@ country_event = { # LATIN MONETARY UNION / YES
 			fra_lmu_industrial_capacity_dockyard = 0.025
 			tooltip = industrial_capacity_dockyard_tt
 		}
+		FROM = {
+			
+			add_to_variable = { 
+				fra_lmu_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = { 
+				fra_lmu_stability_factor = 0.025
+				tooltip = stability_factor_factor_tt
+			}
+			add_to_variable = { 
+				fra_lmu_consumer_goods_factor = -0.025
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = { 
+				fra_lmu_industrial_capacity_factory = 0.025
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = { 
+				fra_lmu_industrial_capacity_dockyard = 0.025
+				tooltip = industrial_capacity_dockyard_tt
+			}
+		}
 	}
 }
 country_event = { # LATIN MONETARY UNION / NO
-	id = french_empire_events.35
-	title = french_empire_events.35.title
-	desc = french_empire_events.35.desc
-	picture = GFX_report_event_tank_factory
-
-	fire_only_once = no
-
-	is_triggered_only = yes
-
-	option = { # fine
-		name = french_empire_events.35.a
-	}
-}
-
-country_event = { # French-Austrian Treaty
 	id = french_empire_events.36
 	title = french_empire_events.36.title
 	desc = french_empire_events.36.desc
@@ -702,28 +673,11 @@ country_event = { # French-Austrian Treaty
 	is_triggered_only = yes
 
 	option = { # fine
-		name = french_empire_events.3.a
-		effect_tooltip = {
-			add_ideas = FRA_franco_austrian_treaty_AUS
-		}
-		FRA = {
-			country_event = {
-				id = french_empire_events.37
-				days = 4
-			}
-		}
-	}
-	option = { # No
-		name = french_empire_events.3.b
-		FRA = {
-			country_event = {
-				id = french_empire_events.38
-				days = 4
-			}
-		}
+		name = french_empire_events.36.a
 	}
 }
-country_event = { # French-Austrian Treaty / YES
+
+country_event = { # French-Austrian Treaty
 	id = french_empire_events.37
 	title = french_empire_events.37.title
 	desc = french_empire_events.37.desc
@@ -735,14 +689,27 @@ country_event = { # French-Austrian Treaty / YES
 
 	option = { # fine
 		name = french_empire_events.37.a
-		add_ideas = FRA_franco_austrian_treaty
-		custom_effect_tooltip = generic_skip_one_line_tt
-		AUS = {
+		effect_tooltip = {
 			add_ideas = FRA_franco_austrian_treaty_AUS
+		}
+		FRA = {
+			country_event = {
+				id = french_empire_events.38
+				days = 4
+			}
+		}
+	}
+	option = { # No
+		name = french_empire_events.37.b
+		FRA = {
+			country_event = {
+				id = french_empire_events.39
+				days = 4
+			}
 		}
 	}
 }
-country_event = { # French-Austrian Treaty / NO
+country_event = { # French-Austrian Treaty / YES
 	id = french_empire_events.38
 	title = french_empire_events.38.title
 	desc = french_empire_events.38.desc
@@ -754,8 +721,108 @@ country_event = { # French-Austrian Treaty / NO
 
 	option = { # fine
 		name = french_empire_events.38.a
+		add_ideas = FRA_franco_austrian_treaty
+		custom_effect_tooltip = generic_skip_one_line_tt
+		AUS = {
+			add_ideas = FRA_franco_austrian_treaty_AUS
+		}
 	}
 }
+country_event = { # French-Austrian Treaty / NO
+	id = french_empire_events.39
+	title = french_empire_events.39.title
+	desc = french_empire_events.39.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.39.a
+	}
+}
+country_event = { # Murder of Victor Noir
+	id = french_empire_events.40
+	title = french_empire_events.40.title
+	desc = french_empire_events.40.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # Send the Army
+		name = french_empire_events.40.a
+		trigger = {
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+		}
+		# REUSED FOR DECISIONS
+		#swap_ideas = {
+		#	remove_idea = FRA_threat_of_revolution
+		#	add_idea = FRA_the_communard_uprising
+		#}
+	}
+	option = { # Send the Army but historical path
+		name = french_empire_events.40.b
+		trigger = {
+			has_completed_focus = FRA_for_the_extinction_of_pauperism
+		}
+		swap_ideas = {
+			remove_idea = FRA_threat_of_revolution
+			add_idea = FRA_threat_of_revolution_3
+		}
+	}
+	option = { # arrest pierre and do nothing or sum
+		name = french_empire_events.40.c
+		set_country_flag = fra_victor_noir_dead_begins_strike
+		trigger = {
+			has_completed_focus = FRA_for_the_extinction_of_pauperism
+		}
+		custom_effect_tooltip = historical_choice_tt
+		swap_ideas = {
+			remove_idea = FRA_threat_of_revolution
+			add_idea = FRA_threat_of_revolution_2
+		}
+	}
+}
+
+country_event = { # General Strike begins / OPPOSITION FOCUS
+	id = french_empire_events.41
+	title = french_empire_events.41.title
+	desc = french_empire_events.41.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+	
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.41.a
+		add_ideas = FRA_parisian_bronze_strike
+		add_political_power = 50
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = french_empire_events.23
+			days = 24
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 country_event = {
 	id = france_fpw.1

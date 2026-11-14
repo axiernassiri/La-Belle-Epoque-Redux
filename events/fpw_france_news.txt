@@ -15,16 +15,23 @@ news_event = {
 	picture = GFX_news_event_generic_sign_treaty3
 	
 	major = yes
+
+	
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { # dear god
 		name = lbe_france_news.1.a
+		
 		hidden_effect = {
 			news_event = {
 				id = lbe_france_news.4
 				days = 66
+			}
+			news_event = {
+				id = lbe_france_news.3
+				days = 67
 			}
 		}
 	}
@@ -37,6 +44,7 @@ news_event = {
 	picture = GFX_news_event_generic_sign_treaty3
 	
 	major = yes
+	
 	
 	fire_only_once = yes
 	is_triggered_only = yes

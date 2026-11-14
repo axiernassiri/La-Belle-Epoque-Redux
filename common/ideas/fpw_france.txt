@@ -130,7 +130,7 @@ ideas = {
 		}
 		FRA_franco_austrian_treaty = {
 
-			picture = fra_bri_treaty
+			picture = can_wartime_prices_and_trade_board
 
 			allowed = {
 				original_tag = FRA
@@ -151,7 +151,7 @@ ideas = {
 		FRA_franco_austrian_treaty_AUS = {
 			name = FRA_franco_austrian_treaty
 
-			picture = fra_bri_treaty
+			picture = can_wartime_prices_and_trade_board
 
 			allowed = {
 				original_tag = ENG
@@ -171,7 +171,7 @@ ideas = {
 		}
 		FRA_intense_political_division = {
 
-			picture = gfx_
+			picture = FRA_political_violence
 
 			allowed = {
 				original_tag = FRA
@@ -191,7 +191,7 @@ ideas = {
 		FRA_intense_political_division_2 = {
 			name = FRA_intense_political_division
 
-			picture = gfx_
+			picture = FRA_political_violence
 
 			allowed = {
 				original_tag = FRA
@@ -211,7 +211,7 @@ ideas = {
 		FRA_intense_political_division_3 = {
 			name = FRA_intense_political_division
 
-			picture = gfx_
+			picture = FRA_political_violence
 
 			allowed = {
 				original_tag = FRA
@@ -231,7 +231,7 @@ ideas = {
 		FRA_intense_political_division_4 = {
 			name = FRA_intense_political_division
 
-			picture = gfx_
+			picture = FRA_political_violence
 
 			allowed = {
 				original_tag = FRA
@@ -252,7 +252,7 @@ ideas = {
 		FRA_intense_political_division_5 = {
 			name = FRA_intense_political_division
 
-			picture = gfx_
+			picture = FRA_political_violence
 
 			allowed = {
 				original_tag = FRA
@@ -271,7 +271,7 @@ ideas = {
 		}
 		FRA_the_republicans_oppose_military_reform = {
 
-			picture = gfx_
+			picture = EST_democratic_opposition
 
 			allowed = {
 				original_tag = FRA
@@ -315,7 +315,7 @@ ideas = {
 		}
 		FRA_reorganization_process_of_the_army = {
 
-			picture = gfx_
+			picture = generic_army_war_college
 
 			allowed = {
 				original_tag = FRA
@@ -363,7 +363,7 @@ ideas = {
 		}
 		FRA_parisian_bronze_strike = {
 
-			picture = gfx_
+			picture = FRA_factory_strikes
 
 			allowed = {
 				original_tag = FRA
@@ -384,7 +384,7 @@ ideas = {
 		FRA_parisian_bronze_strike_2 = {
 			name = FRA_parisian_bronze_strike
 
-			picture = gfx_
+			picture = FRA_factory_strikes
 
 			allowed = {
 				original_tag = FRA
@@ -404,7 +404,7 @@ ideas = {
 		}
 		FRA_loire_coal_basin_strike = {
 
-			picture = gfx_
+			picture = POL_the_peasants_strike
 
 			allowed = {
 				original_tag = FRA
@@ -425,7 +425,7 @@ ideas = {
 		FRA_loire_coal_basin_strike_2 = {
 			name = FRA_loire_coal_basin_strike
 
-			picture = gfx_
+			picture = POL_the_peasants_strike
 
 			allowed = {
 				original_tag = FRA
@@ -445,7 +445,7 @@ ideas = {
 		}
 		FRA_metalworkers_strike = {
 
-			picture = gfx_
+			picture = FRA_factory_strikes
 
 			allowed = {
 				original_tag = FRA
@@ -463,7 +463,7 @@ ideas = {
 		}
 		FRA_creusot_miners_strike = {
 
-			picture = gfx_
+			picture = FRA_factory_strikes
 
 			allowed = {
 				original_tag = FRA
@@ -480,7 +480,7 @@ ideas = {
 		}
 		FRA_threat_of_revolution = {
 
-			picture = gfx_
+			picture = MEX_revolutionary_army
 
 			allowed = {
 				original_tag = FRA
@@ -493,9 +493,61 @@ ideas = {
 				custom_modifier_tooltip = fra_threat_rev_tt
 			}
 		}
+		FRA_threat_of_revolution_2 = {
+			name = FRA_threat_of_revolution
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.25
+				army_attack_factor = -0.05
+				custom_modifier_tooltip = fra_threat_rev_tt
+			}
+		}
+		FRA_threat_of_revolution_3 = { # Slightly less worse
+			name = FRA_threat_of_revolution
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.2
+				custom_modifier_tooltip = fra_threat_rev_tt
+			}
+		}
+		FRA_the_communard_uprising = {
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.25
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1
+				conscription_factor = -0.1
+				custom_modifier_tooltip = fra_threat_rev_tt
+			}
+		}
+		
 		FRA_our_eyes_on_the_prussian = {
 
-			picture = gfx_
+			picture = GER_fan_prussian_militarism
 
 			allowed = {
 				original_tag = FRA
@@ -526,7 +578,9 @@ ideas = {
 				democratic_drift = -0.01
 			}
 		}
-		FRA_urban_modernization = { # used for effect tooltip, doesnt actually gets addded
+		FRA_urban_modernization = {
+
+			picture = man_five_year_plan_industry
 			allowed = {
 				original_tag = FRA
 			}
@@ -539,7 +593,9 @@ ideas = {
 				production_speed_rail_way_factor = 0.1
 			}
 		}
-		FRA_modernization_fundings_of_railways = { # used for effect tooltip, doesnt actually gets addded
+		FRA_modernization_fundings_of_railways = {
+
+			picture = generic_build_infrastructure
 			allowed = {
 				original_tag = FRA
 			}
@@ -553,7 +609,7 @@ ideas = {
 		}
 		FRA_exploit_the_resources_of_the_empire = {
 
-			picture = gfx_
+			picture = ARG_resource_extration_focus
 
 			allowed = {
 				original_tag = FRA
