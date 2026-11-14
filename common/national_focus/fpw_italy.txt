@@ -637,4 +637,79 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = ITA_an_army_with_speed
+		relative_position_id = ITA_intiate_army_reforms
+		prerequisite = { focus = ITA_intiate_army_reforms }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 5
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_better_food_for_cavalries
+		relative_position_id = ITA_an_army_with_speed
+		prerequisite = { focus = ITA_an_army_with_speed }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_speed_of_a_lion
+		relative_position_id = ITA_better_food_for_cavalries
+		prerequisite = { focus = ITA_better_food_for_cavalries }
+		allowed = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
 }
