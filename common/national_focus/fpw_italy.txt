@@ -25,8 +25,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_regio_escerito
-		allowed = {
+		id = ITA_ministry_of_war
+		available = {
 
 		}
 
@@ -48,10 +48,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_reorganize_the_army
-		relative_position_id = ITA_regio_escerito
-		prerequisite = { focus = ITA_regio_escerito }
-		allowed = {
+		id = ITA_regio_escerito
+		relative_position_id = ITA_ministry_of_war
+		prerequisite = { focus = ITA_ministry_of_war }
+		available = {
 
 		}
 
@@ -74,10 +74,10 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_supply_our_troops
-		relative_position_id = ITA_reorganize_the_army
-		prerequisite = { focus = ITA_reorganize_the_army }
+		relative_position_id = ITA_regio_escerito
+		prerequisite = { focus = ITA_regio_escerito }
 		mutually_exclusive = { focus = ITA_focus_on_speed }
-		allowed = {
+		available = {
 
 		}
 
@@ -100,10 +100,10 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_focus_on_speed
-		relative_position_id = ITA_reorganize_the_army
-		prerequisite = { focus = ITA_reorganize_the_army }
+		relative_position_id = ITA_regio_escerito
+		prerequisite = { focus = ITA_regio_escerito }
 		mutually_exclusive = { focus = ITA_supply_our_troops }
-		allowed = {
+		available = {
 
 		}
 
@@ -126,9 +126,9 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_intiate_army_reforms
-		relative_position_id = ITA_reorganize_the_army
+		relative_position_id = ITA_regio_escerito
 		prerequisite = { focus = ITA_focus_on_speed focus = ITA_supply_our_troops }
-		allowed = {
+		available = {
 
 		}
 
@@ -153,7 +153,7 @@ focus_tree = {
 		id = ITA_warriors_spirit
 		relative_position_id = ITA_intiate_army_reforms
 		prerequisite = { focus = ITA_intiate_army_reforms }
-		allowed = {
+		available = {
 
 		}
 
@@ -179,7 +179,7 @@ focus_tree = {
 		relative_position_id = ITA_warriors_spirit
 		prerequisite = { focus = ITA_warriors_spirit }
 		mutually_exclusive = { focus = ITA_the_human_wave }
-		allowed = {
+		available = {
 
 		}
 
@@ -205,7 +205,7 @@ focus_tree = {
 		relative_position_id = ITA_warriors_spirit
 		prerequisite = { focus = ITA_warriors_spirit }
 		mutually_exclusive = { focus = ITA_organized_attacks }
-		allowed = {
+		available = {
 
 		}
 
@@ -230,7 +230,7 @@ focus_tree = {
 		id = ITA_taking_a_risk
 		relative_position_id = ITA_warriors_spirit
 		prerequisite = { focus = ITA_organized_attacks focus = ITA_the_human_wave }
-		allowed = {
+		available = {
 
 		}
 
@@ -255,7 +255,7 @@ focus_tree = {
 		id = ITA_support_alpine_volunteers
 		relative_position_id = ITA_taking_a_risk
 		prerequisite = { focus = ITA_taking_a_risk }
-		allowed = {
+		available = {
 
 		}
 
@@ -280,7 +280,7 @@ focus_tree = {
 		id = ITA_expand_artillery_warfare
 		relative_position_id = ITA_taking_a_risk
 		prerequisite = { focus = ITA_taking_a_risk }
-		allowed = {
+		available = {
 
 		}
 
@@ -307,7 +307,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_expand_artillery_warfare }
 		mutually_exclusive = { focus = ITA_follow_our_own_way }
 		mutually_exclusive = { focus = ITA_follow_the_french_example }
-		allowed = {
+		available = {
 
 		}
 
@@ -335,7 +335,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_alpine_volunteers }
 		mutually_exclusive = { focus = ITA_follow_the_prussian_example }
 		mutually_exclusive = { focus = ITA_follow_the_french_example }
-		allowed = {
+		available = {
 
 		}
 
@@ -362,7 +362,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_alpine_volunteers }
 		mutually_exclusive = { focus = ITA_follow_our_own_way }
 		mutually_exclusive = { focus = ITA_follow_our_own_way }
-		allowed = {
+		available = {
 
 		}
 
@@ -387,7 +387,7 @@ focus_tree = {
 		id = ITA_the_european_lion
 		relative_position_id = ITA_follow_our_own_way
 		prerequisite = { focus = ITA_follow_the_prussian_example focus = ITA_follow_our_own_way focus = ITA_follow_the_french_example }
-		allowed = {
+		available = {
 
 		}
 
@@ -412,7 +412,7 @@ focus_tree = {
 		id = ITA_italy_on_the_defence
 		relative_position_id = ITA_intiate_army_reforms
 		prerequisite = { focus = ITA_intiate_army_reforms }
-		allowed = {
+		available = {
 
 		}
 
@@ -437,7 +437,7 @@ focus_tree = {
 		id = ITA_expand_fortification_works
 		relative_position_id = ITA_italy_on_the_defence
 		prerequisite = { focus = ITA_italy_on_the_defence }
-		allowed = {
+		available = {
 
 		}
 
@@ -462,7 +462,7 @@ focus_tree = {
 		id = ITA_to_guard_italy
 		relative_position_id = ITA_italy_on_the_defence
 		prerequisite = { focus = ITA_italy_on_the_defence }
-		allowed = {
+		available = {
 
 		}
 
@@ -488,7 +488,7 @@ focus_tree = {
 		relative_position_id = ITA_italy_on_the_defence
 		prerequisite = { focus = ITA_to_guard_italy }
 		prerequisite = { focus = ITA_expand_fortification_works }
-		allowed = {
+		available = {
 
 		}
 
@@ -514,7 +514,7 @@ focus_tree = {
 		relative_position_id = ITA_fund_gun_production
 		prerequisite = { focus = ITA_fund_gun_production }
 		mutually_exclusive = { focus = ITA_raise_conscription_laws }
-		allowed = {
+		available = {
 
 		}
 
@@ -540,7 +540,7 @@ focus_tree = {
 		relative_position_id = ITA_fund_gun_production
 		prerequisite = { focus = ITA_fund_gun_production }
 		mutually_exclusive = { focus = ITA_reorganize_supply_lines }
-		allowed = {
+		available = {
 
 		}
 
@@ -565,7 +565,7 @@ focus_tree = {
 		id = ITA_fortify_savoy
 		relative_position_id = ITA_raise_conscription_laws
 		prerequisite = { focus = ITA_raise_conscription_laws focus = ITA_reorganize_supply_lines }
-		allowed = {
+		available = {
 
 		}
 
@@ -590,7 +590,7 @@ focus_tree = {
 		id = ITA_fortify_venetia
 		relative_position_id = ITA_raise_conscription_laws
 		prerequisite = { focus = ITA_raise_conscription_laws focus = ITA_reorganize_supply_lines }
-		allowed = {
+		available = {
 
 		}
 
@@ -616,7 +616,7 @@ focus_tree = {
 		relative_position_id = ITA_fund_gun_production
 		prerequisite = { focus = ITA_fortify_venetia }
 		prerequisite = { focus = ITA_fortify_savoy }
-		allowed = {
+		available = {
 
 		}
 
@@ -641,7 +641,7 @@ focus_tree = {
 		id = ITA_an_army_with_speed
 		relative_position_id = ITA_intiate_army_reforms
 		prerequisite = { focus = ITA_intiate_army_reforms }
-		allowed = {
+		available = {
 
 		}
 
@@ -666,7 +666,7 @@ focus_tree = {
 		id = ITA_better_food_for_cavalries
 		relative_position_id = ITA_an_army_with_speed
 		prerequisite = { focus = ITA_an_army_with_speed }
-		allowed = {
+		available = {
 
 		}
 
@@ -691,7 +691,7 @@ focus_tree = {
 		id = ITA_speed_of_a_lion
 		relative_position_id = ITA_better_food_for_cavalries
 		prerequisite = { focus = ITA_better_food_for_cavalries }
-		allowed = {
+		available = {
 
 		}
 
@@ -706,6 +706,939 @@ focus_tree = {
 
 		icon = GFX_focus_PLACEHOLDER 
 		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_outmanuver_the_enemy
+		relative_position_id = ITA_better_food_for_cavalries
+		prerequisite = { focus = ITA_better_food_for_cavalries }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_mountain_warfare
+		relative_position_id = ITA_outmanuver_the_enemy
+		prerequisite = { focus = ITA_outmanuver_the_enemy }
+		prerequisite = { focus = ITA_speed_of_a_lion }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_cavalry_training
+		relative_position_id = ITA_mountain_warfare
+		prerequisite = { focus = ITA_mountain_warfare }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_faster_than_any
+		relative_position_id = ITA_cavalry_training
+		prerequisite = { focus = ITA_cavalry_training }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_rely_on_infantry
+		relative_position_id = ITA_the_european_lion
+		prerequisite = { focus = ITA_the_european_lion focus = proctector_of_italy focus = ITA_faster_than_any }
+		mutually_exclusive = { focus = ITA_priotize_artillery_warfare }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_risky_but_effective
+		relative_position_id = ITA_rely_on_infantry
+		prerequisite = { focus = ITA_rely_on_infantry }
+		mutually_exclusive = { focus = ITA_safe_production_of_infantry_guns }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_safe_production_of_infantry_guns
+		relative_position_id = ITA_rely_on_infantry
+		prerequisite = { focus = ITA_rely_on_infantry }
+		mutually_exclusive = { focus = ITA_risky_but_effective }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_infantry_men_march
+		relative_position_id = ITA_rely_on_infantry
+		prerequisite = { focus = ITA_safe_production_of_infantry_guns focus = ITA_risky_but_effective }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_priotize_artillery_warfare
+		relative_position_id = ITA_faster_than_any
+		prerequisite = { focus = ITA_the_european_lion focus = proctector_of_italy focus = ITA_faster_than_any }
+		mutually_exclusive = { focus = ITA_rely_on_infantry }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_pure_offense
+		relative_position_id = ITA_priotize_artillery_warfare
+		prerequisite = { focus = ITA_priotize_artillery_warfare }
+		mutually_exclusive = { focus = ITA_expand_defensive_artillery }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_defensive_artillery
+		relative_position_id = ITA_priotize_artillery_warfare
+		prerequisite = { focus = ITA_priotize_artillery_warfare }
+		mutually_exclusive = { focus = ITA_pure_offense }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_better_artillery_production
+		relative_position_id = ITA_priotize_artillery_warfare
+		prerequisite = { focus = ITA_expand_defensive_artillery focus = ITA_pure_offense }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_italian_general_staff
+		relative_position_id = ITA_protector_of_italy
+		prerequisite = { focus = ITA_priotize_artillery_warfare focus = ITA_rely_on_infantry }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_colonial_army
+		relative_position_id = ITA_protector_of_italy
+		prerequisite = { focus = ITA_priotize_artillery_warfare focus = ITA_rely_on_infantry }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 2
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_army_research
+		relative_position_id = ITA_protector_of_italy
+		prerequisite = { focus = ITA_priotize_artillery_warfare focus = ITA_rely_on_infantry }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -2
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_army_academies
+		relative_position_id = ITA_protector_of_italy
+		prerequisite = { focus = ITA_army_research focus = ITA_italian_general_staff focus = ITA_colonial_army }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -2
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_conscription_laws
+		relative_position_id = ITA_protector_of_italy
+		prerequisite = { focus = ITA_army_research focus = ITA_italian_general_staff focus = ITA_colonial_army }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 2
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_specialized_training
+		relative_position_id = ITA_protector_of_italy
+		prerequisite = { focus = ITA_army_research focus = ITA_italian_general_staff focus = ITA_colonial_army }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_royal_navy
+		relative_position_id = ITA_ministry_of_war
+		prerequisite = { focus = ITA_ministry_of_war }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 14
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_southern_dockyards
+		relative_position_id = ITA_royal_navy
+		prerequisite = { focus = ITA_royal_navy }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_naval_production
+		relative_position_id = ITA_southern_dockyards
+		prerequisite = { focus = ITA_southern_dockyards }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_the_navy_staff
+		relative_position_id = ITA_southern_dockyards
+		prerequisite = { focus = ITA_southern_dockyards }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_dominator_of_the_adriatic
+		relative_position_id = ITA_naval_production
+		prerequisite = { focus = ITA_naval_production }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_northern_dockyards
+		relative_position_id = ITA_royal_navy
+		prerequisite = { focus = ITA_royal_navy }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -3
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_like_the_french_navy
+		relative_position_id = ITA_northern_dockyards
+		prerequisite = { focus = ITA_northern_dockyards }
+		mutually_exclusive = { focus = ITA_like_the_british_navy }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_like_the_british_navy
+		relative_position_id = ITA_northern_dockyards
+		prerequisite = { focus = ITA_northern_dockyards }
+		mutually_exclusive = { focus = ITA_like_the_french_navy }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_naval_research
+		relative_position_id = ITA_like_the_british_navy
+		prerequisite = { focus = ITA_like_the_british_navy focus = ITA_like_the_french_navy }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_to_dominate_the_mediterranean
+		relative_position_id = ITA_royal_navy
+		prerequisite = { focus = ITA_naval_research }
+		prerequisite = { focus = ITA_dominator_of_the_adriatic }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 4
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_military_alliance_with_prussia
+		relative_position_id = ITA_ministry_of_war
+		prerequisite = { focus = ITA_ministry_of_war }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 5
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ministry_of_industry_and_commerce
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 40
+		y = 0
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ministry_of_algriculture
+		relative_position_id = ITA_ministry_of_industry_and_commerce
+		prerequisite = { focus = ITA_ministry_of_industry_and_commerce }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -7
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_farm_production
+		relative_position_id = ITA_ministry_of_algriculture
+		prerequisite = { focus = ITA_ministry_of_algriculture }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_decentralize_agriculture
+		relative_position_id = ITA_ministry_of_algriculture
+		prerequisite = { focus = ITA_ministry_of_algriculture }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_italian_wine
+		relative_position_id = ITA_ministry_of_algriculture
+		prerequisite = { focus = ITA_ministry_of_algriculture }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -3
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ministry_of_fiance
+		relative_position_id = ITA_ministry_of_industry_and_commerce
+		prerequisite = { focus = ITA_ministry_of_industry_and_commerce }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -3
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_welfare_industry
+		relative_position_id = ITA_ministry_of_industry_and_commerce
+		prerequisite = { focus = ITA_ministry_of_industry_and_commerce }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_warfare_industry
+		relative_position_id = ITA_ministry_of_industry_and_commerce
+		prerequisite = { focus = ITA_ministry_of_industry_and_commerce }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 3
 		y = 1
 
 		completion_reward = {
