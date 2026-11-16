@@ -1546,6 +1546,58 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_agrarian_reforms
+		relative_position_id = ITA_ministry_of_algriculture
+		prerequisite = { focus = ITA_farm_production }
+		prerequisite = { focus = ITA_decentralize_agriculture }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_social_reforms
+		relative_position_id = ITA_agrarian_reforms
+		prerequisite = { focus = ITA_agrarian_reforms }
+		prerequisite = { focus = ITA_expand_trade_networks }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = ITA_italian_wine
 		relative_position_id = ITA_ministry_of_algriculture
 		prerequisite = { focus = ITA_ministry_of_algriculture }
@@ -1596,7 +1648,270 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_welfare_industry
+		id = ITA_anti_corruption_measures
+		relative_position_id = ITA_ministry_of_fiance
+		prerequisite = { focus = ITA_ministry_of_fiance }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fight_against_illiteracy
+		relative_position_id = ITA_develop_the_north
+		prerequisite = { focus = ITA_anti_corruption_measures }
+		prerequisite = { focus = ITA_develop_the_north }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_literacy_in_the_north
+		relative_position_id = ITA_fight_against_illiteracy
+		prerequisite = { focus = ITA_fight_against_illiteracy }
+		prerequisite = { focus = ITA_expand_trade_networks }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_literacy_in_the_south
+		relative_position_id = ITA_fight_against_illiteracy
+		prerequisite = { focus = ITA_fight_against_illiteracy }
+		prerequisite = { focus = ITA_infrastructure_projects }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_industrialize_sardinia
+		relative_position_id = ITA_invest_in_sardegena
+		prerequisite = { focus = ITA_invest_in_sardegena }
+		prerequisite = { focus = ITA_infrastructure_projects }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_invest_in_sicily
+		relative_position_id = ITA_invest_in_sardegena
+		prerequisite = { focus = ITA_invest_in_sardegena }
+		prerequisite = { focus = ITA_central_italy_investments }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_trade_networks
+		relative_position_id = ITA_decentralize_agriculture
+		prerequisite = { focus = ITA_decentralize_agriculture }
+		prerequisite = { focus = ITA_anti_corruption_measures }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_develop_the_north
+		relative_position_id = ITA_ministry_of_fiance
+		prerequisite = { focus = ITA_ministry_of_fiance }
+		prerequisite = { focus = ITA_expand_welfare_programs }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_infrastructure_projects
+		relative_position_id = ITA_develop_the_north
+		prerequisite = { focus = ITA_develop_the_north }
+		prerequisite = { focus = ITA_develop_the_south }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_develop_the_south
+		relative_position_id = ITA_expand_welfare_programs
+		prerequisite = { focus = ITA_expand_welfare_programs }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_welfare_programs
 		relative_position_id = ITA_ministry_of_industry_and_commerce
 		prerequisite = { focus = ITA_ministry_of_industry_and_commerce }
 		available = {
@@ -1621,7 +1936,58 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_warfare_industry
+		id = ITA_capital_investment
+		relative_position_id = ITA_expand_welfare_programs
+		prerequisite = { focus = ITA_expand_welfare_programs }
+		prerequisite = { focus = ITA_militarization_of_industry }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_invest_in_sardegena
+		relative_position_id = ITA_develop_the_south
+		prerequisite = { focus = ITA_develop_the_south }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_militarization_of_industry
 		relative_position_id = ITA_ministry_of_industry_and_commerce
 		prerequisite = { focus = ITA_ministry_of_industry_and_commerce }
 		available = {
@@ -1639,6 +2005,141 @@ focus_tree = {
 
 		icon = GFX_focus_PLACEHOLDER 
 		x = 3
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_militarized_projects
+		relative_position_id = ITA_militarization_of_industry
+		prerequisite = { focus = ITA_militarization_of_industry }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_central_italy_investments
+		relative_position_id = ITA_militarized_projects
+		prerequisite = { focus = ITA_militarized_projects }
+		prerequisite = { focus = ITA_capital_investment }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_priotize_militarization
+		relative_position_id = ITA_literacy_in_the_south
+		prerequisite = { focus = ITA_literacy_in_the_south }
+		prerequisite = { focus = ITA_literacy_in_the_north }
+		prerequisite = { focus = ITA_social_reforms }
+		mutually_exclusive = { focus = ITA_priotize_civilian_industrialization }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_priotize_civilian_industrialization
+		relative_position_id = ITA_industrialize_sardinia
+		prerequisite = { focus = ITA_industrialize_sardinia }
+		prerequisite = { focus = ITA_literacy_in_the_north }
+		prerequisite = { focus = ITA_invest_in_sicily }
+		mutually_exclusive = { focus = ITA_priotize_militarization }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_invest_in_rome
+		relative_position_id = ITA_priotize_civilian_industrialization
+		prerequisite = { focus = ITA_priotize_civilian_industrialization focus = ITA_priotize_militarization }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
 		y = 1
 
 		completion_reward = {
