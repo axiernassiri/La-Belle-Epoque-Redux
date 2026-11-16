@@ -2149,14 +2149,14 @@ focus_tree = {
 	focus = {
 		id = ITA_resignation_of_alfonso
 		available = {
-
+			always = no
 		}
 
 		bypass = {
 
 		}
 
-		cost = 3
+		cost = 0
 		ai_will_do = {
 			factor = 1
 		}
