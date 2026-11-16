@@ -1,0 +1,167 @@
+ENG_royal_small_arms_factory = {
+	name = ENG_royal_small_arms_factory
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ENG_company_rsaf
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 } }
+}
+
+ENG_birmingham_small_arms = {
+	name = ENG_birmingham_small_arms
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ENG_company_bsa
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 128 } }
+}
+
+ENG_webley = {
+	name = ENG_webley
+	include = generic_support_equipment_organization
+	icon = GFX_idea_ENG_company_webley
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 128 } }
+}
+
+ENG_eley_brothers = {
+	name = ENG_eley_brothers
+	include = generic_support_equipment_organization
+	icon = GFX_idea_ENG_company_eley
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 } }
+}
+
+ENG_royal_arsenal_woolwich = {
+	name = ENG_royal_arsenal_woolwich
+	include = generic_artillery_organization
+	icon = GFX_idea_ENG_company_woolwich
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 } }
+}
+
+ENG_elswick_ordnance = {
+	name = ENG_elswick_ordnance
+	include = generic_artillery_organization
+	icon = GFX_idea_ENG_company_armstrong
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 131 } }
+}
+
+ENG_whitworth_ordnance = {
+	name = ENG_whitworth_ordnance
+	include = generic_artillery_organization
+	icon = GFX_idea_ENG_company_whitworth
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 132 } }
+}
+
+ENG_thames_ironworks = {
+	name = ENG_thames_ironworks
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_ENG_company_thames_ironworks
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 } }
+}
+
+ENG_royal_dockyards = {
+	name = ENG_royal_dockyards
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_ENG_company_royal_dockyards
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 127 } }
+}
+
+ENG_laird_brothers = {
+	name = ENG_laird_brothers
+	include = generic_raider_ship_organization
+	icon = GFX_idea_ENG_company_laird
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 132 } }
+}
+
+ENG_palmers_jarrow = {
+	name = ENG_palmers_jarrow
+	include = generic_escort_ship_organization
+	icon = GFX_idea_ENG_company_palmers
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 131 } }
+}
+
+ENG_robert_napier_and_sons = {
+	name = ENG_robert_napier_and_sons
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_ENG_company_napier
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 133 } }
+}
+
+ENG_harland_and_wolff = {
+	name = ENG_harland_and_wolff
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_ENG_company_harland_wolff
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 119 } }
+}
+
+ENG_john_penn_and_sons = {
+	name = ENG_john_penn_and_sons
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_ENG_company_penn
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 } }
+}
+
+ENG_john_brown_atlas_works = {
+	name = ENG_john_brown_atlas_works
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_ENG_company_john_brown
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 130 } }
+}
+
+ENG_lnwr = {
+	name = ENG_lnwr
+	include = generic_support_equipment_organization
+	icon = GFX_idea_ENG_company_lnwr
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 } }
+}
+
+ENG_telcon = {
+	name = ENG_telcon
+	include = generic_support_equipment_organization
+	icon = GFX_idea_ENG_company_telcon
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 126 has_completed_focus = ENG_telegraph_cables } }
+}
+
+ENG_horrockses = {
+	name = ENG_horrockses
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ENG_company_horrockses
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 132 has_completed_focus = ENG_textile_industry_in_lancashire } }
+}
+
+ENG_bolckow_vaughan = {
+	name = ENG_bolckow_vaughan
+	include = generic_artillery_organization
+	icon = GFX_idea_ENG_company_bolckow_vaughan
+	allowed = { original_tag = ENG }
+	available = { owner = { controls_state = 131 has_completed_focus = ENG_steel_and_ironworks } }
+}
+
+ENG_dowlais_iron = {
+	name = ENG_dowlais_iron
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_ENG_company_dowlais
+	allowed = { original_tag = ENG }
+	available = { owner = { has_completed_focus = ENG_steel_and_ironworks } }
+}
+
+ENG_powell_duffryn = {
+	name = ENG_powell_duffryn
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_ENG_company_powell_duffryn
+	allowed = { original_tag = ENG }
+	available = { owner = { has_completed_focus = ENG_coal_is_king } }
+}

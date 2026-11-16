@@ -1,0 +1,1470 @@
+scripted_gui = {
+	ire_irish_question_gui = {
+		window_name = "ire_irish_question_gui_window"
+		context_type = decision_category
+
+		visible = { always = yes }
+
+		triggers = {
+			ire_map_ulster_0_visible = {
+				check_variable = { var = ire_ulster value = 0 compare = greater_than_or_equals }
+				check_variable = { var = ire_ulster value = 20 compare = less_than }
+			}
+			ire_map_ulster_1_visible = {
+				check_variable = { var = ire_ulster value = 20 compare = greater_than_or_equals }
+				check_variable = { var = ire_ulster value = 40 compare = less_than }
+			}
+			ire_map_ulster_2_visible = {
+				check_variable = { var = ire_ulster value = 40 compare = greater_than_or_equals }
+				check_variable = { var = ire_ulster value = 60 compare = less_than }
+			}
+			ire_map_ulster_3_visible = {
+				check_variable = { var = ire_ulster value = 60 compare = greater_than_or_equals }
+				check_variable = { var = ire_ulster value = 80 compare = less_than }
+			}
+			ire_map_ulster_4_visible = {
+				check_variable = { var = ire_ulster value = 80 compare = greater_than_or_equals }
+			}
+			ire_map_ulster_sel_visible = {
+				has_country_flag = ire_selected_ulster
+			}
+			ire_details_ulster_visible = {
+				has_country_flag = ire_selected_ulster
+			}
+			ire_map_leinster_0_visible = {
+				check_variable = { var = ire_leinster value = 0 compare = greater_than_or_equals }
+				check_variable = { var = ire_leinster value = 20 compare = less_than }
+			}
+			ire_map_leinster_1_visible = {
+				check_variable = { var = ire_leinster value = 20 compare = greater_than_or_equals }
+				check_variable = { var = ire_leinster value = 40 compare = less_than }
+			}
+			ire_map_leinster_2_visible = {
+				check_variable = { var = ire_leinster value = 40 compare = greater_than_or_equals }
+				check_variable = { var = ire_leinster value = 60 compare = less_than }
+			}
+			ire_map_leinster_3_visible = {
+				check_variable = { var = ire_leinster value = 60 compare = greater_than_or_equals }
+				check_variable = { var = ire_leinster value = 80 compare = less_than }
+			}
+			ire_map_leinster_4_visible = {
+				check_variable = { var = ire_leinster value = 80 compare = greater_than_or_equals }
+			}
+			ire_map_leinster_sel_visible = {
+				has_country_flag = ire_selected_leinster
+			}
+			ire_details_leinster_visible = {
+				has_country_flag = ire_selected_leinster
+			}
+			ire_map_munster_0_visible = {
+				check_variable = { var = ire_munster value = 0 compare = greater_than_or_equals }
+				check_variable = { var = ire_munster value = 20 compare = less_than }
+			}
+			ire_map_munster_1_visible = {
+				check_variable = { var = ire_munster value = 20 compare = greater_than_or_equals }
+				check_variable = { var = ire_munster value = 40 compare = less_than }
+			}
+			ire_map_munster_2_visible = {
+				check_variable = { var = ire_munster value = 40 compare = greater_than_or_equals }
+				check_variable = { var = ire_munster value = 60 compare = less_than }
+			}
+			ire_map_munster_3_visible = {
+				check_variable = { var = ire_munster value = 60 compare = greater_than_or_equals }
+				check_variable = { var = ire_munster value = 80 compare = less_than }
+			}
+			ire_map_munster_4_visible = {
+				check_variable = { var = ire_munster value = 80 compare = greater_than_or_equals }
+			}
+			ire_map_munster_sel_visible = {
+				has_country_flag = ire_selected_munster
+			}
+			ire_details_munster_visible = {
+				has_country_flag = ire_selected_munster
+			}
+			ire_map_connacht_0_visible = {
+				check_variable = { var = ire_connacht value = 0 compare = greater_than_or_equals }
+				check_variable = { var = ire_connacht value = 20 compare = less_than }
+			}
+			ire_map_connacht_1_visible = {
+				check_variable = { var = ire_connacht value = 20 compare = greater_than_or_equals }
+				check_variable = { var = ire_connacht value = 40 compare = less_than }
+			}
+			ire_map_connacht_2_visible = {
+				check_variable = { var = ire_connacht value = 40 compare = greater_than_or_equals }
+				check_variable = { var = ire_connacht value = 60 compare = less_than }
+			}
+			ire_map_connacht_3_visible = {
+				check_variable = { var = ire_connacht value = 60 compare = greater_than_or_equals }
+				check_variable = { var = ire_connacht value = 80 compare = less_than }
+			}
+			ire_map_connacht_4_visible = {
+				check_variable = { var = ire_connacht value = 80 compare = greater_than_or_equals }
+			}
+			ire_map_connacht_sel_visible = {
+				has_country_flag = ire_selected_connacht
+			}
+			ire_details_connacht_visible = {
+				has_country_flag = ire_selected_connacht
+			}
+			ire_hint_visible = {
+				NOT = {
+					has_country_flag = ire_selected_ulster
+					has_country_flag = ire_selected_leinster
+					has_country_flag = ire_selected_munster
+					has_country_flag = ire_selected_connacht
+				}
+			}
+		}
+
+		effects = {
+			ire_hit_ulster_0_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_1_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_2_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_3_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_4_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_5_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_6_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_7_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_8_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_9_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_10_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_11_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_12_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_13_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_14_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_15_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_16_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_17_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_18_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_19_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_20_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_21_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_22_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_23_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_24_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_25_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_ulster_26_click = {
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_ulster }
+					clr_country_flag = ire_selected_ulster
+				}
+				else = {
+					set_country_flag = ire_selected_ulster
+				}
+			}
+			ire_hit_leinster_0_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_1_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_2_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_3_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_4_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_5_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_6_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_7_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_8_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_9_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_10_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_11_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_12_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_13_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_14_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_15_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_16_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_17_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_18_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_19_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_20_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_21_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_22_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_23_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_24_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_25_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_26_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_27_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_28_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_29_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_30_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_leinster_31_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_munster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_leinster }
+					clr_country_flag = ire_selected_leinster
+				}
+				else = {
+					set_country_flag = ire_selected_leinster
+				}
+			}
+			ire_hit_munster_0_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_1_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_2_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_3_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_4_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_5_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_6_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_7_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_8_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_9_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_10_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_11_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_12_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_13_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_14_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_15_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_16_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_17_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_18_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_19_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_20_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_21_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_22_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_23_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_24_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_25_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_26_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_27_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_munster_28_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_connacht
+				if = {
+					limit = { has_country_flag = ire_selected_munster }
+					clr_country_flag = ire_selected_munster
+				}
+				else = {
+					set_country_flag = ire_selected_munster
+				}
+			}
+			ire_hit_connacht_0_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_1_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_2_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_3_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_4_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_5_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_6_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_7_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_8_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_9_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_10_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_11_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_12_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_13_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_14_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_15_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_16_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_17_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_18_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_19_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_20_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_21_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_22_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+			ire_hit_connacht_23_click = {
+				clr_country_flag = ire_selected_ulster
+				clr_country_flag = ire_selected_leinster
+				clr_country_flag = ire_selected_munster
+				if = {
+					limit = { has_country_flag = ire_selected_connacht }
+					clr_country_flag = ire_selected_connacht
+				}
+				else = {
+					set_country_flag = ire_selected_connacht
+				}
+			}
+		}
+
+		ai_enabled = { always = no }
+		ai_test_interval = 290
+		ai_test_variance = 0.5
+	}
+}

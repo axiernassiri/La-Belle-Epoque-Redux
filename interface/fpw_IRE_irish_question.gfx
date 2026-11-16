@@ -1,0 +1,230 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ire_map_land"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_outline"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_ulster_0"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_ulster_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_ulster_1"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_ulster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_ulster_2"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_ulster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_ulster_3"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_ulster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_ulster_4"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_ulster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_ulster_sel"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_ulster_sel.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_leinster_0"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_leinster_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_leinster_1"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_leinster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_leinster_2"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_leinster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_leinster_3"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_leinster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_leinster_4"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_leinster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_leinster_sel"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_leinster_sel.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_munster_0"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_munster_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_munster_1"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_munster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_munster_2"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_munster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_munster_3"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_munster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_munster_4"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_munster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_munster_sel"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_munster_sel.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_connacht_0"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_connacht_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_connacht_1"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_connacht_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_connacht_2"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_connacht_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_connacht_3"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_connacht_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_connacht_4"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_connacht_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_map_connacht_sel"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_map_connacht_sel.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_swatch_0"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_swatch_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_swatch_1"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_swatch_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_swatch_2"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_swatch_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_swatch_3"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_swatch_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_swatch_4"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_swatch_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_6"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_6.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_12"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_12.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_18"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_18.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_24"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_24.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_30"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_30.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_36"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_36.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_48"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_48.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_54"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_54.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_60"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_60.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_66"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_66.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_72"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_72.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_78"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_78.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_84"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_84.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_90"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_90.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_96"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_96.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_102"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_102.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_108"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_108.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_114"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_114.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_120"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_120.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_126"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_126.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_132"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_132.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_138"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_138.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_144"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_144.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_150"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_150.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_156"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_156.dds"
+	}
+	spriteType = {
+		name = "GFX_ire_hit_180"
+		texturefile = "gfx/interface/ire_irish_question_gui/ire_hit_180.dds"
+	}
+}

@@ -2,19 +2,36 @@ add_namespace = britain_fpw
 
 country_event = {
 	id = britain_fpw.1
-	title = "Lord Russell's government collapses"
+	title = britain_fpw.1.t
 	desc = britain_fpw.1.d
-	picture = GFX_fpw_russell_resigns
-	
+
 	is_triggered_only = yes
 
+	trigger = {
+		original_tag = ENG
+		NOT = { has_completed_focus = ENG_collapse_of_liberal_government }
+		NOT = { has_completed_focus = ENG_russell_carries_on }
+		NOT = { has_country_flag = ENG_start_1870 }
+	}
+
 	option = {
-		name = "Let's see what the future holds."
-		ai_chance = {
-			base = 50
+		name = britain_fpw.1.a
+		ai_chance = { base = 90 }
+		if = {
+			limit = { NOT = { has_completed_focus = ENG_the_reform_question } }
+			complete_national_focus = ENG_the_reform_question
 		}
-		add_stability = -0.05
 		complete_national_focus = ENG_collapse_of_liberal_government
+	}
+	option = {
+		name = britain_fpw.1.b
+		ai_chance = { base = 10 }
+		if = {
+			limit = { NOT = { has_completed_focus = ENG_the_reform_question } }
+			complete_national_focus = ENG_the_reform_question
+		}
+		complete_national_focus = ENG_russell_carries_on
+		add_political_power = -50
 	}
 }
 country_event = {
@@ -224,14 +241,13 @@ country_event = {
 	id = britain_fpw.6
 	title = britain_fpw.6.t
 	desc = britain_fpw.6.d
-	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	mean_time_to_happen = {
-		days = 151	# Historical outbreak time after elections
+		days = 151
 	}
 
 	option = { 

@@ -1,0 +1,1081 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ire_irish_question_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 506 }
+
+		instantTextBoxType = {
+			name = "ire_header_total"
+			position = { x = 8 y = 2 }
+			font = "hoi_18mbs"
+			text = "IRE_gui_header_total"
+			maxWidth = 480
+			maxHeight = 22
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "ire_header_thresholds"
+			position = { x = 8 y = 22 }
+			font = "hoi_16mbs"
+			text = "IRE_gui_header_thresholds"
+			maxWidth = 480
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "ire_map_land"
+			spriteType = "GFX_ire_map_land"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_ulster_0"
+			spriteType = "GFX_ire_map_ulster_0"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_ulster_1"
+			spriteType = "GFX_ire_map_ulster_1"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_ulster_2"
+			spriteType = "GFX_ire_map_ulster_2"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_ulster_3"
+			spriteType = "GFX_ire_map_ulster_3"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_ulster_4"
+			spriteType = "GFX_ire_map_ulster_4"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_leinster_0"
+			spriteType = "GFX_ire_map_leinster_0"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_leinster_1"
+			spriteType = "GFX_ire_map_leinster_1"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_leinster_2"
+			spriteType = "GFX_ire_map_leinster_2"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_leinster_3"
+			spriteType = "GFX_ire_map_leinster_3"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_leinster_4"
+			spriteType = "GFX_ire_map_leinster_4"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_munster_0"
+			spriteType = "GFX_ire_map_munster_0"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_munster_1"
+			spriteType = "GFX_ire_map_munster_1"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_munster_2"
+			spriteType = "GFX_ire_map_munster_2"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_munster_3"
+			spriteType = "GFX_ire_map_munster_3"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_munster_4"
+			spriteType = "GFX_ire_map_munster_4"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_connacht_0"
+			spriteType = "GFX_ire_map_connacht_0"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_connacht_1"
+			spriteType = "GFX_ire_map_connacht_1"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_connacht_2"
+			spriteType = "GFX_ire_map_connacht_2"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_connacht_3"
+			spriteType = "GFX_ire_map_connacht_3"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_connacht_4"
+			spriteType = "GFX_ire_map_connacht_4"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_outline"
+			spriteType = "GFX_ire_map_outline"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_ulster_sel"
+			spriteType = "GFX_ire_map_ulster_sel"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_leinster_sel"
+			spriteType = "GFX_ire_map_leinster_sel"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_munster_sel"
+			spriteType = "GFX_ire_map_munster_sel"
+			position = { x = 4 y = 44 }
+		}
+		iconType = {
+			name = "ire_map_connacht_sel"
+			spriteType = "GFX_ire_map_connacht_sel"
+			position = { x = 4 y = 44 }
+		}
+
+		buttonType = {
+			name = "ire_hit_ulster_0"
+			spriteType = "GFX_ire_hit_12"
+			position = { x = 214 y = 50 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_1"
+			spriteType = "GFX_ire_hit_30"
+			position = { x = 208 y = 56 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_2"
+			spriteType = "GFX_ire_hit_6"
+			position = { x = 256 y = 56 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_3"
+			spriteType = "GFX_ire_hit_54"
+			position = { x = 184 y = 62 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_4"
+			spriteType = "GFX_ire_hit_36"
+			position = { x = 244 y = 62 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_5"
+			spriteType = "GFX_ire_hit_60"
+			position = { x = 166 y = 68 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_6"
+			spriteType = "GFX_ire_hit_48"
+			position = { x = 232 y = 68 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_7"
+			spriteType = "GFX_ire_hit_120"
+			position = { x = 166 y = 74 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_8"
+			spriteType = "GFX_ire_hit_126"
+			position = { x = 160 y = 80 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_9"
+			spriteType = "GFX_ire_hit_132"
+			position = { x = 160 y = 86 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_10"
+			spriteType = "GFX_ire_hit_138"
+			position = { x = 160 y = 92 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_11"
+			spriteType = "GFX_ire_hit_144"
+			position = { x = 154 y = 98 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_12"
+			spriteType = "GFX_ire_hit_150"
+			position = { x = 148 y = 104 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_13"
+			spriteType = "GFX_ire_hit_156"
+			position = { x = 148 y = 110 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_14"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 160 y = 116 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_15"
+			spriteType = "GFX_ire_hit_48"
+			position = { x = 262 y = 116 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_16"
+			spriteType = "GFX_ire_hit_138"
+			position = { x = 172 y = 122 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_17"
+			spriteType = "GFX_ire_hit_132"
+			position = { x = 178 y = 128 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_18"
+			spriteType = "GFX_ire_hit_132"
+			position = { x = 178 y = 134 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_19"
+			spriteType = "GFX_ire_hit_120"
+			position = { x = 184 y = 140 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_20"
+			spriteType = "GFX_ire_hit_114"
+			position = { x = 184 y = 146 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_21"
+			spriteType = "GFX_ire_hit_108"
+			position = { x = 184 y = 152 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_22"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 196 y = 158 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_23"
+			spriteType = "GFX_ire_hit_54"
+			position = { x = 202 y = 164 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_24"
+			spriteType = "GFX_ire_hit_48"
+			position = { x = 202 y = 170 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_25"
+			spriteType = "GFX_ire_hit_36"
+			position = { x = 208 y = 176 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_ulster_26"
+			spriteType = "GFX_ire_hit_30"
+			position = { x = 208 y = 182 }
+			pdx_tooltip = "IRE_tt_ulster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_0"
+			spriteType = "GFX_ire_hit_24"
+			position = { x = 256 y = 164 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_1"
+			spriteType = "GFX_ire_hit_24"
+			position = { x = 250 y = 170 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_2"
+			spriteType = "GFX_ire_hit_12"
+			position = { x = 196 y = 176 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_3"
+			spriteType = "GFX_ire_hit_24"
+			position = { x = 244 y = 176 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_4"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 190 y = 182 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_5"
+			spriteType = "GFX_ire_hit_36"
+			position = { x = 238 y = 182 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_6"
+			spriteType = "GFX_ire_hit_84"
+			position = { x = 190 y = 188 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_7"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 184 y = 194 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_8"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 178 y = 200 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_9"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 184 y = 206 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_10"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 184 y = 212 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_11"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 184 y = 218 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_12"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 184 y = 224 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_13"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 178 y = 230 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_14"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 178 y = 236 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_15"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 178 y = 242 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_16"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 184 y = 248 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_17"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 184 y = 254 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_18"
+			spriteType = "GFX_ire_hit_12"
+			position = { x = 178 y = 260 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_19"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 196 y = 260 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_20"
+			spriteType = "GFX_ire_hit_84"
+			position = { x = 196 y = 266 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_21"
+			spriteType = "GFX_ire_hit_84"
+			position = { x = 196 y = 272 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_22"
+			spriteType = "GFX_ire_hit_78"
+			position = { x = 202 y = 278 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_23"
+			spriteType = "GFX_ire_hit_66"
+			position = { x = 208 y = 284 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_24"
+			spriteType = "GFX_ire_hit_66"
+			position = { x = 208 y = 290 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_25"
+			spriteType = "GFX_ire_hit_66"
+			position = { x = 208 y = 296 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_26"
+			spriteType = "GFX_ire_hit_60"
+			position = { x = 208 y = 302 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_27"
+			spriteType = "GFX_ire_hit_54"
+			position = { x = 214 y = 308 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_28"
+			spriteType = "GFX_ire_hit_54"
+			position = { x = 214 y = 314 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_29"
+			spriteType = "GFX_ire_hit_36"
+			position = { x = 232 y = 320 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_30"
+			spriteType = "GFX_ire_hit_12"
+			position = { x = 232 y = 326 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_leinster_31"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 250 y = 326 }
+			pdx_tooltip = "IRE_tt_leinster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_0"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 118 y = 242 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_1"
+			spriteType = "GFX_ire_hit_6"
+			position = { x = 172 y = 242 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_2"
+			spriteType = "GFX_ire_hit_24"
+			position = { x = 112 y = 248 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_3"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 166 y = 248 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_4"
+			spriteType = "GFX_ire_hit_54"
+			position = { x = 106 y = 254 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_5"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 166 y = 254 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_6"
+			spriteType = "GFX_ire_hit_72"
+			position = { x = 106 y = 260 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_7"
+			spriteType = "GFX_ire_hit_6"
+			position = { x = 190 y = 260 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_8"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 106 y = 266 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_9"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 100 y = 272 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_10"
+			spriteType = "GFX_ire_hit_108"
+			position = { x = 94 y = 278 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_11"
+			spriteType = "GFX_ire_hit_126"
+			position = { x = 82 y = 284 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_12"
+			spriteType = "GFX_ire_hit_126"
+			position = { x = 82 y = 290 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_13"
+			spriteType = "GFX_ire_hit_114"
+			position = { x = 94 y = 296 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_14"
+			spriteType = "GFX_ire_hit_126"
+			position = { x = 82 y = 302 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_15"
+			spriteType = "GFX_ire_hit_6"
+			position = { x = 76 y = 308 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_16"
+			spriteType = "GFX_ire_hit_126"
+			position = { x = 88 y = 308 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_17"
+			spriteType = "GFX_ire_hit_150"
+			position = { x = 64 y = 314 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_18"
+			spriteType = "GFX_ire_hit_180"
+			position = { x = 52 y = 320 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_19"
+			spriteType = "GFX_ire_hit_180"
+			position = { x = 52 y = 326 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_20"
+			spriteType = "GFX_ire_hit_138"
+			position = { x = 70 y = 332 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_21"
+			spriteType = "GFX_ire_hit_138"
+			position = { x = 64 y = 338 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_22"
+			spriteType = "GFX_ire_hit_138"
+			position = { x = 58 y = 344 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_23"
+			spriteType = "GFX_ire_hit_132"
+			position = { x = 58 y = 350 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_24"
+			spriteType = "GFX_ire_hit_114"
+			position = { x = 64 y = 356 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_25"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 70 y = 362 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_26"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 70 y = 368 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_27"
+			spriteType = "GFX_ire_hit_60"
+			position = { x = 88 y = 374 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_munster_28"
+			spriteType = "GFX_ire_hit_36"
+			position = { x = 88 y = 380 }
+			pdx_tooltip = "IRE_tt_munster"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_0"
+			spriteType = "GFX_ire_hit_6"
+			position = { x = 166 y = 122 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_1"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 160 y = 128 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_2"
+			spriteType = "GFX_ire_hit_18"
+			position = { x = 94 y = 134 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_3"
+			spriteType = "GFX_ire_hit_30"
+			position = { x = 148 y = 134 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_4"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 82 y = 140 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_5"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 82 y = 146 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_6"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 82 y = 152 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_7"
+			spriteType = "GFX_ire_hit_114"
+			position = { x = 82 y = 158 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_8"
+			spriteType = "GFX_ire_hit_126"
+			position = { x = 76 y = 164 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_9"
+			spriteType = "GFX_ire_hit_120"
+			position = { x = 82 y = 170 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_10"
+			spriteType = "GFX_ire_hit_108"
+			position = { x = 88 y = 176 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_11"
+			spriteType = "GFX_ire_hit_90"
+			position = { x = 100 y = 182 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_12"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 88 y = 188 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_13"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 88 y = 194 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_14"
+			spriteType = "GFX_ire_hit_102"
+			position = { x = 76 y = 200 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_15"
+			spriteType = "GFX_ire_hit_108"
+			position = { x = 76 y = 206 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_16"
+			spriteType = "GFX_ire_hit_108"
+			position = { x = 76 y = 212 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_17"
+			spriteType = "GFX_ire_hit_108"
+			position = { x = 76 y = 218 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_18"
+			spriteType = "GFX_ire_hit_96"
+			position = { x = 88 y = 224 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_19"
+			spriteType = "GFX_ire_hit_72"
+			position = { x = 106 y = 230 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_20"
+			spriteType = "GFX_ire_hit_48"
+			position = { x = 130 y = 236 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_21"
+			spriteType = "GFX_ire_hit_36"
+			position = { x = 136 y = 242 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_22"
+			spriteType = "GFX_ire_hit_30"
+			position = { x = 136 y = 248 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "ire_hit_connacht_23"
+			spriteType = "GFX_ire_hit_6"
+			position = { x = 160 y = 254 }
+			pdx_tooltip = "IRE_tt_connacht"
+			clicksound = click_default
+		}
+
+		instantTextBoxType = {
+			name = "ire_legend_title"
+			position = { x = 362 y = 50 }
+			font = "hoi_16mbs"
+			text = "IRE_legend_title"
+			maxWidth = 124
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+		iconType = {
+			name = "ire_legend_swatch_0"
+			spriteType = "GFX_ire_swatch_0"
+			position = { x = 364 y = 73 }
+		}
+		instantTextBoxType = {
+			name = "ire_legend_0"
+			position = { x = 384 y = 72 }
+			font = "hoi_16mbs"
+			text = "IRE_legend_0"
+			maxWidth = 104
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+		iconType = {
+			name = "ire_legend_swatch_1"
+			spriteType = "GFX_ire_swatch_1"
+			position = { x = 364 y = 93 }
+		}
+		instantTextBoxType = {
+			name = "ire_legend_1"
+			position = { x = 384 y = 92 }
+			font = "hoi_16mbs"
+			text = "IRE_legend_1"
+			maxWidth = 104
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+		iconType = {
+			name = "ire_legend_swatch_2"
+			spriteType = "GFX_ire_swatch_2"
+			position = { x = 364 y = 113 }
+		}
+		instantTextBoxType = {
+			name = "ire_legend_2"
+			position = { x = 384 y = 112 }
+			font = "hoi_16mbs"
+			text = "IRE_legend_2"
+			maxWidth = 104
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+		iconType = {
+			name = "ire_legend_swatch_3"
+			spriteType = "GFX_ire_swatch_3"
+			position = { x = 364 y = 133 }
+		}
+		instantTextBoxType = {
+			name = "ire_legend_3"
+			position = { x = 384 y = 132 }
+			font = "hoi_16mbs"
+			text = "IRE_legend_3"
+			maxWidth = 104
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+		iconType = {
+			name = "ire_legend_swatch_4"
+			spriteType = "GFX_ire_swatch_4"
+			position = { x = 364 y = 153 }
+		}
+		instantTextBoxType = {
+			name = "ire_legend_4"
+			position = { x = 384 y = 152 }
+			font = "hoi_16mbs"
+			text = "IRE_legend_4"
+			maxWidth = 104
+			maxHeight = 18
+			format = left
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "ire_hint"
+			position = { x = 8 y = 396 }
+			font = "hoi_16mbs"
+			text = "IRE_gui_hint"
+			maxWidth = 480
+			maxHeight = 60
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "ire_details_ulster"
+			position = { x = 8 y = 396 }
+			font = "hoi_16mbs"
+			text = "IRE_details_ulster"
+			maxWidth = 480
+			maxHeight = 104
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "ire_details_leinster"
+			position = { x = 8 y = 396 }
+			font = "hoi_16mbs"
+			text = "IRE_details_leinster"
+			maxWidth = 480
+			maxHeight = 104
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "ire_details_munster"
+			position = { x = 8 y = 396 }
+			font = "hoi_16mbs"
+			text = "IRE_details_munster"
+			maxWidth = 480
+			maxHeight = 104
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "ire_details_connacht"
+			position = { x = 8 y = 396 }
+			font = "hoi_16mbs"
+			text = "IRE_details_connacht"
+			maxWidth = 480
+			maxHeight = 104
+			format = left
+			fixedsize = yes
+		}
+	}
+}

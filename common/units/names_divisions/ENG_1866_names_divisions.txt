@@ -1,0 +1,60 @@
+ENG_1866_INF = {
+	name = "Field Brigades"
+	for_countries = { ENG }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d Field Brigade"
+	ordered = {
+		1 = { "Brigade of Guards" "Grenadier, Coldstream and Scots Fusilier Guards, London" }
+		2 = { "1st Brigade, Aldershot" "Camp at Aldershot" }
+		3 = { "2nd Brigade, Aldershot" "Camp at Aldershot" }
+		4 = { "Dublin Garrison" "Irish Command" }
+		5 = { "Curragh Camp Brigade" "Irish Command" }
+		6 = { "Cork District" "Irish Command" }
+		7 = { "Belfast District" "Irish Command" }
+		8 = { "North British District" "Edinburgh Castle and Glasgow" }
+		9 = { "Northern District" "York and Manchester" }
+		10 = { "Western District" "Plymouth and Devonport" }
+		11 = { "South-Eastern District" "Dover and Shorncliffe" }
+		12 = { "Gibraltar Garrison" }
+		13 = { "Malta Garrison" }
+		14 = { "China and Straits Garrison" "Hong Kong" }
+		15 = { "Ceylon Garrison" }
+		16 = { "West Indies Garrison" }
+		17 = { "Mauritius Garrison" }
+		18 = { "Bermuda Garrison" }
+		19 = { "New Zealand Field Force" "Regiments still serving in the New Zealand Wars" }
+		20 = { "Australian Garrison" }
+		21 = { "Woolwich Garrison" "Royal Artillery and Royal Engineers depot" }
+	}
+}
+
+ENG_1866_CAV = {
+	name = "Cavalry Brigades"
+	for_countries = { ENG }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%d Cavalry Brigade"
+	ordered = {
+		1 = { "Household Cavalry" "Life Guards and Royal Horse Guards" }
+		2 = { "Aldershot Cavalry Brigade" }
+		3 = { "Irish Cavalry Brigade" }
+		4 = { "Northern Cavalry Brigade" }
+	}
+}
+
+ENG_1866_VOL = {
+	name = "Militia and Volunteers"
+	for_countries = { ENG }
+	can_use = { always = yes }
+	division_types = { "irregular_infantry" "militia" }
+	fallback_name = "%d Volunteer Brigade"
+	ordered = {
+		1 = { "Metropolitan Volunteers" "London Rifle Volunteer Corps" }
+		2 = { "Lancashire Volunteers" }
+		3 = { "Warwickshire and Staffordshire Volunteers" }
+		4 = { "West Riding Volunteers" }
+		5 = { "Lanarkshire Volunteers" }
+		6 = { "Home Counties Militia" }
+	}
+}

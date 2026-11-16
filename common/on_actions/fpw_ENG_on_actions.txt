@@ -1,12 +1,27 @@
 on_actions = {
-    on_startup = {
-        effect = {
-            ENG = {
-                country_event = {
-                    id = britain_fpw.1
-                    days = 176
-                }
-            }
-        }
-    }
+	on_startup = {
+		effect = {
+			ENG = {
+				if = {
+					limit = { has_start_date < 1866.1.2 }
+					country_event = { id = britain_fpw.16 days = 15 }
+					country_event = { id = britain_fpw.10 days = 129 }
+					country_event = { id = britain_fpw.12 days = 151 }
+					country_event = { id = britain_fpw.1 days = 176 }
+					country_event = { id = britain_fpw.11 days = 203 }
+					country_event = { id = britain_fpw.15 days = 282 }
+					country_event = { id = britain_fpw.13 days = 428 }
+					country_event = { id = britain_fpw.19 days = 590 }
+					country_event = { id = britain_fpw.14 days = 711 }
+					country_event = { id = britain_fpw.31 days = 1620 }
+					country_event = { id = britain_fpw.39 days = 1946 }
+				}
+				if = {
+					limit = { has_start_date > 1869.12.31 }
+					country_event = { id = britain_fpw.31 days = 160 }
+					country_event = { id = britain_fpw.39 days = 486 }
+				}
+			}
+		}
+	}
 }

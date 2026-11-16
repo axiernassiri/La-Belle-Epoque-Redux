@@ -1,0 +1,425 @@
+ideas = {
+	country = {
+
+		fpw_eng_city_of_london = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = AUS_creditanstalt_bankverein
+			modifier = {
+				trade_opinion_factor = 0.25
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.10
+			}
+		}
+
+		fpw_eng_rule_britannia = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				navy_org_factor = 0.10
+				naval_morale_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				convoy_escort_efficiency = 0.10
+			}
+		}
+
+		fpw_eng_reform_agitation = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.10
+				fascism_drift = 0.02
+			}
+		}
+
+		fpw_eng_irish_question = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.05
+				required_garrison_factor = 0.15
+				resistance_growth = 0.10
+				conscription_factor = -0.05
+			}
+		}
+
+		fpw_eng_fenian_insurgency = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_monarchist_uprising
+			modifier = {
+				stability_factor = -0.10
+				required_garrison_factor = 0.30
+				resistance_growth = 0.25
+				war_support_factor = -0.05
+			}
+		}
+
+		fpw_eng_labour_tensions = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = FIN_finnish_federation_of_trade_unions
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				communism_drift = 0.02
+			}
+		}
+
+		fpw_eng_purchase_system = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				army_leader_start_level = -1
+				experience_gain_army_factor = -0.15
+				army_org_factor = -0.05
+				command_power_gain_mult = -0.10
+			}
+		}
+
+		fpw_eng_seclusion_of_the_queen = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = -0.03
+				political_power_gain = -0.05
+				drift_defence_factor = -0.10
+			}
+		}
+
+		fpw_eng_urban_squalor = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = raj_risk_of_famine
+			modifier = {
+				monthly_population = -0.05
+				army_morale_factor = -0.05
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+
+		fpw_eng_panic_of_1866 = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_economic_crisis
+			modifier = {
+				consumer_goods_factor = 0.08
+				production_speed_buildings_factor = -0.15
+				trade_opinion_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+
+		fpw_eng_credit_restored = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_mild_economic_recovery
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		fpw_eng_household_suffrage = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.20
+				conscription_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		fpw_eng_secret_ballot = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				communism_drift = -0.02
+			}
+		}
+
+		fpw_eng_meritocratic_civil_service = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_factor = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+
+		fpw_eng_tory_democracy = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.05
+				democratic_drift = 0.03
+			}
+		}
+
+		fpw_eng_peace_retrenchment_reform = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		fpw_eng_unpopular_licensing_act = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.05
+				democratic_drift = 0.03
+			}
+		}
+
+		fpw_eng_sanitary_reform = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = JAP_medical_infrastructure
+			modifier = {
+				monthly_population = 0.05
+				army_morale_factor = 0.03
+				production_factory_max_efficiency_factor = 0.02
+			}
+		}
+
+		fpw_eng_elementary_education = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = fra_education_reform
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_factor = 0.03
+			}
+		}
+
+		fpw_eng_voluntary_schools = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.02
+				stability_factor = 0.03
+				democratic_drift = 0.02
+			}
+		}
+
+		fpw_eng_legal_trade_unions = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = FIN_finnish_federation_of_trade_unions_light
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.03
+				communism_drift = 0.02
+			}
+		}
+
+		fpw_eng_restricted_picketing = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				stability_factor = -0.02
+				communism_drift = -0.02
+			}
+		}
+
+		fpw_eng_nine_hours_day = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		fpw_eng_coercion_in_ireland = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				resistance_target = -0.15
+				compliance_growth = -0.05
+				stability_factor = -0.02
+				required_garrison_factor = 0.10
+			}
+		}
+
+		fpw_eng_justice_for_ireland = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				compliance_growth = 0.10
+				resistance_target = -0.10
+				stability_factor = 0.03
+			}
+		}
+
+		fpw_eng_free_trade = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				trade_opinion_factor = 0.20
+				min_export = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		fpw_eng_fair_trade = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_improved_industries
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				local_resources_factor = 0.05
+				trade_opinion_factor = -0.10
+			}
+		}
+
+		fpw_eng_cattle_plague = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = -0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		fpw_eng_short_service = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				conscription_factor = 0.15
+				training_time_army_factor = -0.10
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		fpw_eng_professional_officer_corps = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				army_leader_start_level = 1
+				experience_gain_army_factor = 0.10
+				army_org_factor = 0.05
+				command_power_gain_mult = 0.10
+			}
+		}
+
+		fpw_eng_regimental_tradition = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_morale_factor = 0.10
+				army_defence_factor = 0.05
+				experience_gain_army_factor = -0.05
+			}
+		}
+
+		fpw_eng_balloon_experiments = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				recon_factor = 0.10
+				army_intel_to_others = -5
+				army_artillery_attack_factor = 0.03
+			}
+		}
+
+		fpw_eng_flying_squadron = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				naval_speed_factor = 0.05
+				navy_max_range_factor = 0.15
+				experience_gain_navy_factor = 0.10
+			}
+		}
+
+		fpw_eng_royal_revival = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.03
+				drift_defence_factor = 0.15
+			}
+		}
+
+		fpw_eng_republican_agitation = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.08
+				fascism_drift = 0.03
+				political_power_gain = -0.10
+			}
+		}
+
+		fpw_eng_imperial_federation = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				subjects_autonomy_gain = -0.25
+				conscription_factor = 0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		fpw_eng_pax_britannica = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				trade_opinion_factor = 0.15
+				political_power_factor = 0.05
+				justify_war_goal_time = -0.15
+			}
+		}
+	}
+}

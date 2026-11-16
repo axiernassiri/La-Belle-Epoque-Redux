@@ -1,0 +1,17 @@
+ENG_parliamentary_affairs = {
+	priority = 20
+	icon = GFX_decision_category_generic_political_actions
+	allowed = { original_tag = ENG }
+}
+
+ENG_imperial_affairs = {
+	priority = 12
+	icon = GFX_decision_category_eng_move_to_secure_the_dominions
+	allowed = { original_tag = ENG }
+}
+
+ENG_workshop_affairs = {
+	priority = 10
+	icon = GFX_decision_category_generic_foreign_policy
+	allowed = { original_tag = ENG }
+}

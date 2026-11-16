@@ -1,0 +1,123 @@
+units = {
+
+	fleet = {
+		name = "Channel Squadron"
+		naval_base = 3501
+		task_force = {
+			name = "Channel Squadron"
+			location = 3501
+			ship = { name = "HMS Achilles" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Warrior" definition = battleship pride_of_the_fleet = yes equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Black Prince" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Minotaur" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hector" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Defence" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Bellerophon" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pallas" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Edgar" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Trinculo" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "Home Ports Squadron"
+		naval_base = 540
+		task_force = {
+			name = "Coast Defence Ships"
+			location = 540
+			ship = { name = "HMS Royal Sovereign" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Prince Albert" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Scorpion" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Wivern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Resistance" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Research" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Enterprise" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Lord Clyde" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "Mediterranean Fleet"
+		naval_base = 12003
+		task_force = {
+			name = "Mediterranean Fleet"
+			location = 12003
+			ship = { name = "HMS Victoria" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Caledonia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Royal Oak" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Prince Consort" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Ocean" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Marlborough" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Liffey" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pylades" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Racer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "North America and West Indies Station"
+		naval_base = 13010
+		task_force = {
+			name = "North America and West Indies Station"
+			location = 13010
+			ship = { name = "HMS Duncan" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Galatea" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Aurora" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Jason" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Rosario" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Lily" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "China Station"
+		naval_base = 10062
+		task_force = {
+			name = "China Station"
+			location = 10062
+			ship = { name = "HMS Princess Royal" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pearl" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Barrosa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Leopard" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Haughty" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Opossum" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "East Indies Station"
+		naval_base = 10201
+		task_force = {
+			name = "East Indies Station"
+			location = 10201
+			ship = { name = "HMS Octavia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Highflyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Vigilant" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "Australia Station"
+		naval_base = 12406
+		task_force = {
+			name = "Australia Station"
+			location = 12406
+			ship = { name = "HMS Challenger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Esk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Falcon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+
+	fleet = {
+		name = "West Africa Squadron"
+		naval_base = 13013
+		task_force = {
+			name = "West Africa Squadron"
+			location = 13013
+			ship = { name = "HMS Rattlesnake" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Espoir" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pandora" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Lee" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

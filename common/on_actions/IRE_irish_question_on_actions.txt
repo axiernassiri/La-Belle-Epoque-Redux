@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ENG = {
+				ire_init = yes
+				if = {
+					limit = { has_start_date < 1866.1.2 }
+					country_event = { id = ire_question.10 days = 1599 }
+					country_event = { id = ire_question.11 days = 2878 }
+				}
+				if = {
+					limit = { has_start_date > 1869.12.31 }
+					country_event = { id = ire_question.10 days = 138 }
+					country_event = { id = ire_question.11 days = 1417 }
+				}
+			}
+		}
+	}
+
+	on_monthly_ENG = {
+		effect = {
+			if = {
+				limit = { ire_minigame_active = yes }
+				ire_monthly_tick = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+units = {
+	fleet = {
+		name = "Channel Squadron Reinforcement"
+		naval_base = 3501
+		task_force = {
+			name = "HMS Hercules"
+			location = 3501
+			ship = { name = "HMS Hercules" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Sultan" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}
