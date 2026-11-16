@@ -35,11 +35,18 @@ FRA_societe_generale: "Société Générale"
 FRA_franco_austrian_treaty: "Franco-Austrian Trade Treaty"
 FRA_latin_monetary_union_modifier: "Latin Monetary Union"
 FRA_modernization_fundings_of_railways: "Investing into the Railways"
-FRA_urban_modernization: "Development Drive"
+FRA_urban_modernization: "Rapid Development"
 FRA_exploit_the_resources_of_the_empire: "Utilizing the Land"
 FRA_the_republicans_oppose_military_reform: "Republicans Oppose Military Reform"
 FRA_reorganization_process_of_the_army: "Reorganizing the Army"
 FRA_threat_of_revolution: "Spectre of Revolution"
+# Commune
+FRA_concerning_support_from_the_republicans: "Growing Republican Dissent"
+FRA_parisian_bronze_strike: "The Parisian Bronze Strike"
+FRA_parisian_bronze_strike_3: "The Parisian Strike Deepens"
+FRA_formation_of_the_communards: "Birth of the Commune"
+FRA_intense_political_divisio_6: "Shattered Political Order"
+FRA_communards_strike_first: "Communards Strike First!"
 ### Focuses
 # Army
 FRA_our_great_friend_sastres_our_army_supplier: "Our Great Friend Sastres"
@@ -412,6 +419,7 @@ lbe_france_news.6.title: "Second French Revolution"
 ### Decisions
 # Paris Modernization
 FRA_modernization_of_paris_cat: "Modernization of Paris"
+# Second Stage
 FRA_second_phase_networks_of_new_boulevards: "Finish the Boulevard Network"
 FRA_redevelop_the_ile_de_la_cite: "Redevelop the Île de la Cité"
 FRA_construction_of_new_boulevards_on_the_left_bank: "Open Boulevards on the Left Bank"
@@ -422,6 +430,49 @@ FRA_expansion_of_public_green_spaces: "Extend the Public Gardens"
 FRA_utilize_bonds_from_the_paris_works_fund: "Issue Paris Works Bonds"
 FRA_raise_investments_from_the_pereire_investment_bank: "Secure Pereire Investments"
 FRA_taking_out_loans: "Take Out Loans"
+# Third Stage
+FRA_third_phase_new_extensions_of_boulevards: "Second Boulevard Plan"
+FRA_renovation_of_the_jardins_des_champs_elysees: "Remodel the Champs-Élysées Gardens"
+FRA_finish_the_place_du_chateau_d_eau: "Finish the Place du Château-d'Eau"
+FRA_extension_of_the_boulevard_haussmann: "Extend Boulevard Haussmann"
+FRA_building_the_boulevard_saint_germain: "Open Boulevard Saint-Germain"
+# Rally the Opposition
+FRA_preparatives_for_the_revolution_cat: "Fires of Revolution"
+fra_french_revolution: "The §RFrench Revolution§! has begun"
+FRA_bonapartists_strike_first: "Bonapartists Discover The Plot"
+FRA_bonapartists_influence_a_state: "Bonapartists are §RInfluencing§! a State!"
+FRA_dismiss_the_revolution: "Dismiss Rumours of Revolution"
+FRA_assure_the_emperor: "Reassure the Emperor"
+FRA_show_our_support_to_the_empire: "Prove our Loyalty to the Empire"
+FRA_seize_equipment_supplies: "Raid Equipment Stores"
+FRA_influence_brittany: "Spread the Revolution to Brittany"
+FRA_influence_loire: "Rouse Workers in Nantes"
+FRA_influence_poitou: "Agitate Workers in Poitou"
+FRA_influence_bordeaux: "Strike in Bordeaux"
+FRA_influence_bayonne: "Revolt in Bayonne"
+FRA_influence_normandy: "Organize Workers in Normandy"
+FRA_influence_centre: "Overwhelm the Centre"
+FRA_influence_centre_sud: "March Through the South"
+FRA_influence_limousin: "Organize Workers in Limousin"
+FRA_influence_toulouse: "Rally Workers in Toulouse"
+FRA_influence_nord_pas_de_calais: "Shut Down Calais"
+FRA_influence_picardy: "Rally Workers in Picardy"
+FRA_influence_paris: "The §RRed Banner§! Soars Over Paris!"
+FRA_influence_cambrai: "Infiltrate Cambrai"
+FRA_influence_bourgogne: "Agigate Workers in Dijon"
+FRA_influence_auvergne: "Mobilize Workers in Auvergne"
+FRA_influence_languedoc: "Foster Tensions in Laguedoc"
+FRA_influence_champagne: "Stir Trouble in Champagne"
+FRA_influence_troyes: "Infiltrate Troyes"
+FRA_influence_rhone: "Win the Proletariat of Lyon"
+FRA_influence_saint_dizier: "Rouse Workers in Saint-Dizier"
+FRA_influence_burgundy: "Activate Burgundian Cells"
+FRA_influence_franche_comte: "Secure Franche-Comte"
+FRA_influence_alpes: "Hide in the Alps"
+FRA_influence_marseille: "Marseille Embraces the §RRed Banner§! !"
+FRA_influence_nancy_alsace_lorraine: "Paralyze Alsace-Lorraine"
+FRA_influence_savoy: "Spread the Revolution to Savoy"
+FRA_influence_var: "Sway Over Var"
 # Foreign Policy
 FRA_foreign_stuff_cat: "Foreign Policy"
 FRA_expedition_to_korea: "Expedition to Korea"
@@ -443,60 +494,73 @@ lber_fra_the_reformist_emperor: "Reformist Emperor"
 lber_fra_the_reformist_emperor_2: "Reformist Emperor"
 lber_fra_the_reformist_emperor_3: "Reformist Emperor"
 lber_fra_the_reformist_emperor_4: "Enlightened Emperor"
-# advisors
+# Advisors
 lber_red_prince: "The Red Prince"
 lber_foreign_minister: "Foreign Minister"
 lber_reactionary_figurehead: "Reactionary Figurehead"
 lber_public_works_enthusiast: "Public Works Wizard"
 lber_democrat_charismatic_orator: "Conservative Chauvinist"
 
-#Misc
+# Misc
 banned_party_party_loc: "§R-- BANNED PARTY --§!"
 historical_choice_tt: "§OThis is the Historical Choice.§!"
 at_war_no_tt: "§RIf we Enter at War, this National Spirit will be lost.§!"
+middle_thingy_tt: "-----------------------------------------------------------------"
 
 # tt
+fra_fpw_began: "The Franco-Prussian War has begun"
+
+fra_modify_economy_tt: "Modify §YÉconomie de la France§! by:"
 fra_redevelop_the_ile_de_la_cite_done: "Has completed §YRedevelop the Île de la Cité§!"
 fra_construction_of_new_boulevards_on_the_left_bank_done: "Has completed §YOpen Boulevards on the Left Bank§!"
 fra_construction_of_new_boulevards_on_the_right_bank_done: "Has completed §YOpen Boulevards on the Right Bank§!"
 fra_construction_of_the_railway_station_gare_du_nord_and_gare_de_l_est_done: "Has completed §YModernize the Railway Links§!"
 fra_rebuilding_the_gare_du_lyon_done: "Has completed §YRestore the Gare de Lyon§!"
 fra_expansion_of_public_green_spaces_done: "Has completed §YExtend the Public Gardens§!"
-fra_completed_third_phase_of_modernization: "§YCompleted Third Phase of Modernization§!"
-fra_haussmann_fired: "§RFired Haussmann§!"
-niel_is_war_minister: "§2Adolphe Niel§! leads the War Ministry"
-middle_thingy_tt: "-----------------------------------------------------------------"
-fra_modify_economy_tt: "Modify §YÉconomie de la France§! by:"
-FRA_modify_army_tt: "Modify §YArmée Impériale Française§! by:"
-fra_reorg_idea_over_tt: "When the National Spirit §YReorganizing the Army§! runs out, we will receive the following effects:"
-fra_threat_rev_tt: "If we were to lose in a major conflict, it may cause a §Rnational catastrophe§!"
-fra_appointed_new_prime_minister: "Emperor [FRA.GetFlag]§YNapoleon III§! will appoint §YÉmile Ollivier§! as §YPrime Minister§!:"
-FRA_emile_ollivier_pm_idea_SHOW_TOOLTIP: "Émile Ollivier"
-fra_this_focus_no_more_strikes_tt: "This focus will §Gstop§! any future or current §Rstrikes§! going on throughout the [FRA.GetFlag]§YEmpire§!. If we enter at war with [PRS.GetFlag]§YPrussia§!, The §YMulhouse Strike§! will not happen"
-fra_mulhouse_strike_tt: "If [FRA.GetFlag]§YFrance§! has not §Ycompleted§! the following §Yfocuses§! of their respective branch: §Y'Begin the Final Strike'§!, §Y'Enforce National Security'§! or hasnt went the [FPC.GetFlag]§ROpposition§!, they will gain the following §Gdebuff§! in §YAlsace-Lorraine§!:"
-FRA_not_already_influenced_state_tt: "This §Ystate§! has not been §Rinfluenced§! by the [FPC.GetFlag]§ROpposition§!"
-FRA_state_is_fully_secured_tt_NOT: "This §Ystate§! is fully secured by the [FPC.GetFlag]§ROpposition§!, the [FRA.GetFlag]§3Bonapartists§! cannot §Rinfluence§! it."
-FRA_already_expanding_influence_flag: "Already expanding influence in a State"
+fra_renovation_of_the_jardins_des_champs_elysees_done: "Has completed §YRemodel the Champs-Élysées Gardens§!"
+fra_finish_the_place_du_chateau_d_eau_done: "Has completed §YFinish the Place du Château-d'Eau§!"
+fra_extension_of_the_boulevard_haussmann_done: "Has completed §YExtend Boulevard Haussmann§!"
+fra_building_the_boulevard_saint_germain_done: "Has completed §YOpen Boulevard Saint-Germain§!"
+fra_completed_third_phase_of_modernization: "Completed §YSecond Boulevard Plan§!"
+fra_failed_third_phase_of_modernization: "§YSecond Boulevard Plan§! was left §Runfinished§!"
 fra_lmu_tt: "This §YNational Spirit§! will be added to every member of the §YLatin Monetary Union§! and will be §Gupgraded§! everytime a new member joins"
 FRA_modify_lmu_tt: "Modify §YLatin Monetary Union§! by:"
 fra_franco_austrian_treaty_if_accept_tt: "If [AUS.GetFlag]§YAustria§! accepts the §YTreaty§!, we will gain the following effect:"
 fra_latin_monetary_union_decisions_tt: "Completing this focus will unlock decisions to extend the §YLatin Monetary Union§!."
+
+
+FRA_modify_army_tt: "Modify §YArmée Impériale Française§! by:"
+niel_is_war_minister: "§2Adolphe Niel§! leads the War Ministry"
+fra_reorg_idea_over_tt: "When the §YReorganizing the Army§! National Spirit runs out, we will receive the following effects:"
+
+fra_legislative_elections_happend: "[FRA.GetFlag]§YFrance§! held the §Y1869 Legislative Election§!" 
+fra_defeated_by_a_major_power: "[FRA.GetFlag]§YFrance§! has §Rlost§! a major conflict!"
+fra_haussmann_fired: "§RFired Haussmann§!"
+fra_threat_rev_tt: "A defeat in a major conflict could trigger a §Rnational catastrophe§!"
+fra_appointed_new_prime_minister: "Emperor [FRA.GetFlag]§YNapoleon III§! will appoint §YÉmile Ollivier§! as §YPrime Minister§!:"
+FRA_emile_ollivier_pm_idea_SHOW_TOOLTIP: "Émile Ollivier"
+fra_this_focus_no_more_strikes_tt: "This focus will §GEND§! all ongoing §RSTRIKES§! and prevent future industrial action in the [FRA.GetFlag]§YEmpire§!. If we go to war with [PRS.GetFlag]§YPrussia§!, the §YMulhouse Strike§! will not happen!"
+fra_mulhouse_strike_tt: "If [FRA.GetFlag]§YFrance§! has not §Ycompleted§! the following §Yfocuses§! of their respective branch: §Y'Begin the Final Strike'§!, §Y'Enforce National Security'§! or hasnt went the [FPC.GetFlag]§ROpposition§!, they will gain the following §Gdebuff§! in §YAlsace-Lorraine§!:"
+
+fra_french_revolution_tt: "§RThe French Revolution will Begin.§!"
+FRA_not_already_influenced_state_tt: "This §Ystate§! has not been §Rinfluenced§! by the [FPC.GetFlag]§ROpposition§!"
+FRA_state_is_fully_secured_tt_NOT: "This §Ystate§! is fully secured by the [FPC.GetFlag]§ROpposition§!, the [FRA.GetFlag]§3Bonapartists§! cannot §Rinfluence§! it."
+FRA_already_expanding_influence_flag: "Already expanding influence in a State"
 fra_state_will_be_influenced_by_bonapartists: "This §Ystate§! is being §Rinfluenced§! by the [FRA.GetFlag]§3Bonapartists§!!"
-fra_info_about_letting_bonapartists_influence_states: "If we allow the [FRA.GetFlag]§3Bonapartists§! to §Rinfluence§! may too much §Ystates§!, they will §Rgain more units§! and if we fail to complete the focus §Y'Pour Une France Libre!'§!, and this mission runs out, they will gain a §Rtimed buff§! against us!"
+fra_info_about_letting_bonapartists_influence_states: "If we allow the [FRA.GetFlag]§3Bonapartists§! to §Rinfluence§! too many §Ystates§!, they will §Rgain more units§! If we fail to complete the focus §Y'Pour Une France Libre!'§!, and this mission runs out, they will gain a §Rtimed buff§! against us!"
 fra_info_about_letting_bonapartists_influence_states_2_tt: "Once this §Rmission§! runs out:"
 FRA_not_already_influenced_state_tt_2: "This §Ystate§! has not been §Rinfluenced§! by the [FRA.GetFlag]§3Bonapartists§!"
 fra_strengthen_the_paris_communards_effect_tt: "We will gain §Y6 Stronger National Guards§! in [FPC.GetFlag]§YParis§! and [FPC.GetFlag]§YMarseille§!"
-fra_french_revolution_tt: "§RThe French Revolution will Begin.§!"
 
 
 
-
-
-
-
- # TECH STUFF LOC
+# TECH STUFF LOC
 
 # MIOS
 FRA_gastinne_renette_organization: "Gastinne Renette"
 FRA_manufacture_d_armes_de_saint_etienne_organization: "Manufacture d'armes de Saint-Étienne"
 FRA_manufacture_d_armes_de_tulle_organization: "Manufacture d'armes de Tulle"
+
+# DEBUG
+FRA_france_debug_stuff_cat: "France Debug"
+#FRA_debug_give_rally_opposition_bonapartist_influence: "Give Rally Opposition Bonapartist Influence" # what does this even mean?
