@@ -37,12 +37,10 @@ FRA_foreign_stuff_cat = {
 
 		available = {
 			has_completed_focus = FRA_latin_monetary_union
-			
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
-			
+			has_completed_focus = FRA_latin_monetary_union
 		}
 
 		fire_only_once = yes
@@ -72,7 +70,7 @@ FRA_foreign_stuff_cat = {
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
+			has_completed_focus = FRA_latin_monetary_union
 			
 		}
 
@@ -99,12 +97,11 @@ FRA_foreign_stuff_cat = {
 
 		available = {
 			has_completed_focus = FRA_latin_monetary_union
-			
+
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
-			
+			has_completed_focus = FRA_latin_monetary_union
 		}
 
 		fire_only_once = yes
@@ -134,8 +131,7 @@ FRA_foreign_stuff_cat = {
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
-			
+			has_completed_focus = FRA_latin_monetary_union
 		}
 
 		fire_only_once = yes
@@ -165,7 +161,7 @@ FRA_foreign_stuff_cat = {
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
+			has_completed_focus = FRA_latin_monetary_union
 			
 		}
 
@@ -196,7 +192,7 @@ FRA_foreign_stuff_cat = {
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
+			has_completed_focus = FRA_latin_monetary_union
 			
 		}
 
@@ -227,7 +223,7 @@ FRA_foreign_stuff_cat = {
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
+			has_completed_focus = FRA_latin_monetary_union
 			
 		}
 
@@ -258,7 +254,7 @@ FRA_foreign_stuff_cat = {
 		} 
 
 		visible = { 
-			#has_completed_focus = SPA_preparatives_for_new_offensives
+			has_completed_focus = FRA_latin_monetary_union
 			
 		}
 

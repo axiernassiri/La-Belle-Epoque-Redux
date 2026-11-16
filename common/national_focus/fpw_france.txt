@@ -1673,14 +1673,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_tooltip = FRA_invite_greece_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_invite_spain_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_invite_romania_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_invite_austria_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_accept_serbia_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_accept_papal_states_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_invite_colombia_to_the_latin_monetary_union
-			unlock_decision_tooltip = FRA_invite_venezuela_to_the_latin_monetary_union
+			custom_effect_tooltip = fra_latin_monetary_union_decisions_tt
 		}
 	}
 	
