@@ -1,0 +1,268 @@
+add_namespace = ire_question
+
+country_event = {
+	id = ire_question.1
+	title = ire_question.1.t
+	desc = ire_question.1.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.1.a
+		ai_chance = { base = 30 }
+		set_country_flag = ire_home_rule_granted
+		add_stability = -0.05
+		add_popularity = { ideology = democratic popularity = 0.05 }
+		custom_effect_tooltip = IRE_home_rule_tt
+		hidden_effect = {
+			set_temp_variable = { ire_delta_south = -15 }
+			ire_apply_south = yes
+			subtract_from_variable = { ire_ulster = 5 }
+			ire_update_total = yes
+		}
+	}
+	option = {
+		name = ire_question.1.b
+		ai_chance = { base = 60 }
+		add_political_power = 50
+		custom_effect_tooltip = IRE_refuse_home_rule_tt
+		hidden_effect = {
+			set_temp_variable = { ire_delta_south = 5 }
+			ire_apply_south = yes
+			ire_update_total = yes
+		}
+	}
+	option = {
+		name = ire_question.1.c
+		trigger = { has_government = democratic }
+		ai_chance = { base = 10 }
+		add_timed_idea = { idea = fpw_eng_coercion_in_ireland days = 365 }
+		custom_effect_tooltip = IRE_coercion_act_tt
+		hidden_effect = {
+			set_temp_variable = { ire_delta_south = -5 }
+			ire_apply_south = yes
+			set_variable = { ire_backlash_leinster = 4 }
+			set_variable = { ire_backlash_munster = 4 }
+			set_variable = { ire_backlash_connacht = 4 }
+			ire_update_total = yes
+		}
+	}
+}
+
+country_event = {
+	id = ire_question.2
+	title = ire_question.2.t
+	desc = ire_question.2.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	immediate = { ire_apply_unrest_modifiers = yes }
+
+	option = {
+		name = ire_question.2.a
+		ai_chance = { base = 60 }
+		add_manpower = -5000
+		army_experience = 5
+		custom_effect_tooltip = IRE_unrest_troops_tt
+		hidden_effect = {
+			set_temp_variable = { ire_delta_south = -4 }
+			ire_apply_south = yes
+			set_variable = { ire_backlash_leinster = 3 }
+			set_variable = { ire_backlash_munster = 3 }
+			set_variable = { ire_backlash_connacht = 3 }
+			ire_update_total = yes
+		}
+	}
+	option = {
+		name = ire_question.2.b
+		ai_chance = { base = 40 }
+		add_political_power = -60
+		custom_effect_tooltip = IRE_unrest_concessions_tt
+		hidden_effect = {
+			set_temp_variable = { ire_delta_south = -6 }
+			ire_apply_south = yes
+			ire_update_total = yes
+		}
+	}
+}
+
+country_event = {
+	id = ire_question.3
+	title = ire_question.3.t
+	desc = ire_question.3.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.3.a
+		ai_chance = { base = 80 }
+		ire_release_republic = yes
+		declare_war_on = {
+			target = IRE
+			type = take_core_state
+			generator = { 113 134 135 }
+		}
+		add_war_support = 0.05
+	}
+	option = {
+		name = ire_question.3.b
+		ai_chance = { base = 20 }
+		ire_release_republic = yes
+		add_stability = -0.10
+		add_war_support = -0.10
+		IRE = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+	}
+}
+
+country_event = {
+	id = ire_question.10
+	title = ire_question.10.t
+	desc = ire_question.10.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.10.a
+		ai_chance = { base = 80 }
+		custom_effect_tooltip = IRE_hga_tt
+		hidden_effect = {
+			add_to_variable = { ire_leinster = 4 }
+			add_to_variable = { ire_munster = 3 }
+			add_to_variable = { ire_connacht = 2 }
+			add_to_variable = { ire_ulster = 1 }
+			ire_update_total = yes
+		}
+	}
+	option = {
+		name = ire_question.10.b
+		ai_chance = { base = 20 }
+		add_political_power = 25
+		custom_effect_tooltip = IRE_hga_denounce_tt
+		hidden_effect = {
+			add_to_variable = { ire_leinster = 6 }
+			add_to_variable = { ire_munster = 5 }
+			add_to_variable = { ire_connacht = 4 }
+			add_to_variable = { ire_ulster = 1 }
+			ire_update_total = yes
+		}
+	}
+}
+
+country_event = {
+	id = ire_question.11
+	title = ire_question.11.t
+	desc = ire_question.11.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.11.a
+		ai_chance = { base = 70 }
+		custom_effect_tooltip = IRE_hrl_tt
+		hidden_effect = {
+			add_to_variable = { ire_leinster = 5 }
+			add_to_variable = { ire_munster = 5 }
+			add_to_variable = { ire_connacht = 4 }
+			add_to_variable = { ire_ulster = 2 }
+			ire_update_total = yes
+		}
+	}
+	option = {
+		name = ire_question.11.b
+		ai_chance = { base = 30 }
+		add_stability = -0.02
+		custom_effect_tooltip = IRE_hrl_ban_tt
+		hidden_effect = {
+			add_to_variable = { ire_leinster = 2 }
+			add_to_variable = { ire_munster = 2 }
+			add_to_variable = { ire_connacht = 1 }
+			set_variable = { ire_backlash_leinster = 4 }
+			set_variable = { ire_backlash_munster = 4 }
+			set_variable = { ire_backlash_connacht = 4 }
+			ire_update_total = yes
+		}
+	}
+}
+
+country_event = {
+	id = ire_question.12
+	title = ire_question.12.t
+	desc = ire_question.12.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.12.a
+		custom_effect_tooltip = IRE_church_act_tt
+		add_stability = -0.01
+		hidden_effect = {
+			subtract_from_variable = { ire_leinster = 4 }
+			subtract_from_variable = { ire_munster = 5 }
+			subtract_from_variable = { ire_connacht = 5 }
+			subtract_from_variable = { ire_ulster = 2 }
+			ire_update_total = yes
+		}
+	}
+}
+
+country_event = {
+	id = ire_question.13
+	title = ire_question.13.t
+	desc = ire_question.13.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.13.a
+		custom_effect_tooltip = IRE_land_act_tt
+		hidden_effect = {
+			subtract_from_variable = { ire_leinster = 4 }
+			subtract_from_variable = { ire_munster = 6 }
+			subtract_from_variable = { ire_connacht = 6 }
+			subtract_from_variable = { ire_ulster = 3 }
+			ire_update_total = yes
+		}
+	}
+}
+
+country_event = {
+	id = ire_question.14
+	title = ire_question.14.t
+	desc = ire_question.14.d
+	is_triggered_only = yes
+	trigger = { ire_minigame_active = yes }
+
+	option = {
+		name = ire_question.14.a
+		custom_effect_tooltip = IRE_ballot_tt
+		hidden_effect = {
+			add_to_variable = { ire_leinster = 3 }
+			add_to_variable = { ire_munster = 3 }
+			add_to_variable = { ire_connacht = 3 }
+			add_to_variable = { ire_ulster = 1 }
+			ire_update_total = yes
+		}
+	}
+}
+
+news_event = {
+	id = ire_question.20
+	title = ire_question.20.t
+	desc = ire_question.20.d
+	picture = GFX_news_event_ENG_revolution
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ire_question.20.a
+		trigger = { original_tag = ENG }
+	}
+	option = {
+		name = ire_question.20.b
+		trigger = { original_tag = IRE }
+	}
+	option = {
+		name = ire_question.20.c
+		trigger = { NOT = { original_tag = ENG original_tag = IRE } }
+	}
+}

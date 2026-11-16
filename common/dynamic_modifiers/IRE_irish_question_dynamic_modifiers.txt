@@ -1,0 +1,16 @@
+ire_coercion_backlash = {
+	enable = { always = yes }
+	icon = GFX_modifiers_tur_kemalist_unrest
+
+	stability_factor = -0.03
+	political_power_gain = -0.05
+}
+
+ire_agrarian_outrages = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_manpower = -0.30
+	state_production_speed_buildings_factor = -0.25
+	local_resources_factor = -0.20
+}

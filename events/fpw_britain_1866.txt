@@ -1,0 +1,622 @@
+add_namespace = britain_fpw
+
+country_event = {
+	id = britain_fpw.10
+	title = britain_fpw.10.t
+	desc = britain_fpw.10.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_start_1870 } }
+
+	option = {
+		name = britain_fpw.10.a
+		ai_chance = { base = 90 }
+		add_timed_idea = { idea = fpw_eng_panic_of_1866 days = 300 }
+		add_political_power = -25
+		set_country_flag = ENG_bank_act_suspended_1866
+	}
+	option = {
+		name = britain_fpw.10.b
+		ai_chance = { base = 10 }
+		add_ideas = fpw_eng_panic_of_1866
+		add_political_power = 50
+	}
+	immediate = { hidden_effect = { news_event = { id = britain_news.16 hours = 6 } } }
+}
+
+country_event = {
+	id = britain_fpw.11
+	title = britain_fpw.11.t
+	desc = britain_fpw.11.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG has_idea = fpw_eng_reform_agitation }
+
+	option = {
+		name = britain_fpw.11.a
+		ai_chance = { base = 80 }
+		add_popularity = { ideology = fascism popularity = 0.02 }
+		add_stability = -0.02
+	}
+	option = {
+		name = britain_fpw.11.b
+		ai_chance = { base = 20 }
+		add_stability = 0.01
+		add_popularity = { ideology = communism popularity = 0.02 }
+		add_to_variable = { ENG_labour_grievance = 1 }
+		custom_effect_tooltip = ENG_labour_grievance_tt
+		if = {
+			limit = { check_variable = { ENG_labour_grievance > 1 } }
+			country_event = { id = britain_fpw.35 days = 30 }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.12
+	title = britain_fpw.12.t
+	desc = britain_fpw.12.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG country_exists = CAN CAN = { is_subject_of = ENG } }
+
+	option = {
+		name = britain_fpw.12.a
+		ai_chance = { base = 70 }
+		add_political_power = -25
+		add_war_support = 0.03
+		CAN = { add_opinion_modifier = { target = ROOT modifier = medium_increase } }
+	}
+	option = {
+		name = britain_fpw.12.b
+		ai_chance = { base = 30 }
+		add_political_power = 25
+		if = {
+			limit = { country_exists = USA }
+			USA = { add_opinion_modifier = { target = ROOT modifier = medium_decrease } }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.13
+	title = britain_fpw.13.t
+	desc = britain_fpw.13.d
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ENG
+		has_idea = fpw_eng_irish_question
+		NOT = { has_country_flag = ENG_start_1870 }
+	}
+
+	option = {
+		name = britain_fpw.13.a
+		trigger = { has_country_flag = ENG_fenian_precautions }
+		ai_chance = { base = 100 }
+		army_experience = 5
+		add_war_support = 0.02
+		if = {
+			limit = { ire_minigame_active = yes }
+			custom_effect_tooltip = IRE_fenian_ready_tt
+			hidden_effect = {
+				add_to_variable = { ire_munster = 3 }
+				add_to_variable = { ire_leinster = 2 }
+				add_to_variable = { ire_connacht = 1 }
+				ire_update_total = yes
+			}
+		}
+	}
+	option = {
+		name = britain_fpw.13.b
+		trigger = { NOT = { has_country_flag = ENG_fenian_precautions } }
+		ai_chance = { base = 100 }
+		swap_ideas = { remove_idea = fpw_eng_irish_question add_idea = fpw_eng_fenian_insurgency }
+		if = {
+			limit = { ire_minigame_active = yes }
+			custom_effect_tooltip = IRE_fenian_spread_tt
+			hidden_effect = {
+				add_to_variable = { ire_munster = 8 }
+				add_to_variable = { ire_leinster = 5 }
+				add_to_variable = { ire_connacht = 4 }
+				add_to_variable = { ire_ulster = 1 }
+				ire_update_total = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.14
+	title = britain_fpw.14.t
+	desc = britain_fpw.14.d
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ENG
+		OR = { has_idea = fpw_eng_irish_question has_idea = fpw_eng_fenian_insurgency }
+		NOT = { has_country_flag = ENG_start_1870 }
+	}
+
+	option = {
+		name = britain_fpw.14.a
+		ai_chance = { base = 70 }
+		add_war_support = 0.03
+		add_stability = -0.02
+		if = {
+			limit = { ire_minigame_active = yes }
+			custom_effect_tooltip = IRE_clerkenwell_rigour_tt
+			hidden_effect = {
+				add_to_variable = { ire_leinster = 3 }
+				add_to_variable = { ire_munster = 3 }
+				add_to_variable = { ire_connacht = 3 }
+				add_to_variable = { ire_ulster = -2 }
+				ire_update_total = yes
+			}
+		}
+	}
+	option = {
+		name = britain_fpw.14.b
+		ai_chance = { base = 30 }
+		add_political_power = -40
+		add_stability = 0.01
+		if = {
+			limit = { ire_minigame_active = yes }
+			custom_effect_tooltip = IRE_clerkenwell_restraint_tt
+			hidden_effect = {
+				add_to_variable = { ire_leinster = -1 }
+				add_to_variable = { ire_munster = -1 }
+				add_to_variable = { ire_connacht = -1 }
+				add_to_variable = { ire_ulster = 1 }
+				ire_update_total = yes
+			}
+		}
+		add_popularity = { ideology = fascism popularity = 0.02 }
+	}
+	immediate = { hidden_effect = { news_event = { id = britain_news.19 hours = 6 } } }
+}
+
+country_event = {
+	id = britain_fpw.15
+	title = britain_fpw.15.t
+	desc = britain_fpw.15.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_start_1870 } }
+
+	option = {
+		name = britain_fpw.15.a
+		ai_chance = { base = 85 }
+		add_political_power = -25
+		set_country_flag = ENG_royal_commission_on_unions
+	}
+	option = {
+		name = britain_fpw.15.b
+		ai_chance = { base = 15 }
+		add_stability = 0.02
+		add_to_variable = { ENG_labour_grievance = 1 }
+		custom_effect_tooltip = ENG_labour_grievance_tt
+		if = {
+			limit = { check_variable = { ENG_labour_grievance > 1 } }
+			country_event = { id = britain_fpw.35 days = 30 }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.16
+	title = britain_fpw.16.t
+	desc = britain_fpw.16.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_start_1870 } }
+
+	option = {
+		name = britain_fpw.16.a
+		ai_chance = { base = 80 }
+		add_political_power = -30
+		add_timed_idea = { idea = fpw_eng_cattle_plague days = 240 }
+	}
+	option = {
+		name = britain_fpw.16.b
+		ai_chance = { base = 20 }
+		add_ideas = fpw_eng_cattle_plague
+	}
+}
+
+country_event = {
+	id = britain_fpw.17
+	title = britain_fpw.17.t
+	desc = britain_fpw.17.d
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ENG
+		has_government = democratic
+		has_country_leader = { character = ENG_edward_smith-stanley ruling_only = yes }
+	}
+
+	option = {
+		name = britain_fpw.17.a
+		ai_chance = { base = 100 }
+		promote_character = ENG_benjamin_disraeli
+		add_political_power = 50
+		add_popularity = { ideology = democratic popularity = 0.02 }
+	}
+}
+
+country_event = {
+	id = britain_fpw.18
+	title = britain_fpw.18.t
+	desc = britain_fpw.18.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.18.a
+		trigger = { fascism > 0.45 }
+		ai_chance = { base = 80 }
+		set_country_flag = ENG_1868_liberal_victory
+		custom_effect_tooltip = ENG_1868_liberal_tt
+	}
+	option = {
+		name = britain_fpw.18.b
+		trigger = { democratic > 0.45 }
+		ai_chance = { base = 20 }
+		set_country_flag = ENG_1868_conservative_victory
+		custom_effect_tooltip = ENG_1868_conservative_tt
+	}
+	option = {
+		name = britain_fpw.18.c
+		trigger = { NOT = { fascism > 0.5 } NOT = { democratic > 0.5 } }
+		ai_chance = { base = 5 }
+		set_country_flag = ENG_1868_liberal_victory
+		set_country_flag = ENG_constitutional_crisis
+		add_stability = -0.05
+		custom_effect_tooltip = ENG_constitutional_crisis_tt
+	}
+}
+
+country_event = {
+	id = britain_fpw.19
+	title = britain_fpw.19.t
+	desc = britain_fpw.19.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_start_1870 } }
+
+	option = {
+		name = britain_fpw.19.a
+		ai_chance = { base = 90 }
+		set_country_flag = ENG_abyssinia_expedition_possible
+		custom_effect_tooltip = ENG_abyssinia_decision_tt
+	}
+	option = {
+		name = britain_fpw.19.b
+		ai_chance = { base = 10 }
+		add_war_support = -0.03
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = britain_fpw.20
+	title = britain_fpw.20.t
+	desc = britain_fpw.20.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.20.a
+		army_experience = 25
+		add_war_support = 0.05
+		add_political_power = -50
+	}
+	immediate = { hidden_effect = { news_event = { id = britain_news.17 hours = 6 } } }
+}
+
+country_event = {
+	id = britain_fpw.21
+	title = britain_fpw.21.t
+	desc = britain_fpw.21.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.21.a
+		ai_chance = { base = 70 }
+		add_political_power = -60
+		load_oob = "ENG_hms_captain"
+	}
+	option = {
+		name = britain_fpw.21.b
+		ai_chance = { base = 30 }
+		random_list = {
+			70 = {
+				add_stability = -0.03
+				add_war_support = -0.02
+				add_tech_bonus = { name = ENG_captain_lessons bonus = 1 uses = 1 category = bb_tech }
+				custom_effect_tooltip = ENG_captain_lost_tt
+				hidden_effect = { news_event = { id = britain_news.18 hours = 6 } }
+			}
+			30 = {
+				load_oob = "ENG_hms_captain"
+				navy_experience = 15
+				custom_effect_tooltip = ENG_captain_survives_tt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.23
+	title = britain_fpw.23.t
+	desc = britain_fpw.23.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.23.a
+		ai_chance = { base = 80 }
+		add_stability = 0.02
+		add_political_power = 50
+	}
+	option = {
+		name = britain_fpw.23.b
+		ai_chance = { base = 20 }
+		add_war_support = 0.05
+		if = {
+			limit = { country_exists = SOV }
+			SOV = { add_opinion_modifier = { target = ROOT modifier = large_decrease } }
+		}
+		if = {
+			limit = { country_exists = TUR }
+			TUR = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.24
+	title = britain_fpw.24.t
+	desc = britain_fpw.24.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_republican_moment } }
+
+	option = {
+		name = britain_fpw.24.a
+		ai_chance = { base = 100 }
+		add_stability = 0.02
+		if = {
+			limit = { has_idea = fpw_eng_republican_agitation }
+			remove_ideas = fpw_eng_republican_agitation
+		}
+	}
+	option = {
+		name = britain_fpw.24.b
+		ai_chance = { base = 0 }
+		set_country_flag = ENG_republican_moment
+		add_popularity = { ideology = fascism popularity = 0.03 }
+		custom_effect_tooltip = ENG_secret_path_unlocked_tt
+	}
+}
+
+country_event = {
+	id = britain_fpw.25
+	title = britain_fpw.25.t
+	desc = britain_fpw.25.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.25.a
+		add_stability = 0.03
+		add_war_support = 0.02
+		if = {
+			limit = { has_idea = fpw_eng_republican_agitation }
+			remove_ideas = fpw_eng_republican_agitation
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.26
+	title = britain_fpw.26.t
+	desc = britain_fpw.26.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.26.a
+		ai_chance = { base = 80 }
+		add_ideas = fpw_eng_nine_hours_day
+	}
+	option = {
+		name = britain_fpw.26.b
+		ai_chance = { base = 20 }
+		add_to_variable = { ENG_industrial_capacity_factory = 0.02 }
+		add_to_variable = { ENG_labour_grievance = 1 }
+		custom_effect_tooltip = ENG_labour_grievance_tt
+		if = {
+			limit = { check_variable = { ENG_labour_grievance > 1 } }
+			country_event = { id = britain_fpw.35 days = 30 }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.28
+	title = britain_fpw.28.t
+	desc = britain_fpw.28.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.28.a
+		ai_chance = { base = 90 }
+		add_political_power = -50
+		add_stability = 0.02
+		if = {
+			limit = { country_exists = USA }
+			USA = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+		}
+	}
+	option = {
+		name = britain_fpw.28.b
+		ai_chance = { base = 10 }
+		add_war_support = 0.04
+		if = {
+			limit = { country_exists = USA }
+			USA = { add_opinion_modifier = { target = ROOT modifier = large_decrease } }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.29
+	title = britain_fpw.29.t
+	desc = britain_fpw.29.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.29.a
+		trigger = { democratic > 0.4 }
+		ai_chance = { base = 70 }
+		set_country_flag = ENG_1874_conservative_victory
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		promote_character = ENG_benjamin_disraeli
+		add_political_power = 50
+	}
+	option = {
+		name = britain_fpw.29.b
+		trigger = { fascism > 0.4 }
+		ai_chance = { base = 30 }
+		set_country_flag = ENG_1874_liberal_victory
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		promote_character = ENG_william_gladstone
+		add_political_power = 50
+	}
+	option = {
+		name = britain_fpw.29.c
+		trigger = { NOT = { fascism > 0.5 } NOT = { democratic > 0.5 } }
+		ai_chance = { base = 2 }
+		set_country_flag = ENG_constitutional_crisis
+		add_stability = -0.08
+		custom_effect_tooltip = ENG_constitutional_crisis_tt
+	}
+}
+
+country_event = {
+	id = britain_fpw.30
+	title = britain_fpw.30.t
+	desc = britain_fpw.30.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.30.a
+		ai_chance = { base = 90 }
+		army_experience = 20
+		add_war_support = 0.03
+		add_political_power = -40
+	}
+	option = {
+		name = britain_fpw.30.b
+		ai_chance = { base = 10 }
+		add_political_power = 30
+		add_war_support = -0.02
+	}
+}
+
+country_event = {
+	id = britain_fpw.31
+	title = britain_fpw.31.t
+	desc = britain_fpw.31.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_dickens_died } }
+
+	option = {
+		name = britain_fpw.31.a
+		set_country_flag = ENG_dickens_died
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = britain_fpw.35
+	title = britain_fpw.35.t
+	desc = britain_fpw.35.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_international_awakens } }
+
+	option = {
+		name = britain_fpw.35.a
+		ai_chance = { base = 0 }
+		set_country_flag = ENG_international_awakens
+		add_popularity = { ideology = communism popularity = 0.05 }
+		custom_effect_tooltip = ENG_secret_path_unlocked_tt
+	}
+	option = {
+		name = britain_fpw.35.b
+		ai_chance = { base = 100 }
+		add_stability = -0.02
+		add_popularity = { ideology = communism popularity = -0.02 }
+	}
+}
+
+country_event = {
+	id = britain_fpw.36
+	title = britain_fpw.36.t
+	desc = britain_fpw.36.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG NOT = { has_country_flag = ENG_greater_britain_idea } }
+
+	option = {
+		name = britain_fpw.36.a
+		ai_chance = { base = 0 }
+		set_country_flag = ENG_greater_britain_idea
+		custom_effect_tooltip = ENG_secret_path_unlocked_tt
+	}
+	option = {
+		name = britain_fpw.36.b
+		ai_chance = { base = 100 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = britain_fpw.37
+	title = britain_fpw.37.t
+	desc = britain_fpw.37.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.37.a
+		army_experience = 15
+		if = {
+			limit = { country_exists = CAN }
+			CAN = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+		}
+	}
+}
+
+country_event = {
+	id = britain_fpw.38
+	title = britain_fpw.38.t
+	desc = britain_fpw.38.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.38.a
+		set_country_flag = ENG_constitutional_crisis
+		custom_effect_tooltip = ENG_secret_path_unlocked_tt
+	}
+}
+
+country_event = {
+	id = britain_fpw.39
+	title = britain_fpw.39.t
+	desc = britain_fpw.39.d
+	is_triggered_only = yes
+	trigger = { original_tag = ENG }
+
+	option = {
+		name = britain_fpw.39.a
+		add_tech_bonus = { name = ENG_exhibition bonus = 0.5 uses = 2 category = industry category = cat_production }
+		add_stability = 0.02
+	}
+}

@@ -17,12 +17,18 @@ bookmarks = {
 		}
 	
 		"ENG"={
-			history = "ENG_1866_DESC"
-			ideology = democratic
+			history = "ENG_1870_DESC"
+			ideology = fascism
 			available = { always = yes }
 			ideas = {
+				fpw_eng_household_suffrage
+				fpw_eng_irish_question
+				fpw_eng_purchase_system
 			}
 			focuses = {
+				ENG_elementary_education_act
+				ENG_the_ballot_act
+				ENG_abolish_purchase
 			}
 		}
 
@@ -89,8 +95,7 @@ bookmarks = {
 		}
 
 		effect = {
-			randomize_weather = 12345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
+			randomize_weather = 12345
 		}
 	}
 }

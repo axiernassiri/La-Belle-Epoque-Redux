@@ -1,0 +1,220 @@
+IRE_irish_question = {
+
+	IRE_coercion_campaign = {
+		icon = GFX_decision_generic_police_action
+		allowed = { original_tag = ENG }
+		available = {
+			ire_province_selected = yes
+			has_manpower > 3000
+		}
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 90
+		complete_effect = {
+			custom_effect_tooltip = IRE_coercion_tt
+			add_manpower = -3000
+			add_dynamic_modifier = { modifier = ire_coercion_backlash days = 180 }
+			hidden_effect = {
+				set_temp_variable = { ire_delta = -12 }
+				ire_apply_selected = yes
+				set_temp_variable = { ire_delta_others = 3 }
+				ire_apply_others = yes
+				ire_start_backlash_selected = yes
+				ire_update_total = yes
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 3 check_variable = { ire_total > 45 } }
+			modifier = { factor = 0 has_stability < 0.4 }
+		}
+	}
+
+	IRE_reform_programme = {
+		icon = GFX_decision_generic_civil_support
+		allowed = { original_tag = ENG }
+		available = { ire_province_selected = yes }
+		cost = 75
+		fire_only_once = no
+		days_re_enable = 120
+		complete_effect = {
+			custom_effect_tooltip = IRE_reform_tt
+			add_stability = -0.02
+			add_popularity = { ideology = democratic popularity = 0.02 }
+			if = {
+				limit = { has_country_flag = ire_selected_ulster }
+				add_stability = -0.02
+			}
+			hidden_effect = {
+				set_temp_variable = { ire_delta = -10 }
+				ire_apply_selected = yes
+				ire_update_total = yes
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 2 has_political_power > 150 }
+			modifier = { factor = 0 has_political_power < 100 }
+		}
+	}
+
+	IRE_benign_neglect = {
+		icon = GFX_decision_generic_consumer_goods
+		allowed = { original_tag = ENG }
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 365
+		complete_effect = {
+			custom_effect_tooltip = IRE_neglect_tt
+			add_political_power = 40
+			set_country_flag = { flag = ire_neglect_active days = 180 }
+		}
+		ai_will_do = {
+			base = 0.2
+			modifier = { factor = 0 check_variable = { ire_total > 40 } }
+		}
+	}
+
+	IRE_land_purchase_loans = {
+		icon = GFX_decision_generic_civil_support
+		allowed = { original_tag = ENG }
+		available = { has_country_flag = ENG_irish_land_act_passed }
+		cost = 60
+		fire_only_once = no
+		days_re_enable = 180
+		complete_effect = {
+			custom_effect_tooltip = IRE_land_loans_tt
+			add_manpower = 2000
+			hidden_effect = {
+				subtract_from_variable = { ire_munster = 4 }
+				subtract_from_variable = { ire_connacht = 4 }
+				subtract_from_variable = { ire_leinster = 2 }
+				ire_update_total = yes
+			}
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	IRE_release_fenian_prisoners = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = ENG }
+		available = { has_country_flag = ENG_irish_church_act_passed }
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = IRE_amnesty_tt
+			add_war_support = -0.02
+			add_popularity = { ideology = democratic popularity = 0.02 }
+			if = {
+				limit = { country_exists = USA }
+				USA = { add_opinion_modifier = { target = ROOT modifier = medium_increase } }
+			}
+			hidden_effect = {
+				set_temp_variable = { ire_delta_south = -4 }
+				ire_apply_south = yes
+				ire_update_total = yes
+			}
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	IRE_suspend_habeas_corpus = {
+		icon = GFX_decision_generic_police_action
+		allowed = { original_tag = ENG }
+		visible = { NOT = { has_country_flag = ENG_fenian_precautions } }
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = ENG_fenian_precautions
+			add_timed_idea = { idea = fpw_eng_coercion_in_ireland days = 365 }
+			add_popularity = { ideology = fascism popularity = -0.01 }
+			add_war_support = 0.02
+			if = {
+				limit = { has_idea = fpw_eng_fenian_insurgency }
+				swap_ideas = { remove_idea = fpw_eng_fenian_insurgency add_idea = fpw_eng_irish_question }
+			}
+		}
+		ai_will_do = {
+			base = 2
+			modifier = { factor = 2 has_government = democratic }
+		}
+	}
+
+	IRE_disestablish_church_of_ireland = {
+		icon = GFX_decision_generic_civil_support
+		allowed = { original_tag = ENG }
+		visible = { NOT = { has_country_flag = ENG_irish_church_act_passed } }
+		available = { has_political_power > 100 }
+		cost = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = ENG_irish_church_act_passed
+			if = { limit = { ire_minigame_active = yes } country_event = { id = ire_question.12 days = 1 } }
+			add_stability = 0.03
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = democratic popularity = -0.02 }
+			news_event = { id = britain_news.2 hours = 6 }
+		}
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 0.3 has_government = democratic }
+		}
+	}
+
+	IRE_irish_land_act = {
+		icon = GFX_decision_generic_consumer_goods
+		allowed = { original_tag = ENG }
+		visible = { NOT = { has_country_flag = ENG_irish_land_act_passed } }
+		available = { has_political_power > 100 }
+		cost = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = ENG_irish_land_act_passed
+			if = { limit = { ire_minigame_active = yes } country_event = { id = ire_question.13 days = 1 } }
+			add_stability = 0.03
+			add_popularity = { ideology = democratic popularity = -0.01 }
+			134 = { add_extra_state_shared_building_slots = 1 }
+			135 = { add_extra_state_shared_building_slots = 1 }
+			news_event = { id = britain_news.4 hours = 6 }
+		}
+		ai_will_do = { base = 3 }
+	}
+
+	IRE_irish_settlement = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = ENG }
+		visible = {
+			OR = {
+				has_idea = fpw_eng_irish_question
+				has_idea = fpw_eng_fenian_insurgency
+			}
+		}
+		available = {
+			has_country_flag = ENG_irish_church_act_passed
+			has_country_flag = ENG_irish_land_act_passed
+			check_variable = { ire_total < 35 }
+		}
+		cost = 75
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = IRE_settlement_tt
+			hidden_effect = {
+				subtract_from_variable = { ire_ulster = 10 }
+				subtract_from_variable = { ire_leinster = 10 }
+				subtract_from_variable = { ire_munster = 10 }
+				subtract_from_variable = { ire_connacht = 10 }
+				ire_update_total = yes
+			}
+			if = {
+				limit = { has_idea = fpw_eng_irish_question }
+				remove_ideas = fpw_eng_irish_question
+			}
+			if = {
+				limit = { has_idea = fpw_eng_fenian_insurgency }
+				remove_ideas = fpw_eng_fenian_insurgency
+			}
+			add_stability = 0.05
+		}
+		ai_will_do = { base = 5 }
+	}
+}

@@ -1,0 +1,206 @@
+ENG_parliamentary_affairs = {
+
+	ENG_whip_the_party = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { original_tag = ENG }
+		available = { OR = { has_government = democratic has_government = fascism } }
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 120
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			if = {
+				limit = { has_government = democratic }
+				add_popularity = { ideology = democratic popularity = 0.03 }
+			}
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = { ideology = fascism popularity = 0.03 }
+			}
+		}
+	}
+
+	ENG_court_the_opposition = {
+		icon = GFX_decision_generic_political_discourse
+		allowed = { original_tag = ENG }
+		available = { OR = { has_government = democratic has_government = fascism } }
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 120
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			if = {
+				limit = { has_government = democratic }
+				add_popularity = { ideology = fascism popularity = 0.03 }
+			}
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = { ideology = democratic popularity = 0.03 }
+			}
+			add_stability = 0.01
+		}
+	}
+
+	ENG_appoint_royal_commission = {
+		icon = GFX_decision_generic_decision
+		allowed = { original_tag = ENG }
+		cost = 40
+		fire_only_once = no
+		days_re_enable = 180
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = 0.02
+			add_tech_bonus = { name = ENG_appoint_royal_commission bonus = 0.25 uses = 1 category = construction_tech }
+		}
+	}
+
+	ENG_hung_parliament_crisis = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { original_tag = ENG }
+		visible = {
+			NOT = { has_country_flag = ENG_constitutional_crisis }
+			has_stability < 0.35
+		}
+		available = {
+			NOT = { has_government = communism }
+			NOT = { fascism > 0.5 }
+			NOT = { democratic > 0.5 }
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			add_stability = -0.05
+			country_event = { id = britain_fpw.38 days = 1 }
+		}
+	}
+}
+
+ENG_imperial_affairs = {
+
+	ENG_abyssinian_expedition = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = ENG }
+		visible = { has_country_flag = ENG_abyssinia_expedition_possible }
+		available = { has_war = no }
+		cost = 75
+		fire_only_once = yes
+		days_remove = 180
+		ai_will_do = { factor = 5 }
+		complete_effect = {
+			add_war_support = 0.02
+		}
+		remove_effect = {
+			country_event = { id = britain_fpw.20 }
+		}
+	}
+
+	ENG_red_river_expedition = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = ENG }
+		visible = { has_completed_focus = ENG_canadian_confederation }
+		available = { has_war = no }
+		cost = 50
+		fire_only_once = yes
+		days_remove = 120
+		ai_will_do = { factor = 3 }
+		remove_effect = {
+			country_event = { id = britain_fpw.37 }
+		}
+	}
+
+	ENG_purchase_dutch_gold_coast = {
+		icon = GFX_decision_generic_decision
+		allowed = { original_tag = ENG }
+		visible = { has_completed_focus = ENG_gold_coast_forts }
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 2 }
+		complete_effect = {
+			add_tech_bonus = { name = ENG_purchase_dutch_gold_coast bonus = 0.5 uses = 1 category = colonial }
+			if = {
+				limit = { country_exists = HOL }
+				HOL = { add_opinion_modifier = { target = ROOT modifier = medium_increase } }
+			}
+		}
+	}
+
+	ENG_show_the_flag = {
+		icon = GFX_decision_generic_naval
+		allowed = { original_tag = ENG }
+		available = { has_completed_focus = ENG_flying_squadron }
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 365
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			navy_experience = 10
+			add_war_support = 0.01
+		}
+	}
+}
+
+ENG_workshop_affairs = {
+
+	ENG_raise_the_income_tax = {
+		icon = GFX_decision_generic_consumer_goods
+		allowed = { original_tag = ENG }
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 180
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			add_political_power = 75
+			add_stability = -0.03
+		}
+	}
+
+	ENG_cut_the_income_tax = {
+		icon = GFX_decision_generic_consumer_goods
+		allowed = { original_tag = ENG }
+		cost = 60
+		fire_only_once = no
+		days_re_enable = 180
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = 0.03
+			if = {
+				limit = { has_government = democratic }
+				add_popularity = { ideology = democratic popularity = 0.01 }
+			}
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = { ideology = fascism popularity = 0.01 }
+			}
+		}
+	}
+
+	ENG_invest_in_railways = {
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = ENG }
+		cost = 75
+		fire_only_once = no
+		days_re_enable = 120
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes infrastructure < 5 }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	ENG_balloon_trials_at_woolwich = {
+		icon = GFX_decision_generic_air
+		allowed = { original_tag = ENG }
+		visible = { has_completed_focus = ENG_balloon_committee }
+		cost = 25
+		fire_only_once = yes
+		days_remove = 90
+		ai_will_do = { factor = 1 }
+		remove_effect = {
+			add_tech_bonus = { name = ENG_balloon_trials_at_woolwich bonus = 1 uses = 1 category = recon_tech }
+			army_experience = 5
+		}
+	}
+}

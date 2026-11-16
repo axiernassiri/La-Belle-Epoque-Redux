@@ -1,0 +1,24 @@
+ire_eng_holds_ireland = {
+	OR = {
+		owns_state = 113
+		owns_state = 119
+		owns_state = 134
+		owns_state = 135
+	}
+}
+
+ire_province_selected = {
+	OR = {
+		has_country_flag = ire_selected_ulster
+		has_country_flag = ire_selected_leinster
+		has_country_flag = ire_selected_munster
+		has_country_flag = ire_selected_connacht
+	}
+}
+
+ire_minigame_active = {
+	original_tag = ENG
+	has_country_flag = ire_initialised
+	NOT = { has_country_flag = ire_republic_released }
+	ire_eng_holds_ireland = yes
+}

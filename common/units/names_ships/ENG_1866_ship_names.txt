@@ -1,0 +1,62 @@
+ENG_1866_IRONCLADS = {
+	name = NAME_THEME_ENG_1866_IRONCLADS
+	for_countries = { ENG }
+	can_use = { always = yes }
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	prefix = "HMS "
+	fallback_name = "Ironclad No. %d"
+	unique = {
+		"Agincourt" "Northumberland" "Valiant" "Lord Warden" "Royal Alfred" "Zealous" "Repulse"
+		"Hercules" "Monarch" "Captain" "Penelope" "Sultan" "Audacious" "Invincible" "Iron Duke"
+		"Vanguard" "Swiftsure" "Triumph" "Devastation" "Thunderer" "Dreadnought" "Rupert"
+		"Hotspur" "Glatton" "Cerberus" "Magdala" "Abyssinia" "Cyclops" "Gorgon" "Hecate" "Hydra"
+		"Alexandra" "Temeraire" "Shannon" "Nelson" "Northampton" "Superb" "Belleisle" "Orion"
+		"Neptune" "Inflexible" "Ajax" "Agamemnon"
+	}
+}
+
+ENG_1866_FRIGATES = {
+	name = NAME_THEME_ENG_1866_FRIGATES
+	for_countries = { ENG }
+	can_use = { always = yes }
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	prefix = "HMS "
+	fallback_name = "Frigate No. %d"
+	unique = {
+		"Inconstant" "Shah" "Raleigh" "Volage" "Active" "Boadicea" "Bacchante" "Euryalus"
+		"Newcastle" "Endymion" "Bristol" "Immortalite" "Narcissus" "Topaze" "Undaunted" "Phoebe"
+		"Ariadne" "Mersey" "Orlando" "Doris" "Constance" "Sutlej" "Arethusa" "Forte"
+	}
+}
+
+ENG_1866_CORVETTES = {
+	name = NAME_THEME_ENG_1866_CORVETTES
+	for_countries = { ENG }
+	can_use = { always = yes }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "HMS "
+	fallback_name = "Corvette No. %d"
+	unique = {
+		"Amethyst" "Druid" "Dryad" "Eclipse" "Sappho" "Blanche" "Danae" "Briton" "Tenedos"
+		"Thetis" "Encounter" "Amazon" "Niobe" "Nymphe" "Vestal" "Spartan" "Orpheus" "Charybdis"
+		"Clio" "Cadmus" "Scout" "Wolverine" "Rinaldo" "Basilisk" "Rapid" "Peterel" "Daphne"
+	}
+}
+
+ENG_1866_GUNBOATS = {
+	name = NAME_THEME_ENG_1866_GUNBOATS
+	for_countries = { ENG }
+	can_use = { always = yes }
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	prefix = "HMS "
+	fallback_name = "Gunboat No. %d"
+	unique = {
+		"Ant" "Arrow" "Bonetta" "Bloodhound" "Bustard" "Kite" "Pickle" "Plucky" "Staunch"
+		"Comet" "Snake" "Weazel" "Mastiff" "Badger" "Blazer" "Cuckoo" "Fidget" "Hyaena"
+		"Philomel" "Avon" "Swinger" "Teazer" "Beacon" "Midge" "Sylvia" "Nassau" "Elk"
+	}
+}

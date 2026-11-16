@@ -1,0 +1,1380 @@
+ideas = {
+	country = {
+
+		fpw_eng_r_treasury_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				political_power_gain = 0.042
+				consumer_goods_factor = -0.017
+				production_speed_buildings_factor = -0.08
+				war_support_factor = -0.03
+			}
+		}
+		fpw_eng_r_treasury = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				political_power_gain = 0.12
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.024
+				war_support_factor = -0.009
+			}
+		}
+
+		fpw_eng_r_local_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				production_speed_infrastructure_factor = 0.042
+				stability_factor = 0.017
+				monthly_population = 0.01
+				political_power_factor = -0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+		fpw_eng_r_local = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				production_speed_infrastructure_factor = 0.12
+				stability_factor = 0.05
+				monthly_population = 0.03
+				political_power_factor = -0.024
+				consumer_goods_factor = 0.009
+			}
+		}
+
+		fpw_eng_r_party_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				drift_defence_factor = 0.07
+				political_power_gain = 0.035
+				stability_factor = -0.05
+			}
+		}
+		fpw_eng_r_party = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				drift_defence_factor = 0.2
+				political_power_gain = 0.1
+				stability_factor = -0.015
+			}
+		}
+
+		fpw_eng_r_sanitary_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = JAP_medical_infrastructure
+			modifier = {
+				monthly_population = 0.028
+				army_morale_factor = 0.017
+				production_factory_max_efficiency_factor = 0.014
+				consumer_goods_factor = 0.04
+				political_power_gain = -0.06
+			}
+		}
+		fpw_eng_r_sanitary = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = JAP_medical_infrastructure
+			modifier = {
+				monthly_population = 0.08
+				army_morale_factor = 0.05
+				production_factory_max_efficiency_factor = 0.04
+				consumer_goods_factor = 0.012
+				political_power_gain = -0.018
+			}
+		}
+
+		fpw_eng_r_poor_law_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.021
+				consumer_goods_factor = -0.01
+				conscription_factor = 0.01
+				monthly_population = -0.02
+				communism_drift = 0.03
+			}
+		}
+		fpw_eng_r_poor_law = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.06
+				consumer_goods_factor = -0.03
+				conscription_factor = 0.03
+				monthly_population = -0.006
+				communism_drift = 0.009
+			}
+		}
+
+		fpw_eng_r_woman_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = fra_education_reform
+			modifier = {
+				research_speed_factor = 0.014
+				production_factory_efficiency_gain_factor = 0.014
+				stability_factor = 0.01
+				drift_defence_factor = -0.1
+				political_power_gain = -0.05
+			}
+		}
+		fpw_eng_r_woman = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = fra_education_reform
+			modifier = {
+				research_speed_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+				stability_factor = 0.03
+				drift_defence_factor = -0.03
+				political_power_gain = -0.015
+			}
+		}
+
+		fpw_eng_r_science_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.028
+				production_factory_efficiency_gain_factor = 0.014
+				political_power_gain = -0.06
+				stability_factor = -0.03
+			}
+		}
+		fpw_eng_r_science = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.04
+				political_power_gain = -0.018
+				stability_factor = -0.009
+			}
+		}
+
+		fpw_eng_r_letters_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.017
+				war_support_factor = 0.01
+				drift_defence_factor = 0.035
+				political_power_factor = -0.05
+			}
+		}
+		fpw_eng_r_letters = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.03
+				drift_defence_factor = 0.1
+				political_power_factor = -0.015
+			}
+		}
+
+		fpw_eng_r_home_office_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				stability_factor = 0.021
+				resistance_target = -0.035
+				required_garrison_factor = -0.035
+				compliance_growth = 0.017
+				political_power_factor = -0.06
+				drift_defence_factor = -0.05
+			}
+		}
+		fpw_eng_r_home_office = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				stability_factor = 0.06
+				resistance_target = -0.1
+				required_garrison_factor = -0.1
+				compliance_growth = 0.05
+				political_power_factor = -0.018
+				drift_defence_factor = -0.015
+			}
+		}
+
+		fpw_eng_r_railways_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_infrastructure_factor = 0.042
+				supply_consumption_factor = -0.017
+				industrial_capacity_factory = 0.01
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		fpw_eng_r_railways = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_infrastructure_factor = 0.12
+				supply_consumption_factor = -0.05
+				industrial_capacity_factory = 0.03
+				consumer_goods_factor = 0.009
+				production_speed_buildings_factor = -0.015
+			}
+		}
+
+		fpw_eng_r_coal_iron_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_improved_industries
+			modifier = {
+				local_resources_factor = 0.035
+				industrial_capacity_factory = 0.017
+				production_speed_arms_factory_factor = 0.017
+				monthly_population = -0.02
+				communism_drift = 0.02
+			}
+		}
+		fpw_eng_r_coal_iron = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_improved_industries
+			modifier = {
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.05
+				monthly_population = -0.006
+				communism_drift = 0.006
+			}
+		}
+
+		fpw_eng_r_cotton_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = -0.014
+				trade_opinion_factor = 0.035
+				production_factory_efficiency_gain_factor = 0.01
+				stability_factor = -0.03
+				communism_drift = 0.01
+			}
+		}
+		fpw_eng_r_cotton = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = -0.04
+				trade_opinion_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.03
+				stability_factor = -0.009
+				communism_drift = 0.003
+			}
+		}
+
+		fpw_eng_r_money_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = AUS_creditanstalt_bankverein
+			modifier = {
+				production_speed_buildings_factor = 0.028
+				trade_opinion_factor = 0.035
+				political_power_gain = 0.017
+				stability_factor = -0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_money = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = AUS_creditanstalt_bankverein
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				trade_opinion_factor = 0.1
+				political_power_gain = 0.05
+				stability_factor = -0.009
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_land_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = 0.014
+				stability_factor = 0.014
+				conscription_factor = 0.01
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_land = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = 0.04
+				stability_factor = 0.04
+				conscription_factor = 0.03
+				industrial_capacity_factory = -0.009
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_ordnance_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				production_speed_arms_factory_factor = 0.035
+				army_artillery_attack_factor = 0.017
+				production_factory_efficiency_gain_factor = 0.01
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.04
+			}
+		}
+		fpw_eng_r_ordnance = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				army_artillery_attack_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.03
+				consumer_goods_factor = 0.009
+				political_power_gain = -0.012
+			}
+		}
+
+		fpw_eng_r_home_defence_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_defence_factor = 0.028
+				war_support_factor = 0.014
+				land_reinforce_rate = 0.007
+				consumer_goods_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_r_home_defence = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_defence_factor = 0.08
+				war_support_factor = 0.04
+				land_reinforce_rate = 0.02
+				consumer_goods_factor = 0.006
+				stability_factor = -0.006
+			}
+		}
+
+		fpw_eng_r_soldiers_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				army_morale_factor = 0.028
+				conscription_factor = 0.021
+				army_org_factor = 0.01
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_soldiers = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				army_morale_factor = 0.08
+				conscription_factor = 0.06
+				army_org_factor = 0.03
+				political_power_gain = -0.015
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_dockyards_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				industrial_capacity_dockyard = 0.035
+				production_speed_dockyard_factor = 0.035
+				repair_speed_factor = 0.035
+				consumer_goods_factor = 0.02
+				political_power_gain = -0.04
+			}
+		}
+		fpw_eng_r_dockyards = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.1
+				repair_speed_factor = 0.1
+				consumer_goods_factor = 0.006
+				political_power_gain = -0.012
+			}
+		}
+
+		fpw_eng_r_naval_tactics_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				navy_org_factor = 0.017
+				experience_gain_navy_factor = 0.035
+				naval_speed_factor = 0.01
+				navy_max_range_factor = -0.06
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_r_naval_tactics = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				navy_org_factor = 0.05
+				experience_gain_navy_factor = 0.1
+				naval_speed_factor = 0.03
+				navy_max_range_factor = -0.018
+				political_power_gain = -0.009
+			}
+		}
+
+		fpw_eng_r_seas_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				navy_max_range_factor = 0.035
+				convoy_escort_efficiency = 0.035
+				trade_opinion_factor = 0.028
+				industrial_capacity_dockyard = -0.03
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_r_seas = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				navy_max_range_factor = 0.1
+				convoy_escort_efficiency = 0.1
+				trade_opinion_factor = 0.08
+				industrial_capacity_dockyard = -0.009
+				political_power_gain = -0.009
+			}
+		}
+
+		fpw_eng_r_royal_family_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				stability_factor = 0.017
+				drift_defence_factor = 0.035
+				war_support_factor = 0.01
+				political_power_gain = -0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_royal_family = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+				war_support_factor = 0.03
+				political_power_gain = -0.012
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_church_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = 0.017
+				army_morale_factor = 0.01
+				monthly_population = 0.007
+				research_speed_factor = -0.03
+				political_power_factor = -0.05
+			}
+		}
+		fpw_eng_r_church = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = 0.05
+				army_morale_factor = 0.03
+				monthly_population = 0.02
+				research_speed_factor = -0.009
+				political_power_factor = -0.015
+			}
+		}
+
+		fpw_eng_r_great_game_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				justify_war_goal_time = -0.052
+				war_support_factor = 0.014
+				political_power_gain = 0.017
+				required_garrison_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_great_game = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				justify_war_goal_time = -0.15
+				war_support_factor = 0.04
+				political_power_gain = 0.05
+				required_garrison_factor = 0.015
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_concert_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.052
+				stability_factor = 0.014
+				trade_opinion_factor = 0.028
+				war_support_factor = -0.04
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_r_concert = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.15
+				stability_factor = 0.04
+				trade_opinion_factor = 0.08
+				war_support_factor = -0.012
+				political_power_gain = -0.009
+			}
+		}
+
+		fpw_eng_r_far_east_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				trade_opinion_factor = 0.035
+				min_export = 0.01
+				navy_max_range_factor = 0.017
+				required_garrison_factor = 0.05
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_r_far_east = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				trade_opinion_factor = 0.1
+				min_export = 0.03
+				navy_max_range_factor = 0.05
+				required_garrison_factor = 0.015
+				political_power_gain = -0.009
+			}
+		}
+
+		fpw_eng_r_commerce_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				trade_opinion_factor = 0.042
+				consumer_goods_factor = -0.01
+				opinion_gain_monthly_factor = 0.035
+				political_power_gain = -0.04
+				industrial_capacity_factory = -0.02
+			}
+		}
+		fpw_eng_r_commerce = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				trade_opinion_factor = 0.12
+				consumer_goods_factor = -0.03
+				opinion_gain_monthly_factor = 0.1
+				political_power_gain = -0.012
+				industrial_capacity_factory = -0.006
+			}
+		}
+
+		fpw_eng_r_raj_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				subjects_autonomy_gain = -0.052
+				political_power_gain = 0.017
+				conscription_factor = 0.01
+				required_garrison_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_raj = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				subjects_autonomy_gain = -0.15
+				political_power_gain = 0.05
+				conscription_factor = 0.03
+				required_garrison_factor = 0.015
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_british_america_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				production_speed_infrastructure_factor = 0.017
+				min_export = 0.007
+				trade_opinion_factor = 0.021
+				war_support_factor = -0.02
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_r_british_america = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				min_export = 0.02
+				trade_opinion_factor = 0.06
+				war_support_factor = -0.006
+				political_power_gain = -0.009
+			}
+		}
+
+		fpw_eng_r_southern_africa_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				local_resources_factor = 0.021
+				min_export = 0.007
+				political_power_gain = 0.01
+				required_garrison_factor = 0.06
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_r_southern_africa = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				local_resources_factor = 0.06
+				min_export = 0.02
+				political_power_gain = 0.03
+				required_garrison_factor = 0.018
+				stability_factor = -0.006
+			}
+		}
+
+		fpw_eng_r_tropical_africa_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				trade_opinion_factor = 0.021
+				stability_factor = 0.01
+				research_speed_factor = 0.007
+				required_garrison_factor = 0.05
+				monthly_population = -0.01
+			}
+		}
+		fpw_eng_r_tropical_africa = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				trade_opinion_factor = 0.06
+				stability_factor = 0.03
+				research_speed_factor = 0.02
+				required_garrison_factor = 0.015
+				monthly_population = -0.003
+			}
+		}
+
+		fpw_eng_r_antipodes_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				min_export = 0.01
+				conscription_factor = 0.01
+				trade_opinion_factor = 0.017
+				political_power_gain = -0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_r_antipodes = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				min_export = 0.03
+				conscription_factor = 0.03
+				trade_opinion_factor = 0.05
+				political_power_gain = -0.009
+				consumer_goods_factor = 0.006
+			}
+		}
+
+		fpw_eng_r_colonial_office_early = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				subjects_autonomy_gain = -0.035
+				political_power_gain = 0.017
+				required_garrison_factor = -0.017
+				consumer_goods_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_r_colonial_office = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				subjects_autonomy_gain = -0.1
+				political_power_gain = 0.05
+				required_garrison_factor = -0.05
+				consumer_goods_factor = 0.006
+				stability_factor = -0.006
+			}
+		}
+
+		fpw_eng_x_exchequer_audit = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.01
+			}
+		}
+		fpw_eng_x_match_tax = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.03
+			}
+		}
+		fpw_eng_x_great_stink = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = JAP_medical_infrastructure
+			modifier = {
+				monthly_population = 0.03
+				consumer_goods_factor = 0.01
+			}
+		}
+		fpw_eng_x_cholera = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = raj_risk_of_famine
+			modifier = {
+				research_speed_factor = 0.02
+				monthly_population = -0.06
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_x_anti_vaccination = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				conscription_factor = 0.02
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_x_birmingham_caucus = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				fascism_drift = 0.03
+				political_power_gain = 0.05
+				democratic_drift = -0.01
+			}
+		}
+		fpw_eng_x_thunderer = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				drift_defence_factor = 0.1
+				democratic_drift = 0.02
+			}
+		}
+		fpw_eng_x_edinburgh_riot = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				research_speed_factor = 0.01
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_x_descent_of_man = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = fra_education_reform
+			modifier = {
+				research_speed_factor = 0.04
+				stability_factor = -0.03
+			}
+		}
+		fpw_eng_x_challenger = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				navy_max_range_factor = 0.05
+			}
+		}
+		fpw_eng_x_albert_hall = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.02
+				research_speed_factor = 0.01
+			}
+		}
+		fpw_eng_x_detective_branch = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				decryption_factor = 0.05
+				resistance_target = -0.05
+			}
+		}
+		fpw_eng_x_hyde_park = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				stability_factor = 0.02
+				communism_drift = -0.01
+				political_power_gain = -0.02
+			}
+		}
+		fpw_eng_x_metropolitan_line = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				consumer_goods_factor = -0.01
+			}
+		}
+		fpw_eng_x_coal_famine = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_economic_crisis
+			modifier = {
+				local_resources_factor = 0.05
+				consumer_goods_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_x_oldham_boom = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_improved_industries
+			modifier = {
+				production_speed_industrial_complex_factor = 0.08
+				stability_factor = -0.01
+			}
+		}
+		fpw_eng_x_vienna_crash = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_economic_crisis
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_buildings_factor = -0.08
+				trade_opinion_factor = -0.05
+			}
+		}
+		fpw_eng_x_revolt_of_the_field = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				communism_drift = 0.02
+				conscription_factor = 0.02
+				local_resources_factor = -0.03
+			}
+		}
+		fpw_eng_x_gun_controversy = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				army_artillery_attack_factor = 0.03
+				production_speed_arms_factory_factor = -0.05
+			}
+		}
+		fpw_eng_x_dorking_panic = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_x_lissa = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				naval_speed_factor = 0.02
+				navy_org_factor = -0.02
+			}
+		}
+		fpw_eng_x_gunboats = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			modifier = {
+				justify_war_goal_time = -0.1
+				opinion_gain_monthly_factor = -0.05
+			}
+		}
+		fpw_eng_x_mordaunt = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				political_power_gain = 0.03
+				stability_factor = -0.03
+				drift_defence_factor = -0.05
+			}
+		}
+		fpw_eng_x_revival = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.03
+				army_morale_factor = 0.02
+				research_speed_factor = -0.01
+			}
+		}
+		fpw_eng_x_forward_policy = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				army_attack_factor = 0.03
+				war_support_factor = 0.02
+				required_garrison_factor = 0.05
+			}
+		}
+		fpw_eng_x_masterly_inactivity = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = 0.02
+				consumer_goods_factor = -0.01
+				war_support_factor = -0.02
+			}
+		}
+		fpw_eng_x_commune_refugees = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = FIN_finnish_federation_of_trade_unions
+			modifier = {
+				research_speed_factor = 0.01
+				communism_drift = 0.02
+			}
+		}
+		fpw_eng_x_bengal_relief = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = raj_risk_of_famine
+			modifier = {
+				monthly_population = 0.02
+				consumer_goods_factor = 0.03
+			}
+		}
+		fpw_eng_x_kimberley = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				local_resources_factor = 0.04
+				min_export = 0.02
+				required_garrison_factor = 0.03
+			}
+		}
+		fpw_eng_x_livingstone = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				war_support_factor = 0.02
+				research_speed_factor = 0.01
+			}
+		}
+		fpw_eng_b_stormy_session = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_b_treasury_squeeze = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		fpw_eng_b_vested_interests = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = -0.05
+				drift_defence_factor = -0.05
+			}
+		}
+		fpw_eng_b_strike_wave = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = FIN_finnish_federation_of_trade_unions
+			modifier = {
+				industrial_capacity_factory = -0.05
+				communism_drift = 0.02
+				stability_factor = -0.02
+			}
+		}
+		fpw_eng_b_retooling = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_economic_crisis
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+		fpw_eng_b_army_upheaval = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				army_org_factor = -0.05
+				training_time_army_factor = 0.1
+			}
+		}
+		fpw_eng_b_dockyard_upheaval = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_economic_crisis
+			modifier = {
+				industrial_capacity_dockyard = -0.06
+				navy_org_factor = -0.03
+			}
+		}
+		fpw_eng_b_diplomatic_friction = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				trade_opinion_factor = -0.1
+				improve_relations_maintain_cost_factor = 0.1
+			}
+		}
+		fpw_eng_b_colonial_overstretch = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				required_garrison_factor = 0.1
+				conscription_factor = -0.05
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_b_public_outcry = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		fpw_eng_b_church_controversy = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.05
+				drift_defence_factor = -0.05
+			}
+		}
+		fpw_eng_b_war_of_ideas = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = fra_education_reform
+			modifier = {
+				stability_factor = -0.02
+				political_power_gain = -0.03
+			}
+		}
+		fpw_eng_b_frontier_unrest = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_monarchist_uprising
+			modifier = {
+				resistance_growth = 0.1
+				required_garrison_factor = 0.05
+				war_support_factor = -0.02
+			}
+		}
+		fpw_eng_b_agricultural_distress = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = -0.03
+				consumer_goods_factor = 0.02
+				stability_factor = -0.01
+			}
+		}
+		fpw_eng_b_city_jitters = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_economic_crisis
+			modifier = {
+				trade_opinion_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		fpw_eng_b_court_scandal = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = -0.03
+				drift_defence_factor = -0.05
+			}
+		}
+		fpw_eng_b_police_powers = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				political_power_gain = -0.03
+				stability_factor = -0.02
+				drift_defence_factor = -0.03
+			}
+		}
+		fpw_eng_b_navvy_shortage = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_mild_economic_recovery
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				conscription_factor = -0.03
+			}
+		}
+		fpw_eng_b_epidemic = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = raj_risk_of_famine
+			modifier = {
+				monthly_population = -0.04
+				army_morale_factor = -0.03
+			}
+		}
+		fpw_eng_b_naval_panic = {
+			allowed = { original_tag = ENG }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				political_power_gain = -0.05
+				war_support_factor = -0.02
+			}
+		}
+	}
+}

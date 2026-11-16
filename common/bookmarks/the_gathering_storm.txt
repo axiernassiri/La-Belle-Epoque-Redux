@@ -7,7 +7,6 @@ bookmarks = {
 		default_country = "PRS"
 		default = yes
 		
-		## NOTMINOR
 
 		"PRS"={
 			history = "PRS_1866_DESC"
@@ -32,9 +31,7 @@ bookmarks = {
 			}
 		}
 		
-		##
 		
-		## MINOR SELECTION
 		
 		"CHI"={
             history = "CHI_1866_DESC"
@@ -94,8 +91,14 @@ bookmarks = {
             ideology = fascism
             available = { always = yes }
             ideas = {
+                fpw_eng_city_of_london
+                fpw_eng_rule_britannia
+                fpw_eng_reform_agitation
             }
             focuses = {
+                ENG_second_reform_act
+                ENG_workshop_of_the_world
+                ENG_rule_britannia
             }
         }
 
@@ -166,8 +169,7 @@ bookmarks = {
 		}
 
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
+			randomize_weather = 22345
 		}
 	}
 }

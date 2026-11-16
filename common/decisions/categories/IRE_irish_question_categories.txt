@@ -1,0 +1,9 @@
+IRE_irish_question = {
+	priority = 18
+	icon = GFX_decision_category_generic_independence
+	scripted_gui = ire_irish_question_gui
+
+	allowed = { original_tag = ENG }
+	visible = { ire_minigame_active = yes }
+	visible_when_empty = yes
+}

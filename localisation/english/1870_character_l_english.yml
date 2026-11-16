@@ -1,6 +1,5 @@
 ﻿l_english:
  
- # Traits
  
  fpw_tsar_of_russia: "Tsar of Russia"
  fpw_tsar_reformer: "Tsar Reformer"
@@ -23,7 +22,6 @@
  fpw_utopian_socialist: "Utopian Socialist"
  fpw_narodniks_philosopher: "Narodniks Philosopher"
  
- # Characters
  
  SOV_alexander_ii: "Alexander II"
  SOV_alexander_iii: "Tsesarevich Alexander"
@@ -62,15 +60,12 @@
  POL_wladyslaw_czartoryski: "Władysław Czartoryski"
  
  ENG_victoria:0 "Victoria"
- ENG_karl_marx:0 "Karl Marx"
  ENG_john_russell:0 "John Russell"
  ENG_edward_smith-stanley:0 "Edward Smith-Stanley"
 
  AFZ_mohammad_afzal_khan:0 "Mohammad Afzal Khan"
  
  AFG_sher_ali_khan:0 "Sher Ali Khan"
-
-# Plz Don't change the special little place for south america
 
  fpw_bra_wise_emperor: "Wise Emperor"
  fpw_par_proud: "Proud"

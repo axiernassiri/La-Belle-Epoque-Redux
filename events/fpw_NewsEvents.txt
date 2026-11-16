@@ -1,6 +1,5 @@
 add_namespace = news_fpw
 
-# austro prussian war escalation
 news_event = {
 	id = news_fpw.1
 	title = news_fpw.1.t
@@ -18,7 +17,6 @@ news_event = {
 					original_tag = AUS
 				}
 			}
-			# Will germany finally unite?
 		}
 	}
 
@@ -38,7 +36,6 @@ news_event = {
 	}
 }
 
-# napoleon the third is captured and the second empire collapses
 news_event = {
 	id = news_fpw.2
 	title = news_fpw.2.t
@@ -56,7 +53,6 @@ news_event = {
 					original_tag = FRA
 				}
 			}
-			# Will germany finally unite?
 		}
 	}
 
@@ -76,7 +72,6 @@ news_event = {
 	}
 }
 
-# prov government has resigned
 news_event = {
 	id = news_fpw.3
 	title = news_fpw.3.t
@@ -94,7 +89,6 @@ news_event = {
 					original_tag = FRA
 				}
 			}
-			# Will germany finally unite?
 		}
 	}
 
@@ -114,7 +108,6 @@ news_event = {
 	}
 }
 
-# luxembourg crisis
 news_event = {
 	id = news_fpw.4
 	title = news_fpw.4.t
@@ -178,7 +171,7 @@ news_event = {
 			original_tag = ENG
 		}
 		add_ideas = fpw_eng_economic_downfall
-		complete_national_focus = ENG_collapse_of_gurney_and_co
+		set_country_flag = ENG_collapse_of_gurney_and_co
 	}
 	option = {
 		name = "The Empire, for Once, is not Looking Well."
@@ -204,7 +197,7 @@ news_event = {
 		trigger = {
 			original_tag = ENG
 		}
-		complete_national_focus = ENG_russel_resigns
+		set_country_flag = ENG_russel_resigns
 		set_politics = {
 			ruling_party = democratic
 			last_election = "1866.6.18"
@@ -274,7 +267,7 @@ news_event = {
 		trigger = {
 			original_tag = ENG
 		}
-		complete_national_focus = ENG_disraeli_leads
+		set_country_flag = ENG_disraeli_leads
 		add_country_leader_role = {
 			character = ENG_benjamin_disraeli
 			promote_leader = yes
@@ -294,7 +287,6 @@ news_event = {
 	}
 }
 
-# north german unification
 news_event = {
 	id = news_fpw.11
 	title = news_fpw.11.t
@@ -313,7 +305,6 @@ news_event = {
 					original_tag = FRA
 				}
 			}
-			# Will germany finally unite?
 		}
 	}
 
@@ -340,7 +331,6 @@ news_event = {
 	}
 }
 
-# north german unification
 news_event = {
 	id = news_fpw.12
 	title = news_fpw.12.t
@@ -358,7 +348,6 @@ news_event = {
 					original_tag = FRA
 				}
 			}
-			# Will germany finally unite?
 		}
 	}
 
@@ -377,7 +366,6 @@ news_event = {
 		}
 	}
 }
-### Afghan Civil War Ending
 news_event = {
 	id = news_fpw.13
 	title = news_fpw.13.t
@@ -418,7 +406,6 @@ news_event = {
 		}
 	}
 }
-### Durrani Empire
 news_event = {
 	id = news_fpw.14
 	title = news_fpw.14.t
@@ -445,7 +432,6 @@ news_event = {
 		}
 	}
 }
-### Caliph Seized
 news_event = {
 	id = news_fpw.15
 	title = news_fpw.15.t
@@ -472,7 +458,6 @@ news_event = {
 		}
 	}
 }
-### New Order
 news_event = {
 	id = news_fpw.16
 	title = news_fpw.16.t
@@ -499,7 +484,6 @@ news_event = {
 		}
 	}
 }
-### Anglo Afghan War
 news_event = {
 	id = news_fpw.17
 	title = news_fpw.17.t

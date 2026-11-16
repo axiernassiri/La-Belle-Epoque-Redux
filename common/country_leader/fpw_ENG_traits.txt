@@ -1,0 +1,154 @@
+leader_traits = {
+
+	ENG_finality_jack = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		fascism_drift = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_rupert_of_debate = {
+		random = no
+		political_power_factor = 0.10
+		drift_defence_factor = 0.20
+		democratic_drift = 0.02
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_tory_democrat = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.05
+		subjects_autonomy_gain = -0.15
+		democratic_drift = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_peoples_william = {
+		random = no
+		political_power_factor = 0.10
+		consumer_goods_factor = -0.03
+		stability_factor = 0.05
+		fascism_drift = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_radical_republican = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.10
+		war_support_factor = -0.05
+		drift_defence_factor = 0.25
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_widow_of_windsor = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = -0.05
+		neutrality_drift = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_high_tory = {
+		random = no
+		democratic_drift = 0.05
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_home_secretary = {
+		random = no
+		stability_factor = 0.05
+		resistance_target = -0.05
+		required_garrison_factor = -0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_chancellor_of_the_exchequer = {
+		random = no
+		consumer_goods_factor = -0.05
+		political_power_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_admiralty_reformer = {
+		random = no
+		experience_gain_navy_factor = 0.10
+		industrial_capacity_dockyard = 0.05
+		navy_max_range_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_irish_secretary = {
+		random = no
+		resistance_damage_to_garrison = -0.15
+		compliance_growth = 0.05
+		stability_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_colonial_secretary = {
+		random = no
+		subjects_autonomy_gain = -0.15
+		autonomy_gain_global_factor = -0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_radical_mayor = {
+		random = no
+		production_speed_infrastructure_factor = 0.10
+		production_speed_industrial_complex_factor = 0.05
+		fascism_drift = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_reform_league_agitator = {
+		random = no
+		stability_factor = -0.03
+		fascism_drift = 0.05
+		political_power_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_secularist_firebrand = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = 0.10
+		drift_defence_factor = -0.15
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_philosophic_radical = {
+		random = no
+		research_speed_factor = 0.03
+		fascism_drift = 0.05
+		stability_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_lombard_street_economist = {
+		random = no
+		consumer_goods_factor = -0.03
+		trade_opinion_factor = 0.15
+		political_power_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_railway_company = {
+		random = no
+		production_speed_infrastructure_factor = 0.15
+		production_speed_rail_way_factor = 0.15
+		ai_will_do = { factor = 1 }
+	}
+
+	ENG_telegraph_company = {
+		random = no
+		research_speed_factor = 0.03
+		production_speed_infrastructure_factor = 0.05
+		trade_opinion_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,0 +1,216 @@
+ire_init = {
+	set_variable = { ire_ulster = 12 }
+	set_variable = { ire_leinster = 35 }
+	set_variable = { ire_munster = 45 }
+	set_variable = { ire_connacht = 50 }
+
+	set_variable = { ire_w_ulster = 0.30 }
+	set_variable = { ire_w_leinster = 0.30 }
+	set_variable = { ire_w_munster = 0.28 }
+	set_variable = { ire_w_connacht = 0.12 }
+
+	set_variable = { ire_t_home_rule = 50 }
+	set_variable = { ire_t_unrest = 70 }
+	set_variable = { ire_t_war = 85 }
+
+	set_variable = { ire_drift_ulster = 0.05 }
+	set_variable = { ire_drift_leinster = 0.20 }
+	set_variable = { ire_drift_munster = 0.30 }
+	set_variable = { ire_drift_connacht = 0.30 }
+
+	set_variable = { ire_backlash_strength = 2 }
+	set_variable = { ire_backlash_months = 6 }
+
+	set_variable = { ire_backlash_ulster = 0 }
+	set_variable = { ire_backlash_leinster = 0 }
+	set_variable = { ire_backlash_munster = 0 }
+	set_variable = { ire_backlash_connacht = 0 }
+
+	set_country_flag = ire_initialised
+	ire_update_total = yes
+}
+
+ire_update_total = {
+	clamp_variable = { var = ire_ulster min = 0 max = 100 }
+	clamp_variable = { var = ire_leinster min = 0 max = 100 }
+	clamp_variable = { var = ire_munster min = 0 max = 100 }
+	clamp_variable = { var = ire_connacht min = 0 max = 100 }
+
+	set_temp_variable = { ire_wsum = ire_w_ulster }
+	add_to_temp_variable = { ire_wsum = ire_w_leinster }
+	add_to_temp_variable = { ire_wsum = ire_w_munster }
+	add_to_temp_variable = { ire_wsum = ire_w_connacht }
+
+	set_temp_variable = { ire_tmp = ire_ulster }
+	multiply_temp_variable = { ire_tmp = ire_w_ulster }
+	set_variable = { ire_total = ire_tmp }
+
+	set_temp_variable = { ire_tmp = ire_leinster }
+	multiply_temp_variable = { ire_tmp = ire_w_leinster }
+	add_to_variable = { ire_total = ire_tmp }
+
+	set_temp_variable = { ire_tmp = ire_munster }
+	multiply_temp_variable = { ire_tmp = ire_w_munster }
+	add_to_variable = { ire_total = ire_tmp }
+
+	set_temp_variable = { ire_tmp = ire_connacht }
+	multiply_temp_variable = { ire_tmp = ire_w_connacht }
+	add_to_variable = { ire_total = ire_tmp }
+
+	divide_variable = { ire_total = ire_wsum }
+	clamp_variable = { var = ire_total min = 0 max = 100 }
+}
+
+ire_apply_selected = {
+	if = { limit = { has_country_flag = ire_selected_ulster } add_to_variable = { ire_ulster = ire_delta } }
+	if = { limit = { has_country_flag = ire_selected_leinster } add_to_variable = { ire_leinster = ire_delta } }
+	if = { limit = { has_country_flag = ire_selected_munster } add_to_variable = { ire_munster = ire_delta } }
+	if = { limit = { has_country_flag = ire_selected_connacht } add_to_variable = { ire_connacht = ire_delta } }
+}
+
+ire_apply_others = {
+	if = { limit = { NOT = { has_country_flag = ire_selected_ulster } } add_to_variable = { ire_ulster = ire_delta_others } }
+	if = { limit = { NOT = { has_country_flag = ire_selected_leinster } } add_to_variable = { ire_leinster = ire_delta_others } }
+	if = { limit = { NOT = { has_country_flag = ire_selected_munster } } add_to_variable = { ire_munster = ire_delta_others } }
+	if = { limit = { NOT = { has_country_flag = ire_selected_connacht } } add_to_variable = { ire_connacht = ire_delta_others } }
+}
+
+ire_apply_south = {
+	add_to_variable = { ire_leinster = ire_delta_south }
+	add_to_variable = { ire_munster = ire_delta_south }
+	add_to_variable = { ire_connacht = ire_delta_south }
+}
+
+ire_start_backlash_selected = {
+	if = { limit = { has_country_flag = ire_selected_ulster } set_variable = { ire_backlash_ulster = ire_backlash_months } }
+	if = { limit = { has_country_flag = ire_selected_leinster } set_variable = { ire_backlash_leinster = ire_backlash_months } }
+	if = { limit = { has_country_flag = ire_selected_munster } set_variable = { ire_backlash_munster = ire_backlash_months } }
+	if = { limit = { has_country_flag = ire_selected_connacht } set_variable = { ire_backlash_connacht = ire_backlash_months } }
+}
+
+ire_select_hottest = {
+	clr_country_flag = ire_selected_ulster
+	clr_country_flag = ire_selected_leinster
+	clr_country_flag = ire_selected_munster
+	clr_country_flag = ire_selected_connacht
+	set_temp_variable = { ire_best = ire_connacht }
+	set_temp_variable = { ire_pick = 4 }
+	if = { limit = { check_variable = { ire_munster > ire_best } } set_temp_variable = { ire_best = ire_munster } set_temp_variable = { ire_pick = 3 } }
+	if = { limit = { check_variable = { ire_leinster > ire_best } } set_temp_variable = { ire_best = ire_leinster } set_temp_variable = { ire_pick = 2 } }
+	if = { limit = { check_variable = { ire_ulster > ire_best } } set_temp_variable = { ire_best = ire_ulster } set_temp_variable = { ire_pick = 1 } }
+	if = { limit = { check_variable = { ire_pick = 1 } } set_country_flag = ire_selected_ulster }
+	if = { limit = { check_variable = { ire_pick = 2 } } set_country_flag = ire_selected_leinster }
+	if = { limit = { check_variable = { ire_pick = 3 } } set_country_flag = ire_selected_munster }
+	if = { limit = { check_variable = { ire_pick = 4 } } set_country_flag = ire_selected_connacht }
+}
+
+ire_shared_drift_modifiers = {
+	if = { limit = { has_idea = fpw_eng_justice_for_ireland } subtract_from_temp_variable = { ire_d = 0.25 } }
+	if = { limit = { has_idea = fpw_eng_coercion_in_ireland } subtract_from_temp_variable = { ire_d = 0.15 } }
+	if = { limit = { has_idea = fpw_eng_fenian_insurgency } add_to_temp_variable = { ire_d = 0.40 } }
+	if = { limit = { has_country_flag = ire_neglect_active } add_to_temp_variable = { ire_d = 0.60 } }
+	set_temp_variable = { ire_r = random }
+	subtract_from_temp_variable = { ire_r = 0.5 }
+	add_to_temp_variable = { ire_d = ire_r }
+}
+
+ire_monthly_tick = {
+	set_temp_variable = { ire_d = ire_drift_ulster }
+	ire_shared_drift_modifiers = yes
+	if = {
+		limit = { check_variable = { ire_backlash_ulster > 0 } }
+		add_to_temp_variable = { ire_d = ire_backlash_strength }
+		subtract_from_variable = { ire_backlash_ulster = 1 }
+	}
+	add_to_variable = { ire_ulster = ire_d }
+
+	set_temp_variable = { ire_d = ire_drift_leinster }
+	ire_shared_drift_modifiers = yes
+	if = { limit = { has_country_flag = ire_home_rule_granted } subtract_from_temp_variable = { ire_d = 0.4 } }
+	if = {
+		limit = { check_variable = { ire_backlash_leinster > 0 } }
+		add_to_temp_variable = { ire_d = ire_backlash_strength }
+		subtract_from_variable = { ire_backlash_leinster = 1 }
+	}
+	add_to_variable = { ire_leinster = ire_d }
+
+	set_temp_variable = { ire_d = ire_drift_munster }
+	ire_shared_drift_modifiers = yes
+	if = { limit = { has_country_flag = ire_home_rule_granted } subtract_from_temp_variable = { ire_d = 0.4 } }
+	if = {
+		limit = { check_variable = { ire_backlash_munster > 0 } }
+		add_to_temp_variable = { ire_d = ire_backlash_strength }
+		subtract_from_variable = { ire_backlash_munster = 1 }
+	}
+	add_to_variable = { ire_munster = ire_d }
+
+	set_temp_variable = { ire_d = ire_drift_connacht }
+	ire_shared_drift_modifiers = yes
+	if = { limit = { has_country_flag = ire_home_rule_granted } subtract_from_temp_variable = { ire_d = 0.4 } }
+	if = {
+		limit = { check_variable = { ire_backlash_connacht > 0 } }
+		add_to_temp_variable = { ire_d = ire_backlash_strength }
+		subtract_from_variable = { ire_backlash_connacht = 1 }
+	}
+	add_to_variable = { ire_connacht = ire_d }
+
+	ire_update_total = yes
+
+	if = {
+		limit = { is_ai = yes }
+		ire_select_hottest = yes
+	}
+
+	ire_check_thresholds = yes
+}
+
+ire_check_thresholds = {
+	if = {
+		limit = {
+			check_variable = { ire_total > ire_t_war }
+			NOT = { has_country_flag = ire_war_fired }
+		}
+		set_country_flag = ire_war_fired
+		country_event = { id = ire_question.3 days = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { ire_total > ire_t_unrest }
+			NOT = { has_country_flag = ire_unrest_cooldown }
+		}
+		set_country_flag = { flag = ire_unrest_cooldown days = 180 }
+		country_event = { id = ire_question.2 days = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { ire_total > ire_t_home_rule }
+			NOT = { has_country_flag = ire_home_rule_fired }
+		}
+		set_country_flag = ire_home_rule_fired
+		country_event = { id = ire_question.1 days = 1 }
+	}
+}
+
+ire_apply_unrest_modifiers = {
+	if = { limit = { check_variable = { ire_ulster > ire_t_unrest } } 119 = { add_dynamic_modifier = { modifier = ire_agrarian_outrages days = 180 } } }
+	if = { limit = { check_variable = { ire_leinster > ire_t_unrest } } 113 = { add_dynamic_modifier = { modifier = ire_agrarian_outrages days = 180 } } }
+	if = { limit = { check_variable = { ire_munster > ire_t_unrest } } 135 = { add_dynamic_modifier = { modifier = ire_agrarian_outrages days = 180 } } }
+	if = { limit = { check_variable = { ire_connacht > ire_t_unrest } } 134 = { add_dynamic_modifier = { modifier = ire_agrarian_outrages days = 180 } } }
+}
+
+ire_release_republic = {
+	release = IRE
+	if = {
+		limit = {
+			check_variable = { ire_ulster < 60 }
+			IRE = { owns_state = 119 }
+		}
+		transfer_state = 119
+	}
+	IRE = {
+		load_oob = "IRE_rising"
+		add_opinion_modifier = { target = ROOT modifier = large_decrease }
+	}
+	set_country_flag = ire_republic_released
+	news_event = { id = ire_question.20 hours = 6 }
+}
