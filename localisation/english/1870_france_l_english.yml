@@ -1,6 +1,8 @@
 ﻿l_english:
 # Bookmarks
 # Country loc
+FPC_french_federation: "French Federation"
+FPC_french_federation_DEF: "The Communard Federation of France"
 
 # Parties
 FRA_communism_party_long: "Association Internationale des Travailleurs\n\n§8International Workingmen's Association§!\n§LW.I.P§!\n"
@@ -378,6 +380,11 @@ lbe_france_news.1.title: "Exposition Universelle de 1867"
 lbe_france_news.2.title: "Luxembourg Crisis"
 lbe_france_news.3.title: "Three Emperors Dinner"
 lbe_france_news.4.title: "Tsar Alexander II Assassination Attempt in the Universal Exposition!"
+lbe_france_news.5.title: "Franco-Prussian War!"
+lbe_france_news.6.title: "Second French Revolution"
+
+
+
 
 #Decisions
 # Modernization
@@ -416,12 +423,12 @@ FRA_already_expanding_influence_flag: "Already expanding influence in a State"
 fra_lmu_tt: "This §YNational Spirit§! will be added to every member of the §YLatin Monetary Union§!, And will be §Gupgraded§! everytime a new member joins"
 FRA_modify_lmu_tt: "Modify §YLatin Monetary Union§! by:"
 fra_franco_austrian_treaty_if_accept_tt: "If [AUS.GetFlag]§YAustria§! accepts the §YTreaty§!, we will gain the following effect:"
-
-
-
-
-
-
+fra_state_will_be_influenced_by_bonapartists: "This §Ystate§! is being §Rinfluenced§! by the [FRA.GetFlag]§3Bonapartists§!!"
+fra_info_about_letting_bonapartists_influence_states: "If we allow the [FRA.GetFlag]§3Bonapartists§! to §Rinfluence§! may too much §Ystates§!, they will §Rgain more units§! and if we fail to complete the focus §Y'Pour Une France Libre!'§!, and this mission runs out, they will gain a §Rtimed buff§! against us!"
+fra_info_about_letting_bonapartists_influence_states_2_tt: "Once this §Rmission§! runs out:"
+FRA_not_already_influenced_state_tt_2: "This §Ystate§! has not been §Rinfluenced§! by the [FRA.GetFlag]§3Bonapartists§!"
+fra_strengthen_the_paris_communards_effect_tt: "We will gain §Y6 Stronger National Guards§! in [FPC.GetFlag]§YParis§! and [FPC.GetFlag]§YMarseille§!"
+fra_french_revolution_tt: "§RThe French Revolution will Begin.§!"
 
 
 

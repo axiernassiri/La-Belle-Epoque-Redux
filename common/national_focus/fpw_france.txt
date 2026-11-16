@@ -84,7 +84,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = {
 				id = french_empire_events.13
 				days = 4
@@ -2516,6 +2515,10 @@ focus_tree = {
 					id = french_empire_events.8
 					days = 240
 				}
+				country_event = {
+					id = french_empire_events.9
+					days = 346
+				}
 			}
 		}
 	}
@@ -3108,6 +3111,10 @@ focus_tree = {
 					id = french_empire_events.8
 					days = 240
 				}
+				country_event = {
+					id = french_empire_events.9
+					days = 346
+				}
 			}
 			
 		}
@@ -3487,10 +3494,23 @@ focus_tree = {
 			16 = {
 				set_state_flag = FRA_influenced_by_opposition
 			}
+			21 = {
+				set_state_flag = FRA_influenced_by_opposition
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.04
+			}
 			country_event = {
 				id = french_empire_events.41
-				days = 20
+				days = 7
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_category_tooltip = FRA_preparatives_for_the_revolution_cat
 		}
 	}
 	focus = {
@@ -3514,7 +3534,13 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = -0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = FRA_parisian_bronze_strike
+				add_idea = FRA_parisian_bronze_strike_3
+			}
 		}
 	}
 	focus = {
@@ -3534,11 +3560,28 @@ focus_tree = {
 		icon = GFX_focus_generic_join_comintern
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_political_power = 75
+			set_country_flag = fra_cw_call_internationale
+			custom_effect_tooltip = when_civil_war_starts_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = FRA
+						}
+					}
+					country_event = french_empire_events.42
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				FPC = {
+					add_manpower = 250000
+				}
+			}
 		}
 	}
 	focus = {
@@ -3562,6 +3605,39 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 25
+			set_country_flag = fra_cw_spread_socialism
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = when_civil_war_starts_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				FRA = {
+					swap_ideas = {
+						remove_idea = FRA_intense_political_division
+						add_idea = FRA_intense_political_divisio_6
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				FPC = {
+					add_political_power = 150
+					add_stability = 0.1
+					add_war_support = 0.15
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_ideas = FRA_concerning_support_from_the_republicans
+				}
+			}
 			
 		}
 	}
@@ -3588,6 +3664,31 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 50
+			set_country_flag = fra_cw_strengthen_communards
+			add_war_support = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = when_civil_war_starts_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				FPC = {
+				custom_effect_tooltip = fra_strengthen_the_paris_communards_effect_tt
+					
+					add_war_support = 0.15
+					add_popularity = {
+						ideology = communism
+						popularity = 0.1
+					}
+					swap_ideas = {
+						remove_idea = FRA_concerning_support_from_the_republicans
+						add_idea = FRA_concerning_support_from_the_republicans_2
+					}		
+				}
+			}
 			
 		}
 	}
@@ -3613,6 +3714,11 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = FRA_parisian_bronze_strike_3
+				add_idea = FRA_formation_of_the_communards
+			}
 			
 		}
 	}
@@ -3638,590 +3744,269 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_iwa_victory
-		prerequisite = { focus = FRA_pour_une_france_libre }
-		relative_position_id = FRA_pour_une_france_libre
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_goal_support_communism
-		x = 2
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_anti_imperialist_rhetoric
-		prerequisite = { focus = FRA_iwa_victory }
-		relative_position_id = FRA_iwa_victory
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_SOV_the_end_of_the_imperialist_era_ccp_2d_sov_compatibility
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_the_manifesto_of_the_sixty
-		prerequisite = { focus = FRA_iwa_victory }
-		relative_position_id = FRA_iwa_victory
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SWE_socialist_reforms
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_for_the_international_revolution
-		prerequisite = { focus = FRA_the_manifesto_of_the_sixty }
-		prerequisite = { focus = FRA_anti_imperialist_rhetoric }
-		relative_position_id = FRA_the_manifesto_of_the_sixty
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SOV_international_union_of_soviet_republics
-		x = 0
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_fervour_for_the_socialist_cause
-		prerequisite = { focus = FRA_the_manifesto_of_the_sixty }
-		prerequisite = { focus = FRA_anti_imperialist_rhetoric }
-		relative_position_id = FRA_the_manifesto_of_the_sixty
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
-		x = -2
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_sparks_of_revolution_in_the_latin_world
-		prerequisite = { focus = FRA_fervour_for_the_socialist_cause focus = FRA_for_the_international_revolution }
-		relative_position_id = FRA_fervour_for_the_socialist_cause
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_ARG_unify_south_america
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_to_avenge_the_germanic_revolution
-		prerequisite = { focus = FRA_fervour_for_the_socialist_cause focus = FRA_for_the_international_revolution }
-		relative_position_id = FRA_fervour_for_the_socialist_cause
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_attack_germany
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_bring_socialism_to_the_eastern_bear
-		prerequisite = { focus = FRA_fervour_for_the_socialist_cause focus = FRA_for_the_international_revolution }
-		relative_position_id = FRA_fervour_for_the_socialist_cause
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-		x = 3
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_bring_freedom_to_the_balkanic_states
-		prerequisite = { focus = FRA_bring_socialism_to_the_eastern_bear focus = FRA_to_avenge_the_germanic_revolution }
-		relative_position_id = FRA_bring_socialism_to_the_eastern_bear
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_SOV_demand_balkan_submission_ccp_2d_sov_compatibility
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_put_an_end_to_the_british_imperialism
-		prerequisite = { focus = FRA_sparks_of_revolution_in_the_latin_world focus = FRA_to_avenge_the_germanic_revolution }
-		relative_position_id = FRA_sparks_of_revolution_in_the_latin_world
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_attack_britain
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_strike_the_western_capitalist_threat
-		prerequisite = { focus = FRA_put_an_end_to_the_british_imperialism focus = FRA_bring_freedom_to_the_balkanic_states }
-		relative_position_id = FRA_put_an_end_to_the_british_imperialism
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_moderate_republicans_victory
-		prerequisite = { focus = FRA_pour_une_france_libre }
-		relative_position_id = FRA_pour_une_france_libre
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_goal_support_democracy
-		x = -3
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_mantaining_order
-		prerequisite = { focus = FRA_moderate_republicans_victory }
-		relative_position_id = FRA_moderate_republicans_victory
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_reform_the_constitution_of_the_republic
-		prerequisite = { focus = FRA_moderate_republicans_victory }
-		relative_position_id = FRA_moderate_republicans_victory
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_POL_complete_april_constitution
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_a_decisive_blow_against_strikers
-		prerequisite = { focus = FRA_mantaining_order }
-		prerequisite = { focus = FRA_reform_the_constitution_of_the_republic }
-		relative_position_id = FRA_reform_the_constitution_of_the_republic
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SWE_attack_landsorganisationen
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_republicanization_of_the_army
-		prerequisite = { focus = FRA_a_decisive_blow_against_strikers }
-		relative_position_id = FRA_a_decisive_blow_against_strikers
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_little_entente
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_discredit_napoleon_iii
-		prerequisite = { focus = FRA_a_decisive_blow_against_strikers }
-		relative_position_id = FRA_a_decisive_blow_against_strikers
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_rom_abdicate
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_belleville_program
-		prerequisite = { focus = FRA_discredit_napoleon_iii }
-		prerequisite = { focus = FRA_republicanization_of_the_army }
-		relative_position_id = FRA_discredit_napoleon_iii
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_republican_economic_reforms
-		prerequisite = { focus = FRA_belleville_program }
-		relative_position_id = FRA_belleville_program
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_economic_recovery
-		x = -2
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_universal_suffrage_reform
-		prerequisite = { focus = FRA_belleville_program }
-		relative_position_id = FRA_belleville_program
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_universal_suffrage
-		x = 0
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_abolition_of_standing_armies
-		prerequisite = { focus = FRA_belleville_program }
-		relative_position_id = FRA_belleville_program
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_crush_the_military
-		x = 2
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_separation_of_the_church_and_the_state
-		prerequisite = { focus = FRA_abolition_of_standing_armies }
-		prerequisite = { focus = FRA_universal_suffrage_reform }
-		relative_position_id = FRA_abolition_of_standing_armies
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_improve_the_administration_2
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_reform_the_tax_system
-		prerequisite = { focus = FRA_republican_economic_reforms }
-		prerequisite = { focus = FRA_universal_suffrage_reform }
-		relative_position_id = FRA_republican_economic_reforms
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_currency_reforms
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_liberte_egalite_fraternite
-		prerequisite = { focus = FRA_separation_of_the_church_and_the_state }
-		prerequisite = { focus = FRA_reform_the_tax_system }
-		relative_position_id = FRA_reform_the_tax_system
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
+			set_global_flag = fra_french_revolution
+			custom_effect_tooltip = fra_french_revolution_tt
+			news_event = {
+				id = lbe_france_news.6
+				days = 2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			FPC = {
+				add_timed_idea = {
+					idea = FRA_communards_strike_first
+					days = 90
+				}
+			}
+			hidden_effect = {
+				set_capital = {state = 24}
+				FPC = { change_tag_from = FRA }
+				
+				every_core_state = {
+					limit = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+					transfer_state_to = FPC
+					add_core_of = FPC
+				}
+				FRA = {
+					remove_state_core = 16
+					remove_state_core = 21
+				}
+				FPC = {
+					division_template = {
+						name = "Communard"
+						is_locked = yes
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+							militia = { x = 0 y = 3 }
+						}
+					}
+					declare_war_on = {
+						target = FRA
+						type = annex_everything
+					}
+					add_civil_war_target = FRA
+				}
+				
+				if = {
+					limit = {
+						has_country_flag = fra_cw_call_internationale
+					}
+					
+					every_country = {
+						limit = {
+							NOT = {
+								tag = FRA
+							}
+						}
+						country_event = french_empire_events.42
+					}
+					#FPC = {
+					#	add_manpower = 250000
+					#}
+				}
+				if = {
+					limit = {
+						has_country_flag = fra_cw_spread_socialism
+					}
+					FRA = {
+						swap_ideas = {
+							remove_idea = FRA_intense_political_division
+							add_idea = FRA_intense_political_divisio_6
+						}
+					}
+					FPC = {
+						add_political_power = 150
+						add_stability = 0.1
+						add_war_support = 0.15
+						add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+						add_ideas = FRA_concerning_support_from_the_republicans
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = fra_cw_strengthen_communards
+					}
+					FPC = {
+						division_template = {
+							name = "Commune Garde Nationale"
+							is_locked = yes
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+								cannon_artillery = { x = 0 y = 1 }
+							}
+						}
+						add_war_support = 0.15
+						add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+						swap_ideas = {
+							remove_idea = FRA_concerning_support_from_the_republicans
+							add_idea = FRA_concerning_support_from_the_republicans_2
+						}
+						
+					}
+					16 = {
+						create_unit = {
+							division = "name = \"Commune Garde Nationale\" division_template = \"Commune Garde Nationale\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FPC
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 11506
+							count = 6
+						}
+					}
+					21 = {
+						create_unit = {
+							division = "name = \"Commune Garde Nationale\" division_template = \"Commune Garde Nationale\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FPC
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 11834
+							count = 6
+						}
+					}
+					
+				}
+				if = {
+					limit = {
+						has_country_flag = FRA_cw_seize_equipment_equipment_flag
+					}
+					FPC = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 9500
+							producer = FRA
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 1250
+							producer = FRA
+						}
+						add_equipment_to_stockpile = {
+							type = fpw_cannon_artillery
+							amount = 250
+							producer = FRA
+						}
+					}	
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_henri_tolain
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_leon_gambetta
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_ernest_lefevre
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_arthur_ranc
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_victor_hugo
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_alexandre_auguste_ledru_rollin
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_armand_barbes
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_louis_auguste_blanqui
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_emile_eudes
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_raoul_rigault
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_ulysse_parent
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_gustave_flourens
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_armand_barbes
+				}
+				FRA = {
+					division_template = {
+						name = "Bonapartist Loyalist Militia"
+						is_locked = yes
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+						}
+					}
+						
+				}
+					
+				every_core_state = {
+					limit = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+					create_unit = {
+						division = "name = \"Bonapartist Loyalist Militia\" division_template = \"Bonapartist Loyalist Militia\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
+						owner = FRA
+						allow_spawning_on_enemy_provs = yes
+						count = 4
+					}
+				}
+				every_core_state = {
+					limit = {
+						NOT = {
+							has_state_flag = FRA_influenced_by_bonapartists
+						}
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition
+						}
+					}
+					create_unit = {
+						division = "name = \"Bonapartist Loyalist Militia\" division_template = \"Bonapartist Loyalist Militia\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
+						owner = FRA
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+				every_core_state = {
+					limit = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+					create_unit = {
+						division = "name = \"Communard\" division_template = \"Communard\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = FPC
+						allow_spawning_on_enemy_provs = yes
+						count = 8
+					}
+				}
+				
+			}
 		}
 	}
 

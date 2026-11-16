@@ -188,6 +188,25 @@ ideas = {
 				political_advisor_cost_factor = 0.25
 			}
 		}
+		FRA_intense_political_divisio_6 = { # OPPOSITION
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				party_popularity_stability_factor = -0.2
+				political_power_gain = -0.4
+				stability_factor = -0.2
+				communism_drift = 0.08
+				democratic_drift = 0.06
+				drift_defence_factor = -0.35
+				political_advisor_cost_factor = 0.45
+			}
+		}
 		FRA_intense_political_division_2 = {
 			name = FRA_intense_political_division
 
@@ -392,14 +411,66 @@ ideas = {
 
 
 			modifier = {
-				political_power_factor = -0.1
-				stability_factor = -0.1
+				political_power_factor = -0.05
+				stability_factor = -0.05
 				communism_drift = 0.02
 				drift_defence_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.07
+				consumer_goods_factor = 0.05
+			}
+		}
+		FRA_parisian_bronze_strike_3 = { # USED FOR OPPOSITION
+ 
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.15
+				communism_drift = 0.04
+				drift_defence_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.1
-				industrial_capacity_factory = -0.15
+				industrial_capacity_factory = -0.2
 				consumer_goods_factor = 0.1
 				local_resources_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = FPC    # this can also take a variable that stores a scope
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		FRA_formation_of_the_communards = {
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.2
+				drift_defence_factor = -0.35
+				production_factory_efficiency_gain_factor = -0.1
+				local_resources_factor = -0.1
+				communism_drift = 0.06
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = 0.25
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1
+				conscription_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = FPC    # this can also take a variable that stores a scope
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 		}
 		FRA_loire_coal_basin_strike = {
@@ -620,6 +691,71 @@ ideas = {
 				min_export = 0.15
 				trade_opinion_factor = 0.1
 				local_resources_factor = 0.1
+			}
+		}
+		FRA_bonapartists_strike_first = {
+
+			picture = GER_fan_prussian_militarism
+
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = FPC    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_communards_strike_first = {
+
+			picture = GER_fan_prussian_militarism
+
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = FRA    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_concerning_support_from_the_republicans = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+				democratic_drift = 0.02
+				drift_defence_factor = -0.1
+				war_support_factor = -0.05
+				political_advisor_cost_factor = 0.05
+			}
+		}
+		FRA_concerning_support_from_the_republicans_2 = {
+			name = FRA_concerning_support_from_the_republicans
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.1
+				democratic_drift = 0.04
+				drift_defence_factor = -0.25
+				war_support_factor = -0.1
+				political_advisor_cost_factor = 0.15
 			}
 		}
 

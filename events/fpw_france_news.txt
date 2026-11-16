@@ -111,3 +111,76 @@ news_event = {
 		name = lbe_france_news.5.a
 	}
 }
+# Second French Revolution
+news_event = {
+	id = lbe_france_news.6
+	title = lbe_france_news.6.title
+	desc = lbe_france_news.6.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # for the revolution or sum communist slogan bullshit
+		name = lbe_france_news.6.a
+		trigger = {
+			has_government = communism
+		}
+	}
+	option = { # WTF
+		name = lbe_france_news.6.b
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+}
+# Second French Revolution ENDS
+news_event = {
+	id = lbe_france_news.7
+	title = lbe_france_news.7.title
+	desc = lbe_france_news.7.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # for the revolution or sum communist slogan bullshit
+		name = lbe_france_news.7.a
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FPC
+			}
+		}
+	}
+	option = { # Fuck
+		name = lbe_france_news.7.b
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = { # how the fuck we survived that
+		name = lbe_france_news.7.c
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = { # victory or sum
+		name = lbe_france_news.7.d
+		trigger = {
+			tag = FPC
+		}
+		set_cosmetic_tag = FPC_french_federation
+	}
+}

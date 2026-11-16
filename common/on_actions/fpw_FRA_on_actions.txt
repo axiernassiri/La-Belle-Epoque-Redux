@@ -1,0 +1,47 @@
+on_Actions = {
+		on_annex = {
+			effect = {
+
+				#End of SCW
+				if = {
+					limit = {
+						FROM = {
+							original_tag = FRA
+						}
+						ROOT = {
+							original_tag = FPC
+						}
+					}
+					add_ideas = FPC_the_cost_of_victory #keep the spirit on historical mode, keeping them out of the war
+					clr_global_flag = fra_french_revolution
+					set_global_flag = fra_french_revolution_over
+					news_event = {
+						id = lbe_france_news.7
+						days = 2
+					}
+					delete_unit_template_and_units = {
+						division_template = "Communard"
+						disband = yes #will refund equipment and manpower
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							original_tag = FPC
+						}
+						ROOT = {
+							original_tag = FRA
+						}
+					}
+					add_ideas = FPC_the_cost_of_victory #keep the spirit on historical mode, keeping them out of the war
+					clr_global_flag = fra_french_revolution
+					set_global_flag = fra_french_revolution_over
+					news_event = {
+						id = ugl_news.2
+						days = 2
+					}
+				}
+			
+			}
+		}
+	}

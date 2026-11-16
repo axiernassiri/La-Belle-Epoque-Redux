@@ -51,10 +51,10 @@ country_event = {
 #	id = french_empire_events.8
 #	days = 303
 #}
-country_event = {
-	id = french_empire_events.9
-	days = 409
-}
+#country_event = {
+#	id = french_empire_events.9
+#	days = 409
+#}
 country_event = {
 	id = french_empire_events.10
 	days = 505

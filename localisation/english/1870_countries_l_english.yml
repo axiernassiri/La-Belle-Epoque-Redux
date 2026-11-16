@@ -19,9 +19,9 @@
  PEI_DEF:0 "Prince Edward Island"
  PEI_ADJ:0 "Prince Edward"
  
- FPC:0 "Paris Commune"
- FPC_DEF:0 "the Paris Commune"
- FPC_ADJ:0 "Communard"
+ FPC:0 "French Communes"
+ FPC_DEF:0 "the French Communes"
+ FPC_ADJ:0 "French"
 
  PGA:1 "Galicia"
  PGA_DEF:1 "the Galician State"

@@ -76,6 +76,7 @@ country_event = { # festivities commemorating the centenary of Lorraine's annexa
 
 	option = { # 
 		name = french_empire_events.5.a
+		add_political_power = 25
 	}
 }
 country_event = { # France-Japan Universal Exposition Incident
@@ -138,8 +139,10 @@ country_event = { # parisian Bronze Strike
 		add_political_power = -50
 		add_stability = -0.05
 		hidden_effect = {
-			country_event = french_empire_events.23
-			days = 24
+			country_event = {
+				id = french_empire_events.23
+				days = 24
+			}
 		}
 	}
 }
@@ -358,8 +361,10 @@ country_event = { # financial support from english to the strikes
 			add_idea = FRA_parisian_bronze_strike_2
 		}
 		hidden_effect = {
-			country_event = french_empire_events.24
-			days = 14
+			country_event = {
+				id = french_empire_events.24
+				days = 14
+			}
 		}
 	}
 }
@@ -380,8 +385,10 @@ country_event = { # end of the bronze strike
 		remove_ideas = FRA_parisian_bronze_strike_2
 		add_stability = 0.05
 		hidden_effect = {
-			country_event = french_empire_events.25
-			days = 808
+			country_event ={
+				id = french_empire_events.25
+				days = 808
+			}
 		}
 	}
 }
@@ -401,8 +408,10 @@ country_event = { # miners' strike in the Loire coal basin
 		name = french_empire_events.25.a
 		add_stability = -0.05
 		hidden_effect = {
-			country_event = french_empire_events.26
-			days = 6
+			country_event = {
+				id = french_empire_events.26
+				days = 6
+			}
 		}
 	}
 }
@@ -423,8 +432,10 @@ country_event = { # Fusillade du Brûlé
 		add_stability = -0.1
 		add_manpower = -3000
 		hidden_effect = {
-			country_event = french_empire_events.27
-			days = 10
+			country_event = {
+				id = french_empire_events.27
+				days = 10
+			}
 		}
 	}
 }
@@ -447,8 +458,10 @@ country_event = { # general strike breaks out in the Carmaux coal basin
 			add_idea = FRA_loire_coal_basin_strike_2
 		}
 		hidden_effect = {
-			country_event = french_empire_events.28
-			days = 37
+			country_event = {
+				id = french_empire_events.28
+				days = 37
+			}
 		}
 	}
 }
@@ -468,8 +481,10 @@ country_event = { # End of the Loire coal basin strikes
 		name = french_empire_events.28.a
 		remove_ideas = FRA_loire_coal_basin_strike_2
 		hidden_effect = {
-			country_event = french_empire_events.29
-			days = 170
+			country_event = {
+				french_empire_events.29
+				days = 170
+			}
 		}
 	}
 }
@@ -491,8 +506,10 @@ country_event = { # metalworkers strike
 		add_manpower = -3500
 		add_ideas = FRA_metalworkers_strike
 		hidden_effect = {
-			country_event = french_empire_events.30
-			days = 5
+			country_event = {
+				id = french_empire_events.30
+				days = 5
+			}
 		}
 	}
 }
@@ -512,8 +529,10 @@ country_event = { # metalworkers strike ends
 		name = french_empire_events.30.a
 		remove_ideas = FRA_metalworkers_strike
 		hidden_effect = {
-			country_event = french_empire_events.31
-			days = 56
+			country_event = {
+				id = french_empire_events.31
+				days = 56
+			}
 		}
 	}
 }
@@ -533,8 +552,10 @@ country_event = { # miners' strike in Le Creusot
 		name = french_empire_events.31.a
 		add_ideas = FRA_creusot_miners_strike
 		hidden_effect = {
-			country_event = french_empire_events.32
-			days = 25
+			country_event = {
+				id = french_empire_events.32
+				days = 25
+			}
 		}
 	}
 }
@@ -800,13 +821,52 @@ country_event = { # General Strike begins / OPPOSITION FOCUS
 
 	option = { # 
 		name = french_empire_events.41.a
-		add_ideas = FRA_parisian_bronze_strike
 		add_political_power = 50
-		add_stability = -0.05
-		hidden_effect = {
-			country_event = french_empire_events.23
-			days = 24
+		add_stability = -0.1
+		add_ideas = FRA_parisian_bronze_strike
+	}
+}
+# INTERNATIONALE CALL
+country_event = {
+	id = french_empire_events.42
+	title = french_empire_events.42.title
+	desc = french_empire_events.42.desc
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+
+	# Communist Only - Sponsor Volunteers
+	option = {
+		name = french_empire_events.42.a
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FPC
+			}
 		}
+		add_manpower = -25000
+	}
+
+	# anyone - Oh
+	option = {
+		name = french_empire_events.42.b
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+			NOT = {
+				tag = FPC
+			}
+		}
+		add_manpower = -12500
+	}
+	# GET THE MANPOWER FRENCH COMMUNE
+	option = {
+		name = french_empire_events.42.c
+		trigger = {
+			tag = FPC
+		}
+		add_manpower = 250000
 	}
 }
 

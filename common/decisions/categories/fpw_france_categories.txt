@@ -62,6 +62,8 @@ FRA_modernization_of_paris_cat = {
 		tag = FRA
 	}
 	visible = {
+		NOT = { has_global_flag = fra_french_revolution }
+		NOT = { has_global_flag = fra_french_revolution_over }
 		#has_completed_focus = SPA_preparatives_for_new_offensives
 	}
 }
@@ -76,6 +78,8 @@ FRA_preparatives_for_the_revolution_cat = {
 	}
 	visible = {
 		has_completed_focus = FRA_rally_the_opposition
+		NOT = { has_global_flag = fra_french_revolution }
+		NOT = { has_global_flag = fra_french_revolution_over }
 	}
 }
 FRA_france_debug_stuff_cat = {
