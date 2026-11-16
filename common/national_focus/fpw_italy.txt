@@ -2146,4 +2146,27 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = ITA_resignation_of_alfonso
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 60
+		y = 0
+
+		completion_reward = {
+			
+		}
+	}
 }
