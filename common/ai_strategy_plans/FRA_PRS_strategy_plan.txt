@@ -1,0 +1,56 @@
+FRA_PRS_alliance_ai = {
+	name = "Bismarck-Napoleon III say gex story"
+	desc = ""
+
+	allowed = {
+		OR = {
+			tag = PRS
+			tag = FRA
+		}
+	}
+	enable = {
+		FRA = {
+			has_completed_focus = FRA_unholy_alliance
+		}
+		PRS = {
+			has_country_flag = fra_prs_allied_france_ai_flag
+		}
+	}
+	abort = {
+		PRS = {
+			NOT = {
+				has_country_flag = fra_prs_allied_france_ai_flag
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = 10000
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = 10000
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = FRA
+		value = 10000
+		target = join_allies
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = FRA
+		value = 10000
+		target = call_allies
+	}
+	ai_strategy = {
+		type = support
+		id = FRA
+		value = 10000
+	}
+}
+

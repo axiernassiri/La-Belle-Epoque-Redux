@@ -44,3 +44,55 @@ PRS_win_austro_prussian_war = {
 		manual_attack = yes
 	}
 }
+
+PRS_fra_be_allied_with_france_ai = { # OCCURS WHEN FRANCE ALLIES PRUSSIA THROUGH THE FOCUS
+	allowed = {
+		tag = PRS
+		
+	}
+	enable = {
+		FRA = {
+			has_completed_focus = FRA_unholy_alliance
+		}
+		PRS = {
+			has_country_flag = fra_prs_allied_france_ai_flag
+		}
+	}
+	abort = {
+		PRS = {
+			NOT = {
+				has_country_flag = fra_prs_allied_france_ai_flag
+			}
+		}
+		
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = 100
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = 100
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = FRA
+		value = 100
+		target = join_allies
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = FRA
+		value = 100
+		target = call_allies
+	}
+	ai_strategy = {
+		type = support
+		id = FRA
+		value = 100
+	}
+}

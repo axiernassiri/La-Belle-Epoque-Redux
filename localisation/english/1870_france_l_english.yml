@@ -1,14 +1,23 @@
 ﻿l_english:
 # Bookmarks
+
+# Factions
+FRA_treaty_of_paris_alliance: "Treaty of Paris"
+FRA_triple_alliance: "Triple Alliance"
+FRA_the_entente_alliance: "Entente"
+FRA_konstantiniyye_pact: "Konstantiniyye Pact"
+FRA_european_coalition: "European Coalition"
+
+
 # Country loc
 FPC_french_federation: "French Federation"
 FPC_french_federation_DEF: "The Communard Federation of France"
 
 # Parties
-FRA_communism_party_long: "Association Internationale des Travailleurs\n\n§8International Workingmen's Association§!\n§LW.I.P§!\n"
-FRA_fascism_party_long: "Parti Bonapartiste (Officiels)\n\n§8Bonapartist Party (Officials)§!\n§LW.I.P§!\n"
-FRA_democratic_party_long: "Républicains Modérés\n\n§8Moderate Republicans§!\n§LW.I.P§!\n"
-FRA_neutrality_party_long: "Tiers Parti\n\n§8Third Party§!\n§LW.I.P§!\n"
+FRA_communism_party_long: "Association Internationale des Travailleurs\n\n\n\n§8International Workingmen's Association§!\n\n§LW.I.P§!\n\n"
+FRA_fascism_party_long: "Parti Bonapartiste (Officiels)\n\n\n\n§8Bonapartist Party (Officials)§!\n\n§LW.I.P§!\n\n"
+FRA_democratic_party_long: "Républicains Modérés\n\n\n\n§8Moderate Republicans§!\n\n§LW.I.P§!\n\n"
+FRA_neutrality_party_long: "Tiers Parti\n\n\n\n§8Third Party§!\n\n§LW.I.P§!\n\n"
 
 # Ideas
 FRA_constitutional_reform_of_1862: "Constitutional Reform of 1862"
@@ -40,6 +49,13 @@ FRA_exploit_the_resources_of_the_empire: "Utilizing the Land"
 FRA_the_republicans_oppose_military_reform: "Republicans Oppose Military Reform"
 FRA_reorganization_process_of_the_army: "Reorganizing the Army"
 FRA_threat_of_revolution: "Spectre of Revolution"
+FRA_victoire_finale: "Victoire Finale"
+FRA_victoire_finale_prs: "Endsieg"
+
+
+
+
+
 # Commune
 FRA_concerning_support_from_the_republicans: "Growing Republican Dissent"
 FRA_parisian_bronze_strike: "The Parisian Bronze Strike"
@@ -358,38 +374,71 @@ FRA_secure_indochina_desc: " "
 
 #Events
 french_empire_events.1.title: "Battle of Bagdad"
+french_empire_events.1.desc: ""
 french_empire_events.2.title: "Explosion in the Factory of Mr. Aubin!"
+french_empire_events.2.desc: ""
 french_empire_events.3.title: "Withdrawal of French Troops from Mexico"
+french_empire_events.3.desc: ""
 french_empire_events.4.title: "Reconnaissance of the Mekong Valley"
+french_empire_events.4.desc: ""
 french_empire_events.5.title: "Centenary of Lorraine's Annexation to France"
+french_empire_events.5.desc: ""
 french_empire_events.6.title: "France-Japan Universal Exposition Incident"
+french_empire_events.6.desc: ""
 french_empire_events.7.title: "Massacre of Nine Missionaries in Korea"
+french_empire_events.7.desc: ""
 french_empire_events.8.title: "Premiere of La Vie Parisienne"
+french_empire_events.8.desc: ""
 french_empire_events.9.title: "Parisian Bronze Strike"
+french_empire_events.9.desc: ""
 french_empire_events.10.title: "Foundation of the League of Peace and Liberty"
+french_empire_events.10.desc: ""
 french_empire_events.11.title: "The Salzburg Meeting"
+french_empire_events.11.desc: ""
 french_empire_events.13.title: "Niel's Reform Proposals"
+french_empire_events.13.desc: ""
 french_empire_events.14.title: "Situation of the Second Empire"
+french_empire_events.14.desc: ""
 french_empire_events.15.title: "Wise Progress of our Institutions"
+french_empire_events.15.desc: ""
 french_empire_events.16.title: "Even More Liberal Reforms"
+french_empire_events.16.desc: ""
 french_empire_events.17.title: "New War Minister"
+french_empire_events.17.desc: ""
 french_empire_events.18.title: "Legislative Elections of 1869"
+french_empire_events.18.desc: ""
 french_empire_events.19.title: "Aftermath of the Elections"
+french_empire_events.19.desc: ""
 french_empire_events.20.title: "Émile Ollivier Becomes Prime Minister"
+french_empire_events.20.desc: ""
 french_empire_events.21.title: "Results of the Plesbiscite of 1870"
+french_empire_events.21.desc: ""
 french_empire_events.22.title: "Dismissal of Haussmann"
+french_empire_events.22.desc: ""
 french_empire_events.23.title: "English Financial Support"
+french_empire_events.23.desc: ""
 french_empire_events.24.title: "End of the Bronze Strike"
+french_empire_events.24.desc: ""
 french_empire_events.25.title: "Loire Miner's Strike!"
+french_empire_events.25.desc: ""
 french_empire_events.26.title: "Fusillade du Brûlé"
+french_empire_events.26.desc: ""
 french_empire_events.27.title: "General Strike Breaks Out at Carmaux"
+french_empire_events.27.desc: ""
 french_empire_events.28.title: "End of the Loire Miner's Strike"
+french_empire_events.28.desc: ""
 french_empire_events.29.title: "Metalworker's Strike"
+french_empire_events.29.desc: ""
 french_empire_events.30.title: "End of the Metalworker's Strike"
+french_empire_events.30.desc: ""
 french_empire_events.31.title: "Miner's Strike in Le Creusot"
+french_empire_events.31.desc: ""
 french_empire_events.32.title: "End of the Miner's Strike"
+french_empire_events.32.desc: ""
 french_empire_events.33.title: "Time for Useful Reforms"
+french_empire_events.33.desc: ""
 french_empire_events.34.title: "Latin Monetary Union"
+french_empire_events.34.desc: ""
 french_empire_events.35.title: "[FROM.GetNameDef] Joins the Latin Monetary Union!"
 french_empire_events.35.desc: ""
 french_empire_events.36.title: "[FROM.GetNameDef] Rejects the Latin Monetary Union"
@@ -403,6 +452,19 @@ french_empire_events.39.title: "Austria Rejects the Trade Treaty"
 french_empire_events.39.desc: ""
 french_empire_events.39.a: "It's their loss"
 french_empire_events.40.title: "Murder of Victor Noir"
+french_empire_events.40.desc: ""
+french_empire_events.41.title: "General Strike!"
+french_empire_events.41.desc: ""
+french_empire_events.42.title: "Call of the Internationale"
+french_empire_events.42.desc: ""
+french_empire_events.43.title: "Our International Affairs"
+french_empire_events.43.desc: ""
+french_empire_events.44.title: "France Proposes Alliance"
+french_empire_events.44.desc: ""
+french_empire_events.45.title: "Prussia Accepts the Proposal"
+french_empire_events.45.desc: ""
+french_empire_events.46.title: "Prussia Rejects the Proposal"
+french_empire_events.46.desc: ""
 
 
 
@@ -412,7 +474,15 @@ lbe_france_news.3.title: "Three Emperors Dinner"
 lbe_france_news.4.title: "Tsar Alexander II Assassination Attempt in the Universal Exposition!"
 lbe_france_news.5.title: "Franco-Prussian War!"
 lbe_france_news.6.title: "Second French Revolution"
-
+lbe_france_news.7.title: "End of the French Revolution"
+lbe_france_news.8.title: "Franco-Prussian Alliance!"
+lbe_france_news.8.desc: ""
+lbe_france_news.8.b: "Aslong as we can unificate..."
+lbe_france_news.8.c: "We are so lucky..."
+lbe_france_news.9.title: "Austria Forms the European Coalition!"
+lbe_france_news.9.desc: ""
+lbe_france_news.9.a: "It was inevitable"
+lbe_france_news.9.b: "Wait, What the fuck!??"
 
 
 
@@ -551,7 +621,8 @@ fra_info_about_letting_bonapartists_influence_states: "If we allow the [FRA.GetF
 fra_info_about_letting_bonapartists_influence_states_2_tt: "Once this §Rmission§! runs out:"
 FRA_not_already_influenced_state_tt_2: "This §Ystate§! has not been §Rinfluenced§! by the [FRA.GetFlag]§3Bonapartists§!"
 fra_strengthen_the_paris_communards_effect_tt: "We will gain §Y6 Stronger National Guards§! in [FPC.GetFlag]§YParis§! and [FPC.GetFlag]§YMarseille§!"
-
+fra_prs_alliance_effect_2_tt: "§RWe must bring the balance of power back in europe, through force.§!"
+fra_prs_alliance_effect_tt: "§RPrepare yourself for the inevitable.§!"
 
 
 # TECH STUFF LOC
@@ -563,4 +634,4 @@ FRA_manufacture_d_armes_de_tulle_organization: "Manufacture d'armes de Tulle"
 
 # DEBUG
 FRA_france_debug_stuff_cat: "France Debug"
-#FRA_debug_give_rally_opposition_bonapartist_influence: "Give Rally Opposition Bonapartist Influence" # what does this even mean?
+#FRA_debug_give_rally_opposition_bonapartist_influence: "Give Rally Opposition Bonapartist Influence" # what does this even mean?  # mf thats about giving a random state a influenced bonapartist, used for gfx testing, dont loc debug stuff

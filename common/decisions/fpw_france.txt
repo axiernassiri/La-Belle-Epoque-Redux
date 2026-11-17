@@ -296,7 +296,7 @@ FRA_modernization_of_paris_cat = {
 
 		days_mission_timeout = 500
 
-		#fire_only_once = yes
+		fire_only_once = yes
 
 		is_good = yes
 
@@ -304,6 +304,7 @@ FRA_modernization_of_paris_cat = {
 			NOT = {
 				has_country_flag = fra_completed_second_phase_of_modernization
 			}
+			has_war = no
 		}
 
 		#Failed
@@ -635,7 +636,7 @@ FRA_modernization_of_paris_cat = {
 
 		days_mission_timeout = 300
 
-		#fire_only_once = yes
+		fire_only_once = yes
 
 		is_good = yes
 
@@ -645,6 +646,7 @@ FRA_modernization_of_paris_cat = {
 		
 			}
 			has_country_flag = fra_completed_second_phase_of_modernization
+			has_war = no
 		}
 		#Failed
 		timeout_effect = {

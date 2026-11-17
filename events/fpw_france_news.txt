@@ -184,3 +184,227 @@ news_event = {
 		set_cosmetic_tag = FPC_french_federation
 	}
 }
+# Franco Prussian Alliance
+news_event = {
+	id = lbe_france_news.8
+	title = lbe_france_news.8.title
+	desc = lbe_france_news.8.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			add_threat = 25
+			news_event = {
+				id = lbe_france_news.9
+				days = 30
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # dear god
+		name = lbe_france_news.8.a
+		custom_effect_tooltip = fra_prs_alliance_effect_2_tt
+		trigger = {
+			NOT = {
+				tag = PRS
+				tag = FRA
+			}
+		}
+	}
+	option = { # Good ig
+		name = lbe_france_news.8.b
+		custom_effect_tooltip = fra_prs_alliance_effect_tt
+		trigger = {
+			tag = PRS
+		}
+	}
+	option = { # lets fucking go
+		name = lbe_france_news.8.c
+		custom_effect_tooltip = fra_prs_alliance_effect_tt
+		trigger = {
+			tag = FRA
+		}
+	}
+}
+# Franco Prussian Alliance / European Coalition forms
+news_event = {
+	id = lbe_france_news.9
+	title = lbe_france_news.9.title
+	desc = lbe_france_news.9.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			add_threat = 10
+			AUS = {
+				create_faction_from_template = faction_template_FRA_european_coalition_alliance
+				add_to_faction = GER
+				add_to_faction = ENG
+				add_to_faction = SOV
+				add_to_faction = ITA
+				add_to_faction = MKS
+				add_to_faction = LIP
+				add_to_faction = HEK
+				add_to_faction = WLD
+				add_to_faction = SCG
+				add_to_faction = SXW
+				add_to_faction = BRU
+				add_to_faction = ANH
+				add_to_faction = MCK
+				add_to_faction = OLD
+				add_to_faction = HES
+				add_to_faction = FRK
+				add_to_faction = BAD
+				add_to_faction = WRT
+				add_to_faction = LUE
+				add_to_faction = HAM
+				add_to_faction = BRE
+				add_to_faction = HAN
+				add_to_faction = SXY
+				add_to_faction = SXM
+				add_to_faction = NAS
+				declare_war_on = {
+					target = PRS
+					type = topple_government
+				}
+				declare_war_on = {
+					target = FRA
+					type = topple_government
+				}
+				add_to_war = {
+					targeted_alliance = SOV
+					enemy = PRS
+					hostility_reason = asked_to_join
+				}
+				add_to_war = {
+					targeted_alliance = SOV
+					enemy = FRA
+					hostility_reason = asked_to_join
+				}
+				add_to_war = {
+					targeted_alliance = ENG
+					enemy = PRS
+					hostility_reason = asked_to_join
+				}
+				add_to_war = {
+					targeted_alliance = ENG
+					enemy = FRA
+					hostility_reason = asked_to_join
+				}
+				add_to_war = {
+					targeted_alliance = ITA
+					enemy = PRS
+					hostility_reason = asked_to_join
+				}
+				add_to_war = {
+					targeted_alliance = ITA
+					enemy = FRA
+					hostility_reason = asked_to_join
+				}
+			}
+			160 = {
+				transfer_state_to = ITA
+			}
+			850 = {
+				transfer_state_to = ITA
+			}
+			FRA = {
+				add_ideas = FRA_victoire_finale
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 35000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 15000
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = fpw_cannon_artillery
+					amount = 2500
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = fpw_cavalry_equipment
+					amount = 3500
+					producer = FRA
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BEL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HOL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = LUX
+				}
+			}
+			PRS = {
+				add_ideas = FRA_victoire_finale_prs
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 55000
+					producer = PRS
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 17500
+					producer = PRS
+				}
+				add_equipment_to_stockpile = {
+					type = fpw_cannon_artillery
+					amount = 3500
+					producer = PRS
+				}
+				add_equipment_to_stockpile = {
+					type = fpw_cavalry_equipment
+					amount = 4500
+					producer = PRS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = SWE
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = DEN
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # for the good of europe
+		name = lbe_france_news.9.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = PRS
+					tag = FRA
+				}
+			}
+		}
+	}
+	option = { # wait, what the fuck
+		name = lbe_france_news.9.b
+		trigger = {
+			OR = {
+				tag = PRS
+				tag = FRA
+			}
+		}
+	}
+}

@@ -63,3 +63,63 @@ FRA_defend_franco_prussian_border = {
 		subtract_fronts_from_need = yes
 	}
 }
+
+FRA_unbalanced_the_european_theater = { # OCCURS WHEN FRANCE ALLIES PRUSSIA THROUGH THE FOCUS
+	allowed = {
+		any_country = {
+			is_on_continent = europe
+			NOT = {
+				tag = PRS
+			}
+			NOT = {
+				tag = FRA
+			}
+		}
+		
+	}
+	enable = {
+		FRA = {
+			has_completed_focus = FRA_unholy_alliance
+		}
+		has_global_flag = fra_ai_become_enemy_cuz_ally_prussia
+	}
+	abort = {
+		FRA = {
+			NOT = {
+				is_in_faction_with = PRS
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = PRS
+		value = -100
+	}
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = -100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = PRS
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = FRA
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = PRS
+		value = 100
+	}
+}

@@ -4059,11 +4059,11 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 		completion_reward = {
-			
+			country_event = french_empire_events.43
 		}
 	}
 	focus = {
@@ -4096,7 +4096,9 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			PRS = {
+				country_event = french_empire_events.44
+			}
 		}
 	}
 	focus = {

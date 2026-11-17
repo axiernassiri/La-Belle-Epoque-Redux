@@ -869,6 +869,120 @@ country_event = {
 		add_manpower = 250000
 	}
 }
+country_event = { # larp about frances situation of allies
+	id = french_empire_events.43
+	title = french_empire_events.43.title
+	desc = french_empire_events.43.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.43.a
+	}
+}
+country_event = { # French-Prussian Alliance
+	id = french_empire_events.44
+	title = french_empire_events.44.title
+	desc = french_empire_events.44.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.44.a
+		ai_chance = {
+			base = 0.25
+		}
+		effect_tooltip = {
+			FRA = {
+				create_faction_from_template = faction_template_FRA_treaty_of_paris_alliance
+				add_to_faction = PRS
+				add_to_faction = MKS
+				add_to_faction = LIP
+				add_to_faction = HEK
+				add_to_faction = WLD
+				add_to_faction = SCG
+				add_to_faction = SXW
+				add_to_faction = BRU
+				add_to_faction = ANH
+				add_to_faction = MCK
+				add_to_faction = OLD
+			}
+		}
+		FRA = {
+			country_event = {
+				id = french_empire_events.45
+				days = 4
+			}
+		}
+	}
+	option = { # No
+		name = french_empire_events.44.b
+		ai_chance = {
+			base = 0.25
+			modifier = { #Speer is preferred for Historical plan
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		FRA = {
+			country_event = {
+				id = french_empire_events.46
+				days = 4
+			}
+		}
+	}
+}
+country_event = { # French-Prussian Alliance / YES
+	id = french_empire_events.45
+	title = french_empire_events.45.title
+	desc = french_empire_events.45.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.45.a
+		create_faction_from_template = faction_template_FRA_treaty_of_paris_alliance
+		add_to_faction = PRS
+		PRS = {
+			set_country_flag = fra_prs_allied_france_ai_flag
+		}
+		set_global_flag = fra_ai_become_enemy_cuz_ally_prussia
+		news_event = {
+			id = lbe_france_news.8
+			days = 2
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+}
+country_event = { # French-Prussian Alliance / NO
+	id = french_empire_events.46
+	title = french_empire_events.46.title
+	desc = french_empire_events.46.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = french_empire_events.46.a
+	}
+}
+
+
+
+
+
 
 
 

@@ -64,6 +64,7 @@ FRA_modernization_of_paris_cat = {
 	visible = {
 		NOT = { has_global_flag = fra_french_revolution }
 		NOT = { has_global_flag = fra_french_revolution_over }
+			has_war = no
 		#has_completed_focus = SPA_preparatives_for_new_offensives
 	}
 }
