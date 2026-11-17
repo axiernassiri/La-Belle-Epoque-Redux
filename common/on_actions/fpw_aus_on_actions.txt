@@ -127,8 +127,9 @@ on_actions = {
 					}
 				}
 			}
-			remove_dynamic_modifier = fpw_italian_wars
-			complete_national_focus = AUS_italian_interest_secured
+			AUS = {
+				country_event = fpw_austria.37
+			}
 		}
 	}
 }

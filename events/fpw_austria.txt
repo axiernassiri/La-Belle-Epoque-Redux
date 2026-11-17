@@ -1105,3 +1105,19 @@ country_event = {
 		
 	}
 }
+
+### victory over the italians
+country_event = {
+	id = fpw_austria.37
+	title = fpw_austria.37.t
+	desc = fpw_austria.37.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fpw_austria.37.a
+		ai_chance = { factor = 401 }
+		remove_dynamic_modifier = fpw_italian_wars
+		complete_national_focus = AUS_italian_interest_secured
+	}
+}
