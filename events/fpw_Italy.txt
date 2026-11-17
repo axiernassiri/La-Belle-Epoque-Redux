@@ -2,6 +2,8 @@
 # Italian Events
 ###########################
 
+add_namespace = italy_fpw
+
 # Prussia Alliance
 country_event = {
 	id = italy_fpw.1
@@ -1119,7 +1121,9 @@ country_event = {
 		}
 	}
 }
-# birth of the national party
+########### ITALIAN POLITICS EVENTS
+
+#Resignation of Alfonso
 country_event = {
 	id = italy_fpw.24
 	title = italy_fpw.24.t
@@ -1130,111 +1134,15 @@ country_event = {
 	
 	option = {
 		name = italy_fpw.24.a
-		set_party_name = {
-			ideology = neutrality
-			long_name = ITA_np
-			name = ITA_np
+		retire_country_leader = yes
+		promote_character = {
+			character = ITA_bettino_ricasoli
+			ideology = conservative_constitutional_monarchism
 		}
-		add_popularity = {
-			ideology = neutrality
-			popularity = 0.35
-		}
-		add_country_leader_role = {
-			character = ITA_alfonso_ferrero
-			promote_leader = yes
-			country_leader = {
-				ideology = nationalism
-				expire = "1965.1.1.1"
-				traits = {}
-			}
-		}
-		hidden_effect = {
-			ITA_alfonso_ferrero = {
-				remove_country_leader_role = {
-   					ideology = conservative_constitutional_monarchism
-				}
-			}
-		}
-	}
-}
-# First Presidential election
-country_event = {
-	id = italy_fpw.25
-	title = italy_fpw.25.t
-	desc = italy_fpw.25.d
-	picture = GFX_report_event_generic_handshake
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = italy_fpw.25.a
-		add_stability = 0.3
-	}
-}
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
 
-# revolt in Palermo
-country_event = {
-	id = italy_fpw.26
-	title = italy_fpw.26.t
-	desc = italy_fpw.26.d
-	picture = GFX_report_event_tank_factory
-	
-	is_triggered_only = yes
-	
-	# Kill them
-	option = {
-	# ! ADD AI CHANCE
-		name = italy_fpw.26.a
-		add_stability = -0.05
-		hidden_effect = {
-		country_event = {
-				id = italy_fpw.27
-				days = 8
-			}
-		}
-	}
-	
-	# Its nothing right?
-	option = {
-	# ! ADD AI CHANCE
-		name = italy_fpw.26.b
-		add_stability = -0.05
-		hidden_effect = {
-		country_event = {
-				id = italy_fpw.28
-				days = 14
-			}
-		}
+		complete_national_focus = ITA_resignation_of_alfonso
+		complete_national_focus = ITA_preserving_italian_conservatism
 	}
 }
-
-# Revolt gone
-country_event = {
-	id = italy_fpw.27
-	title = italy_fpw.27.t
-	desc = italy_fpw.27.d
-	picture = GFX_report_event_tank_factory
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = italy_fpw.27.a
-		add_stability = 0.1
-	}
-}
-
-# Revolt expands
-country_event = {
-	id = italy_fpw.28
-	title = italy_fpw.28.t
-	desc = italy_fpw.28.d
-	picture = GFX_report_event_tank_factory
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = italy_fpw.28.a
-		add_stability = 0.3
-		set_country_flag = Ita_revolt_path
-	}
-} 

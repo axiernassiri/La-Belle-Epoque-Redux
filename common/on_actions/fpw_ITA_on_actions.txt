@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ITA = {
+				if = {
+					limit = { has_start_date < 1866.1.2 }
+					country_event = { id = italy_fpw.24 days = 170 }
+				}
+			}
+		}
+	}
+}
