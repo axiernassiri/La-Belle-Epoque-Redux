@@ -1143,6 +1143,5 @@ country_event = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		complete_national_focus = ITA_resignation_of_alfonso
-		complete_national_focus = ITA_preserving_italian_conservatism
 	}
 }
