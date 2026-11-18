@@ -1,7 +1,5 @@
 ﻿l_english:
  
- autonomy_austrian_personal_union: "Habsburg Personal Union"
- 
 #focuses
 
  #Austro-Prussian War
@@ -38,7 +36,7 @@
  AUS_peace_of_vienna: "Peace of Vienna"
  AUS_peace_of_vienna_desc: "A settlement negotiated in Vienna could spare the empire from the harshest consequences of defeat. Preserving our remaining influence will require difficult concessions, but the survival of the monarchy must come first."
  
- #Aftermath of the Austro-Prussian War
+ #Aftermath of the Austro-Prussian War (historical)
  AUS_great_humiliation: "Great Humiliation"
  AUS_great_humiliation_desc: "The defeat of 1866 has destroyed Austria's position as the leading German power. The monarchy must now confront its military shortcomings, its political isolation, and the growing demands of its dissatisfied peoples."
  AUS_reform_the_army: "Reform the Army"
@@ -179,6 +177,14 @@
  AUS_saviours_of_poland: "Saviours of Poland"
  AUS_saviours_of_poland_desc: "We can call us the saviours of Poland, since we have protected them from the Prussian and Russian expansion. We should continue to support them and ensure that they remain loyal to the monarchy."
 
+ #nonhistorical path
+ AUS_victory_over_prussia: "Victory Over Prussia"
+ AUS_victory_over_prussia_desc: "The unbelievable has happened! We were able to defeat Prussia and restore our influence in Germany. The monarchy must now consolidate its gains, strengthen its alliances, and ensure that it remains a dominant power on the continent."
+
+  #cracking down
+ AUS_crack_down_on_ethnicities: "Cracking Down on Ethnicities"
+ AUS_crack_down_on_ethnicities_desc: "The various ethnic groups within the empire have been expressing discontent with the central government. Austria must take decisive action to address these concerns and maintain stability."
+
  #Army Branch
  AUS_army_reforms_begin: "Army Reforms Begin"
  AUS_army_reforms_begin_desc: "The reconstruction of the Imperial and Royal Army begins with a thorough review of its command structure, training, and equipment. These first reforms will lay the groundwork for a modern fighting force capable of defending the monarchy against future enemies."
@@ -264,7 +270,7 @@
  AUS_develop_hungary: "Develop Hungary"
 
 
- # influencing
+ #influencing
  AUS_influencing_balkan: "Influencing the Balkan"
  AUS_influence_greece: "Influence greece"
  AUS_military_cooperation_with_greece: "Military Cooperation with Greece"
@@ -280,7 +286,7 @@
  AUS_subjagate_romania: "Subjugate Romania"
 
 
- # Settling
+ #Settling
  AUS_settling_austria: "Settling in the Empire"
  AUS_settling_hungary: "Settling Hungary"
  AUS_settling_illyria: "Settling Illyria"
@@ -378,10 +384,10 @@
  fpw_austria.4.d: "[FRA.GetNameDefCap] has denied to help us in our future war with [PRS.GetNameDef]"
  fpw_austria.4.a: "You can never rely on the French!"
  fpw_austria.5.t: "Hungarian Protests"
- fpw_austria.5.d: ""
+ fpw_austria.5.d: "All across the empire, the Hungarian population is protesting against the governemt. They are demanding greater autonomy and recognition of their rights."
  fpw_austria.5.a: "Is it 1848 all over again?"
  fpw_austria.6.t: "The Slavs Revolt"
- fpw_austria.6.d: ""
+ fpw_austria.6.d: "Not long after the Hungarian protests, the Slavic population has also risen up against the government. They are demanding greater autonomy and recognition of their rights. We must act quickly to quell these uprisings before they spread further."
  fpw_austria.6.a: "It is 1848 all over again."
  fpw_austria.7.t: "Congress of Berlin"
  fpw_austria.7.d: "[AUS.GetNameDef] proposes an agreement to split up [TUR.GetNameDef] between [ENG.GetNameDef], [SOV.GetNameDef], and [AUS.GetNameDef]. Under this agreement the balkan states would gain freedom, with [SOV.GetNameDef] gaining overlordship of Romania. [ENG.GetNameDef] would gain Cyprus, and [Aus.GetNameDef] would annex Bosnia."
@@ -437,13 +443,13 @@
  fpw_austria.20.b: "Promise revenge and reconquest"
  fpw_Austria.21.t: "France gives Venice to Italy"
  fpw_Austria.21.d: ""
- fpw_Austria.21.a: ""
+ fpw_Austria.21.a: "They betrayed us!"
  fpw_austria.22.t: "Diplomatic Victory in the Berlin Congress"
  fpw_austria.22.d: "Our diplomats have achieved a great diplomatic victory for Austria at the Congress of Berlin. The Ottoman Empire will be forced to cede Bosnia to us."
  fpw_austria.22.a: "We are back on the Worldstage!"
  
 
-# Characters
+#Characters
  AUS_von_beust: "Friedrich von Beust"
  AUS_anselm_rothschild: "Anselm von Rothschild"
  AUS_august_zang: "August Zang"
@@ -457,7 +463,7 @@
  AUS_mihaly_tancsics: "Mihály Táncsics"
  AUS_leopold_thun: "Leopold von Thun-Hohenstein"
 
-# Leader Traits
+#advisor traits
  LBER_habsburg_traditionalism: "Habsburg Traditionalism"
  LBER_imperial_foreign_minister: "Imperial Diplomat"
  LBER_financial_magnate: "Financial Magnate"
@@ -589,6 +595,8 @@
 
 #cosmetic nation/ideology names
  
+ autonomy_austrian_personal_union: "Habsburg Personal Union"
+
 #Faction names
  AUS_anti_german_alliance: "Anti-[PRS.GetNameDef] Entente."
  AUS_central_powers: "Central Powers"
