@@ -880,7 +880,7 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_PLACEHOLDER 
-		x = 0
+		x = -1
 		y = 1
 
 		completion_reward = {
@@ -957,7 +957,7 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_PLACEHOLDER 
-		x = 0
+		x = 1
 		y = 1
 
 		completion_reward = {
@@ -2402,6 +2402,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_dynamic_modifier = { modifier = fpw_ITA_the_communist_machine }
+			mark_focus_tree_layout_dirty = yes 
 		}
 	}
 	focus = {
@@ -2737,7 +2738,159 @@ focus_tree = {
 		allow_branch = { NOT = { has_completed_focus = ITA_government_of_italian_communism } }
 
 		completion_reward = {
-			
+			mark_focus_tree_layout_dirty = yes 
+		}
+	}
+	focus = {
+		id = ITA_reestablish_new_elections
+		relative_position_id = ITA_organize_the_italian_socialist_party
+		prerequisite = { focus = ITA_organize_the_italian_socialist_party }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = 0
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_ally_the_communists
+		relative_position_id = ITA_reestablish_new_elections
+		prerequisite = { focus = ITA_reestablish_new_elections }
+		mutually_exclusive = { focus = ITA_exclude_the_communists }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = -1
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_exclude_the_communists
+		relative_position_id = ITA_reestablish_new_elections
+		prerequisite = { focus = ITA_reestablish_new_elections }
+		mutually_exclusive = { focus = ITA_ally_the_communists }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = 1
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_fund_the_welfare_state
+		relative_position_id = ITA_ally_the_communists
+		prerequisite = { focus = ITA_ally_the_communists focus = ITA_exclude_the_communists }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = 1
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_peacefully_negotiate_with_the_rich
+		relative_position_id = ITA_fund_the_welfare_state
+		prerequisite = { focus = ITA_fund_the_welfare_state }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = 0
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_fight_off_conservatives
+		relative_position_id = ITA_peacefully_negotiate_with_the_rich
+		prerequisite = { focus = ITA_peacefully_negotiate_with_the_rich }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = -1
+		y = 1
+
+		completion_reward = {
+
 		}
 	}
 }
