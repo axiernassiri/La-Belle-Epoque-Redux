@@ -1037,8 +1037,7 @@ focus_tree = {
 		y = 2
 
 		completion_reward = {
-			add_idea = ITA_italian_general_staff_idea
-			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = ITA_italian_general_staff_idea
 		}
 	}
 	focus = {
@@ -2188,7 +2187,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			add_idea = fpw_ITA_the_anti_capitalist_opposition_1
+			add_ideas = fpw_ITA_the_anti_capitalist_opposition_1
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
