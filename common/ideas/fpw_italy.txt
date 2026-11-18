@@ -67,6 +67,19 @@ ideas = {
 				communism_drift = 0.15
 			}
 		}
+		fpw_ITA_socialist_government = {
+			picture = gfx
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				communism_drift = 0.1
+			}
+		}
 		fpw_ITA_strike_movements_1 = {
 			picture = gfx
 			allowed = {
