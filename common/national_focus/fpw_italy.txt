@@ -1037,7 +1037,7 @@ focus_tree = {
 		y = 2
 
 		completion_reward = {
-			add_ideas = ITA_italian_general_staff_idea
+			add_ideas = fpw_ITA_italian_general_staff_idea
 		}
 	}
 	focus = {
