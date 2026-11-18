@@ -288,6 +288,23 @@ give_prestige_modifiers = {
 			}
 		}
 	}
+	# Italy
+	if = {
+		limit = {
+			NOT = {
+				ITA = {		
+					has_dynamic_modifier = {
+						modifier = fpw_ITA_legacy_of_1861
+					}
+				}
+			}
+		}
+		ITA = {
+			add_dynamic_modifier = { 
+				modifier = fpw_ITA_legacy_of_1861 
+			}
+		}
+	}
 	force_update_dynamic_modifier = yes
 }
 
@@ -532,6 +549,19 @@ apply_prestige_modifier_effetcs = {
 			multiply_temp_variable = { prestige_to_add = 0.15 }
 			add_to_variable = { THIS.country_base_prestige = prestige_to_add }
 		}
+		}
+		# Italy
+		if = {
+			limit = {
+				THIS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_ITA_legacy_of_1861
+					}
+				}
+			}
+			set_temp_variable = { prestige_to_add = 150 }
+			multiply_temp_variable = { prestige_to_add = 0.25 }
+			add_to_variable = { THIS.country_base_prestige = prestige_to_add }
 		}
 	}
 }

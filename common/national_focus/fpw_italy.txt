@@ -2381,6 +2381,33 @@ focus_tree = {
 		id = ITA_government_of_italian_communism
 		relative_position_id = ITA_the_italian_revolution
 		prerequisite = { focus = ITA_the_italian_revolution }
+		mutually_exclusive = { focus = ITA_organize_the_italian_socialist_party }		
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_AUS_danubian_socialist_communes 
+		x = -6
+		y = 1
+		allow_branch = { NOT = { has_completed_focus = ITA_organize_the_italian_socialist_party } }
+
+		completion_reward = {
+			add_dynamic_modifier = { modifier = fpw_ITA_the_communist_machine }
+		}
+	}
+	focus = {
+		id = ITA_exclude_the_democratic_socialists
+		relative_position_id = ITA_government_of_italian_communism
+		prerequisite = { focus = ITA_government_of_italian_communism }
 		available = {
 
 		}
@@ -2395,8 +2422,319 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_PLACEHOLDER 
-		x = -6
+		x = -1
 		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_supression_of_anti_marxist_parties
+		relative_position_id = ITA_government_of_italian_communism
+		prerequisite = { focus = ITA_government_of_italian_communism }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_dictator_of_the_proletariat
+		relative_position_id = ITA_supression_of_anti_marxist_parties
+		prerequisite = { focus = ITA_exclude_the_democratic_socialists }
+		prerequisite = { focus = ITA_supression_of_anti_marxist_parties }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_unite_the_massses
+		relative_position_id = ITA_dictator_of_the_proletariat
+		prerequisite = { focus = ITA_dictator_of_the_proletariat }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_cult_of_personality
+		relative_position_id = ITA_dictator_of_the_proletariat
+		prerequisite = { focus = ITA_dictator_of_the_proletariat }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_agrarian_socialism
+		relative_position_id = ITA_unite_the_massses
+		prerequisite = { focus = ITA_cult_of_personality }
+		prerequisite = { focus = ITA_unite_the_massses }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_seize_the_upper_classes_wealth
+		relative_position_id = ITA_unite_the_massses
+		prerequisite = { focus = ITA_cult_of_personality }
+		prerequisite = { focus = ITA_unite_the_massses }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -3
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_intiate_the_first_four_year_plan
+		relative_position_id = ITA_unite_the_massses
+		prerequisite = { focus = ITA_cult_of_personality }
+		prerequisite = { focus = ITA_unite_the_massses }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_communist_industry 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_embrace_war_communism
+		relative_position_id = ITA_intiate_the_first_four_year_plan
+		prerequisite = { focus = ITA_agrarian_socialism }
+		prerequisite = { focus = ITA_intiate_the_first_four_year_plan }
+		mutually_exclusive = { focus = ITA_defensive_workers }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_communist_industry 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_defensive_workers
+		relative_position_id = ITA_seize_the_upper_classes_wealth
+		prerequisite = { focus = ITA_agrarian_socialism }
+		prerequisite = { focus = ITA_seize_the_upper_classes_wealth }
+		mutually_exclusive = { focus = ITA_embrace_war_communism }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_communist_industry 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_the_goal_of_liberation
+		relative_position_id = ITA_defensive_workers
+		prerequisite = { focus = ITA_defensive_workers focus = ITA_embrace_war_communism }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_communist_industry 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_achieve_true_communism
+		relative_position_id = ITA_the_goal_of_liberation
+		prerequisite = { focus = ITA_the_goal_of_liberation }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_communist_industry 
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_organize_the_italian_socialist_party
+		relative_position_id = ITA_the_italian_revolution
+		prerequisite = { focus = ITA_the_italian_revolution }
+		mutually_exclusive = { focus = ITA_government_of_italian_communism }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 6
+		y = 1
+
+		allow_branch = { NOT = { has_completed_focus = ITA_government_of_italian_communism } }
 
 		completion_reward = {
 			

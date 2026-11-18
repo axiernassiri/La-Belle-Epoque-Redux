@@ -19,3 +19,27 @@ fpw_ITA_disorganised_army = {
 	experience_loss_factor = ITA_army_experience_loss_factor
 	breakthrough_factor = ITA_breakthrough_factor
 }
+
+fpw_ITA_legacy_of_1861 = {
+	enable = { always = yes }
+	icon = GFX_idea
+
+	custom_modifier_tooltip = prestige_modifier_cultural_heritage
+}
+
+fpw_ITA_the_communist_machine = {
+	enable = { always = yes }
+	icon = GFX_idea_PRC_the_central_committee
+
+	political_power_factor = ITA_tcm_political_power_factor
+	stability_factor = ITA_tcm_stability_factor
+	war_support_factor = ITA_tcm_war_support_factor
+	offensive_war_stability_factor = ITA_tcm_offensive_war_stability_factor
+	defensive_war_stability_factor = ITA_tcm_defensive_war_stability_factor
+	party_popularity_stability_factor = ITA_tcm_party_popularity_stability_factor
+	communism_drift = ITA_tcm_communism_drift
+	justify_war_goal_time = ITA_tcm_justify_war_goal_time
+	consumer_goods_factor = ITA_tcm_consumer_goods_factor
+	weekly_manpower = ITA_tcm_weekly_manpower
+	conscription_factor = ITA_tcm_conscription_factor
+}
