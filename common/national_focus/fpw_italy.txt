@@ -2175,7 +2175,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			has_government = communism
 		}
 
 		cost = 5
@@ -2185,6 +2185,218 @@ focus_tree = {
 
 		icon = GFX_focus_PLACEHOLDER 
 		x = -7
+		y = 1
+
+		completion_reward = {
+			add_idea = fpw_ITA_the_anti_capitalist_opposition_1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ITA_encourage_strike_movements
+		relative_position_id = ITA_prepare_for_an_anti_capitalist_revolution
+		prerequisite = { focus = ITA_prepare_for_an_anti_capitalist_revolution }
+		available = {
+
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = fpw_ITA_strike_movements_1
+				days = 85
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = ITA_rally_against_the_king
+		relative_position_id = ITA_prepare_for_an_anti_capitalist_revolution
+		prerequisite = { focus = ITA_prepare_for_an_anti_capitalist_revolution }
+		available = {
+
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_ITA_the_anti_capitalist_opposition_1
+				add_idea = fpw_ITA_the_anti_capitalist_opposition_2
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.07
+			}
+		}
+	}
+	focus = {
+		id = ITA_organize_the_workers
+		relative_position_id = ITA_rally_against_the_king
+		prerequisite = { focus = ITA_encourage_strike_movements }
+		prerequisite = { focus = ITA_rally_against_the_king }
+		available = {
+
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_stability = -0.05
+			swap_ideas = {
+				remove_idea = fpw_ITA_the_anti_capitalist_opposition_2
+				add_idea = fpw_ITA_the_anti_capitalist_opposition_3
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ITA_secure_the_north
+		relative_position_id = ITA_organize_the_workers
+		prerequisite = { focus = ITA_organize_the_workers }
+		available = {
+
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ITA_secure_the_south
+		relative_position_id = ITA_organize_the_workers
+		prerequisite = { focus = ITA_organize_the_workers }
+		available = {
+
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ITA_the_italian_revolution
+		relative_position_id = ITA_secure_the_south
+		prerequisite = { focus = ITA_secure_the_north }
+		prerequisite = { focus = ITA_secure_the_south }
+		available = {
+			communism > 0.5
+			NOT = { has_idea = fpw_ITA_strike_movements_1 }
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_government_of_italian_communism
+		relative_position_id = ITA_the_italian_revolution
+		prerequisite = { focus = ITA_the_italian_revolution }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -6
 		y = 1
 
 		completion_reward = {

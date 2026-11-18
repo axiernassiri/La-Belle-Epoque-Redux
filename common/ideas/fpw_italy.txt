@@ -17,8 +17,70 @@ ideas = {
 				army_leader_cost_factor = -0.1
 			}
 		}
+		fpw_ITA_venices_wine = {
+			picture = gfx
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		fpw_ITA_the_anti_capitalist_opposition_1 = {
+			picture = gfx
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = -0.0010
+				war_support = -0.05
+				communism_drift = 0.05
+			}
+		}
+		fpw_ITA_the_anti_capitalist_opposition_2 = {
+			picture = gfx
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = -0.0020
+				war_support = -0.1
+				communism_drift = 0.1
+			}
+		}
+		fpw_ITA_the_anti_capitalist_opposition_3 = {
+			picture = gfx
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = -0.0025
+				war_support = -0.1
+				communism_drift = 0.15
+			}
+		}
+		fpw_ITA_strike_movements_1 = {
+			picture = gfx
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				communism_drift = 0.03
+			}
+		}
 	}
-	
 	hidden_ideas = {
 		vittorio_emanuele = {
 			allowed = {
