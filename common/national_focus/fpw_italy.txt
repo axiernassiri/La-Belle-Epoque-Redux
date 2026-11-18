@@ -2730,7 +2730,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		icon = GFX_focus_PLACEHOLDER 
+		icon = GFX_focus_generic_social_democracy 
 		x = 6
 		y = 1
 
