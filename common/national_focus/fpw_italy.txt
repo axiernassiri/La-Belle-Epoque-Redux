@@ -20,10 +20,6 @@ focus_tree = {
 	reset_on_civilwar = no
 	continuous_focus_position = { x = 0 y = 2000 }
 
-	initial_show_position = {
-		focus = industrial_effort
-	}
-
 	focus = {
 		id = ITA_ministry_of_war
 		available = {
@@ -1031,7 +1027,7 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1041,7 +1037,8 @@ focus_tree = {
 		y = 2
 
 		completion_reward = {
-			
+			add_idea = ITA_italian_general_staff_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 	}
 	focus = {
@@ -1273,6 +1270,7 @@ focus_tree = {
 		id = ITA_dominator_of_the_adriatic
 		relative_position_id = ITA_naval_production
 		prerequisite = { focus = ITA_naval_production }
+		prerequisite = { focus = ITA_expand_the_navy_staff }
 		available = {
 
 		}
@@ -2163,6 +2161,31 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER 
 		x = 60
 		y = 0
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_prepare_for_an_anti_capitalist_revolution
+		relative_position_id = ITA_resignation_of_alfonso
+		prerequisite = { focus = ITA_resignation_of_alfonso }
+		available = {
+			has_country_flag = ITA_protests_grew_larger
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = -7
+		y = 1
 
 		completion_reward = {
 			
