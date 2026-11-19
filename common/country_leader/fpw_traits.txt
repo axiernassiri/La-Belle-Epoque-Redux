@@ -128,6 +128,8 @@ leader_traits = {
 	
 	fpw_minister_of_national_enlightenment = {
 		random = no
+		sprite = 13
+
 		political_power_factor = -0.05
 		research_speed_factor = 0.10
 
@@ -138,6 +140,8 @@ leader_traits = {
 	
 	fpw_minister_of_foreign_affairs = {
 		random = no
+		sprite = 13
+
 		opinion_gain_monthly_factor = 0.15
 		enemy_justify_war_goal_time = 0.15
 		trade_opinion_factor = 0.10
@@ -146,6 +150,8 @@ leader_traits = {
 	
 	fpw_liberal_architect = {
 		random = no
+		sprite = 13
+
 		stability_factor = -0.05
 		fascism_drift = 0.01
 		democratic_drift = 0.01
@@ -156,6 +162,8 @@ leader_traits = {
 	
 	fpw_minister_of_war = {
 		random = no
+		sprite = 17
+
 		war_support_factor = 0.10
 		command_power_gain_mult = 0.10
 		conscription_factor = 0.10
@@ -164,6 +172,8 @@ leader_traits = {
 	
 	fpw_exiled_patriot = {
 		random = no
+		sprite = 13
+
 		war_support_factor = 0.10
 		political_power_factor = 0.10
 		army_core_attack_factor = 0.10
@@ -172,6 +182,8 @@ leader_traits = {
 	
 	fpw_military_leader = {
 		random = no
+		sprite = 13
+
 		war_support_factor = 0.05
 		stability_factor = -0.05
 		political_power_factor = 0.15
@@ -194,18 +206,24 @@ leader_traits = {
 	
 	fpw_education_minister = {
 		random = no
+		sprite = 13
+
 		research_speed_factor = 0.05
 		political_power_factor = 0.05
 	}
 	
 	fpw_reform_proponent = {
 		random = no
+		sprite = 13
+
 		democratic_drift = 0.05
 		political_power_factor = 0.15
 	}
 	
 	fpw_influential_lawyer = {
 		random = no
+		sprite = 13
+
 		fascism_drift = 0.02
 		democratic_drift = 0.02
 		political_power_factor = 0.05
@@ -214,33 +232,42 @@ leader_traits = {
 	
 	fpw_finance_minister = {
 		random = no
+		sprite = 10
+
 		consumer_goods_factor = -0.1
 		production_speed_industrial_complex_factor = 0.10
 		production_speed_infrastructure_factor = 0.10
 		production_speed_rail_way_factor = 0.10
-		
 	}
 	
 	fpw_socialist_writer = {
 		random = no
+		sprite = 12
+
 		political_power_factor = 0.05
 		communism_drift = 0.10
 	}
 	
 	fpw_conservative_figure = {
 		random = no
+		sprite = 13
+
 		political_power_factor = 0.05
 		democratic_drift = 0.10
 	}
 	
 	fpw_liberal_activist = {
 		random = no
+		sprite = 13
+
 		political_power_factor = 0.05
 		fascism_drift = 0.10
 	}
 	
 	fpw_utopian_socialist = {
 		random = no
+		sprite = 12
+
 		political_power_factor = 0.10
 		stability_factor = -0.05
 		research_speed_factor = 0.05
@@ -249,6 +276,8 @@ leader_traits = {
 	
 	fpw_narodniks_philosopher = {
 		random = no
+		sprite = 13
+
 		political_power_gain = 0.25
 		stability_factor = 0.05
 		communism_drift = 0.02
@@ -458,7 +487,7 @@ leader_traits = {
 		production_factory_efficiency_gain_factor = 0.05
 	}
 	LBER_architect_press = { # August Zang
-		sprite = 13 # 13
+		sprite = 13
 		random = no
 
 		political_power_gain = 0.10
@@ -466,7 +495,7 @@ leader_traits = {
 		fascism_drift = 0.05
 	}
 	LBER_armaments_innovator = { # Josef Werndl
-		sprite = 10 # 10
+		sprite = 10
 		random = no
 
 		production_speed_arms_factory_factor = 0.10
@@ -478,7 +507,7 @@ leader_traits = {
 		}
 	}
 	LBER_intelligence_specialist = { # Josef von Plauenwald
-		sprite = 15 # 15
+		sprite = 15
 		random = no
 
 		operative_slot = 2
