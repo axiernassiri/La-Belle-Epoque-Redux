@@ -652,69 +652,8 @@ guiTypes = {
 			origo = center_up
 
 			instantTextBoxType = {
-				name = "fpw_cavalry_horse"
-				position = { x = 758 y = 55 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "HORSE"
-				maxWidth = 200
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "fpw_cavalry_armor"
-				position = { x = 340 y = 195 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "ARMOR"
-				maxWidth = 200
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "fpw_cavalry_hoofs"
-				position = { x = 622 y = 195 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "HOOFS"
-				maxWidth = 200
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "fpw_cavalry_tack"
-				position = { x = 902 y = 195 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "TACK"
-				maxWidth = 200
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "fpw_cavalry_saddle"
-				position = { x = 1105 y = 195 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "SADDLE"
-				maxWidth = 200
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
 				name = "fpw_cavalry_rider"
-				position = { x = -350 y = 55 }
+				position = { x = -60 y = 0 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -726,7 +665,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "cavalry_subtitle_firearms"
-				position = { x = -84 y = 195  }
+				position = { x = -185 y = 235  }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -738,7 +677,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "cavalry_subtitle_melee"
-				position = { x = -500 y = 195  }
+				position = { x = -435 y = 135  }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -750,11 +689,71 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "cavalry_subtitle_utility"
-				position = { x = -215 y = 330  }
+				position = { x = -305 y = 135  }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
 				text = "UTILITY"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "fpw_cavalry_horse"
+				position = { x = 440 y = 0 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "HORSE"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "fpw_cavalry_armor"
+				position = { x = 320 y = 135 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "ARMOR"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "fpw_cavalry_hoofs"
+				position = { x = 570 y = 135 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "HOOFS"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "fpw_cavalry_tack"
+				position = { x = 757 y = 135 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "TACK"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "fpw_cavalry_saddle"
+				position = { x = 945 y = 135 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "SADDLE"
 				maxWidth = 200
 				maxHeight = 62
 				format = center
@@ -765,9 +764,9 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "fpw_cavalry_equipment_tree"
-			position = { x = 10% y = 172 }
-			size = { width = 80% height = 80% }
-			slotsize = { width = 70 height = 70 }
+			position = { x = 17% y = 135 }
+			size = { width = 65% height = 80% }
+			slotsize = { width = 63 height = 63 }
 			format = "UP"
 		}
 	}
@@ -817,7 +816,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_breech"
-					position = { x = -465 y = 55 }
+					position = { x = -450 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -830,7 +829,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_muzzle"
-					position = { x = -185 y = 500 }
+					position = { x = -170 y = 485 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -843,7 +842,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_canon"
-					position = { x = 710 y = 55 }
+					position = { x = 700 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1848,7 +1847,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "fpw_anti_malaria"
-					position = { x = -340 y = 55 }
+					position = { x = -295 y = 90 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1862,7 +1861,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "fpw_colonial_increase"
-					position = { x = 195 y = 55 }
+					position = { x = 255 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1875,7 +1874,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "fpw_colonial_effort"
-					position = { x = 730 y = 55 }
+					position = { x = 800 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
