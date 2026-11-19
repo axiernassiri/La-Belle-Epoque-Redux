@@ -2532,7 +2532,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_agrarian_socialism
+		id = ITA_question_of_religion
 		relative_position_id = ITA_unite_the_massses
 		prerequisite = { focus = ITA_cult_of_personality }
 		prerequisite = { focus = ITA_unite_the_massses }
@@ -2612,7 +2612,7 @@ focus_tree = {
 	focus = {
 		id = ITA_embrace_war_communism
 		relative_position_id = ITA_intiate_the_first_four_year_plan
-		prerequisite = { focus = ITA_agrarian_socialism }
+		prerequisite = { focus = ITA_question_of_religion }
 		prerequisite = { focus = ITA_intiate_the_first_four_year_plan }
 		mutually_exclusive = { focus = ITA_defensive_workers }
 		available = {
@@ -2639,7 +2639,7 @@ focus_tree = {
 	focus = {
 		id = ITA_defensive_workers
 		relative_position_id = ITA_seize_the_upper_classes_wealth
-		prerequisite = { focus = ITA_agrarian_socialism }
+		prerequisite = { focus = ITA_question_of_religion }
 		prerequisite = { focus = ITA_seize_the_upper_classes_wealth }
 		mutually_exclusive = { focus = ITA_embrace_war_communism }
 		available = {
@@ -2869,7 +2869,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_fight_off_conservatives
+		id = ITA_fight_off_conservative_press
 		relative_position_id = ITA_peacefully_negotiate_with_the_rich
 		prerequisite = { focus = ITA_peacefully_negotiate_with_the_rich }
 		available = {
@@ -2891,6 +2891,207 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+	focus = {
+		id = ITA_liberation_against_authoritarianism
+		relative_position_id = ITA_peacefully_negotiate_with_the_rich
+		prerequisite = { focus = ITA_peacefully_negotiate_with_the_rich }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = 1
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_religious_freedom
+		relative_position_id = ITA_liberation_against_authoritarianism
+		prerequisite = { focus = ITA_liberation_against_authoritarianism }
+		prerequisite = { focus = ITA_fight_off_conservative_press }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = -1
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_secure_democracy_at_all_cost
+		relative_position_id = ITA_religious_freedom
+		prerequisite = { focus = ITA_religious_freedom }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_generic_social_democracy 
+		x = 0
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ITA_establish_the_trade_unions
+		relative_position_id = ITA_government_of_italian_communism
+		prerequisite = { focus = ITA_government_of_italian_communism focus = ITA_organize_the_italian_socialist_party }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 3
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fate_of_the_king
+		relative_position_id = ITA_government_of_italian_communism
+		prerequisite = { focus = ITA_government_of_italian_communism focus = ITA_organize_the_italian_socialist_party }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 9
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_to_spread_the_revolution
+		relative_position_id = ITA_the_italian_revolution
+		prerequisite = { focus = ITA_government_of_italian_communism focus = ITA_organize_the_italian_socialist_party }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_we_must
+		relative_position_id = ITA_to_spread_the_revolution
+		prerequisite = { focus = ITA_to_spread_the_revolution }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_liberate_the_european_workers
+		relative_position_id = ITA_we_must
+		prerequisite = { focus = ITA_we_must }
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		icon = GFX_focus_PLACEHOLDER 
+		x = 0
+		y = 2
+
+		completion_reward = {
+			
 		}
 	}
 }
