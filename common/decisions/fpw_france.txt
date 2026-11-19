@@ -271,6 +271,166 @@ FRA_foreign_stuff_cat = {
 			}
 		}
 	}
+	FRA_invite_greece_to_the_entente = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_revive_the_1859_entente
+			country_exists = GRE
+			is_puppet = no
+			is_in_faction_with = SOV
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_revive_the_1859_entente
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			GRE = {
+				country_event = {
+					id = french_empire_events.56
+					days = 3
+				}
+			}
+		}
+	}
+	FRA_invite_serbia_to_the_entente = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_revive_the_1859_entente
+			country_exists = SER
+			is_puppet = no
+			is_in_faction_with = SOV
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_revive_the_1859_entente
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			SER = {
+				country_event = {
+					id = french_empire_events.56
+					days = 3
+				}
+			}
+		}
+	}
+	FRA_invite_bulgaria_to_the_entente = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_revive_the_1859_entente
+			country_exists = BUL
+			is_puppet = no
+			is_in_faction_with = SOV
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_revive_the_1859_entente
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			BUL = {
+				country_event = {
+					id = french_empire_events.56
+					days = 3
+				}
+			}
+		}
+	}
+	FRA_invite_romania_to_the_entente = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_revive_the_1859_entente
+			country_exists = ROM
+			is_puppet = no
+			is_in_faction_with = SOV
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_revive_the_1859_entente
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			GRE = {
+				country_event = {
+					id = french_empire_events.56
+					days = 3
+				}
+			}
+		}
+	}
+	FRA_invite_montenegro_to_the_entente = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_revive_the_1859_entente
+			country_exists = MNT
+			is_puppet = no
+			is_in_faction_with = SOV
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_revive_the_1859_entente
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			MNT = {
+				country_event = {
+					id = french_empire_events.56
+					days = 3
+				}
+			}
+		}
+	}
 }
 FRA_modernization_of_paris_cat = {
 
@@ -1043,26 +1203,27 @@ FRA_preparatives_for_the_revolution_cat = {
 				idea = FRA_bonapartists_strike_first
 				days = 70
 			}
+			
+			set_global_flag = fra_french_revolution
+			custom_effect_tooltip = fra_french_revolution_tt
+			news_event = {
+				id = lbe_france_news.6
+				days = 2
+			}
 			hidden_effect = {
+				set_capital = {state = 24}
 				FPC = { change_tag_from = FRA }
-				news_event = {
-					id = lbe_france_news.6
-					days = 2
-				}
-				FRA = [
-					remove_state_core = 16
-					remove_state_core = 21
-				]
-				news_event = {
-					id = lbe_france_news.6
-					days = 2
-				}
+				
 				every_core_state = {
 					limit = {
 						has_state_flag = FRA_influenced_by_opposition
 					}
 					transfer_state_to = FPC
 					add_core_of = FPC
+				}
+				FRA = {
+					remove_state_core = 16
+					remove_state_core = 21
 				}
 				FPC = {
 					division_template = {
@@ -1073,6 +1234,8 @@ FRA_preparatives_for_the_revolution_cat = {
 							militia = { x = 0 y = 1 }
 							militia = { x = 0 y = 2 }
 							militia = { x = 0 y = 3 }
+							militia = { x = 1 y = 0 }
+							militia = { x = 1 y = 1 }
 						}
 					}
 					declare_war_on = {
@@ -1090,7 +1253,7 @@ FRA_preparatives_for_the_revolution_cat = {
 					every_country = {
 						limit = {
 							NOT = {
-								origianl_tag = FRA
+								tag = FRA
 							}
 						}
 						country_event = french_empire_events.42
@@ -1135,6 +1298,8 @@ FRA_preparatives_for_the_revolution_cat = {
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
+								cannon_brigade = { x = 2 y = 0 }
+								cannon_brigade = { x = 2 y = 1 }
 							}
 							support = {
 								engineer = { x = 0 y = 0 }
@@ -1161,7 +1326,38 @@ FRA_preparatives_for_the_revolution_cat = {
 							count = 6
 						}
 					}
+					21 = {
+						create_unit = {
+							division = "name = \"Commune Garde Nationale\" division_template = \"Commune Garde Nationale\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FPC
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 11834
+							count = 6
+						}
+					}
 					
+				}
+				if = {
+					limit = {
+						has_country_flag = FRA_cw_seize_equipment_equipment_flag
+					}
+					FPC = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 12500
+							producer = FRA
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 1550
+							producer = FRA
+						}
+						add_equipment_to_stockpile = {
+							type = fpw_cannon_artillery
+							amount = 550
+							producer = FRA
+						}
+					}	
 				}
 				set_nationality = {
 					target_country = FPC
@@ -1216,12 +1412,6 @@ FRA_preparatives_for_the_revolution_cat = {
 					character = FRA_armand_barbes
 				}
 				FRA = {
-					transfer_units_fraction= {
-						target = FPC
-						stockpile_ratio = 0.35
-						army_ratio = 0.25
-						navy_ratio = 0.15
-					}
 					division_template = {
 						name = "Bonapartist Loyalist Militia"
 						is_locked = yes
@@ -1242,7 +1432,7 @@ FRA_preparatives_for_the_revolution_cat = {
 						division = "name = \"Bonapartist Loyalist Militia\" division_template = \"Bonapartist Loyalist Militia\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
 						owner = FRA
 						allow_spawning_on_enemy_provs = yes
-						count = 5
+						count = 3
 					}
 				}
 				every_core_state = {
@@ -1258,7 +1448,7 @@ FRA_preparatives_for_the_revolution_cat = {
 						division = "name = \"Bonapartist Loyalist Militia\" division_template = \"Bonapartist Loyalist Militia\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
 						owner = FRA
 						allow_spawning_on_enemy_provs = yes
-						count = 2
+						count = 1
 					}
 				}
 				every_core_state = {
@@ -1266,10 +1456,10 @@ FRA_preparatives_for_the_revolution_cat = {
 						has_state_flag = FRA_influenced_by_opposition
 					}
 					create_unit = {
-						division = "name = \"Communard\" division_template = \"Communard\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
-						owner = FRA
+						division = "name = \"Communard\" division_template = \"Communard\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = FPC
 						allow_spawning_on_enemy_provs = yes
-						count = 6
+						count = 8
 					}
 				}
 				
@@ -1342,14 +1532,14 @@ FRA_preparatives_for_the_revolution_cat = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 20
 
-		cost = 50
+		cost = 35
 		
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = FRA_bonapartists_strike_first
-				days = 20
+				days = 35
 			}
 		}
 	}
@@ -1374,14 +1564,14 @@ FRA_preparatives_for_the_revolution_cat = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 50
+		days_re_enable = 30
 
-		cost = 75
+		cost = 50
 		
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = FRA_bonapartists_strike_first
-				days = 30
+				days = 40
 			}
 		}
 	}
@@ -1407,7 +1597,7 @@ FRA_preparatives_for_the_revolution_cat = {
 
 		fire_only_once = yes
 
-		cost = 100
+		cost = 75
 		
 		complete_effect = {
 			add_days_mission_timeout = {
@@ -1438,7 +1628,7 @@ FRA_preparatives_for_the_revolution_cat = {
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 35
 		
 		complete_effect = {
 			set_country_flag = FRA_cw_seize_equipment_equipment_flag
@@ -1447,20 +1637,20 @@ FRA_preparatives_for_the_revolution_cat = {
 				FPC = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 9500
+						amount = 12500
 						producer = FRA
 					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 1250
+						amount = 1550
 						producer = FRA
 					}
 					add_equipment_to_stockpile = {
 						type = fpw_cannon_artillery
-						amount = 250
+						amount = 550
 						producer = FRA
 					}
-				}
+				}	
 			}
 			
 		}
@@ -1537,7 +1727,7 @@ FRA_preparatives_for_the_revolution_cat = {
 
 		on_map_mode = map_only
 
-		cost = 50
+		cost = 35
 
 		fire_only_once = no
 

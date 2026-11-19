@@ -20,4 +20,25 @@ spriteTypes = {
 		name = "GFX_focus_FRA_strengthen_bonaparte_dynasty"
 		texturefile = "gfx/interface/goals/FRA/FRA_strengthen_bonaparte_dynasty.png"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_fra_call_of_the_internationale"
+		texturefile = "gfx/interface/goals/FRA/fra_call_of_the_internationale.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fra_empower_the_communards"
+		texturefile = "gfx/interface/goals/FRA/fra_empower_the_communards.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fra_pour_une_france_libre"
+		texturefile = "gfx/interface/goals/FRA/fra_pour_une_france_libre.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fra_rally_the_opposition"
+		texturefile = "gfx/interface/goals/FRA/fra_rally_the_opposition.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fra_workers_and_peasants"
+		texturefile = "gfx/interface/goals/FRA/fra_workers_and_peasants.png"
+	}
 }

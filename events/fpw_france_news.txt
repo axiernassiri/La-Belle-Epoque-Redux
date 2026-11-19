@@ -408,3 +408,106 @@ news_event = {
 		}
 	}
 }
+
+# Tripple Alliance / french-italian-austrian
+news_event = {
+	id = lbe_france_news.10
+	title = lbe_france_news.10.title
+	desc = lbe_france_news.10.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # dear god
+		name = lbe_france_news.10.a
+		trigger = {
+			NOT = {
+				tag = PRS
+				tag = FRA
+			}
+		}
+	}
+	option = { # Good ig
+		name = lbe_france_news.10.b
+		trigger = {
+			tag = PRS
+		}
+	}
+	option = { # lets fucking go
+		name = lbe_france_news.10.c
+		trigger = {
+			tag = FRA
+		}
+	}
+}
+# Revived Entente / french-Russian
+news_event = {
+	id = lbe_france_news.11
+	title = lbe_france_news.11.title
+	desc = lbe_france_news.11.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # dear god
+		name = lbe_france_news.11.a
+		trigger = {
+			NOT = {
+				tag = PRS
+				tag = FRA
+			}
+		}
+	}
+	option = { # Good ig
+		name = lbe_france_news.11.b
+		trigger = {
+			tag = PRS
+		}
+	}
+	option = { # lets fucking go
+		name = lbe_france_news.11.c
+		trigger = {
+			tag = FRA
+		}
+	}
+}
+# konstantiniyye pact / french-ottoman
+news_event = {
+	id = lbe_france_news.12
+	title = lbe_france_news.12.title
+	desc = lbe_france_news.12.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # dear god
+		name = lbe_france_news.12.a
+		trigger = {
+			NOT = {
+				tag = PRS
+				tag = FRA
+			}
+		}
+	}
+	option = { # Good ig
+		name = lbe_france_news.12.b
+		trigger = {
+			tag = PRS
+		}
+	}
+	option = { # lets fucking go
+		name = lbe_france_news.12.c
+		trigger = {
+			tag = FRA
+		}
+	}
+}
