@@ -41,4 +41,12 @@ spriteTypes = {
 		name = "GFX_focus_fra_workers_and_peasants"
 		texturefile = "gfx/interface/goals/FRA/fra_workers_and_peasants.png"
 	}
+	spriteType = {
+		name = "GFX_focus_fra_deepen_the_strikes"
+		texturefile = "gfx/interface/goals/FRA/fra_deepen_the_strikes.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fra_socialist_ideas"
+		texturefile = "gfx/interface/goals/FRA/fra_socialist_ideas.png"
+	}
 }

@@ -3520,7 +3520,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_focus_ARG_women_in_industry
+		icon = GFX_focus_fra_deepen_the_strikes
 		x = -2
 		y = 1
 		cost = 5
@@ -3591,7 +3591,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_focus_generic_social_democracy
+		icon = GFX_focus_fra_socialist_ideas
 		x = 2
 		y = 1
 		cost = 5
