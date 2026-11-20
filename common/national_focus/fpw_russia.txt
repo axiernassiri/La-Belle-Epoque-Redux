@@ -423,7 +423,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { }
 		
-		icon = GFX_focus_SOV_finish_integration
+		icon = GFX_focus_SOV_finnish_integration
 		prerequisite = { focus = SOV_undermine_national_identity }
 		prerequisite = { focus = SOV_finnish_question }
 		relative_position_id = SOV_finnish_question
@@ -558,7 +558,7 @@ focus_tree = {
 		y = 2
 		cost = 5
 		
-		icon = GFX_focus_SOV_finish_autonomy
+		icon = GFX_focus_SOV_finnish_autonomy
 		prerequisite = { focus = SOV_finnish_question }
 		#prerequisite = { focus = SOV_promote_national_identity }
 		prerequisite = { focus = SOV_promote_national_identity }

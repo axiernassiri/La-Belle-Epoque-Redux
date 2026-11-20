@@ -21,7 +21,7 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = 62
 			format = left
-			Orientation = "UPPER_LEFT"
+			Orientation = "UPPER_LEFT" 
 		}
 	}
 
@@ -5935,7 +5935,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "technology_info_window"
 		position = { x=500 y=100 }
-		size = { width = 550 height = 550 }
+		size = { width = 550 height = 500 }
 		Orientation = UPPER_LEFT
 		moveable = yes
 		#clipping = no
@@ -7792,6 +7792,44 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "air_missions_grid"
 			position = { x = 15 y = 40 }
@@ -7842,6 +7880,44 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 210 } # Y set in code
@@ -7889,6 +7965,44 @@ guiTypes = {
 			size = { width = 400 height = 400 }
 			slotsize = { width = 200 height = 30 }
 			max_slots_horizontal = 2
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
 
@@ -7957,6 +8071,44 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 65 } # Y set in code
@@ -8007,6 +8159,44 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 65 } # Y set in code
@@ -8046,6 +8236,45 @@ guiTypes = {
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 	}
 
 	containerWindowType = {
