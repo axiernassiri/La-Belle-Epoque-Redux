@@ -1,28 +1,84 @@
 characters={
-	FPC_paris_commune={
-		name="People of Paris"
-		portraits={
-			civilian={
+	FPC_french_communes = {
+		name="French Communes"
+		portraits = {
+			civilian = {
 				large=GFX_portrait_FRA_paris_commune
 			}
 		}
-		country_leader={
+		country_leader = {
 			ideology=social_anarchism
-			expire="1956.01.01.01"
+			traits = {  }
+			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	FPC_anarchists={
-		name="People of Paris"
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_paris_commune
+	FPC_louise_michel = {
+		name="Louise Michel"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FPC/fpc_michel.png"
 			}
 		}
-		country_leader={
-			ideology=anarchism
-			expire="1956.01.01.01"
-			id=-2
+		country_leader = {
+			ideology=social_anarchism
+			traits = { lber_fra_the_red_virgin }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_tolain_token
+			ledger = civilian
+			available = {
+				has_completed_focus = FPC_proudhonists_victory
+				is_country_leader = no
+				has_government = communism
+			}
+			traits = {  }      # Unspecified cost defaults to 150.
+		}
+	}
+	FPC_michel_bakounine = {
+		name="Michel Bakounine"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FPC/fpc_bakounine.png"
+			}
+		}
+		country_leader = {
+			ideology=social_anarchism
+			traits = { lber_fra_the_russian_proudhon }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_tolain_token
+			ledger = civilian
+			available = {
+				has_completed_focus = FPC_proudhonists_victory
+				is_country_leader = no
+				has_government = communism
+			}
+			traits = {  }      # Unspecified cost defaults to 150.
+		}
+	}
+	FPC_elisee_reclus = {
+		name="Élisée Reclus"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/FPC/.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = fra_reclus_token
+			ledger = civilian
+			available = {
+				has_completed_focus = FPC_proudhonists_victory
+				has_government = communism
+			}
+			traits = { economic_reformer }      # Unspecified cost defaults to 150.
 		}
 	}
 }

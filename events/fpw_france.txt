@@ -5,6 +5,7 @@
 #############################
 
 add_namespace = french_empire_events
+add_namespace = french_commune_events
 add_namespace = france_fpw
 
 country_event = { # Battle of Bagdad
@@ -1444,3 +1445,138 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+####################################################################
+# COMMUNARDS SECTION
+
+country_event = { # declaration to the french people
+	id = french_commune_events.1
+	title = french_commune_events.1.title
+	desc = french_commune_events.1.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_commune_events.1.a
+	}
+}
+country_event = { # aftermath of the SFR, leads to the economic crisis and the FLN mechanic
+	id = french_commune_events.2
+	title = french_commune_events.2.title
+	desc = french_commune_events.2.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_commune_events.2.a
+	}
+}
+country_event = { # the federative elections and its factions
+	id = french_commune_events.3
+	title = french_commune_events.3.title
+	desc = french_commune_events.3.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_commune_events.3.a
+	}
+}
+country_event = { # the federative election, who wins
+	id = french_commune_events.4
+	title = french_commune_events.4.title
+	desc = french_commune_events.4.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # PH
+		name = french_commune_events.4.a
+		set_country_flag = fra_proudhonists_win
+	}
+	option = { # IN
+		name = french_commune_events.4.b
+		set_country_flag = fra_internationale_win
+	}
+	option = { # J
+		name = french_commune_events.4.c
+		set_country_flag = fra_jacobins_win
+	}
+	option = { # B
+		name = french_commune_events.4.d
+		set_country_flag = fra_blanquists_win
+	}
+	option = { # RS
+		name = french_commune_events.4.e
+		set_country_flag = fra_rep_socialists_win
+	}
+}
+country_event = { # larp about the proudhonist ideology and their two leader factions
+	id = french_commune_events.5
+	title = french_commune_events.5.title
+	desc = french_commune_events.5.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # bakunin
+		name = french_commune_events.5.a
+		complete_national_focus = FPC_following_the_steps_of_our_father
+	}
+	option = { # michel the woman
+		name = french_commune_events.5.b
+		complete_national_focus = FPC_following_the_red_virgin
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

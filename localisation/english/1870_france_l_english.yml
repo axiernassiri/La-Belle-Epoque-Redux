@@ -14,10 +14,18 @@ FPC_french_federation: "French Federation"
 FPC_french_federation_DEF: "The Communard Federation of France"
 
 # Parties
-FRA_communism_party_long: "Association Internationale des Travailleurs\n\n\n\n§8International Workingmen's Association§!\n\n§LW.I.P§!\n\n"
-FRA_fascism_party_long: "Parti Bonapartiste (Officiels)\n\n\n\n§8Bonapartist Party (Officials)§!\n\n§LW.I.P§!\n\n"
-FRA_democratic_party_long: "Républicains Modérés\n\n\n\n§8Moderate Republicans§!\n\n§LW.I.P§!\n\n"
-FRA_neutrality_party_long: "Tiers Parti\n\n\n\n§8Third Party§!\n\n§LW.I.P§!\n\n"
+FRA_communism_party_long: "Association Internationale des Travailleurs\n\n§8International Workingmen's Association§!\n\n§LW.I.P§!\n\n"
+FRA_fascism_party_long: "Parti Bonapartiste (Officiels)\n\n§8Bonapartist Party (Officials)§!\n\n§LW.I.P§!\n\n"
+FRA_democratic_party_long: "Républicains Modérés\n\n§8Moderate Republicans§!\n\n§LW.I.P§!\n\n"
+FRA_neutrality_party_long: "Tiers Parti\n\n§8Third Party§!\n\n§LW.I.P§!\n\n"
+
+FPC_communism_party: "Communes Françaises"
+FPC_communism_party_long: "Communes Françaises\n\n§8French Communes§!\n\n§LW.I.P§!\n\n"
+FPC_fascism_party: "§R-- BANNED PARTY --§!"
+FPC_democratic_party: "§R-- BANNED PARTY --§!"
+FPC_neutrality_party: "§R-- BANNED PARTY --§!"
+FPC_mouvement_ouvrier_francais: "MOF"
+FPC_mouvement_ouvrier_francais_long: "Mouvement Ouvrier Français\n\n§8French Labour Movement§!\n\n§LW.I.P§!\n\n"
 
 # Ideas
 FRA_constitutional_reform_of_1862: "Constitutional Reform of 1862"
@@ -486,6 +494,13 @@ lbe_france_news.9.b: "Wait, What the fuck!??"
 
 
 
+french_commune_events.1.title: "Declaration to the French People"
+french_commune_events.2.title: "Aftermath of the Revolution"
+french_commune_events.3.title: "The Factions of the Federation"
+french_commune_events.4.title: "The Federative Elections"
+french_commune_events.5.title: "The Proudhonists, And its two Factions"
+
+
 ### Decisions
 # Paris Modernization
 FRA_modernization_of_paris_cat: "Modernization of Paris"
@@ -564,6 +579,12 @@ lber_fra_the_reformist_emperor: "Reformist Emperor"
 lber_fra_the_reformist_emperor_2: "Reformist Emperor"
 lber_fra_the_reformist_emperor_3: "Reformist Emperor"
 lber_fra_the_reformist_emperor_4: "Enlightened Emperor"
+lber_fra_the_red_virgin: "The Red Virgin"
+lber_fra_the_red_virgin_2: "The Red Virgin"
+lber_fra_the_bloodthirsty_she_wolf: "The Bloodthirsty She-Wolf"
+lber_fra_the_russian_proudhon: "The Russian Proudhon"
+lber_fra_the_russian_proudhon_2: "The Russian Proudhon"
+lber_fra_the_son_of_anarchism: "Son of Proudhonist Anarchism"
 # Advisors
 lber_red_prince: "The Red Prince"
 lber_foreign_minister: "Foreign Minister"

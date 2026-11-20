@@ -7,8 +7,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = FPC_paris_commune
-recruit_character = FPC_anarchists
+recruit_character = FPC_french_communes
 recruit_character = FRA_louis_charles_delescluze
 recruit_character = FRA_louis_rossel
 recruit_character = FRA_jaroslaw_dabroswki
@@ -19,6 +18,9 @@ recruit_character = FRA_emile_gois
 recruit_character = FRA_gaston_cremieux
 recruit_character = FRA_emile_digeon
 recruit_character = FRA_jean_baptiste_dumay
+recruit_character = FPC_elisee_reclus
+recruit_character = FPC_louise_michel
+recruit_character = FPC_michel_bakounine
 
 
 # Starting tech

@@ -27,12 +27,13 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = 5
+		x = 20
 		y = 0
 		cost = 1
 
 		search_filters = {  }
 		completion_reward = {
+			country_event = french_commune_events.1
 		}
 	}
 
@@ -166,7 +167,7 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			country_event = french_commune_events.2
 		}
 	}
 	focus = {
@@ -214,7 +215,7 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			country_event = french_commune_events.3
 		}
 	}
 	focus = {
@@ -239,6 +240,7 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			country_event = french_commune_events.4
 			
 		}
 	}
@@ -248,7 +250,7 @@ focus_tree = {
 		relative_position_id = FPC_federative_elections
 
 		available = {
-			
+			has_country_flag = fra_proudhonists_win
 		}
 
 		bypass = {
@@ -257,19 +259,26 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = -5
+		x = -7
 		y = 1
 		cost = 8
 
 		search_filters = {}
 		completion_reward = {
+			country_event = french_commune_events.5
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_party_name = {
+				ideology = communism
+				long_name = FPC_mouvement_ouvrier_francais_long
+				name = FPC_mouvement_ouvrier_francais
+			}
 			
 		}
 	}
 	focus = {
-		id = FPC_internationale_victory
-		prerequisite = { focus = FPC_federative_elections }
-		relative_position_id = FPC_federative_elections
+		id = FPC_embrace_state_atheism
+		prerequisite = { focus = FPC_proudhonists_victory focus = FPC_internationale_victory focus = FPC_jacobins_victory focus = FPC_blanquists_victory }
+		relative_position_id = FPC_proudhonists_victory
 
 		available = {
 			
@@ -281,7 +290,450 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = -2
+		x = 3
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FPC_following_the_steps_of_our_father
+		mutually_exclusive = {
+			focus = FPC_following_the_red_virgin
+		}
+		prerequisite = { focus = FPC_proudhonists_victory }
+		relative_position_id = FPC_proudhonists_victory
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			promote_character = FPC_michel_bakounine
+		}
+	}
+	focus = {
+		id = FPC_following_the_red_virgin
+		mutually_exclusive = {
+			focus = FPC_following_the_steps_of_our_father
+		}
+		prerequisite = { focus = FPC_proudhonists_victory }
+		relative_position_id = FPC_proudhonists_victory
+
+		available = {
+			always = no
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			promote_character = FPC_louise_michel
+			
+		}
+	}
+	focus = {
+		id = FPC_liberate_the_belgian_people
+		prerequisite = { focus = FPC_following_the_steps_of_our_father focus = FPC_following_the_red_virgin }
+		relative_position_id = FPC_following_the_steps_of_our_father
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_foment_italophobia
+		prerequisite = { focus = FPC_liberate_the_belgian_people }
+		relative_position_id = FPC_liberate_the_belgian_people
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_social_specialization_reform
+		prerequisite = { focus = FPC_following_the_steps_of_our_father focus = FPC_following_the_red_virgin }
+		relative_position_id = FPC_following_the_steps_of_our_father
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_vigilance_committee_of_women_citizens
+		prerequisite = { focus = FPC_following_the_red_virgin }
+		relative_position_id = FPC_following_the_red_virgin
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			FPC_louise_michel = {
+				swap_country_leader_traits = {
+					remove = lber_fra_the_red_virgin
+					add = lber_fra_the_red_virgin_2
+					ideology = social_anarchism
+				}
+			}
+		}
+	}
+	focus = {
+		id = FPC_cooperate_with_blanquists
+		prerequisite = { focus = FPC_vigilance_committee_of_women_citizens }
+		relative_position_id = FPC_vigilance_committee_of_women_citizens
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_humanity_no_longer_wants_war
+		prerequisite = { focus = FPC_following_the_steps_of_our_father }
+		prerequisite = { focus = FPC_social_specialization_reform }
+		relative_position_id = FPC_social_specialization_reform
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			FPC_michel_bakounine = {
+				swap_country_leader_traits = {
+					remove = lber_fra_the_russian_proudhon
+					add = lber_fra_the_russian_proudhon_2
+					ideology = social_anarchism
+				}
+			}
+		}
+	}
+	focus = {
+		id = FPC_the_great_engine_of_civilization
+		prerequisite = { focus = FPC_vigilance_committee_of_women_citizens }
+		prerequisite = { focus = FPC_social_specialization_reform }
+		relative_position_id = FPC_social_specialization_reform
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			FPC_louise_michel = {
+				swap_country_leader_traits = {
+					remove = lber_fra_the_red_virgin_2
+					add = lber_fra_the_bloodthirsty_she_wolf
+					ideology = social_anarchism
+				}
+			}
+		}
+	}
+	focus = {
+		id = FPC_on_the_federal_principle
+		prerequisite = { focus = FPC_humanity_no_longer_wants_war focus = FPC_the_great_engine_of_civilization }
+		prerequisite = { focus = FPC_foment_italophobia focus = FPC_cooperate_with_blanquists }
+		relative_position_id = FPC_humanity_no_longer_wants_war
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_reconstituting_the_party_of_the_revolution
+		prerequisite = { focus = FPC_humanity_no_longer_wants_war focus = FPC_the_great_engine_of_civilization }
+		prerequisite = { focus = FPC_foment_italophobia focus = FPC_cooperate_with_blanquists }
+		relative_position_id = FPC_humanity_no_longer_wants_war
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_workers_democracy
+		prerequisite = { focus = FPC_humanity_no_longer_wants_war focus = FPC_the_great_engine_of_civilization }
+		prerequisite = { focus = FPC_foment_italophobia focus = FPC_cooperate_with_blanquists }
+		relative_position_id = FPC_humanity_no_longer_wants_war
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_for_a_free_world_from_tyranny
+		prerequisite = { focus = FPC_on_the_federal_principle }
+		prerequisite = { focus = FPC_reconstituting_the_party_of_the_revolution }
+		prerequisite = { focus = FPC_workers_democracy }
+		relative_position_id = FPC_reconstituting_the_party_of_the_revolution
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FPC_libertarian_mutualism
+		prerequisite = { focus = FPC_on_the_federal_principle }
+		prerequisite = { focus = FPC_reconstituting_the_party_of_the_revolution }
+		prerequisite = { focus = FPC_workers_democracy }
+		relative_position_id = FPC_reconstituting_the_party_of_the_revolution
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+			FPC_michel_bakounine = {
+				swap_country_leader_traits = {
+					remove = lber_fra_the_russian_proudhon_2
+					add = lber_fra_the_son_of_anarchism
+					ideology = social_anarchism
+				}
+			}
+		}
+	}
+	focus = {
+		id = FPC_liberte
+		prerequisite = { focus = FPC_libertarian_mutualism }
+		prerequisite = { focus = FPC_for_a_free_world_from_tyranny }
+		relative_position_id = FPC_for_a_free_world_from_tyranny
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {}
+		completion_reward = {
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = FPC_internationale_victory
+		prerequisite = { focus = FPC_federative_elections }
+		relative_position_id = FPC_federative_elections
+
+		available = {
+			has_country_flag = fra_internationale_win
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -3
 		y = 1
 		cost = 8
 
@@ -296,7 +748,7 @@ focus_tree = {
 		relative_position_id = FPC_federative_elections
 
 		available = {
-			
+			has_country_flag = fra_jacobins_win
 		}
 
 		bypass = {
@@ -320,7 +772,7 @@ focus_tree = {
 		relative_position_id = FPC_federative_elections
 
 		available = {
-			
+			has_country_flag = fra_blanquists_win
 		}
 
 		bypass = {
@@ -329,7 +781,7 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = 2
+		x = 3
 		y = 1
 		cost = 8
 
@@ -344,7 +796,7 @@ focus_tree = {
 		relative_position_id = FPC_federative_elections
 
 		available = {
-			
+			has_country_flag = fra_rep_socialists_win
 		}
 
 		bypass = {
@@ -353,7 +805,7 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = 5
+		x = 7
 		y = 1
 		cost = 8
 
