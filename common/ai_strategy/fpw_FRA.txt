@@ -67,12 +67,15 @@ FRA_defend_franco_prussian_border = {
 FRA_unbalanced_the_european_theater = { # OCCURS WHEN FRANCE ALLIES PRUSSIA THROUGH THE FOCUS
 	allowed = {
 		any_country = {
-			is_on_continent = europe
-			NOT = {
-				tag = PRS
-			}
-			NOT = {
-				tag = FRA
+			limit = {
+				
+				is_on_continent = europe
+				NOT = {
+					tag = PRS
+				}
+				NOT = {
+					tag = FRA
+				}
 			}
 		}
 		
