@@ -67,10 +67,7 @@ focus_tree = {
 	focus = {
 		id = FRA_question_of_the_imperial_army_reforms
 		available = {
-			NOT = {
-				has_idea = FRA_the_republicans_oppose_military_reform
-			}
-			has_country_flag = niel_is_war_minister
+			always = no
 		}
 
 		bypass = {
@@ -84,7 +81,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			
+			custom_effect_tooltip = autocompleted_by_event_or_decision_tt
 		}
 	}
 	focus = {
@@ -114,7 +111,7 @@ focus_tree = {
 		icon = GFX_
 		x = -1
 		y = 1
-		cost = 8
+		cost = 3
 
 		search_filters = {FOCUS_FILTER_HISTORICAL}
 		completion_reward = {
@@ -140,7 +137,7 @@ focus_tree = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
-			has_country_flag = niel_is_war_minister
+			has_country_flag = frossard_is_war_minister
 			
 		}
 
@@ -152,14 +149,11 @@ focus_tree = {
 		icon = GFX_goal_fortify_the_westwall
 		x = 1
 		y = 1
-		cost = 8
+		cost = 3
 
-		search_filters = {FOCUS_FILTER_HISTORICAL}
+		search_filters = {}
 		completion_reward = {
-			country_event = {
-				id = french_empire_events.13
-				days = 4
-			}
+			
 			
 		}
 	}
@@ -228,8 +222,9 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
+			
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = FRA_modify_army_tt
@@ -274,7 +269,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -356,6 +351,7 @@ focus_tree = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
+			has_country_flag = niel_is_war_minister
 			
 		}
 
@@ -369,7 +365,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_HISTORICAL}
 		completion_reward = {
 			if = {
 				limit = {
@@ -377,7 +373,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -414,7 +410,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -451,7 +447,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -485,16 +481,6 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			
 		}
 	}
@@ -525,17 +511,6 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
 		}
 	}
 	focus = {
@@ -548,6 +523,7 @@ focus_tree = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
+			has_country_flag = niel_is_war_minister
 			
 		}
 
@@ -569,7 +545,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -606,7 +582,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -643,7 +619,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -680,7 +656,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -709,18 +685,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_HISTORICAL}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			
 		}
 	}
@@ -755,7 +722,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -792,7 +759,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -821,18 +788,8 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_HISTORICAL}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			
 		}
 	}
@@ -860,16 +817,6 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			
 		}
 	}
@@ -903,7 +850,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -940,7 +887,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -977,7 +924,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1016,7 +963,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1054,7 +1001,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1092,7 +1039,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1129,7 +1076,7 @@ focus_tree = {
 				}
 				add_timed_idea = {
 					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
+					days = 60
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1162,16 +1109,6 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			
 		}
 	}
@@ -4664,7 +4601,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_HISTORICAL}
 		completion_reward = {
 			
 			ITA = {

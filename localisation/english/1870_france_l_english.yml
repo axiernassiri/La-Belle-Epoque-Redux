@@ -597,6 +597,7 @@ banned_party_party_loc: "§R-- BANNED PARTY --§!"
 historical_choice_tt: "§OThis is the Historical Choice.§!"
 at_war_no_tt: "§RIf we Enter at War, this National Spirit will be lost.§!"
 middle_thingy_tt: "-----------------------------------------------------------------"
+autocompleted_by_event_or_decision_tt: "§GThis Focus will be Autocompleted Through a Certain Event or Decision!§!"
 
 # tt
 fra_fpw_began: "The Franco-Prussian War has begun"

@@ -245,13 +245,17 @@ country_event = { # further liberal reforms
 		name = french_empire_events.16.a
 	}
 }
-country_event = { # appointment of niel
+country_event = { # Change of war minister
 	id = french_empire_events.17
 	title = french_empire_events.17.title
 	desc = french_empire_events.17.desc
 	picture = GFX_report_event_tank_factory
 	
-	
+	immediate = {
+		hidden_effect = {
+			complete_national_focus = FRA_question_of_the_imperial_army_reforms
+		}
+	}
 
 	fire_only_once = yes
 
@@ -259,8 +263,11 @@ country_event = { # appointment of niel
 
 	option = { # 
 		name = french_empire_events.17.a
-		complete_national_focus = FRA_adolphe_niels_reform
 		set_country_flag = niel_is_war_minister
+	}
+	option = { # 
+		name = french_empire_events.17.b
+		set_country_flag = frossard_is_war_minister
 	}
 }
 country_event = { # legislative elections of 1869
