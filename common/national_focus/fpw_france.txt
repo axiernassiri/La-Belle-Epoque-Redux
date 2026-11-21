@@ -44,8 +44,8 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = 2
-		y = 0
+		x = 0
+		y = 1
 		cost = 4
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -65,7 +65,7 @@ focus_tree = {
 		
 	}
 	focus = {
-		id = FRA_adolphe_niels_reform
+		id = FRA_question_of_the_imperial_army_reforms
 		available = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
@@ -78,16 +78,122 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = 6
+		x = 3
 		y = 0
 		cost = 3
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_adolphe_niels_reform
+		mutually_exclusive = {
+			focus = FRA_general_frossard_defensive_plan
+		}
+		mutually_exclusive = {
+			focus = FRA_cut_military_expending
+		}
+		prerequisite = { focus = FRA_question_of_the_imperial_army_reforms }
+		relative_position_id = FRA_question_of_the_imperial_army_reforms
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			has_country_flag = niel_is_war_minister
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		completion_reward = {
 			country_event = {
 				id = french_empire_events.13
 				days = 4
 			}
+			
+		}
+	}
+	focus = {
+		id = FRA_general_frossard_defensive_plan
+		mutually_exclusive = {
+			focus = FRA_adolphe_niels_reform
+		}
+		mutually_exclusive = {
+			focus = FRA_cut_military_expending
+		}
+		prerequisite = { focus = FRA_question_of_the_imperial_army_reforms }
+		relative_position_id = FRA_question_of_the_imperial_army_reforms
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			has_country_flag = niel_is_war_minister
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_goal_fortify_the_westwall
+		x = 1
+		y = 1
+		cost = 8
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		completion_reward = {
+			country_event = {
+				id = french_empire_events.13
+				days = 4
+			}
+			
+		}
+	}
+	focus = {
+		id = FRA_cut_military_expending
+		mutually_exclusive = {
+			focus = FRA_adolphe_niels_reform
+		}
+		mutually_exclusive = {
+			focus = FRA_general_frossard_defensive_plan
+		}
+		prerequisite = { focus = FRA_question_of_the_imperial_army_reforms }
+		relative_position_id = FRA_question_of_the_imperial_army_reforms
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_goal_fortify_the_westwall
+		x = 3
+		y = 1
+		cost = 8
+
+		search_filters = {FOCUS_FILTER_HISTORICAL}
+		completion_reward = {
+			
 		}
 	}
 
@@ -140,9 +246,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_reorganization_of_the_army
-		prerequisite = { focus = FRA_our_great_friend_sastres_our_army_supplier }
-		prerequisite = { focus = FRA_adolphe_niels_reform }
-		relative_position_id = FRA_our_great_friend_sastres_our_army_supplier
+		prerequisite = { focus = FRA_adolphe_niels_reform focus = FRA_general_frossard_defensive_plan }
+		relative_position_id = FRA_adolphe_niels_reform
 
 		available = {
 			NOT = {
@@ -243,6 +348,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_garde_nationale_mobile
+		prerequisite = { focus = FRA_our_great_friend_sastres_our_army_supplier }
 		prerequisite = { focus = FRA_adolphe_niels_reform }
 		relative_position_id = FRA_adolphe_niels_reform
 
@@ -250,7 +356,6 @@ focus_tree = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
-			has_country_flag = niel_is_war_minister
 			
 		}
 
@@ -259,12 +364,12 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
 		x = -1
 		y = 1
-		cost = 8
+		cost = 5
 
-		search_filters = {FOCUS_FILTER_HISTORICAL}
+		search_filters = {}
 		completion_reward = {
 			if = {
 				limit = {
@@ -280,9 +385,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_standardization_of_the_chassepot_rifle
-		prerequisite = { focus = FRA_adolphe_niels_reform }
-		relative_position_id = FRA_adolphe_niels_reform
+		id = FRA_increase_army_supplies_expenditures
+		prerequisite = { focus = FRA_reorganize_the_supply_networks focus = FRA_garde_nationale_mobile }
+		relative_position_id = FRA_reorganize_the_supply_networks
 
 		available = {
 			NOT = {
@@ -296,27 +401,227 @@ focus_tree = {
 		}
 
 
-		icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_focus_PRC_equipment_from_copper_coins
 		x = 1
 		y = 1
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_HISTORICAL}
+		search_filters = {}
 		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			
 		}
 	}
 	focus = {
-		id = FRA_leeve_en_masse
-		prerequisite = { focus = FRA_garde_nationale_mobile }
-		prerequisite = { focus = FRA_standardization_of_the_chassepot_rifle }
-		relative_position_id = FRA_standardization_of_the_chassepot_rifle
+		id = FRA_improvisation_of_the_rations
+		prerequisite = { focus = FRA_increase_army_supplies_expenditures }
+		relative_position_id = FRA_increase_army_supplies_expenditures
 
 		available = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
-			has_country_flag = niel_is_war_minister
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_SWE_rations
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_legacy_of_the_napoleonic_tactics
+		mutually_exclusive = {
+			focus = FRA_learn_from_der_bruderkrieg
+		}
+		prerequisite = { focus = FRA_reorganization_of_the_army }
+		relative_position_id = FRA_reorganization_of_the_army
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_generic_horse_studs
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_learn_from_der_bruderkrieg
+		mutually_exclusive = {
+			focus = FRA_legacy_of_the_napoleonic_tactics
+		}
+		prerequisite = { focus = FRA_reorganization_of_the_army }
+		relative_position_id = FRA_reorganization_of_the_army
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_reorganize_the_garde_nationale_mobile
+		prerequisite = { focus = FRA_garde_nationale_mobile }
+		prerequisite = { focus = FRA_legacy_of_the_napoleonic_tactics focus = FRA_learn_from_der_bruderkrieg }
+		relative_position_id = FRA_legacy_of_the_napoleonic_tactics
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_generic_advanced_military_studies
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_restore_the_vieille_garde
+		prerequisite = { focus = FRA_reorganize_the_garde_nationale_mobile }
+		relative_position_id = FRA_reorganize_the_garde_nationale_mobile
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_RAJ_a_private_military
+		x = -1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_la_gloire_de_l_infanterie_francaise
+		prerequisite = { focus = FRA_restore_the_vieille_garde }
+		relative_position_id = FRA_restore_the_vieille_garde
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
 			
 		}
 
@@ -326,9 +631,158 @@ focus_tree = {
 
 
 		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_risky_measures
+		prerequisite = { focus = FRA_la_gloire_de_l_infanterie_francaise }
+		relative_position_id = FRA_la_gloire_de_l_infanterie_francaise
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_standardization_of_the_chassepot_rifle 
+		prerequisite = { focus = FRA_legacy_of_the_napoleonic_tactics focus = FRA_learn_from_der_bruderkrieg }
+		relative_position_id = FRA_legacy_of_the_napoleonic_tactics
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_focus_fra_maquis
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_improve_the_military_trainings
+		prerequisite = { focus = FRA_standardization_of_the_chassepot_rifle }
+		relative_position_id = FRA_standardization_of_the_chassepot_rifle
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_CHI_popular_army
 		x = -1
 		y = 1
-		cost = 8
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_leeve_en_masse
+		prerequisite = { focus = FRA_improve_the_military_trainings }
+		relative_position_id = FRA_improve_the_military_trainings
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 0
+		y = 1
+		cost = 5
 
 		search_filters = {}
 		completion_reward = {
@@ -369,19 +823,216 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			
 		}
 	}
 	focus = {
-		id = FRA_reorganize_the_garde_nationale_mobile
-		prerequisite = { focus = FRA_leeve_en_masse }
-		relative_position_id = FRA_leeve_en_masse
+		id = FRA_modernization_of_the_artillery
+		prerequisite = { focus = FRA_the_potential_of_the_metrailleuse }
+		relative_position_id = FRA_the_potential_of_the_metrailleuse
 
 		available = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
-			has_country_flag = niel_is_war_minister
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_preparatives_for_the_inevitable
+		prerequisite = { focus = FRA_general_frossard_defensive_plan }
+		relative_position_id = FRA_general_frossard_defensive_plan
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_attack_prussia
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_the_frossard_line
+		prerequisite = { focus = FRA_preparatives_for_the_inevitable }
+		relative_position_id = FRA_preparatives_for_the_inevitable
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_SWE_hedgehog_defense
+		x = 1
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_the_alsace_lorraine_artillery_batteries
+		prerequisite = { focus = FRA_preparatives_for_the_inevitable }
+		relative_position_id = FRA_preparatives_for_the_inevitable
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_FIN_coastal_defense
+		x = 3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_preemptive_mobilization_of_the_population
+		prerequisite = { focus = FRA_the_frossard_line }
+		prerequisite = { focus = FRA_the_alsace_lorraine_artillery_batteries }
+		prerequisite = { focus = FRA_legacy_of_the_napoleonic_tactics focus = FRA_learn_from_der_bruderkrieg }
+		relative_position_id = FRA_the_alsace_lorraine_artillery_batteries
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+	focus = {
+		id = FRA_everything_against_the_prussian_threat
+		prerequisite = { focus = FRA_the_frossard_line }
+		prerequisite = { focus = FRA_the_alsace_lorraine_artillery_batteries }
+		relative_position_id = FRA_the_alsace_lorraine_artillery_batteries
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
 			
 		}
 
@@ -411,37 +1062,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_modernization_of_the_artillery
-		prerequisite = { focus = FRA_leeve_en_masse }
-		relative_position_id = FRA_leeve_en_masse
-
-		available = {
-			NOT = {
-				has_idea = FRA_the_republicans_oppose_military_reform
-			}
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_goal_generic_army_artillery2
-		x = 1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = FRA_improvisation_of_arms_productivity
-		prerequisite = { focus = FRA_reorganize_the_garde_nationale_mobile }
-		prerequisite = { focus = FRA_modernization_of_the_artillery }
-		relative_position_id = FRA_modernization_of_the_artillery
+		prerequisite = { focus = FRA_preemptive_mobilization_of_the_population }
+		prerequisite = { focus = FRA_everything_against_the_prussian_threat }
+		relative_position_id = FRA_everything_against_the_prussian_threat
 
 		available = {
 			NOT = {
@@ -476,162 +1100,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_preparatives_for_the_inevitable
-		prerequisite = { focus = FRA_reorganize_the_supply_networks }
-		prerequisite = { focus = FRA_reorganization_of_the_army }
-		relative_position_id = FRA_reorganization_of_the_army
+		id = FRA_ils_ne_passeront_pas
+		prerequisite = { focus = FRA_improvisation_of_arms_productivity }
+		relative_position_id = FRA_improvisation_of_arms_productivity
 
 		available = {
 			NOT = {
 				has_idea = FRA_the_republicans_oppose_military_reform
 			}
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SWE_hedgehog_defense
-		x = -1
-		y = 1
-		cost = 8
-
-		search_filters = {}
-		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-		}
-	}
-	focus = {
-		id = FRA_general_frossard_defensive_plan
-		prerequisite = { focus = FRA_preparatives_for_the_inevitable }
-		relative_position_id = FRA_preparatives_for_the_inevitable
-
-		available = {
-			NOT = {
-				has_idea = FRA_the_republicans_oppose_military_reform
-			}
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_goal_generic_defence
-		x = -1
-		y = 1
-		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-		}
-	}
-	focus = {
-		id = FRA_preemptive_mobilization_of_the_population
-		prerequisite = { focus = FRA_preparatives_for_the_inevitable }
-		relative_position_id = FRA_preparatives_for_the_inevitable
-
-		available = {
-			NOT = {
-				has_idea = FRA_the_republicans_oppose_military_reform
-			}
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_generic_limited_social_mobilization
-		x = 1
-		y = 1
-		cost = 8
-
-		search_filters = {}
-		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-		}
-	}
-	focus = {
-		id = FRA_risky_measures
-		prerequisite = { focus = FRA_general_frossard_defensive_plan }
-		prerequisite = { focus = FRA_preemptive_mobilization_of_the_population }
-		relative_position_id = FRA_preemptive_mobilization_of_the_population
-
-		available = {
-			NOT = {
-				has_idea = FRA_the_republicans_oppose_military_reform
-			}
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SOV_mobilization_plan
-		x = -1
-		y = 1
-		cost = 4
-
-		search_filters = {}
-		completion_reward = {
-			if = {
-				limit = {
-					has_country_flag = fra_opposition_fights_military_reforms
-				}
-				add_timed_idea = {
-					idea = FRA_the_republicans_oppose_military_reform
-					days = 70
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-		}
-	}
-	focus = {
-		id = FRA_learn_from_der_bruderkrieg
-		prerequisite = { focus = FRA_reorganization_of_the_army }
-		prerequisite = { focus = FRA_garde_nationale_mobile focus = FRA_standardization_of_the_chassepot_rifle }
-		relative_position_id = FRA_reorganization_of_the_army
-
-		available = {
 			
 		}
 
@@ -641,36 +1117,9 @@ focus_tree = {
 
 
 		icon = GFX_
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
-
-		search_filters = {}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_legacy_of_the_napoleons_grand_army
-		prerequisite = { focus = FRA_risky_measures focus = FRA_improvisation_of_arms_productivity }
-		relative_position_id = FRA_risky_measures
-
-		available = {
-			NOT = {
-				has_idea = FRA_the_republicans_oppose_military_reform
-			}
-			
-		}
-
-		bypass = {
-			
-		}
-
-
-		icon = GFX_focus_SOV_mobilization_plan
-		x = 2
-		y = 1
-		cost = 10
 
 		search_filters = {}
 		completion_reward = {
@@ -687,6 +1136,64 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = FRA_pour_la_drapeau_pour_la_victoire
+		prerequisite = { focus = FRA_la_gloire_de_l_infanterie_francaise focus = FRA_ils_ne_passeront_pas }
+		prerequisite = { focus = FRA_leeve_en_masse focus = FRA_modernization_of_the_artillery }
+		relative_position_id = FRA_ils_ne_passeront_pas
+
+		available = {
+			NOT = {
+				has_idea = FRA_the_republicans_oppose_military_reform
+			}
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		icon = GFX_focus_fra_le_deluge
+		x = -3
+		y = 1
+		cost = 5
+
+		search_filters = {}
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = fra_opposition_fights_military_reforms
+				}
+				add_timed_idea = {
+					idea = FRA_the_republicans_oppose_military_reform
+					days = 70
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	focus = {
 		id = FRA_guerre_de_1870
 
