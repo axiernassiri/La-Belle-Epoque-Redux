@@ -461,6 +461,16 @@
  fpw_austria.26.d: "Austria promises us the territory of Holstein if we agree to join the German Confederation. We must decide whether to accept this offer and join the confederation or to resist and maintain our independence."
  fpw_austria.26.a: "We will join the German Confederation."
  fpw_austria.26.b: "We refuse!"
+ fpw_austria.27.t: "Austria demands us to join the German Confederation"
+ fpw_austria.27.d: "Austria demands that we, Switzerland, join the German Confederation. We must decide whether to accept this demand and join the confederation or to resist and maintain our independence."
+ fpw_austria.27.a: "We will join the German Confederation."
+ fpw_austria.27.b: "We refuse!"
+ fpw_austria.28.t: "Revolts in the Rhineland"
+ fpw_austria.28.d: "The Rhineland is in revolt against the Austrian Empire. The people are demanding independence and have risen up against the imperial authorities. We need to stop the revolting people to maintain our control over the region."
+ fpw_austria.28.a: "We need to crush them!"
+ fpw_austria.29.t: "Revolts in Thuringia"
+ fpw_austria.29.d: "Thuringia is in revolt against the Austrian Empire. The people are demanding independence and have risen up against the imperial authorities. We need to stop the revolting people to maintain our control over the region."
+ fpw_austria.29.a: "We need to crush them!"
 
 #Characters
  AUS_von_beust: "Friedrich von Beust"
