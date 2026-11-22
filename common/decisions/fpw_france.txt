@@ -432,6 +432,211 @@ FRA_foreign_stuff_cat = {
 		}
 	}
 }
+FRA_frossard_plan_cat = {
+	FRA_second_frossard_fortification_program = {
+		icon = GFX_decision_generic_mountain_fortification
+
+		highlight_states = {
+			highlight_state_targets = {
+       			state = 28
+    		}
+			highlight_provinces = { 
+				9559 11502 3629 549 9503 6529 678
+			}
+		}
+
+		on_map_mode = map_and_decisions_view
+	
+		days_remove = 195
+
+		available = {
+			has_completed_focus = FRA_preparatives_for_the_inevitable
+			28 = {
+				is_fully_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = CZE_fortification_decision_inprogress
+			}
+		}
+
+		cancel_trigger = {
+			28 = {
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+		}
+
+		cancel_effect = {
+			clr_country_flag = CZE_fortification_decision_inprogress
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = FRA_second_frossard_fortification_program_was_finished
+			}
+				28 = {
+					any_province_building_level = {
+						province = {
+							all_provinces = yes
+						}
+						building = bunker
+						level < 3
+					}
+				}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+			production_speed_bunker_factor = -0.25
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_fortification_decision_inprogress
+			hidden_effect = {
+				country_event = { id = french_empire_events.64 days = 195 } #days NEEDS to be same as the above days_remove
+			}
+		}
+
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		custom_cost_text = decision_cost_civ_factory_1
+
+
+		remove_effect = {
+			if = {
+				limit = {
+					28 = {
+						controls_or_subject_of = yes
+					}
+				}
+				28 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							id = 9559
+							id = 9559 
+							id = 11502 
+							id = 3629 
+							id = 549 
+							id = 9503 
+							id = 6529 
+							id = 678
+							level < 3
+						}
+					}
+				}
+			}
+
+			clr_country_flag = CZE_fortification_decision_inprogress
+			set_country_flag = FRA_second_frossard_fortification_program_was_finished
+		}
+	}
+	FRA_third_frossard_fortification_program = {
+		icon = GFX_decision_generic_mountain_fortification
+
+		highlight_states = {
+			highlight_state_targets = {
+       			state = 28
+    		}
+			highlight_provinces = { 
+				9559 11502 3629 549 9503 6529 678
+			}
+		}
+
+		on_map_mode = map_and_decisions_view
+	
+		days_remove = 240
+
+		available = {
+			has_completed_focus = FRA_preparatives_for_the_inevitable
+			has_country_flag = FRA_second_frossard_fortification_program_was_finished
+			28 = {
+				is_fully_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = CZE_fortification_decision_inprogress
+			}
+		}
+
+		cancel_trigger = {
+			28 = {
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+		}
+
+		cancel_effect = {
+			clr_country_flag = CZE_fortification_decision_inprogress
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = FRA_third_frossard_fortification_program_was_finished
+			}
+				28 = {
+					any_province_building_level = {
+						province = {
+							all_provinces = yes
+						}
+						building = bunker
+						level < 5
+					}
+				}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+			production_speed_bunker_factor = -0.25
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_fortification_decision_inprogress
+			hidden_effect = {
+				country_event = { id = french_empire_events.64 days = 240 } #days NEEDS to be same as the above days_remove
+			}
+		}
+
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		custom_cost_text = decision_cost_civ_factory_3
+
+
+		remove_effect = {
+			if = {
+				limit = {
+					28 = {
+						controls_or_subject_of = yes
+					}
+				}
+				28 = {
+					set_building_level = {
+						type = bunker
+						level = 5
+						province = {
+							id = 9559
+							id = 9559 
+							id = 11502 
+							id = 3629 
+							id = 549 
+							id = 9503 
+							id = 6529 
+							id = 678
+							level < 5
+						}
+					}
+				}
+			}
+
+			clr_country_flag = CZE_fortification_decision_inprogress
+			set_country_flag = FRA_third_frossard_fortification_program_was_finished
+		}
+	}
+}
 FRA_modernization_of_paris_cat = {
 
 	FRA_second_phase_networks_of_new_boulevards = {
@@ -4496,6 +4701,7 @@ FRA_france_debug_stuff_cat = {
 		fire_only_once = no
 		
 		complete_effect = {
+			custom_effect_tooltip = fra_this_will_stop_any_fra_opposition_fights_military_reforms
 			clr_country_flag = fra_opposition_fights_military_reforms
 		} 
 	}

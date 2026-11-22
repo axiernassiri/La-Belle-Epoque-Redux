@@ -94,3 +94,23 @@ FRA_mulhouse_strike = { #STATE MODIFIER
 	resistance_growth = 0.15
 	state_resources_factor = -0.25
 }
+FRA_the_vauban_battery = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.1
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.1
+	pocket_penalty = -0.15
+}
+FRA_the_napoleon_battery = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.2
+	dig_in_speed_factor = 0.35
+	max_dig_in_factor = 0.25
+	pocket_penalty = -0.25
+}

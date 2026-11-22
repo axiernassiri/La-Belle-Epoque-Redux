@@ -855,6 +855,60 @@ ideas = {
 				custom_modifier_tooltip = at_war_no_tt
 			}
 		}
+		FRA_standardization_of_the_chassepot_rifle = {
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		FRA_leeve_en_masse = {
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		FRA_improvisation_of_arms_productivity = {
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
 
 	
 

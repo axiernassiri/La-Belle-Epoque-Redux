@@ -1375,6 +1375,34 @@ country_event = { # frossard reform
 		name = french_empire_events.62.a
 	}
 }
+country_event = { # information about the mitrailleuse
+	id = french_empire_events.63
+	title = french_empire_events.63.title
+	desc = french_empire_events.63.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.63.a
+	}
+}
+country_event = { # frossard fortification program completed
+	id = french_empire_events.64
+	title = french_empire_events.64.title
+	desc = french_empire_events.64.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.64.a
+	}
+}
 
 
 

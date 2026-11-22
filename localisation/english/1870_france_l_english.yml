@@ -649,8 +649,9 @@ fra_garde_nationale_mobile_tt: "In case of a major war, §Y8 Garde Nationale Mob
 fra_garde_nationale_mobile_2_tt: "Improves the §YGarde Nationale Mobile§! divisions with §Y100% equipment§! with a new composition of §Y2 Cannon Artillery Batallions§! and spawns another §Y6 divisions§! more alongside the previous ones"
 fra_vieille_garde_tt: "Spawns §Y6 Elite Infantry§! divisions in §YParis§!, composed of §Y9 Infantry Batallions, 3 Cavalry Batallions§!"
 fra_equip_militias_tt: "Spawns various §YArmy Volunteer Militias§! across [FRA.GetFlag]§YFrance§! in order to defend the Nation. \n\n§RHowever, it could cause the radicalization of the Militias.§!"
-
-
+fra_pour_la_drapeau_pour_la_victoire_tt: "If we completed the focus '§YLegacy of the Napoleonic Tactics§!' we will gain the following effects:"
+fra_pour_la_drapeau_pour_la_victoire_2_tt: "If we completed the focus '§YLearn from the Bruderkrieg§!' we will gain the following effects:"
+fra_this_will_stop_any_fra_opposition_fights_military_reforms: "This will stop any action from the §ROpposition§! towards §YMilitary Reforms§!"
 
 
 # TECH STUFF LOC
