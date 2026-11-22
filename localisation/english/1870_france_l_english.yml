@@ -645,6 +645,12 @@ FRA_not_already_influenced_state_tt_2: "This §Ystate§! has not been §Rinfluen
 fra_strengthen_the_paris_communards_effect_tt: "We will gain §Y6 Stronger National Guards§! in [FPC.GetFlag]§YParis§! and [FPC.GetFlag]§YMarseille§!"
 fra_prs_alliance_effect_2_tt: "§RWe must bring the balance of power back in europe, through force.§!"
 fra_prs_alliance_effect_tt: "§RPrepare yourself for the inevitable.§!"
+fra_garde_nationale_mobile_tt: "In case of a major war, §Y8 Garde Nationale Mobile§! divisions with §Y35% equipment§!, composed of §Y8 Infantry Batallions§! will appear in §YParis§!"
+fra_garde_nationale_mobile_2_tt: "Improves the §YGarde Nationale Mobile§! divisions with §Y100% equipment§! with a new composition of §Y2 Cannon Artillery Batallions§! and spawns another §Y6 divisions§! more alongside the previous ones"
+fra_vieille_garde_tt: "Spawns §Y6 Elite Infantry§! divisions in §YParis§!, composed of §Y9 Infantry Batallions, 3 Cavalry Batallions§!"
+fra_equip_militias_tt: "Spawns various §YArmy Volunteer Militias§! across [FRA.GetFlag]§YFrance§! in order to defend the Nation. \n\n§RHowever, it could cause the radicalization of the Militias.§!"
+
+
 
 
 # TECH STUFF LOC

@@ -209,7 +209,7 @@ add_dynamic_modifier = { modifier = FRA_french_army_modifier }
 set_variable = { FRA_army_conscription_factor = -0.25 }
 set_variable = { FRA_army_experience_gain_army_factor = -0.1 }
 set_variable = { FRA_army_max_command_power = -80 }
-set_variable = { FRA_army_training_time_army_factor = -0.05 }
+set_variable = { FRA_army_training_time_army_factor = 0.05 }
 set_variable = { FRA_army_land_doctrine_cost_factor = 0.2 }
 set_variable = { FRA_army_land_mastery_gain_factor = 0.00 }
 set_variable = { FRA_army_army_attack_factor = -0.15 }

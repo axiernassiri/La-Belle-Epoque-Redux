@@ -571,4 +571,25 @@ technologies = {
 			}
 		}
 	}
+	fra_metrailleuse = { # HIDDEN TECH ONLY FOR FRANCE, UNCOCKS MG REGIMENT
+
+		enable_subunits = {
+			fpw_fire_support
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1866
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1918 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+	}
 }

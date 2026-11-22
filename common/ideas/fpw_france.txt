@@ -812,6 +812,49 @@ ideas = {
 				experience_loss_factor = -0.25
 			}
 		}
+		FRA_cut_military_expending = {
+
+			picture = RAJ_private_military_complex
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				conscription_factor = -0.1
+				experience_gain_army_factor = -0.1
+				ai_focus_war_production_factor = -0.2
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.15
+				consumer_goods_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				supply_consumption_factor = 0.1
+				war_support_factor = -0.25
+				stability_factor = 0.1
+			}
+		}
+		FRA_rebuilding_french_logistics = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_supply_node_factor = 0.25
+				production_speed_rail_way_factor = 0.2
+				supply_factor = 0.1
+				custom_modifier_tooltip = at_war_no_tt
+			}
+		}
 
 	
 

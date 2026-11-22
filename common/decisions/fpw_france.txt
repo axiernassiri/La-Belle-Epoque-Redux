@@ -4474,4 +4474,29 @@ FRA_france_debug_stuff_cat = {
 			}
 		}
 	}
+	FRA_debug_remove_opp_military_reform = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		} 
+
+		visible = { 
+			has_debug = yes
+			#has_completed_focus = SPA_preparatives_for_new_offensives
+			
+		}
+
+		fire_only_once = no
+		
+		complete_effect = {
+			clr_country_flag = fra_opposition_fights_military_reforms
+		} 
+	}
 }

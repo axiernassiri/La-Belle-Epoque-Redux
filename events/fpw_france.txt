@@ -1361,6 +1361,20 @@ country_event = { # French-Russian Alliance / NO
 		name = french_empire_events.61.a
 	}
 }
+country_event = { # frossard reform
+	id = french_empire_events.62
+	title = french_empire_events.62.title
+	desc = french_empire_events.62.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.62.a
+	}
+}
 
 
 
