@@ -632,3 +632,44 @@ austrian_resource_extraction = {
 		base = 10
 	}
 }
+
+colonial_police = {
+	icon = 13
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+
+	fallback_law = foreign_civilian_oversight
+
+	visible = {
+		has_completed_focus = colonial_police
+	}
+
+	state_modifier = {
+		resistance_target 				= -0.20
+		compliance_gain 				= -0.025
+		required_garrison_factor 		= -0.30
+		resistance_damage_to_garrison	= -0.55
+	}
+
+
+	ai_will_do = {
+		base = 250
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.3}
+			add = 200
+		}
+
+
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.44}
+
+			set_temp_variable = { requirement_limit = 0.35 }
+			if = {
+				limit = { occupation_law = local_police_force_garrison }
+				set_temp_variable = { requirement_limit = 0.55 }
+			}
+			check_variable = { garrison_min_support_ratio < requirement_limit }
+
+			add = 350
+		}
+	}
+}

@@ -1,0 +1,28 @@
+﻿l_english:
+
+# Focuses
+  cavalry_effort:0 "Cavalry Effort"
+  cavalry_effort_desc:0 "Cavalry Effort"
+  logistics_effort:0 "Logistics Effort"
+  logistics_effort_desc:0 "Logistics Effort"
+  cavalry_effort_2:0 "Cavalry Effort II"
+  cavalry_effort_2_desc:0 "Cavalry Effort II"
+  red_legion:0 "Red Legion"
+  red_legion_desc:0 "Red Legion"
+  international_cooperation:0 "International Cooperation"
+  international_cooperation_desc:0 "International Cooperation"
+  encourage_solidarity:0 "Encourage Solidarity"
+  encourage_solidarity_desc:0 "Encourage Solidarity"
+  economic_mobilisation:0 "Economic Mobilisation"
+  economic_mobilisation_desc:0 "Economic Mobilisation"
+  national_security:0 "National Security"
+  national_security_desc:0 "National Security"
+  colonial_development:0 "Colonial Development"
+  colonial_development_desc:0 "Colonial Development"
+# Ideas
+  socialist_crusade:0 "The Socialist Crusade"
+  defensive_militia:0 "National Militia"
+# Tooltips
+  generic_add_colonist_tt:0 "Gain $AMOUNT|Y0$ £colonists_icon"
+  generic_colonial_police_tt:0 "This will enable the occupation law £occupation_policy_icon_strip|13 §YColonial Police§!"
+  generic_colonial_development_tt:0 "This focus would §Ydevelop§! one of our colonies.\n\nAs we hold §Rno§! colonial possessions, we can choose to redirect the capital:"

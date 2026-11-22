@@ -100,25 +100,6 @@ ideas = {
 				fascism_drift = 0.1
 			}
 		}
-		internationalism = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_intel_bonus
-			
-			modifier = {
-				#justify_war_goal_time = -0.25
-				communism_drift = 0.1
-			}
-		}
 
 		fascist_influence = {
 			
@@ -514,8 +495,8 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.05
-				resistance_damage_to_garrison = -0.1 
+				conscription = 0.040
+				resistance_damage_to_garrison = -0.15
 			}
 		}
 	

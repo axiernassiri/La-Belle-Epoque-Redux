@@ -16,6 +16,10 @@ spriteTypes = {
 		name = "GFX_focus_generic_anarchy"
 		texturefile = "gfx/interface/goals/generic_anarchy.png"
 	}
+	spriteType = {
+		name = "GFX_focus_generic_global_policy"
+		texturefile = "gfx/interface/goals/generic_global_policy.dds"
+	}
 }
 # SPAIN #
 spriteTypes = {
