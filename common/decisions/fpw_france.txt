@@ -4706,3 +4706,262 @@ FRA_france_debug_stuff_cat = {
 		} 
 	}
 }
+FRA_bop_blue_bonapartistes_category = {
+
+	FRA_bop_the_opposition_start_their_next_move_mission = {
+		icon = generic_ignite_civil_war
+		activation = {
+			has_country_flag = fra_begin_bop_blue_bonapartistes
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			OR = {
+				hidden_trigger = {
+					NOT = {
+						has_power_balance = {
+							id = FRA_bop_blue_bonapartistes_strike
+						}
+					}
+					NOT = {
+						has_global_flag = fra_french_revolution
+					}
+				}
+			}
+		}
+		is_good = no
+		priority = 1000
+		days_mission_timeout = 61
+		selectable_mission = no
+		complete_effect = {}
+		timeout_effect = {
+			custom_effect_tooltip = FRA_bop_the_opposition_start_their_next_move_mission_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = { FRA_opposition_made_move_var > 4 }
+					}
+					activate_mission = FRA_communards_strike_first
+				}
+				if = {
+					limit = {
+						check_variable = { FRA_opposition_made_move_var > 3 }
+					}
+					set_country_flag = fra_cw_strengthen_communards
+				}
+				if = {
+					limit = {
+						check_variable = { FRA_opposition_made_move_var > 2 }
+					}
+					set_country_flag = fra_cw_spread_socialism
+				}
+				if = {
+					limit = {
+						check_variable = { FRA_opposition_made_move_var > 1 }
+					}
+					set_country_flag = fra_cw_call_internationale
+				}
+				else = {
+					add_to_variable = { FRA_opposition_made_move_var = 1 }
+					activate_mission = FRA_bop_the_opposition_start_their_next_move_mission
+
+				}
+				country_event = {
+					id = french_empire_events.69
+					hours = 6
+				}
+			}
+		}
+	}
+	
+	FRA_communards_strike_first = {
+		icon = generic_ignite_civil_war
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					NOT = {
+						has_power_balance = {
+							id = FRA_bop_blue_bonapartistes_strike
+						}
+					}
+					NOT = {
+						has_global_flag = fra_french_revolution
+					}
+				}
+			}
+		}
+		is_good = no
+		days_mission_timeout = 100
+		selectable_mission = no
+		priority = 100
+		complete_effect = {}
+		timeout_effect = {
+			custom_effect_tooltip = FRA_bop_the_opposition_start_their_next_move_mission_2_tt
+			hidden_effect = {
+				country_event = {
+					id = french_empire_events.70
+					days = 4
+				}
+			}
+		}
+	}
+	FRA_form_the_napoleon_paramilitary_unit = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		
+		complete_effect = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = FRA_bop_the_opposition_start_their_next_move_mission
+				days = 20
+			}
+		}
+	}
+	
+	FRA_help_from_the_police = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_fighting_back_the_strikers
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 21
+
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.02
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.04
+			}
+			add_days_mission_timeout = {
+				mission = FRA_bop_the_opposition_start_their_next_move_mission
+				days = 30
+			}
+		}
+	}
+	FRA_seek_cooperation_from_liberals = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_secure_popular_support
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		}
+
+		fire_only_once = no
+		days_re_enable = 30
+
+		cost = 75
+		
+		complete_effect = {
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = FRA_bop_the_opposition_start_their_next_move_mission
+				days = 40
+			}
+		}
+	}
+	FRA_cooperate_with_the_military = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_cooperate_with_the_military
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+			NOT = { has_global_flag = fra_french_revolution }
+			
+		}
+
+
+		fire_only_once = yes
+
+		cost = 100
+		
+		complete_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_days_mission_timeout = {
+				mission = FRA_bop_the_opposition_start_their_next_move_mission
+				days = 60
+			}
+		}
+	}
+}

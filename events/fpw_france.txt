@@ -136,6 +136,11 @@ country_event = { # parisian Bronze Strike
 
 	option = { # 
 		name = french_empire_events.9.a
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+			}
+		}
 		add_ideas = FRA_parisian_bronze_strike
 		add_political_power = -50
 		add_stability = -0.05
@@ -145,6 +150,22 @@ country_event = { # parisian Bronze Strike
 				days = 24
 			}
 		}
+	}
+	
+	option = { # 
+		name = french_empire_events.9.b
+		trigger = {
+			has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+		}
+		add_ideas = FRA_parisian_bronze_strike
+		add_political_power = 50
+		add_stability = -0.1
+		#hidden_effect = {
+		#	country_event = {
+		#		id = french_empire_events.23
+		#		days = 24
+		#	}
+		#}
 	}
 }
 country_event = { # founded the League of Peace and Liberty
@@ -1403,10 +1424,445 @@ country_event = { # frossard fortification program completed
 		name = french_empire_events.64.a
 	}
 }
+country_event = { # larp about the situation of the french navy
+	id = french_empire_events.65
+	title = french_empire_events.65.title
+	desc = french_empire_events.65.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.65.a
+	}
+}
 
 
+country_event = { # larp about the project plongeur, one of the first submarines, and his shitty performance
+	id = french_empire_events.66
+	title = french_empire_events.66.title
+	desc = french_empire_events.66.desc
+	picture = GFX_report_event_tank_factory
 
+	fire_only_once = yes
 
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.66.a
+	}
+}
+country_event = { # larp about the blue bonapartistes faction
+	id = french_empire_events.67
+	title = french_empire_events.67.title
+	desc = french_empire_events.67.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.67.a
+		add_ideas = FRA_the_communard_uprising
+
+	}
+}
+
+country_event = { # larp about street clashes between blue bonapartistes and commies
+	id = french_empire_events.68
+	title = french_empire_events.68.title
+	desc = french_empire_events.68.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.68.a
+	}
+}
+
+country_event = { # opposition causes chaos around france, sabotage in random industry
+	id = french_empire_events.69
+	title = french_empire_events.69.title
+	desc = french_empire_events.69.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.69.a
+	}
+}
+country_event = { # times up, youre so fucking shit at this bop
+	id = french_empire_events.70
+	title = french_empire_events.70.title
+	desc = french_empire_events.70.desc
+	picture = GFX_report_event_tank_factory
+
+	immediate = {
+		hidden_effect = {
+				set_capital = {state = 24}
+				
+				every_core_state = {
+					limit = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+					transfer_state_to = FPC
+					add_core_of = FPC
+				}
+				FRA = {
+					remove_state_core = 16
+					remove_state_core = 21
+				}
+				FPC = {
+					division_template = {
+						name = "Communard"
+						is_locked = yes
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+							militia = { x = 0 y = 3 }
+							militia = { x = 1 y = 0 }
+							militia = { x = 1 y = 1 }
+						}
+					}
+					declare_war_on = {
+						target = FRA
+						type = annex_everything
+					}
+					add_civil_war_target = FRA
+				}
+				
+				if = {
+					limit = {
+						has_country_flag = fra_cw_call_internationale
+					}
+					
+					every_country = {
+						limit = {
+							NOT = {
+								tag = FRA
+							}
+						}
+						country_event = french_empire_events.42
+					}
+					#FPC = {
+					#	add_manpower = 250000
+					#}
+				}
+				if = {
+					limit = {
+						has_country_flag = fra_cw_spread_socialism
+					}
+					FRA = {
+						swap_ideas = {
+							remove_idea = FRA_intense_political_division
+							add_idea = FRA_intense_political_divisio_6
+						}
+					}
+					FPC = {
+						add_political_power = 150
+						add_stability = 0.1
+						add_war_support = 0.15
+						add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+						add_ideas = FRA_concerning_support_from_the_republicans
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = fra_cw_strengthen_communards
+					}
+					FPC = {
+						division_template = {
+							name = "Commune Garde Nationale"
+							is_locked = yes
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								cannon_brigade = { x = 2 y = 0 }
+								cannon_brigade = { x = 2 y = 1 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+								cannon_artillery = { x = 0 y = 1 }
+							}
+						}
+						add_war_support = 0.15
+						add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+						swap_ideas = {
+							remove_idea = FRA_concerning_support_from_the_republicans
+							add_idea = FRA_concerning_support_from_the_republicans_2
+						}
+						
+					}
+					16 = {
+						create_unit = {
+							division = "name = \"Commune Garde Nationale\" division_template = \"Commune Garde Nationale\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FPC
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 11506
+							count = 6
+						}
+					}
+					21 = {
+						create_unit = {
+							division = "name = \"Commune Garde Nationale\" division_template = \"Commune Garde Nationale\" start_experience_factor = 0.35 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = FPC
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 11834
+							count = 6
+						}
+					}
+					
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_henri_tolain
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_leon_gambetta
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_ernest_lefevre
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_arthur_ranc
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_victor_hugo
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_alexandre_auguste_ledru_rollin
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_armand_barbes
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_louis_auguste_blanqui
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_emile_eudes
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_raoul_rigault
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_ulysse_parent
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_gustave_flourens
+				}
+				set_nationality = {
+					target_country = FPC
+					character = FRA_armand_barbes
+				}
+				FRA = {
+					division_template = {
+						name = "Bonapartist Loyalist Militia"
+						is_locked = yes
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+						}
+					}
+						
+				}
+					
+				every_core_state = {
+					limit = {
+						has_state_flag = FRA_influenced_by_bonapartists
+					}
+					create_unit = {
+						division = "name = \"Bonapartist Loyalist Militia\" division_template = \"Bonapartist Loyalist Militia\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
+						owner = FRA
+						allow_spawning_on_enemy_provs = yes
+						count = 3
+					}
+				}
+				every_core_state = {
+					limit = {
+						NOT = {
+							has_state_flag = FRA_influenced_by_bonapartists
+						}
+						NOT = {
+							has_state_flag = FRA_influenced_by_opposition
+						}
+					}
+					create_unit = {
+						division = "name = \"Bonapartist Loyalist Militia\" division_template = \"Bonapartist Loyalist Militia\" start_experience_factor = 0.00 start_equipment_factor = 0.75 start_manpower_factor = 1"
+						owner = FRA
+						allow_spawning_on_enemy_provs = yes
+						count = 1
+					}
+				}
+				every_core_state = {
+					limit = {
+						has_state_flag = FRA_influenced_by_opposition
+					}
+					create_unit = {
+						division = "name = \"Communard\" division_template = \"Communard\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = FPC
+						allow_spawning_on_enemy_provs = yes
+						count = 6
+					}
+				}
+				
+			}
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = french_empire_events.70.a
+	}
+}
+
+country_event = { # question of the emperor
+	id = french_empire_events.71
+	title = french_empire_events.71.title
+	desc = french_empire_events.71.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # the red prince
+		name = french_empire_events.71.a
+		add_country_leader_role = {
+			character = FRA_napoleon_jerome_bonaparte
+			promote_leader = yes
+			country_leader = {
+				ideology = bonapartism
+				expire = "1965.1.1.1"
+				traits = { lber_red_emperor }
+			}
+		}
+	}
+	option = { # the legitimists
+		name = french_empire_events.71.b
+		add_political_power = 75
+		add_stability = -0.05
+		retire_ideology_leader = neutrality
+		create_country_leader = {
+			name = "Henri V"
+			desc = ""
+			picture = "gfx/leaders/FRA/fra_henri_v.png"
+			expire = "1965.1.1"
+			ideology = legitimists
+			traits = {
+			}
+		}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FRA_legitimist_party_long
+				name = FRA_legitimist_party
+			}
+		add_timed_idea = {
+			idea = FRA_bonapartists_protest
+			days = 60
+		}
+	}
+	option = { # the orleanists
+		name = french_empire_events.71.c
+		add_political_power = 150
+		add_stability = -0.15
+		add_war_support = 0.1
+		retire_ideology_leader = neutrality
+		create_country_leader = {
+			name = "Louis-Philippe II"
+			desc = ""
+			picture = "gfx/leaders/FRA/fra_philippe_orleans.png"
+			expire = "1965.1.1"
+			ideology = orleanist
+			traits = {
+			}
+		}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FRA_orleanist_party_long
+				name = FRA_orleanist_party
+			}
+		add_timed_idea = {
+			idea = FRA_bonapartists_protest
+			days = 60
+		}
+	}
+}
+
+country_event = { # should we tell the old liberal reforms to fuck off or no
+	id = french_empire_events.72
+	title = french_empire_events.72.title
+	desc = french_empire_events.72.desc
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # reuse
+		name = french_empire_events.72.a
+			add_political_power = 35
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity =  0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+	}
+	option = { # no
+		name = french_empire_events.72.b
+			add_political_power = 100
+			add_stability = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+	}
+}
 
 
 

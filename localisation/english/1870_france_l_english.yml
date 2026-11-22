@@ -18,6 +18,12 @@ FRA_communism_party_long: "Association Internationale des Travailleurs\n\n§8Int
 FRA_fascism_party_long: "Parti Bonapartiste (Officiels)\n\n§8Bonapartist Party (Officials)§!\n\n§LW.I.P§!\n\n"
 FRA_democratic_party_long: "Républicains Modérés\n\n§8Moderate Republicans§!\n\n§LW.I.P§!\n\n"
 FRA_neutrality_party_long: "Tiers Parti\n\n§8Third Party§!\n\n§LW.I.P§!\n\n"
+FRA_blue_bonapartistes_party: "Parti Bonapartiste (Bleu)"
+FRA_blue_bonapartistes_party_long: "Parti Bonapartiste (Bleu)\n\n§8Bonapartist Party (Blue)§!\n\n§LW.I.P§!\n\n"
+FRA_orleanist_party: "Maison d'Orléans"
+FRA_orleanist_party_long: "Maison d'Orléans\n\n§8House of Orléans§!\n\n§LW.I.P§!\n\n"
+FRA_legitimist_party: "Maison de Bourbon"
+FRA_legitimist_party_long: "Maison de Bourbon\n\n§8House of Bourbon§!\n\n§LW.I.P§!\n\n"
 
 FPC_communism_party: "Communes Françaises"
 FPC_communism_party_long: "Communes Françaises\n\n§8French Communes§!\n\n§LW.I.P§!\n\n"
@@ -652,6 +658,10 @@ fra_equip_militias_tt: "Spawns various §YArmy Volunteer Militias§! across [FRA
 fra_pour_la_drapeau_pour_la_victoire_tt: "If we completed the focus '§YLegacy of the Napoleonic Tactics§!' we will gain the following effects:"
 fra_pour_la_drapeau_pour_la_victoire_2_tt: "If we completed the focus '§YLearn from the Bruderkrieg§!' we will gain the following effects:"
 fra_this_will_stop_any_fra_opposition_fights_military_reforms: "This will stop any action from the §ROpposition§! towards §YMilitary Reforms§!"
+fra_bleue_division_tt: "Spawns §Y2 Marine§! divisions in §YCherbourg§! and §YCalais§!, composed of §Y8 Marines§! and §Y1 Cannon Artillery§!."
+FRA_bop_the_opposition_start_their_next_move_mission_tt: "If we allow the §ROpposition§! to make §14§! §YMoves§!, they will trigger a §RRevolution§!, after the timer runs out they will gain the effects of the focus:\n\n'§YCall on the Internationale§!', '§YSpread Socialist Ideas§!' and '§YEmpower the Paris Commune§!'"
+FRA_bop_the_opposition_start_their_next_move_mission_2_tt: "§RThe Revolution cannot be avoided now, prepare yourself.§!"
+
 
 
 # TECH STUFF LOC

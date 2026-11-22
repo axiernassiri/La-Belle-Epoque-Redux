@@ -109,3 +109,17 @@ FRA_france_debug_stuff_cat = {
 		has_debug = yes
 	}
 }
+
+FRA_bop_blue_bonapartistes_category = {
+
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	priority = 1500
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_rally_of_the_blue_bonapartistes
+		NOT = { has_global_flag = fra_french_revolution }
+		NOT = { has_global_flag = fra_french_revolution_over }
+	}
+}

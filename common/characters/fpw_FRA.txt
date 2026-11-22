@@ -83,7 +83,7 @@ characters={
 		name="Adolphe Thiers"
 		portraits = {
 			civilian = {
-				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+				large="gfx/leaders/FRA/fra_adolphe_thiers.png"
 			}
 		}
 		country_leader = {
@@ -146,7 +146,7 @@ characters={
 		name="Napoléon-Jérôme Bonaparte"
 		portraits = {
 			civilian = {
-				large="gfx/leaders/FRA/fra_napoleon_iii.png"
+				large="gfx/leaders/FRA/fra_jerome_napoleon.png"
 			}
 		}
 		

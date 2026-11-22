@@ -279,6 +279,9 @@ ideologies = {
 				color = { 131 85 145 }
 				can_be_randomly_selected = no
 			}
+			legitimists = {
+				can_be_randomly_selected = no
+			}
 			jap_tokugawa = {
 				can_be_randomly_selected = no
 				color = { 239 198 46 }

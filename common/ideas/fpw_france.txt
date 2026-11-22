@@ -332,6 +332,120 @@ ideas = {
 				#invasion_preparation = 0.1
 			}
 		}
+		FRA_marine_imperiale_2 = {
+			name = FRA_marine_imperiale
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				naval_critical_score_chance_factor = 0.05
+				naval_damage_factor = 0.05
+				#naval_defense_factor = 0.05
+				naval_morale_factor = 0.1
+				navy_org_factor = 0.1
+				navy_max_range_factor = 0.15
+				#naval_attrition = 0.1
+				navy_fuel_consumption_factor = -0.05
+				#navy_screen_attack_factor = 0.3
+				#navy_screen_defence_factor = 0.3
+				#navy_submarine_attack_factor = 0.3
+				#naval_invasion_capacity = 4
+				#invasion_preparation = 0.1
+			}
+		}
+		FRA_marine_imperiale_3 = {
+			name = FRA_marine_imperiale
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				naval_critical_score_chance_factor = 0.05
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				naval_morale_factor = 0.15
+				navy_org_factor = 0.1
+				navy_max_range_factor = 0.15
+				#naval_attrition = 0.1
+				navy_fuel_consumption_factor = -0.05
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				#navy_submarine_attack_factor = 0.3
+				#naval_invasion_capacity = 4
+				#invasion_preparation = 0.1
+			}
+		}
+		FRA_marine_imperiale_4 = {
+			name = FRA_marine_imperiale
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				naval_critical_score_chance_factor = 0.05
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				naval_morale_factor = 0.15
+				navy_org_factor = 0.1
+				navy_max_range_factor = 0.2
+				#naval_attrition = 0.1
+				navy_fuel_consumption_factor = -0.1
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				#navy_submarine_attack_factor = 0.3
+				naval_invasion_capacity = 8
+				invasion_preparation = -0.15
+			}
+		}
+		
+		FRA_marine_imperiale_5 = {
+			name = FRA_marine_imperiale
+
+			picture = gfx_
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				naval_critical_score_chance_factor = 0.05
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				naval_morale_factor = 0.15
+				navy_org_factor = 0.1
+				navy_max_range_factor = 0.2
+				#naval_attrition = 0.1
+				navy_fuel_consumption_factor = -0.1
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				#navy_submarine_attack_factor = 0.3
+				naval_invasion_capacity = 8
+				invasion_preparation = -0.15
+			}
+			targeted_modifier = {
+				tag = ENG    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+		}
 		FRA_reorganization_process_of_the_army = {
 
 			picture = generic_army_war_college
@@ -607,11 +721,12 @@ ideas = {
 
 
 			modifier = {
-				political_power_factor = -0.2
-				stability_factor = -0.25
+				political_power_factor = -0.25
+				stability_factor = -0.2
 				army_core_attack_factor = -0.1
 				army_core_defence_factor = -0.1
 				conscription_factor = -0.1
+				power_balance_weekly = -0.0015
 				custom_modifier_tooltip = fra_threat_rev_tt
 			}
 		}
@@ -907,6 +1022,210 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.25
 				}
+			}
+		}
+		
+		FRA_the_ironclads_of_france = {
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		FRA_to_rival_the_british_navy = {
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		FRA_to_rival_the_british_navy_2 = {
+			name = FRA_to_rival_the_british_navy
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		FRA_to_rival_the_british_navy_3 = {
+			name = FRA_to_rival_the_british_navy
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		FRA_expenditures_on_coastal_defense = {
+
+			picture = gfx_
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+		
+		FRA_oppositions_last_roar = {
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				communism_drift = -0.01
+				drift_defence_factor = -0.1
+			}
+		}
+		
+		FRA_bonapartists_protest = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				party_popularity_stability_factor = -0.1
+				political_power_gain = -0.25
+				stability_factor = -0.1
+				fascism_drift = 0.02
+				democratic_drift = 0.01
+				drift_defence_factor = -0.15
+				political_advisor_cost_factor = 0.1
+			}
+		}
+		FRA_remilitarization_policy = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				mobilization_speed = 0.25
+				non_core_manpower = 0.05
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+		FRA_past_glories = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.25
+				war_support_factor = 0.1
+				justify_war_goal_time = -0.25
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		FRA_for_our_forefathers = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.35
+				war_support_factor = 0.2
+				justify_war_goal_time = -0.35
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				conscription_factor = 0.1
+				army_morale_factor = 0.15
 			}
 		}
 
