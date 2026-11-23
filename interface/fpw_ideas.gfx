@@ -165,4 +165,43 @@ spriteTypes = {
 		name = "GFX_idea_prussian_industrialization"
 		texturefile = "gfx/interface/ideas/PRS/prs_icon_prussian_industrialization.dds"
 	}
+	#
+	# GENERIC
+	#
+	SpriteType = {
+		name = "GFX_idea_generic_personal_rule"
+		texturefile = "gfx/interface/ideas/idea_generic_personal_rule.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_constitutional_guarantee"
+		texturefile = "gfx/interface/ideas/idea_generic_constitutional_guarantee.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_limited_franchise"
+		texturefile = "gfx/interface/ideas/idea_generic_limited_franchise.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_universal_franchise"
+		texturefile = "gfx/interface/ideas/idea_generic_universal_franchise.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_internationalism"
+		texturefile = "gfx/interface/ideas/idea_generic_internationalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_red_volunteers"
+		texturefile = "gfx/interface/ideas/idea_generic_red_volunteers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_socialist_crusade"
+		texturefile = "gfx/interface/ideas/idea_generic_socialist_crusade.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_militarism"
+		texturefile = "gfx/interface/ideas/idea_generic_militarism.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_manifest_destiny"
+		texturefile = "gfx/interface/ideas/idea_generic_manifest_destiny.dds"
+	}
 }

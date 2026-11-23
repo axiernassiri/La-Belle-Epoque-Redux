@@ -487,5 +487,39 @@ on_actions = {
 			}
 		}
 	}
-	
+
+	# Generic Alliance with France trigger
+	on_war_relation_added = {
+    	effect = {
+        	if = {
+           		limit = {
+                	OR = {
+                    	AND = {
+                        	tag = FRA
+                        	FROM = { tag = PRS }
+                    	}
+                    	AND = {
+                        	tag = PRS
+                        	FROM = { tag = FRA }
+                    	}
+                	}
+            	}
+
+            	every_country = {
+                	limit = {
+                    	has_country_flag = fpw_minor_alliance_with_france
+                	}
+
+                	add_to_war = {
+                    	targeted_alliance = FRA
+                    	enemy = PRS
+                    	hostility_reason = asked_to_join
+                	}
+
+                	clr_country_flag = fpw_minor_alliance_with_france
+            	}
+        	}
+    	}
+	}
+
 }

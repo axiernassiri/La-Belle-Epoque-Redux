@@ -20,6 +20,10 @@ spriteTypes = {
 		name = "GFX_focus_generic_global_policy"
 		texturefile = "gfx/interface/goals/generic_global_policy.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_generic_colonial_police"
+		texturefile = "gfx/interface/goals/generic_colonial_police.dds"
+	}
 }
 # SPAIN #
 spriteTypes = {

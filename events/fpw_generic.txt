@@ -109,3 +109,30 @@ country_event = {
 		name = fpw_generic.4.a 
 	}
 }
+
+# Generic Focus Join Confederation Event
+country_event = {
+	id = fpw_generic.5
+	title = fpw_generic.5.t
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		event_target:confederation_annex_target = {
+			every_owned_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_core_of = ROOT
+			}
+		}	
+
+		annex_country = {
+			target = event_target:confederation_annex_target
+			transfer_troops = yes
+		}
+
+		change_tag_from = event_target:confederation_annex_target
+	}
+}
