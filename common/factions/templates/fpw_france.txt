@@ -24,6 +24,32 @@ faction_template_FRA_treaty_of_paris_alliance = {
 	}
 	
 }
+faction_template_FRA_continental_system = {
+	name = FRA_continental_system
+	icon = GFX_faction_logo_eu 
+	manifest = faction_template_european_dominance_monarchist
+
+	goals = {
+	
+		# Short term goals
+		faction_goal_military_infrastructure
+
+		# Medium term goals
+		faction_goal_secure_european_continent
+
+		# Long terms
+		faction_goal_rule_the_waves
+		
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		guarantee_threat_reduction_15
+		change_leader_rule_manpower
+		change_leader_rule_industry
+	}
+	
+}
 faction_template_FRA_triple_alliance = {
 	name = FRA_triple_alliance
 	manifest = faction_manifest_strength_in_unity

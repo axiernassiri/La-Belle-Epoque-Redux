@@ -4489,7 +4489,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_anti_comintern_pact
 		x = -2
 		y = 1
 		cost = 4
@@ -4538,7 +4538,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_SWE_attack_landsorganisationen
 		x = 0
 		y = 1
 		cost = 5
@@ -4615,7 +4615,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_monarchist_sentiment
 		x = -1
 		y = 1
 		cost = 5
@@ -4674,7 +4674,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_military_mission
 		x = -1
 		y = 1
 		cost = 5
@@ -4783,7 +4783,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_advanced_military_studies
 		x = -2
 		y = 1
 		cost = 5
@@ -4814,7 +4814,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		cost = 5
@@ -4838,7 +4838,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		x = 2
 		y = 1
 		cost = 5
@@ -4871,7 +4871,7 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_focus_fra_border
 		x = -1
 		y = 1
 		cost = 5
@@ -4978,6 +4978,18 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			add_war_support = 0.1
+			add_named_threat = {
+				threat = 15
+				name = FRA_reestablished_the_continental_system
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction_from_template = faction_template_FRA_continental_system
+			}
 			
 		}
 	}
@@ -4999,14 +5011,41 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_focus_fra_third_empire
 		x = 4
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_named_threat = {
+				threat = 25
+				name = FRA_european_threat
+			}
+			set_rule = {
+				can_join_factions = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				add_ideas = FRA_to_revive_a_glory
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = FRA_for_our_forefathers
+					}
+					swap_ideas = {
+						remove_idea = FRA_for_our_forefathers
+						add_idea = FRA_to_revive_a_glory
+					}	
+				}
+				if = {
+					limit = {
+						has_completed_focus = FRA_begin_the_final_strike
+					}
+					add_ideas = FRA_to_revive_a_glory
+				}
+			}
 		}
 	}
 	focus = {
@@ -5033,6 +5072,9 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			ENG = {
+				country_event = generic.5
+			}
 			
 		}
 	}
@@ -5060,6 +5102,15 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = FRA_british_campaign
+				days = 90
+			}
 			
 		}
 	}
@@ -5084,7 +5135,7 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_ideas = FRA_legacy_of_the_grande_armee
 		}
 	}
 	focus = {
@@ -5108,6 +5159,12 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
+			DEN = {
+				country_event = generic.5
+			}
+			SWE = {
+				country_event = generic.5
+			}
 			
 		}
 	}
@@ -5135,7 +5192,10 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			add_ideas = FRA_our_eyes_on_the_prussian
+			add_timed_idea = {
+				idea = FRA_our_eyes_on_the_prussian
+				days = 120
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_claim = 51
 			add_state_claim = 1963
@@ -5150,7 +5210,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FRA_regain_spanish_friendship
+		id = FRA_regain_iberian_friendship
 		mutually_exclusive = {
 			focus = FRA_start_the_new_spanish_campaign
 		}
@@ -5173,13 +5233,18 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			SPR = {
+				country_event = generic.5
+			}
+			POR = {
+				country_event = generic.5
+			}
 		}
 	}
 	focus = {
 		id = FRA_start_the_new_spanish_campaign
 		mutually_exclusive = {
-			focus = FRA_regain_spanish_friendship
+			focus = FRA_regain_iberian_friendship
 		}
 		prerequisite = { focus = FRA_revival_of_the_continental_system focus = FRA_to_revive_a_glory }
 		relative_position_id = FRA_to_revive_a_glory
@@ -5193,22 +5258,42 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_focus_fra_intervention_spain
 		x = -3
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = SPR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = POR
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = FRA_iberian_campaign
+				days = 90
+			}
 		}
 	}
 	focus = {
 		id = FRA_consolidate_the_iberian_peninsula
-		prerequisite = { focus = FRA_regain_spanish_friendship focus = FRA_start_the_new_spanish_campaign }
+		prerequisite = { focus = FRA_regain_iberian_friendship focus = FRA_start_the_new_spanish_campaign }
 		relative_position_id = FRA_start_the_new_spanish_campaign
 
 		available = {
+			all_controlled_state = {
+				is_core_of = POR
+				is_controlled_by = FRA
+			}
+			all_controlled_state = {
+				is_core_of = SPR
+				is_controlled_by = FRA
+			}
 		}
 
 		bypass = {
@@ -5216,14 +5301,27 @@ focus_tree = {
 		}
 
 
-		icon = GFX_focus_attack_germany
+		icon = GFX_focus_generic_free_iberia
 		x = -1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					is_core_of = POR
+				}
+				add_resistance = -15
+				add_compliance = 15
+			}
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_resistance = -15
+				add_compliance = 15
+			}
 		}
 	}
 	focus = {
@@ -5240,13 +5338,19 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_subjugation
 		x = -1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
+			unlock_decision_tooltip = FRA_reorganize_iberia
+			unlock_decision_tooltip = FRA_liberate_czechoslovakia
+			unlock_decision_tooltip = FRA_reinstate_the_polish_kingdom
+			unlock_decision_tooltip = FRA_dismantle_prussia
+			unlock_decision_tooltip = FRA_dismantle_the_united_kingdom
+			unlock_decision_tooltip = FRA_dismantle_the_russian_empire
 			
 		}
 	}
@@ -5271,7 +5375,7 @@ focus_tree = {
 
 		search_filters = {}
 		completion_reward = {
-			
+			unlock_decision_tooltip = FRA_restore_the_confederation_of_the_rhine
 		}
 	}
 	focus = {
@@ -5288,13 +5392,14 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_ITA_italian_irredentism
 		x = 1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
+			unlock_decision_tooltip = FRA_question_of_italy_states
 			
 		}
 	}
@@ -5313,13 +5418,22 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_attack_austria
 		x = 1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AUS
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = FRA_austrian_campaign
+				days = 90
+			}
 			
 		}
 	}
@@ -5331,7 +5445,7 @@ focus_tree = {
 		relative_position_id = FRA_consolidate_the_iberian_peninsula
 
 		available = {
-			
+			has_completed_focus = FRA_latin_monetary_union
 		}
 
 		bypass = {
@@ -5339,13 +5453,34 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_monetary_union
 		x = 1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
+		custom_effect_tooltip = FRA_modify_lmu_tt
+		add_to_variable = { 
+			fra_lmu_political_power_gain = 0.2
+			tooltip = political_power_gain_tt
+		}
+		add_to_variable = { 
+			fra_lmu_stability_factor = 0.05
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = { 
+			fra_lmu_consumer_goods_factor = -0.15
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = { 
+			fra_lmu_industrial_capacity_factory = 0.1
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = { 
+			fra_lmu_industrial_capacity_dockyard = 0.1
+			tooltip = industrial_capacity_dockyard_tt
+		}
 			
 		}
 	}
@@ -5365,14 +5500,16 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_GER_support_the_proletarian_uprising
 		x = 0
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			unlock_decision_tooltip = FRA_funds_to_balkan_nationalists
+			unlock_decision_tooltip = FRA_funds_to_russophobic_independentists
+			unlock_decision_tooltip = FRA_funds_to_irish_independentists
 		}
 	}
 	focus = {
@@ -5389,14 +5526,41 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_AUS_raid_military_storages
 		x = 1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			set_country_flag = fra_pol_support_flag
+			custom_effect_tooltip = fra_supply_polish_kingdom_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				add_to_faction = POL
+				POL = {
+					add_timed_idea = {
+						idea = FRA_warsaw_uprising
+						days = 365
+					}
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 15000
+						producer = FRA
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 3500
+						producer = FRA
+					}
+					add_equipment_to_stockpile = {
+						type = fpw_cannon_artillery
+						amount = 180
+						producer = FRA
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -5413,18 +5577,18 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_generic_winter_warfare
 		x = -1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_ideas = FRA_russian_campaign
 		}
 	}
 	focus = {
-		id = FRA_avenge_napoleons_dreams
+		id = FRA_je_suis_la_deluge
 		prerequisite = { focus = FRA_improve_winter_trainings }
 		prerequisite = { focus = FRA_send_supplies_to_polish_independentists }
 		relative_position_id = FRA_improve_winter_trainings
@@ -5438,14 +5602,27 @@ focus_tree = {
 		}
 
 
-		icon = GFX_
+		icon = GFX_focus_fra_le_deluge
 		x = 1
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
-			
+			add_ideas = FRA_la_deluge
+			custom_effect_tooltip = generic_skip_one_line_tt
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = FRA_russian_campaign_2
+				days = 180
+			}
+			hidden_effect = {
+				remove_ideas = FRA_russian_campaign
+			}
 		}
 	}
 	focus = {
@@ -5465,13 +5642,14 @@ focus_tree = {
 		}
 
 
-		icon = GFX_focus_focus_fra_border
+		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
 		cost = 5
 
 		search_filters = {}
 		completion_reward = {
+			add_ideas = FRA_orleanist_order_policy
 		}
 	}
 

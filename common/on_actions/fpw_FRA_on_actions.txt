@@ -44,4 +44,138 @@ on_Actions = {
 			
 			}
 		}
+		on_declare_war = {
+			effect = {
+				if = {
+					limit = {
+						tag = FRA
+						FROM = { tag = SOV }
+					}
+					10 = {
+						transfer_state_to = POL
+					}
+					SOV = {
+						set_province_controller = 11428
+						set_province_controller = 493
+						set_province_controller = 548
+						set_province_controller = 11492
+						set_province_controller = 9400
+						set_province_controller = 3482
+						set_province_controller = 467
+						set_province_controller = 6511
+					}
+					POL = {
+
+						set_province_controller = 11430
+						set_province_controller = 11399
+						set_province_controller = 3230
+						declare_war_on = {
+							target = SOV
+							type = independence_wargoal
+						}
+						division_template = {
+							name = "Polish Guards"
+							is_locked = yes
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 1 }
+							}
+							support = {
+								cannon_artillery = { x = 0 y = 0 }
+							}
+						}
+						division_template = {
+							name = "Polish Militias"
+							is_locked = yes
+							regiments = {
+								militia = { x = 0 y = 0 }
+								militia = { x = 0 y = 1 }
+								militia = { x = 0 y = 2 }
+								militia = { x = 1 y = 0 }
+								militia = { x = 1 y = 1 }
+								militia = { x = 1 y = 2 }
+							}
+						}
+						
+						add_timed_idea = {
+							idea = FRA_warsaw_uprising
+							days = 365
+						}
+						custom_effect_tooltip = generic_skip_one_line_tt
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 15000
+							producer = FRA
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 3500
+							producer = FRA
+						}
+						add_equipment_to_stockpile = {
+							type = fpw_cannon_artillery
+							amount = 180
+							producer = FRA
+						}
+					}
+						10 = {
+							create_unit = {
+								division = "name = \"Polish Militias\" division_template = \"Polish Militias\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = POL
+								count = 4
+								allow_spawning_on_enemy_provs = yes
+								prioritize_location = 3544
+							}
+							create_unit = {
+								division = "name = \"Polish Guards\" division_template = \"Polish Guards\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = POL
+								count = 4
+								allow_spawning_on_enemy_provs = yes
+								prioritize_location = 3544
+							}
+							create_unit = {
+								division = "name = \"Polish Militias\" division_template = \"Polish Militias\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = POL
+								count = 4
+								allow_spawning_on_enemy_provs = yes
+								prioritize_location = 9508
+							}
+						}
+						98 = {
+							create_unit = {
+								division = "name = \"Polish Militias\" division_template = \"Polish Militias\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = POL
+								count = 2
+								allow_spawning_on_enemy_provs = yes
+								prioritize_location = 3230
+							}
+						}
+						90 = {
+							create_unit = {
+								division = "name = \"Polish Militias\" division_template = \"Polish Militias\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = POL
+								count = 2
+								allow_spawning_on_enemy_provs = yes
+								prioritize_location = 11430
+							}
+						}
+						92 = {
+							create_unit = {
+								division = "name = \"Polish Militias\" division_template = \"Polish Militias\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+								owner = POL
+								count = 2
+								allow_spawning_on_enemy_provs = yes
+								prioritize_location = 11399
+							}
+						}
+					add_to_faction = POL
+				}
+			}
+		}
 	}

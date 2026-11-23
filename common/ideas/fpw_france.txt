@@ -1228,6 +1228,250 @@ ideas = {
 				army_morale_factor = 0.15
 			}
 		}
+		
+		FRA_to_revive_a_glory = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = -0.50
+				war_support_factor = 0.25
+				justify_war_goal_time = -0.35
+				army_attack_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		FRA_iberian_campaign = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = SPR    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = POR    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_austrian_campaign = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = AUS    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_italian_campaign = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ITA    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_british_campaign = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_russian_campaign = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.05
+			}
+		}
+		
+		FRA_russian_campaign_2 = {
+			name = FRA_russian_campaign
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.15
+				acclimatization_cold_climate_gain_factor = 0.15
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SOV    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_warsaw_uprising = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				war_support_factor = 0.25
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
+				supply_consumption_factor = -0.05
+				conscription_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = SOV    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		FRA_french_independentism_funding_overlord = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = -0.05
+				autonomy_manpower_share = -0.1
+			}
+		}
+		FRA_french_independentism_funding_subject = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.05
+				autonomy_gain = 0.1
+				master_build_autonomy_factor = -0.1
+			}
+		}
+		
+		FRA_la_deluge = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				war_support_factor = 0.1
+				training_time_army_factor = -0.2
+				army_attack_against_minor_factor = 0.05
+				army_defence_against_minor_factor = 0.05
+			}
+		}
+
+		FRA_legacy_of_the_grande_armee = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			picture = FRA_legacy_of_the_grande_armee_spirit
+
+			modifier = {
+				conscription = 0.025
+				mobilization_speed = 0.1
+				army_org_factor = 0.05
+				training_time_factor = -0.1
+				army_morale_factor = 0.05
+			}
+		}
+		FRA_orleanist_order_policy = {
+
+			picture = FRA_political_violence
+
+			allowed = {
+				original_tag = FRA
+			}
+
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				drift_defence_factor = 0.25
+				neutrality_drift = 0.03
+				resistance_target = -0.15
+				required_garrison_factor = -0.1
+				root_out_resistance_effectiveness_factor = 0.1
+				non_core_manpower = -0.1
+				conscription_factor = -0.05
+			}
+		}
 
 	
 

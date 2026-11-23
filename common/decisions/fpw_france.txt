@@ -27,6 +27,574 @@ FRA_foreign_stuff_cat = {
 		complete_effect = {
 		}
 	}
+	FRA_restore_the_confederation_of_the_rhine = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			has_completed_focus = FRA_restore_the_confederation_of_the_rhine
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_question_of_italy_states = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			has_completed_focus = FRA_remake_the_italian_peninsula
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_reorganize_iberia = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_liberate_czechoslovakia = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_reinstate_the_polish_kingdom = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_dismantle_prussia = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_dismantle_the_united_kingdom = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_dismantle_the_russian_empire = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_restore_the_client_states
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_restore_the_client_states
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+		}
+	}
+	FRA_funds_to_balkan_nationalists = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			OR = {
+				has_completed_focus = FRA_fund_independentist_movements
+				has_completed_focus = FRA_support_balkanic_nationalists
+			}
+			
+		} 
+
+		visible = { 
+			
+			OR = {
+				has_completed_focus = FRA_fund_independentist_movements
+				has_completed_focus = FRA_support_balkanic_nationalists
+			}
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+			TUR = {
+				add_timed_idea = {
+					idea = FRA_french_independentism_funding_overlord
+					days = 180
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SER = {
+				add_timed_idea = {
+					idea = FRA_french_independentism_funding_subject
+					days = 180
+				}
+			}
+			ROM = {
+				add_timed_idea = {
+					idea = FRA_french_independentism_funding_subject
+					days = 180
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BUL
+					BUL = {
+						is_puppet = yes
+					}
+				}
+				
+				BUL = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = MNT
+					MNT = {
+						is_puppet = yes
+					}
+				}
+				
+				MNT = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ALB
+					ALB = {
+						is_puppet = yes
+					}
+				}
+				
+				ALB = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+		}
+	}
+	FRA_funds_to_russophobic_independentists = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_fund_independentist_movements
+			
+		} 
+
+		visible = { 
+			
+			has_completed_focus = FRA_fund_independentist_movements
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = FRA_french_independentism_funding_overlord
+					days = 180
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			FIN = {
+				add_timed_idea = {
+					idea = FRA_french_independentism_funding_subject
+					days = 180
+				}
+			}
+			if = {
+				limit = {
+					country_exists = POL
+					POL = {
+						is_puppet = yes
+					}
+				}
+				
+				POL = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BLR
+					BLR = {
+						is_puppet = yes
+					}
+				}
+				
+				BLR = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LIT
+					LIT = {
+						is_puppet = yes
+					}
+				}
+				
+				LIT = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LAT
+					LAT = {
+						is_puppet = yes
+					}
+				}
+				
+				LAT = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = EST
+					EST = {
+						is_puppet = yes
+					}
+				}
+				
+				EST = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = UKR
+					UKR = {
+						is_puppet = yes
+					}
+				}
+				
+				UKR = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = GEO
+					GEO = {
+						is_puppet = yes
+					}
+				}
+				
+				GEO = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ARM
+					ARM = {
+						is_puppet = yes
+					}
+				}
+				
+				ARM = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = AZR
+					AZR = {
+						is_puppet = yes
+					}
+				}
+				
+				AZR = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KHI
+					KHI = {
+						is_puppet = yes
+					}
+				}
+				
+				KHI = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BUK
+					BUK = {
+						is_puppet = yes
+					}
+				}
+				
+				BUK = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KAZ
+					KAZ = {
+						is_puppet = yes
+					}
+				}
+				
+				KAZ = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+		}
+	}
+	FRA_funds_to_irish_independentists = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+	
+		allowed = {
+			tag = FRA
+		}
+
+		available = {
+			has_completed_focus = FRA_fund_independentist_movements
+			
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_fund_independentist_movements
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		
+		complete_effect = {
+			ENG = {
+				add_timed_idea = {
+					idea = FRA_french_independentism_funding_overlord
+					days = 180
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					country_exists = IRE
+					IRE = {
+						is_puppet = yes
+					}
+				}
+				
+				IRE = {
+					add_timed_idea = {
+						idea = FRA_french_independentism_funding_subject
+						days = 180
+					}
+				}
+			}
+		}
+	}
+
+
+
+
 	FRA_invite_greece_to_the_latin_monetary_union = {
 
 		icon = GFX_decision_gre_paying_ifc_debt

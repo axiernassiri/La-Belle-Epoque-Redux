@@ -661,6 +661,9 @@ fra_this_will_stop_any_fra_opposition_fights_military_reforms: "This will stop a
 fra_bleue_division_tt: "Spawns §Y2 Marine§! divisions in §YCherbourg§! and §YCalais§!, composed of §Y8 Marines§! and §Y1 Cannon Artillery§!."
 FRA_bop_the_opposition_start_their_next_move_mission_tt: "If we allow the §ROpposition§! to make §14§! §YMoves§!, they will trigger a §RRevolution§!, after the timer runs out they will gain the effects of the focus:\n\n'§YCall on the Internationale§!', '§YSpread Socialist Ideas§!' and '§YEmpower the Paris Commune§!'"
 FRA_bop_the_opposition_start_their_next_move_mission_2_tt: "§RThe Revolution cannot be avoided now, prepare yourself.§!"
+fra_supply_polish_kingdom_tt: "When we enter at war with the [SOV.GetFlag]§YRussian Empire§!, a §YUprising§! will begin in §YWarsaw§! led by the [POL.GetFlag]§YPolish Independentists§! aligned with us, they will gain the following effects:"
+FRA_european_threat: "European Threat"
+FRA_reestablished_the_continental_system: "Reestablished the Continental System"
 
 
 
