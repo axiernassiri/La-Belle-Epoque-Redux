@@ -107,7 +107,6 @@ on_Actions = {
 							idea = FRA_warsaw_uprising
 							days = 365
 						}
-						custom_effect_tooltip = generic_skip_one_line_tt
 						add_equipment_to_stockpile = {
 							type = infantry_equipment
 							amount = 15000

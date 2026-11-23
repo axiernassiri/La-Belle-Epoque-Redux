@@ -4767,6 +4767,9 @@ focus_tree = {
 				long_name = FRA_blue_bonapartistes_party_long
 				name = FRA_blue_bonapartistes_party
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_this_will_stop_any_fra_opposition_fights_military_reforms
+			clr_country_flag = fra_opposition_fights_military_reforms
 		}
 	}
 	focus = {
@@ -4853,6 +4856,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = FRA_intense_political_division_3
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = fra_this_focus_no_more_strikes_tt
+			set_country_flag = fra_no_more_strikes_again
 		}
 	}
 	focus = {

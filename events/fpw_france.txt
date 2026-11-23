@@ -366,6 +366,7 @@ country_event = { # Emile Ollivier wants to dismiss Haussmann
 
 	option = { # fine
 		name = french_empire_events.22.a
+		deactivate_advisor = fra_haussmann_token
 	}
 	option = { # fuck you / No
 		name = french_empire_events.22.b
