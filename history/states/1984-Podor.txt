@@ -1,0 +1,16 @@
+state={
+	id=1984
+	name="STATE_1984" # Podor, split from 786
+
+	history={
+		owner = FTO
+		set_variable = { tribal = 786 }
+		add_core_of = FTO
+	}
+
+	provinces={ 14033 }
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

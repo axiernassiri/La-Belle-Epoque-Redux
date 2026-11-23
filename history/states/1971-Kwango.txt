@@ -1,0 +1,16 @@
+state={
+	id=1971
+	name="STATE_1971" # Kwango, split from 295
+
+	history={
+		owner = COG
+		set_variable = { tribal = 295 }
+		add_core_of = COG
+	}
+
+	provinces={ 13456 13846 14540 14544 }
+	manpower=34086
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=2.000
+}

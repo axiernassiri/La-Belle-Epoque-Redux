@@ -1,0 +1,16 @@
+state={
+	id=1979
+	name="STATE_1979" # Tibesti, split from 775
+
+	history={
+		owner = TRB
+		set_variable = { tribal = 775 }
+		add_core_of = TRB
+	}
+
+	provinces={ 13341 13450 13741 13777 13932 13943 13958 14042 14274 14320 14347 14351 14362 }
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=1.000
+}

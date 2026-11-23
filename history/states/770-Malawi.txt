@@ -12,15 +12,12 @@ wood=1
 			tribal = 770
 
 		}
-		owner = TRB
-		add_core_of = TRB
+		owner = POR
 		add_core_of = MLW
 
 	}
 
-	provinces={
-		2255 12816 
-	}
+	provinces={ 2255 12816 }
 	manpower=90141
 	buildings_max_level_factor=1.000
 	state_category=pastoral

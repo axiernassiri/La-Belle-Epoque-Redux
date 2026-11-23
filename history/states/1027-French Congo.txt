@@ -9,8 +9,8 @@ wood=1
 
 	history={
 	set_variable = { tribal = 1027 }
-		owner = COG
-		add_core_of = COG
+		owner = TRB
+		add_core_of = TRB
 
 	}
 	provinces={ 12039 12042 12049 12731 }

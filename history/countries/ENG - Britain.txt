@@ -104,6 +104,7 @@ if = {
 	set_autonomy = { target = PEI autonomous_state = autonomy_colony freedom_level = 0.4 }
 	set_autonomy = { target = REU autonomous_state = autonomy_colony freedom_level = 0.4 }
 	set_autonomy = { target = SAF autonomous_state = autonomy_colony freedom_level = 0.4 }
+	set_autonomy = { target = NTL autonomous_state = autonomy_colony freedom_level = 0.4 }
 	set_autonomy = { target = MAL autonomous_state = autonomy_colony freedom_level = 0.1 }
 	else = {
 		puppet = RAJ
@@ -114,6 +115,7 @@ if = {
 		puppet = PEI
 		puppet = REU
 		puppet = SAF
+		puppet = NTL
 		puppet = MAL
 	}
 }
@@ -128,6 +130,7 @@ add_to_faction = NOV
 add_to_faction = PEI
 add_to_faction = REU
 add_to_faction = SAF
+add_to_faction = NTL
 
 if = {
 	limit = { has_dlc = "Together for Victory" }

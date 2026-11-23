@@ -1,0 +1,16 @@
+state={
+	id=1982
+	name="STATE_1982" # Fada N'Gourma, split from 778
+
+	history={
+		owner = NGA
+		set_variable = { tribal = 778 }
+		add_core_of = NGA
+	}
+
+	provinces={ 13545 13962 }
+	manpower=7970
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}

@@ -1,0 +1,16 @@
+state={
+	id=1977
+	name="STATE_1977" # Ilorin, split from 558
+
+	history={
+		owner = NGA
+		set_variable = { tribal = 558 }
+		add_core_of = NGA
+	}
+
+	provinces={ 11957 13499 13927 14433 14442 14443 }
+	manpower=12223
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

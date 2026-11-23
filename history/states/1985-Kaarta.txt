@@ -1,0 +1,16 @@
+state={
+	id=1985
+	name="STATE_1985" # Kaarta, split from 885
+
+	history={
+		owner = FTO
+		set_variable = { tribal = 885 }
+		add_core_of = FTO
+	}
+
+	provinces={ 14328 14330 }
+	manpower=1544
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

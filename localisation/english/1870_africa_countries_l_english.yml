@@ -1,0 +1,40 @@
+﻿l_english:
+ CYR:0 "Kingdom of Cayor"
+ CYR_DEF:0 "the Kingdom of Cayor"
+ CYR_ADJ:0 "Cayorese"
+
+ FTO:0 "Imamate of Futa Toro"
+ FTO_DEF:0 "the Imamate of Futa Toro"
+ FTO_ADJ:0 "Futanke"
+
+ FDJ:0 "Imamate of Futa Jallon"
+ FDJ_DEF:0 "the Imamate of Futa Jallon"
+ FDJ_ADJ:0 "Fula"
+
+ MSI:0 "Mossi Kingdom"
+ MSI_DEF:0 "the Mossi Kingdom"
+ MSI_ADJ:0 "Mossi"
+
+ ASH:0 "Ashanti Empire"
+ ASH_DEF:0 "the Ashanti Empire"
+ ASH_ADJ:0 "Ashanti"
+
+ DHY:0 "Kingdom of Dahomey"
+ DHY_DEF:0 "the Kingdom of Dahomey"
+ DHY_ADJ:0 "Dahomean"
+
+ OYO:0 "Oyo Kingdom"
+ OYO_DEF:0 "the Oyo Kingdom"
+ OYO_ADJ:0 "Oyo"
+
+ NTL:0 "Colony of Natal"
+ NTL_DEF:0 "the Colony of Natal"
+ NTL_ADJ:0 "Natalian"
+
+ TVL:0 "Transvaal"
+ TVL_DEF:0 "the South African Republic"
+ TVL_ADJ:0 "Transvaal"
+
+ OFS:0 "Orange Free State"
+ OFS_DEF:0 "the Orange Free State"
+ OFS_ADJ:0 "Free State"

@@ -1,0 +1,15 @@
+state={
+	id=1974
+	name="STATE_1974" # Cabinda, split from 539
+
+	history={
+		owner = POR
+		set_variable = { tribal = 539 }
+	}
+
+	provinces={ 13872 14119 }
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}

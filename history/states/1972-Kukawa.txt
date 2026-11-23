@@ -1,0 +1,16 @@
+state={
+	id=1972
+	name="STATE_1972" # Kukawa, split from 515
+
+	history={
+		owner = NGR
+		set_variable = { tribal = 515 }
+		add_core_of = NGR
+	}
+
+	provinces={ 13371 13494 13560 13798 14109 14338 }
+	manpower=1007
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

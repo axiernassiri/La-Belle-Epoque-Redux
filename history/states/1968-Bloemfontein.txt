@@ -1,0 +1,16 @@
+state={
+	id=1968
+	name="STATE_1968" # Bloemfontein, split from 275
+
+	history={
+		owner = OFS
+		set_variable = { tribal = 275 }
+		add_core_of = OFS
+	}
+
+	provinces={ 13364 13495 13638 13900 14128 14631 }
+	manpower=7106
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

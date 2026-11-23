@@ -11,15 +11,15 @@ wood=1
 
 	history={
 	set_variable = { tribal = 558 }
-		owner = DAH
-		add_core_of = DAH
+		owner = TRB
+		add_core_of = TRB
 		
 		
 
 	}
 
-	provinces={ 11939 11940 11943 11951 11953 11957 13499 13547 13786 13833 13859 13927 13970 14433 14440 14442 14443 14450 14452 14462 14463 12018 }
-	manpower=44819
+	provinces={ 11943 11953 13547 13859 13970 14450 14462 14463 12018 }
+	manpower=18335
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

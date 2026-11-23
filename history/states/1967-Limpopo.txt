@@ -1,0 +1,16 @@
+state={
+	id=1967
+	name="STATE_1967" # Limpopo, split from 275
+
+	history={
+		owner = TRB
+		set_variable = { tribal = 275 }
+		add_core_of = TRB
+	}
+
+	provinces={ 13300 14606 14609 14615 }
+	manpower=4737
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}
