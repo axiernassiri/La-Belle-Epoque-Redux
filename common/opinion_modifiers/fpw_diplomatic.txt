@@ -53,4 +53,9 @@ opinion_modifiers = {
 		trade = no
 		value = -50
 	}
+
+	fpw_denounced_confederation = {
+		trade = no
+		value = -75
+	}
 }

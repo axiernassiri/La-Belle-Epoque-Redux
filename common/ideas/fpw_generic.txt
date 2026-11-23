@@ -27,7 +27,109 @@ ideas = {
 			}
 		}
 
-		internationalism = {
+		generic_status_quo = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+			
+			modifier = {
+				drift_defence_factor = 0.10
+				communism_drift = -0.02
+				fascism_drift = -0.01
+			}
+		}
+
+		generic_personal_rule = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_personal_rule
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+
+		generic_constitutional_reform = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantee
+			
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+			}
+		}
+
+		generic_limited_franchise = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_limited_franchise
+			
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.10
+			}
+		}
+
+		generic_universal_franchise = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_universal_franchise
+			
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = -0.05
+			}
+		}
+
+		generic_vanguard_revolution = {
 			
 			allowed = {
 				always = no
@@ -39,7 +141,47 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = generic_internationalism
+			
+			modifier = {
+				war_support_factor = 0.10
+				defensive_war_stability_factor = 0.20
+			}
+		}
+
+		generic_workers_associations = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = por_iberian_workers_united
+			
+			modifier = {
+				political_power_gain = 0.10
+				communism_drift = 0.05
+			}
+		}
+
+		generic_internationalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_internationalism
 			
 			modifier = {
 				communism_acceptance = 75
@@ -47,7 +189,7 @@ ideas = {
 			}
 		}
 
-		socialist_crusade = {
+		generic_socialist_crusade = {
 			
 			allowed = {
 				always = no
@@ -59,7 +201,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = generic_socialist_crusade
 			
 			modifier = {
 				weekly_manpower = 500
@@ -67,7 +209,7 @@ ideas = {
 			}
 		}
 
-		red_legion = {
+		generic_red_legion = {
 			
 			allowed = {
 				always = no
@@ -79,7 +221,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = generic_red_volunteers
 			
 			modifier = {
 				send_volunteer_size = 1
@@ -87,7 +229,7 @@ ideas = {
 			}
 		}
 
-		defensive_militia = {
+		generic_defensive_militia = {
 			
 			allowed = {
 				always = no
@@ -99,7 +241,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = citizen_militia_2
 			
 			modifier = {
 				conscription_factor = 0.15
@@ -107,7 +249,7 @@ ideas = {
 			}
 		}
 
-		national_security = {
+		generic_national_security = {
 			
 			allowed = {
 				always = no
@@ -119,7 +261,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = generic_spy_coup
 			
 			modifier = {
 				defensive_war_stability_factor = 0.20
@@ -127,7 +269,28 @@ ideas = {
 			}
 		}
 
-		manifest_destiny = {
+		militarism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_militarism
+	
+			modifier = {
+				conscription = 0.040
+				resistance_damage_to_garrison = -0.15
+			}
+		}
+
+		generic_manifest_destiny = {
 			
 			allowed = {
 				always = no
@@ -139,7 +302,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = generic_manifest_destiny
 			
 			modifier = {
 				offensive_war_stability_factor = 0.10
