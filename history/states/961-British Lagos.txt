@@ -7,7 +7,8 @@ wood=1
 	name="STATE_961"
 
 	history={
-		owner = ENG
+		owner = OYO
+		add_core_of = OYO
 		add_core_of = NGA
 		buildings = {
 			infrastructure = 1
@@ -15,9 +16,7 @@ wood=1
 		}
 
 	}
-	provinces={
-		11935 
-	}
+	provinces={ 11935 11939 }
 	manpower=11960
 	buildings_max_level_factor=1.000
 	state_category=rural

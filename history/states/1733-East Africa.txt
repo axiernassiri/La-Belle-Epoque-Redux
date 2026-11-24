@@ -5,15 +5,15 @@ state={
 
 	history={
 	set_variable = { tribal = 544 }
-		owner = TRB
-		add_core_of = TRB
+		owner = ZUL
+		add_core_of = ZUL
 		
 		
 		add_core_of = MZB
 
 	}
 
-	provinces={ 14020 }
+	provinces={ 14020 14041 }
 	manpower=43850
 	buildings_max_level_factor=1.000
 	state_category=rural

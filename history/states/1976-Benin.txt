@@ -1,0 +1,16 @@
+state={
+	id=1976
+	name="STATE_1976" # Benin, split from 558
+
+	history={
+		owner = DAH
+		set_variable = { tribal = 558 }
+		add_core_of = DAH
+	}
+
+	provinces={ 11940 11951 13786 13833 14440 14452 }
+	manpower=12223
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

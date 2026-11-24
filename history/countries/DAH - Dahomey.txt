@@ -1,4 +1,4 @@
-capital = 776
+capital = 1976
 oob = "DAH_1866"
 
 # Starting tech

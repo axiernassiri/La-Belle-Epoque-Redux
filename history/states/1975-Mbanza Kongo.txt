@@ -1,0 +1,19 @@
+state={
+	id=1975
+	name="STATE_1975" # Mbanza Kongo, split from 540
+
+	history={
+		owner = COG
+		add_core_of = COG
+		add_core_of = ANG
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={ 13297 13298 13524 13628 13635 13755 13816 13877 13883 13914 13921 14019 14030 14120 14543 14551 14552 }
+	manpower=589333
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,16 @@
+state={
+	id=1969
+	name="STATE_1969" # Pietermaritzburg, split from 275
+
+	history={
+		owner = NTL
+		set_variable = { tribal = 275 }
+		add_core_of = NTL
+	}
+
+	provinces={ 13423 13464 13508 13534 13762 13765 13866 13870 14073 14093 14107 14623 14624 14626 14630 }
+	manpower=17766
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,16 @@
+state={
+	id=1970
+	name="STATE_1970" # Transkei, split from 275
+
+	history={
+		owner = SAF
+		set_variable = { tribal = 275 }
+		add_core_of = SAF
+	}
+
+	provinces={ 13854 14634 14635 }
+	manpower=3553
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

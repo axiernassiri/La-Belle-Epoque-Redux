@@ -8,7 +8,7 @@ wood=9
 	name="STATE_964"
 
 	history={
-		owner = POR
+		owner = COG
 		add_core_of = COG
 		buildings = {
 			infrastructure = 1
@@ -17,10 +17,8 @@ wood=9
 
 	}
 
-	provinces={
-		13515 13526 13537 13641 13785 13878 14533 14537 14538 
-	}
-	manpower=33120
+	provinces={ 13526 13537 13641 13785 13878 14533 }
+	manpower=22080
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

@@ -1,0 +1,16 @@
+state={
+	id=1980
+	name="STATE_1980" # Borgu, split from 776
+
+	history={
+		owner = NGA
+		set_variable = { tribal = 776 }
+		add_core_of = NGA
+	}
+
+	provinces={ 11910 11194 11974 11145 }
+	manpower=74330
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.0
+}

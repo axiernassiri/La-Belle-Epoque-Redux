@@ -1267,11 +1267,6 @@ AFG_SHR = {
 	color_ui = rgb {158 56 56}
 }
 
-MRT_toucouler_ct = {
-	color = rgb {137 41 163}
-	color_ui = rgb {137 41 163}
-}
-
 NGA_sokoto_calpihate = {
 	color = rgb {64 77 54}
 	color_ui = rgb {64 77 54}

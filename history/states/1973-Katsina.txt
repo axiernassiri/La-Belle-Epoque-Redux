@@ -1,0 +1,16 @@
+state={
+	id=1973
+	name="STATE_1973" # Katsina, split from 515
+
+	history={
+		owner = NGA
+		set_variable = { tribal = 515 }
+		add_core_of = NGA
+	}
+
+	provinces={ 13440 13552 13610 13633 14069 14155 14340 14345 14352 14353 14366 }
+	manpower=1847
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

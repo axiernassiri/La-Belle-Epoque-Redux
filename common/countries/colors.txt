@@ -1109,7 +1109,52 @@ ZUL = {
 	color_ui = rgb { 77 255 86 }
 }
 
-CHK = {
-	color = rgb { 191 154 15 }
-	color_ui = rgb { 191 154 15 }
+CYR = {
+	color = rgb { 150 80 60 }
+	color_ui = rgb { 150 80 60 }
+}
+
+FTO = {
+	color = rgb { 140 90 170 }
+	color_ui = rgb { 140 90 170 }
+}
+
+FDJ = {
+	color = rgb { 60 140 60 }
+	color_ui = rgb { 60 140 60 }
+}
+
+MSI = {
+	color = rgb { 230 230 120 }
+	color_ui = rgb { 230 230 120 }
+}
+
+ASH = {
+	color = rgb { 150 140 40 }
+	color_ui = rgb { 150 140 40 }
+}
+
+DHY = {
+	color = rgb { 160 230 100 }
+	color_ui = rgb { 160 230 100 }
+}
+
+OYO = {
+	color = rgb { 90 190 230 }
+	color_ui = rgb { 90 190 230 }
+}
+
+NTL = {
+	color = rgb { 110 150 110 }
+	color_ui = rgb { 110 150 110 }
+}
+
+TVL = {
+	color = rgb { 240 150 180 }
+	color_ui = rgb { 240 150 180 }
+}
+
+OFS = {
+	color = rgb { 230 150 60 }
+	color_ui = rgb { 230 150 60 }
 }

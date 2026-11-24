@@ -1,9 +1,4 @@
-capital = 557
-oob = "MRT_1866"
-
-
-set_cosmetic_tag = MRT_toucouler_ct
-
+capital = 1328
 
 # Starting tech
 set_technology = {
@@ -11,18 +6,17 @@ set_technology = {
 	fpw_infantry_weapons = 1
 }
 
-set_convoys = 20
-
+set_convoys = 0
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1864.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	neutrality = 20
-	communism = 5
-	neutrality = 50
+	neutrality = 70
+	democratic = 20
+	fascism = 10
+	communism = 0
 }
