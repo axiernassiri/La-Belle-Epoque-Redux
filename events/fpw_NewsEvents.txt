@@ -526,3 +526,340 @@ news_event = {
 		}
 	}
 }
+# 18 – The Age of Flight
+news_event = {
+	id = news_fpw.18
+	title = news_fpw.18.t
+	desc = news_fpw.18.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.01.11
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.18.a
+	}
+
+	option = {
+		name = news_fpw.18.b
+	}
+}
+
+# 19 – A Woman Enters the Dental Profession
+news_event = {
+	id = news_fpw.19
+	title = news_fpw.19.t
+	desc = news_fpw.19.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.02.20
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.19.a
+
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_political_power = 25
+			add_stability = -0.025
+		}
+		if = {
+			limit = {
+				NOT = { original_tag = USA }
+			}
+			add_political_power = 10
+			add_stability = -0.01
+		}
+	}
+
+	option = {
+		name = news_fpw.19.b
+
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_political_power = -25
+			add_stability = 0.025
+		}
+		if = {
+			limit = {
+				NOT = { original_tag = USA }
+			}
+			add_political_power = -10
+			add_stability = 0.01
+		}
+	}
+}
+
+# 20 – A Lunar Eclipse Observed
+news_event = {
+	id = news_fpw.20
+	title = news_fpw.20.t
+	desc = news_fpw.20.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.03.30
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.20.a
+	}
+
+	option = {
+		name = news_fpw.20.b
+	}
+}
+
+# 21 – A New Society for the Protection of Animals
+news_event = {
+	id = news_fpw.21
+	title = news_fpw.21.t
+	desc = news_fpw.21.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.04.09
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.21.a
+	}
+
+	option = {
+		name = news_fpw.21.b
+	}
+}
+
+# 22 – A New Czech Opera
+news_event = {
+	id = news_fpw.22
+	title = news_fpw.22.t
+	desc = news_fpw.22.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.05.29
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.22.a
+	}
+
+	option = {
+		name = news_fpw.22.b
+	}
+}
+
+# 23 – The Death of John McDouall Stuart
+news_event = {
+	id = news_fpw.23
+	title = news_fpw.23.t
+	desc = news_fpw.23.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.06.04
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.23.a
+	}
+
+	option = {
+		name = news_fpw.23.b
+	}
+}
+
+# 24 – A Cable Across the Atlantic
+news_event = {
+	id = news_fpw.24
+	title = news_fpw.24.t
+	desc = news_fpw.24.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.07.26
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.24.a
+	}
+
+	option = {
+		name = news_fpw.24.b
+	}
+}
+
+# 25 – New Zealand Connected by Telegraph
+news_event = {
+	id = news_fpw.25
+	title = news_fpw.25.t
+	desc = news_fpw.25.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.08.25
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.25.a
+	}
+
+	option = {
+		name = news_fpw.25.b
+	}
+}
+
+# 26 – A New Daily Newspaper in Hawaii
+news_event = {
+	id = news_fpw.26
+	title = news_fpw.26.t
+	desc = news_fpw.26.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.09.03
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.26.a
+	}
+
+	option = {
+		name = news_fpw.26.b
+	}
+}
+
+# 27 – A Great Fire in Quebec
+news_event = {
+	id = news_fpw.27
+	title = news_fpw.27.t
+	desc = news_fpw.27.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.10.13
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.27.a
+
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			add_stability = -0.02
+		}
+	}
+
+	option = {
+		name = news_fpw.27.b
+
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			add_stability = -0.02
+		}
+	}
+}
+
+# 28 – A New Development in Cycling
+news_event = {
+	id = news_fpw.28
+	title = news_fpw.28.t
+	desc = news_fpw.28.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.11.19
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.28.a
+	}
+
+	option = {
+		name = news_fpw.28.b
+	}
+}
+
+# 29 – Disaster at the Oaks Colliery
+news_event = {
+	id = news_fpw.29
+	title = news_fpw.29.t
+	desc = news_fpw.29.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1866.12.11
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.29.a
+
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_stability = -0.02
+		}
+	}
+
+	option = {
+		name = news_fpw.29.b
+
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_stability = -0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.025
+			}
+		}
+	}
+}

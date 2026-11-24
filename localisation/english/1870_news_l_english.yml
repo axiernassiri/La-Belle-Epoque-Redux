@@ -57,3 +57,63 @@
   news_fpw.15.t:0 "Title of Caliph Seized"
   news_fpw.16.t:0 "New World Order Proclaimed"
   news_fpw.17.t:0 "The Anglo-Afghan War"
+
+  news_fpw.18.t:0 "The Age of Flight"
+  news_fpw.18.d:0 "The Aeronautical Society of Great Britain has been established in London, bringing together a number of gentlemen interested in the advancement of human flight. Though the prospect of heavier-than-air machines carrying passengers remains distant, the society intends to encourage scientific investigation into the principles of aeronautics. Its formation has been welcomed by enthusiasts who believe that the conquest of the skies may one day become a reality."
+  news_fpw.18.a:0 "An interesting undertaking."
+  news_fpw.18.b:0 "A foolish pursuit of impossible dreams."
+
+  news_fpw.19.t:0 "A Woman Enters the Dental Profession"
+  news_fpw.19.d:0 "Lucy Hobbs Taylor has graduated from the Ohio College of Dental Surgery, becoming the first woman in the United States to receive a Doctor of Dental Surgery degree. Her achievement marks a remarkable development in the medical profession, where women have long faced considerable obstacles to formal education. Her accomplishment has attracted attention among advocates of greater opportunities for women in the learned professions."
+  news_fpw.19.a:0 "A remarkable achievement."
+  news_fpw.19.b:0 "Such matters ought to remain unchanged."
+
+  news_fpw.20.t:0 "A Lunar Eclipse Observed"
+  news_fpw.20.d:0 "Astronomers and curious observers across the world have turned their attention towards the heavens as a total lunar eclipse takes place. During the phenomenon, the Moon has gradually disappeared into the Earth's shadow, taking on a striking reddish appearance. Such celestial occurrences continue to provide opportunities for scientific observation and public fascination with the natural world."
+  news_fpw.20.a:0 "The wonders of the heavens."
+  news_fpw.20.b:0 "There are more pressing matters than the stars."
+
+  news_fpw.21.t:0 "A New Society for the Protection of Animals"
+  news_fpw.21.d:0 "A new organisation dedicated to the prevention of cruelty towards animals has been established in New York City. Founded by Henry Bergh, the American Society for the Prevention of Cruelty to Animals intends to combat the mistreatment of domestic animals and promote more humane practices. The organisation hopes to bring greater public attention to a cause which has received comparatively little formal consideration."
+  news_fpw.21.a:0 "A worthy cause."
+  news_fpw.21.b:0 "Surely there are greater concerns."
+
+  news_fpw.22.t:0 "A New Czech Opera"
+  news_fpw.22.d:0 "A new comic opera by the Czech composer Bedřich Smetana has premiered at the Provisional Theatre in Prague. Entitled The Bartered Bride, the production draws inspiration from rural Bohemian life and combines traditional musical elements with an entertaining story. The premiere has attracted considerable interest among Prague's musical circles, and the work is expected to become an important addition to the Czech theatrical repertoire."
+  news_fpw.22.a:0 "A fine contribution to the arts."
+  news_fpw.22.b:0 "Another unnecessary theatrical extravagance."
+
+  news_fpw.23.t:0 "The Death of John McDouall Stuart"
+  news_fpw.23.d:0 "John McDouall Stuart, one of the most celebrated explorers of the Australian continent, has died in London at the age of fifty. Stuart is remembered for his remarkable expeditions across the Australian interior, most notably his successful journey from south to north in 1862. His explorations greatly expanded European geographical knowledge of the continent, and his achievements will be remembered by generations of explorers."
+  news_fpw.23.a:0 "His achievements shall be remembered."
+  news_fpw.23.b:0 "Another explorer lost to the wilderness."
+
+  news_fpw.24.t:0 "A Cable Across the Atlantic"
+  news_fpw.24.d:0 "After years of unsuccessful attempts and considerable technical difficulties, a transatlantic telegraph cable has finally been successfully laid between Europe and North America. The enormous undertaking, carried out by the steamship Great Eastern, promises to transform international communications by allowing messages to cross the Atlantic in minutes rather than weeks. The achievement is being celebrated as one of the greatest engineering accomplishments of the age."
+  news_fpw.24.a:0 "The world grows smaller."
+  news_fpw.24.b:0 "An expensive undertaking with uncertain benefits."
+
+  news_fpw.25.t:0 "New Zealand Connected by Telegraph"
+  news_fpw.25.d:0 "An important milestone in the development of communications in New Zealand has been reached with the successful completion of a submarine telegraph cable across Cook Strait. The connection links the North and South Islands, allowing messages to be transmitted between the two islands far more rapidly than before. The first telegram has already been sent across the new cable, demonstrating the possibilities of this remarkable engineering achievement."
+  news_fpw.25.a:0 "Progress knows no boundaries."
+  news_fpw.25.b:0 "An unnecessary expense for distant islands."
+
+  news_fpw.26.t:0 "A New Daily Newspaper in Hawaii"
+  news_fpw.26.d:0 "The first issue of the Daily Hawaiian Herald has appeared in Honolulu, marking an important development in the islands' growing press industry. Published in English, the newspaper promises to provide its readers with regular coverage of local affairs, commercial developments and international news. Though the publication faces the challenges of a relatively small readership, its arrival represents a notable step forward for journalism in the Hawaiian Islands."
+  news_fpw.26.a:0 "The press continues to expand."
+  news_fpw.26.b:0 "Another newspaper nobody asked for."
+
+  news_fpw.27.t:0 "A Great Fire in Quebec"
+  news_fpw.27.d:0 "A devastating fire has swept through the city of Quebec, destroying more than twelve hundred houses in the districts of Saint-Roch and Saint-Sauveur. The flames have spread rapidly through densely populated neighbourhoods, leaving thousands of inhabitants without shelter. Emergency efforts have struggled to contain the disaster, while local authorities face the enormous task of providing assistance to those affected and rebuilding the damaged districts."
+  news_fpw.27.a:0 "A terrible tragedy."
+  news_fpw.27.b:0 "A dreadful reminder of the dangers of urban life."
+
+  news_fpw.28.t:0 "A New Development in Cycling"
+  news_fpw.28.d:0 "French inventor Pierre Lallement has received a United States patent for his pedal-powered bicycle design, featuring a rotary crank mechanism attached to the front wheel. Although earlier velocipedes have already appeared on European roads, Lallement's patented construction represents an important development in the evolution of personal transportation. The invention may help pave the way for a new generation of practical human-powered vehicles."
+  news_fpw.28.a:0 "An invention worth watching."
+  news_fpw.28.b:0 "A contraption unlikely to replace the horse."
+
+  news_fpw.29.t:0 "Disaster at the Oaks Colliery"
+  news_fpw.29.d:0 "A catastrophic explosion has ripped through the Oaks Colliery near Barnsley, England, trapping hundreds of miners beneath the ground. The blast has devastated the underground workings and destroyed much of the mine's infrastructure, while rescue parties have struggled to reach those still trapped. Further explosions on the following day have claimed the lives of rescuers as well. With 361 lives ultimately lost, the disaster stands among the deadliest mining catastrophes in British history."
+  news_fpw.29.a:0 "A dreadful loss of life."
+  news_fpw.29.b:0 "The price of industrial progress is becoming unbearable."

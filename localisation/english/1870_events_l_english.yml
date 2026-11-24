@@ -102,7 +102,7 @@
 
   france_fpw.2.t:0 "The Prusso-Spanish King?"
   france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
-  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
+  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!"
   france_fpw.2.b:0 "Let the Spanish do there own thing."
 
   france_fpw.3.t:0 "[FRA.GetNameDefCap] Offers to Buy [LUX.GetNameDef]"
@@ -203,7 +203,7 @@
 
   france_fpw.2.t:0 "The Prusso-Spanish King?"
   france_fpw.2.d:0 "In the wake of the Spanish Glorious Revolution and the overthrow of Isabella II, Spain is searching for a new monarch. One candidate they approached is Leopold of Hohenzollern. Although Prussia declined the offer to send one of their monarchs to Spain, we must demonstrate our strength by ensuring Prussia will not consider such actions in the future."
-  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!" #Ems-Dispatch
+  france_fpw.2.a:0 "We need to send a ultimatum to Prussia!"
   france_fpw.2.b:0 "Let the Spanish do there own thing."
 
 
