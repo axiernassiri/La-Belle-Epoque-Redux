@@ -211,6 +211,25 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = 0.5
             }
 		}
+
+		AUS_heir_to_the_porte = {
+			#picture = AUS_empire_restored
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+            }
+		}
+
+		AUS_the_giant_slain = {
+			#picture = AUS_empire_restored
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				army_morale_factor = 0.10
+				political_power_factor = 0.10
+            }
+		}
 	}
 
 	hidden_ideas = {

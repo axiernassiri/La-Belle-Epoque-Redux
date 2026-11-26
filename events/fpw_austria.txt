@@ -902,7 +902,7 @@ country_event = {
 		}
 		RHI = {
 			add_to_faction = AUS
-			declare_war_on = PRS
+			declare_war_on = { target = PRS type = annex_everything }
 		}
 		AUS = {
 			puppet = {
@@ -940,7 +940,7 @@ country_event = {
 		}
 		SXM = {
 			add_to_faction = AUS
-			declare_war_on = PRS
+			declare_war_on = { target = PRS type = annex_everything }
 		}
 		AUS = {
 			puppet = {
@@ -1117,7 +1117,106 @@ country_event = {
 	option = {
 		name = fpw_austria.37.a
 		ai_chance = { factor = 401 }
-		remove_dynamic_modifier = fpw_italian_wars
+		remove_dynamic_modifier = { modifier = fpw_italian_wars }
 		complete_national_focus = AUS_italian_interest_secured
+	}
+}
+
+### Austria alt-history: Ottoman and Russian wars
+
+### Invitation to the Habsburg Coalition (sent to Greece, Persia and the Saudis). FROM = Austria
+country_event = {
+	id = fpw_austria.38
+	title = fpw_austria.38.t
+	desc = fpw_austria.38.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	### join
+	option = {
+		name = fpw_austria.38.a
+		ai_chance = { factor = 80 }
+		FROM = { add_to_faction = ROOT }
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_increase
+		}
+	}
+	### refuse
+	option = {
+		name = fpw_austria.38.b
+		ai_chance = { factor = 20 }
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+### Russia: border raided by Austria
+country_event = {
+	id = fpw_austria.39
+	title = fpw_austria.39.t
+	desc = fpw_austria.39.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	option = {
+		name = fpw_austria.39.a
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_decrease
+		}
+		add_war_support = 0.05
+	}
+}
+
+### Austria: the Ottoman Empire is dissolved
+country_event = {
+	id = fpw_austria.40
+	title = fpw_austria.40.t
+	desc = fpw_austria.40.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fpw_austria.40.a
+		ai_chance = { factor = 100 }
+		complete_national_focus = AUS_victory_against_the_ottomans
+	}
+}
+
+### Austria: slay the orthodox giant (flavour, fired by the focus after war is declared)
+country_event = {
+	id = fpw_austria.41
+	title = fpw_austria.41.t
+	desc = fpw_austria.41.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fpw_austria.41.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+### Austria: Russia is defeated
+country_event = {
+	id = fpw_austria.42
+	title = fpw_austria.42.t
+	desc = fpw_austria.42.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fpw_austria.42.a
+		ai_chance = { factor = 100 }
+		complete_national_focus = AUS_victory_over_russia
 	}
 }

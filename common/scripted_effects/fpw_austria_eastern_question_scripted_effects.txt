@@ -1,0 +1,1337 @@
+### Austria alt-history: Ottoman and Russian wars
+### Used by the AUS_rivals_of_the_old / AUS_curtail_russian_ambition branches
+
+### Makes every country on Austria's side of the war make peace with the given country
+AUS_side_white_peace_TUR = {
+	if = {
+		limit = { TUR = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = TUR
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = TUR
+				message = AUS_ottoman_peace_tt
+			}
+			set_truce = {
+				target = TUR
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_SER = {
+	if = {
+		limit = { SER = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = SER
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = SER
+				message = AUS_ottoman_peace_tt
+			}
+			set_truce = {
+				target = SER
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_ROM = {
+	if = {
+		limit = { ROM = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = ROM
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = ROM
+				message = AUS_ottoman_peace_tt
+			}
+			set_truce = {
+				target = ROM
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_EGY = {
+	if = {
+		limit = { EGY = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = EGY
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = EGY
+				message = AUS_ottoman_peace_tt
+			}
+			set_truce = {
+				target = EGY
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_KUW = {
+	if = {
+		limit = { KUW = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = KUW
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = KUW
+				message = AUS_ottoman_peace_tt
+			}
+			set_truce = {
+				target = KUW
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_TUN = {
+	if = {
+		limit = { TUN = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = TUN
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = TUN
+				message = AUS_ottoman_peace_tt
+			}
+			set_truce = {
+				target = TUN
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_SOV = {
+	if = {
+		limit = { SOV = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = SOV
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = SOV
+				message = AUS_russian_peace_tt
+			}
+			set_truce = {
+				target = SOV
+				days = 365
+			}
+		}
+	}
+}
+AUS_side_white_peace_FIN = {
+	if = {
+		limit = { FIN = { exists = yes } }
+		every_country = {
+			limit = {
+				has_war_with = FIN
+				OR = {
+					tag = AUS
+					is_in_faction_with = AUS
+					is_subject_of = AUS
+					has_country_flag = AUS_backed_rebel
+					tag = PER
+					tag = SAU
+					tag = GRE
+				}
+			}
+			white_peace = {
+				tag = FIN
+				message = AUS_russian_peace_tt
+			}
+			set_truce = {
+				target = FIN
+				days = 365
+			}
+		}
+	}
+}
+
+### Gives a rebel country locked militia/line templates and spawns troops in every state it owns
+AUS_spawn_rebel_army_BUL = {
+	BUL = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = BUL
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = BUL
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_BOS = {
+	BOS = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = BOS
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = BOS
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_ALB = {
+	ALB = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = ALB
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = ALB
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_MNT = {
+	MNT = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = MNT
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = MNT
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_ARM = {
+	ARM = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = ARM
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = ARM
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_GEO = {
+	GEO = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = GEO
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = GEO
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_AZR = {
+	AZR = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = AZR
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = AZR
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+AUS_spawn_rebel_army_DAG = {
+	DAG = {
+		division_template = {
+			name = "Insurgent Militia"
+			is_locked = yes
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+			}
+		}
+		division_template = {
+			name = "Liberation Infantry"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"Insurgent Militia\" division_template = \"Insurgent Militia\" start_experience_factor = 0.05 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = DAG
+				count = 2
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"Liberation Infantry\" division_template = \"Liberation Infantry\" start_experience_factor = 0.1 start_manpower_factor = 1 start_equipment_factor = 1"
+				owner = DAG
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+}
+
+### Releases a Balkan nation from Ottoman held cores and makes Turkey fight it
+AUS_launch_balkan_uprising_BUL = {
+	every_state = {
+		limit = {
+			is_core_of = BUL
+			is_owned_by = TUR
+		}
+		transfer_state_to = BUL
+	}
+	BUL = {
+		set_country_flag = AUS_backed_rebel
+	}
+	AUS_spawn_rebel_army_BUL = yes
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -3000
+		producer = AUS
+	}
+	TUR = {
+		declare_war_on = {
+			target = BUL
+			type = annex_everything
+		}
+	}
+}
+AUS_launch_balkan_uprising_BOS = {
+	every_state = {
+		limit = {
+			is_core_of = BOS
+			is_owned_by = TUR
+		}
+		transfer_state_to = BOS
+	}
+	BOS = {
+		set_country_flag = AUS_backed_rebel
+	}
+	AUS_spawn_rebel_army_BOS = yes
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -3000
+		producer = AUS
+	}
+	TUR = {
+		declare_war_on = {
+			target = BOS
+			type = annex_everything
+		}
+	}
+}
+AUS_launch_balkan_uprising_ALB = {
+	every_state = {
+		limit = {
+			is_core_of = ALB
+			is_owned_by = TUR
+		}
+		transfer_state_to = ALB
+	}
+	ALB = {
+		set_country_flag = AUS_backed_rebel
+	}
+	AUS_spawn_rebel_army_ALB = yes
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -3000
+		producer = AUS
+	}
+	TUR = {
+		declare_war_on = {
+			target = ALB
+			type = annex_everything
+		}
+	}
+}
+AUS_launch_balkan_uprising_MNT = {
+	every_state = {
+		limit = {
+			is_core_of = MNT
+			is_owned_by = TUR
+		}
+		transfer_state_to = MNT
+	}
+	MNT = {
+		set_country_flag = AUS_backed_rebel
+	}
+	AUS_spawn_rebel_army_MNT = yes
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -3000
+		producer = AUS
+	}
+	TUR = {
+		declare_war_on = {
+			target = MNT
+			type = annex_everything
+		}
+	}
+}
+
+### Breaks an existing Ottoman subject (Serbia, Romania) away from the Porte
+AUS_launch_balkan_breakaway_SER = {
+	if = {
+		limit = {
+			SER = { is_in_faction_with = TUR }
+		}
+		TUR = { remove_from_faction = SER }
+	}
+	if = {
+		limit = {
+			SER = { is_subject_of = TUR }
+		}
+		TUR = { end_puppet = SER }
+	}
+	SER = {
+		set_country_flag = AUS_backed_rebel
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -3000
+		producer = AUS
+	}
+	TUR = {
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+	}
+}
+AUS_launch_balkan_breakaway_ROM = {
+	if = {
+		limit = {
+			ROM = { is_in_faction_with = TUR }
+		}
+		TUR = { remove_from_faction = ROM }
+	}
+	if = {
+		limit = {
+			ROM = { is_subject_of = TUR }
+		}
+		TUR = { end_puppet = ROM }
+	}
+	ROM = {
+		set_country_flag = AUS_backed_rebel
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = AUS
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = medium_increase
+		}
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -3000
+		producer = AUS
+	}
+	TUR = {
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
+		}
+	}
+}
+
+### Armenian revolt, fired when the war of dissolution starts (needs AUS_instigate_armenian_resistance)
+AUS_armenian_revolt = {
+	every_state = {
+		limit = {
+			OR = {
+				state = 353
+				state = 800
+				state = 984
+			}
+			is_owned_by = TUR
+		}
+		remove_dynamic_modifier = { modifier = AUS_armenian_unrest }
+		transfer_state_to = ARM
+	}
+	if = {
+		limit = { ARM = { exists = yes } }
+		ARM = { set_country_flag = AUS_backed_rebel }
+		AUS = {
+			puppet = {
+				target = ARM
+				end_wars = no
+			}
+		}
+		AUS_spawn_rebel_army_ARM = yes
+		AUS = { add_to_faction = ARM }
+		ARM = {
+			if = {
+				limit = { NOT = { has_war_with = TUR } }
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+### Caucasian revolt, fired when the war with Russia starts (needs AUS_rebellous_people_of_the_caucasus)
+AUS_caucasus_revolt = {
+	if = {
+		limit = { 231 = { is_owned_by = SOV } }
+		231 = { transfer_state_to = GEO }
+	}
+	if = {
+		limit = { 230 = { is_owned_by = SOV } }
+		230 = { transfer_state_to = ARM }
+	}
+	if = {
+		limit = { 229 = { is_owned_by = SOV } }
+		229 = { transfer_state_to = AZR }
+	}
+	if = {
+		limit = { 232 = { is_owned_by = SOV } }
+		232 = { transfer_state_to = DAG }
+	}
+	every_country = {
+		limit = {
+			OR = {
+				tag = GEO
+				tag = ARM
+				tag = AZR
+				tag = DAG
+			}
+			exists = yes
+			NOT = { has_war_with = AUS }
+		}
+		set_country_flag = AUS_backed_rebel
+		AUS = { add_to_faction = PREV }
+		if = {
+			limit = { NOT = { has_war_with = SOV } }
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = { GEO = { exists = yes } }
+		AUS_spawn_rebel_army_GEO = yes
+	}
+	if = {
+		limit = { AZR = { exists = yes } }
+		AUS_spawn_rebel_army_AZR = yes
+	}
+	if = {
+		limit = { DAG = { exists = yes } }
+		AUS_spawn_rebel_army_DAG = yes
+	}
+	if = {
+		limit = {
+			ARM = {
+				exists = yes
+				NOT = { has_country_flag = AUS_armenian_army_spawned }
+			}
+		}
+		AUS_spawn_rebel_army_ARM = yes
+	}
+}
+
+### Follow-up effects of the War of Dissolution (run hidden from AUS_call_for_the_dissolution_of_the_ottoman_empire, after Austria declares war)
+AUS_start_ottoman_dissolution_war = {
+	### Austria's own declaration, Persia and the Saudis are in the focus itself (visible in its tooltip)
+	AUS = { set_country_flag = AUS_ottoman_dissolution_war }
+	### faction members that were not dragged in automatically
+	every_country = {
+		limit = {
+			is_in_faction_with = AUS
+			NOT = { tag = AUS }
+			NOT = { has_war_with = TUR }
+		}
+		declare_war_on = {
+			target = TUR
+			type = annex_everything
+		}
+	}
+	### Armenia rises
+	if = {
+		limit = { has_country_flag = AUS_armenian_revolt_flag }
+		AUS_armenian_revolt = yes
+		ARM = { set_country_flag = AUS_armenian_army_spawned }
+	}
+}
+
+### Follow-up effects of the war against Russia (run hidden from AUS_slay_the_orthodox_giant, after Austria declares war)
+AUS_start_russian_war = {
+	### Austria's own declaration, Persia and the Saudis are in the focus itself (visible in its tooltip)
+	AUS = { set_country_flag = AUS_russian_war }
+	every_country = {
+		limit = {
+			is_in_faction_with = AUS
+			NOT = { tag = AUS }
+			NOT = { has_war_with = SOV }
+		}
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+	}
+	if = {
+		limit = { has_country_flag = caaucasus_revolt_flag }
+		AUS_caucasus_revolt = yes
+	}
+}
+
+### Scripted peace after Turkey capitulates in the War of Dissolution
+### Partition, with a rump Turkey keeping Anatolia, Istanbul and Cyprus
+AUS_ottoman_dissolution_peace = {
+	### remember who fought before the wars are ended
+	if = {
+		limit = { PER = { exists = yes has_war_with = TUR } }
+		AUS = { set_country_flag = AUS_persia_fought_ottomans }
+	}
+	if = {
+		limit = { SAU = { exists = yes has_war_with = TUR } }
+		AUS = { set_country_flag = AUS_saudis_fought_ottomans }
+	}
+	if = {
+		limit = { GRE = { exists = yes has_war_with = TUR } }
+		AUS = { set_country_flag = AUS_greece_fought_ottomans }
+	}
+
+	### end the war for Austria, its coalition and the rebels it backed
+	### (also with the Porte's subjects and faction members, who fought on its side)
+	AUS_side_white_peace_TUR = yes
+	AUS_side_white_peace_SER = yes
+	AUS_side_white_peace_ROM = yes
+	AUS_side_white_peace_EGY = yes
+	AUS_side_white_peace_KUW = yes
+	AUS_side_white_peace_TUN = yes
+
+	### Ottoman subjects are freed
+	every_country = {
+		limit = { is_subject_of = TUR }
+		TUR = { end_puppet = PREV }
+	}
+	every_country = {
+		limit = {
+			is_in_faction_with = TUR
+			NOT = { tag = TUR }
+		}
+		TUR = { remove_from_faction = PREV }
+	}
+
+	### Austria: Bosnia, Herzegovina and the Serbian lands
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 104
+				state = 804
+				state = 108
+				state = 803
+				state = 802
+			}
+		}
+		transfer_state_to = AUS
+	}
+
+	### Bulgaria
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 48
+				state = 211
+				state = 212
+				state = 801
+				state = 106
+				state = 341
+				state = 985
+			}
+		}
+		transfer_state_to = BUL
+	}
+	if = {
+		limit = {
+			980 = { is_owned_by = TUR }
+			ROM = { exists = yes }
+		}
+		980 = { transfer_state_to = ROM }
+	}
+	else_if = {
+		limit = { 980 = { is_owned_by = TUR } }
+		980 = { transfer_state_to = BUL }
+	}
+
+	### Albania
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 44
+				state = 805
+				state = 934
+			}
+		}
+		transfer_state_to = ALB
+	}
+
+	### Montenegro
+	if = {
+		limit = { 105 = { is_owned_by = TUR } }
+		105 = { transfer_state_to = MNT }
+	}
+
+	### Greece (or Bulgaria if Greece is gone)
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 164
+				state = 182
+				state = 184
+				state = 185
+				state = 187
+				state = 731
+			}
+		}
+		if = {
+			limit = { GRE = { exists = yes } }
+			transfer_state_to = GRE
+		}
+		else = {
+			transfer_state_to = BUL
+		}
+	}
+
+	### Armenia
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 353
+				state = 800
+				state = 984
+			}
+		}
+		remove_dynamic_modifier = { modifier = AUS_armenian_unrest }
+		transfer_state_to = ARM
+	}
+
+	### Arabia
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 679
+				state = 855
+				state = 856
+			}
+		}
+		if = {
+			limit = { SAU = { exists = yes } }
+			transfer_state_to = SAU
+		}
+	}
+
+	### Mesopotamia: Persia if the Shah fought, otherwise an independent Iraq
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 291
+				state = 676
+			}
+		}
+		if = {
+			limit = {
+				AUS = { has_country_flag = AUS_persia_fought_ottomans }
+				PER = { exists = yes }
+			}
+			transfer_state_to = PER
+		}
+		else = {
+			transfer_state_to = IRQ
+		}
+	}
+
+	### Levant
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 454
+				state = 455
+				state = 553
+				state = 554
+				state = 677
+				state = 680
+			}
+		}
+		transfer_state_to = SYR
+	}
+
+	### Libya
+	every_state = {
+		limit = {
+			is_owned_by = TUR
+			OR = {
+				state = 448
+				state = 449
+				state = 450
+				state = 451
+				state = 661
+				state = 662
+				state = 663
+				state = 957
+				state = 1025
+			}
+		}
+		transfer_state_to = LBA
+	}
+
+	### new Balkan states become Austrian subjects
+	every_country = {
+		limit = {
+			OR = {
+				tag = BUL
+				tag = ALB
+				tag = MNT
+				tag = ARM
+				tag = BOS
+			}
+			exists = yes
+			is_subject = no
+		}
+		AUS = {
+			puppet = {
+				target = PREV
+				end_wars = no
+			}
+		}
+	}
+
+	### clean up the agitation modifiers
+	every_state = {
+		remove_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+	}
+
+	TUR = {
+		add_stability = -0.20
+		add_war_support = -0.20
+		add_political_power = -200
+		clr_country_flag = AUS_ottoman_dissolution_war
+	}
+	AUS = {
+		clr_country_flag = AUS_ottoman_dissolution_war
+		country_event = {
+			id = fpw_austria.40
+			days = 1
+		}
+	}
+}
+
+### Scripted peace after Russia capitulates
+AUS_russian_peace = {
+	if = {
+		limit = { PER = { exists = yes has_war_with = SOV } }
+		AUS = { set_country_flag = AUS_persia_fought_russia }
+	}
+
+	AUS_side_white_peace_SOV = yes
+	AUS_side_white_peace_FIN = yes
+
+	### Austria takes Volhynia and Podolia
+	every_state = {
+		limit = {
+			is_owned_by = SOV
+			OR = {
+				state = 199
+				state = 200
+			}
+		}
+		transfer_state_to = AUS
+	}
+
+	### Ukraine is released as an Austrian puppet
+	every_state = {
+		limit = {
+			is_owned_by = SOV
+			is_core_of = UKR
+		}
+		remove_dynamic_modifier = { modifier = AUS_ukrainian_unrest }
+		transfer_state_to = UKR
+	}
+	if = {
+		limit = { UKR = { exists = yes } }
+		AUS = {
+			puppet = {
+				target = UKR
+				end_wars = no
+			}
+		}
+	}
+
+	### the Caucasus
+	if = {
+		limit = { 231 = { is_owned_by = SOV } }
+		231 = { transfer_state_to = GEO }
+	}
+	if = {
+		limit = { 230 = { is_owned_by = SOV } }
+		230 = { transfer_state_to = ARM }
+	}
+	if = {
+		limit = { 232 = { is_owned_by = SOV } }
+		232 = { transfer_state_to = DAG }
+	}
+	### Baku goes to the Shah if he fought, otherwise to Azerbaijan
+	if = {
+		limit = {
+			AUS = { has_country_flag = AUS_persia_fought_russia }
+			PER = { exists = yes }
+			229 = {
+				OR = {
+					is_owned_by = SOV
+					is_owned_by = AZR
+				}
+			}
+		}
+		229 = { transfer_state_to = PER }
+	}
+	else_if = {
+		limit = { 229 = { is_owned_by = SOV } }
+		229 = { transfer_state_to = AZR }
+	}
+
+	every_state = {
+		remove_dynamic_modifier = { modifier = AUS_ukrainian_unrest }
+	}
+
+	SOV = {
+		add_stability = -0.20
+		add_war_support = -0.20
+		add_political_power = -200
+	}
+	AUS = {
+		clr_country_flag = AUS_russian_war
+		country_event = {
+			id = fpw_austria.42
+			days = 1
+		}
+	}
+}

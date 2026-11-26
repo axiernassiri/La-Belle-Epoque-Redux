@@ -125,10 +125,12 @@ on_actions = {
 							}
 						}
 					}
+					has_completed_focus = AUS_to_secure_italy
+					has_war_with = ITA
 				}
-			}
-			AUS = {
-				country_event = fpw_austria.37
+				AUS = {
+					country_event = fpw_austria.37
+				}
 			}
 		}
 	}
