@@ -3741,8 +3741,6 @@
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = AUS_victory_over_russia_summary_tt
-			custom_effect_tooltip = AUS_victory_over_russia_tt
 			add_ideas = AUS_the_giant_slain
 			add_political_power = 150
 			army_experience = 25
