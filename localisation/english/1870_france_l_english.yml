@@ -8,7 +8,6 @@ FRA_the_entente_alliance: "Entente"
 FRA_konstantiniyye_pact: "Konstantiniyye Pact"
 FRA_european_coalition: "European Coalition"
 
-
 # Country loc
 FPC_french_federation: "French Federation"
 FPC_french_federation_DEF: "The Communard Federation of France"
@@ -32,8 +31,9 @@ FPC_democratic_party: "§R-- BANNED PARTY --§!"
 FPC_neutrality_party: "§R-- BANNED PARTY --§!"
 FPC_mouvement_ouvrier_francais: "MOF"
 FPC_mouvement_ouvrier_francais_long: "Mouvement Ouvrier Français\n\n§8French Labour Movement§!\n\n§LW.I.P§!\n\n"
-
-# Ideas
+###
+### Ideas
+###
 FRA_constitutional_reform_of_1862: "Constitutional Reform of 1862"
 FRA_constitutional_reform_of_1862_desc: "Since 1860, the legislature has gained greater freedom to debate government policy while constitutional reforms have begun to loosen the Emperor's absolute control. Though the Bonapartist system remains intact, these concessions have strengthened parliamentary institutions and opened the door to further liberalization."
 FRA_constitutional_reform_of_1866: "Constitutional Reform of 1866"
@@ -66,10 +66,6 @@ FRA_threat_of_revolution: "Spectre of Revolution"
 FRA_victoire_finale: "Victoire Finale"
 FRA_victoire_finale_prs: "Endsieg"
 
-
-
-
-
 # Commune
 FRA_concerning_support_from_the_republicans: "Growing Republican Dissent"
 FRA_parisian_bronze_strike: "The Parisian Bronze Strike"
@@ -77,7 +73,9 @@ FRA_parisian_bronze_strike_3: "The Parisian Strike Deepens"
 FRA_formation_of_the_communards: "Birth of the Commune"
 FRA_intense_political_divisio_6: "Shattered Political Order"
 FRA_communards_strike_first: "Communards Strike First!"
+###
 ### Focuses
+###
 # Army
 FRA_our_great_friend_sastres_our_army_supplier: "Our Great Friend Sastres"
 FRA_our_great_friend_sastres_our_army_supplier_desc: "A reliable logistics system is the cornerstone of any modern army. Our great friend and industrialist, §OHector de Sastres§!, will ensure our forces lack for nothing."
@@ -113,6 +111,32 @@ FRA_learn_from_der_bruderkrieg: "Learn from the Bruderkrieg"
 FRA_learn_from_der_bruderkrieg_desc: "Prussia's victory in the Bruderkrieg has shown the importance of rapid mobilization and modern military organization. We must study the campaign carefully and draw lessons from the Prussian system before France faces a similar test."
 FRA_legacy_of_the_napoleons_grand_army: "Memories of the Grande Armée"
 FRA_legacy_of_the_napoleons_grand_army_desc: ""
+FRA_question_of_the_imperial_army_reforms: "The Question of Imperial Army Reforms"
+FRA_question_of_the_imperial_army_reforms_desc: ""
+FRA_cut_military_expending: "Cut Military Expenditure"
+FRA_cut_military_expending_desc: ""
+FRA_increase_army_supplies_expenditures: "Increase Expenditure on Army Supplies"
+FRA_increase_army_supplies_expenditures_desc: ""
+FRA_legacy_of_the_napoleonic_tactics: "Legacy of Napoleonic Tactics"
+FRA_legacy_of_the_napoleonic_tactics_desc: ""
+FRA_the_frossard_line: "The Frossard Line"
+FRA_the_frossard_line_desc: ""
+FRA_the_alsace_lorraine_artillery_batteries: "Alsace-Lorraine Artillery Batteries"
+FRA_the_alsace_lorraine_artillery_batteries_desc: ""
+FRA_improvisation_of_the_rations: "Improvised Rations"
+FRA_improvisation_of_the_rations_desc: ""
+FRA_everything_against_the_prussian_threat: "Everything Against the Prussian Threat"
+FRA_everything_against_the_prussian_threat_desc: ""
+FRA_restore_the_vieille_garde: "Restore the Vieille Garde"
+FRA_restore_the_vieille_garde_desc: ""
+FRA_improve_the_military_trainings: "Improve Military Training"
+FRA_improve_the_military_trainings_desc: ""
+FRA_la_gloire_de_l_infanterie_francaise: "La Gloire de l'Infanterie Française"
+FRA_la_gloire_de_l_infanterie_francaise_desc: ""
+FRA_ils_ne_passeront_pas: "Ils ne passeront pas!"
+FRA_ils_ne_passeront_pas_desc: ""
+FRA_pour_la_drapeau_pour_la_victoire: "Pour le Drapeau, Pour la Victoire!"
+FRA_pour_la_drapeau_pour_la_victoire_desc: ""
 # Guerre de 1870
 FRA_guerre_de_1870: "Guerre de 1870"
 FRA_guerre_de_1870_desc: ""
@@ -207,7 +231,7 @@ FRA_french_economic_miracle_desc: " "
 # POLITICS
 FRA_the_liberal_empire: "The Liberal Empire"
 FRA_the_liberal_empire_desc: " "
-# COMMUNE EARLY
+# COMMUNE (PRE-REVOLUTION)
 FRA_rally_the_opposition: "Rally the Opposition"
 FRA_rally_the_opposition_desc: " "
 FRA_deepen_the_strikes: "Deepen the Strikes!"
@@ -222,56 +246,6 @@ FRA_for_the_workers_and_for_the_peasants: "For the Workers, For the Peasants!"
 FRA_for_the_workers_and_for_the_peasants_desc: " "
 FRA_pour_une_france_libre: "Pour Une France Libre!"
 FRA_pour_une_france_libre_desc: " "
-# COMMUNE LEFT
-FRA_moderate_republicans_victory: "Moderate Republican Win"
-FRA_moderate_republicans_victory_desc: " "
-FRA_mantaining_order: "Mantaining Order"
-FRA_mantaining_order_desc: " "
-FRA_reform_the_constitution_of_the_republic: "Reform the Constitution of the Republic"
-FRA_reform_the_constitution_of_the_republic_desc: " "
-FRA_a_decisive_blow_against_strikers: "A Decisive Blow Against Strikers"
-FRA_a_decisive_blow_against_strikers_desc: " "
-FRA_republicanization_of_the_army: "Republicanization of the Army"
-FRA_republicanization_of_the_army_desc: " "
-FRA_discredit_napoleon_iii: "Discredit Napoleon III"
-FRA_discredit_napoleon_iii_desc: " "
-FRA_belleville_program: "Belleville Program"
-FRA_belleville_program_desc: " "
-FRA_republican_economic_reforms: "Republican Economic Reforms"
-FRA_republican_economic_reforms_desc: " "
-FRA_universal_suffrage_reform: "Universal Suffrage Reform"
-FRA_universal_suffrage_reform_desc: " "
-FRA_abolition_of_standing_armies: "Abolition of Standing Armies"
-FRA_abolition_of_standing_armies_desc: " "
-FRA_separation_of_the_church_and_the_state: "Separation of the Church And the State"
-FRA_separation_of_the_church_and_the_state_desc: " "
-FRA_reform_the_tax_system: "Reform the Tax System"
-FRA_reform_the_tax_system_desc: " "
-FRA_liberte_egalite_fraternite: "Liberté, Égalité, Fraternité"
-FRA_liberte_egalite_fraternite_desc: " "
-# COMMUNE RIGHT
-FRA_iwa_victory: "IWA Victory"
-FRA_iwa_victory_desc: " "
-FRA_anti_imperialist_rhetoric: "Anti-Imperialist Rhetoric"
-FRA_anti_imperialist_rhetoric_desc: " "
-FRA_the_manifesto_of_the_sixty: "Adopt the Manifesto of the Sixty"
-FRA_the_manifesto_of_the_sixty_desc: " "
-FRA_for_the_international_revolution: "For the International Revolution"
-FRA_for_the_international_revolution_desc: " "
-FRA_fervour_for_the_socialist_cause: "Fervour For the Socialist Cause"
-FRA_fervour_for_the_socialist_cause_desc: " "
-FRA_sparks_of_revolution_in_the_latin_world: "Sparks of Revolution in the Latin World"
-FRA_sparks_of_revolution_in_the_latin_world_desc: " "
-FRA_to_avenge_the_germanic_revolution: "To Avenge the Germanic Revolution"
-FRA_to_avenge_the_germanic_revolution_desc: " "
-FRA_bring_socialism_to_the_eastern_bear: "Bring Socialism to the Eastern Bear"
-FRA_bring_socialism_to_the_eastern_bear_desc: " "
-FRA_bring_freedom_to_the_balkanic_states: "Bring Freedom to the Balkanic States"
-FRA_bring_freedom_to_the_balkanic_states_desc: " "
-FRA_put_an_end_to_the_british_imperialism: "Put an End to the Brish Imperialism"
-FRA_put_an_end_to_the_british_imperialism_desc: " "
-FRA_strike_the_western_capitalist_threat: "Strike the Western Empire"
-FRA_strike_the_western_capitalist_threat_desc: " "
 # BONAPARTIST
 FRA_rally_of_the_blue_bonapartistes: "Rally the Blue Bonapartistes"
 FRA_rally_of_the_blue_bonapartistes_desc: " "
@@ -303,7 +277,39 @@ FRA_revival_of_the_continental_system: "Revival of the Continental System"
 FRA_revival_of_the_continental_system_desc: " "
 FRA_la_grande_armee: "La Grande Armée"
 FRA_la_grande_armee_desc: " "
-# REPUBLICAN (HISTORICAL)
+FRA_aggresive_order_policy: "Aggressive Order Policy"
+FRA_aggresive_order_policy_desc: ""
+FRA_to_revive_a_glory: "Revive Our Former Glory"
+FRA_to_revive_a_glory_desc: ""
+FRA_regain_iberian_friendship: "Restore Friendship with Iberia"
+FRA_regain_iberian_friendship_desc: ""
+FRA_start_the_new_spanish_campaign: "Launch a New Spanish Campaign"
+FRA_start_the_new_spanish_campaign_desc: ""
+FRA_restore_the_client_states: "Restore the Client States"
+FRA_restore_the_client_states_desc: ""
+FRA_approach_britain: "Approach Britain"
+FRA_approach_britain_desc: ""
+FRA_revive_the_anglophobia: "Revive Anti-British Sentiment"
+FRA_revive_the_anglophobia_desc: ""
+FRA_consolidate_the_iberian_peninsula: "Consolidate the Iberian Peninsula"
+FRA_consolidate_the_iberian_peninsula_desc: ""
+FRA_restore_the_confederation_of_the_rhine: "Restore the Confederation of the Rhine"
+FRA_restore_the_confederation_of_the_rhine_desc: ""
+FRA_remake_the_italian_peninsula: "Reshape the Italian Peninsula"
+FRA_remake_the_italian_peninsula_desc: ""
+FRA_reinforce_the_latin_monetary_union: "Reinforce the Latin Monetary Union"
+FRA_reinforce_the_latin_monetary_union_desc: ""
+FRA_secure_austrian_cooperation: "Secure Austrian Cooperation"
+FRA_secure_austrian_cooperation_desc: ""
+FRA_revive_the_franco_nordic_alliances: "Revive the Franco-Nordic Alliances"
+FRA_revive_the_franco_nordic_alliances_desc: ""
+FRA_fund_independentist_movements: "Fund Independentist Movements"
+FRA_fund_independentist_movements_desc: ""
+FRA_improve_winter_trainings: "Improve Winter Training"
+FRA_improve_winter_trainings_desc: ""
+FRA_send_supplies_to_polish_independentists: "Send Supplies to Polish Independentists"
+FRA_send_supplies_to_polish_independentists_desc: ""
+# HISTORICAL
 FRA_for_the_extinction_of_pauperism: "For the Extinction of Pauperism"
 FRA_for_the_extinction_of_pauperism_desc: " "
 FRA_wise_progress_of_our_institutions: "Wise Progress of Our Institutions"
@@ -506,8 +512,9 @@ french_commune_events.3.title: "The Factions of the Federation"
 french_commune_events.4.title: "The Federative Elections"
 french_commune_events.5.title: "The Proudhonists, And its two Factions"
 
-
+###
 ### Decisions
+###
 # Paris Modernization
 FRA_modernization_of_paris_cat: "Modernization of Paris"
 # Second Stage
@@ -603,7 +610,7 @@ banned_party_party_loc: "§R-- BANNED PARTY --§!"
 historical_choice_tt: "§OThis is the Historical Choice.§!"
 at_war_no_tt: "§RIf we Enter at War, this National Spirit will be lost.§!"
 middle_thingy_tt: "-----------------------------------------------------------------"
-autocompleted_by_event_or_decision_tt: "§GThis Focus will be Autocompleted Through a Certain Event or Decision!§!"
+autocompleted_by_event_or_decision_tt: "§GThis focus will be autocompleted through a certain event or decision!§!"
 
 # tt
 fra_fpw_began: "The Franco-Prussian War has begun"
@@ -675,5 +682,5 @@ FRA_manufacture_d_armes_de_saint_etienne_organization: "Manufacture d'armes de S
 FRA_manufacture_d_armes_de_tulle_organization: "Manufacture d'armes de Tulle"
 
 # DEBUG
-FRA_france_debug_stuff_cat: "France Debug"
-#FRA_debug_give_rally_opposition_bonapartist_influence: "Give Rally Opposition Bonapartist Influence" # what does this even mean?  # mf thats about giving a random state a influenced bonapartist, used for gfx testing, dont loc debug stuff
+#FRA_france_debug_stuff_cat: "France Debug"
+#FRA_debug_give_rally_opposition_bonapartist_influence: "Give Rally Opposition Bonapartist Influence" # what does this even mean?  # mf thats about giving a random state a influenced bonapartist, used for gfx testing, dont loc debug stuff # ok jew
