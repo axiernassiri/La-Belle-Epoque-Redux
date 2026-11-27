@@ -24,6 +24,10 @@ spriteTypes = {
 		name = "GFX_focus_generic_colonial_police"
 		texturefile = "gfx/interface/goals/generic_colonial_police.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_generic_wip"
+		texturefile = "gfx/interface/goals/generic_wip.dds"
+	}
 }
 # SPAIN #
 spriteTypes = {

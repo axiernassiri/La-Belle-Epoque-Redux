@@ -602,7 +602,7 @@ news_event = {
 	}
 }
 
-# 20 – A Lunar Eclipse Observed
+# 20 – A New Society for the Protection of Animals
 news_event = {
 	id = news_fpw.20
 	title = news_fpw.20.t
@@ -610,7 +610,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.03.30
+		date > 1866.04.09
 	}
 
 	is_triggered_only = yes
@@ -625,7 +625,7 @@ news_event = {
 	}
 }
 
-# 21 – A New Society for the Protection of Animals
+# 21 – The Death of John McDouall Stuart
 news_event = {
 	id = news_fpw.21
 	title = news_fpw.21.t
@@ -633,7 +633,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.04.09
+		date > 1866.06.04
 	}
 
 	is_triggered_only = yes
@@ -648,7 +648,7 @@ news_event = {
 	}
 }
 
-# 22 – A New Czech Opera
+# 22 – A Cable Across the Atlantic
 news_event = {
 	id = news_fpw.22
 	title = news_fpw.22.t
@@ -656,7 +656,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.05.29
+		date > 1866.07.26
 	}
 
 	is_triggered_only = yes
@@ -671,7 +671,7 @@ news_event = {
 	}
 }
 
-# 23 – The Death of John McDouall Stuart
+# 23 – A Great Fire in Quebec
 news_event = {
 	id = news_fpw.23
 	title = news_fpw.23.t
@@ -679,7 +679,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.06.04
+		date > 1866.10.13
 	}
 
 	is_triggered_only = yes
@@ -687,14 +687,28 @@ news_event = {
 
 	option = {
 		name = news_fpw.23.a
+
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			add_stability = -0.02
+		}
 	}
 
 	option = {
 		name = news_fpw.23.b
+
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			add_stability = -0.02
+		}
 	}
 }
 
-# 24 – A Cable Across the Atlantic
+# 24 – Disaster at the Oaks Colliery
 news_event = {
 	id = news_fpw.24
 	title = news_fpw.24.t
@@ -702,7 +716,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.07.26
+		date > 1866.12.11
 	}
 
 	is_triggered_only = yes
@@ -710,14 +724,32 @@ news_event = {
 
 	option = {
 		name = news_fpw.24.a
+
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_stability = -0.02
+		}
 	}
 
 	option = {
 		name = news_fpw.24.b
+
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_stability = -0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.025
+			}
+		}
 	}
 }
 
-# 25 – New Zealand Connected by Telegraph
+# 25 – The World's Longest Suspension Bridge
 news_event = {
 	id = news_fpw.25
 	title = news_fpw.25.t
@@ -725,7 +757,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.08.25
+		date > 1866.12.31
 	}
 
 	is_triggered_only = yes
@@ -740,7 +772,7 @@ news_event = {
 	}
 }
 
-# 26 – A New Daily Newspaper in Hawaii
+# 26 – The Blue Danube Makes Its Debut
 news_event = {
 	id = news_fpw.26
 	title = news_fpw.26.t
@@ -748,7 +780,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.09.03
+		date > 1867.02.14
 	}
 
 	is_triggered_only = yes
@@ -763,7 +795,7 @@ news_event = {
 	}
 }
 
-# 27 – A Great Fire in Quebec
+# 27 – A New Approach to Surgery
 news_event = {
 	id = news_fpw.27
 	title = news_fpw.27.t
@@ -771,7 +803,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.10.13
+		date > 1867.03.15
 	}
 
 	is_triggered_only = yes
@@ -779,28 +811,14 @@ news_event = {
 
 	option = {
 		name = news_fpw.27.a
-
-		if = {
-			limit = {
-				original_tag = CAN
-			}
-			add_stability = -0.02
-		}
 	}
 
 	option = {
 		name = news_fpw.27.b
-
-		if = {
-			limit = {
-				original_tag = CAN
-			}
-			add_stability = -0.02
-		}
 	}
 }
 
-# 28 – A New Development in Cycling
+# 28 – The Great Exhibition of Paris
 news_event = {
 	id = news_fpw.28
 	title = news_fpw.28.t
@@ -808,7 +826,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.11.19
+		date > 1867.03.31
 	}
 
 	is_triggered_only = yes
@@ -823,7 +841,7 @@ news_event = {
 	}
 }
 
-# 29 – Disaster at the Oaks Colliery
+# 29 – A New Explosive Enters the Market
 news_event = {
 	id = news_fpw.29
 	title = news_fpw.29.t
@@ -831,7 +849,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	trigger = {
-		date > 1866.12.11
+		date > 1867.05.06
 	}
 
 	is_triggered_only = yes
@@ -839,27 +857,78 @@ news_event = {
 
 	option = {
 		name = news_fpw.29.a
-
-		if = {
-			limit = {
-				original_tag = ENG
-			}
-			add_stability = -0.02
-		}
 	}
 
 	option = {
 		name = news_fpw.29.b
+	}
+}
 
-		if = {
-			limit = {
-				original_tag = ENG
-			}
-			add_stability = -0.02
-			add_popularity = {
-				ideology = communism
-				popularity = 0.025
-			}
-		}
+# 30 – A Railway Disaster at Bray Head
+news_event = {
+	id = news_fpw.30
+	title = news_fpw.30.t
+	desc = news_fpw.30.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1867.08.08
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.30.a
+	}
+
+	option = {
+		name = news_fpw.30.b
+	}
+}
+
+# 31 – A New Work of Political Economy
+news_event = {
+	id = news_fpw.31
+	title = news_fpw.31.t
+	desc = news_fpw.31.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1867.09.13
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.31.a
+	}
+
+	option = {
+		name = news_fpw.31.b
+	}
+}
+
+# 32 – The End of Transportation to Australia
+news_event = {
+	id = news_fpw.32
+	title = news_fpw.32.t
+	desc = news_fpw.32.d
+	picture = GFX_news_event_001
+
+	trigger = {
+		date > 1867.10.11
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_fpw.32.a
+	}
+
+	option = {
+		name = news_fpw.32.b
 	}
 }
