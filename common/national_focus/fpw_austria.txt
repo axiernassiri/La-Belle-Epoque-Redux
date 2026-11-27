@@ -2942,7 +2942,7 @@
 		}
 		completion_reward = {
 			hidden_effect = {
-				event = {
+				country_event = {
 					id = fpw_austria.5
 					days = 50
 				}
@@ -2964,8 +2964,8 @@
 			### create the south german confederation
 			BAV = {
 				set_cosmetic_tag = south_german_confederation
-				annex_country = WRT
-				annex_country = BAD
+				annex_country = { target = WRT }
+				annex_country = { target = BAD }
 			}
 		}
 	}
@@ -3125,7 +3125,7 @@
 		completion_reward = {
 			###  declares war on prussia will have scripted peacedeals
 			set_country_flag = AUS_alt_hist_austria_v_prussia
-			delcare_war_on = PRS
+			declare_war_on = { target = PRS type = annex_everything }
 			if = {
 				limit = {
 					has_completed_focus = AUS_provoke_rhineland_revolt
@@ -3177,22 +3177,24 @@
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_toward_a_habsburg_europe_summary_tt
 			### 
 		}
 	}
 
 	focus = {
 		id = AUS_rivals_of_the_old
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_attack_turkey
 		x = 9
 		y = 1
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_toward_a_habsburg_europe }
 		available = {
-			always = no
+			TUR = { exists = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_rivals_of_the_old_summary_tt
 			### embargo ottomans and opinion decrease
 			diplomatic_relation = {
     			country = TUR
@@ -3202,32 +3204,44 @@
 				target = TUR
 				modifier = medium_decrease
 			}
+			add_war_support = 0.05
 		}
 	}
 
 	focus = {
 		id = AUS_gurantee_greece
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_treaty
 		x = 2
 		y = 1
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_rivals_of_the_old }
 		available = {
 			GRE = { exists = yes }
 		}
 		completion_reward = {
 			### gurantees greece
+			give_guarantee = GRE
+			add_opinion_modifier = {
+				target = GRE
+				modifier = medium_increase
+			}
+			GRE = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = medium_increase
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = AUS_relations_with_persia
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_attack_iran
 		x = -3
 		y = 1
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_rivals_of_the_old focus = AUS_curtail_russian_ambition  }
 		available = {
 			PER = {
@@ -3249,11 +3263,11 @@
 
 	focus = {
 		id = AUS_deal_with_the_shah
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_treaty
 		x = -3
 		y = 2
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 3
 		prerequisite = { focus = AUS_relations_with_persia }
 		available = {
 			PER = {
@@ -3261,136 +3275,309 @@
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_deal_with_the_shah_summary_tt
 			### if persia agrees they will join the war for spefic land, works for both russia and ottomans
 			PER = {
 				country_event = fpw_austria.30
 			}
+			custom_effect_tooltip = AUS_deal_with_the_shah_tt
 		}
 	}
 
 	focus = {
 		id = AUS_influence_the_balkan_states
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_balkan_diplomacy
 		x = 0
 		y = 1
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_rivals_of_the_old }
 		available = {
 		}
 		completion_reward = {
 			### gains decisions to influence and start anti ottoman protests leading you to allow them to launch independence wars
+			unlock_decision_category_tooltip = AUS_anti_ottoman_agitation
+			unlock_decision_tooltip = AUS_stir_protests_in_bulgaria
+			unlock_decision_tooltip = AUS_stir_protests_in_bosnia
+			unlock_decision_tooltip = AUS_stir_protests_in_albania
+			unlock_decision_tooltip = AUS_stir_protests_in_montenegro
+			unlock_decision_tooltip = AUS_stir_protests_in_serbia
+			unlock_decision_tooltip = AUS_stir_protests_in_romania
+			add_political_power = 25
 		}
 	}
 
 	focus = {
 		id = AUS_fund_greek_sepratists
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_conspiracy
 		x = 1
 		y = 2
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_influence_the_balkan_states }
 		prerequisite = { focus = AUS_gurantee_greece }
 		available = {
 		}
 		completion_reward = {
 			### gains decisions to influence and start anti ottoman protests leading you to allow them to launch independence wars
+			unlock_decision_category_tooltip = AUS_anti_ottoman_agitation
+			unlock_decision_tooltip = AUS_fund_cretan_separatists
+			unlock_decision_tooltip = AUS_fund_epirote_separatists
+			unlock_decision_tooltip = AUS_fund_aegean_separatists
+			unlock_decision_tooltip = AUS_greek_war_of_liberation
+			GRE = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = medium_increase
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = AUS_instigate_armenian_resistance
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_whispers
 		x = -1
 		y = 2
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_influence_the_balkan_states }
 		available = {
+			TUR = { exists = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_instigate_armenian_resistance_summary_tt
 			### increases resistance and decreases compliance in armeanian states, will cause armenia to revolt upon war with the ottomans
+			### (the states are Ottoman cores, so this uses a state modifier instead of resistance)
+			hidden_effect = { set_country_flag = AUS_armenian_revolt_flag }
+			every_state = {
+				limit = {
+					OR = {
+						state = 353
+						state = 800
+						state = 984
+					}
+					is_owned_by = TUR
+				}
+				add_dynamic_modifier = { modifier = AUS_armenian_unrest }
+			}
+			custom_effect_tooltip = AUS_armenian_revolt_tt
 		}
 	}
 
 	focus = {
 		id = AUS_make_a_deal_with_the_arabs
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_the_suez
 		x = 0
 		y = 3
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_instigate_armenian_resistance }
 		prerequisite = { focus = AUS_fund_greek_sepratists }
 		available = {
+			SAU = { exists = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_make_a_deal_with_the_arabs_summary_tt
 			### saudis will invade if we complete this focus when we declare war
+			custom_effect_tooltip = AUS_arab_deal_tt
+			hidden_effect = { set_country_flag = AUS_arab_deal_flag }
+			add_opinion_modifier = {
+				target = SAU
+				modifier = medium_increase
+			}
+			SAU = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = medium_increase
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = AUS
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+				producer = AUS
+			}
 		}
 	}
 
 	focus = {
 		id = AUS_create_the_colition
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 4
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
 		available = {
-			always = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_create_the_colition_summary_tt
 			### invites greece, persia if you completed , and the arabs
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = AUS_habsburg_coalition
+			}
+			if = {
+				limit = {
+					GRE = {
+						exists = yes
+						is_in_faction = no
+						is_subject = no
+						NOT = { has_war_with = AUS }
+					}
+				}
+				GRE = { country_event = fpw_austria.38 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_deal_with_the_shah
+					PER = {
+						exists = yes
+						has_country_flag = per_accepted_deal_w_austria
+						is_in_faction = no
+						is_subject = no
+						NOT = { has_war_with = AUS }
+					}
+				}
+				PER = { country_event = fpw_austria.38 }
+			}
+			if = {
+				limit = {
+					SAU = {
+						exists = yes
+						is_in_faction = no
+						is_subject = no
+						NOT = { has_war_with = AUS }
+					}
+				}
+				SAU = { country_event = fpw_austria.38 }
+			}
 		}
 	}
 
 	focus = {
 		id = AUS_call_for_the_dissolution_of_the_ottoman_empire
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_attack_turkey
 		x = 0
-		y = 4
+		y = 5
 		relative_position_id = AUS_rivals_of_the_old
-		cost = 1
-		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
+		cost = 5
+		prerequisite = { focus = AUS_create_the_colition }
 		available = {
+			TUR = { exists = yes }
+			NOT = { has_war_with = TUR }
+			has_war = no
 		}
 		completion_reward = {
 			### war with the ottomans
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = AUS_habsburg_coalition
+			}
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+			add_war_support = 0.10
+			### the Shah keeps his word
+			if = {
+				limit = {
+					PER = {
+						exists = yes
+						has_country_flag = per_accepted_deal_w_austria
+						NOT = { has_war_with = TUR }
+					}
+				}
+				PER = {
+					declare_war_on = {
+						target = TUR
+						type = annex_everything
+					}
+				}
+			}
+			### the Saudis invade the Hejaz
+			if = {
+				limit = {
+					has_country_flag = AUS_arab_deal_flag
+					SAU = {
+						exists = yes
+						NOT = { has_war_with = TUR }
+					}
+				}
+				SAU = {
+					declare_war_on = {
+						target = TUR
+						type = annex_everything
+					}
+				}
+			}
+			custom_effect_tooltip = AUS_dissolution_war_tt
+			if = {
+				limit = { has_country_flag = AUS_armenian_revolt_flag }
+				custom_effect_tooltip = AUS_war_armenia_revolts_tt
+			}
+			custom_effect_tooltip = AUS_ottoman_peace_terms_tt
+			### faction members join, Armenian revolt, peace flag
+			hidden_effect = {
+				AUS_start_ottoman_dissolution_war = yes
+			}
 		}
 	}
 
 	focus = {
 		id = AUS_victory_against_the_ottomans
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_subjugation
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = AUS_rivals_of_the_old
 		cost = 1
-		prerequisite = { focus = AUS_make_a_deal_with_the_arabs }
+		prerequisite = { focus = AUS_call_for_the_dissolution_of_the_ottoman_empire }
 		available = {
-			TUR = {
-				exists = no
+			### completes automatically when Turkey capitulates in the War of Dissolution (scripted peace)
+			custom_trigger_tooltip = {
+				tooltip = AUS_victory_against_the_ottomans_trigger_tt
+				always = no
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_victory_against_the_ottomans_summary_tt
 			### make balkan population not irrelevant
+			custom_effect_tooltip = AUS_victory_against_the_ottomans_tt
+			if = {
+				limit = { has_idea = AUS_balkans_irrelevant }
+				swap_ideas = {
+					remove_idea = AUS_balkans_irrelevant
+					add_idea = AUS_balkans_hostile
+				}
+			}
+			add_ideas = AUS_heir_to_the_porte
+			add_political_power = 150
+			army_experience = 25
 		}
 	}
 
 	focus = {
 		id = AUS_curtail_russian_ambition
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_soviet_politics
 		x = 2
 		y = 1
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_toward_a_habsburg_europe }
 		available = {
-			always = no
+			SOV = { exists = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_curtail_russian_ambition_summary_tt
 			### embargo russia and decrease opinions
 			diplomatic_relation = {
     			country = SOV
@@ -3400,92 +3587,186 @@
 				target = SOV
 				modifier = medium_decrease
 			}
+			add_war_support = 0.05
 		}
 	}
 
 	focus = {
 		id = AUS_infiltrate_ukraine
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_whispers
 		x = 3
 		y = 2
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_curtail_russian_ambition }
-		available = {		}
+		available = {
+			SOV = { exists = yes }
+		}
 		completion_reward = {
-			### gives a national idea that gives winter bonuses
+			### puts a state modifier debuffing russia in ukrainian states
+			### (this comment was swapped with AUS_winter_adaptations, which already gives the winter idea)
+			every_state = {
+				limit = {
+					is_core_of = UKR
+					is_owned_by = SOV
+				}
+				add_dynamic_modifier = { modifier = AUS_ukrainian_unrest }
+			}
+			custom_effect_tooltip = AUS_infiltrate_ukraine_tt
 		}
 	}
 
 	focus = {
 		id = AUS_rebellous_people_of_the_caucasus
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_mountain_training
 		x = 4
 		y = 3
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_infiltrate_ukraine }
 		prerequisite = { focus = AUS_relations_with_persia }
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_rebellous_people_of_the_caucasus_summary_tt
 			### makes the caucasus revolt upon war start
 			custom_effect_tooltip = aus_caucausus_revolt
-			set_country_flag = caaucasus_revolt_flag
+			hidden_effect = { set_country_flag = caaucasus_revolt_flag }
 		}
 	}
 
 	focus = {
 		id = AUS_conduct_border_raids
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_secret_service_agency
 		x = 2
 		y = 3
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_infiltrate_ukraine }
 		prerequisite = { focus = AUS_winter_adaptations }
 		available = {
+			SOV = { exists = yes }
+			NOT = { has_war_with = SOV }
 		}
 		completion_reward = {
 			### makes russia lose guns and you gain guns, gives russia event border raided by austria.
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = SOV
+			}
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2500
+					producer = SOV
+				}
+				country_event = fpw_austria.39
+			}
+			army_experience = 10
 		}
 	}
 
 	focus = {
 		id = AUS_slay_the_orthodox_giant
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 3
 		y = 4
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_conduct_border_raids }
 		prerequisite = { focus = AUS_rebellous_people_of_the_caucasus }
 		available = {
+			SOV = { exists = yes }
+			NOT = { has_war_with = SOV }
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
 		}
 		completion_reward = {
-			### event that starts war with russia and triggers all the shi
+			custom_effect_tooltip = AUS_slay_the_orthodox_giant_summary_tt
+			### event that starts war with russia and triggers all the things that were set up
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = AUS_habsburg_coalition
+			}
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+			add_war_support = 0.10
+			if = {
+				limit = {
+					PER = {
+						exists = yes
+						has_country_flag = per_accepted_deal_w_austria
+						NOT = { has_war_with = SOV }
+					}
+				}
+				PER = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+			}
+			custom_effect_tooltip = AUS_start_russian_war_tt
+			if = {
+				limit = { has_country_flag = caaucasus_revolt_flag }
+				custom_effect_tooltip = AUS_war_caucasus_revolts_tt
+			}
+			custom_effect_tooltip = AUS_russian_peace_terms_tt
+			### faction members join, Caucasus revolt, peace flag
+			hidden_effect = {
+				AUS_start_russian_war = yes
+				country_event = fpw_austria.41
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_victory_over_russia
+		icon = GFX_focus_generic_winter_warfare
+		x = 3
+		y = 5
+		relative_position_id = AUS_toward_a_habsburg_europe
+		cost = 1
+		prerequisite = { focus = AUS_slay_the_orthodox_giant }
+		available = {
+			### completes automatically when Russia capitulates (scripted peace)
+			custom_trigger_tooltip = {
+				tooltip = AUS_victory_over_russia_trigger_tt
+				always = no
+			}
+		}
+		completion_reward = {
+			add_ideas = AUS_the_giant_slain
+			add_political_power = 150
+			army_experience = 25
+			AUS_increse_galician_attitude_effect = yes
 		}
 	}
 
 	focus = {
 		id = AUS_winter_adaptations
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_winter_warfare
 		x = 1
 		y = 2
 		relative_position_id = AUS_toward_a_habsburg_europe
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUS_curtail_russian_ambition }
 		available = {
 		}
 		completion_reward = {
-			### puts a state modifier debuffing russia in ukrainian states
+			### gives a national idea that gives winter bonuses
 			add_ideas = AUS_winter_preparations
 		}
 	}
 
 	focus = {
 		id = AUS_galician_fortifications
-		#icon = GFX_focus_generic_coal_mining
+		icon = GFX_focus_generic_mountain_fortification
 		x = 0
 		y = 3
 		relative_position_id = AUS_toward_a_habsburg_europe
@@ -3502,7 +3783,7 @@
     				province = {
         				limit_to_border = yes
         				level < 3
-					}	
+					}
     			}
 			}
 			91 = {
@@ -3512,7 +3793,7 @@
     				province = {
         				limit_to_border = yes
         				level < 3
-					}	
+					}
     			}
 			}
 		}
@@ -3658,7 +3939,7 @@
 				producer = AUS
 			}
 			161 = {
-				remove_building {
+				remove_building = {
 					type = arms_factory
 					level = 2
 				}
@@ -3680,7 +3961,10 @@
 		completion_reward = {
 			### italy gets an event issueing our demands, they will not have an option to reject as these demands essiently mean giving up soverienty.
 			### adds Rekindled Italian Wars Dynamic Modifier that gets bfufed by focuses
-			declare_war_on = ITA
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
 			
 			add_dynamic_modifier = {
 				modifier = fpw_italian_wars
@@ -3987,7 +4271,7 @@
 		}
 		completion_reward = {
 			### reduce hungarian loyalty, hungary loses cores on croatia, gain stability
-			AUS_decrese_hungary_attitude_effect = yes
+			AUS_decrese_hungarian_attitude_effect = yes
 			add_political_power = 50
 			add_stability = 0.10
 			HUN = {
@@ -4008,11 +4292,14 @@
 		prerequisite = { focus = AUS_seperate_croatia_from_hungary }
 		available = {
 			### requires all of hungary to be cored
-			every_owned_state = {
-				limit = {
-					is_core_of = HUN
+			custom_trigger_tooltip = {
+				tooltip = AUS_all_hungary_cored_tt
+				all_owned_state = {
+					OR = {
+						NOT = { is_core_of = HUN }
+						is_core_of = AUS
+					}
 				}
-				is_core_of = AUS
 			}
 		}
 		completion_reward = {
@@ -4298,17 +4585,24 @@
 		prerequisite = { focus = AUS_grip_over_the_balkan_states }
 		available = {
 			### balkan states cored
-			every_state = {
-				limit = {
-					is_core_of = SER
-					is_core_of = BUL
-					is_core_of = CRO
-					is_core_of = BOS
-					is_core_of = GRE
-					is_core_of = ALB
-					is_core_of = ROM
+			custom_trigger_tooltip = {
+				tooltip = AUS_all_balkans_cored_tt
+				all_state = {
+					OR = {
+						NOT = {
+							OR = {
+								is_core_of = SER
+								is_core_of = BUL
+								is_core_of = CRO
+								is_core_of = BOS
+								is_core_of = GRE
+								is_core_of = ALB
+								is_core_of = ROM
+							}
+						}
+						is_core_of = AUS
+					}
 				}
-				is_core_of = AUS
 			}
 
 		}

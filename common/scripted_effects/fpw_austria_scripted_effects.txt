@@ -371,7 +371,7 @@ AUS_increse_balkans_attitude_effect = {
 		add_political_power = 50
 	}
 }
-AUS_decrese_illyrian_attitude_effect = {
+AUS_decrese_balkans_attitude_effect = {
 	IF = {
 		limit = {
 			has_idea = AUS_balkans_loyal

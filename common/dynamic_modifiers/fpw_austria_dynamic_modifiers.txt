@@ -19,3 +19,35 @@ fpw_italian_wars = {
 	army_attack_factor = aus_ita_atk_dm
 	army_defence_factor = aus_ita_def_dm
 }
+
+### Austria alt-history: Ottoman and Russian branches (state modifiers)
+AUS_anti_ottoman_protests = {
+	icon = GFX_idea_generic_army_problems
+	enable = { always = yes }
+
+	local_manpower = -0.25
+	local_factories = -0.15
+	state_production_speed_buildings_factor = -0.25
+	local_supplies = -0.15
+}
+
+AUS_armenian_unrest = {
+	icon = GFX_idea_generic_army_problems
+	enable = { always = yes }
+
+	local_manpower = -0.40
+	local_factories = -0.25
+	state_production_speed_buildings_factor = -0.30
+	local_supplies = -0.20
+}
+
+AUS_ukrainian_unrest = {
+	icon = GFX_idea_generic_army_problems
+	enable = { always = yes }
+
+	local_manpower = -0.30
+	local_factories = -0.20
+	state_production_speed_buildings_factor = -0.25
+	local_supplies = -0.20
+	attrition_for_controller = 0.10
+}

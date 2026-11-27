@@ -1,0 +1,28 @@
+on_actions = {
+	### ROOT is the capitulated country, FROM is the winner
+	### scripted peace deals for the Austrian alt-history Ottoman and Russian wars
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = TUR }
+					AUS = {
+						has_country_flag = AUS_ottoman_dissolution_war
+						has_war_with = TUR
+					}
+				}
+				AUS_ottoman_dissolution_peace = yes
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = SOV }
+					AUS = {
+						has_country_flag = AUS_russian_war
+						has_war_with = SOV
+					}
+				}
+				AUS_russian_peace = yes
+			}
+		}
+	}
+}

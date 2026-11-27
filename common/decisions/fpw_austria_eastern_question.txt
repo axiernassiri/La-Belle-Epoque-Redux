@@ -1,0 +1,526 @@
+### Austria alt-history: anti-Ottoman agitation (AUS_influence_the_balkan_states / AUS_fund_greek_sepratists)
+AUS_anti_ottoman_agitation = {
+
+	AUS_stir_protests_in_bulgaria = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_influence_the_balkan_states
+			BUL = { exists = no }
+			NOT = { has_country_flag = AUS_BUL_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = BUL
+				is_owned_by = TUR
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_BUL_protests
+				every_state = {
+					limit = {
+						is_core_of = BUL
+						is_owned_by = TUR
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+			}
+		}
+	}
+
+	AUS_launch_bulgaria_uprising = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_country_flag = AUS_BUL_protests
+			BUL = { exists = no }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = BUL
+				is_owned_by = TUR
+			}
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_launch_uprising_tt
+			hidden_effect = {
+				every_state = {
+					limit = { is_core_of = BUL }
+					remove_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+				AUS_launch_balkan_uprising_BUL = yes
+			}
+		}
+	}
+
+	AUS_stir_protests_in_bosnia = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_influence_the_balkan_states
+			BOS = { exists = no }
+			NOT = { has_country_flag = AUS_BOS_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = BOS
+				is_owned_by = TUR
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_BOS_protests
+				every_state = {
+					limit = {
+						is_core_of = BOS
+						is_owned_by = TUR
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+			}
+		}
+	}
+
+	AUS_launch_bosnia_uprising = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_country_flag = AUS_BOS_protests
+			BOS = { exists = no }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = BOS
+				is_owned_by = TUR
+			}
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_launch_uprising_tt
+			hidden_effect = {
+				every_state = {
+					limit = { is_core_of = BOS }
+					remove_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+				AUS_launch_balkan_uprising_BOS = yes
+			}
+		}
+	}
+
+	AUS_stir_protests_in_albania = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_influence_the_balkan_states
+			ALB = { exists = no }
+			NOT = { has_country_flag = AUS_ALB_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = ALB
+				is_owned_by = TUR
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_ALB_protests
+				every_state = {
+					limit = {
+						is_core_of = ALB
+						is_owned_by = TUR
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+			}
+		}
+	}
+
+	AUS_launch_albania_uprising = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_country_flag = AUS_ALB_protests
+			ALB = { exists = no }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = ALB
+				is_owned_by = TUR
+			}
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_launch_uprising_tt
+			hidden_effect = {
+				every_state = {
+					limit = { is_core_of = ALB }
+					remove_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+				AUS_launch_balkan_uprising_ALB = yes
+			}
+		}
+	}
+
+	AUS_stir_protests_in_montenegro = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_influence_the_balkan_states
+			MNT = { exists = no }
+			NOT = { has_country_flag = AUS_MNT_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = MNT
+				is_owned_by = TUR
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_MNT_protests
+				every_state = {
+					limit = {
+						is_core_of = MNT
+						is_owned_by = TUR
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+			}
+		}
+	}
+
+	AUS_launch_montenegro_uprising = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_country_flag = AUS_MNT_protests
+			MNT = { exists = no }
+		}
+		available = {
+			TUR = { exists = yes }
+			any_state = {
+				is_core_of = MNT
+				is_owned_by = TUR
+			}
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_launch_uprising_tt
+			hidden_effect = {
+				every_state = {
+					limit = { is_core_of = MNT }
+					remove_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+				}
+				AUS_launch_balkan_uprising_MNT = yes
+			}
+		}
+	}
+
+	AUS_stir_protests_in_serbia = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_influence_the_balkan_states
+			SER = { is_subject_of = TUR }
+			NOT = { has_country_flag = AUS_SER_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_SER_protests
+				SER = {
+					add_opinion_modifier = {
+						target = AUS
+						modifier = medium_increase
+					}
+				}
+			}
+		}
+	}
+
+	AUS_launch_serbia_breakaway = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_country_flag = AUS_SER_protests
+			SER = { is_subject_of = TUR }
+		}
+		available = {
+			TUR = { exists = yes }
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_launch_breakaway_tt
+			hidden_effect = {
+				AUS_launch_balkan_breakaway_SER = yes
+			}
+		}
+	}
+
+	AUS_stir_protests_in_romania = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_influence_the_balkan_states
+			ROM = { is_subject_of = TUR }
+			NOT = { has_country_flag = AUS_ROM_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_ROM_protests
+				ROM = {
+					add_opinion_modifier = {
+						target = AUS
+						modifier = medium_increase
+					}
+				}
+			}
+		}
+	}
+
+	AUS_launch_romania_breakaway = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_country_flag = AUS_ROM_protests
+			ROM = { is_subject_of = TUR }
+		}
+		available = {
+			TUR = { exists = yes }
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_launch_breakaway_tt
+			hidden_effect = {
+				AUS_launch_balkan_breakaway_ROM = yes
+			}
+		}
+	}
+
+	AUS_fund_cretan_separatists = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_fund_greek_sepratists
+			NOT = { has_country_flag = AUS_GRE_crete_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			GRE = { exists = yes }
+		}
+		cost = 35
+		fire_only_once = yes
+		days_remove = 45
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_GRE_crete_protests
+				every_state = {
+					limit = {
+						is_owned_by = TUR
+						OR = {
+						state = 182
+						}
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+					GRE = { add_state_claim = PREV }
+				}
+			}
+		}
+	}
+
+	AUS_fund_epirote_separatists = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_fund_greek_sepratists
+			NOT = { has_country_flag = AUS_GRE_epirus_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			GRE = { exists = yes }
+		}
+		cost = 35
+		fire_only_once = yes
+		days_remove = 45
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_GRE_epirus_protests
+				every_state = {
+					limit = {
+						is_owned_by = TUR
+						OR = {
+						state = 185
+						state = 731
+						}
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+					GRE = { add_state_claim = PREV }
+				}
+			}
+		}
+	}
+
+	AUS_fund_aegean_separatists = {
+		icon = GFX_decision_generic_protection
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_fund_greek_sepratists
+			NOT = { has_country_flag = AUS_GRE_aegean_protests }
+		}
+		available = {
+			TUR = { exists = yes }
+			GRE = { exists = yes }
+		}
+		cost = 35
+		fire_only_once = yes
+		days_remove = 45
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_stir_protests_tt
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_GRE_aegean_protests
+				every_state = {
+					limit = {
+						is_owned_by = TUR
+						OR = {
+						state = 164
+						state = 187
+						}
+					}
+					add_dynamic_modifier = { modifier = AUS_anti_ottoman_protests }
+					GRE = { add_state_claim = PREV }
+				}
+			}
+		}
+	}
+
+	AUS_greek_war_of_liberation = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = AUS }
+		visible = {
+			has_completed_focus = AUS_fund_greek_sepratists
+			has_country_flag = AUS_GRE_crete_protests
+			has_country_flag = AUS_GRE_epirus_protests
+		}
+		available = {
+			TUR = { exists = yes }
+			GRE = {
+				exists = yes
+				NOT = { has_war_with = TUR }
+				is_subject = no
+			}
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			custom_effect_tooltip = AUS_greek_war_tt
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -3000
+					producer = AUS
+				}
+				GRE = {
+					set_country_flag = AUS_backed_rebel
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 3000
+						producer = AUS
+					}
+					add_manpower = 15000
+					add_war_support = 0.15
+					declare_war_on = {
+						target = TUR
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+}
