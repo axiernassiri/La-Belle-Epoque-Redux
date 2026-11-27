@@ -329,6 +329,10 @@ technologies = {
 	
 	fpw_support_weapons3 = {
 
+		enable_subunits = {
+			fire_support
+		}
+
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -574,7 +578,7 @@ technologies = {
 	fra_metrailleuse = { # HIDDEN TECH ONLY FOR FRANCE, UNCOCKS MG REGIMENT
 
 		enable_subunits = {
-			fpw_fire_support
+			fire_support
 		}
 		
 		allow = {
