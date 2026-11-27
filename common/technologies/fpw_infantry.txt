@@ -329,10 +329,6 @@ technologies = {
 	
 	fpw_support_weapons3 = {
 
-		enable_subunits = {
-			fire_support
-		}
-
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
